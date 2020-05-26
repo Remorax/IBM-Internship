@@ -1,0 +1,5311 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:edoal='http://ns.inria.org/edoal/1.0/#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>2EDOAL</level>
+  <type>**</type>
+  <onto1>
+    <Ontology rdf:about="http://localhost:3030/dbpedia-light/">
+      <location>http://localhost:3030/dbpedia-light/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://localhost:3030/taxref-light/">
+      <location>http://localhost:3030/taxref-light/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasOrderName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9166666666666666</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasOrderName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9166666666666666</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasOrderName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9166666666666666</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q19088"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q19088"/>
+      </entity1>
+      <entity2>
+        <edoal:Class>
+          <edoal:or rdf:parseType="Collection">
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string="Caragate"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string=" cukorcirok"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+          </edoal:or>
+        </edoal:Class>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q19088"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasSpecificEpithet"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="mucronatus"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9454545454545454</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q19088"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/genus"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasGenusName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9166666666666666</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/FloweringPlant"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasPhylumName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Magnoliophyta"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7692307692307692</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/FloweringPlant"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasGeoSpeciesPage"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8823529411764706</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasKingdomName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasKingdomName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inOrder"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Eukaryote"/>
+      </entity1>
+      <entity2>
+        <edoal:Class>
+          <edoal:or rdf:parseType="Collection">
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string="Caragate"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string=" cukorcirok"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+          </edoal:or>
+        </edoal:Class>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6722222222222223</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P935c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/vernacularName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P935c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/vernacularName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P935c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/vernacularName"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Island"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/family"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasFamilyName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/family"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasFamilyName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Plant"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasKingdomName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Plant"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8944444444444445</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Plant"/>
+      </entity1>
+      <entity2>
+        <edoal:Class>
+          <edoal:or rdf:parseType="Collection">
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string="Tillandsie"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string=" tilandsia"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Literal edoal:string=" tilandsie"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+          </edoal:or>
+        </edoal:Class>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Plant"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasFamilyName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Poaceae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Plant"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://taxref.mnhn.fr/lod/name/446165"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Insect"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8571428571428572</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Insect"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdfs.org/ns/void#inDataset"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8888888888888888</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Insect"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8571428571428572</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Insect"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plant"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasSpecificEpithet"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="recta"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plant"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasKingdomName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plant"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://purl.uniprot.org/core/rank"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plant"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inKingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7777777777777778</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/MilitaryUnit"/>
+      </entity1>
+      <entity2>
+        <edoal:Class>
+          <edoal:or rdf:parseType="Collection">
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation>
+                  <edoal:inverse>
+                    <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+                  </edoal:inverse>
+                </edoal:Relation>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Instance rdf:about="http://taxref.mnhn.fr/lod/taxon/107851/11.0"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+            <edoal:AttributeValueRestriction>
+              <edoal:onAttribute>
+                <edoal:Relation>
+                  <edoal:inverse>
+                    <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+                  </edoal:inverse>
+                </edoal:Relation>
+              </edoal:onAttribute>
+              <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+              <edoal:value>
+                <edoal:Instance rdf:about="http://taxref.mnhn.fr/lod/name/621087"/>
+              </edoal:value>
+            </edoal:AttributeValueRestriction>
+          </edoal:or>
+        </edoal:Class>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/division"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Angiosperms"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasGeoSpeciesPage"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4117647058823529</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Person"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://aims.fao.org/aos/agrovoc/c_5435"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Person"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://aims.fao.org/aos/agrovoc/c_5435"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Poales"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Poales"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Poales"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inOrder"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/order"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Poales"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasOrderName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Poales"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/division"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Flowering_plant"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasPhylumName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Magnoliophyta"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/division"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Flowering_plant"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasGeoSpeciesPage"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://taxref.mnhn.fr/lod/taxrank/Genus"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Agent"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocotyledon"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inClass"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocotyledon"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocotyledon"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasClassName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Liliopsida"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P225c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P225c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocotyledons"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasClassName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocotyledons"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inClass"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Species"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#isExpectedIn"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8333333333333334</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Species"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasGeoSpeciesPage"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8823529411764706</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://dbpedia.org/ontology/Species"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://purl.org/dc/terms/identifier"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://rdf.geospecies.org/ont/geospecies#SpeciesConcept"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/binomial"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocots"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inClass"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocots"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Monocots"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasClassName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+            <edoal:Relation rdf:about="http://rdfs.org/ns/void#vocabulary"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasRank"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://xmlns.com/foaf/0.1/page"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isSynonymOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+              </edoal:inverse>
+            </edoal:Relation>
+            <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://dbpedia.org/ontology/wikiPageRedirects"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://purl.uniprot.org/core/rank"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inKingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7777777777777778</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/kingdom"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasKingdomName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P373c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://rs.tdwg.org/dwc/terms/scientificName"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://www.wikidata.org/entity/P373c"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasITIS"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasClassName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2008/05/skos-xl#prefLabel"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8888888888888864</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasUUID"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8571428571428572</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasKingdomName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Plantae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9868799603174595</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasFamilyName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Poaceae"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasOrderName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Poales"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://purl.uniprot.org/core/rank"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Melena (planta)"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://www.wikidata.org/entity/Q756"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://taxref.mnhn.fr/lod/property/isReferenceNameOf"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasClassName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#inClass"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://dbpedia.org/ontology/class"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://dbpedia.org/resource/Commelinids"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://rdf.geospecies.org/ont/geospecies#hasCommonName"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Literal edoal:string="Common Bent"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9166666666666666</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

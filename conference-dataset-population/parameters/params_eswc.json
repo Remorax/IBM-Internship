@@ -1,0 +1,36 @@
+{
+"mapping":"true",
+"ontologies":[
+{
+	"name" : "cmt",
+	"instance_prefix" : "http://cmt-instances#",
+	"conference_file_path" : "data_files/eswc_conference.json",
+	"endpoint":"http://localhost:3030/cmt_eswc/"
+  },
+{ 
+	"name" : "conference",
+	"instance_prefix" : "http://conference-instances#",
+	"conference_file_path" : "data_files/eswc_conference.json",
+	"endpoint":"http://localhost:3030/conference_eswc/"
+  },
+  { 
+	"name" : "confOf",
+	"instance_prefix" : "http://confOf-instances#",
+	"conference_file_path" : "data_files/eswc_conference.json",
+	"endpoint":"http://localhost:3030/confOf_eswc/"
+  },
+  { 
+	"name" : "edas",
+	"instance_prefix" : "http://edas-instances#",
+	"conference_file_path" : "data_files/eswc_conference.json",
+	"endpoint":"http://localhost:3030/edas_eswc/"
+  },
+  { 
+	"name" : "ekaw",
+	"instance_prefix" : "http://ekaw-instances#",
+	"conference_file_path" : "data_files/eswc_conference.json",
+	"endpoint":"http://localhost:3030/ekaw_eswc/"
+  }
+
+]
+}

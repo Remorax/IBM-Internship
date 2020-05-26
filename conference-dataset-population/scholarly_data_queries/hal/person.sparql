@@ -1,0 +1,12 @@
+prefix hal:<http://data.archives-ouvertes.fr/schema/>
+prefix foaf:<http://xmlns.com/foaf/0.1/>
+
+
+select distinct ?person ?name ?fname ?lname where {
+?person a foaf:Person.
+?person foaf:name ?name.
+?person foaf:firstName ?fname.
+?person foaf:familyName ?lname.
+} 
+order by ?person
+LIMIT {{numPerson}}

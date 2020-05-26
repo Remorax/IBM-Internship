@@ -1,0 +1,12 @@
+PREFIX person: <https://w3id.org/scholarlydata/person/>
+PREFIX conf: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?orgname
+WHERE{?x a conf:Organisation.
+?x rdfs:label ?orgname
+}
+ORDER BY ?orgname
+limit {{numOrganisation}}
+offset {{offsetOrganisation}}

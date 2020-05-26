@@ -1,0 +1,453 @@
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_Trip .
+}
+WHERE {
+?s rdf:type ns1:Excursion .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:reviewerOfPaper ?o .
+}
+WHERE {
+?s ns1:isReviewing ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Research_Topic .
+}
+WHERE {
+?s rdf:type ns1:Topic .
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Workshop .
+}
+WHERE {
+?s rdf:type ns1:Workshop .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Session_Chair .
+}
+WHERE {
+?s rdf:type ns1:SessionChair .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Paper_Author .
+}
+WHERE {
+?s rdf:type ns1:Author .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Rejected_Paper .
+}
+WHERE {
+?s rdf:type ns1:RejectedPaper .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Person .
+}
+WHERE {
+?s rdf:type ns1:Person .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Review .
+}
+WHERE {
+?s rdf:type ns1:Review .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Individual_Presentation .
+}
+WHERE {
+?s rdf:type ns1:PaperPresentation .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Document .
+}
+WHERE {
+?s rdf:type ns1:Document .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Social_Event .
+}
+WHERE {
+?s rdf:type ns1:SocialEvent .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:heldIn ?o .
+}
+WHERE {
+?s ns1:hasLocation ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Paper_Author .
+?s ns0:authorOf ?o .
+?o rdf:type ns0:Paper .
+}
+WHERE {
+?s ns1:hasRelatedPaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:authorOf ?o .
+}
+WHERE {
+?s ns1:hasRelatedPaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_Session .
+}
+WHERE {
+?s rdf:type ns1:ConferenceSession .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_Banquet .
+}
+WHERE {
+?s rdf:type ns1:ConferenceDinner .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:hasReviewer ?o .
+}
+WHERE {
+?s ns1:isReviewedBy ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:locationOf ?o .
+}
+WHERE {
+?s ns1:isLocationOf ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Event .
+}
+WHERE {
+{
+?s rdf:type ns1:Conference .
+} UNION 
+{
+?s rdf:type ns1:ConferenceEvent .
+} UNION 
+{
+?s rdf:type ns1:ConferenceSession .
+}
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Paper .
+}
+WHERE {
+?s rdf:type ns1:Paper .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Accepted_Paper .
+?s ns0:paperPresentedAs ?o .
+}
+WHERE {
+?s ns1:relatedToEvent ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:paperPresentedAs ?o .
+}
+WHERE {
+?s ns1:relatedToEvent ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Location .
+}
+WHERE {
+?s rdf:type ns1:Place .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:presentationOfPaper ?o .
+?o rdf:type ns0:Accepted_Paper .
+}
+WHERE {
+?s ns1:relatedToPaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:presentationOfPaper ?o .
+}
+WHERE {
+?s ns1:relatedToPaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Accepted_Paper .
+}
+WHERE {
+?s rdf:type ns1:AcceptedPaper .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Assigned_Paper .
+}
+WHERE {
+?s ns1:isReviewedBy ?o2 .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Academic_Institution .
+}
+WHERE {
+?s rdf:type ns1:AcademiaOrganization .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Scientific_Event .
+}
+WHERE {
+{
+?s rdf:type ns1:Conference .
+} UNION 
+{
+?s rdf:type ns1:AcademicEvent .
+} UNION 
+{
+?s rdf:type ns1:ConferenceSession .
+}
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:paperInVolume _:o2 .
+_:o2 rdf:type ns0:Conference_Proceedings .
+}
+WHERE {
+?s rdf:type ns1:PublishedPaper .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_Participant .
+}
+WHERE {
+?s rdf:type ns1:Attendee .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Conference .
+}
+WHERE {
+?s rdf:type ns1:Conference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s ns0:writtenBy ?o .
+}
+WHERE {
+?s ns1:isWrittenBy ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Paper .
+?s ns0:writtenBy ?o .
+?o rdf:type ns0:Paper_Author .
+}
+WHERE {
+?s ns1:isWrittenBy ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Organisation .
+}
+WHERE {
+?s rdf:type ns1:Organization .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Programme_Brochure .
+}
+WHERE {
+?s rdf:type ns1:Programme .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://ekaw#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns1:<http://edas#>
+CONSTRUCT {
+?s rdf:type ns0:Possible_Reviewer .
+}
+WHERE {
+{
+?s rdf:type ns1:ConferenceChair .
+} UNION 
+{
+?s rdf:type ns1:Reviewer .
+} UNION 
+{
+?s rdf:type ns1:SessionChair .
+} UNION 
+{
+?s rdf:type ns1:TPCMember .
+}
+}
+

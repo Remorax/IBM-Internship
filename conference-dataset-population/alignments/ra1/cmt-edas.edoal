@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY edas "http://edas#">
+<!ENTITY ekaw "http://ekaw#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY proton "http://proton.semanticweb.org/">
+<!ENTITY edoal "http://ns.inria.org/edoal/1.0/#">
+]>
+
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+  xml:base="http://edas-ekaw/alignment/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+  xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:edas="http://edas#" 
+  xmlns:ekaw="http://ekaw#" 
+  xmlns:proton="http://proton.semanticweb.org/" 
+  xmlns:edoal="http://ns.inria.org/edoal/1.0/#">
+
+				<Alignment>
+				<xml>yes</xml>
+				 <level>2EDOAL</level>
+				<type>??</type>
+				
+		    <onto1>
+      <Ontology rdf:about="http://cmt">
+        <formalism>
+          <Formalism align:uri="http://www.w3.org/TR/owl-guide/" align:name="owl" />
+        </formalism>
+      </Ontology>
+    </onto1>
+    <onto2>
+      <Ontology rdf:about="http://edas">
+        <formalism>
+          <Formalism align:uri="http://www.w3.org/TR/owl-guide/" align:name="owl" />
+        </formalism>
+      </Ontology>
+    </onto2>
+							<map>
+								<Cell cid='1'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Person'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Person'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='2'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Conference'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Conference'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='3'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Author'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Author'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='4'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Reviewer'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Reviewer'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='5'>
+									<entity1>
+									<edoal:Relation rdf:about='http://cmt#hasConferenceMember'/>
+									</entity1>
+									<entity2>
+									<edoal:Relation rdf:about='http://edas#hasMember'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='6'>
+									<entity1>
+									<edoal:Relation rdf:about='http://cmt#memberOfConference'/>
+									</entity1>
+									<entity2>
+									<edoal:Relation rdf:about='http://edas#isMemberOf'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='7'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#ConferenceChair'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#ConferenceChair'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='8'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Review'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Review'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='9'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Document'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Document'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='10'>
+									<entity1>
+									<edoal:Class rdf:about='http://cmt#Paper'/>
+									</entity1>
+									<entity2>
+									<edoal:Class rdf:about='http://edas#Paper'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='11'>
+									<entity1>
+									<edoal:Relation rdf:about='http://cmt#hasAuthor'/>
+									</entity1>
+									<entity2>
+									<edoal:Relation rdf:about='http://edas#isWrittenBy'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='12'>
+									<entity1>
+									<edoal:Relation rdf:about='http://cmt#hasBeenAssigned'/>
+									</entity1>
+									<entity2>
+									<edoal:Relation rdf:about='http://edas#isReviewing'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							<map>
+								<Cell cid='13'>
+									<entity1>
+									<edoal:Relation rdf:about='http://cmt#assignedTo'/>
+									</entity1>
+									<entity2>
+									<edoal:Relation rdf:about='http://edas#isReviewedBy'/>
+									</entity2>
+									<measure rdf:datatype='&xsd;float'>1.0</measure>
+									<relation>=</relation>
+								</Cell>
+							</map>
+							</Alignment>
+	</rdf:RDF>

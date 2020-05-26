@@ -1,0 +1,8 @@
+PREFIX person: <https://w3id.org/scholarlydata/person/>
+PREFIX conf: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#>
+SELECT DISTINCT ?y
+WHERE{
+?x <http://purl.org/dc/elements/1.1/subject> ?y
+
+}
+

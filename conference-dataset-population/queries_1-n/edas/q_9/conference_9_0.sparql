@@ -1,0 +1,7 @@
+SELECT distinct ?s WHERE {  
+?s <http://conference#gives_presentations> ?o2 . 
+minus{
+?o2 a <http://conference#Invited_talk> .
+}
+
+ }

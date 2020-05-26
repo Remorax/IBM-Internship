@@ -1,0 +1,988 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:edoal='http://ns.inria.org/edoal/1.0/#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>2EDOAL</level>
+  <type>**</type>
+  <onto1>
+    <Ontology rdf:about="http://localhost:3030/confOf_eswc/">
+      <location>http://localhost:3030/confOf_eswc/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://localhost:3030/cmt_eswc/">
+      <location>http://localhost:3030/cmt_eswc/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Event"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#memberOfConference"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writtenBy"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://cmt#co-writePaper"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writtenBy"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://cmt#markConflictOfInterest"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writtenBy"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://cmt#hasCo-author"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writtenBy"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://cmt#hasAuthor"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Participant"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Co-author"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.4444444444444444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Conference"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#hasConferenceMember"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#ConferenceMember"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Conference"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#memberOfConference"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#ConferenceMember"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Conference"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Conference"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#has_title"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://cmt#name"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Chair_PC"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Chairman"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.625</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Paper"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#writePaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9111111111111112</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Paper"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#submitPaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8589898989898991</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Paper"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#readPaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9627459954233409</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Paper"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Paper"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Paper"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#paperID"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7142857142857143</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Paper"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#rejectPaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8545454545454547</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Person"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Person"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Person"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#assignReviewer"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Person"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Person"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#assignedByAdministrator"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Person"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#dealsWith"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://cmt#hasSubjectArea"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#hasBeenAssigned"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#hasCo-author"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#readByReviewer"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#writePaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#readPaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#hasAuthor"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#assignedTo"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8611111111111109</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#co-writePaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#readByMeta-Reviewer"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.861111111111111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Contribution"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#markConflictOfInterest"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8611111111111109</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Poster"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#acceptedBy"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Poster"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#markConflictOfInterest"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Poster"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#co-writePaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Poster"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#acceptPaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Poster"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#submitPaper"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Poster"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#hasCo-author"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#User"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#reviewes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:and rdf:parseType="Collection">
+            <edoal:RelationDomainRestriction>
+              <edoal:class>
+                <edoal:Class rdf:about="http://cmt#Reviewer"/>
+              </edoal:class>
+            </edoal:RelationDomainRestriction>
+            <edoal:Relation rdf:about="http://cmt#hasBeenAssigned"/>
+          </edoal:and>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#reviewes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:and rdf:parseType="Collection">
+            <edoal:RelationDomainRestriction>
+              <edoal:class>
+                <edoal:Class rdf:about="http://cmt#Reviewer"/>
+              </edoal:class>
+            </edoal:RelationDomainRestriction>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#readByReviewer"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:and>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#reviewes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:and rdf:parseType="Collection">
+            <edoal:RelationDomainRestriction>
+              <edoal:class>
+                <edoal:Class rdf:about="http://cmt#Reviewer"/>
+              </edoal:class>
+            </edoal:RelationDomainRestriction>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#readByMeta-Reviewer"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:and>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://cmt#hasAuthor"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://cmt#markConflictOfInterest"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://cmt#co-writePaper"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://confOf#writes"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:inverse>
+            <edoal:Relation rdf:about="http://cmt#hasCo-author"/>
+          </edoal:inverse>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Administrator"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#assignedByAdministrator"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Co-author"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Administrator"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Administrator"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Member_PC"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Reviewer"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Member_PC"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://cmt#writeReview"/>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Review"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.75</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Member_PC"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeDomainRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#writtenBy"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:exists>
+            <edoal:Class rdf:about="http://cmt#Review"/>
+          </edoal:exists>
+        </edoal:AttributeDomainRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.75</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Author"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://cmt#hasAuthor"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6666666666666667</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Author"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Author"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://confOf#Author"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://cmt#Co-author"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

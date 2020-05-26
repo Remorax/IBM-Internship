@@ -1,0 +1,236 @@
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:reviewes ?o .
+}
+WHERE {
+?s ns1:readPaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:writes ?o .
+}
+WHERE {
+?s ns1:writePaper ?o .
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Chair_PC .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommitteeChair .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:writtenBy ?o .
+}
+WHERE {
+?s ns1:hasAuthor ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Working_event .
+}
+WHERE {
+?s rdf:type ns1:Conference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Event .
+}
+WHERE {
+?s rdf:type ns1:Conference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Conference .
+}
+WHERE {
+?s rdf:type ns1:Conference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?o ns0:reviewes ?s .
+}
+WHERE {
+?s ns1:readByReviewer ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:contactEmail ?o .
+}
+WHERE {
+?s ns1:hasAuthor ?o2 .
+?o2 ns1:email ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:hasTitle ?o .
+}
+WHERE {
+?s ns1:title ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Administrator .
+}
+WHERE {
+?s rdf:type ns1:Administrator .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Contribution .
+}
+WHERE {
+?s rdf:type ns1:Paper .
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Person .
+}
+WHERE {
+?s rdf:type ns1:Person .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Author .
+}
+WHERE {
+?s rdf:type ns1:Author .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Participant .
+}
+WHERE {
+?s rdf:type ns1:ConferenceMember .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:hasEmail ?o .
+}
+WHERE {
+?s ns1:email ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Topic .
+}
+WHERE {
+?s rdf:type ns1:SubjectArea .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Member_PC .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommitteeMember .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:has_title ?o .
+}
+WHERE {
+?s ns1:name ?o .
+?s rdf:type ns1:Conference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s rdf:type ns0:Paper .
+}
+WHERE {
+?s rdf:type ns1:PaperFullVersion .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX ns0:<http://confOf#>
+CONSTRUCT {
+?s ns0:dealsWith ?o .
+}
+WHERE {
+?s ns1:hasSubjectArea ?o .
+}
+
+

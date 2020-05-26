@@ -1,0 +1,53 @@
+q_44.sparql,?s  {   ?s  <http://edas#AcademiaOrganization> .    } ,confOf,ekaw,,
+q_56.sparql,?s  {   ?s  <http://edas#AcademicEvent> .    } ,conference,ekaw,confOf,
+q_1.sparql,?s  {   ?s  <http://edas#AcceptedPaper> .    } ,ekaw,cmt,conference,
+q_41.sparql,?s  {   ?s  <http://edas#Attendee> .    } ,confOf,conference,ekaw,
+q_25.sparql,?s  {   ?s  <http://edas#Author> .    } ,confOf,ekaw,conference,cmt
+q_38.sparql,?s  {   ?s  <http://edas#Conference> .    } ,confOf,ekaw,cmt,conference
+q_53.sparql,?s  {   ?s  <http://edas#ConferenceChair> .    } ,cmt,,,
+q_6.sparql,?s  {   ?s  <http://edas#ConferenceDinner> .    } ,confOf,ekaw,,
+q_51.sparql,?s  {   ?s  <http://edas#ConferenceEvent> .    } ,confOf,ekaw,conference,
+q_0.sparql,?s  {   ?s  <http://edas#Document> .    } ,conference,ekaw,confOf,cmt
+q_32.sparql,?s  {   ?s  <http://edas#Excursion> .    } ,ekaw,confOf,,
+q_54.sparql,?s  {   ?s  <http://edas#IndustryOrganization> .    } ,confOf,,,
+q_13.sparql,?s  {   ?s  <http://edas#NonAcademicEvent> .    } ,confOf,ekaw,,
+q_3.sparql,?s  {   ?s  <http://edas#Organization> .    } ,ekaw,conference,confOf,
+q_24.sparql,?s  {   ?s  <http://edas#Paper> .    } ,conference,ekaw,confOf,cmt
+q_5.sparql,?s  {   ?s  <http://edas#PaperPresentation> .    } ,ekaw,conference,,
+q_28.sparql,?s  {   ?s  <http://edas#Person> .    } ,conference,ekaw,cmt,confOf
+q_15.sparql,?s  {   ?s  <http://edas#Place> .    } ,ekaw,,,
+q_47.sparql,?s  {   ?s  <http://edas#PublishedPaper> .    } ,ekaw,conference,,
+q_33.sparql,?s  {   ?s  <http://edas#Reception> .    } ,confOf,,,
+q_31.sparql,?s  {   ?s  <http://edas#RejectedPaper> .    } ,cmt,ekaw,conference,
+q_42.sparql,?s  {   ?s  <http://edas#Review> .    } ,ekaw,conference,cmt,
+q_34.sparql,?s  {   ?s  <http://edas#Reviewer> .    } ,confOf,cmt,conference,ekaw
+q_36.sparql,?s  {   ?s  <http://edas#SocialEvent> .    } ,ekaw,confOf,,
+q_29.sparql,?s  {   ?s  <http://edas#Topic> .    } ,conference,cmt,confOf,ekaw
+q_46.sparql,?s  {   ?s  <http://edas#Workshop> .    } ,conference,confOf,ekaw,
+q_8.sparql,?s ?o  {   ?s <http://edas#endDate> ?o .    } ,confOf,conference,,
+q_48.sparql,?s ?o  {   ?s <http://edas#hasFirstName> ?o .    } ,confOf,conference,,
+q_55.sparql,?s ?o  {   ?s <http://edas#hasLastName> ?o .    } ,confOf,conference,,
+q_43.sparql,?s ?o  {   ?s <http://edas#hasLocation> ?o .    } ,ekaw,,,
+q_49.sparql,?s ?o  {   ?s <http://edas#hasMember> ?o .    } ,cmt,,,
+q_40.sparql,?s ?o  {   ?s <http://edas#hasName> ?o .    } ,confOf,cmt,conference,ekaw
+q_59.sparql,?s ?o  {   ?s <http://edas#hasRelatedDocument> ?o .    } ,cmt,ekaw,conference,
+q_58.sparql,?s ?o  {   ?s <http://edas#hasRelatedPaper> ?o .    } ,confOf,conference,cmt,ekaw
+q_30.sparql,?s ?o  {   ?s <http://edas#hasTopic> ?o .    } ,confOf,cmt,ekaw,
+q_21.sparql,?s ?o  {   ?s <http://edas#isLocationOf> ?o .    } ,ekaw,,,
+q_16.sparql,?s ?o  {   ?s <http://edas#isMemberOf> ?o .    } ,cmt,,,
+q_45.sparql,?s ?o  {   ?s <http://edas#isReviewedBy> ?o .    } ,conference,ekaw,cmt,confOf
+q_18.sparql,?s ?o  {   ?s <http://edas#isReviewing> ?o .    } ,cmt,ekaw,conference,confOf
+q_7.sparql,?s ?o  {   ?s <http://edas#isTopicOf> ?o .    } ,confOf,cmt,ekaw,
+q_57.sparql,?s ?o  {   ?s <http://edas#isWrittenBy> ?o .    } ,confOf,ekaw,conference,cmt
+q_22.sparql,?s ?o  {   ?s <http://edas#manuscriptDueOn> ?o .    } ,conference,confOf,,
+q_37.sparql,?s ?o  {   ?s <http://edas#paperDueOn> ?o .    } ,conference,confOf,,
+q_60.sparql,?s ?o  {   ?s <http://edas#registrationDueOn> ?o .    } ,confOf,,,
+q_50.sparql,?s ?o  {   ?s <http://edas#relatedToEvent> ?o .    } ,ekaw,,,
+q_17.sparql,?s ?o  {   ?s <http://edas#relatedToPaper> ?o .    } ,ekaw,,,
+q_12.sparql,?s ?o  {   ?s <http://edas#relatesTo> ?o .    } ,cmt,ekaw,conference,
+q_39.sparql,?s ?o  {   ?s <http://edas#startDate> ?o .    } ,confOf,conference,cmt,
+2,http://edas#RatedPapers,ekaw,conference,cmt,
+4,http://edas#DiningPlace,ekaw,,,
+9,http://edas#Presenter,conference,ekaw,,
+11,http://edas#hasStartDateTime,confOf,,,
+10,http://edas#hasEndDateTime,confOf,,,

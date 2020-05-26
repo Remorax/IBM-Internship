@@ -1,0 +1,778 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Paper 4 (Research track) - 2018 ESWC-Conferences</title>
+<style type="text/css">
+#fancybox-close{right:-15px;top:-15px}
+div#fancybox-content{border-color:#FFFFFF}
+div#fancybox-title{background-color:#FFFFFF}
+div#fancybox-outer{background-color:#FFFFFF}
+div#fancybox-title-inside{color:#333333}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://2018.eswc-conferences.org/paper_4/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paper 4 (Research track) - 2018 ESWC-Conferences" />
+<meta property="og:description" content="Modeling Relational Data with Graph Convolutional Networks Author(s): Michael Schlichtkrull, Thomas Kipf, Peter Bloem, Rianne van den Berg, Ivan Titov, Max Welling Full text: preprint Abstract: Knowledge graphs enable a wide variety of applications, including question answering and information retrieval. Despite the great effort invested in their creation and maintenance, even the largest (e.g., Yago, &hellip;" />
+<meta property="og:url" content="https://2018.eswc-conferences.org/paper_4/" />
+<meta property="og:site_name" content="2018 ESWC-Conferences" />
+<meta property="article:section" content="Paper" />
+<meta property="article:published_time" content="2018-02-14T23:25:19+02:00" />
+<meta property="article:modified_time" content="2018-05-02T23:23:52+02:00" />
+<meta property="og:updated_time" content="2018-05-02T23:23:52+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Modeling Relational Data with Graph Convolutional Networks Author(s): Michael Schlichtkrull, Thomas Kipf, Peter Bloem, Rianne van den Berg, Ivan Titov, Max Welling Full text: preprint Abstract: Knowledge graphs enable a wide variety of applications, including question answering and information retrieval. Despite the great effort invested in their creation and maintenance, even the largest (e.g., Yago, [&hellip;]" />
+<meta name="twitter:title" content="Paper 4 (Research track) - 2018 ESWC-Conferences" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Feed" href="https://2018.eswc-conferences.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Comments Feed" href="https://2018.eswc-conferences.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Paper 4 (Research track) Comments Feed" href="https://2018.eswc-conferences.org/paper_4/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2018.eswc-conferences.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='bxslider-css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-fa-icon-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mptt-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/mp-timetable/media/css/style.css?ver=2.1.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-base-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.11.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-10e07368e248-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-10e07368e248.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-d53a833a6a55-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-d53a833a6a55.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dpsp-frontend-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/8vb2po4n/a0bfa.css" media="all"/>
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;subset&#038;ver=4.9.5' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upw_theme_standard-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ebs_dynamic_css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/786bu6m3/a0bxp.css" media="all"/>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/13n24v4l/a0bfb.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/js/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.5'></script> -->
+<link rel='https://api.w.org/' href='https://2018.eswc-conferences.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2018.eswc-conferences.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2018.eswc-conferences.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://2018.eswc-conferences.org/?p=1167' />
+<link rel="alternate" type="application/json+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_4%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_4%2F&#038;format=xml" />
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+var arr = jQuery("a.fancybox");
+jQuery.each(arr, function() {
+var title = jQuery(this).children("img").attr("title");
+jQuery(this).attr('title',title);
+})
+}
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+'cyclic': false,
+'autoScale': true,
+'padding': 10,
+'opacity': true,
+'speedIn': 500,
+'speedOut': 500,
+'changeSpeed': 300,
+'overlayShow': true,
+'overlayOpacity': "0.3",
+'overlayColor': "#666666",
+'titleShow': true,
+'titlePosition': 'inside',
+'enableEscapeButton': true,
+'showCloseButton': true,
+'showNavArrows': true,
+'hideOnOverlayClick': true,
+'hideOnContentClick': false,
+'width': 560,
+'height': 340,
+'transitionIn': "fade",
+'transitionOut': "fade",
+'centerOnScroll': true
+});
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<noscript><style type="text/css">.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:table!important}.mptt-shortcode-wrapper .mptt-shortcode-table .mptt-event-container:hover{height:auto!important;min-height:100%!important}body.mprm_ie .mptt-shortcode-wrapper .mptt-event-container{height:auto!important}@media (max-width:767px){.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:none!important}}</style></noscript><style type="text/css" data-source="Social Pug"></style><meta name="twitter:card" 		content="summary_large_image" /><meta property="og:url"			content="https://2018.eswc-conferences.org/paper_4/" /><meta property="og:type"			content="article" /><meta property="og:title"			content="Paper 4 (Research track)" /><meta property="og:description" 	content="Modeling Relational Data with Graph Convolutional NetworksAuthor(s): Michael Schlichtkrull, Thomas Kipf, Peter Bloem, Rianne van" /><meta property="og:image" 		content="" /><script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var addEvent = function(evt, handler) {
+if (window.addEventListener) {
+document.addEventListener(evt, handler, false);
+} else if (window.attachEvent) {
+document.attachEvent('on' + evt, handler);
+}
+};
+var removeEvent = function(evt, handler) {
+if (window.removeEventListener) {
+document.removeEventListener(evt, handler, false);
+} else if (window.detachEvent) {
+document.detachEvent('on' + evt, handler);
+}
+};
+var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+var logHuman = function() {
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+for (var i = 0; i < evts.length; i++) {
+removeEvent(evts[i], logHuman);
+}
+};
+for (var i = 0; i < evts.length; i++) {
+addEvent(evts[i], logHuman);
+}
+})('//2018.eswc-conferences.org/?wordfence_lh=1&hid=98E64E93182D711E6BF9893F0F74ED6F');
+</script><style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:#1e73be}a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: #b7b7b7;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+.navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #444444; border-color: #444444;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: #444444}.cfa-button {border-color: #444444;}.cfa { background-color: #ffffff; } .cfa-button:hover a {color: #ffffff;}.cfa-text { color: #52b1d9;}.cfa-button {border-color: #52b1d9; color: #52b1d9;}.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: #ffffff;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: #999999;}@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: #999999!important ;} }.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #1e73be;}@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: #1e73be !important; } }.dropdown-menu {background-color: #ffffff;}.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: #1e73be;}.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: #636467;}@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }.entry-content {font-family: Verdana, Geneva;}.entry-content {font-size:15px}.entry-content {font-weight:normal}</style><link rel="pingback" href="https://2018.eswc-conferences.org/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="wp-custom-css">
+.event-description {
+padding-left:10px;
+padding-right:10px;
+}
+@media (min-width: 1200px){
+.container {
+width: 1300px;
+}}
+#2001 {
+font-size: 22px !important;
+}
+.event-title  {
+display: none !important;
+}
+.well {
+padding: 50px;
+}
+#do-etfw-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#recent-comments-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#tp_widget_recent_tweets-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-4 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#media_image-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#sparkling-social-2 {
+margin-top: 5%
+}
+.wp-embed-site-icon {
+width: auto !important;
+}
+.dpsp-share-text {
+margin-top: 10%;
+}
+.ow-button-base a {
+text-align:left;
+}
+.footer-widget-area .widget {
+margin-bottom: 10px;
+}
+.col-md-6 {
+width: 100%;
+}
+.copyright {
+margin-top: 10px;
+float: right;
+text-align: center;
+padding-bottom: 5%;
+}
+#secondary .widget a {
+color: #6ba3d4;
+}
+.post-date {
+color: #999999;
+font-size: 12px;
+}
+.entry-title {
+display:block!important;
+}
+.post-title {
+font-size: 18px;
+font-weight: bold;
+}
+.post-excerpt {
+border-bottom: 1px solid #f2f2f2;
+padding-bottom: 15px;
+}
+#menu-social-items {
+padding-top: 2%;
+}
+#media_image-6 {
+margin-bottom: 2% !important;
+}
+#menu-main-menu {
+background-color: #f3f3f2;
+}
+#post-100 {
+display: none;
+}
+.flex-caption {
+display: none;
+}
+.entry-title {
+display:none;
+}
+#menu-main-menu {
+font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #555555;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+.widget ul li {
+list-style: disc;
+border-bottom: none;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-1167 single-format-standard do-etfw group-blog ">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="https://2018.eswc-conferences.org/"><img src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png"  height="93" width="100" alt="2018 ESWC-Conferences"/></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17 dropdown"><a href="https://2018.eswc-conferences.org/">ESWC 2018 </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://2018.eswc-conferences.org/history/">History</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://2018.eswc-conferences.org/about/">About</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2018.eswc-conferences.org/organizing-committee/">Organizing Committee</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://2018.eswc-conferences.org/subtrack-chairs/">Subtrack Chairs</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://2018.eswc-conferences.org/linked-events/">Linked Events</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://2018.eswc-conferences.org/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1454"><a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)">REGISTRATION</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 dropdown"><a href="https://2018.eswc-conferences.org/important-dates/">CALLS &#038; DATES </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2018.eswc-conferences.org/important-dates/">Important Dates</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://2018.eswc-conferences.org/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://2018.eswc-conferences.org/call-for-workshops/">Call for Workshops</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://2018.eswc-conferences.org/call-phd-symposium/">Call for PhD Symposium</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://2018.eswc-conferences.org/posters-and-demos/">Posters and Demos</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://2018.eswc-conferences.org/call-for-tutorials/">Call for Tutorials</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://2018.eswc-conferences.org/call-for-challenges/">Call for Challenges</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://2018.eswc-conferences.org/in-use-track/">In-Use Track</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://2018.eswc-conferences.org/industry-track/">Industry Track</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://2018.eswc-conferences.org/research-tracks/">Research Tracks</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://2018.eswc-conferences.org/resources-track/">Resources Track</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://2018.eswc-conferences.org/subtracks/">Subtracks</a></li>
+<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://2018.eswc-conferences.org/call-for-project-networking/">Call for Project Networking</a></li>
+</ul>
+</li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131 dropdown"><a href="https://2018.eswc-conferences.org/program/">Program </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://2018.eswc-conferences.org/program/sunday-june-3/">Sunday June 3</a></li>
+<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://2018.eswc-conferences.org/program/monday-june-4/">Monday June 4</a></li>
+<li id="menu-item-2559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2559"><a href="https://2018.eswc-conferences.org/program/tuesday-june-5/">Tuesday June 5</a></li>
+<li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://2018.eswc-conferences.org/program/wednesday-june-6/">Wednesday  June 6</a></li>
+<li id="menu-item-2558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2558"><a href="https://2018.eswc-conferences.org/program/thursday-june-7/">Thursday June 7</a></li>
+<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="https://2018.eswc-conferences.org/program/keynote-speakers/">Keynote Speakers</a></li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://2018.eswc-conferences.org/program/accepted-papers/">Accepted Papers</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="https://2018.eswc-conferences.org/program/submissions/">Submissions</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://2018.eswc-conferences.org/program/tutorials-workshops/">Tutorials &#038; Workshops</a></li>
+<li id="menu-item-1492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1492"><a href="https://2018.eswc-conferences.org/program/call-project-networking/">Project Networking Session</a></li>
+</ul>
+</li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://2018.eswc-conferences.org/conference-venue/">Conference Venue</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://2018.eswc-conferences.org/sponsorship/">Sponsorship</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-right">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-1167" class="post-1167 post type-post status-publish format-standard hentry category-paper">
+<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Paper 4 (Research track)</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://2018.eswc-conferences.org/paper_4/" rel="bookmark"><time class="entry-date published" datetime="2018-02-14T23:25:19+00:00">14. February 2018</time><time class="updated" datetime="2018-05-02T23:23:52+00:00">2. May 2018</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://2018.eswc-conferences.org/author/silvio/">Silvio Peroni</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="https://2018.eswc-conferences.org/category/paper/" rel="category tag">Paper</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div about='' rel='rdf:type' resource='fabio:ResearchPaper' prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<div about=''>
+<p><strong property='dcterms:title'>Modeling Relational Data with Graph Convolutional Networks</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='#author-1'>Michael Schlichtkrull</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-2'>Thomas Kipf</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-3'>Peter Bloem</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-4'>Rianne van den Berg</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-5'>Ivan Titov</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-6'>Max Welling</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_4.pdf'>preprint</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract'>Knowledge graphs enable a wide variety of applications, including question answering and information retrieval. Despite the great effort invested in their creation and maintenance, even the largest (e.g., Yago, DBPedia or Wikidata) remain incomplete. We introduce Relational Graph Convolutional Networks (R-GCNs) and apply them to two standard knowledge base completion tasks: Link prediction (recovery of missing facts, i.e. subject-predicate-object triples) and entity classification (recovery of missing entity attributes). R-GCNs are related to a recent class of neural networks operating on graphs, and are developed specifically to handle the highly multi-relational data characteristic of realistic knowledge bases. We demonstrate the effectiveness of R-GCNs as a stand-alone model for entity classification. We further show that factorization models for link prediction such as DistMult can be significantly improved through the use of an R-GCN encoder model to accumulate evidence over multiple inference steps in the graph, demonstrating a large improvement of 29.8% on FB15k-237 over a decoder-only baseline.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>link prediction</span>; <span property='prism:keyword'>neural network</span>; <span property='prism:keyword'>knowledge graph</span>; <span property='prism:keyword'>deep learning</span></p>
+<p><strong>Decision:</strong> <span style='color: green'>accept</span></p>
+<div about='#preprint' rel='cito:isReviewedBy'>
+<div id='review-1' about='#review-1' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='#reviewer-1'property='foaf:name'>Dagmar Gromann</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-1' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) Both the novel method as well as its application tasks are well within the scope of this conference. Categorizing entities into their superordinate classes as well as detecting new relations in knowledge bases are scenarios for the proposed method that are interesting for this community.
+(NOVELTY OF THE PROPOSED SOLUTION) To the best of my knowledge this is the first adaptation f GCNs to the domain of knowledge graphs.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Properties of the proposed solution are fully specified and the paper is technically sound.
+(EVALUATION OF THE STATE-OF-THE-ART) On the entity classification task the proposed solution is compared across four data sets with three other models and on the task of link prediction the comparison is with six other models across two data sets. The chosen reference implementations are state-of-the-art as is the whole evaluation.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) While the model outperformed other implementations on most tasks, other models could perform better on two entity classification data sets. The authors offer a detailed discussion on potential causes and future improvements.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The description allows for an easy reproduction of the proposed method, even though it would be highly appreciated if the authors decided to share their code via a github link in the paper.
+(OVERALL SCORE) SUMMARY
+This very clear and well-written paper proposes the translation of Graph Convolutional Networks (GCNs) to the domain of knowledge graphs in form of modeling relational data, which to the best of my knowledge is a new approach. In contrast to classical GCNs, relation-specific transformations are introduced, i.e., specific to the type of relation and its directionality, which generates a unique neighborhood for each relation type. To share parameters across those neighborhood types, basis matrices and block diagonal constraints are introduced.  
+The main contributions of this paper are the introduction of Relational Graph Convolutional Networks (RGCN), a regularization method that allows for parameter sharing across the model, and a second regularization technique that introduces a sparsity constraint. One further contribution is the demonstration that the proposed RGCN can successfully operate on large relational data sets. 
+The proposed model is tested on an entity classification and a link prediction task and shows a good performance. The evaluation is sound and very thorough in terms of related approaches, baselines and diversity of datasets. Where the model is outperformed by related methods, the authors offer a thorough discussion of potential causes and concrete suggestions for future improvements. 
+STRONG POINTS 
+1) In terms of originality, the application of R-GCNs to knowledge graphs and the two experimental tasks is novel 
+2) Both description and evaluation of the approach are very thorough and clear 
+3) The properties of the model are well situated within related work and clearly explained as well as properly evaluated against similar models in two tasks that are important to this community
+4) Style and structure of this paper are very clear and easy to follow 
+WEAK POINTS
+1) Some design decisions could be discussed in more detail, e.g. number of layers
+QUESTIONS TO AUTHORS 
+1) In the experiments, results with two-layer architectures have been reported. Where deeper architectures tested? Would be interesting to know whether a higher number of layers made a difference. 
+2) Could you explain the impact and functioning of the self-connection of a relation type to each node in more detail? 
+3) Where do the 29.8% outperformance of R-GCN over DistMult come from? Maybe the authors could explain a little where this comes from since I do not find it straightforward to gather that value from the presented table.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-2' about='#review-2' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='#reviewer-2'property='foaf:name'>Martin Giese</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-2' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) Excerpt from the "Overall score" review:
+Large knowledge bases, such as DBPedia, Wikidata and others, are, in spite of focused
+efforts, incomplete, both with respect to entity classification and relations between
+entities. A significant amount of research is being invested in developing methods for
+automatic classification and missing edge detection/insertion in knowledge bases, and
+the authors of this article provide an approach using neural networks for both entity
+classification and missing relations detection in RDF data. Comparison with existing
+benchmarks shows promising results for both tasks.
+(NOVELTY OF THE PROPOSED SOLUTION) Excerpt from the "Overall score" review:
+The proposed solution, dubbed Graph Convolutional Neural Networks (GCN) by the authors,
+is a variant of convolutional neural networks adapted to work directly on graphs with
+vertices and edges. A convolutional neural network makes use of a convolutional filter
+that scans a part of the input at the time, and in the current setup, for each node in
+the graph, the filter provides the node together with its nearest neighbours.
+This allows for a more high-performing solution compared to considering e.g. the full
+graph for each node, with the penalty of having less information to compute with.
+The solution is closely related to several other works, whereof perhaps two of the closest
+are [1] "Embedding entities and relations for learning and inference
+in knowledge bases" by B. Yang et al. (2015) and [2] "Convolutional Neural Networks on
+Graphs with Fast Localized Spectral Filtering" by M. Defferard et al. (2017).
+While [2] also makes use of convolutions, that solution is based on a spectral
+representation of the graph, whereas the article under review works directly on the
+nodes and edges of the graph itself. In [1], they introduce the DistMult scoring
+function, that is used as a part of the missing edge detection of the current article.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The proposed solution is backed by empirical experiments, showing that the solution works and performs either well or best-in-class on commonly accepted benchmarks.
+(EVALUATION OF THE STATE-OF-THE-ART) Excerpt from the "Overall score" review:
+Benchmarking relative to other state of the art classifiers and missing-edge detection
+algorithms shows good or best-in-class results when tested on commonly available and widely
+used benchmark datasets, such as FB15k-237 and WN18.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The article is strong on describing the technicalities involved in the mathematical machinery, but could be better at discussing pros and cons of the proposed solution compared to alternative approaches.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) I cannot find any reference to the solution source code, which I would prefer to be open source for easy validation of results. However, the results are expected to be easily reproducible due to the open nature of the benchmark data sets.
+(OVERALL SCORE) **Short description of the problem tackled in the paper, main contributions, and results**
+Large knowledge bases, such as DBPedia, Wikidata and others, are, in spite of focused 
+efforts, incomplete, both with respect to entity classification and relations between
+entities. A significant amount of research is being invested in developing methods for
+automatic classification and missing edge detection/insertion in knowledge bases, and
+the authors of this article provide an approach using neural networks for both entity 
+classification and missing relations detection in RDF data. Comparison with existing 
+benchmarks shows promising results for both tasks.
+The proposed solution, dubbed Graph Convolutional Networks (GCN) by the authors,
+is a variant of convolutional neural networks adapted to work directly on graphs with
+vertices and edges. A convolutional neural network makes use of a convolutional filter
+that scans a part of the input at the time, and in the current setup, for each node in 
+the graph, the filter provides the node together with its nearest neighbours. 
+This allows for a more high-performing solution compared to considering e.g. the full 
+graph for each node, but with the penalty of having less information to compute with.
+Benchmarking relative to other state of the art classifiers and missing-edge detection
+algorithms shows good or best-in-class results when tested on commonly available and widely
+used benchmark datasets, such as FB15k-237 and WN18. The experimental results are presented 
+in a tabular format which makes it easy to compare towards alternative approaches.
+(Although all of these benchmarks should be considered with a shrewd eye, as pointed out 
+by Kadlec, Bajgar and Kleindienst (2017)). 
+The solution is closely related to several other works, whereof perhaps two of the closest
+are [1] "Embedding entities and relations for learning and inference 
+in knowledge bases" by B. Yang et al. (2015) and [2] "Convolutional Neural Networks on
+Graphs with Fast Localized Spectral Filtering" by M. Defferard et al. (2017).
+While [2] also makes use of convolutions, this solution is based on a spectral
+representation of the graph, whereas the article under review works directly on the
+nodes and edges of the graph itself. In [1], they introduce the DistMult scoring
+function, that is used in the missing edge detection of the current article.
+The article is well written, demonstrates a strong command of the English language,
+and is more or less devoid of spelling errors. The ideas are communicated through
+high level mathematics, relieving the reader from having to know details of e.g.
+TensorFlow to understand the mathematical details of the contribution.
+** Enumerate and explain at least three Strong Points of this work**
+* Novel application of graph convolutional neural networks on RDF data
+* Good benchmark results
+* Clear and easy to understand exposition
+* Part of the novel research being done regarding neural networks on graphs
+** Enumerate and explain at least three  Weak Points of this work** 
+(with comments for improvement):
+* The model only makes use of nearest neighbours, and there are no indications to
+how this can be extended to consider a larger portion of the graph (i.e. making
+the convolution filter wider). In citation graphs, the current node and existing
+citations may be a good basis for detecting missing citations, but for other graph
+structures, such as molecules, the global structure may be of greater importance for
+detection of local properties (features) due to transitive effects on electron 
+distributions, receptor affinity etc. (An alternative hypothesis to why the 
+algorithm performs less than optimal on the MUTAG dataset?)
+* Many details from referenced works, which this solution is based on and uses, 
+are left out. This makes the article harder to read, and more material (formulas) 
+could be concisely in-lined as a courtesy to the reader.
+* The article is rather short on related works, and also on the general subject of
+using neural networks on graphs and relational data. Since the target audience
+are researchers on semantic technologies, which up to now is not dominated by
+neural networks, more context is easily justified.
+* The Results paragraph in Section 5.1 suffers from much lower readability than
+the rest of the article, and could do with some tidying up. Deferring parameter
+settings to a table and providing a more concise description of the results would
+improve this section. Also, in my opinion, too much text is spent on describing
+results regarding FB15k, which the authors themselves say is of less interest
+due to a known flaw in many of the existing benchmarks. I would rather see that
+focus was placed on the results from FB15k-237, and that, in general, the results
+sections were shortened down.
+One possibility is to factor out some of the details from the empirical evaluations
+and place these in a technical note which is simply referred to.
+* There is a great deal of white-space around tables and figures, that should be
+trimmed away in the name of compactness.
+* I cannot find any reference to the solution source code, which I would prefer
+to be open source for easy validation of results.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-3' about='#review-3' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 3 (by <span typeof='foaf:Person' about='#reviewer-3'property='foaf:name'>Michael Granitzer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-3' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper presents an approach for knowledge base completion, a highly relevant task within the Semantic Web and hence, the paper has a high relevance to ESWC.
+(NOVELTY OF THE PROPOSED SOLUTION) The authors apply the recently introduced Graph Convolutional Networks (GCNs) on knowledge base completion. While this in itself would not justify the novelty, they adapt and extend the GCNs in an appropriate manner, therefore adding novel parts.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) While the chosen route seems meaningful, the background information and discussion could be extendend for some parts. This concerns in particular the choice of the two regularizers. See als "Demonstration and Discussion of the Properties of the Proposed Approach".
+(EVALUATION OF THE STATE-OF-THE-ART) The work is put well into the context of the state-of-the-art: differences and similarities are discussed and comparison takes also place in the evaluation section. Further, issues are addressed were related work might not be perfectly comparable.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) While I generally like the demonstration/discussion of the properties, it could be extended, when it comes to the regularizers. From my point of view, they are at the core of the paper, as this is the part, where the GCNs are extended. Therefore, I would expect a deeper discussion on the background, reasoning and also their properties and influence.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) While a definitive judgment about the reproducibility is only possible after reproduction, the paper seems to contain all the necessary information on the setup, hyperparameters, etc. Also, the datasets used are common for the task. Provision of the evaluation code would be the last detail towards a strong accept on that point.
+(OVERALL SCORE) The paper presents an approach to knowledge base completion, in particular entity classification and link prediction, based on Graph Convolutional Networks (GCNs). GCNs are adapted by introducing to different regularizers, in order to account for realistic knowlegde base properties, i.e. to account for highly multi-relational data.
+Strong Points:
+1) The paper takes a recent approach and applies it to a different domain by adapting/extending it appropriately
+2) Dataset issues/details, which are not "visible from the outside" are discussed and explained in the evaluation section
+3) The paper is well written and contains all the necessary information
+Weak Points:
+1) The core point, i.e. the adaption of GCNs should be discussed more extensively (c.f. previous sections)
+2) Counterpart to SP3: While the paper contains all the necessary information, slightly more explanation would be desirable, in particular in section 2, making the paper more self-contained (it was a bit hard to understand before reading the original GCN paper). An explanatory sentence here and there should suffice already.
+3) A large scale knowledge base (e.g. DBpedia) might be added to the evaluation in order to account for scalability
+I would consider the statement that knowledge bases enable applications such as question answering and information retrieval as a well known fact in the community, which doesn't need to be backed up by so many references. Providing only a few would spare space for more interesting details (see above)</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-4' about='#review-4' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 4 (by <span typeof='foaf:Person' about='#reviewer-4'property='foaf:name'>Steffen Remus</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-4' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper is about entity type classification and link prediction in knowledge bases. Hence, the paper is relevant for ESWC, but it is clearly written for the ML community.
+(NOVELTY OF THE PROPOSED SOLUTION) The proposed approach is an extension to existing Graph Convolutional Networks. It is hard to assess the novelty of this approach. (see my remarks below)
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Scalability seems to be a mayor claim of this paper, but unfortunately I can not find any arguments about runtime or complexity which shows that the approach really scales.
+(EVALUATION OF THE STATE-OF-THE-ART) Comparison to SotA is hard to assess, as several versions of this paper were already published on arXiv and it has already gathered citations which beat the systems performance, e.g. [1].
+[1] Tim Dettmers, Pasquale Minervini, Pontus Stenetorp, Sebastian Riedel. 2017. Convolutional 2D Knowledge Graph Embeddings. arXiv
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The paper is very well written, but I would have wished to see some examples and some error analysis, i.e. what works, what not, and why. The related work section is very short and kind of misses out on the fact that there exists other approaches than tensor factorization techniques for knowledge-graph completion, e.g. see [2]. Adding a couple of sentences would definitely improve the paper for ESWC.
+[2] Victor Martinez, Fernando Berzal, and Juan-Carlos Cubero. 2017. A Survey of Link Prediction in Complex Networks
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The paper evaluates on standard benchmarks and reports replicated results as well as results taken from other papers systems. Unfortunately there is no source code provided. Maybe the authors will consider providing the source code, since this would further strengthen the paper.
+(OVERALL SCORE) The paper introduces R-CGNs (relational graph convolutional networks) which is an extension to GCNs (graph convolutional networks) and which is explicitly designed to handle highly multi-relational data. The approach is evaluated on entity type classification and link prediction, and shows partial improvements over some compared systems.
+SPs:
+- The paper is very well written, the equations seem complete and references are sufficient
+- The ideas in the approach are definitely worth publishing
+WPs:
+- The novelty of the approach is hard to assess, since it was previously published on arXiv and already gathered references which beat the systems performance (see my remarks above)
+- Scalability is a major claim, but I cannot find any backing remarks about the complexity or the runtime of the approach, neither qualitative (by mentioning the complexity class) or quantitative (by timing the experiments).
+- In order to provide proper replicability, some accompanying source code would be helpful
+My mayor concern lies in the comparison to SotA and the assessment of the novelty of the system, given that it was first published in March 2017 on arXiv, and already went through several revisions, and eventually also already gathered some references. I'm not against republishing arXiv papers on conferences -- and the idea of the paper is worth publishing in my opinion -- but the time that has passed now since first publishing is quite long already.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='metareview' about='#metareview' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Metareview by <span typeof='foaf:Person' about='#metareviewer' property='foaf:name'>Achim Rettinge</span></strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-meta' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>The authors present an extension of Graph Convolutional Networks (GCNs) to knowledge graphs. All reviewers agree that the work is relevant and novel. Only slight doubts remain concerning the reproducibility and demonstrations of the empirical results. The authors addressed them in their response and are requested to do so in the final version. Therefore, we recommend to accept the work.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint'/></div>
+</div>
+</div>
+</div>
+<p class="dpsp-share-text">Share on</p><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content"><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_4%2F&t=Paper+4+%28Research+track%29" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Paper+4+%28Research+track%29&url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_4%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_4%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_4%2F&title=Paper+4+%28Research+track%29&mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/paper_4/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://2018.eswc-conferences.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1167' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e35b9fe845" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="236"/></p>			</form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://2018.eswc-conferences.org/paper_3/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">Paper 3 (Research track)</span></a></div><div class="nav-next"><a href="https://2018.eswc-conferences.org/paper_6/" rel="next"><span class="post-title">Paper 6 (Research track) <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">Sponsors and Supporters</h3>			<div class="textwidget"><p><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4"><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/STI-IBK-Logo-NEW-RED-01.png" alt="STI Innsbruck" title="STI Innsbruck"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/logo_farbe.png" alt="Metaphacts" title="Metaphacts"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/PoolParty-Logo-2015.jpg" alt="Semantic Web Company" title="Semantic Web Company"></div></a></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/OntotextAD.jpg" alt="Ontotext AD" title="Ontotext AD" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/Bosch_Invented_for_life.jpg" alt="Bosch Group" title="Bosch Group" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li></ul><br />
+<a style="text-decoration: underline;" href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></p>
+</div>
+</aside><aside id="do-etfw-2" class="widget widget-do-etfw">					<h3 class="widget-title">Recent Tweets</h3>		
+<a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/eswc_conf">Tweets by @eswc_conf</a>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-368">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-367">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Bakerally Noorani</span> on <a href="https://2018.eswc-conferences.org/paper_35/#comment-354">Paper 35 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-349">Paper 162 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-348">Paper 162 (Research track)</a></li></ul></aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">Proceedings published by</h3>			<div class="textwidget"><p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-195" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/Springer-1.jpg" alt="" width="192" height="61" /></a></p>
+<p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-197" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/LNCS-Logo.jpg" alt="" width="192" height="71" /></a></p>
+</div>
+</aside><aside id="media_image-5" class="widget widget_media_image"><h3 class="widget-title">Brought to you by</h3><a href="https://www.sti2.org/"><img width="192" height="47" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/sti-logo-1.jpg" class="image wp-image-194  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a></aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+<div class="footer-widget-area">
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sow-button-2" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf2bb;" ></span>
+REGISTRATION		</span>
+</a>
+</div>
+</div></div><div id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/program/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf073;" ></span>
+PROGRAM		</span>
+</a>
+</div>
+</div></div><div id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/important-dates/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf12a;" ></span>
+IMPORTANT DATES		</span>
+</a>
+</div>
+</div></div><div id="sow-button-5" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-d53a833a6a55"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/contact/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" ></span>
+Contact		</span>
+</a>
+</div>
+</div></div><div id="sparkling-social-2" class="widget sparkling-social"><h3 class="widgettitle">Follow us</h3>
+<!-- social icons -->
+<div class="social-icons sticky-sidebar-social">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>
+</div><!-- end social icons --></div>		</div><!-- .widget-area .first -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sticky-posts-2" class="widget widget_ultimate_posts"><h3 class="widgettitle">ESWC 2018 – NEWS</h3>
+<ul>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_72/" title="Paper 72 (Research track)">
+Paper 72 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Processing incoherent open government data- A case-study about Romanian public...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_5/" title="Paper 5 (Research track)">
+Paper 5 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Price Sharing for Streaming Data- A Novel Approach for Funding...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_227/" title="Paper 227 (Research track)">
+Paper 227 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:29          </p>
+<p class="post-excerpt">Dynamic Tailoring of RETE Networks in Incremental Scenarios Author(s): William...</p>
+</div>
+</li>
+</ul>
+</div>		</div><!-- .widget-area .second -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="text-2" class="widget widget_text"><h3 class="widgettitle">Extended Semantic Web Conference ESWC</h3>			<div class="textwidget"><p>The <a href="https://www.eswc-conferences.org/">ESWC</a> is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.</p>
+</div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p>&nbsp;<br />
+&nbsp;</p>
+</div>
+</div><div id="media_image-9" class="widget widget_media_image"><img width="940" height="380" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png" class="image wp-image-26  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png 940w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-300x121.png 300w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-768x310.png 768w" sizes="(max-width: 940px) 100vw, 940px" /></div>		</div><!-- .widget-area .third -->
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>					<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Copyright &copy; 2010 - 2018 <a href="https://www.sti2.org">STI International</a>, All rights reserved.					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "Event",
+"name": "ESWC 2018",
+"url": "https://2018.eswc-conferences.org/",
+"image": "https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png",
+"description": "The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.",
+"startDate": "2018-06-03T10:00",
+"endDate": "2018-06-07T16:00",
+"location": {
+"@type": "Place",
+"name": "Aldemar Knossos Royal & Royal Villa
+",
+"sameAs": "www.aldemarhotels.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Unnamed Road",
+"addressLocality": "Limenas Hersonissou",
+"addressRegion": "Heraklion",
+"postalCode": "700 14",
+"addressCountry": "Greece"
+}
+},
+"offers": {
+"@type": "Offer",
+"description": "tba",
+"url": "https://2018.eswc-conferences.org/registration/",
+"price": "tba"
+}
+}
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"vertical",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:3000,useCSS:false});jQuery(".kiwi-logo-carousel-sponsors").bxSlider({mode:"vertical",speed:20000,slideMargin:0,infiniteLoop:true,hideControlOnEnd:true,captions:false,ticker:true,tickerHover:true,adaptiveHeight:false,responsive:true,pager:true,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:false,pause:4000,useCSS:false});});</script><!-- <link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/qvh6g585/a0bfa.css" media="all"/>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/2018.eswc-conferences.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/skip-link-focus-fix.min.js?ver=20140222'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script async="async" type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=4.9.5'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.073843955993652 seconds, on 17-05-18 12:20:04 -->

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>http://geo.linkeddata.es/ontology/hydro-ontology.owl</onto1>
+<onto2>http://cegis.usgs.gov/SWO</onto2>
+<uri1>http://geo.linkeddata.es/ontology/hydro-ontology.owl</uri1>
+<uri2>http://cegis.usgs.gov/SWO</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Embalse"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#Reservoir"/>
+		<measure rdf:datatype="xsd:float">0.57</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Masa_de_Hielo"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#IceMass"/>
+		<measure rdf:datatype="xsd:float">0.83</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Cascada"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#Waterfall"/>
+		<measure rdf:datatype="xsd:float">0.57</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Fenómeno_hidrográfico"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#HydrographicFeature"/>
+		<measure rdf:datatype="xsd:float">0.6</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Corriente"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#Flow"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Chorrera"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#Waterfall"/>
+		<measure rdf:datatype="xsd:float">0.77</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Rápido"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#Rapids"/>
+		<measure rdf:datatype="xsd:float">0.77</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Estuario"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#Estuary"/>
+		<measure rdf:datatype="xsd:float">0.77</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://geo.linkeddata.es/ontology/Río"/>
+		<entity2 rdf:resource="http://cegis.usgs.gov/SWO#StreamOrRiver"/>
+		<measure rdf:datatype="xsd:float">0.46</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,14 @@
+PREFIX person: <https://w3id.org/scholarlydata/person/>
+PREFIX conf: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#>
+prefix dcterm:<http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?conf ?confname ?confshortname
+WHERE{
+?conf a conf:Conference.
+?conf conf:name ?confname.
+?conf conf:acronym ?confshortname.
+FILTER(?confname != ?confshortname)
+}
+order by ?conf
+
+limit {{numConf}}

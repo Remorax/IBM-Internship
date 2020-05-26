@@ -1,0 +1,8 @@
+SELECT distinct ?s ?o WHERE {  
+{
+?s <http://cmt#writePaper> ?o .  
+}
+union{
+?s <http://cmt#co-writePaper> ?o .  
+}
+ }

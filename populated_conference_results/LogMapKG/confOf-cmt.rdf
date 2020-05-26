@@ -1,0 +1,4751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>http://confOf</onto1>
+<onto2>http://cmt</onto2>
+<uri1>http://confOf</uri1>
+<uri2>http://cmt</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf#Administrator"/>
+		<entity2 rdf:resource="http://cmt#Administrator"/>
+		<measure rdf:datatype="xsd:float">0.9</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf#Paper"/>
+		<entity2 rdf:resource="http://cmt#Paper"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf#Person"/>
+		<entity2 rdf:resource="http://cmt#Person"/>
+		<measure rdf:datatype="xsd:float">0.83</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf#Conference"/>
+		<entity2 rdf:resource="http://cmt#Conference"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf#Author"/>
+		<entity2 rdf:resource="http://cmt#Author"/>
+		<measure rdf:datatype="xsd:float">0.8</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf#hasEmail"/>
+		<entity2 rdf:resource="http://cmt#email"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2028803728"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2028803728"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-497885901"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-497885901"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1886324060"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1886324060"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-380976655"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-380976655"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-297950712"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-297950712"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-437577575"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-437577575"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-492614264"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-492614264"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic971398933"/>
+		<entity2 rdf:resource="http://cmt-instances#topic971398933"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1443214456"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1443214456"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-165047611"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-165047611"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-516522145"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-516522145"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1628181352"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1628181352"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1595061868"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1595061868"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic380802873"/>
+		<entity2 rdf:resource="http://cmt-instances#topic380802873"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-135761730"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-135761730"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1312628413"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1312628413"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1708542865"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1708542865"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic180098146"/>
+		<entity2 rdf:resource="http://cmt-instances#topic180098146"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1250955715"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1250955715"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1846817431"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1846817431"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1223528791"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1223528791"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1417445862"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1417445862"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1578626670"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1578626670"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2052302948"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2052302948"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1706464642"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1706464642"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2056933150"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2056933150"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1432495669"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1432495669"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-408808257"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-408808257"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-358193502"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-358193502"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic848715978"/>
+		<entity2 rdf:resource="http://cmt-instances#topic848715978"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic107329"/>
+		<entity2 rdf:resource="http://cmt-instances#topic107329"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic698327196"/>
+		<entity2 rdf:resource="http://cmt-instances#topic698327196"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic760464573"/>
+		<entity2 rdf:resource="http://cmt-instances#topic760464573"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-808846220"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-808846220"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1976547869"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1976547869"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-168077674"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-168077674"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1069285920"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1069285920"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic476308062"/>
+		<entity2 rdf:resource="http://cmt-instances#topic476308062"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic434537925"/>
+		<entity2 rdf:resource="http://cmt-instances#topic434537925"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1789464955"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1789464955"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1935416427"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1935416427"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1261395511"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1261395511"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1789975291"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1789975291"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic68290953"/>
+		<entity2 rdf:resource="http://cmt-instances#topic68290953"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1962030493"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1962030493"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3404176"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3404176"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1057047538"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1057047538"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1207995910"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1207995910"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-377261927"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-377261927"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1778757318"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1778757318"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic104462"/>
+		<entity2 rdf:resource="http://cmt-instances#topic104462"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1058173332"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1058173332"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1357363790"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1357363790"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1184565222"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1184565222"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic804960338"/>
+		<entity2 rdf:resource="http://cmt-instances#topic804960338"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1009869367"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1009869367"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-646286227"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-646286227"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-575499684"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-575499684"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic579583430"/>
+		<entity2 rdf:resource="http://cmt-instances#topic579583430"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-538924890"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-538924890"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2127562701"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2127562701"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-874210839"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-874210839"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2118533391"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2118533391"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic670893655"/>
+		<entity2 rdf:resource="http://cmt-instances#topic670893655"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-450247829"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-450247829"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic114282"/>
+		<entity2 rdf:resource="http://cmt-instances#topic114282"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1531694805"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1531694805"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic384354045"/>
+		<entity2 rdf:resource="http://cmt-instances#topic384354045"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-523257701"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-523257701"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1657636448"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1657636448"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1628854618"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1628854618"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1849164425"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1849164425"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1554853404"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1554853404"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1628419090"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1628419090"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-950709553"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-950709553"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1544873409"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1544873409"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-810957242"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-810957242"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic486722176"/>
+		<entity2 rdf:resource="http://cmt-instances#topic486722176"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic811918707"/>
+		<entity2 rdf:resource="http://cmt-instances#topic811918707"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1487673280"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1487673280"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1649823283"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1649823283"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic826147581"/>
+		<entity2 rdf:resource="http://cmt-instances#topic826147581"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-878341936"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-878341936"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-567312220"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-567312220"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1021130956"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1021130956"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1801437822"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1801437822"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1133073094"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1133073094"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-697283491"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-697283491"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic978111542"/>
+		<entity2 rdf:resource="http://cmt-instances#topic978111542"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-996695842"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-996695842"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1684874968"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1684874968"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-416908537"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-416908537"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2006142850"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2006142850"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic125637896"/>
+		<entity2 rdf:resource="http://cmt-instances#topic125637896"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic697730903"/>
+		<entity2 rdf:resource="http://cmt-instances#topic697730903"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3083698"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3083698"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1616286302"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1616286302"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic409787618"/>
+		<entity2 rdf:resource="http://cmt-instances#topic409787618"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1814839430"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1814839430"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-711778080"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-711778080"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1362445629"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1362445629"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic501116579"/>
+		<entity2 rdf:resource="http://cmt-instances#topic501116579"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2131240275"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2131240275"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-166375972"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-166375972"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1945533194"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1945533194"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1863890486"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1863890486"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-887875843"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-887875843"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1974722289"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1974722289"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1095605282"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1095605282"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1816565796"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1816565796"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-326809875"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-326809875"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1822213599"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1822213599"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic196442095"/>
+		<entity2 rdf:resource="http://cmt-instances#topic196442095"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1096753300"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1096753300"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1140118189"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1140118189"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-688106270"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-688106270"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1644188497"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1644188497"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic103160"/>
+		<entity2 rdf:resource="http://cmt-instances#topic103160"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic370684122"/>
+		<entity2 rdf:resource="http://cmt-instances#topic370684122"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-549860811"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-549860811"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1148197345"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1148197345"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic112756"/>
+		<entity2 rdf:resource="http://cmt-instances#topic112756"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1512632445"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1512632445"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic690956554"/>
+		<entity2 rdf:resource="http://cmt-instances#topic690956554"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1776103452"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1776103452"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2000172700"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2000172700"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1266375953"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1266375953"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic486893038"/>
+		<entity2 rdf:resource="http://cmt-instances#topic486893038"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-367957705"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-367957705"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic668139773"/>
+		<entity2 rdf:resource="http://cmt-instances#topic668139773"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic109170"/>
+		<entity2 rdf:resource="http://cmt-instances#topic109170"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1433484744"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1433484744"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1391551383"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1391551383"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2034148894"/>
+		<entity2 rdf:resource="http://cmt-instances#topic117588"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2034148894"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2034148894"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1089448050"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1089448050"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1984153269"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1984153269"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1769413409"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1769413409"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2066975662"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2066975662"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1354662968"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1354662968"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-52753192"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-52753192"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1422950858"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1422950858"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1872997849"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1872997849"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1419366409"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1419366409"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3532348"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3532348"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2117126240"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2117126240"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1352929190"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1352929190"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1432072039"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1432072039"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1285348022"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1285348022"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1288075345"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1288075345"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1999441657"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1999441657"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic441719640"/>
+		<entity2 rdf:resource="http://cmt-instances#topic441719640"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic584665702"/>
+		<entity2 rdf:resource="http://cmt-instances#topic584665702"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1175787594"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1175787594"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1166644710"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1166644710"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1434682076"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1434682076"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1801028831"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1801028831"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic876877434"/>
+		<entity2 rdf:resource="http://cmt-instances#topic876877434"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2128144545"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2128144545"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic698783012"/>
+		<entity2 rdf:resource="http://cmt-instances#topic698783012"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-901510002"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-901510002"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic151891919"/>
+		<entity2 rdf:resource="http://cmt-instances#topic151891919"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1044559571"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1044559571"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1799810326"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1799810326"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3420763"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3420763"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2014611587"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2014611587"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-276454505"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-276454505"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic942048415"/>
+		<entity2 rdf:resource="http://cmt-instances#topic942048415"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-621294897"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-621294897"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-865698022"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-865698022"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1787633415"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1787633415"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1018635483"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1018635483"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1848571569"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1848571569"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-236452414"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-236452414"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3047042"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3047042"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1512922657"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1512922657"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic117916"/>
+		<entity2 rdf:resource="http://cmt-instances#topic117916"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic27871373"/>
+		<entity2 rdf:resource="http://cmt-instances#topic27871373"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2083631919"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2083631919"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-786715517"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-786715517"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic344047183"/>
+		<entity2 rdf:resource="http://cmt-instances#topic344047183"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1423451840"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1423451840"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic95945983"/>
+		<entity2 rdf:resource="http://cmt-instances#topic95945983"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1151025098"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1151025098"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2062038186"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2062038186"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic344200471"/>
+		<entity2 rdf:resource="http://cmt-instances#topic344200471"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-338995250"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-338995250"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1505502580"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1505502580"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1352830833"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1352830833"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1204182234"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1204182234"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-553411800"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-553411800"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1548246528"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1548246528"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-363435454"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-363435454"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic925946741"/>
+		<entity2 rdf:resource="http://cmt-instances#topic925946741"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3625806"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3625806"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-751322029"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-751322029"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1291329255"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1291329255"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1820611322"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1820611322"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic831563511"/>
+		<entity2 rdf:resource="http://cmt-instances#topic831563511"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1773667603"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1773667603"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic565121364"/>
+		<entity2 rdf:resource="http://cmt-instances#topic565121364"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic10107213"/>
+		<entity2 rdf:resource="http://cmt-instances#topic10107213"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic807857538"/>
+		<entity2 rdf:resource="http://cmt-instances#topic807857538"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic595267983"/>
+		<entity2 rdf:resource="http://cmt-instances#topic595267983"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1249806057"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1249806057"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1191745379"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1191745379"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic858523452"/>
+		<entity2 rdf:resource="http://cmt-instances#topic858523452"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-361161128"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-361161128"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic521489727"/>
+		<entity2 rdf:resource="http://cmt-instances#topic521489727"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1246004963"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1246004963"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1372270923"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1372270923"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-110867015"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-110867015"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1217914178"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1217914178"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic110468"/>
+		<entity2 rdf:resource="http://cmt-instances#topic110468"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-824706186"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-824706186"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1758068617"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1758068617"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic661984804"/>
+		<entity2 rdf:resource="http://cmt-instances#topic661984804"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic245608713"/>
+		<entity2 rdf:resource="http://cmt-instances#topic245608713"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic114477024"/>
+		<entity2 rdf:resource="http://cmt-instances#topic114477024"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1284569586"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1284569586"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3560141"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3560141"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-224232522"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-224232522"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic732946838"/>
+		<entity2 rdf:resource="http://cmt-instances#topic732946838"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1299668452"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1299668452"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1592417372"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1592417372"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1636938664"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1636938664"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2112813361"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2112813361"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2074824604"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2074824604"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-517713786"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-517713786"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-484787118"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-484787118"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1767875043"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1767875043"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-79673292"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-79673292"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1752244882"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1752244882"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-971130761"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-971130761"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1941458818"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1941458818"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic860344123"/>
+		<entity2 rdf:resource="http://cmt-instances#topic860344123"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-756322155"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-756322155"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-950331211"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-950331211"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2120983604"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2120983604"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic513791341"/>
+		<entity2 rdf:resource="http://cmt-instances#topic513791341"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-450004177"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-450004177"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic725699686"/>
+		<entity2 rdf:resource="http://cmt-instances#topic725699686"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1014739178"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1014739178"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-896177687"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-896177687"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic551521078"/>
+		<entity2 rdf:resource="http://cmt-instances#topic551521078"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1759501874"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1759501874"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2123180165"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2123180165"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-921655719"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-921655719"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1574861283"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1574861283"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2020304245"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2020304245"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3001008"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3001008"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1107122877"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1107122877"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2130226553"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2130226553"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic568512629"/>
+		<entity2 rdf:resource="http://cmt-instances#topic568512629"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1530231663"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1530231663"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic132803437"/>
+		<entity2 rdf:resource="http://cmt-instances#topic132803437"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic168509191"/>
+		<entity2 rdf:resource="http://cmt-instances#topic168509191"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-56502675"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-56502675"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1458121336"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1458121336"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1374410570"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1374410570"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1141465647"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1141465647"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1987276913"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1987276913"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1287340760"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1287340760"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1215966453"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1215966453"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2115153843"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2115153843"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic311197383"/>
+		<entity2 rdf:resource="http://cmt-instances#topic311197383"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-184513575"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-184513575"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2005274852"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2005274852"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1455370631"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1455370631"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1034283501"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1034283501"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1698855109"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1698855109"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1850841274"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1850841274"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1475910927"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1475910927"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1396404498"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1396404498"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1880334712"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1880334712"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic917280113"/>
+		<entity2 rdf:resource="http://cmt-instances#topic917280113"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-125478861"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-125478861"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1742506922"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1742506922"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic10384706"/>
+		<entity2 rdf:resource="http://cmt-instances#topic10384706"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1202972607"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1202972607"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic808175455"/>
+		<entity2 rdf:resource="http://cmt-instances#topic808175455"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1404207873"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1404207873"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3056464"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3056464"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-308554216"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-308554216"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic901600718"/>
+		<entity2 rdf:resource="http://cmt-instances#topic901600718"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic117588"/>
+		<entity2 rdf:resource="http://cmt-instances#topic117588"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic117588"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2034148894"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1404364860"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1404364860"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1054378064"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1054378064"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic661147877"/>
+		<entity2 rdf:resource="http://cmt-instances#topic661147877"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1506165063"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1506165063"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-102703842"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-102703842"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-477040453"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-477040453"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1488202109"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1488202109"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1673632197"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1673632197"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1995874353"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1995874353"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1740465904"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1740465904"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2134155929"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2134155929"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1546254583"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1546254583"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic883451154"/>
+		<entity2 rdf:resource="http://cmt-instances#topic883451154"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-20663800"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-20663800"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic495859485"/>
+		<entity2 rdf:resource="http://cmt-instances#topic495859485"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic891183677"/>
+		<entity2 rdf:resource="http://cmt-instances#topic891183677"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-252200625"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-252200625"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1826664373"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1826664373"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic256940020"/>
+		<entity2 rdf:resource="http://cmt-instances#topic256940020"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic293323974"/>
+		<entity2 rdf:resource="http://cmt-instances#topic293323974"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1516899691"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1516899691"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic855306557"/>
+		<entity2 rdf:resource="http://cmt-instances#topic855306557"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3023545"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3023545"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1366548143"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1366548143"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1534376515"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1534376515"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1441721758"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1441721758"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-171055284"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-171055284"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1883588840"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1883588840"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-726608903"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-726608903"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic725270917"/>
+		<entity2 rdf:resource="http://cmt-instances#topic725270917"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1807548271"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1807548271"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1923514980"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1923514980"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-210953621"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-210953621"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1511827212"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1511827212"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1324674584"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1324674584"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1473640201"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1473640201"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1323054225"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1323054225"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic949122880"/>
+		<entity2 rdf:resource="http://cmt-instances#topic949122880"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3077362"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3077362"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic901644076"/>
+		<entity2 rdf:resource="http://cmt-instances#topic901644076"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic245265073"/>
+		<entity2 rdf:resource="http://cmt-instances#topic245265073"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-777123594"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-777123594"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-537615418"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-537615418"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1275566148"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1275566148"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1245635613"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1245635613"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2038632051"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2038632051"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2074038310"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2074038310"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1513621137"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1513621137"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2051399539"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2051399539"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic780346297"/>
+		<entity2 rdf:resource="http://cmt-instances#topic780346297"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1298723142"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1298723142"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-274272431"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-274272431"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1135455309"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1135455309"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3168159"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3168159"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1078222292"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1078222292"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1468254377"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1468254377"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-524983661"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-524983661"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-318167934"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-318167934"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1555043537"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1555043537"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2062033988"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2062033988"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1116280523"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1116280523"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic540210111"/>
+		<entity2 rdf:resource="http://cmt-instances#topic540210111"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3321850"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3321850"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic519447398"/>
+		<entity2 rdf:resource="http://cmt-instances#topic519447398"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-226319470"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-226319470"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-279975413"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-279975413"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1221684669"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1221684669"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1196996774"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1196996774"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1451200989"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1451200989"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1686396179"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1686396179"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-155697375"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-155697375"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1142617103"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1142617103"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1882750833"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1882750833"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1428988863"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1428988863"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1519465935"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1519465935"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1882357751"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1882357751"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2000199054"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2000199054"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic956968364"/>
+		<entity2 rdf:resource="http://cmt-instances#topic956968364"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic643585615"/>
+		<entity2 rdf:resource="http://cmt-instances#topic643585615"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2011834699"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2011834699"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic693483357"/>
+		<entity2 rdf:resource="http://cmt-instances#topic693483357"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-158826707"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-158826707"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1178133765"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1178133765"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2030348182"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2030348182"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic516545646"/>
+		<entity2 rdf:resource="http://cmt-instances#topic516545646"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2071579911"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2071579911"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1186365187"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1186365187"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic93166550"/>
+		<entity2 rdf:resource="http://cmt-instances#topic93166550"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic197259725"/>
+		<entity2 rdf:resource="http://cmt-instances#topic197259725"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1480528477"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1480528477"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1674227754"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1674227754"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-574991751"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-574991751"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3267882"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3267882"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1151960268"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1151960268"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic11440535"/>
+		<entity2 rdf:resource="http://cmt-instances#topic11440535"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1737365534"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1737365534"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic441371312"/>
+		<entity2 rdf:resource="http://cmt-instances#topic441371312"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-135895070"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-135895070"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-655892824"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-655892824"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1212811297"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1212811297"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1960190757"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1960190757"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-687696512"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-687696512"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-916346253"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-916346253"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1869375325"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1869375325"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1156347348"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1156347348"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-569153802"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-569153802"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-395667065"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-395667065"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1410894901"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1410894901"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1652529364"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1652529364"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1310670723"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1310670723"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-984799354"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-984799354"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1573868159"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1573868159"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-378882880"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-378882880"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-608025418"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-608025418"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic303216561"/>
+		<entity2 rdf:resource="http://cmt-instances#topic303216561"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic115924"/>
+		<entity2 rdf:resource="http://cmt-instances#topic115924"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-220630197"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-220630197"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic279659712"/>
+		<entity2 rdf:resource="http://cmt-instances#topic279659712"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic461580747"/>
+		<entity2 rdf:resource="http://cmt-instances#topic461580747"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1524960851"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1524960851"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-683839270"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-683839270"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic651885588"/>
+		<entity2 rdf:resource="http://cmt-instances#topic651885588"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-269060085"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-269060085"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1001830084"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1001830084"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic100886"/>
+		<entity2 rdf:resource="http://cmt-instances#topic100886"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1275059612"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1275059612"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-563239852"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-563239852"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic98659"/>
+		<entity2 rdf:resource="http://cmt-instances#topic98659"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1993134797"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1993134797"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic95844967"/>
+		<entity2 rdf:resource="http://cmt-instances#topic95844967"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2014839043"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2014839043"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1864554142"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1864554142"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic110640728"/>
+		<entity2 rdf:resource="http://cmt-instances#topic110640728"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1790433189"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1790433189"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-912422301"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-912422301"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic669811865"/>
+		<entity2 rdf:resource="http://cmt-instances#topic669811865"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-948314461"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-948314461"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-669405410"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-669405410"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-656361996"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-656361996"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic544664589"/>
+		<entity2 rdf:resource="http://cmt-instances#topic544664589"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1438745149"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1438745149"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1558992055"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1558992055"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic351873811"/>
+		<entity2 rdf:resource="http://cmt-instances#topic351873811"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic986609072"/>
+		<entity2 rdf:resource="http://cmt-instances#topic986609072"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-449702633"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-449702633"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2132705823"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2132705823"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1954882482"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1954882482"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic128896776"/>
+		<entity2 rdf:resource="http://cmt-instances#topic128896776"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1929152968"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1929152968"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic761463562"/>
+		<entity2 rdf:resource="http://cmt-instances#topic761463562"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1919308818"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1919308818"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1402825064"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1402825064"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-784307251"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-784307251"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1190977582"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1190977582"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-814884441"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-814884441"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2035073525"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2035073525"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-67098003"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-67098003"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic104069929"/>
+		<entity2 rdf:resource="http://cmt-instances#topic104069929"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-185152059"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-185152059"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1747496313"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1747496313"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1055118282"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1055118282"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic893454270"/>
+		<entity2 rdf:resource="http://cmt-instances#topic893454270"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1711030776"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1711030776"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1238958607"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1238958607"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-316260921"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-316260921"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1413745873"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1413745873"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-750759890"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-750759890"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic676758218"/>
+		<entity2 rdf:resource="http://cmt-instances#topic676758218"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic840081037"/>
+		<entity2 rdf:resource="http://cmt-instances#topic840081037"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-706626147"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-706626147"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1726143507"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1726143507"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic102634"/>
+		<entity2 rdf:resource="http://cmt-instances#topic102634"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-820181166"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-820181166"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1216835014"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1216835014"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1845965208"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1845965208"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic946494356"/>
+		<entity2 rdf:resource="http://cmt-instances#topic946494356"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic374961517"/>
+		<entity2 rdf:resource="http://cmt-instances#topic374961517"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1106651497"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1106651497"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3496932"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3496932"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-690039175"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-690039175"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1121800109"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1121800109"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-973338748"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-973338748"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1677048115"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1677048115"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2017530182"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2017530182"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1363682746"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1363682746"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1564306156"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1564306156"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic99746337"/>
+		<entity2 rdf:resource="http://cmt-instances#topic99746337"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1276119258"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1276119258"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3496916"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3496916"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1079448000"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1079448000"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1083878301"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1083878301"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-301152001"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-301152001"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-130572803"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-130572803"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1766189098"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1766189098"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2143291597"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2143291597"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2087511093"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2087511093"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-196875119"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-196875119"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-915530181"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-915530181"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1933742413"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1933742413"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1184364320"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1184364320"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic184588826"/>
+		<entity2 rdf:resource="http://cmt-instances#topic184588826"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1348666419"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1348666419"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1315681652"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1315681652"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1525161141"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1525161141"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-164583998"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-164583998"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-364883423"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-364883423"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1288746393"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1288746393"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1615225221"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1615225221"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1480388560"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1480388560"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic391447971"/>
+		<entity2 rdf:resource="http://cmt-instances#topic391447971"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic85109062"/>
+		<entity2 rdf:resource="http://cmt-instances#topic85109062"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-736941749"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-736941749"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1285004149"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1285004149"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2066321672"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2066321672"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1843679302"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1843679302"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1213585766"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1213585766"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1784134588"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1784134588"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1374072906"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1374072906"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic867631792"/>
+		<entity2 rdf:resource="http://cmt-instances#topic867631792"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-334196463"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-334196463"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1030310476"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1030310476"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic112518608"/>
+		<entity2 rdf:resource="http://cmt-instances#topic112518608"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-932820115"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-932820115"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1656388020"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1656388020"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1281512980"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1281512980"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1450554128"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1450554128"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-885478841"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-885478841"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2077081989"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2077081989"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1349095542"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1349095542"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic114126"/>
+		<entity2 rdf:resource="http://cmt-instances#topic114126"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1289871956"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1289871956"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1829937395"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1829937395"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1094979881"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1094979881"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic14800453"/>
+		<entity2 rdf:resource="http://cmt-instances#topic14800453"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1094759587"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1094759587"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2063028220"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2063028220"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic719087599"/>
+		<entity2 rdf:resource="http://cmt-instances#topic719087599"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1224430754"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1224430754"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1888822017"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1888822017"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-778664314"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-778664314"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1028636743"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1028636743"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3413708"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3413708"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic94728972"/>
+		<entity2 rdf:resource="http://cmt-instances#topic94728972"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1601776020"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1601776020"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1888963534"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1888963534"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-142107912"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-142107912"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic928045487"/>
+		<entity2 rdf:resource="http://cmt-instances#topic928045487"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic884756569"/>
+		<entity2 rdf:resource="http://cmt-instances#topic884756569"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic118191028"/>
+		<entity2 rdf:resource="http://cmt-instances#topic118191028"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1409670996"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1409670996"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1583269100"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1583269100"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2045099659"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2045099659"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1632320115"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1632320115"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic57142801"/>
+		<entity2 rdf:resource="http://cmt-instances#topic57142801"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic240290728"/>
+		<entity2 rdf:resource="http://cmt-instances#topic240290728"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-867465883"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-867465883"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1639170605"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1639170605"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic476428558"/>
+		<entity2 rdf:resource="http://cmt-instances#topic476428558"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-910715704"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-910715704"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-508818545"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-508818545"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1328006526"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1328006526"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1003968655"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1003968655"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic99672"/>
+		<entity2 rdf:resource="http://cmt-instances#topic99672"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1112110424"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1112110424"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-847000684"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-847000684"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-105477199"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-105477199"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1259179065"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1259179065"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1060858760"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1060858760"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1056760842"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1056760842"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1800934331"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1800934331"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1977954553"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1977954553"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3051892"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3051892"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-797946958"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-797946958"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic148825606"/>
+		<entity2 rdf:resource="http://cmt-instances#topic148825606"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic454790106"/>
+		<entity2 rdf:resource="http://cmt-instances#topic454790106"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic116076"/>
+		<entity2 rdf:resource="http://cmt-instances#topic116076"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1132851595"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1132851595"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1989676455"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1989676455"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-190989106"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-190989106"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic323615476"/>
+		<entity2 rdf:resource="http://cmt-instances#topic323615476"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1051226994"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1051226994"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-95730978"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-95730978"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1170572381"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1170572381"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1686017190"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1686017190"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-2006326266"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-2006326266"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1563250403"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1563250403"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3357431"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3357431"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-969990582"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-969990582"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1758236586"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1758236586"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3565976"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3565976"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1291770361"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1291770361"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic3377527"/>
+		<entity2 rdf:resource="http://cmt-instances#topic3377527"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic105008237"/>
+		<entity2 rdf:resource="http://cmt-instances#topic105008237"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1196039024"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1196039024"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1751863813"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1751863813"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic-1177292982"/>
+		<entity2 rdf:resource="http://cmt-instances#topic-1177292982"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic1380348800"/>
+		<entity2 rdf:resource="http://cmt-instances#topic1380348800"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic100313435"/>
+		<entity2 rdf:resource="http://cmt-instances#topic100313435"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://confOf-instances#topic2139699268"/>
+		<entity2 rdf:resource="http://cmt-instances#topic2139699268"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>

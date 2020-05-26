@@ -1,0 +1,8 @@
+PREFIX :<http://cmt#>
+
+INSERT DATA{
+{{pcmember}} a :ProgramCommitteeMember.
+{{pcmember}} :memberOfProgramCommittee {{pc}}.
+{{admin}} :addProgramCommitteeMember {{pcmember}}.
+{{pcmember}} :memberOfConference {{conf}}.
+}

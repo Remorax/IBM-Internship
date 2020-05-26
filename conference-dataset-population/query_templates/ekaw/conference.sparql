@@ -1,0 +1,26 @@
+PREFIX :<http://ekaw#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA{
+{{conf}} a :Conference.
+{{conf}} rdfs:label {{conftitle}}.
+{{conf}} :heldIn {{conflocinst}}.
+{{conflocinst}} a :Location.
+{{conflocinst}} rdfs:label {{conflocation}}.
+{{confwww}} a :Web_Site.
+{{confwww}} rdfs:label {{confwwwname}}.
+{{confwww}} rdfs:label {{confURL}}.
+{{confwww}} :listsEvent {{conf}}.
+
+{{confproceed}} a :Conference_Proceedings.
+{{confproceed}} rdfs:label {{proceedname}}.
+{{publisher}} :publisherOf {{confproceed}}.
+{{publisher}} rdfs:label {{publishername}}.
+{{publisher}} a :Proceedings_Publisher.
+
+{{pcchair}} a :PC_Chair.
+{{occhair}} a :OC_Chair.
+{{occhair}} :organises {{conf}}.
+
+}

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>??</type>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#VarietyRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Variety_(botany)"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#Taxon"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Category:Bamboo_taxa"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#prefScientificName"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Poa_cookii"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#Taxonomy"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/order"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#PhylumRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/phylum"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasHigherRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Cyperus_niger"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesVariety"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Variety"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasLowerRankTransitive"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/janRecordLowF"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasHigherRankTransitive"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/janRecordHighF"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesVarieties"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Spelt"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasLowerRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/marRecordLowC"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasOrder"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Category:Fodder"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#FamilyRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/family"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#SubSpecyRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Poa_nemoralis"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#SubClassRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/PACMAD_clade"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesClasses"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Lolium_multiflorum"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/AgronomicTaxon#memberScheme"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Emmer"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesOrders"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/fossilRange"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesSpecies"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Species"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#altVernacularName"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/time"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#GenusRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/George_Bentham"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#ClassRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Grass"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#KingdomRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Building"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#altScientificName"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/synonymsRef"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasVernacularName"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/novLowC"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#SpecyRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Poa"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesPhylum"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/kingdom"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasPhylum"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/last"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#prefVernacularName"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Festuca"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesPhyla"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/subdivisionRanks"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#OrderRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/OfficeHolder"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasKingdom"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Isolepis_setacea"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasClass"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/lats"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#SubKingdomRank"/>
+      <entity2 rdf:resource="http://www.wikidata.org/entity/Q41176"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasScientificName"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Name"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesClass"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Meadow-grass"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasSpecies"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Category:Bromeliaceae_species"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesOrder"/>
+      <entity2 rdf:resource="http://dbpedia.org/resource/Johnson_grass"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasGenus"/>
+      <entity2 rdf:resource="http://www.wikidata.org/entity/Q5"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#SuperOrderRank"/>
+      <entity2 rdf:resource="http://dbpedia.org/ontology/Skier"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasFamily"/>
+      <entity2 rdf:resource="http://dbpedia.org/property/populationCensus"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

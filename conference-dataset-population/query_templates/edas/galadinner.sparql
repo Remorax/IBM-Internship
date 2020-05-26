@@ -1,0 +1,14 @@
+PREFIX :<http://edas#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA{
+{{event}} a :ConferenceDinner.	
+	{{event}} rdfs:label {{eventname}}.
+	{{event}} :hasLocation {{eventlocinst}}.
+	{{eventlocinst}} rdfs:label {{eventloc}}.
+	{{eventlocinst}} a :DiningPlace.
+
+	{{event}} :hasStartDateTime {{startDate}}^^xsd:dateTime.
+	{{event}} :hasEndDateTime {{endDate}}^^xsd:dateTime.
+}

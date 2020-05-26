@@ -1,0 +1,934 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.daselab.org/michelle/swo-hydrOnt-alignment"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.daselab.org/michelle/swo-hydrOnt-alignment">
+    <Prefix name="" IRI="http://www.daselab.org/michelle/swo-hydrOnt-alignment#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="swo" IRI="http://cegis.usgs.gov/SWO#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="hydrOnt" IRI="http://geo.linkeddata.es/ontology/"/>
+    <Prefix name="swo-hydront-alignment" IRI="http://www.daselab.org/michelle/swo-hydrOnt-alignment#"/>
+    <Prefix name="untitled-ontology-182" IRI="http://www.daselab.org/michelle/swo-hydrOnt-alignment#"/>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Masa_de_Agua_Artificial"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:ManmadeFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Cascada"/>
+        <Class abbreviatedIRI="swo:Waterfall"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Chorrera"/>
+        <Class abbreviatedIRI="swo:Waterfall"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Estanque"/>
+        <Class abbreviatedIRI="swo:DecorativePool"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Fenómeno_hidrográfic"/>
+        <Class abbreviatedIRI="swo:HydrographicFeature"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Tubería"/>
+        <Class abbreviatedIRI="swo:Pipeline"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Rápido"/>
+        <Class abbreviatedIRI="swo:Rapids"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Recinto"/>
+        <Class abbreviatedIRI="swo:Reservoir"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Ribera"/>
+        <Class abbreviatedIRI="swo:Shore"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Piscina"/>
+        <Class abbreviatedIRI="swo:SwimmingPool"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Despósito"/>
+        <Class abbreviatedIRI="swo:WaterStorage"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Pozo"/>
+        <Class abbreviatedIRI="swo:Well"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Continentales"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="swo:SurfaceFeature"/>
+                <Class abbreviatedIRI="swo:UndergroundFeature"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:origen_formación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Glaciar</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+            <Class abbreviatedIRI="swo:Glacier"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Canal"/>
+        <Class abbreviatedIRI="swo:CanalOrDitch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="swo:Divergence"/>
+        <Class abbreviatedIRI="hydrOnt:Efluente"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="swo:IceMass"/>
+        <Class abbreviatedIRI="hydrOnt:Masa_de_Hielo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="swo:Well"/>
+        <Class abbreviatedIRI="hydrOnt:Toma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Acequia"/>
+        <Class abbreviatedIRI="swo:CanalOrDitch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Acuitardo"/>
+        <Class abbreviatedIRI="swo:UndergroundFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Acuífero"/>
+        <Class abbreviatedIRI="swo:UndergroundFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Afluente"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <ObjectUnionOf>
+                <ObjectMinCardinality cardinality="1">
+                    <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+                    <Class abbreviatedIRI="swo:StreamOrRiver"/>
+                </ObjectMinCardinality>
+                <ObjectMinCardinality cardinality="1">
+                    <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                    <Class abbreviatedIRI="swo:StreamOrRiver"/>
+                </ObjectMinCardinality>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Corrientes"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:SurfaceFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasFlow"/>
+                <Class abbreviatedIRI="swo:Flow"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Corrientes_Artificiales"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:SurfaceFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasFlow"/>
+                <Class abbreviatedIRI="swo:Flow"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Corrientes_Naturales"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:SurfaceFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasFlow"/>
+                <Class abbreviatedIRI="swo:Flow"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Costera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:adjacentTo"/>
+            <Class abbreviatedIRI="swo:Coastline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Marinas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:SeaOrOcean"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Quietas"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:SurfaceFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Quietas_Artificiales"/>
+        <Class abbreviatedIRI="swo:ManmadeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Subterráneas"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:UndergroundFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Superficiales"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:SurfaceFeature"/>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aguas_de_Transición"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="swo:adjoins"/>
+                    <Class abbreviatedIRI="swo:SeaOrOcean"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="swo:adjoins"/>
+                    <Class abbreviatedIRI="swo:StreamOrRiver"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Albufera"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:contains"/>
+                <Class abbreviatedIRI="swo:SpringOrSeep"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                <Class abbreviatedIRI="swo:SpringOrSeep"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Albufera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:adjoins"/>
+            <Class abbreviatedIRI="swo:SeaOrOcean"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Albufera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:SwampOrMarsh"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aljibe"/>
+        <Class abbreviatedIRI="swo:UndergroundFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Aluvión"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Arroyo"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Perennial"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Perennial"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Arroyo"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Barranco"/>
+        <Class abbreviatedIRI="swo:Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Brazo"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:CanalOrDitch"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+                <Class abbreviatedIRI="swo:SeaOrOcean"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Canal_Aguas_Marinas"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:CanalOrDitch"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+                    <Class abbreviatedIRI="swo:SeaOrOcean"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                    <Class abbreviatedIRI="swo:SeaOrOcean"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+                <Class abbreviatedIRI="swo:Waterbody"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                <Class abbreviatedIRI="swo:Waterbody"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Canal_de_Lago"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:CanalOrDitch"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+                <Class abbreviatedIRI="swo:Waterbody"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                <Class abbreviatedIRI="swo:LakeOrPond"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Charca"/>
+        <Class abbreviatedIRI="swo:LakeOrPond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Conducto"/>
+        <Class abbreviatedIRI="swo:CanalOrDitch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Confluencia"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <ObjectExactCardinality cardinality="2">
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Corriente"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:hasFlow"/>
+            <Class abbreviatedIRI="swo:Flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Corriente_Subterránea"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <Class abbreviatedIRI="swo:UndergroundFeature"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Delta"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:adjoins"/>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Desagüe"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:CanalOrDitch"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+                <ObjectUnionOf>
+                    <Class abbreviatedIRI="swo:LakeOrPond"/>
+                    <Class abbreviatedIRI="swo:SeaOrOcean"/>
+                    <Class abbreviatedIRI="swo:StreamOrRiver"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Desembocadura"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Efluente"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:Waterbody"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasFlow"/>
+                <Class abbreviatedIRI="swo:Flow"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+                <Class abbreviatedIRI="swo:Waterbody"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Estuario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:SeaOrOcean"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Estuario"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Fenómeno_hidrográfic"/>
+        <Class abbreviatedIRI="swo:SurfaceFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Fuente_Artesana"/>
+        <Class abbreviatedIRI="swo:Well"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Fuente_Salada"/>
+        <Class abbreviatedIRI="swo:SpringOrSeep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Fuente_Vauclusiana"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Garganta"/>
+        <Class abbreviatedIRI="swo:Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Glaciar"/>
+        <Class abbreviatedIRI="swo:IceMass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Gola"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:CanalOrDitch"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:isConnectedTo"/>
+                <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Guadi"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Géiser"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Humedal"/>
+        <Class abbreviatedIRI="swo:SwampOrMarsh"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Isla_Fluvial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="swo:LakeOrPond"/>
+                <Class abbreviatedIRI="swo:Reservoir"/>
+                <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Lago"/>
+        <Class abbreviatedIRI="swo:LakeOrPond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Lago_Salado"/>
+        <Class abbreviatedIRI="swo:LakeOrPond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Lago_Subterráno"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:LakeOrPond"/>
+            <Class abbreviatedIRI="swo:UndergroundFeature"/>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Laguna"/>
+        <Class abbreviatedIRI="swo:LakeOrPond"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Manantial_Salado"/>
+        <Class abbreviatedIRI="swo:SpringOrSeep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Mar"/>
+        <Class abbreviatedIRI="swo:SeaOrOcean"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Mar_Territorial"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:adjacentTo"/>
+                <Class abbreviatedIRI="swo:Coastline"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+                <Class abbreviatedIRI="swo:SeaOrOcean"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Marisma"/>
+        <Class abbreviatedIRI="swo:SwampOrMarsh"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Nacimiento"/>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Océano"/>
+        <Class abbreviatedIRI="swo:SeaOrOcean"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Ojo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+            <Class abbreviatedIRI="swo:LakeOrPond"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Poza"/>
+        <Class abbreviatedIRI="swo:Waterbody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Rambla"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Ephemeral"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Ephemeral"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Río"/>
+        <Class abbreviatedIRI="swo:StreamOrRiver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Saladar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:SwampOrMarsh"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Salina"/>
+        <Class abbreviatedIRI="swo:Evaporator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Sumidero"/>
+        <Class abbreviatedIRI="swo:SinkOrRise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Surgencia_Artificial"/>
+        <Class abbreviatedIRI="swo:ManmadeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Surgencias"/>
+        <Class abbreviatedIRI="swo:SpringOrSeep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Torrente"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Ephemeral"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+                <ObjectOneOf>
+                    <NamedIndividual abbreviatedIRI="swo:Ephemeral"/>
+                </ObjectOneOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Vado"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+            <Class abbreviatedIRI="swo:StreamOrRiver"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Venaje"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="swo:AggregateHydrographicFeature"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+                </ObjectInverseOf>
+                <Class abbreviatedIRI="swo:StreamOrRiver"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="hydrOnt:Zona_Encharcable"/>
+        <Class abbreviatedIRI="swo:InundationArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="hydrOnt:distribuye"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class abbreviatedIRI="swo:TransportingFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="hydrOnt:transvasa"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class abbreviatedIRI="swo:TransportingFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="hydrOnt:es_distribuida"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class abbreviatedIRI="swo:TransportingFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="hydrOnt:es_transvasada"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+        <Class abbreviatedIRI="swo:TransportingFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:origen_del_agua"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+            </ObjectInverseOf>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:origen_formación"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:origen_formación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Artificial</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <Class abbreviatedIRI="swo:ManmadeFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:origen_formación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Natural</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <ObjectComplementOf>
+            <Class abbreviatedIRI="swo:ManmadeFeature"/>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:situación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">elevado</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <Class abbreviatedIRI="swo:ElevatedFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:situación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">en superficie</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <Class abbreviatedIRI="swo:SurfaceFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:situación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">permantene fluctuante</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">permantene no fluctuante</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+            <ObjectOneOf>
+                <NamedIndividual abbreviatedIRI="swo:Perennial"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:situación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">subterraneo</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <Class abbreviatedIRI="swo:UndergroundFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="hydrOnt:situación"/>
+            <DataOneOf>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temporal erratico</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temporal estacional</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:hasTemporality"/>
+            <ObjectOneOf>
+                <NamedIndividual abbreviatedIRI="swo:Ephemeral"/>
+                <NamedIndividual abbreviatedIRI="swo:Intermittent"/>
+            </ObjectOneOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Surgencia_Natural"/>
+        <Class abbreviatedIRI="swo:ManmadeFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Aguas_Quietas_Naturales"/>
+        <Class abbreviatedIRI="swo:ManmadeFeature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Delta"/>
+        <Class abbreviatedIRI="swo:Waterbody"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Isla_Fluvial"/>
+        <Class abbreviatedIRI="swo:Waterbody"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Alta_Mar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:adjacentTo"/>
+            <Class abbreviatedIRI="swo:Coastline"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Zona_Contigua"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:adjacentTo"/>
+            <Class abbreviatedIRI="swo:Coastline"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="hydrOnt:Zona_Económic_Exclusiva"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="swo:adjacentTo"/>
+            <Class abbreviatedIRI="swo:Coastline"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="swo:adjoins"/>
+        <ObjectProperty abbreviatedIRI="hydrOnt:está_proxima_a"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:almancena"/>
+        <ObjectInverseOf>
+            <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:comunica_con"/>
+        <ObjectProperty abbreviatedIRI="swo:isConnectedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:conecta_con"/>
+        <ObjectProperty abbreviatedIRI="swo:isConnectedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:desagua_en"/>
+        <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:es_almancenado_en"/>
+        <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:es_comunicada_por"/>
+        <ObjectProperty abbreviatedIRI="swo:isConnectedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:es_conectado_con"/>
+        <ObjectProperty abbreviatedIRI="swo:isConnectedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:es_originado_por"/>
+        <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:estaEn"/>
+        <ObjectProperty abbreviatedIRI="swo:isContainedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:evacúa_de"/>
+        <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:origina"/>
+        <ObjectInverseOf>
+            <ObjectProperty abbreviatedIRI="swo:startsFrom"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:permite"/>
+        <ObjectProperty abbreviatedIRI="swo:contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:sufre_descarga_de"/>
+        <ObjectInverseOf>
+            <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:tiene_afluente"/>
+        <ObjectInverseOf>
+            <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+        </ObjectInverseOf>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="hydrOnt:vierte_en"/>
+        <ObjectProperty abbreviatedIRI="swo:endsAt"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

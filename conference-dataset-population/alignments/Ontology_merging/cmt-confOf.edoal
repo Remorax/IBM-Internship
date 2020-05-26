@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY cmt "http://cmt#">
+<!ENTITY confOf "http://confOf#">
+<!ENTITY proton "http://proton.semanticweb.org/">
+<!ENTITY edoal "http://ns.inria.org/edoal/1.0/#">
+]>
+
+<!-- JE2010: With the "#" in the end, this is parsed (by the RDF parser...)
+    without it, this is not! -->
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+  xml:base="http://cmt-confOf/alignment/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+  xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:cmt="http://cmt#" 
+  xmlns:confOf="http://confOf#" 
+  xmlns:proton="http://proton.semanticweb.org/" 
+  xmlns:edoal="http://ns.inria.org/edoal/1.0/#">
+
+  <Alignment rdf:about="http://cmt-confOf/alignment/">
+    <xml>yes</xml>
+    <dc:creator>http://www.irit.fr/recherches/MELODI/ontologies/contributors#thieblin</dc:creator>
+    <dc:date>2017/07/11</dc:date>
+    <method>manual</method>
+    <purpose>matcher-evaluation</purpose>
+    <level>2EDOAL</level>
+    <type>**</type>
+    <onto1>
+      <Ontology rdf:about="http://cmt">
+        <formalism>
+          <Formalism align:uri="http://www.w3.org/TR/owl-guide/" align:name="owl" />
+        </formalism>
+      </Ontology>
+    </onto1>
+    <onto2>
+      <Ontology rdf:about="http://confOf">
+        <formalism>
+          <Formalism align:uri="http://www.w3.org/TR/owl-guide/" align:name="owl" />
+        </formalism>
+      </Ontology>
+    </onto2>
+
+    <map>
+      <Cell rdf:about="ProgramCommitteeChair1">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;ProgramCommitteeChair" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Chair_PC" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="ProgramCommitteeMember2">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;ProgramCommitteeMember" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Member_PC" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Person3">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;Person" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Person" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Author4">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;Author" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Author" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Administrator5">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;Administrator" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Administrator" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Conference6">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;Conference" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Conference" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Contribution_Paper7">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;Paper" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Contribution" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="PaperFullVersion8">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;PaperFullVersion" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Paper" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Participant9">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;ConferenceMember" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Participant" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Topic10">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;SubjectArea" />
+        </entity1>
+        <entity2>
+          <edoal:Class rdf:about="&confOf;Topic" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="hasSubjectArea11">
+        <entity1>
+          <edoal:Relation rdf:about="&cmt;hasSubjectArea" />
+        </entity1>
+        <entity2>
+          <edoal:Relation rdf:about="&confOf;dealsWith" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="hasAuthor12">
+        <entity1>
+          <edoal:Relation rdf:about="&cmt;hasAuthor" />
+        </entity1>
+        <entity2>
+          <edoal:Relation rdf:about="&confOf;writtenBy" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="writePaper13">
+        <entity1>
+          <edoal:Relation rdf:about="&cmt;writePaper" />
+        </entity1>
+        <entity2>
+          <edoal:Relation rdf:about="&confOf;writes" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="readPaper14">
+        <entity1>
+          <edoal:Relation rdf:about="&cmt;readPaper" />
+        </entity1>
+        <entity2>
+          <edoal:Relation rdf:about="&confOf;reviewes" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>SubsumedBy</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="hasEmail15">
+        <entity1>
+          <edoal:Property rdf:about="&cmt;email" />
+        </entity1>
+        <entity2>
+          <edoal:Property rdf:about="&confOf;hasEmail" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="hasPaperTitle16">
+        <entity1>
+          <edoal:Property rdf:about="&cmt;title" />
+        </entity1>
+        <entity2>
+          <edoal:Property rdf:about="&confOf;hasTitle" />
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+    <map>
+      <Cell rdf:about="Reviewer17">
+        <entity1>
+          <edoal:Class rdf:about="&cmt;Reviewer" />
+        </entity1>
+        <entity2>
+          <edoal:AttributeOccurenceRestriction>
+            <edoal:onAttribute>
+                <edoal:Relation rdf:about="&confOf;reviewes" />
+            </edoal:onAttribute>
+            <edoal:comparator rdf:resource="&edoal;greater-than" />
+            <edoal:value>0</edoal:value>
+          </edoal:AttributeOccurenceRestriction>
+        </entity2>
+        <measure rdf:datatype="&xsd;float">1.0</measure>
+        <relation>Equivalence</relation>
+      </Cell>
+    </map>
+
+  </Alignment>
+</rdf:RDF>

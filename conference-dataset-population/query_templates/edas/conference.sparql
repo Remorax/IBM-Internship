@@ -1,0 +1,23 @@
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX :<http://edas#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA{
+{{conf}} a :Conference.
+{{conf}} :hasName {{conftitle}}.
+{{conf}} :location {{conflocation}}.
+{{conf}} :startDate {{startDate}}^^xsd:dateTime.
+{{conf}} :endDate {{endDate}}^^xsd:dateTime.
+
+{{conf}} :manuscriptDueOn {{subDate}}^^xsd:dateTime.
+{{conf}} :paperDueOn {{camDate}}^^xsd:dateTime.
+
+{{conf}} :registrationDueOn {{regisDate}}^^xsd:dateTime.
+
+{{generalchair}} a :ConferenceChair.
+{{generalchair}} :isMemberOf {{conf}}.
+{{pcchair}} :isMemberOf {{conf}}.
+{{occhair}} :isMemberOf {{conf}}.
+{{scchair}} :isMemberOf {{conf}}.
+
+}

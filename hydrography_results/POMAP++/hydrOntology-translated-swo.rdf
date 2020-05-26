@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='POMAP'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<onto1>http://cegis.usgs.gov/SWO</onto1>
+	<onto2>http://geo.linkeddata.es/ontology/hydro-ontology.owl</onto2>
+	<uri1>http://cegis.usgs.gov/SWO</uri1>
+	<uri2>http://geo.linkeddata.es/ontology/hydro-ontology.owl</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cegis.usgs.gov/SWO#Waterfall"/>
+			<entity2 rdf:resource="http://geo.linkeddata.es/ontology/Cascada"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cegis.usgs.gov/SWO#Rapids"/>
+			<entity2 rdf:resource="http://geo.linkeddata.es/ontology/Rápido"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cegis.usgs.gov/SWO#HydrographicFeature"/>
+			<entity2 rdf:resource="http://geo.linkeddata.es/ontology/Fenómeno_hidrográfico"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cegis.usgs.gov/SWO#Reservoir"/>
+			<entity2 rdf:resource="http://geo.linkeddata.es/ontology/Embalse"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cegis.usgs.gov/SWO#Flow"/>
+			<entity2 rdf:resource="http://geo.linkeddata.es/ontology/Corriente"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cegis.usgs.gov/SWO#Estuary"/>
+			<entity2 rdf:resource="http://geo.linkeddata.es/ontology/Estuario"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

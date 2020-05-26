@@ -1,0 +1,11 @@
+SELECT distinct ?s ?o WHERE {  
+{
+?s <http://confOf#has_title> ?o .  
+?s a <http://confOf#Working_event> .
+}
+union{
+?s a <http://confOf#Topic> .  
+?s <http://www.w3.org/2000/01/rdf-schema#label> ?o.
+}
+
+ }

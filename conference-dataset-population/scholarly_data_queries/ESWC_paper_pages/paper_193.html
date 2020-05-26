@@ -1,0 +1,767 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Paper 193 (Research track) - 2018 ESWC-Conferences</title>
+<style type="text/css">
+#fancybox-close{right:-15px;top:-15px}
+div#fancybox-content{border-color:#FFFFFF}
+div#fancybox-title{background-color:#FFFFFF}
+div#fancybox-outer{background-color:#FFFFFF}
+div#fancybox-title-inside{color:#333333}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://2018.eswc-conferences.org/paper_193/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paper 193 (Research track) - 2018 ESWC-Conferences" />
+<meta property="og:description" content="Ontological Databases with Faceted Search Author(s): Tadeusz Pankowski Full text: preprint Abstract: Ontological databases merge Semantic Web technologies, mainly ontologies, with relational databases. Thanks to this, it is possible to combine the generality and flexibility of ontologies with the effectiveness of relational databases. The challenging issue is then finding methods for formulating queries in such &hellip;" />
+<meta property="og:url" content="https://2018.eswc-conferences.org/paper_193/" />
+<meta property="og:site_name" content="2018 ESWC-Conferences" />
+<meta property="article:section" content="Paper" />
+<meta property="article:published_time" content="2018-02-14T23:28:36+02:00" />
+<meta property="article:modified_time" content="2018-05-02T23:27:25+02:00" />
+<meta property="og:updated_time" content="2018-05-02T23:27:25+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Ontological Databases with Faceted Search Author(s): Tadeusz Pankowski Full text: preprint Abstract: Ontological databases merge Semantic Web technologies, mainly ontologies, with relational databases. Thanks to this, it is possible to combine the generality and flexibility of ontologies with the effectiveness of relational databases. The challenging issue is then finding methods for formulating queries in such [&hellip;]" />
+<meta name="twitter:title" content="Paper 193 (Research track) - 2018 ESWC-Conferences" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Feed" href="https://2018.eswc-conferences.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Comments Feed" href="https://2018.eswc-conferences.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Paper 193 (Research track) Comments Feed" href="https://2018.eswc-conferences.org/paper_193/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2018.eswc-conferences.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='bxslider-css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-fa-icon-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mptt-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/mp-timetable/media/css/style.css?ver=2.1.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-base-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.11.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-10e07368e248-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-10e07368e248.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-d53a833a6a55-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-d53a833a6a55.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dpsp-frontend-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/8vb2po4n/a0bfa.css" media="all"/>
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;subset&#038;ver=4.9.5' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upw_theme_standard-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ebs_dynamic_css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/786bu6m3/a0bxp.css" media="all"/>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/13n24v4l/a0bfb.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/js/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.5'></script> -->
+<link rel='https://api.w.org/' href='https://2018.eswc-conferences.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2018.eswc-conferences.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2018.eswc-conferences.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://2018.eswc-conferences.org/?p=1312' />
+<link rel="alternate" type="application/json+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_193%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_193%2F&#038;format=xml" />
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+var arr = jQuery("a.fancybox");
+jQuery.each(arr, function() {
+var title = jQuery(this).children("img").attr("title");
+jQuery(this).attr('title',title);
+})
+}
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+'cyclic': false,
+'autoScale': true,
+'padding': 10,
+'opacity': true,
+'speedIn': 500,
+'speedOut': 500,
+'changeSpeed': 300,
+'overlayShow': true,
+'overlayOpacity': "0.3",
+'overlayColor': "#666666",
+'titleShow': true,
+'titlePosition': 'inside',
+'enableEscapeButton': true,
+'showCloseButton': true,
+'showNavArrows': true,
+'hideOnOverlayClick': true,
+'hideOnContentClick': false,
+'width': 560,
+'height': 340,
+'transitionIn': "fade",
+'transitionOut': "fade",
+'centerOnScroll': true
+});
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<noscript><style type="text/css">.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:table!important}.mptt-shortcode-wrapper .mptt-shortcode-table .mptt-event-container:hover{height:auto!important;min-height:100%!important}body.mprm_ie .mptt-shortcode-wrapper .mptt-event-container{height:auto!important}@media (max-width:767px){.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:none!important}}</style></noscript><style type="text/css" data-source="Social Pug"></style><meta name="twitter:card" 		content="summary_large_image" /><meta property="og:url"			content="https://2018.eswc-conferences.org/paper_193/" /><meta property="og:type"			content="article" /><meta property="og:title"			content="Paper 193 (Research track)" /><meta property="og:description" 	content="Ontological Databases with Faceted SearchAuthor(s): Tadeusz PankowskiFull text: preprintAbstract: Ontological databases merge Semantic Web technologies," /><meta property="og:image" 		content="" /><script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var addEvent = function(evt, handler) {
+if (window.addEventListener) {
+document.addEventListener(evt, handler, false);
+} else if (window.attachEvent) {
+document.attachEvent('on' + evt, handler);
+}
+};
+var removeEvent = function(evt, handler) {
+if (window.removeEventListener) {
+document.removeEventListener(evt, handler, false);
+} else if (window.detachEvent) {
+document.detachEvent('on' + evt, handler);
+}
+};
+var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+var logHuman = function() {
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+for (var i = 0; i < evts.length; i++) {
+removeEvent(evts[i], logHuman);
+}
+};
+for (var i = 0; i < evts.length; i++) {
+addEvent(evts[i], logHuman);
+}
+})('//2018.eswc-conferences.org/?wordfence_lh=1&hid=3F2A7D79F80878BC73BBE5434A73BCA7');
+</script><style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:#1e73be}a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: #b7b7b7;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+.navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #444444; border-color: #444444;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: #444444}.cfa-button {border-color: #444444;}.cfa { background-color: #ffffff; } .cfa-button:hover a {color: #ffffff;}.cfa-text { color: #52b1d9;}.cfa-button {border-color: #52b1d9; color: #52b1d9;}.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: #ffffff;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: #999999;}@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: #999999!important ;} }.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #1e73be;}@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: #1e73be !important; } }.dropdown-menu {background-color: #ffffff;}.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: #1e73be;}.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: #636467;}@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }.entry-content {font-family: Verdana, Geneva;}.entry-content {font-size:15px}.entry-content {font-weight:normal}</style><link rel="pingback" href="https://2018.eswc-conferences.org/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="wp-custom-css">
+.event-description {
+padding-left:10px;
+padding-right:10px;
+}
+@media (min-width: 1200px){
+.container {
+width: 1300px;
+}}
+#2001 {
+font-size: 22px !important;
+}
+.event-title  {
+display: none !important;
+}
+.well {
+padding: 50px;
+}
+#do-etfw-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#recent-comments-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#tp_widget_recent_tweets-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-4 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#media_image-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#sparkling-social-2 {
+margin-top: 5%
+}
+.wp-embed-site-icon {
+width: auto !important;
+}
+.dpsp-share-text {
+margin-top: 10%;
+}
+.ow-button-base a {
+text-align:left;
+}
+.footer-widget-area .widget {
+margin-bottom: 10px;
+}
+.col-md-6 {
+width: 100%;
+}
+.copyright {
+margin-top: 10px;
+float: right;
+text-align: center;
+padding-bottom: 5%;
+}
+#secondary .widget a {
+color: #6ba3d4;
+}
+.post-date {
+color: #999999;
+font-size: 12px;
+}
+.entry-title {
+display:block!important;
+}
+.post-title {
+font-size: 18px;
+font-weight: bold;
+}
+.post-excerpt {
+border-bottom: 1px solid #f2f2f2;
+padding-bottom: 15px;
+}
+#menu-social-items {
+padding-top: 2%;
+}
+#media_image-6 {
+margin-bottom: 2% !important;
+}
+#menu-main-menu {
+background-color: #f3f3f2;
+}
+#post-100 {
+display: none;
+}
+.flex-caption {
+display: none;
+}
+.entry-title {
+display:none;
+}
+#menu-main-menu {
+font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #555555;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+.widget ul li {
+list-style: disc;
+border-bottom: none;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-1312 single-format-standard do-etfw group-blog ">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="https://2018.eswc-conferences.org/"><img src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png"  height="93" width="100" alt="2018 ESWC-Conferences"/></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17 dropdown"><a href="https://2018.eswc-conferences.org/">ESWC 2018 </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://2018.eswc-conferences.org/history/">History</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://2018.eswc-conferences.org/about/">About</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2018.eswc-conferences.org/organizing-committee/">Organizing Committee</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://2018.eswc-conferences.org/subtrack-chairs/">Subtrack Chairs</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://2018.eswc-conferences.org/linked-events/">Linked Events</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://2018.eswc-conferences.org/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1454"><a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)">REGISTRATION</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 dropdown"><a href="https://2018.eswc-conferences.org/important-dates/">CALLS &#038; DATES </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2018.eswc-conferences.org/important-dates/">Important Dates</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://2018.eswc-conferences.org/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://2018.eswc-conferences.org/call-for-workshops/">Call for Workshops</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://2018.eswc-conferences.org/call-phd-symposium/">Call for PhD Symposium</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://2018.eswc-conferences.org/posters-and-demos/">Posters and Demos</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://2018.eswc-conferences.org/call-for-tutorials/">Call for Tutorials</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://2018.eswc-conferences.org/call-for-challenges/">Call for Challenges</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://2018.eswc-conferences.org/in-use-track/">In-Use Track</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://2018.eswc-conferences.org/industry-track/">Industry Track</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://2018.eswc-conferences.org/research-tracks/">Research Tracks</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://2018.eswc-conferences.org/resources-track/">Resources Track</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://2018.eswc-conferences.org/subtracks/">Subtracks</a></li>
+<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://2018.eswc-conferences.org/call-for-project-networking/">Call for Project Networking</a></li>
+</ul>
+</li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131 dropdown"><a href="https://2018.eswc-conferences.org/program/">Program </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://2018.eswc-conferences.org/program/sunday-june-3/">Sunday June 3</a></li>
+<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://2018.eswc-conferences.org/program/monday-june-4/">Monday June 4</a></li>
+<li id="menu-item-2559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2559"><a href="https://2018.eswc-conferences.org/program/tuesday-june-5/">Tuesday June 5</a></li>
+<li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://2018.eswc-conferences.org/program/wednesday-june-6/">Wednesday  June 6</a></li>
+<li id="menu-item-2558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2558"><a href="https://2018.eswc-conferences.org/program/thursday-june-7/">Thursday June 7</a></li>
+<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="https://2018.eswc-conferences.org/program/keynote-speakers/">Keynote Speakers</a></li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://2018.eswc-conferences.org/program/accepted-papers/">Accepted Papers</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="https://2018.eswc-conferences.org/program/submissions/">Submissions</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://2018.eswc-conferences.org/program/tutorials-workshops/">Tutorials &#038; Workshops</a></li>
+<li id="menu-item-1492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1492"><a href="https://2018.eswc-conferences.org/program/call-project-networking/">Project Networking Session</a></li>
+</ul>
+</li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://2018.eswc-conferences.org/conference-venue/">Conference Venue</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://2018.eswc-conferences.org/sponsorship/">Sponsorship</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-right">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-1312" class="post-1312 post type-post status-publish format-standard hentry category-paper">
+<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Paper 193 (Research track)</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://2018.eswc-conferences.org/paper_193/" rel="bookmark"><time class="entry-date published" datetime="2018-02-14T23:28:36+00:00">14. February 2018</time><time class="updated" datetime="2018-05-02T23:27:25+00:00">2. May 2018</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://2018.eswc-conferences.org/author/silvio/">Silvio Peroni</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="https://2018.eswc-conferences.org/category/paper/" rel="category tag">Paper</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div about='' rel='rdf:type' resource='fabio:ResearchPaper' prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<div about=''>
+<p><strong property='dcterms:title'>Ontological Databases with Faceted Search</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='#author-1'>Tadeusz Pankowski</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_193.pdf'>preprint</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract'>Ontological databases merge Semantic Web technologies, mainly ontologies, with relational databases. Thanks to this, it is possible to combine the generality and flexibility of ontologies with the effectiveness of relational databases. The challenging issue is then finding methods for formulating queries in such a system by an end-user. The standard language SPARQL essentially is not devoted for end-users. On the other side, the faceted search gains popularity and becomes a de facto standard in many Web and e-commerce applications. Recently, we witness many attempts to adapt the faceted search in semantic-based applications. In this paper we describe solutions in system DAFO ({\it Data Access based on Faceted queries over Ontologies}). In a systematic way, we describe creating of an ontological database, the role of ontological schema in this system and how this schema can be viewed in a form of a faceted interface that is used to formulate faceted queries. We discuss semantics of faceted queries in first-order logic, a mapping between ontological schema and a relational schema and its exploitation in faceted query translation and execution. </span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>ontologies</span>; <span property='prism:keyword'>ontological databases</span>; <span property='prism:keyword'>semantic databases</span>; <span property='prism:keyword'>schema mapping</span>; <span property='prism:keyword'>faceted search</span></p>
+<p><strong>Decision:</strong> <span style='color: red'>reject</span></p>
+<div about='#preprint' rel='cito:isReviewedBy'>
+<div id='review-1' about='#review-1' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='#reviewer-1'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-1' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) As I view it, the subject tackled in the paper is relevant to ESWC. Bridging the difficulties of query languages (and vocabulary gaps) for end users, and providing them with easier means of accessing the data are long-term goals which still remain to be solved.
+(NOVELTY OF THE PROPOSED SOLUTION) I do not see the clear contributions of the paper proposal to the state of the art, neither on the ontological database definition (which could be directly subsumed by R2RML), nor on the adaptation of faceted search on top of an ontology (which has been already addressed in similar ways by Kharmalov, Cuenca, Ferré, Hermann, ...). Besides, there is a lot of previous proposals about database access through ontologies. 
+Finally, the author should position the contribution regarding: 
+Rewriting and Executing Faceted Queries over Ontology-Enhanced Databases, T. Pankowski
+https://www.sciencedirect.com/science/article/pii/S1877050917315430
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The proposal seems to be correct. However, there is one particular aspect that the author has not addressed: faceted search is inherently coupled to the notion of exploration,browsing of facts/data. In the proposal, the property of preventing the user from getting into a dead end (a query without results) is lost and this limitation of the proposal (regarding faceted search) is not discussed.
+(EVALUATION OF THE STATE-OF-THE-ART) Regarding query rewriting, OBDA, and ontology mapping to RDBs, there has been a lot of efforts and works. To name a few, we could point to the works by Calvanese on query rewriting and OBDA access (without having to deal with distributed access as the author states), or also the works behind the W3C R2RML by Sequeda et al. The author just mention them without clearly stating where his proposal lies.  
+Regarding faceted search / semantic faceted search, I miss the clear comparison against some works on this line of reconciling faceted search with the Semantic Web and ontologies. In particular, apart from the more recent works by Kharmalov, Cuenca, et al. we could expect as well to compare the proposal to the work by Sébastien Ferré and Alice Hermann on this particular subject: 
+Reconciling faceted search and query languages for the Semantic Web, S. Ferré, A. 
+and all the potential related works/projects systems, such as BrowseRDF, gFacet, SPARKLIS, ... .
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The formalization and examples seem to be enough to easily follow and understand the proposal.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) There is no experimental study of the DAFO interface, which in the end is the implementation of the faceted search proposal on the ontological database.
+(OVERALL SCORE) The author proposes a formalization of the notion of ontological database and a formalization of a faceted search method to facilitate the access to the information stored in it. 
+Strong points: 
+* The proposal is formalized, and correctly presented. 
+* The faceted search proposed is implemented. 
+Main weak points: 
+* The contribution is not clear, lack of novelty and not correctly addressed state of the art regarding the two main claims (ontology database access and semantic faceted search). 
+* Lack of evaluation of the proposal in terms of usability. When proposing a search method, its usefulness must be assessed (e.g., via usability studies, or evaluating the improvements in terms of interaction, precision, etc). 
+Questions/Comments to the Authors: 
+* Why is the expressivity of the ontologies so restricted? We have the OWL 2 QL Profile precisely to allow to store the extensional data in a RDBMS. In the example, Figure 1, given the definition of ontology given, it seems that we could not use a defined concept (an intensional predicate) as domain of a property (e.g., we could not state that writtenBy has range Author). Besides, it could help to specify the expressivity in terms of DL expressivity to improve readability in this community. 
+* One of the claimed contributions is the cloning mechanism, but is not explained. 
+* The faceted interface as it is allows for the selection of different branches in the tree, which then are translated into faceted searches. However, different branches can be incompatible (in terms of existing underlying data). From the point of view of exploiting the ontology (the schema/intensional knowledge) this might be interesting, but when accessing the data themselves (or during the navigation), this can be confusing for a user that is used to regular faceted search. In my opinion, this difference must be discussed further, and evaluated with final users. 
+* Which is the contribution increment regarding: 
+Rewriting and Executing Faceted Queries over Ontology-Enhanced Databases, T. Pankowski
+https://www.sciencedirect.com/science/article/pii/S1877050917315430
+Remarks after the rebuttal: 
+The novelty of the paper is still compromised by the previous paper, and the author has not precisely answer about this subject. Besides, I do not agree with the answer about OWL QL profile. Taken directly from the OWL QL description (Owl-profiles W3C document): 
+'The OWL 2 QL profile is designed so that sound and complete query answering is in LOGSPACE (more precisely, in AC0) with respect to the size of the data (assertions), while providing many of the main features necessary to express conceptual models such as UML class diagrams and ER diagrams. In particular, this profile contains the intersection of RDFS and OWL 2 DL. It is designed so that data (assertions) that is stored in a standard relational database system can be queried through an ontology via a simple rewriting mechanism, i.e., by rewriting the query into an SQL query that is then answered by the RDBMS system, without any changes to the data.'
+This, along with the rest of previous comments, makes me not to change the evaluation already given.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-2' about='#review-2' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='#reviewer-2'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-2' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The topic is relevant for ESWC. The paper describes a way to query an ontological database using a facetted search over an ontological schema.
+(NOVELTY OF THE PROPOSED SOLUTION) The novelty of the approach have not been proven by the author. No comparison to previous work has been presented (c.f. Overall score).
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The author presents only an informal proof of the main theorem which is in my opinion not sufficient for proving the correctness and completeness of the proposed solution.
+(EVALUATION OF THE STATE-OF-THE-ART) Related work is presented very briefly with no comparison to the proposed approach.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The main properties are presented in an exhaustive manner.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) Not applicable due to lack of experimental study.
+(OVERALL SCORE) Summary of the Paper
+The paper describes a method for querying ontological databases using a facetted interface against an ontological schema. The facetted queries semantics are expressed in first order logic. The author proposes an extension of the expressiveness of the facetted queries in order to cope with the limitations related to unary and binary predicates interpretation.
+Strong Points (SPs)
+The topic of the paper of relevance for the semantic web and database communities.
+The paper introduces the main concepts in an exhaustive manner.
+The proposed solution although not evaluated is original and appropriate for the considered problem.
+Weak Points (WPs)
+The paper describes related work in a very brief manner and presents no comparison to related work. The author does not present the contribution compared to previous work.
+The novelty of the proposed method is not highlighted especially in contrast to the work describing the system that is mentioned as being the solution implemented based on the theoretical contribution in this paper.
+Lack of theoretical validation of the correctness and completeness of the proposed approach. The proof of theorem 1 is discussed informally, the author could consider linking to an external source or an appendix.
+The description logics expressivity and the parallel to conjunctive queries are not addressed.
+The paper presents no experimental evaluation.
+Remarks after rebuttal process
+The novelty of the paper compared to authors previous work is still unclear especially for the missing reference :
+Tadeusz Pankowski, Rewriting and Executing Faceted Queries over Ontology-Enhanced Databases, Procedia Computer Science, Volume 112, 2017 (http://www.sciencedirect.com/science/article/pii/S1877050917315430)
+This and the lack of theoretical and practical validation of the proposed approach make me keep my initial decision about the paper.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-3' about='#review-3' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 3 (by <span typeof='foaf:Person' about='#reviewer-3'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-3' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper covers ontological databases, a kind of ontology-based system with mappings to RDBs. SPARQL query construction is done in an already existing OBDA-platform (DAFO), and query rewriting is a central part of query execution. The theoretical framework is described using formal logic, and together with the implementation it gives a good mix of theory and real-world applications.
+This work falls within at least three of the topics listed under the chosen subtrack:
+- Query processing of Semantic Data
+- Semantic Searching and Browsing
+- Semantic Data Integration
+(NOVELTY OF THE PROPOSED SOLUTION) Ontology-based systems, mappings to RDBs, query rewriting and faceted search are all well studied techniques and areas, and the paper is not novel in that regards. The DAFO system is also mentioned in [14] together with a description of faceted interfaces, FOFQs and the query rewriting.
+However, the author introduces a formal definition of "ontological databases". This seems to be an incremental step from his previous work [14]. The cloning operation added to the DAFO system is also not found in previous work.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Section 3 about ontological databases is quite technical and the description and intuition around the meta-schema mapping is not fully clear to me. That said, everything I managed to understand seemed to be correct.
+Section 4 about faceted views and queries described an approach to making faceted queries over the ontology. The query construction, the rewriting and the new cloning operation all seems reasonable to me.
+(EVALUATION OF THE STATE-OF-THE-ART) The author has included a lot of work done in the semantic web community, and even recent papers has been included. He refers to already existing OBDA approaches and systems, theoretical work about extended databases, query rewriting and faceted search systems like SemFacet and DAFO (which is his own work).
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The approach is described theoretically and demonstrated in the DAFO system. The examples also give good support. However, I wish the author could have added more supporting text to give a better intuition of the approach, especially for the parts related to the meta-schema and schema mappings.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) - Reproducibility: The DAFO system itself does not seem to be available online, but the underlying ideas it uses can be reused by others. There are no experiments related to the paper except for the implementations done in DAFO, so there is really not much to reproduce. The definitions and theory about ontological databases can of course be tested and questioned by anyone with the necessary technical background.
+- Generality: Ontological databases are not restricted to any specific domain, but it is limited to conjunctive ontologies and the RDB constraints described in the paper. The faceted queries described are also quite expressive, at least after including the extra parts given by help of the cloning operation.
+(OVERALL SCORE) The paper describes ontological databases, which are RDBs with mappings to an ontology-based global schema. Ontological databases makes a clear distinction between extensional and intensional predicates in the ontology, and only extensional predicates are actually mapped to the relational schema. 
+Query construction over ontological databases are based on both extensional and intensional predicates of the ontology, so a rewriting step is needed in order to remove intensional predicates from the query. 
+The DAFO system includes a faceted interface, which is based on a sequence of keywords. The faceted interface is used to generate a faceted query, which is rewritten into a query only using extensional predicates. After that, mappings are used to generate a SQL query over the RDBs.
+The cloning operation allows the user to make queries with conjunctions of unary predicates, and disjunctions of binary predicates.
+* Strong Points (SPs)  ** Enumerate and explain at least three Strong Points of this work**
+- It refers to well known researchers and even recent papers from the semantic web community.
+- It is theoretical, but it also includes good, easy to understand examples.
+- It contains informative screenshots of DAFO, the system which the approach is implemented in. The fact that it is implemented in a real world system is very good.
+- The overall structure and division of the textual content is also very good.
+* Weak Points (WPs) ** Enumerate and explain at least three  Weak Points of this work**
+- The part about meta-mappings and schema mappings was not very clear. I wish the author explained more detailed and shared more of his intuition.
+- The reason to include query keywords is not clear. Is it simply because it is a part of the already made DAFO system.
+- Maybe the proof to Theorem 1 could have been included in an appendix. It is very informal, and since it was listed as a proof of the theorem, I expected more.
+- The English can be improved. "a" and "the" are often missing, which makes parts of the text harder to understand.
+* Questions to the Authors (QAs) 
+1. What is the main difference between ontological databases and OBDA-systems using R2RML?
+Authors’ answer: "OBDA and R2RML are focused on creating an ontology (as a global schema) from an existing relational database(s). In ontological databases, the starting point is an ontology, and the effort is directed to efficient query answering. Then, such issues as first-order rewritability and mechanisms for query formulation are crucial (Gottlob et al. [11]). "
+-> The focus in OBDA is not to create an ontology, but to answer queries.  R2RML is used to provide a bridge to relational databases, so the database content is (virtually) transformed to an ABox.  Reasoning through query rewriting is possible as long as the ontology is within OWL QL.
+Suggested textual improvements:
+Explanation: [remove text inside square brackets] (add text inside parentheses).
+Page 1:
+The considerations are illustrated by solutions applied in (the) DAFO system.
+methods for formulating queries against (the) ontology in such a system
+The problem of rewriting queries in such (a) scenario was studied in
+Page 2:
+One method for query(ing) ontologies is faceted search.
+Faceted queries are usually executed [throw](through) transformation
+We [proof](prove) that the cloning operation proposed
+Page 3:
+Further on, we assume that (the) considered ontologies are
+Page 4:
+The proposed restrictions are those which were verified in implementation of (the) DAFO system
+Categories of rules in (the) ontological database DAFO
+Page 5: 
+[Paper](Person)(x) & authorOf(x,y) & Paper(y) -> Author(x)
+Page 6: 
+(The) ER schema in Figure 1 can be transformed into (a) relational schema
+Elements of (the) ontological schema are mapped to elements of (the) relational schema by (a) meta-schema level mapping.
+Page 7:
+Any dependency has [a](the) form of (an) implication
+tgds are written in (the) target language
+Additionally, we assume that in (the) target language
+if there is no [a] tuple r in R
+Page 8:
+The result of executi[on](ng) m against
+Note, that a consistent ontology can be mapped into (an) inconsistent relational
+(An) [O](o)ntological database is a knowledge base
+A structural graph of a fragment of (the) terminological part
+A binary predicate with [domain](range) String is called a data property
+In such (a) faceted view:
+Page 9:
+A sample hypertree faceted view of (the) ontology BibOn
+Page 10:
+In t(h)is way, a hypertree that has n nodes
+Finally, a new root node labeled by root is created and all tree(s) are connected with this root node.
+Page 11:
+a[l](r)e selected.
+Page 14:
+The set of rules is divided into integrity constraint an(d) rewriting rules
+Especially, the crucial (part) is the utilization of RDBS that implements advanced optimization</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-4' about='#review-4' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 4 (by <span typeof='foaf:Person' about='#reviewer-4'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-4' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper is about ontological enhanced databases (and faceted queries), which fits the scope of ESWC.
+(NOVELTY OF THE PROPOSED SOLUTION) The paper introduces an ontology language consisting of rules (FOL implications that meet certain syntactical constraints) and facts. For a class of ontologies it is shown some of the terminological part can be considered as ontological schema of an ontological database. The extensional part of the ontology is instantiated as relational database.  It is further shown how such an ontological database may support faceted queries.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) I don't know how to evaluate correctness and completeness in this context, since the paper does not present a logical system. Thus, the terms correctness and completeness do not apply.
+(EVALUATION OF THE STATE-OF-THE-ART) I don’t know the literature and, thus, cannot judge whether the paper is state of the art. I therefore used my overall mark.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The approach was demonstrated with the help of examples. Except of one theorem, there was no discussion of the properties of the approach. The lack of evaluation is a weakness of the paper.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) There was no experimental study.
+(OVERALL SCORE) The paper introduces an ontology language consisting of rules (FOL implications that meet certain syntactical constraints) and facts. For a class of ontologies it is shown some of the terminological part can be considered as ontological schema of an ontological database. The extensional part of the ontology is instantiated as relational database.  It is further shown how such an ontological database may support faceted queries. 
+The paper is well-structured and mostly easy to follow. The overall impression is marred by significant weaknesses of the presentation. There plenty of grammatical errors, which sometimes lead to incomprehensible sentences. Further, some of formal definitions seem to contain errors. 
+For example: 
+- in section 2.1 bullet point "2." the variable tuple x' is not bound by a quantifier.
+- in section 2.1 bullet point "2.", the text refers to psi prime, but no psi prime is mentioned earlier in the text
+- the definition of answer to a PEQ makes no sense.  The text claims that an answer is a set of of constant tuples (instead of a set of valuations, which one would expect). The formal definition does not match that description. 
+Definition 4 of schema mappings is very confusing.  On first glance schema mappings look like a set of FOL implications. According to the text a schema mapping consists of "implication[s], where the left-hand side is written in the source language [...] and the right-hand side [...] in [the] target language". However, this is not the case, since the right-hand side contains existential quantifiers that are not part of the target language. These quantifiers seem to be interpreted procedurally. It seems that the author intends to specify an algorithm for a mapping between an ontology language and a relational schema. It would be better to present this algorithm differently. 
+I have a general question concerning the general approach presented in the paper. Ontologies first became popular in the biomedical world.  The reasons was that ontologies provided a solution to pressing data integration problem at the time: Research groups across the world maintained databases containing information on genes and gene products, each of them stored their data in relational databases that were designed to fit their unique needs, but prevented easy data integration. Ontologies solved that problem, because it allowed the various research groups to exchange data without having to change their databases. This was achieved, because the knowledge representation in the ontologies was decoupled from way the information was stored. This decoupling is indeed a prerequisite for the reusability of ontologies. It seems to me that the approach proposed by the author undermines the decoupling of data and knowledge representation. In particular, the requirement between "extensional predicates" and "intensional predicates" has no ontological basis but is only motivated by the way the predicates are treated in the database and what facts are stored. Since different people inevitably will make different choices on what predicates are "extensional" or "intensional", this kind of distinction seems to provide an obstacle to interoperability. Doesn’t that undermine the whole point of using an ontology?
+Minor:
+- In (1) chase_{R_c} is not defined, since R_c is not defined in Example 1. 
+- Example 3: it probably should be: att(affiliation)= {Person[Id], ...}
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='metareview' about='#metareview' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Metareview by <span typeof='foaf:Person' about='#metareviewer' property='foaf:name'>Olaf Hartig</span></strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-meta' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>This paper presents a (formal) approach to query ontological databases using faceted search. The reviewers agree that the presented work is relevant and that the paper makes it easy to follow and to understand the approach. On the other hand, the reviewers point out a number of issues with the paper. The main concern raised by several reviewers is that the novelty and the relationship of the presented work to state of the art is unclear. In particular, not only is the comparison to related work insufficient, there also is an earlier paper by the same author that has significant overlap with this submission (which does not reference it, and the rebuttal did not help to shed light on the issue either). Other weaknesses of the paper are the lack of an evaluation of the proposed approach in terms of usability and the insufficient theoretical validation of the approach. Due to these issues, the paper cannot be accepted for publication in the conference.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint'/></div>
+</div>
+</div>
+</div>
+<p class="dpsp-share-text">Share on</p><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content"><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_193%2F&t=Paper+193+%28Research+track%29" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Paper+193+%28Research+track%29&url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_193%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_193%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_193%2F&title=Paper+193+%28Research+track%29&mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/paper_193/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://2018.eswc-conferences.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1312' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cecd7d9781" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="23"/></p>			</form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://2018.eswc-conferences.org/paper_190/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">Paper 190 (Research track)</span></a></div><div class="nav-next"><a href="https://2018.eswc-conferences.org/paper_194/" rel="next"><span class="post-title">Paper 194 (Research track) <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">Sponsors and Supporters</h3>			<div class="textwidget"><p><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4"><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/STI-IBK-Logo-NEW-RED-01.png" alt="STI Innsbruck" title="STI Innsbruck"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/logo_farbe.png" alt="Metaphacts" title="Metaphacts"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/PoolParty-Logo-2015.jpg" alt="Semantic Web Company" title="Semantic Web Company"></div></a></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/OntotextAD.jpg" alt="Ontotext AD" title="Ontotext AD" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/Bosch_Invented_for_life.jpg" alt="Bosch Group" title="Bosch Group" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li></ul><br />
+<a style="text-decoration: underline;" href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></p>
+</div>
+</aside><aside id="do-etfw-2" class="widget widget-do-etfw">					<h3 class="widget-title">Recent Tweets</h3>		
+<a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/eswc_conf">Tweets by @eswc_conf</a>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-368">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-367">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Bakerally Noorani</span> on <a href="https://2018.eswc-conferences.org/paper_35/#comment-354">Paper 35 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-349">Paper 162 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-348">Paper 162 (Research track)</a></li></ul></aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">Proceedings published by</h3>			<div class="textwidget"><p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-195" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/Springer-1.jpg" alt="" width="192" height="61" /></a></p>
+<p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-197" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/LNCS-Logo.jpg" alt="" width="192" height="71" /></a></p>
+</div>
+</aside><aside id="media_image-5" class="widget widget_media_image"><h3 class="widget-title">Brought to you by</h3><a href="https://www.sti2.org/"><img width="192" height="47" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/sti-logo-1.jpg" class="image wp-image-194  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a></aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+<div class="footer-widget-area">
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sow-button-2" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf2bb;" ></span>
+REGISTRATION		</span>
+</a>
+</div>
+</div></div><div id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/program/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf073;" ></span>
+PROGRAM		</span>
+</a>
+</div>
+</div></div><div id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/important-dates/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf12a;" ></span>
+IMPORTANT DATES		</span>
+</a>
+</div>
+</div></div><div id="sow-button-5" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-d53a833a6a55"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/contact/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" ></span>
+Contact		</span>
+</a>
+</div>
+</div></div><div id="sparkling-social-2" class="widget sparkling-social"><h3 class="widgettitle">Follow us</h3>
+<!-- social icons -->
+<div class="social-icons sticky-sidebar-social">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>
+</div><!-- end social icons --></div>		</div><!-- .widget-area .first -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sticky-posts-2" class="widget widget_ultimate_posts"><h3 class="widgettitle">ESWC 2018 – NEWS</h3>
+<ul>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_72/" title="Paper 72 (Research track)">
+Paper 72 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Processing incoherent open government data- A case-study about Romanian public...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_5/" title="Paper 5 (Research track)">
+Paper 5 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Price Sharing for Streaming Data- A Novel Approach for Funding...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_227/" title="Paper 227 (Research track)">
+Paper 227 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:29          </p>
+<p class="post-excerpt">Dynamic Tailoring of RETE Networks in Incremental Scenarios Author(s): William...</p>
+</div>
+</li>
+</ul>
+</div>		</div><!-- .widget-area .second -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="text-2" class="widget widget_text"><h3 class="widgettitle">Extended Semantic Web Conference ESWC</h3>			<div class="textwidget"><p>The <a href="https://www.eswc-conferences.org/">ESWC</a> is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.</p>
+</div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p>&nbsp;<br />
+&nbsp;</p>
+</div>
+</div><div id="media_image-9" class="widget widget_media_image"><img width="940" height="380" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png" class="image wp-image-26  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png 940w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-300x121.png 300w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-768x310.png 768w" sizes="(max-width: 940px) 100vw, 940px" /></div>		</div><!-- .widget-area .third -->
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>					<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Copyright &copy; 2010 - 2018 <a href="https://www.sti2.org">STI International</a>, All rights reserved.					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "Event",
+"name": "ESWC 2018",
+"url": "https://2018.eswc-conferences.org/",
+"image": "https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png",
+"description": "The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.",
+"startDate": "2018-06-03T10:00",
+"endDate": "2018-06-07T16:00",
+"location": {
+"@type": "Place",
+"name": "Aldemar Knossos Royal & Royal Villa
+",
+"sameAs": "www.aldemarhotels.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Unnamed Road",
+"addressLocality": "Limenas Hersonissou",
+"addressRegion": "Heraklion",
+"postalCode": "700 14",
+"addressCountry": "Greece"
+}
+},
+"offers": {
+"@type": "Offer",
+"description": "tba",
+"url": "https://2018.eswc-conferences.org/registration/",
+"price": "tba"
+}
+}
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"vertical",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:3000,useCSS:false});jQuery(".kiwi-logo-carousel-sponsors").bxSlider({mode:"vertical",speed:20000,slideMargin:0,infiniteLoop:true,hideControlOnEnd:true,captions:false,ticker:true,tickerHover:true,adaptiveHeight:false,responsive:true,pager:true,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:false,pause:4000,useCSS:false});});</script><!-- <link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/qvh6g585/a0bfa.css" media="all"/>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/2018.eswc-conferences.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/skip-link-focus-fix.min.js?ver=20140222'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script async="async" type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=4.9.5'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.095685005187988 seconds, on 17-05-18 12:25:27 -->

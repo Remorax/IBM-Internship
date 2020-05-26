@@ -1,0 +1,862 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Paper 29 (Research track) - 2018 ESWC-Conferences</title>
+<style type="text/css">
+#fancybox-close{right:-15px;top:-15px}
+div#fancybox-content{border-color:#FFFFFF}
+div#fancybox-title{background-color:#FFFFFF}
+div#fancybox-outer{background-color:#FFFFFF}
+div#fancybox-title-inside{color:#333333}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://2018.eswc-conferences.org/paper_29/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paper 29 (Research track) - 2018 ESWC-Conferences" />
+<meta property="og:description" content="The Cost of Querying Knowledge Graphs over Triple Pattern Fragments- An Empirical Study Author(s): Lars Heling, Maribel Acosta, Maria Maleshkova, York Sure-Vetter Full text: preprint Abstract: Triple Pattern Fragments (TPFs) are a novel interface for accessing data in knowledge graphs on the web. Up to this date, work on performance evaluation and optimization has focused &hellip;" />
+<meta property="og:url" content="https://2018.eswc-conferences.org/paper_29/" />
+<meta property="og:site_name" content="2018 ESWC-Conferences" />
+<meta property="article:section" content="Paper" />
+<meta property="article:published_time" content="2018-02-14T23:25:46+02:00" />
+<meta property="article:modified_time" content="2018-05-02T23:24:27+02:00" />
+<meta property="og:updated_time" content="2018-05-02T23:24:27+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="The Cost of Querying Knowledge Graphs over Triple Pattern Fragments- An Empirical Study Author(s): Lars Heling, Maribel Acosta, Maria Maleshkova, York Sure-Vetter Full text: preprint Abstract: Triple Pattern Fragments (TPFs) are a novel interface for accessing data in knowledge graphs on the web. Up to this date, work on performance evaluation and optimization has focused [&hellip;]" />
+<meta name="twitter:title" content="Paper 29 (Research track) - 2018 ESWC-Conferences" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Feed" href="https://2018.eswc-conferences.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Comments Feed" href="https://2018.eswc-conferences.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Paper 29 (Research track) Comments Feed" href="https://2018.eswc-conferences.org/paper_29/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2018.eswc-conferences.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='bxslider-css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-fa-icon-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mptt-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/mp-timetable/media/css/style.css?ver=2.1.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-base-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.11.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-10e07368e248-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-10e07368e248.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-d53a833a6a55-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-d53a833a6a55.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dpsp-frontend-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/8vb2po4n/a0bfa.css" media="all"/>
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;subset&#038;ver=4.9.5' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upw_theme_standard-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ebs_dynamic_css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/786bu6m3/a0bxp.css" media="all"/>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/9i9ggyns/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/js/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script> -->
+<script type='text/javascript'>
+var dpsp_ajax_url = 'https://2018.eswc-conferences.org/wp-admin/admin-ajax.php';
+var dpsp_ajax_pull_post_share_counts_data = {
+action  : 'dpsp_ajax_pull_post_share_counts',
+post_id : '1188'
+}
+</script>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/147bnjm9/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.5'></script> -->
+<link rel='https://api.w.org/' href='https://2018.eswc-conferences.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2018.eswc-conferences.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2018.eswc-conferences.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://2018.eswc-conferences.org/?p=1188' />
+<link rel="alternate" type="application/json+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_29%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_29%2F&#038;format=xml" />
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+var arr = jQuery("a.fancybox");
+jQuery.each(arr, function() {
+var title = jQuery(this).children("img").attr("title");
+jQuery(this).attr('title',title);
+})
+}
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+'cyclic': false,
+'autoScale': true,
+'padding': 10,
+'opacity': true,
+'speedIn': 500,
+'speedOut': 500,
+'changeSpeed': 300,
+'overlayShow': true,
+'overlayOpacity': "0.3",
+'overlayColor': "#666666",
+'titleShow': true,
+'titlePosition': 'inside',
+'enableEscapeButton': true,
+'showCloseButton': true,
+'showNavArrows': true,
+'hideOnOverlayClick': true,
+'hideOnContentClick': false,
+'width': 560,
+'height': 340,
+'transitionIn': "fade",
+'transitionOut': "fade",
+'centerOnScroll': true
+});
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<noscript><style type="text/css">.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:table!important}.mptt-shortcode-wrapper .mptt-shortcode-table .mptt-event-container:hover{height:auto!important;min-height:100%!important}body.mprm_ie .mptt-shortcode-wrapper .mptt-event-container{height:auto!important}@media (max-width:767px){.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:none!important}}</style></noscript><style type="text/css" data-source="Social Pug"></style><meta name="twitter:card" 		content="summary_large_image" /><meta property="og:url"			content="https://2018.eswc-conferences.org/paper_29/" /><meta property="og:type"			content="article" /><meta property="og:title"			content="Paper 29 (Research track)" /><meta property="og:description" 	content="The Cost of Querying Knowledge Graphs over Triple Pattern Fragments- An Empirical StudyAuthor(s): Lars Heling," /><meta property="og:image" 		content="" /><script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var addEvent = function(evt, handler) {
+if (window.addEventListener) {
+document.addEventListener(evt, handler, false);
+} else if (window.attachEvent) {
+document.attachEvent('on' + evt, handler);
+}
+};
+var removeEvent = function(evt, handler) {
+if (window.removeEventListener) {
+document.removeEventListener(evt, handler, false);
+} else if (window.detachEvent) {
+document.detachEvent('on' + evt, handler);
+}
+};
+var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+var logHuman = function() {
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+for (var i = 0; i < evts.length; i++) {
+removeEvent(evts[i], logHuman);
+}
+};
+for (var i = 0; i < evts.length; i++) {
+addEvent(evts[i], logHuman);
+}
+})('//2018.eswc-conferences.org/?wordfence_lh=1&hid=56A63513303ACBBA546D032FACB481A4');
+</script><style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:#1e73be}a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: #b7b7b7;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+.navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #444444; border-color: #444444;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: #444444}.cfa-button {border-color: #444444;}.cfa { background-color: #ffffff; } .cfa-button:hover a {color: #ffffff;}.cfa-text { color: #52b1d9;}.cfa-button {border-color: #52b1d9; color: #52b1d9;}.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: #ffffff;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: #999999;}@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: #999999!important ;} }.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #1e73be;}@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: #1e73be !important; } }.dropdown-menu {background-color: #ffffff;}.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: #1e73be;}.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: #636467;}@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }.entry-content {font-family: Verdana, Geneva;}.entry-content {font-size:15px}.entry-content {font-weight:normal}</style><link rel="pingback" href="https://2018.eswc-conferences.org/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="wp-custom-css">
+.event-description {
+padding-left:10px;
+padding-right:10px;
+}
+@media (min-width: 1200px){
+.container {
+width: 1300px;
+}}
+#2001 {
+font-size: 22px !important;
+}
+.event-title  {
+display: none !important;
+}
+.well {
+padding: 50px;
+}
+#do-etfw-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#recent-comments-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#tp_widget_recent_tweets-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-4 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#media_image-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#sparkling-social-2 {
+margin-top: 5%
+}
+.wp-embed-site-icon {
+width: auto !important;
+}
+.dpsp-share-text {
+margin-top: 10%;
+}
+.ow-button-base a {
+text-align:left;
+}
+.footer-widget-area .widget {
+margin-bottom: 10px;
+}
+.col-md-6 {
+width: 100%;
+}
+.copyright {
+margin-top: 10px;
+float: right;
+text-align: center;
+padding-bottom: 5%;
+}
+#secondary .widget a {
+color: #6ba3d4;
+}
+.post-date {
+color: #999999;
+font-size: 12px;
+}
+.entry-title {
+display:block!important;
+}
+.post-title {
+font-size: 18px;
+font-weight: bold;
+}
+.post-excerpt {
+border-bottom: 1px solid #f2f2f2;
+padding-bottom: 15px;
+}
+#menu-social-items {
+padding-top: 2%;
+}
+#media_image-6 {
+margin-bottom: 2% !important;
+}
+#menu-main-menu {
+background-color: #f3f3f2;
+}
+#post-100 {
+display: none;
+}
+.flex-caption {
+display: none;
+}
+.entry-title {
+display:none;
+}
+#menu-main-menu {
+font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #555555;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+.widget ul li {
+list-style: disc;
+border-bottom: none;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-1188 single-format-standard do-etfw group-blog ">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="https://2018.eswc-conferences.org/"><img src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png"  height="93" width="100" alt="2018 ESWC-Conferences"/></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17 dropdown"><a href="https://2018.eswc-conferences.org/">ESWC 2018 </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://2018.eswc-conferences.org/history/">History</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://2018.eswc-conferences.org/about/">About</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2018.eswc-conferences.org/organizing-committee/">Organizing Committee</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://2018.eswc-conferences.org/subtrack-chairs/">Subtrack Chairs</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://2018.eswc-conferences.org/linked-events/">Linked Events</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://2018.eswc-conferences.org/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1454"><a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)">REGISTRATION</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 dropdown"><a href="https://2018.eswc-conferences.org/important-dates/">CALLS &#038; DATES </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2018.eswc-conferences.org/important-dates/">Important Dates</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://2018.eswc-conferences.org/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://2018.eswc-conferences.org/call-for-workshops/">Call for Workshops</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://2018.eswc-conferences.org/call-phd-symposium/">Call for PhD Symposium</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://2018.eswc-conferences.org/posters-and-demos/">Posters and Demos</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://2018.eswc-conferences.org/call-for-tutorials/">Call for Tutorials</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://2018.eswc-conferences.org/call-for-challenges/">Call for Challenges</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://2018.eswc-conferences.org/in-use-track/">In-Use Track</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://2018.eswc-conferences.org/industry-track/">Industry Track</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://2018.eswc-conferences.org/research-tracks/">Research Tracks</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://2018.eswc-conferences.org/resources-track/">Resources Track</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://2018.eswc-conferences.org/subtracks/">Subtracks</a></li>
+<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://2018.eswc-conferences.org/call-for-project-networking/">Call for Project Networking</a></li>
+</ul>
+</li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131 dropdown"><a href="https://2018.eswc-conferences.org/program/">Program </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://2018.eswc-conferences.org/program/sunday-june-3/">Sunday June 3</a></li>
+<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://2018.eswc-conferences.org/program/monday-june-4/">Monday June 4</a></li>
+<li id="menu-item-2559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2559"><a href="https://2018.eswc-conferences.org/program/tuesday-june-5/">Tuesday June 5</a></li>
+<li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://2018.eswc-conferences.org/program/wednesday-june-6/">Wednesday  June 6</a></li>
+<li id="menu-item-2558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2558"><a href="https://2018.eswc-conferences.org/program/thursday-june-7/">Thursday June 7</a></li>
+<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="https://2018.eswc-conferences.org/program/keynote-speakers/">Keynote Speakers</a></li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://2018.eswc-conferences.org/program/accepted-papers/">Accepted Papers</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="https://2018.eswc-conferences.org/program/submissions/">Submissions</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://2018.eswc-conferences.org/program/tutorials-workshops/">Tutorials &#038; Workshops</a></li>
+<li id="menu-item-1492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1492"><a href="https://2018.eswc-conferences.org/program/call-project-networking/">Project Networking Session</a></li>
+</ul>
+</li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://2018.eswc-conferences.org/conference-venue/">Conference Venue</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://2018.eswc-conferences.org/sponsorship/">Sponsorship</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-right">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-1188" class="post-1188 post type-post status-publish format-standard hentry category-paper">
+<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Paper 29 (Research track)</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://2018.eswc-conferences.org/paper_29/" rel="bookmark"><time class="entry-date published" datetime="2018-02-14T23:25:46+00:00">14. February 2018</time><time class="updated" datetime="2018-05-02T23:24:27+00:00">2. May 2018</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://2018.eswc-conferences.org/author/silvio/">Silvio Peroni</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="https://2018.eswc-conferences.org/category/paper/" rel="category tag">Paper</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div about='' rel='rdf:type' resource='fabio:ResearchPaper' prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<div about=''>
+<p><strong property='dcterms:title'>The Cost of Querying Knowledge Graphs over Triple Pattern Fragments- An Empirical Study</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='#author-1'>Lars Heling</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-2'>Maribel Acosta</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-3'>Maria Maleshkova</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-4'>York Sure-Vetter</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_29.pdf'>preprint</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract'>Triple Pattern Fragments (TPFs) are a novel interface for accessing data in knowledge graphs on the web. Up to this date, work on performance evaluation and optimization has focused mainly on the SPARQL query execution on top of TPF servers. However, in order to devise querying techniques that efficiently access knowledge graphs via TPFs, we need to identify and understand the variables that influence the performance of TPF servers on a fine-grained level. In this work, we measure the performance of TPFs by measuring the response time for different requests, and analyze how the requests’ properties may impact the performance. To this end, we conduct an empirical study over four knowledge graphs in different server environments. As part of our anal- ysis, we provide an extensive evaluation of the results and focus on the impact of the variables: triple pattern type, answer cardinality, caching and the environment type on the response time. The observed results suggest that all variables have an impact on the measured response time.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Linked Data</span>; <span property='prism:keyword'>Triple Pattern Fragment</span>; <span property='prism:keyword'>Empirical Study</span>; <span property='prism:keyword'>Querying</span>; <span property='prism:keyword'>SPARQL</span></p>
+<p><strong>Decision:</strong> <span style='color: red'>reject</span></p>
+<div about='#preprint' rel='cito:isReviewedBy'>
+<div id='review-1' about='#review-1' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='#reviewer-1'property='foaf:name'>Alessandro Margara</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-1' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper presents an empirical study to assess the performance (response
+time) of TPF servers and to study the impact of different variables.
+The paper addresses an interesting problem, relevant for the conference.
+(NOVELTY OF THE PROPOSED SOLUTION) I am not aware of similar studies.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) I am missing some details regarding the evaluation, which is of primary importance
+for an empirical study (see my detailed comments).
+(EVALUATION OF THE STATE-OF-THE-ART) Some background information is missing, and this hampers the readability of the paper
+(see my detailed comments).
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) I am missing some details regarding the evaluation, which is of primary importance
+for an empirical study (see my detailed comments).
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) I am missing some details regarding the evaluation, which is of primary importance
+for an empirical study (see my detailed comments).
+(OVERALL SCORE) The paper presents an empirical study to assess the performance (response
+time) of TPF servers and to study the impact of different variables.
+The paper addresses an interesting problem, relevant for the conference. In
+general, the paper is well written, although it lacks a detailed description
+of the TPF interface and servers, and this hampers its readability (see the
+detailed comments below). The evaluation appears to be rigorous, although its
+discussion would certainly improve if it was supported by a precise modeling
+of TPF.
+My main concern with the paper is that it provides an empirical evaluation of
+TPF without properly introducing the subject and the terminology it
+adopts. This makes some parts of the paper rather difficult to follow for a
+reader that is not familiar with the details of the TPF interface and of the
+TPF server implementation. For instance, the concept of pagination is
+discussed in Section 5, but is not properly introduced in the
+paper. Similarly, the impact of cache is evaluated without a discussion of
+caching mechanisms in the context of TPF.
+I suggest that the authors introduce a background section where they introduce
+TPF and the related terminology, and refer back to this section while
+discussing the experiment setup and results. To save space for this section, I
+would suggest to better integrate Section 3 and Section 4, thus avoiding
+repetition of concepts.
+Concerning the evaluation, I am missing some details to fully understand the
+experiment setup. In particular, how are queries submitted? Sequentially, one
+by one, or concurrently with (partial) overlap of their execution on the
+server? How exactly is the response time measured?
+An additional metric that might be interesting to investigate is the
+throughput, or availability of the server when the load of queries grows. How
+does the performance change in such scenario?
+In addition, I wonder which aspects are representative of the TPF interface
+and which ones depend on the specific implementation and settings.
+In conclusion, the paper is interesting and relevant for the conference. The
+expriments presented appear to be rigorous and the conclusions are supported
+by the measures. However, I suggest that the authors include a description of
+TPF to make the paper easier to read and follow. I also suggest that the
+authors add some details to the experiment setup and evaluation. It would be
+also interesting (possibly as future work) to include more experiments, for
+instance on throughput and availability.
+---
+Minor comments
+page 2: reprodicibility -> reproducibility
+page 5: sever -> server
+page 12: the only pattern type, which -> the only pattern type that
+page 12: results suggests -> results suggest
+page 13: correlation ca be observed -> can be observed
+---
+Strong points
+1) Relevant topic.
+2) In general the paper is well written.
+3) Novelty of the proposed solution.
+Weak point
+1) The scope is a bit narrow.
+2) A description of the key features of TPF would make the paper easier to
+read and follow.
+3) The experiment setup can be discussed in more detail.
+4) The evaluation does not consider throughput.
+Questions
+1) Concerning the evaluation. Can the authors better explain the experiment
+setup? How are queries submitted? Sequentially, one by one, or concurrently
+with (partial) overlap of their execution on the server? How exactly is the
+response time measured?
+2) The authors did not consider the throughput in their evaluation. Can they
+elaborate on this choice? Would it be possible to obtain some measurements
+of the throughput?
+---
+I'd like to thank the authors for answering my questions. I hope they can integrate
+the answers in the final version of the paper.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-2' about='#review-2' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='#reviewer-2'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-2' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) This paper tackles the problem of evaluating the response time of query answering in the Triple Pattern Fragment (TPF) setting. TPFs represent a (partially) distributed way of querying RDF data; this is achieved by serving data in the form of TPFs and moving part of the computation on the client side during query evaluation.
+Authors extend current research in the field by including more features in the evaluation framework. In general, the paper is relevant to ESWC, altough one may ask what is the real-world audience for TPS; who is actually using them? While traditional endpoint-based (centralized) query processing solutions have a clear outreach, the same cannot be said for TPS, as far as I know. Authors are encouraged to further motivate why studying this problem is important (in the real world).
+(NOVELTY OF THE PROPOSED SOLUTION) Authors include into the evaluation framework features that were not previously considered. To be more precise, their evaluation framework includes features that were considered separately in previous work (apart from Pagination and Relation KGs/ TPF instance). What I really like about this paper is the detailed explanation of the evaluation setting and the availability of source code (also for reproducibility). Nevertheless, the novelty is somehow limited. Aspects analyzed in this paper, although not specifically considered in the context of TPFs, have been considered in other benchmark settings. Moreover, I also think that including query complexity in the loop would have made the paper stronger.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) As previously said, the paper has some merit. Methodologically is sound although I think there are a couple of major issues:
+(i) authors mention (in Section 3.1) that they do not consider queries having empty answers. I have to strongly disagree with this design choice. An empty answer is still an answer. There are cases in which one is actually interested to check whether the query gives no results;
+(ii) instead of the sampling procedure, why not starting from real-logs? Or, if not available, why not *casting* query logs from traditional SPARQL endpoints into a TPF setting?
+(EVALUATION OF THE STATE-OF-THE-ART) The paper misses some important references when talking about:
+(i) "growing number of research and governmental organizations, as well as companies are looking into adapting Linked Data as part of the new data economy"; there is no single reference that backs up such statement
+(ii) "A variety of interfaces to access and query Linked Data". It would have been nice to present a characterization of previous work based on the degree of centralization (i.e., from completely distributed query evaluation approaches like SQUIN or NautiLOD to completely centralized like SPARQL endpoints passing by partially-centralized like TPFs infrastructures).
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) As previously mentioned, there are some design choice that need to be clarified; for instance, why not including queries with no answers.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) Links to the code and the complete evaluation data is available. As for the generality, I don't think that the approach is useful beyond the context of TPFs.
+(OVERALL SCORE) The paper presents an empirical study to measure the response time of TPFs querying infrastructures. Authors combine features from previous work and propose some new ones. The major contribution is a quite detailed experimental evaluation.
+Strong points:
+(i) detailed methodological description of the framework
+(ii) availability of both the code and complete evaluation data
+Weak points:
+(i) there is no clear justification of why not including also queries that give empty results 
+(ii) the conclusions are not exciting; everything is almost exactly as one would expect it (the almost being RQ2)
+Questions:
+-Can you please clarify the intuition behind not considering queries that give empty answers? 
+- Please provide further references to back up the statement made in the Introduction (e.g., about the new data economy)
+-- 
+After rebuttal:
+I thank the authors for their response and I believe they are studying queries with empty answers.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-3' about='#review-3' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 3 (by <span typeof='foaf:Person' about='#reviewer-3'property='foaf:name'>Ioanna Lytra</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-3' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The current work is very relevant to ESWC since it studies the cost of querying Knowledge Graphs using Triple Pattern Fragments, one of the most popular ways to access and query Linked Data. Therefore, the results discussed in this paper are very interesting for the Semantic Web community.
+(NOVELTY OF THE PROPOSED SOLUTION) It is not the first time that the performance of TPFs is studied under different conditions and taking into consideration different parameters; the authors cite several works that have performed similar studies like [2,8,6,13], however, this study provides a thorough evaluation and discussion of parameters like triple pattern types, type of execution environment, number of answers, caching, etc. The main novelty of the approach is the proposed architecture for evaluating TPFs consisting of the Triple Pattern Sampling Component and the Analytical Component.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The proposed solution is described in detail. A point that I am missing is how many times the experiments were replicated in order to produce the results. In addition to this, it is not very clear to me how the random sampling leads to "RDF triples that capture different characteristics of the Knowledge Graph in terms of data distributions". Also, the authors claim with regard to the Analytical Component that "the observed variable response time is not normally distributed": how is this proved? Did the authors perform a normality test for this?
+(EVALUATION OF THE STATE-OF-THE-ART) The authors are aware of the state of the art and have included all related studies to their work. Table 1 helps understand the different parameters affecting query execution time for TPFs and SPARQL endpoints that have been studied in existing works.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) This is very detailed in the paper since the experimental study is the focus of it. I am missing a discussion section that would try to interpret the results and more importantly to provide some lessons learned for the users of TPFs. For instance, how can I use these results to improve execution times or make decisions about the query interface I will used based on my queries, knowledge graphs, etc?
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The experimental study is reproducible since the data and code are available online. However, I am wondering if the results in a real-world environment are reproducible because the query time is dependent on many other parameters than the parameters studied in isolation.
+(OVERALL SCORE) Summary of the Paper
+The paper entitled "The Cost of Querying Knowledge Graphs over Triple Pattern Fragments: An Empirical Study" proposes a general methodology for assessing the query execution cost for TPFs consisting of a Sampling Component and Analytical Component and discusses the experimental results of a study focusing on the impact of different independent variables on the performance of TPFs. They use 4 different KGs for their evaluation and assess the statistical significance of the results.
+Strong Points (SPs)
+- Detailed and clear presentation of results using self-explanatory plots
+- Discussion of experimental results
+- General methodology for assessing the performance of TPFs supported by accompanying data and code for reproducibility
+Weak Points (WPs)
+- Missing comparison of the results to the results already presented in previous works (did the authors falsify or validate existing results in the literature?)
+- Missing discussion how the users of TPFs can benefit from these results (e.g. make the right decisions depending on type of queries and knowledge graphs)
+- Some things are not adequately explained, e.g. what do negative correlations mean in Table 5?
+Questions to the Authors (QAs)
+- Did you test the reproducibility of your results by repeating the experiments?
+- Did you manage to validate/falsify results in existing studies?
+After rebuttal
+--------------
+I would like to thank the authors for addressing my comments and questions.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-4' about='#review-4' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 4 (by <span typeof='foaf:Person' about='#reviewer-4'property='foaf:name'>Pieter Colpaert</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-4' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) ESWC benefits from work done on measuring the cost of querying different types of HTTP interfaces. Certainly when these HTTP interfaces expose RDF graphs, and provide RDF-specific functionality such as triple pattern filtering.
+(NOVELTY OF THE PROPOSED SOLUTION) It only measures HTTP response times as if the NodeJs+HDT back-end are a blackbox. The sampling method to come to a query mix is a simple uniform distribution, which seems a correct approach.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The work at hand evaluates a couple of knowledge graphs in two settings: a real-world setting, as published at data.linkeddatafragments.org, and a controlled environment, using the same NodeJS code-base with the HDT backends.
+My biggest question in this research is: (Q1) if an answer could be found that is unrelated to answer cardinality, isn’t this then just a bug in the NodeJS + HDT back-end code?
+Next, (Q2) why doesn’t this research study other implementations as well? E.g., what would be the effect of changing the page size at the server side?
+(EVALUATION OF THE STATE-OF-THE-ART) Ok
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The proposed approach is well explained and comprehensible. The box plots are a good visualization of the different query response times.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The experiments are reproducible for any TPF interface at https://github.com/Lars-H/tpf_profiler
+(OVERALL SCORE) This paper measures the request-response time of TPF servers in both a controller environment as on the production servers at data.linkeddatafragments.org. The triple patterns to be executed are categorized by triple pattern type (where and how many variables) and are randomly selected. All triple patterns will return at least 1 correct, and will go up to the max of, in this case, 100 triples in an HTTP response. The number of 100 triples is configurable, yet not changed by the authors. Some effects are noticed, mainly due to answer cardinality. In the controlled environment, even different effects are noticed due to a smaller cache size. The authors did not try to change the cache size either and experiment with that. The authors conclude the answer to RQ1 as a "significant impact", yet I would dare to say that this has got nothing to do with the type of triple pattern, but only with a bigger response document that needs to be transferred over HTTP. I assume the fact that there is indeed a correlation, is merely due to the fact of the effect shown in figure 5. However, concluding merely the type of triple pattern causes a different response time is highly questionable. The paper however could still be accepted after rebuttal if this answer to RQ1 is altered and the questions are addressed ↓.
+Strong points:
+* The work elaborates nicely on how a sample size is selected
+* The evaluation is reproducible
+* The motivation to make the choice for Linked Data more fact-based rather than educated guesses is refreshing.
+Weak points:
+* The paper does not elaborate on implementation details. Yet, for all tested environments, the same NodeJS+HDT backends were chosen.
+* The acknowledgement section says there were talks with the creators of HDT, yet the paper does not elaborate on these... What could the readers of this paper learn if your discussion was interesting?
+* The paper does not try to alter the out of the box behavior of the chosen software
+* The impact of pagination on response times → do you really need an experiment to know this? The code shows that retrieve a page is O(1).
+* I don’t think I learned anything from this paper that I couldn’t have known from implementation.
+Questions to the authors:
+Q1: If an answer could be found that is unrelated to answer cardinality, isn’t this then just a bug in the NodeJS + HDT back-end code?
+Q2: Why doesn’t this research study other implementations as well? E.g., what would be the effect of changing the page size at the server side?
+Q3: Could this paper be extended with researching what a "better cache" size would be? Is bigger always better?
+Minor comments:
+* RQ4: graph → graphs
+* the sever provides the set
+* a weak possitive correlation ca → can
+* traffic, influence and blur the response times → review sentence
+---
+After rebuttal:
+My objection still stands that what is measured is merely the HDT implementation of TPF. The framework could indeed be used for benchmarking TPF implementations to check for bugs, yet then this paper should have been written and submitted as a resource track paper.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='metareview' about='#metareview' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Metareview by <span typeof='foaf:Person' about='#metareviewer' property='foaf:name'>Roberto Navigli</span></strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-meta' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>This is a good prototypical paper for the evaluation task. However, the reviewers have pointed out some drawbacks that reduce the value of this work and led to rejection of the current version: 
+- Parameters like the cache size in the controlled experiment should be configurable. That is, experiments should be run with different cache sizes, in order to determine the impact that this variability may have in the results and conclusions that can be obtained from there.
+- Parameters like the amount of triples returned per HTTP response should be configurable as well in all experiments, with the same objective as above.
+- Other implementations of TPS should be considered. If they are not considered in a future version of the paper, then the title of the paper should be changed to reflect that the analysis has been done, on the controlled experiment, on a very specific implementation of TPS.
+- An analysis of throughput should be also considered, as pointed by reviewer 3.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint'/></div>
+</div>
+</div>
+</div>
+<p class="dpsp-share-text">Share on</p><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content"><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_29%2F&t=Paper+29+%28Research+track%29" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Paper+29+%28Research+track%29&url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_29%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_29%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_29%2F&title=Paper+29+%28Research+track%29&mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<h2 class="comments-title">
+3 thoughts to &ldquo;Paper 29 (Research track)&rdquo;		</h2>
+<ol class="comment-list">
+<li id="comment-19" class="comment even thread-even depth-1">
+<article id="div-comment-19" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/9a0b0515e895576a3263e97746c23bf3?s=60&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9a0b0515e895576a3263e97746c23bf3?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />						<b class="fn"><a href='https://ruben.verborgh.org/' rel='external nofollow' class='url'>Ruben Verborgh</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="https://2018.eswc-conferences.org/paper_29/#comment-19">
+<time datetime="2018-02-24T17:18:33+00:00">
+24. February 2018 at 17:18							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Dear authors,</p>
+<p>I&#8217;d like to add two important remarks, which you might want to incorporate in your final version.</p>
+<p>First, it seems that what you are benchmarking is not TPF, but HDT. Recall that TPF is just an interface, which can (as you write) be backed by multiple different backends. And the question whether something is slow or fast on TPF depends entirely on that backend. So your research questions, as currently posed and answered, are insufficiently accurate; and I would even say that the title/abstract of your paper need adjusting to incorporate HDT.</p>
+<p>Second, the slowdown you have found with  patterns can be traced back entirely to a single issue that was present in the HDT library for C++, namely <a href="https://github.com/rdfhdt/hdt-cpp/commit/936e9f780060250752b161f68484b647eb89448f" rel="nofollow">https://github.com/rdfhdt/hdt-cpp/commit/936e9f780060250752b161f68484b647eb89448f</a>. Skipping offsets on  patterns used to have linear complexity, but the aforementioned fix has brought this down. The data.linkeddatafragments server used to run v1.3.0 of the hdt library, which did not include this fix. I have upgraded it to v1.5.0 today, so you can re-evaluate its performance.</p>
+<p>My second comment also shows that your observations are not specific to TPF, not to HDT, but to a specific version of the HDT library. So it is necessary to mention such versions in your experimental setup.</p>
+<p>Hope this feedback helps to improve your paper!</p>
+<p>Best,</p>
+<p>Ruben</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-19' onclick='return addComment.moveForm( "div-comment-19", "19", "respond", "1188" )' aria-label='Reply to Ruben Verborgh'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+<li id="comment-24" class="comment odd alt thread-odd thread-alt depth-1">
+<article id="div-comment-24" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/0665707662b2267e40f375350544df4e?s=60&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/0665707662b2267e40f375350544df4e?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />						<b class="fn">York Sure-Vetter</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="https://2018.eswc-conferences.org/paper_29/#comment-24">
+<time datetime="2018-02-26T15:45:42+00:00">
+26. February 2018 at 15:45							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Thanks for reading and commenting the paper!<br />
+Best regards,<br />
+York</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-24' onclick='return addComment.moveForm( "div-comment-24", "24", "respond", "1188" )' aria-label='Reply to York Sure-Vetter'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+<li id="comment-31" class="comment even thread-even depth-1">
+<article id="div-comment-31" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt='' src='https://secure.gravatar.com/avatar/45bf067e87f7af203c3f97d70017eeea?s=60&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/45bf067e87f7af203c3f97d70017eeea?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />						<b class="fn">Lars Heling</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="https://2018.eswc-conferences.org/paper_29/#comment-31">
+<time datetime="2018-02-28T11:51:51+00:00">
+28. February 2018 at 11:51							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Dear Ruben,</p>
+<p>Thank you for your thoughts on our paper as they reflect the timeliness of our research.</p>
+<p>We appreciate your support and thank you for updating the HDT implementations on the server. Of course, we will re-evaluate our results with the new setup. In fact, one benefit of our work is that anyone may use the TPF profiler software provided in our GitHub Repository to re-run the evaluation. So you can try it out yourself and use it as a way to find and devise further improvements. We are happy that the results we reported in the paper helped out.</p>
+<p>To sort out some confusion, the study does not merely benchmark HDT as a backend, but it examines the response times of TPF servers, which are publicly available. The response time of these servers is not only affected by the backend implemented but also by exogenous factors such as network delays and server load. For reference, we also study the response times in a controlled environment, where we are sure that these effects are not present and, therefore, provide a baseline for comparison. The focus here is on the user (client) perspective of accessing knowledge graphs and the factors that influence this access. Therefore, it is necessary to examine the actual interface which are faced by users integrating TPF server as part of their applications as it this reflects real-world conditions.<br />
+In our future research, we aim to study TPF servers with other backends as well, however as of now, there are not enough servers available with other backends than HDT, for which we could exactly reproduce the settings (frontend implementation and backend-files) locally as well. </p>
+<p>We will include your suggestions in the paper and, if our submission gets accepted, would be happy to discuss the methodology at the conference.</p>
+<p>Kind regards,<br />
+Lars</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-31' onclick='return addComment.moveForm( "div-comment-31", "31", "respond", "1188" )' aria-label='Reply to Lars Heling'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .comment-list -->
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/paper_29/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://2018.eswc-conferences.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1188' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8e45748a6b" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="172"/></p>			</form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://2018.eswc-conferences.org/paper_28/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">Paper 28 (Research track)</span></a></div><div class="nav-next"><a href="https://2018.eswc-conferences.org/paper_30/" rel="next"><span class="post-title">Paper 30 (Research track) <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">Sponsors and Supporters</h3>			<div class="textwidget"><p><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4"><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/STI-IBK-Logo-NEW-RED-01.png" alt="STI Innsbruck" title="STI Innsbruck"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/logo_farbe.png" alt="Metaphacts" title="Metaphacts"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/PoolParty-Logo-2015.jpg" alt="Semantic Web Company" title="Semantic Web Company"></div></a></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/OntotextAD.jpg" alt="Ontotext AD" title="Ontotext AD" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/Bosch_Invented_for_life.jpg" alt="Bosch Group" title="Bosch Group" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li></ul><br />
+<a style="text-decoration: underline;" href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></p>
+</div>
+</aside><aside id="do-etfw-2" class="widget widget-do-etfw">					<h3 class="widget-title">Recent Tweets</h3>		
+<a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/eswc_conf">Tweets by @eswc_conf</a>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-368">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-367">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Bakerally Noorani</span> on <a href="https://2018.eswc-conferences.org/paper_35/#comment-354">Paper 35 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-349">Paper 162 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-348">Paper 162 (Research track)</a></li></ul></aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">Proceedings published by</h3>			<div class="textwidget"><p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-195" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/Springer-1.jpg" alt="" width="192" height="61" /></a></p>
+<p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-197" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/LNCS-Logo.jpg" alt="" width="192" height="71" /></a></p>
+</div>
+</aside><aside id="media_image-5" class="widget widget_media_image"><h3 class="widget-title">Brought to you by</h3><a href="https://www.sti2.org/"><img width="192" height="47" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/sti-logo-1.jpg" class="image wp-image-194  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a></aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+<div class="footer-widget-area">
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sow-button-2" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf2bb;" ></span>
+REGISTRATION		</span>
+</a>
+</div>
+</div></div><div id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/program/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf073;" ></span>
+PROGRAM		</span>
+</a>
+</div>
+</div></div><div id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/important-dates/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf12a;" ></span>
+IMPORTANT DATES		</span>
+</a>
+</div>
+</div></div><div id="sow-button-5" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-d53a833a6a55"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/contact/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" ></span>
+Contact		</span>
+</a>
+</div>
+</div></div><div id="sparkling-social-2" class="widget sparkling-social"><h3 class="widgettitle">Follow us</h3>
+<!-- social icons -->
+<div class="social-icons sticky-sidebar-social">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>
+</div><!-- end social icons --></div>		</div><!-- .widget-area .first -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sticky-posts-2" class="widget widget_ultimate_posts"><h3 class="widgettitle">ESWC 2018 – NEWS</h3>
+<ul>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_72/" title="Paper 72 (Research track)">
+Paper 72 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Processing incoherent open government data- A case-study about Romanian public...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_5/" title="Paper 5 (Research track)">
+Paper 5 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Price Sharing for Streaming Data- A Novel Approach for Funding...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_227/" title="Paper 227 (Research track)">
+Paper 227 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:29          </p>
+<p class="post-excerpt">Dynamic Tailoring of RETE Networks in Incremental Scenarios Author(s): William...</p>
+</div>
+</li>
+</ul>
+</div>		</div><!-- .widget-area .second -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="text-2" class="widget widget_text"><h3 class="widgettitle">Extended Semantic Web Conference ESWC</h3>			<div class="textwidget"><p>The <a href="https://www.eswc-conferences.org/">ESWC</a> is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.</p>
+</div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p>&nbsp;<br />
+&nbsp;</p>
+</div>
+</div><div id="media_image-9" class="widget widget_media_image"><img width="940" height="380" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png" class="image wp-image-26  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png 940w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-300x121.png 300w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-768x310.png 768w" sizes="(max-width: 940px) 100vw, 940px" /></div>		</div><!-- .widget-area .third -->
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>					<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Copyright &copy; 2010 - 2018 <a href="https://www.sti2.org">STI International</a>, All rights reserved.					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "Event",
+"name": "ESWC 2018",
+"url": "https://2018.eswc-conferences.org/",
+"image": "https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png",
+"description": "The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.",
+"startDate": "2018-06-03T10:00",
+"endDate": "2018-06-07T16:00",
+"location": {
+"@type": "Place",
+"name": "Aldemar Knossos Royal & Royal Villa
+",
+"sameAs": "www.aldemarhotels.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Unnamed Road",
+"addressLocality": "Limenas Hersonissou",
+"addressRegion": "Heraklion",
+"postalCode": "700 14",
+"addressCountry": "Greece"
+}
+},
+"offers": {
+"@type": "Offer",
+"description": "tba",
+"url": "https://2018.eswc-conferences.org/registration/",
+"price": "tba"
+}
+}
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"vertical",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:3000,useCSS:false});jQuery(".kiwi-logo-carousel-sponsors").bxSlider({mode:"vertical",speed:20000,slideMargin:0,infiniteLoop:true,hideControlOnEnd:true,captions:false,ticker:true,tickerHover:true,adaptiveHeight:false,responsive:true,pager:true,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:false,pause:4000,useCSS:false});});</script><!-- <link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/qvh6g585/a0bfa.css" media="all"/>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/2018.eswc-conferences.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/skip-link-focus-fix.min.js?ver=20140222'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script async="async" type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=4.9.5'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.13459205627441 seconds, on 17-05-18 12:20:17 -->

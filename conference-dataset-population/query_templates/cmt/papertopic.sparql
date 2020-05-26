@@ -1,0 +1,9 @@
+PREFIX :<http://cmt#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+{{papabstr}} :hasSubjectArea {{topic}}.
+{{pap}} :hasSubjectArea {{topic}}.
+	{{topic}} rdfs:label {{keyword}}.
+	{{topic}} a :SubjectArea.
+}

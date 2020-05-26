@@ -1,0 +1,6 @@
+SELECT distinct ?s ?o WHERE {  
+{ ?o <http://confOf#hasTopic> ?s . 
+?o a <http://confOf#Conference> . 
+
+}UNION  { ?o <http://confOf#dealsWith> ?s . }  
+ }

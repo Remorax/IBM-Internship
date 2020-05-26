@@ -1,0 +1,516 @@
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Program_committee .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommittee .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Committee .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommittee .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:contributes _:o2 .
+_:o2 ns0:reviews ?o .
+?s rdf:type ns0:Reviewer .
+}
+WHERE {
+?s ns1:readPaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_contribution .
+}
+WHERE {
+?s rdf:type ns1:Paper .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Written_contribution .
+}
+WHERE {
+?s rdf:type ns1:Paper .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Regular_Author .
+}
+WHERE {
+?s rdf:type ns1:Author .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Active_conference_participant .
+}
+WHERE {
+?s rdf:type ns1:Author .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_contributor .
+}
+WHERE {
+?s rdf:type ns1:Author .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Abstract .
+}
+WHERE {
+?s rdf:type ns1:PaperAbstract .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Person .
+}
+WHERE {
+?s rdf:type ns1:Person .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Review .
+}
+WHERE {
+?s rdf:type ns1:Review .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:was_a_member_of ?o .
+?o rdf:type ns0:Program_committee .
+}
+WHERE {
+?s ns1:memberOfProgramCommittee ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:was_a_member_of ?o .
+}
+WHERE {
+?s ns1:memberOfProgramCommittee ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_authors ?o .
+?s rdf:type ns0:Written_contribution .
+?o rdf:type ns0:Contribution_co-author .
+}
+WHERE {
+?s ns1:hasCo-author ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:contributes ?o .
+?s rdf:type ns0:Reviewer .
+?o rdf:type ns0:Review .
+}
+WHERE {
+?s ns1:writeReview ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Reviewer .
+}
+WHERE {
+{
+?s rdf:type ns1:Reviewer .
+} UNION 
+{
+?s rdf:type ns1:ExternalReviewer .
+}
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Chair .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommitteeChair .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:was_a_committee_chair_of _:o2 .
+_:o2 rdf:type ns0:Program_committee .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommitteeChair .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_an_email ?o .
+}
+WHERE {
+?s ns1:email ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Conference .
+}
+WHERE {
+?s rdf:type ns1:Conference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_volume .
+}
+WHERE {
+?s rdf:type ns1:Conference .
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:was_a_committee_chair_of ?o .
+}
+WHERE {
+?s ns1:memberOfProgramCommittee ?o .
+?s rdf:type ns1:ProgramCommitteeChair .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:was_a_member_of _:o2 .
+_:o2 rdf:type ns0:Program_committee .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommitteeMember .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Committee_member .
+}
+WHERE {
+?s rdf:type ns1:ProgramCommitteeMember .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:invited_by ?o .
+}
+WHERE {
+?s ns1:assignedByReviewer ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_a_committee_chair ?o .
+}
+WHERE {
+?s ns1:hasProgramCommitteeMember ?o .
+?o rdf:type ns1:ProgramCommitteeChair .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Contribution_co-author .
+}
+WHERE {
+?s rdf:type ns1:Co-author .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Reviewed_contribution .
+}
+WHERE {
+?s ns1:hasDecision ?o2 .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Topic .
+}
+WHERE {
+?s rdf:type ns1:SubjectArea .
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Rejected_contribution .
+}
+WHERE {
+{
+?s ns1:hasDecision ?o2 .
+?o2 rdf:type ns1:Rejection .
+} UNION 
+{
+?s ns1:rejectedBy ?o2 .
+}
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Submitted_contribution .
+}
+WHERE {
+?o2 ns1:submitPaper ?s .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Accepted_contribution .
+}
+WHERE {
+{
+?s ns1:hasDecision ?o2 .
+?o2 rdf:type ns1:Acceptance .
+} UNION 
+{
+?s ns1:acceptedBy ?o2 .
+}
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Review_preference .
+}
+WHERE {
+?s rdf:type ns1:Preference .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_a_review _:o2 .
+_:o2 ns0:has_authors ?o .
+?o rdf:type ns0:Reviewer .
+}
+WHERE {
+?s ns1:readByReviewer ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:invites_co-reviewers ?o .
+}
+WHERE {
+?s ns1:assignExternalReviewer ?o .
+}
+
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:contributes ?o .
+?s rdf:type ns0:Regular_author .
+?o rdf:type ns0:Written_contribution .
+}
+WHERE {
+?s ns1:writePaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_authors ?o .
+?s rdf:type ns0:Written_contribution .
+?o rdf:type ns0:Regular_author .
+}
+WHERE {
+?s ns1:hasAuthor ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Conference_document .
+}
+WHERE {
+?s rdf:type ns1:Document .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_authors ?o .
+?s rdf:type ns0:Review .
+?o rdf:type ns0:Reviewer .
+}
+WHERE {
+?s ns1:writtenBy ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s rdf:type ns0:Paper .
+}
+WHERE {
+?s rdf:type ns1:PaperFullVersion .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:contributes ?o .
+?s rdf:type ns0:Contribution_co-author .
+?o rdf:type ns0:Written_contribution .
+}
+WHERE {
+?s ns1:co-writePaper ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_members ?o .
+}
+WHERE {
+?s ns1:hasProgramCommitteeMember ?o .
+}
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ns0:<http://conference#>
+PREFIX ns1:<http://cmt#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+CONSTRUCT {
+?s ns0:has_members ?o .
+?s rdf:type ns0:Program_committee .
+}
+WHERE {
+?s ns1:hasProgramCommitteeMember ?o .
+}
+

@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:edoal='http://ns.inria.org/edoal/1.0/#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>2EDOAL</level>
+  <type>**</type>
+  <onto1>
+    <Ontology rdf:about="http://localhost:3030/gmo/">
+      <location>http://localhost:3030/gmo/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://localhost:3030/gbo/">
+      <location>http://localhost:3030/gbo/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Organization"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasAffiliation"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gmo#associatedWithProgram"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gbo#hasProgram"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gmo#atPort"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gbo#atPort"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gmo#fundedBy"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gbo#hasAward"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#PhysicalSample"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#PhysicalSample"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gmo#hasSubOrganization"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gbo#hasSubOrganization"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gmo#hasIdentifierScheme"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:and rdf:parseType="Collection">
+            <edoal:RelationDomainRestriction>
+              <edoal:class>
+                <edoal:Class rdf:about="http://gbo#Identifier"/>
+              </edoal:class>
+            </edoal:RelationDomainRestriction>
+            <edoal:Relation rdf:about="http://gbo#hasIdentifierScheme"/>
+          </edoal:and>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Program"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#Program"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gmo#originatesFrom"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gbo#originatesFrom"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Person"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#Person"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Identifier"/>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation>
+              <edoal:inverse>
+                <edoal:Relation rdf:about="http://gbo#hasIdentifier"/>
+              </edoal:inverse>
+            </edoal:Relation>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7692307692307692</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Identifier"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#Identifier"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Vessel"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#Vessel"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gmo#Place"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gbo#Place"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,723 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Paper 6 (Research track) - 2018 ESWC-Conferences</title>
+<style type="text/css">
+#fancybox-close{right:-15px;top:-15px}
+div#fancybox-content{border-color:#FFFFFF}
+div#fancybox-title{background-color:#FFFFFF}
+div#fancybox-outer{background-color:#FFFFFF}
+div#fancybox-title-inside{color:#333333}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://2018.eswc-conferences.org/paper_6/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paper 6 (Research track) - 2018 ESWC-Conferences" />
+<meta property="og:description" content="On the Semantics of TPF-QS towards Publishing and Querying RDF Streams at Web-scale Author(s): Ruben Taelman, Riccardo Tommasini, Joachim Van Herwegen, Ruben Verborgh, Emanuele Della Valle, Erik Mannens Full text: preprint Abstract: RDF Stream Processing(RSP) is a rapidly evolving area of research that focuses on extensions of the Semantic Web in order to model and &hellip;" />
+<meta property="og:url" content="https://2018.eswc-conferences.org/paper_6/" />
+<meta property="og:site_name" content="2018 ESWC-Conferences" />
+<meta property="article:section" content="Paper" />
+<meta property="article:published_time" content="2018-02-14T23:25:22+02:00" />
+<meta property="article:modified_time" content="2018-05-02T23:23:54+02:00" />
+<meta property="og:updated_time" content="2018-05-02T23:23:54+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="On the Semantics of TPF-QS towards Publishing and Querying RDF Streams at Web-scale Author(s): Ruben Taelman, Riccardo Tommasini, Joachim Van Herwegen, Ruben Verborgh, Emanuele Della Valle, Erik Mannens Full text: preprint Abstract: RDF Stream Processing(RSP) is a rapidly evolving area of research that focuses on extensions of the Semantic Web in order to model and [&hellip;]" />
+<meta name="twitter:title" content="Paper 6 (Research track) - 2018 ESWC-Conferences" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Feed" href="https://2018.eswc-conferences.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Comments Feed" href="https://2018.eswc-conferences.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Paper 6 (Research track) Comments Feed" href="https://2018.eswc-conferences.org/paper_6/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2018.eswc-conferences.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='bxslider-css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-fa-icon-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mptt-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/mp-timetable/media/css/style.css?ver=2.1.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-base-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.11.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-10e07368e248-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-10e07368e248.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-d53a833a6a55-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-d53a833a6a55.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dpsp-frontend-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/8vb2po4n/a0bfa.css" media="all"/>
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;subset&#038;ver=4.9.5' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upw_theme_standard-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ebs_dynamic_css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/786bu6m3/a0bxp.css" media="all"/>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/9i9ggyns/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/js/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script> -->
+<script type='text/javascript'>
+var dpsp_ajax_url = 'https://2018.eswc-conferences.org/wp-admin/admin-ajax.php';
+var dpsp_ajax_pull_post_share_counts_data = {
+action  : 'dpsp_ajax_pull_post_share_counts',
+post_id : '1168'
+}
+</script>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/147bnjm9/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.5'></script> -->
+<link rel='https://api.w.org/' href='https://2018.eswc-conferences.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2018.eswc-conferences.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2018.eswc-conferences.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://2018.eswc-conferences.org/?p=1168' />
+<link rel="alternate" type="application/json+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_6%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_6%2F&#038;format=xml" />
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+var arr = jQuery("a.fancybox");
+jQuery.each(arr, function() {
+var title = jQuery(this).children("img").attr("title");
+jQuery(this).attr('title',title);
+})
+}
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+'cyclic': false,
+'autoScale': true,
+'padding': 10,
+'opacity': true,
+'speedIn': 500,
+'speedOut': 500,
+'changeSpeed': 300,
+'overlayShow': true,
+'overlayOpacity': "0.3",
+'overlayColor': "#666666",
+'titleShow': true,
+'titlePosition': 'inside',
+'enableEscapeButton': true,
+'showCloseButton': true,
+'showNavArrows': true,
+'hideOnOverlayClick': true,
+'hideOnContentClick': false,
+'width': 560,
+'height': 340,
+'transitionIn': "fade",
+'transitionOut': "fade",
+'centerOnScroll': true
+});
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<noscript><style type="text/css">.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:table!important}.mptt-shortcode-wrapper .mptt-shortcode-table .mptt-event-container:hover{height:auto!important;min-height:100%!important}body.mprm_ie .mptt-shortcode-wrapper .mptt-event-container{height:auto!important}@media (max-width:767px){.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:none!important}}</style></noscript><style type="text/css" data-source="Social Pug"></style><meta name="twitter:card" 		content="summary_large_image" /><meta property="og:url"			content="https://2018.eswc-conferences.org/paper_6/" /><meta property="og:type"			content="article" /><meta property="og:title"			content="Paper 6 (Research track)" /><meta property="og:description" 	content="On the Semantics of TPF-QS towards Publishing and Querying RDF Streams at Web-scaleAuthor(s): Ruben Taelman," /><meta property="og:image" 		content="" /><script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var addEvent = function(evt, handler) {
+if (window.addEventListener) {
+document.addEventListener(evt, handler, false);
+} else if (window.attachEvent) {
+document.attachEvent('on' + evt, handler);
+}
+};
+var removeEvent = function(evt, handler) {
+if (window.removeEventListener) {
+document.removeEventListener(evt, handler, false);
+} else if (window.detachEvent) {
+document.detachEvent('on' + evt, handler);
+}
+};
+var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+var logHuman = function() {
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+for (var i = 0; i < evts.length; i++) {
+removeEvent(evts[i], logHuman);
+}
+};
+for (var i = 0; i < evts.length; i++) {
+addEvent(evts[i], logHuman);
+}
+})('//2018.eswc-conferences.org/?wordfence_lh=1&hid=A700285C4D50F9DEFEAEE6C7F128FF8B');
+</script><style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:#1e73be}a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: #b7b7b7;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+.navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #444444; border-color: #444444;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: #444444}.cfa-button {border-color: #444444;}.cfa { background-color: #ffffff; } .cfa-button:hover a {color: #ffffff;}.cfa-text { color: #52b1d9;}.cfa-button {border-color: #52b1d9; color: #52b1d9;}.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: #ffffff;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: #999999;}@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: #999999!important ;} }.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #1e73be;}@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: #1e73be !important; } }.dropdown-menu {background-color: #ffffff;}.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: #1e73be;}.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: #636467;}@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }.entry-content {font-family: Verdana, Geneva;}.entry-content {font-size:15px}.entry-content {font-weight:normal}</style><link rel="pingback" href="https://2018.eswc-conferences.org/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="wp-custom-css">
+.event-description {
+padding-left:10px;
+padding-right:10px;
+}
+@media (min-width: 1200px){
+.container {
+width: 1300px;
+}}
+#2001 {
+font-size: 22px !important;
+}
+.event-title  {
+display: none !important;
+}
+.well {
+padding: 50px;
+}
+#do-etfw-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#recent-comments-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#tp_widget_recent_tweets-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-4 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#media_image-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#sparkling-social-2 {
+margin-top: 5%
+}
+.wp-embed-site-icon {
+width: auto !important;
+}
+.dpsp-share-text {
+margin-top: 10%;
+}
+.ow-button-base a {
+text-align:left;
+}
+.footer-widget-area .widget {
+margin-bottom: 10px;
+}
+.col-md-6 {
+width: 100%;
+}
+.copyright {
+margin-top: 10px;
+float: right;
+text-align: center;
+padding-bottom: 5%;
+}
+#secondary .widget a {
+color: #6ba3d4;
+}
+.post-date {
+color: #999999;
+font-size: 12px;
+}
+.entry-title {
+display:block!important;
+}
+.post-title {
+font-size: 18px;
+font-weight: bold;
+}
+.post-excerpt {
+border-bottom: 1px solid #f2f2f2;
+padding-bottom: 15px;
+}
+#menu-social-items {
+padding-top: 2%;
+}
+#media_image-6 {
+margin-bottom: 2% !important;
+}
+#menu-main-menu {
+background-color: #f3f3f2;
+}
+#post-100 {
+display: none;
+}
+.flex-caption {
+display: none;
+}
+.entry-title {
+display:none;
+}
+#menu-main-menu {
+font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #555555;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+.widget ul li {
+list-style: disc;
+border-bottom: none;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-1168 single-format-standard do-etfw group-blog ">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="https://2018.eswc-conferences.org/"><img src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png"  height="93" width="100" alt="2018 ESWC-Conferences"/></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17 dropdown"><a href="https://2018.eswc-conferences.org/">ESWC 2018 </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://2018.eswc-conferences.org/history/">History</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://2018.eswc-conferences.org/about/">About</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2018.eswc-conferences.org/organizing-committee/">Organizing Committee</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://2018.eswc-conferences.org/subtrack-chairs/">Subtrack Chairs</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://2018.eswc-conferences.org/linked-events/">Linked Events</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://2018.eswc-conferences.org/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1454"><a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)">REGISTRATION</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 dropdown"><a href="https://2018.eswc-conferences.org/important-dates/">CALLS &#038; DATES </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2018.eswc-conferences.org/important-dates/">Important Dates</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://2018.eswc-conferences.org/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://2018.eswc-conferences.org/call-for-workshops/">Call for Workshops</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://2018.eswc-conferences.org/call-phd-symposium/">Call for PhD Symposium</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://2018.eswc-conferences.org/posters-and-demos/">Posters and Demos</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://2018.eswc-conferences.org/call-for-tutorials/">Call for Tutorials</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://2018.eswc-conferences.org/call-for-challenges/">Call for Challenges</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://2018.eswc-conferences.org/in-use-track/">In-Use Track</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://2018.eswc-conferences.org/industry-track/">Industry Track</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://2018.eswc-conferences.org/research-tracks/">Research Tracks</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://2018.eswc-conferences.org/resources-track/">Resources Track</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://2018.eswc-conferences.org/subtracks/">Subtracks</a></li>
+<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://2018.eswc-conferences.org/call-for-project-networking/">Call for Project Networking</a></li>
+</ul>
+</li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131 dropdown"><a href="https://2018.eswc-conferences.org/program/">Program </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://2018.eswc-conferences.org/program/sunday-june-3/">Sunday June 3</a></li>
+<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://2018.eswc-conferences.org/program/monday-june-4/">Monday June 4</a></li>
+<li id="menu-item-2559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2559"><a href="https://2018.eswc-conferences.org/program/tuesday-june-5/">Tuesday June 5</a></li>
+<li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://2018.eswc-conferences.org/program/wednesday-june-6/">Wednesday  June 6</a></li>
+<li id="menu-item-2558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2558"><a href="https://2018.eswc-conferences.org/program/thursday-june-7/">Thursday June 7</a></li>
+<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="https://2018.eswc-conferences.org/program/keynote-speakers/">Keynote Speakers</a></li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://2018.eswc-conferences.org/program/accepted-papers/">Accepted Papers</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="https://2018.eswc-conferences.org/program/submissions/">Submissions</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://2018.eswc-conferences.org/program/tutorials-workshops/">Tutorials &#038; Workshops</a></li>
+<li id="menu-item-1492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1492"><a href="https://2018.eswc-conferences.org/program/call-project-networking/">Project Networking Session</a></li>
+</ul>
+</li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://2018.eswc-conferences.org/conference-venue/">Conference Venue</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://2018.eswc-conferences.org/sponsorship/">Sponsorship</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-right">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-1168" class="post-1168 post type-post status-publish format-standard hentry category-paper">
+<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Paper 6 (Research track)</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://2018.eswc-conferences.org/paper_6/" rel="bookmark"><time class="entry-date published" datetime="2018-02-14T23:25:22+00:00">14. February 2018</time><time class="updated" datetime="2018-05-02T23:23:54+00:00">2. May 2018</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://2018.eswc-conferences.org/author/silvio/">Silvio Peroni</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="https://2018.eswc-conferences.org/category/paper/" rel="category tag">Paper</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div about='' rel='rdf:type' resource='fabio:ResearchPaper' prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<div about=''>
+<p><strong property='dcterms:title'>On the Semantics of TPF-QS towards Publishing and Querying RDF Streams at Web-scale</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='#author-1'>Ruben Taelman</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-2'>Riccardo Tommasini</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-3'>Joachim Van Herwegen</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-4'>Ruben Verborgh</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-5'>Emanuele Della Valle</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-6'>Erik Mannens</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_6.pdf'>preprint</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract'>RDF Stream Processing(RSP) is a rapidly evolving area of research that focuses on extensions of the Semantic Web in order to model and process Web data streams. While state-of-the-art approaches concentrate on server-side processing of RDF streams, we investigate the TPF-QS method for server-side publishing of RDF streams, which moves the workload of continuous querying to clients. We formalize TPF-QS in terms of the RSP-QL reference model in order to formally compare it with existing RSP query languages. We experimentally validate that, compared to the state of the art, the server load of TPF-QS scales better with increasing numbers of concurrent clients in case of simple queries, at the cost of increased bandwidth consumption. This shows that TPF-QS is an important first step towards a viable solution for Web-scale publication and continuous processing of RDF streams.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Linked Data</span>; <span property='prism:keyword'>RDF stream processing</span>; <span property='prism:keyword'>continuous querying</span>; <span property='prism:keyword'>TPF-QS</span>; <span property='prism:keyword'>RSP-QL</span>; <span property='prism:keyword'>SPARQL</span></p>
+<p><strong>Decision:</strong> <span style='color: red'>reject</span></p>
+<div about='#preprint' rel='cito:isReviewedBy'>
+<div id='review-1' about='#review-1' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='#reviewer-1'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-1' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper deals with the problem of publishing and querying rdf streams.
+(NOVELTY OF THE PROPOSED SOLUTION) The authors propose a novel solution, but do not make clear exactly in what aspects and how it is different from existing approaches.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The proposed solution appears to be correct and complete.
+(EVALUATION OF THE STATE-OF-THE-ART) The state of the art is nicely summarized and discussed. It could be improved by including a brief discussion on the differences of the proposed approach to existing approaches, which are now discussed in more detail in Table 1.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The paper has a nice discussion of the proposed approach, which is easy to follow.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The experimental evaluation covers several aspects of the problem and the proposed approach. Though, it does not shed much light on when to use the proposed approach vs existing systems, eg, what the sweet spot of query/data rate is that would make TPF-QS better/worse than an existing streaming or SPARQL engines.
+The authors should add titles in the y-axes of the graphs in figures 3-5.
+(OVERALL SCORE) This proposes a solution for publishing and querying slow RDF streams, and demonstrates the tradeoffs of the proposed solution.
+Strong points:
+1. Deals with a real problem
+2. Proposes an efficient solution
+3. Experiments demonstrate the superiority of the proposed solution
+Weak points:
+1. Experiments do not reveal the operating sweet spot of the proposed solution
+2. Discussion of related work could be improved
+3. Explain in one sentence, and add references, for the Kruskal-Wallis and Nemenyi tests</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-2' about='#review-2' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='#reviewer-2'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-2' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper is highly relevant to ESWC, especial it tries to address one of the topics of interest highlighted in Mobile Web, Sensors and Semantic Streams.
+(NOVELTY OF THE PROPOSED SOLUTION) The solution is just the incremental extension from authors’ previous work, the idea is not innovative in terms of state of the art of query federation in general.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The paper tries to map their semantics of execution to, so called, RSP-QL semantics which partially discussed in reference [11]. I personally, think unified semantics for RSP processing is still not in a established phase yet, the field is too young to have an agreed sound semantics(denotational and operational). The paper claims o formalism of operational semantics which I don’t think it’s clearly addressed in the paper yet.
+(EVALUATION OF THE STATE-OF-THE-ART) The paper has the evaluations against two current RSP systems, C-SPARQL and CQELS but the comparison results are controversial. The paper does not touch similar approaches such as query federation and publish/subscribe systems.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The formal operational semantics is somehow toughed but it is not full addressed.  The technical details on how the rewrite work are left in their workshop paper[22]
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The implementation is open source and evaluations are provided from reproducing. The generality of the Experimental Study is not convincing.
+(OVERALL SCORE) The paper investigates the TPF-QS method for server-side publishing of RDF streams, which moves the workload of continuous querying to clients using TPF client previously developed by some of authors. Via its experiments, the paper claims its approach can help to  scale the server load  better with increasing numbers of concurrent clients in the case of simple queries, and at the cost of increased bandwidth consumption. In general, the paper does not contributes much new scientific and technical breakthrough with an insignificant extension of its workshop paper. Some experiment results are obvious and misleading. Note that, a previous version this paper was submitted to ESWC 2017, I rejected that version with the hope the authors will make a good paper out that. But, disappointedly, after one year, the authors submitted nearly the same content, so, I reuse most of my comments from last year. 
+*** Weak Points (WPs) ***
+1)Controversial motivations: I’m not convincing with the authors’s argument that their solution will provide a more scalable solution to the server-side processing. By moving the processing to the clients, this approach will loose opportunities for optimising shared query loads among concurrent queries which I think the saving workload and memory consumption might surpass the saving always-on concurrent network connections not to mention that pushing data out to clients also consume computing and memory resources in data exchange operations. On top of that, the paper put itself to the competition with well-established publish/subscribe systems. Hence, authors need to work hard to find a sharp angel to motivate their approach. 
+2) Unsolid formalisation ground : The paper tries to map their semantics of execution to, so called,  RSP-QL semantics which partially discussed in reference [11]. I personally, think unified semantics for RSP processing is still not in a established phase yet, the field is too young to have an agreed sound semantics(denotational and operational). The paper claims of formalism of operational semantics which I don’t think it’s clearly addressed in the paper yet. I would recommend author to consider the challenges in dealing execution semantics in the distributed settings such as correctness, latency and time domain skew in  the paper[1] for the future manuscript.
+3) Weak evaluation:  The authors claimed that they “created a set of SPQRAL  queries to semantically equivalent results using on the RSP-QL-based formalization from Section 4 and operational engine comparisons from Section 5, so that they result in an evaluation frequency of 10 seconds. This frequency was chosen because earlier experiments have shown that TPF-QS  works best with this order of frequencies or slower. Additional details on how these queries were semantically transformed can be found …” . I’m not convinced that this way can guarantee the semantic equivalent of C-SPARQL and CQELS because C-SPARQL and CQELS have different mechanisms of triggering the execution and semantics of the output are different. Secondly, it’s impossible to compare CPU loads of periodical execution mechanism(C-SPARQL,TPF-QS) with input&timer-based-triggered(CQELS), because it frequency of triggering execution is much higher due the fact that the processing load is not only contributed  by the stream input but also the timers that regularly check expired data items of the windows of 10 seconds.
+To some certain extent, pushing some parts of the continuous processing load over stream data to the consumer side might be a good idea. But the claim on scalability is controversial. First, look closely on the conclusion derived from the experiments, "server load scales better with increase of number clients….”, it think it’s not fair just to look into Fig 4 and 5 to conclude that TPF-QS scales better or the paper approach will help to scale the server load. Because, the behaviour is quite obvious, in TPF-QS it has 8 machines to run its clients, the accumulated processing load is divided into 8 computing nodes( 1 for server, 8 for clients) whilst, C-SPARQL and CQELS engine have to process 20-60 concurrent queries in 1 processing node. 
+4) Poor presentation: The flow paper sometimes confusing to me, e.g., wordings, main messages and contributions of the paper. The section 2 and section 3 wanders around several things that are obvious. The paper mentions about“formalising…” that makes it sounds that its formalisations is one of the innovative aspects of the paper, but, by reading section 4 and 5, there is no significant contributions given there. The evaluation lacks several technical details that might lead to confusion in interpreting the evaluation results. For instance, there is no explanation or definition of "query completeness”. Also, there is no details on how the metrics are measured, e.g, latencies in C-SPARQL and CQELS. In overall, the storyline from the tile “On Semantics…” to section title and content flow is misleading for me. 
+***Strong Points***
+1) The paper introduces an interesting angle of processing RDF stream data based on their previous work on Linked Data Fragment.
+2) Authors spent good Implementation effort to realise their solution and make it accessible. 
+3) The evaluation is reproducible.
+[1] Tyler Akidau, Robert Bradshaw, Craig Chambers, Slava Chernyak, Rafael J. Fernández-Moctezuma, Reuven Lax, Sam McVeety, Daniel Mills, Frances Perry, Eric Schmidt, and Sam Whittle. 2015. The dataflow model: a practical approach to balancing correctness, latency, and cost in massive-scale, unbounded, out-of-order data processing. Proc. VLDB Endow. 8, 12 (August 2015), 1792-1803.
+====After rebutal====
+I would like to thank authors for responding to my concerns. However, I would disagree with authors's main arguments as following:
+----Motivations----
+It's not true to assume that C-SPARQL or CQELS or some other current state-of-the arts are a server-side only solution. Moreover, the paper over-claimed that TPF-QS makes a "paradigm shift" to move the processing load to the client side for the sake of scalability. In fact, these engines can be decoupled from stream sources and then process the rest of the processing pipelines in another computing node. In fact, there are some recent implementations on top C-SPARQL and CQELS that can consume stream sources via websocket, mqtt or http. So, moving processing load is just a deployment choice which TPF_QS processing engine does similar jobs like that of C-SPARQL and CQELS. So, service-side coupling of current system is not a limitation, and moving processing to multi-clients is capability that other existing system can support as well.
+Now coming to the debate on whether executing processing on client-side will actually more efficient and more scalable than a centralised solution which serves multiple clients. First, for server-side caching, some good performance indications from  "Triple Pattern Fragments, Verborgh et al." does not mean it's universal as materialised view techniques have been used for million connections for the last 20-30 years. Authors might argue that they targeted the publishing servers that have limited resources or capabilities like sensor gateways like RaspberryPi which do not have such complicated processing capabilities. I personally think it's a good direction for the paper to motivate its contribution. However, I don't think paying the "scalability" card is the right move here. Bear in mind that, the common practice in collecting&processing stream sources of resource-constraint devices is relaying stream data to bigger gateways to avoid multiple connections for the sake robustness and security, so, there are more effort to convince against this. 
+----Formalization Ground-----
+Let's dive into RSP-QL paper to see if it will provide a good ground for this paper's operational semantics. RSP-QL makes very strict assumption on "time required to evaluate the query current input and to produce the portion of answer is lover than the time unit". However, the paper does not discuss or align with this assumption in their definitions, especially Definitions 5,6 and 7. Oddly, in section 4.3, paragraph 2, authors mentions "we assume that all query evaluations take one time unit, except for the evaluation at time 6, which takes two time units"
+One important aspect of  RSP-QL's continuous execution semantics is that it does not consider the time domain skewness problems that are highlighted in the paper[1] (I proposed above). This problem is really common in currently practice of processing stream pipeline whereby data arrives from remote sources. Think this problem applies to TPF-QS which I don't think are covered in RSP-QL's paper. Therefore, I doubt that operational semantics presented in this paper will guarantee the determinism of the output.
+----Evaluation-------
+I checked the paper's appendix (2 pages), I'm still not convinced that the query semantics are equivalently in both denotational and operational aspects. I noticed there are some recent papers shown that slide parameter of CQELS does not work, but the paper claimed that it used SLIDE 1s to align the execution steps to have comparable results. With my above concerns, I think the evaluation results are very controversial.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-3' about='#review-3' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 3 (by <span typeof='foaf:Person' about='#reviewer-3'property='foaf:name'>Alasdair Gray</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-3' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) This manuscript talks about the formal operation of TPF-QS, a query streamer in the domain of RDF Stream Processing. It is relevant to ESWC.
+(NOVELTY OF THE PROPOSED SOLUTION) The strategies proposed in this manuscript are interesting and novel.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The technologies proposed in this manuscript are elaborated throughly.
+(EVALUATION OF THE STATE-OF-THE-ART) The state of the art technologies are investigated and evaluated in detail.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The proposed operational semantics are compared with some other solutions available on CityBench, by experiments on the same queries. The results are evaluated through criteria like server cpu, query result latency, result completeness, bandwidth and client cpu usage. The discussion is quite clear and reasonable.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The code and setups to repeat the evaluation experiment are open and available online.
+(OVERALL SCORE) Thank you for the thorough rebuttal. It would be good to see these issues addressed in the final version of the paper.
+----
+This manuscript proposed TPF-QS -- an extension of a previously proposed query streamer TPF. It discussed the formal operational semantics of TPF-QS, including the mapping strategy "TpfqsToRspql" to map TPF streams into RSP streams. Experiments are made to compare with some other RSP query languages. Performance and overhead are discussed in detail with the metrics of server cpu, query result latency, result completeness, bandwidth and client cpu usage. 
+The work proposed in the manuscript is novel. The logic of the presentation is clear and reasonable. Experiments are well designed, with the code and setups available in public for repetition. Some minor weak points do exist, however, as listed below.
+- It could be better to move the full name of TPF-QS at the beginning of the manuscript, rather than at the middle in Section 2.1.
+- Page 10, second last paragraph of Section 6.1, last sentence: “… cores machine cores.” Is that possible that you could check the phrase?
+- The font of the text does not seem to be consistent, especially for acronyms in capital.
+Abstract states the expected result – increased scalability but at the cost of bandwidth. Where is the cross-over point in terms of rate of stream vs speed of processing? It might be worth adding the details of the target use case, slow streams with temporal querying into the abstract.
+How does the query processor know which statements in the query are streaming and those which are stored? What is the metadata required to do this inferencing? Make clear that the ?sensor is instatiated to ex:sensor1 based on the results of query 1.3 to materialise 1.5.
+Stream definition is that of previous RSP engines, i.e. timestamped triples. The RSP-QL model is one of timestamped graphs of triples.
+http://streamreasoning.github.io/RSP-QL/Abstract%20Syntax%20and%20Semantics%20Document/
+Window start is not unique to TPF-QS, it is supported in SPARQLStream; SPARQLStream supports both historic windows and refreshing of stored data sources. Entry in Table 1 for MorphStream should be updated.
+Evaluation frequency set to 10 seconds. What was the original evaluation frequency of city bench? What are the consequences of this decision? Many of the original queries have a range of 3s. Are there other windowing factors that are affected by this choice?
+CityBench defines 13 queries, you only mention 12. It would be good to summarise the features of these queries and what makes them simple or complex.
+Fig 2: Why do queries 2 & 9 have high client CPU usage? 
+Fig 3: Why do the server side versions plataux at less than 20 clients. Are all clients served correctly?
+§6.6: Discussion
+What is the case where TPF-QS has higher accuracy than one of the RSP engines.
+TPF-QS is not the first system to support historic queries.
+Conclusions
+Low-powered sensors generally have energy as a major concern. In that case, TPF is not the appropriate solution as transmission is far more energy consuming than processing. I do agree that there is a place for TPF-QS.
+TPF-QS requires a stream publishing server and a client, just like any of the RSP engines.
+Minor issues:
+- Listing 1.4 keep ? with sensor in SELECT clause.
+- p10: number of cores machine cores.
+- Footnote 2 does not appear on the same page as the reference
+- p10: These results of these tests
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-4' about='#review-4' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 4 (by <span typeof='foaf:Person' about='#reviewer-4'property='foaf:name'>Pankesh Patel</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-4' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) rdf Stream Processing (rsp) is a rapidly evolving area of research that focuses on extensions of the SemanticWeb in order to model and processWeb data streams. The topic area is quite relevant to the conference.
+(NOVELTY OF THE PROPOSED SOLUTION) With the current state of the art, we have to either keep the server always active with an rsp engine for this slow stream, or we have to use a traditional sparql solution that lacks the temporal dimension. Clearly, these solutions are both sub-optimal and they suffer from scalability problems for a large number of clients that need to query the stream. This is because rsp engines have to maintain open connections with each client to push new results, whereas the high complexity of sparql queries can lead to low
+availability in sparql endpoints.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The authors support the contribution by formalizing the operational semantics of tpf-qs using rsp-ql . This enables the authors to formally compare its evaluation with other rsp engines. After that, the authors extensively evaluate tpf-qs using CityBench, an rsp benchmark with real-world data.
+(EVALUATION OF THE STATE-OF-THE-ART) To best of my knowledge, the state of art is complete and comprehensive. In Section 2, the authors first present the related work on querying and publishing Linked Data,
+after which they present their respective extensions for rdf streams.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) This paper formalizes tpf-qs in terms of the rsp-ql reference model in order to formally compare it with
+existing rsp query languages. The authors experimentally validate that, compared to the state of the art, the server load of tpf-qs scales better with increasing numbers of concurrent clients in case of simple queries, at the cost of increased bandwidth consumption.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The authors extensively evaluate tpf-qs using CityBench, an rsp benchmark with real-world data. In CityBench case, the average number of cars that enter and exit a parking area in a given time interval is monitored. Data are produced by a sensor network deployed over the parking area where new observations are streamed out every 5 minutes.
+(OVERALL SCORE) The authors formalize tpf-qs in terms of the rsp-ql reference model in order to formally compare it with
+existing rsp query languages. They experimentally validate that, compared to the state of the art, the server load of tpf-qs scales better with increasing numbers of concurrent clients in case of simple queries, at the cost of increased bandwidth consumption.
+I find this paper, well-structured and well-written. however, the authors should consider to fix some minor typos.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='metareview' about='#metareview' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Metareview by <span typeof='foaf:Person' about='#metareviewer' property='foaf:name'>Intizar Ali</span></strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-meta' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>This paper presents query semantics of a triple pattern fragment-based approach for querying RDF streams on the Web. Authors proposed approach is designed for less frequently updating streams on the Web where processing is conducted at the client level rather than at the server side as is the case for the RDF stream processing engines. The evaluation results are presented to showcase that the proposed approach outperforms RDF stream processing engines in a few cases. Paper attempts to tackle an interesting issue; however, a few major concerns are raised by the reviewers regarding the feasibility of the approach, correctness of semantics and reproducibility of the evaluation. We strongly encourage authors to improve their work following the suggestion and feedback from the reviewers.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint'/></div>
+</div>
+</div>
+</div>
+<p class="dpsp-share-text">Share on</p><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content"><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_6%2F&t=Paper+6+%28Research+track%29" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Paper+6+%28Research+track%29&url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_6%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_6%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_6%2F&title=Paper+6+%28Research+track%29&mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/paper_6/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://2018.eswc-conferences.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1168' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="059a4b6fb3" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="235"/></p>			</form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://2018.eswc-conferences.org/paper_4/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">Paper 4 (Research track)</span></a></div><div class="nav-next"><a href="https://2018.eswc-conferences.org/paper_7/" rel="next"><span class="post-title">Paper 7 (In-Use track) <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">Sponsors and Supporters</h3>			<div class="textwidget"><p><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4"><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/STI-IBK-Logo-NEW-RED-01.png" alt="STI Innsbruck" title="STI Innsbruck"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/logo_farbe.png" alt="Metaphacts" title="Metaphacts"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/PoolParty-Logo-2015.jpg" alt="Semantic Web Company" title="Semantic Web Company"></div></a></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/OntotextAD.jpg" alt="Ontotext AD" title="Ontotext AD" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/Bosch_Invented_for_life.jpg" alt="Bosch Group" title="Bosch Group" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li></ul><br />
+<a style="text-decoration: underline;" href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></p>
+</div>
+</aside><aside id="do-etfw-2" class="widget widget-do-etfw">					<h3 class="widget-title">Recent Tweets</h3>		
+<a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/eswc_conf">Tweets by @eswc_conf</a>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-368">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-367">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Bakerally Noorani</span> on <a href="https://2018.eswc-conferences.org/paper_35/#comment-354">Paper 35 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-349">Paper 162 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-348">Paper 162 (Research track)</a></li></ul></aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">Proceedings published by</h3>			<div class="textwidget"><p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-195" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/Springer-1.jpg" alt="" width="192" height="61" /></a></p>
+<p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-197" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/LNCS-Logo.jpg" alt="" width="192" height="71" /></a></p>
+</div>
+</aside><aside id="media_image-5" class="widget widget_media_image"><h3 class="widget-title">Brought to you by</h3><a href="https://www.sti2.org/"><img width="192" height="47" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/sti-logo-1.jpg" class="image wp-image-194  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a></aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+<div class="footer-widget-area">
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sow-button-2" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf2bb;" ></span>
+REGISTRATION		</span>
+</a>
+</div>
+</div></div><div id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/program/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf073;" ></span>
+PROGRAM		</span>
+</a>
+</div>
+</div></div><div id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/important-dates/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf12a;" ></span>
+IMPORTANT DATES		</span>
+</a>
+</div>
+</div></div><div id="sow-button-5" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-d53a833a6a55"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/contact/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" ></span>
+Contact		</span>
+</a>
+</div>
+</div></div><div id="sparkling-social-2" class="widget sparkling-social"><h3 class="widgettitle">Follow us</h3>
+<!-- social icons -->
+<div class="social-icons sticky-sidebar-social">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>
+</div><!-- end social icons --></div>		</div><!-- .widget-area .first -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sticky-posts-2" class="widget widget_ultimate_posts"><h3 class="widgettitle">ESWC 2018 – NEWS</h3>
+<ul>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_72/" title="Paper 72 (Research track)">
+Paper 72 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Processing incoherent open government data- A case-study about Romanian public...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_5/" title="Paper 5 (Research track)">
+Paper 5 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Price Sharing for Streaming Data- A Novel Approach for Funding...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_227/" title="Paper 227 (Research track)">
+Paper 227 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:29          </p>
+<p class="post-excerpt">Dynamic Tailoring of RETE Networks in Incremental Scenarios Author(s): William...</p>
+</div>
+</li>
+</ul>
+</div>		</div><!-- .widget-area .second -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="text-2" class="widget widget_text"><h3 class="widgettitle">Extended Semantic Web Conference ESWC</h3>			<div class="textwidget"><p>The <a href="https://www.eswc-conferences.org/">ESWC</a> is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.</p>
+</div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p>&nbsp;<br />
+&nbsp;</p>
+</div>
+</div><div id="media_image-9" class="widget widget_media_image"><img width="940" height="380" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png" class="image wp-image-26  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png 940w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-300x121.png 300w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-768x310.png 768w" sizes="(max-width: 940px) 100vw, 940px" /></div>		</div><!-- .widget-area .third -->
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>					<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Copyright &copy; 2010 - 2018 <a href="https://www.sti2.org">STI International</a>, All rights reserved.					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "Event",
+"name": "ESWC 2018",
+"url": "https://2018.eswc-conferences.org/",
+"image": "https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png",
+"description": "The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.",
+"startDate": "2018-06-03T10:00",
+"endDate": "2018-06-07T16:00",
+"location": {
+"@type": "Place",
+"name": "Aldemar Knossos Royal & Royal Villa
+",
+"sameAs": "www.aldemarhotels.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Unnamed Road",
+"addressLocality": "Limenas Hersonissou",
+"addressRegion": "Heraklion",
+"postalCode": "700 14",
+"addressCountry": "Greece"
+}
+},
+"offers": {
+"@type": "Offer",
+"description": "tba",
+"url": "https://2018.eswc-conferences.org/registration/",
+"price": "tba"
+}
+}
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"vertical",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:3000,useCSS:false});jQuery(".kiwi-logo-carousel-sponsors").bxSlider({mode:"vertical",speed:20000,slideMargin:0,infiniteLoop:true,hideControlOnEnd:true,captions:false,ticker:true,tickerHover:true,adaptiveHeight:false,responsive:true,pager:true,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:false,pause:4000,useCSS:false});});</script><!-- <link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/qvh6g585/a0bfa.css" media="all"/>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/2018.eswc-conferences.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/skip-link-focus-fix.min.js?ver=20140222'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script async="async" type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=4.9.5'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.13175702095032 seconds, on 17-05-18 12:20:05 -->

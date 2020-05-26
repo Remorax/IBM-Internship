@@ -1,0 +1,5 @@
+SELECT distinct ?s WHERE {  
+
+?s a <http://edas#Attendee> .  
+
+ }

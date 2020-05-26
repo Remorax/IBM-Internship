@@ -1,0 +1,926 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Paper 75 (Research track) - 2018 ESWC-Conferences</title>
+<style type="text/css">
+#fancybox-close{right:-15px;top:-15px}
+div#fancybox-content{border-color:#FFFFFF}
+div#fancybox-title{background-color:#FFFFFF}
+div#fancybox-outer{background-color:#FFFFFF}
+div#fancybox-title-inside{color:#333333}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://2018.eswc-conferences.org/paper_75/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paper 75 (Research track) - 2018 ESWC-Conferences" />
+<meta property="og:description" content="The Maximality of OWL-Time Author(s): Michael Gruninger, Megan Katsumi Full text: preprint Abstract: Selecting an ontology representation language presents a major challenge due to the trade-off between expressiveness and decidability. his leads to the question of the relationship between a full first-order axiomatization of an ontology and its OWL2 counterpart &#8211; is the OWL2 ontology &hellip;" />
+<meta property="og:url" content="https://2018.eswc-conferences.org/paper_75/" />
+<meta property="og:site_name" content="2018 ESWC-Conferences" />
+<meta property="article:section" content="Paper" />
+<meta property="article:published_time" content="2018-02-14T23:26:31+02:00" />
+<meta property="article:modified_time" content="2018-05-02T23:25:23+02:00" />
+<meta property="og:updated_time" content="2018-05-02T23:25:23+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="The Maximality of OWL-Time Author(s): Michael Gruninger, Megan Katsumi Full text: preprint Abstract: Selecting an ontology representation language presents a major challenge due to the trade-off between expressiveness and decidability. his leads to the question of the relationship between a full first-order axiomatization of an ontology and its OWL2 counterpart &#8211; is the OWL2 ontology [&hellip;]" />
+<meta name="twitter:title" content="Paper 75 (Research track) - 2018 ESWC-Conferences" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Feed" href="https://2018.eswc-conferences.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Comments Feed" href="https://2018.eswc-conferences.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Paper 75 (Research track) Comments Feed" href="https://2018.eswc-conferences.org/paper_75/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2018.eswc-conferences.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='bxslider-css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-fa-icon-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mptt-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/mp-timetable/media/css/style.css?ver=2.1.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-base-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.11.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-10e07368e248-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-10e07368e248.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-d53a833a6a55-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-d53a833a6a55.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dpsp-frontend-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/8vb2po4n/a0bfa.css" media="all"/>
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;subset&#038;ver=4.9.5' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upw_theme_standard-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ebs_dynamic_css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/786bu6m3/a0bxp.css" media="all"/>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/9i9ggyns/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/js/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script> -->
+<script type='text/javascript'>
+var dpsp_ajax_url = 'https://2018.eswc-conferences.org/wp-admin/admin-ajax.php';
+var dpsp_ajax_pull_post_share_counts_data = {
+action  : 'dpsp_ajax_pull_post_share_counts',
+post_id : '1227'
+}
+</script>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/147bnjm9/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.5'></script> -->
+<link rel='https://api.w.org/' href='https://2018.eswc-conferences.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2018.eswc-conferences.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2018.eswc-conferences.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://2018.eswc-conferences.org/?p=1227' />
+<link rel="alternate" type="application/json+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_75%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_75%2F&#038;format=xml" />
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+var arr = jQuery("a.fancybox");
+jQuery.each(arr, function() {
+var title = jQuery(this).children("img").attr("title");
+jQuery(this).attr('title',title);
+})
+}
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+'cyclic': false,
+'autoScale': true,
+'padding': 10,
+'opacity': true,
+'speedIn': 500,
+'speedOut': 500,
+'changeSpeed': 300,
+'overlayShow': true,
+'overlayOpacity': "0.3",
+'overlayColor': "#666666",
+'titleShow': true,
+'titlePosition': 'inside',
+'enableEscapeButton': true,
+'showCloseButton': true,
+'showNavArrows': true,
+'hideOnOverlayClick': true,
+'hideOnContentClick': false,
+'width': 560,
+'height': 340,
+'transitionIn': "fade",
+'transitionOut': "fade",
+'centerOnScroll': true
+});
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<noscript><style type="text/css">.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:table!important}.mptt-shortcode-wrapper .mptt-shortcode-table .mptt-event-container:hover{height:auto!important;min-height:100%!important}body.mprm_ie .mptt-shortcode-wrapper .mptt-event-container{height:auto!important}@media (max-width:767px){.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:none!important}}</style></noscript><style type="text/css" data-source="Social Pug"></style><meta name="twitter:card" 		content="summary_large_image" /><meta property="og:url"			content="https://2018.eswc-conferences.org/paper_75/" /><meta property="og:type"			content="article" /><meta property="og:title"			content="Paper 75 (Research track)" /><meta property="og:description" 	content="The Maximality of OWL-TimeAuthor(s): Michael Gruninger, Megan KatsumiFull text: preprintAbstract: Selecting an ontology representation language" /><meta property="og:image" 		content="" /><script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var addEvent = function(evt, handler) {
+if (window.addEventListener) {
+document.addEventListener(evt, handler, false);
+} else if (window.attachEvent) {
+document.attachEvent('on' + evt, handler);
+}
+};
+var removeEvent = function(evt, handler) {
+if (window.removeEventListener) {
+document.removeEventListener(evt, handler, false);
+} else if (window.detachEvent) {
+document.detachEvent('on' + evt, handler);
+}
+};
+var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+var logHuman = function() {
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+for (var i = 0; i < evts.length; i++) {
+removeEvent(evts[i], logHuman);
+}
+};
+for (var i = 0; i < evts.length; i++) {
+addEvent(evts[i], logHuman);
+}
+})('//2018.eswc-conferences.org/?wordfence_lh=1&hid=831E51AC426F5F42BFF70CCFF58D4DC1');
+</script><style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:#1e73be}a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: #b7b7b7;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+.navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #444444; border-color: #444444;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: #444444}.cfa-button {border-color: #444444;}.cfa { background-color: #ffffff; } .cfa-button:hover a {color: #ffffff;}.cfa-text { color: #52b1d9;}.cfa-button {border-color: #52b1d9; color: #52b1d9;}.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: #ffffff;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: #999999;}@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: #999999!important ;} }.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #1e73be;}@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: #1e73be !important; } }.dropdown-menu {background-color: #ffffff;}.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: #1e73be;}.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: #636467;}@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }.entry-content {font-family: Verdana, Geneva;}.entry-content {font-size:15px}.entry-content {font-weight:normal}</style><link rel="pingback" href="https://2018.eswc-conferences.org/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="wp-custom-css">
+.event-description {
+padding-left:10px;
+padding-right:10px;
+}
+@media (min-width: 1200px){
+.container {
+width: 1300px;
+}}
+#2001 {
+font-size: 22px !important;
+}
+.event-title  {
+display: none !important;
+}
+.well {
+padding: 50px;
+}
+#do-etfw-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#recent-comments-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#tp_widget_recent_tweets-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-4 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#media_image-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#sparkling-social-2 {
+margin-top: 5%
+}
+.wp-embed-site-icon {
+width: auto !important;
+}
+.dpsp-share-text {
+margin-top: 10%;
+}
+.ow-button-base a {
+text-align:left;
+}
+.footer-widget-area .widget {
+margin-bottom: 10px;
+}
+.col-md-6 {
+width: 100%;
+}
+.copyright {
+margin-top: 10px;
+float: right;
+text-align: center;
+padding-bottom: 5%;
+}
+#secondary .widget a {
+color: #6ba3d4;
+}
+.post-date {
+color: #999999;
+font-size: 12px;
+}
+.entry-title {
+display:block!important;
+}
+.post-title {
+font-size: 18px;
+font-weight: bold;
+}
+.post-excerpt {
+border-bottom: 1px solid #f2f2f2;
+padding-bottom: 15px;
+}
+#menu-social-items {
+padding-top: 2%;
+}
+#media_image-6 {
+margin-bottom: 2% !important;
+}
+#menu-main-menu {
+background-color: #f3f3f2;
+}
+#post-100 {
+display: none;
+}
+.flex-caption {
+display: none;
+}
+.entry-title {
+display:none;
+}
+#menu-main-menu {
+font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #555555;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+.widget ul li {
+list-style: disc;
+border-bottom: none;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-1227 single-format-standard do-etfw group-blog ">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="https://2018.eswc-conferences.org/"><img src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png"  height="93" width="100" alt="2018 ESWC-Conferences"/></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17 dropdown"><a href="https://2018.eswc-conferences.org/">ESWC 2018 </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://2018.eswc-conferences.org/history/">History</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://2018.eswc-conferences.org/about/">About</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2018.eswc-conferences.org/organizing-committee/">Organizing Committee</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://2018.eswc-conferences.org/subtrack-chairs/">Subtrack Chairs</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://2018.eswc-conferences.org/linked-events/">Linked Events</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://2018.eswc-conferences.org/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1454"><a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)">REGISTRATION</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 dropdown"><a href="https://2018.eswc-conferences.org/important-dates/">CALLS &#038; DATES </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2018.eswc-conferences.org/important-dates/">Important Dates</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://2018.eswc-conferences.org/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://2018.eswc-conferences.org/call-for-workshops/">Call for Workshops</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://2018.eswc-conferences.org/call-phd-symposium/">Call for PhD Symposium</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://2018.eswc-conferences.org/posters-and-demos/">Posters and Demos</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://2018.eswc-conferences.org/call-for-tutorials/">Call for Tutorials</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://2018.eswc-conferences.org/call-for-challenges/">Call for Challenges</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://2018.eswc-conferences.org/in-use-track/">In-Use Track</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://2018.eswc-conferences.org/industry-track/">Industry Track</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://2018.eswc-conferences.org/research-tracks/">Research Tracks</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://2018.eswc-conferences.org/resources-track/">Resources Track</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://2018.eswc-conferences.org/subtracks/">Subtracks</a></li>
+<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://2018.eswc-conferences.org/call-for-project-networking/">Call for Project Networking</a></li>
+</ul>
+</li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131 dropdown"><a href="https://2018.eswc-conferences.org/program/">Program </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://2018.eswc-conferences.org/program/sunday-june-3/">Sunday June 3</a></li>
+<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://2018.eswc-conferences.org/program/monday-june-4/">Monday June 4</a></li>
+<li id="menu-item-2559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2559"><a href="https://2018.eswc-conferences.org/program/tuesday-june-5/">Tuesday June 5</a></li>
+<li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://2018.eswc-conferences.org/program/wednesday-june-6/">Wednesday  June 6</a></li>
+<li id="menu-item-2558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2558"><a href="https://2018.eswc-conferences.org/program/thursday-june-7/">Thursday June 7</a></li>
+<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="https://2018.eswc-conferences.org/program/keynote-speakers/">Keynote Speakers</a></li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://2018.eswc-conferences.org/program/accepted-papers/">Accepted Papers</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="https://2018.eswc-conferences.org/program/submissions/">Submissions</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://2018.eswc-conferences.org/program/tutorials-workshops/">Tutorials &#038; Workshops</a></li>
+<li id="menu-item-1492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1492"><a href="https://2018.eswc-conferences.org/program/call-project-networking/">Project Networking Session</a></li>
+</ul>
+</li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://2018.eswc-conferences.org/conference-venue/">Conference Venue</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://2018.eswc-conferences.org/sponsorship/">Sponsorship</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-right">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-1227" class="post-1227 post type-post status-publish format-standard hentry category-paper">
+<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Paper 75 (Research track)</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://2018.eswc-conferences.org/paper_75/" rel="bookmark"><time class="entry-date published" datetime="2018-02-14T23:26:31+00:00">14. February 2018</time><time class="updated" datetime="2018-05-02T23:25:23+00:00">2. May 2018</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://2018.eswc-conferences.org/author/silvio/">Silvio Peroni</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="https://2018.eswc-conferences.org/category/paper/" rel="category tag">Paper</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div about='' rel='rdf:type' resource='fabio:ResearchPaper' prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<div about=''>
+<p><strong property='dcterms:title'>The Maximality of OWL-Time</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='#author-1'>Michael Gruninger</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-2'>Megan Katsumi</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_75.pdf'>preprint</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract'>Selecting an ontology representation language presents a major challenge due to the trade-off between expressiveness and decidability.<br />
+his leads to the question of the relationship between a full first-order axiomatization of an ontology and its OWL2 counterpart &#8211;<br />
+is the OWL2 ontology really the maximal subtheory of the more expressive first-order<br />
+ontology which can be axiomatized in OWL2?<br />
+In this paper we consider the relationship between OWL-Time and its first-order axiomatization as<br />
+presented by Hobbs and Pan.<br />
+We leverage previous work on the verification of the first-order axiomatization of OWL-Time<br />
+to propose a novel technique for identifying its maximal OWL2 definable subtheory.<br />
+The results show that OWL-Time is in fact not maximal with respect to the first-order axiomatization. We discuss how this approach might be applied to achieve similar results in other areas.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>ontology</span>; <span property='prism:keyword'>OWL</span>; <span property='prism:keyword'>first-order logic</span>; <span property='prism:keyword'>time</span>; <span property='prism:keyword'>ontology mapping</span></p>
+<p><strong>Decision:</strong> <span style='color: red'>reject</span></p>
+<div about='#preprint' rel='cito:isReviewedBy'>
+<div id='review-1' about='#review-1' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='#reviewer-1'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-1' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The general problem addressed by submission is quite interesting: given a first-order theory modeling a domain of interest, find an OWL 2 ontology that captures the maximal subset of the first-order theory. The authors concentrate on a fragment of an early version of OWL-Time and identify two axioms missing in the "current" approximation of OWL 2.
+(NOVELTY OF THE PROPOSED SOLUTION) The problem of finding equivalent formulas is nothing new in logic. Taking account of different syntaxes does not add very much.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Some of the proofs use dubious arguments: for example, the proof of Lemma 1 refers to the syntactic restriction on SRIQ ontologies - yet, no-one says that the same semantically defined property cannot be expressed using another choice of axioms. The proof of Lemma 4 appear to use some unclear arguments. The proof of [Lemma] 5 contains wrong statements: Point <= (\leq n) in.X, Line <= X does not imply P <= \leq n in. Line (did the authors mean X <= Line?). Also, Point <= \geq m in.X \sqcup \leq n in Z is NOT equivalent to Point \sqcap \geq n in.Z <= \leq m in.X. Taking into account that the proofs are not very technical and do not involve any non-trivial ideas, it is just too many typos (or errors).
+(EVALUATION OF THE STATE-OF-THE-ART) The evaluation of the state-of-the-art is irrelevant.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The notion of ontology equivalence and conservative extensions is well-studied. More related work could be discussed.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) N/A
+(OVERALL SCORE) **Short description of the problem tackled in the paper, main contributions, and results**
+Given a first-order theory modeling a domain of interest, find an OWL 2 ontology that captures the maximal subset of the first-order theory. The authors concentrate on a fragment of an early version of OWL-Time and identify two (functionality) axioms missing in the "current" approximation of OWL 2. 
+SPs
+1. The problem is interesting.
+WPs
+1. The results are weak: the two axioms identified for OWL-Time are hardly worth the machinery.
+2. The proofs contain a significant number of typos / errors.
+3. The proofs appear to be rather straightforward, but quite poorly written: trivial steps like equivalence of \neg \leq n and \geq n +1 are excessively verbose, yet the overall structure of the arguments is unclear. 
+SRIQ is not a profile of OWL 2 - it's a DL (and its typesetting is wrong in all places but one on page 2 and one on page 3).
+Definition 2: equivalent *to*
+Footnote 4: constants are irrelevant for SRIQ TBoxes; Sigma(T) is defined here but used above (page 3)
+Id on page 5 is never explained.
+Definition 9 appears to miss \exists R.Self.
+Referring to weak_bipartite.owl in Lemma 1 is a bit unexpected - would it be that difficult to list the axioms in the submission?
+One has to figure out the order of classes in Figure 1 (a comment, or better labels of the pictures might have helped).
+Missing upper limits in Definition 11 - are they \infty?
+I acknowledge reading the rebuttal, which did not really clarify any of the issues.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-2' about='#review-2' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='#reviewer-2'property='foaf:name'>Leo Obrst</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-2' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper has strong relevance to the conference insofar as it provides a coherent methodology that a particular subset of the audience (those concerned with ontologies, and in particular, the relationship between a given FOL ontology and its OWL2 less expressive translation) will find value in this.
+(NOVELTY OF THE PROPOSED SOLUTION) The paper proposes a meaningful methodology for evaluating whether a given less-expressive OWL2 ontology counterpart to a first-order ontology is maximal or not. This methodology, especially when generalized to other such ontologies beyond the exemplary OWL-Time, constitutes a way to consistently (and possibly automatically, given more advanced reasoning systems and ontology tools) compare two or more different OWL axiomatizations derived from a first-order axiomatization. The methodology is fairly general.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Although the presentation of the formal correctness and completeness of the given definitions, theorems, lemmas, and proofs appears sound, there are a couple of potential improvements that could be made. E.g., on p. 3, the notion of "incident" (a notion at the core of bipartite incidence geometries) could be better defined in English. This is not obvious to a reader not already familiar with the notion, requiring offline gaining of familiarity with the concept.
+Similarly, on p. 6, Definition 9 uses "in.C", but this is not defined. Clearly, it is something like "incident of C", but this could be clarified. 
+On p. 7, Definition 11, the crossed circle symbol is used, and is presumably the symbol for the disjoint union according to the text. But this should be clarified.
+In addition, there is probably too much material relegated external to the paper.
+(EVALUATION OF THE STATE-OF-THE-ART) A background discussion is provided in the Introduction as to the methods currently used to compare (generate) an OWL2 ontology from a first-order ontology, for reusability, but these are incomplete and prone to comparison errors. Also these do not necessarily ensure that it is a maximal subtheory of the FOL ontology that results in the OWL2 ontology.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) Using OWL-Time as an exemplar, the paper defines a methodology which uses maximal OWL2-definable subtheories of the mathematical theories used in verifying an ontology, and then showing how these are preserved by synonomy. The authors define SRIQ-Definable theories, Orderings, Bipartite Incidence structures, and use these (via synonomy preservation) to identify the maximal SRIQ-definable subtheories of OWL-TIME from the SRIQ-definable subtheories of a theory.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The experimental study is less empirical and rather more formal. The given formal explanation should enable duplication or assurance that the proofs are correct. However, more of the external material could be incorporated into the paper.
+(OVERALL SCORE) Summary: 
+The paper proposes a meaningful methodology for evaluating whether a given less-expressive OWL2 ontology counterpart to a first-order ontology is maximal or not. This methodology, especially when generalized to other such ontologies beyond the exemplary OWL-Time, constitutes a way to consistently (and possibly automatically, given more advanced reasoning systems and ontology tools) compare two or more different OWL axiomatizations derived from a first-order axiomatization. The methodology is fairly general.
+Strong Points:
+- Using OWL-Time as an exemplar, the paper defines a methodology which uses maximal OWL2-definable subtheories of the mathematical theories used in verifying an ontology, and then showing how these are preserved by synonomy. The authors define SRIQ-Definable theories, Orderings, Bipartite Incidence structures, and use these (via synonomy preservation) to identify the maximal SRIQ-definable subtheories of OWL-TIME from the SRIQ-definable subtheories of a theory.  
+- The paper's contribution can be used and expanded on by others who are interested in comparing (generating) OWL2 ontologies maximally preserving FOL ontology axiomatizations. 
+Weak Points:
+- Although the presentation of the formal correctness and completeness of the given definitions, theorems, lemmas, and proofs appears sound, there are a couple of potential improvements that could be made: see descriptions provided above. 
+- There is extensive formalism presented in the paper, and therefore clear English descriptions of those formalisms are to be desired, and are not necessarily sufficiently provided. 
+- Some of the external material should be brought into the body of the paper.
+- There are some English nit: 
+p. 1: "ontologies: is OWL2 ontology" => "ontologies: is the OWL2 ontology"
+p. 3: "is logically equivalent the translation" => "is logically equivalent to the translation"
+Footnote 4: "formulæthat" => "formulæ that"
+p. 5: "the models of subtheory" => "the models of the subtheory"
+p. 5: Definition 8.3 "R- = R." What is the first symbol, e.g., the complement of R?
+p. 6: "SRIQ-definable is build" => "SRIQ-definable is to build"</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-3' about='#review-3' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 3 (by <span typeof='foaf:Person' about='#reviewer-3'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-3' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The topic of this paper is the Time ontology, which is relevant to ESWC.
+(NOVELTY OF THE PROPOSED SOLUTION) The solution seems novel but more discussion should be provided to justify the novelty.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Since many important details are missing (see below), it is difficult to judge the correctness and completeness.
+(EVALUATION OF THE STATE-OF-THE-ART) Some state-of-the-art is provided but should be extended.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) Since many important details are missing (see below), it is difficult to judge the correctness and completeness.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) Since many important details are missing (see below), it is difficult to reproduce the result.
+(OVERALL SCORE) Summary of the Paper 
+The paper discusses the maximality of OWL-Time. The reviewer believes
+it is an important topic to formally charactize the theorectical
+property of such ontology: whether the ontolgy expressed the
+corresponding FO aximatization? The authors claim that OWL-Time is in
+fact not maximal with respect to the firstorder
+axiomatization. However the main issue is that the paper is not
+self-contained, thus the reviewer could not follow and appreciate the
+result of the work.
+Strong Points (SPs) 
+The topic is important. The motivation is clear.
+Weak Points (WPs) 
+The paper has several major issue in the writing style: it is
+not self contained. It just used many terminologies but never
+introduced them.
+- For example, the reviewer got stuck at the
+very first defintion 1: what is "definitional extension"? Moreover,
+some explanation of the notion "synonymous" should be provided since
+this is not a common term in the community.
+- since the paper is about OWL-Time, more details of this ontology
+should be explained. The authors mentioned several modules
+"Towltime", "Towltime_mleu", "Tlinear_order",
+"Tstrong_graphical"... What are these modules? How are they related to
+the time ontology?
+- what is "the amalgamation of a model" ?
+- A minor issue is that the authors do not write "SRIQ" is a
+consistent format. Please stick to one in which all these letters
+S,R,I,Q use the same style \mathcal.
+- The abstract states that "The results show that OWL-Time is in fact
+not maximal with respect to the first order axiomatization." This
+seems to be an important conclusion. However, I could not find the
+corresponding text in the main body of the work. 
+I do believe that this line of research can be potentially
+important. However, the authors should put more efforts in making the
+results more accessible.
+I acknowledged that I have read the rebuttal.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-4' about='#review-4' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 4 (by <span typeof='foaf:Person' about='#reviewer-4'property='foaf:name'>Till Mossakowski</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-4' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper studies approximation of first-order theories in the
+description logic SRIQ, which is the logic of OWL2 without
+nominals. This is an important problem, because many foundational
+ontologies exists both as FOL theories as well as as OWL2 versions,
+and it is often not clear whether the OWL2 version is an (optimal)
+approximation of the FOL version. Indeed, the authors claim to show
+that the currently existing approximations of the SUMO time ontology
+in OWL2 is not optimal, which is an interesting result.
+(NOVELTY OF THE PROPOSED SOLUTION) The results seem to be novel.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The paper lacks formal clarity and precision (see detailed comments) and
+hence should not be accepted in this form.
+Another major drawback is that the paper is not self-contained: all
+relevant ontologies are only provided as URLs. Sometimes, even URLs
+are not clear, e.g. for H^{ordering} or H^{weak_bipartite}. For the
+URL in footnote 6, I get "The requested URL
+/ontologies/weak_bipartite.owl was not found on this server."  The URL
+in footnote 3 works, and it is claimed to contain the focus of the
+present paper. However, it is not clear to me how this URL is related
+to H^{ordering} or H^{weak_bipartite}, which are the focus of the
+paper if you look at the theorems. 
+Moreover, it is quite tedious to follow all the imports. Since the
+paper focusses on theory hierarchies, it would be at least necessary to show
+an import graph. I have produced one using Hets (http://hets.eu), with
+hets -g -C http://colore.oor.net=https://raw.githubusercontent.com/gruninger/colore/master/ontologies http://colore.oor.net/owltime_interval/owltime_mleu.clif
+Still, it did not became clear to me where I find H^{ordering} or
+H^{weak_bipartite} or the theories in Fig. 2 in this graph. This has not been clarified in the rebuttal.
+I had to use a different URL that I found when searching the COLORE repository myself.
+Actually, with
+hets -g -C http://colore.oor.net=https://raw.githubusercontent.com/gruninger/colore/master/ontologies http://colore.oor.net/bipartite_incidence/strict_graphical.clif
+I could get a diagram that looks at least similar to Fig. 2.
+Still, strong_graphical does not occur in my Hets-generated diagram.
+Nor does weak_loopless. These theories are neither directly nor indirectly
+imported by strict_graphical. The authors state in the rebuttal that the import closure of the above URL (which I found by myself!) does not suffice. OK, but then please provide some URL where the theories can be obtained, or list some folders of http://colore.oor.net where one should look.
+Note that even if correct URLs are provided, I think that letting theorems depend
+on internet material is not acceptable.
+Another problem is that the referenced first-order ontologies are all
+written in Common Logic. Now Common Logic has a very peculiar model
+theory and cannot be equated with standard first-order logic (see
+also detailed comments).
+Detailed comments
+-----------------
+p.1 you mention the OWL2 versions of DOLCE. If I recall right, DOLCE's
+ternary predicates (like temporal parthood) are approximated as
+(binary) roles in the OWL2 of DOLCE. So this is not an approximation in
+your sense.
+p.2 How would you specify the set of intended structures? Is this a finite
+set? If not, then probably you specify it using a logical theory?
+So after all, your correctness criterion is given by a logical theory?
+In the rebuttal, the authors write:
+"Intended structures of an ontology are specified by classes of structures 
+axiomatized by mathematical theories. 
+A generic ontology is verified by synonymy to the set of mathematical theories."
+This makes things much clearer. It should be included into the paper.
+p.3 Def.1
+How do you define "definitional extension"?
+In the rebuttal, the authors write:
+"We follow the standard definition of definitional extension (see the text "Logic" by Wilfred Hodges, for example)."
+In this book, definitional extension is not defined.
+In DOL, T2 is a definitional extension of T1 if every model of T1
+has a unique expansion to a model of T2. Do you adopt this notion?
+If yes, then for example the first-order theories of Boolean algebras
+and of Boolean rings would be synonymous, which makes a lot of sense.
+However, this only holds for standard first-order logic. In the case
+of Common logic, they would be synonymous only if all the symbols
+are non-discourse names. (With the use of discourse names, the newly
+added functions in the extension would need to be represented by
+individuals in the universe of discourse, and this would destroy
+the above mentioned uniqueness of the expansion.) However, in your
+COLORE theories, it is not stated that you use non-discourse names.
+The authors write in their rebuttal:
+"We avoid the problems of definitional extension in Common Logic by using 
+the Second Edition of ISO 24707. The relations in the signature of theories in 
+H^{bipartite_incidence} are all cl:out discourse (this is specified in 
+colore.oor.net/bipartite_incidence/weak_bipartite.clif, which is imported 
+by all theories in the hierarchy). 
+With this restriction, the models of a Common Logic theory are equivalent to the 
+models of traditional FOL."
+Then the second edition of ISO 24707 should be referenced. At colore.oor.net/bipartite_incidence/weak_bipartite.clif I could not find "cl:out discourse".
+p.3, second-last sentence of section 2:
+"two theories are synonymous iff there is a one-to-one correspondence
+between the models of the two theories".
+I can see that the "only if" direction is true. The "if" direction
+does not hold. Consider the FOL theories Ti axiomatising that the
+universe consists of exactly i elements, for i=1,2. Then the
+model class of Ti is the class of sets with i elements.
+There is an injection from Mod(T1) into Mod(T2): map a
+set {a} to {(a,0),(a,1)}. There is also an injection from Mod(T2)
+into Mod(T1): map a set {a,b} to {{a,b}}. By the Schröder–Bernstein
+theorem, Mod(T1) are Mod(T2) are in bijective correspondence.
+However, any common extension of T1 and T2 is inconsistent, and
+hence it cannot be definitional.
+In the rebuttal, the authors agree to adapt their claim.
+p.3, Def. 2:
+what is "the" logic mapping from L1 to L2? Generally, there are
+many such mappings, so Def. 2 depends on such a mapping as a parameter.
+It is left unlcear what a logic and a logic mapping is.
+p.4, Def.6
+You should add "Given a hierarchy H of theories in FOL, ..."
+Moreover, note that for a given FOL theory T, there can be several
+SRIQ-theories that are language-equivalent (in generally, even
+infinitely many such theories: consider replacing each
+axiom C \sqsubseteq D by C \sqcup C  \sqsubseteq D etc.).
+Moreover, the result is a family of SRIQ-theories, hence not a subhierarchy
+of H.
+Moreover, the authors should motivate why this definition is better
+than the use of uniform interpolation. It seems to me that finding a
+SRIQ-equivalent can be computationally as hard as finding a uniform
+interpolant (maybe I am wrong, but then I need to be convinced why).
+But then, why not work with uniform interpolants?
+The advantage would be that more FOL theories can be approximanted
+with a uniform interpolant.
+The authors reply:
+"The relationship between our techniques and uniform interpolation is interesting, 
+but out of the scope of this paper."
+I disagree. In my opinion, uniform interpolation should be mentioned, because it is very much related, and there is considerable research. Even if you do not use uniform interpolation, a discussion of related work is needed.
+p.4, second last paragraph:
+why should T by a nonconservative extension in general?
+(I assume that "nonconservative extension" means "extension that is
+not conservative", and not "an extension that is not necessarily
+conservative".)
+In the rebuttal, the authors write:
+"Since all theories in the same hierarchy have the same signature, every 
+extension is a nonconservative extension."
+This is an important piece of information that should be added to the paper.
+p.7 Def. 11
+"i=1, j=1" does not make sense - you get just R_{1,1}
+p.8 Theorem 3:
+I do not understand the last argument of the proof.
+Moreover, I would expect that the assumption that T1 is not SRIQ-definable
+should be used in the proof (otherwise it can be dropped).
+Apart from that, the theorem is wrong in a subtle way, because OWL2 is not
+closed in the sense of [A].
+Counterexample: T_1={transitive(R), asymmetric(R)}, T_2=\emptyset.
+T_1 is not SRIQ-definable, but T_2 is not maximally SRIQ-definable.
+The rebuttal of the authors:
+"The counterexample does not apply because every theory in a hierarchy is an 
+extension of a unique root theory, and hence $T_2 \neq \emptyset$."
+The theorem does not mention any hierarchy. But anyway, you can easily modify the counterexample as follows:
+T_1={transitive(R), asymmetric(R)}, T_2={C \sqsubseteq D}, where C,D are some concepts.
+p.9 Thm. 5
+in the proof, the bijection runs between model classes, not between the
+theories tehmselves.
+p.10 l.5
+$before$ should be $\mathit{before}$ (otherwise you get strange spacing)
+p.11
+owl, sriq, casl should be upper case.
+(EVALUATION OF THE STATE-OF-THE-ART) Relevant literature about approximation [A], or uniform
+interpolation, also called forgetting [B] is not discussed.
+[A] Marco Console, José Mora, Riccardo Rosati, Valerio Santarelli,
+Domenico Fabio Savo: Effective Computation of Maximal Sound
+Approximations of Description Logic Ontologies. International Semantic
+Web Conference (2) 2014: 164-179
+[B] Boris Konev, Dirk Walther, Frank Wolter
+Forgetting and Uniform Interpolation in
+Large-Scale Description Logic Terminologies
+ICJAI 2009
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) see "Correctness and Completeness of the Proposed Solution"
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) One could consider this as an experimental study in uniform interpolation.
+However, it is difficult to reproduce (see the problems with URLs
+listed unter "Correctness and Completeness of the Proposed Solution")
+and it is not very general (only a few FOL theories are studied).
+(OVERALL SCORE) Summary of the Paper
+Short description of the problem tackled in the paper, main contributions, and results
+The paper studies approximation of first-order theories in the
+description logic SRIQ, which is the logic of OWL2 without
+nominals. This is an important problem, because many foundational
+ontologies exists both as FOL theories as well as as OWL2 versions,
+and it is often not clear whether the OWL2 version is an (optimal)
+approximation of the FOL version.
+The main result is the characterisation of SRIQ-definable theories
+in a certain hierarchy of FOL theories.
+Strong Points (SPs)
+* the paper studies an interesting problem
+* the authors have formalised a lot of Common Logic theories
+* Fig. 2 provides a nice visualisation of the results
+Weak Points (WPs)
+* it is not clear which logical theories the authors study, as they are
+not contained in the paper, but only on the web, and I could not
+match names for theories and theory hierachies in the paper with the
+material on the web
+* there are quite a number of technical errors
+* relevant literature is not mentioned (approximation, uniform interpolation)
+*** Questions to the Authors (QAs)
+1. what is H^{ordering}?
+2. what is H^{weak_bipartite}?
+3. what is the correct URL in footnote 6?
+4. where do I find the theories shown in Fig. 2? Note that http://colore.oor.net/bipartite_incidence/strict_graphical.clif will not do - it produces a different graph.
+5. How do you define "definitional extension"?
+6. How do you avoid the problems with definitional extensions in Common logic?
+7. what does nonconservative extension mean?
+8. How would you specify the set of intended structures of an ontology?
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='metareview' about='#metareview' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Metareview by <span typeof='foaf:Person' about='#metareviewer' property='foaf:name'>Christoph Lange</span></strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-meta' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>The reviewers agreet that the methodology presented in this paper is useful; however, the following concerns justify rejection:
+* The formalization is partly hard to follow; some more natural language explanations would help.
+* Some essential terminology is not clearly defined ("definition extension", "nonconservative extension").
+* The paper relies too much on background knowledge that's available externally.
+* Large parts of the authors' response did not clarify concerns.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint'/></div>
+</div>
+</div>
+</div>
+<p class="dpsp-share-text">Share on</p><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content"><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_75%2F&t=Paper+75+%28Research+track%29" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Paper+75+%28Research+track%29&url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_75%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_75%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_75%2F&title=Paper+75+%28Research+track%29&mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/paper_75/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://2018.eswc-conferences.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1227' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4191544a02" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="193"/></p>			</form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://2018.eswc-conferences.org/paper_74/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">Paper 74 (In-Use track)</span></a></div><div class="nav-next"><a href="https://2018.eswc-conferences.org/paper_76/" rel="next"><span class="post-title">Paper 76 (Research track) <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">Sponsors and Supporters</h3>			<div class="textwidget"><p><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4"><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/STI-IBK-Logo-NEW-RED-01.png" alt="STI Innsbruck" title="STI Innsbruck"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/logo_farbe.png" alt="Metaphacts" title="Metaphacts"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/PoolParty-Logo-2015.jpg" alt="Semantic Web Company" title="Semantic Web Company"></div></a></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/OntotextAD.jpg" alt="Ontotext AD" title="Ontotext AD" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/Bosch_Invented_for_life.jpg" alt="Bosch Group" title="Bosch Group" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li></ul><br />
+<a style="text-decoration: underline;" href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></p>
+</div>
+</aside><aside id="do-etfw-2" class="widget widget-do-etfw">					<h3 class="widget-title">Recent Tweets</h3>		
+<a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/eswc_conf">Tweets by @eswc_conf</a>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-368">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-367">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Bakerally Noorani</span> on <a href="https://2018.eswc-conferences.org/paper_35/#comment-354">Paper 35 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-349">Paper 162 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-348">Paper 162 (Research track)</a></li></ul></aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">Proceedings published by</h3>			<div class="textwidget"><p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-195" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/Springer-1.jpg" alt="" width="192" height="61" /></a></p>
+<p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-197" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/LNCS-Logo.jpg" alt="" width="192" height="71" /></a></p>
+</div>
+</aside><aside id="media_image-5" class="widget widget_media_image"><h3 class="widget-title">Brought to you by</h3><a href="https://www.sti2.org/"><img width="192" height="47" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/sti-logo-1.jpg" class="image wp-image-194  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a></aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+<div class="footer-widget-area">
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sow-button-2" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf2bb;" ></span>
+REGISTRATION		</span>
+</a>
+</div>
+</div></div><div id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/program/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf073;" ></span>
+PROGRAM		</span>
+</a>
+</div>
+</div></div><div id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/important-dates/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf12a;" ></span>
+IMPORTANT DATES		</span>
+</a>
+</div>
+</div></div><div id="sow-button-5" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-d53a833a6a55"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/contact/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" ></span>
+Contact		</span>
+</a>
+</div>
+</div></div><div id="sparkling-social-2" class="widget sparkling-social"><h3 class="widgettitle">Follow us</h3>
+<!-- social icons -->
+<div class="social-icons sticky-sidebar-social">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>
+</div><!-- end social icons --></div>		</div><!-- .widget-area .first -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sticky-posts-2" class="widget widget_ultimate_posts"><h3 class="widgettitle">ESWC 2018 – NEWS</h3>
+<ul>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_72/" title="Paper 72 (Research track)">
+Paper 72 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Processing incoherent open government data- A case-study about Romanian public...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_5/" title="Paper 5 (Research track)">
+Paper 5 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Price Sharing for Streaming Data- A Novel Approach for Funding...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_227/" title="Paper 227 (Research track)">
+Paper 227 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:29          </p>
+<p class="post-excerpt">Dynamic Tailoring of RETE Networks in Incremental Scenarios Author(s): William...</p>
+</div>
+</li>
+</ul>
+</div>		</div><!-- .widget-area .second -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="text-2" class="widget widget_text"><h3 class="widgettitle">Extended Semantic Web Conference ESWC</h3>			<div class="textwidget"><p>The <a href="https://www.eswc-conferences.org/">ESWC</a> is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.</p>
+</div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p>&nbsp;<br />
+&nbsp;</p>
+</div>
+</div><div id="media_image-9" class="widget widget_media_image"><img width="940" height="380" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png" class="image wp-image-26  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png 940w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-300x121.png 300w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-768x310.png 768w" sizes="(max-width: 940px) 100vw, 940px" /></div>		</div><!-- .widget-area .third -->
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>					<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Copyright &copy; 2010 - 2018 <a href="https://www.sti2.org">STI International</a>, All rights reserved.					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "Event",
+"name": "ESWC 2018",
+"url": "https://2018.eswc-conferences.org/",
+"image": "https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png",
+"description": "The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.",
+"startDate": "2018-06-03T10:00",
+"endDate": "2018-06-07T16:00",
+"location": {
+"@type": "Place",
+"name": "Aldemar Knossos Royal & Royal Villa
+",
+"sameAs": "www.aldemarhotels.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Unnamed Road",
+"addressLocality": "Limenas Hersonissou",
+"addressRegion": "Heraklion",
+"postalCode": "700 14",
+"addressCountry": "Greece"
+}
+},
+"offers": {
+"@type": "Offer",
+"description": "tba",
+"url": "https://2018.eswc-conferences.org/registration/",
+"price": "tba"
+}
+}
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"vertical",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:3000,useCSS:false});jQuery(".kiwi-logo-carousel-sponsors").bxSlider({mode:"vertical",speed:20000,slideMargin:0,infiniteLoop:true,hideControlOnEnd:true,captions:false,ticker:true,tickerHover:true,adaptiveHeight:false,responsive:true,pager:true,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:false,pause:4000,useCSS:false});});</script><!-- <link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/qvh6g585/a0bfa.css" media="all"/>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/2018.eswc-conferences.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/skip-link-focus-fix.min.js?ver=20140222'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script async="async" type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=4.9.5'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.11172795295715 seconds, on 17-05-18 12:20:43 -->

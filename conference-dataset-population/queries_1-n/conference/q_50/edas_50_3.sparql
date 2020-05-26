@@ -1,0 +1,10 @@
+SELECT distinct ?s WHERE {  
+{
+?s a <http://edas#Paper> .  
+}
+union
+{
+?s a <http://edas#PaperPresentation> .  
+}
+
+ }

@@ -1,0 +1,13 @@
+SELECT distinct ?s ?o WHERE {  
+{
+?s <http://edas#hasName> ?o .  
+}
+union{
+?s <http://edas#hasFirstName> ?o1 . 
+?s <http://edas#hasLastName> ?o2 .
+  BIND( concat(STR(?o1)," ", STR(?o2)) as ?o)
+
+
+}
+
+ }

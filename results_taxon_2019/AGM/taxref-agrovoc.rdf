@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>??</type>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/454101"/>
+      <entity2 rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#produces"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#produces"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+      <entity2 rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasNearSynonym"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/hasSynonym"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasSynonym"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#growsln"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#growsln"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasScientificName"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+      <entity2 rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/bioGeoStatusIn"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasMember"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#hasTaxonomicRank"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasTaxonomicRank"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#hasProduct"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasProduct"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/772528"/>
+      <entity2 rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#isUsedAs"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#usesProcess"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#usesProcess"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#isDerivedFrom"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#isDerivedFrom"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasBroaderSynonym"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/93928"/>
+      <entity2 rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/hasRank"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasComponent"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/160078"/>
+      <entity2 rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#hasDisease"/>
+      <entity2 rdf:resource="http://aims.fao.org/aos/agrontology#hasDisease"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+      <entity2 rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

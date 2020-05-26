@@ -1,0 +1,16 @@
+PREFIX :<http://edas#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+
+{{pres}} a :Presenter.
+	{{pap}} :relatedToEvent {{presentation}}.
+	{{presentation}} a :PaperPresentation.
+	{{diapo}} :relatesTo {{pres}}.
+	{{diapo}} a :SlideSet.
+	{{diapo}} :relatesTo {{presentation}}.
+{{presentation}} rdfs:label {{presentationname}}.
+{{diapo}} rdfs:label {{presentationname}}.
+{{conf}} :hasRelatedDocument {{diapo}}.
+}
+

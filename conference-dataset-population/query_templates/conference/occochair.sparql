@@ -1,0 +1,9 @@
+PREFIX :<http://conference#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+INSERT DATA{
+{{occochair}} a :Co-chair.
+{{ococchair}} :was_a_committee_co-chair_of {{oc}}.
+}

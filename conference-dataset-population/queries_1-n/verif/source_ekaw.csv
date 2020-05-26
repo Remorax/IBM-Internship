@@ -1,0 +1,61 @@
+q_34.sparql,?s  {   ?s  <http://ekaw#Abstract> .   } ,conference,,,
+q_13.sparql,?s  {   ?s  <http://ekaw#Academic_Institution> .    } ,edas,confOf,,
+q_42.sparql,?s  {   ?s  <http://ekaw#Accepted_Paper> .    } ,edas,cmt,conference,
+q_32.sparql,?s  {   ?s  <http://ekaw#Assigned_Paper> .    } ,cmt,edas,conference,confOf
+q_12.sparql,?s  {   ?s  <http://ekaw#Conference_Banquet> .    } ,edas,confOf,,
+q_30.sparql,?s  {   ?s  <http://ekaw#Conference_Participant> .    } ,conference,confOf,edas,
+q_21.sparql,?s  {   ?s  <http://ekaw#Conference_Proceedings> .    } ,conference,,,
+q_38.sparql,?s  {   ?s  <http://ekaw#Conference_Trip> .    } ,edas,confOf,,
+q_62.sparql,?s  {   ?s  <http://ekaw#Conference> .    } ,confOf,cmt,edas,conference
+q_53.sparql,?s  {   ?s  <http://ekaw#Document> .    } ,edas,cmt,conference,confOf
+q_24.sparql,?s  {   ?s  <http://ekaw#Early-Registered_Participant> .    } ,confOf,conference,,
+q_16.sparql,?s  {   ?s  <http://ekaw#Evaluated_Paper> .    } ,cmt,conference,edas,
+q_55.sparql,?s  {   ?s  <http://ekaw#Event> .    } ,cmt,edas,confOf,conference
+q_56.sparql,Contributed_Talk,edas,conference,,
+q_48.sparql,?s  {   ?s  <http://ekaw#Invited_Speaker> .    } ,conference,,,
+q_35.sparql,?s  {   ?s  <http://ekaw#Invited_Talk_Abstract> .    } ,conference,,,
+q_14.sparql,?s  {   ?s  <http://ekaw#Late-Registered_Participant> .    } ,conference,confOf,,
+q_61.sparql,?s  {   ?s  <http://ekaw#Location> .    } ,edas,,,
+q_18.sparql,?s  {   ?s  <http://ekaw#OC_Chair> .    } ,conference,,,
+q_8.sparql,?s  {   ?s  <http://ekaw#OC_Member> .    } ,conference,,,
+q_19.sparql,?s  {   ?s  <http://ekaw#Organisation> .    } ,edas,confOf,conference,
+q_66.sparql,?s  {   ?s  <http://ekaw#Paper_Author> .    } ,cmt,confOf,conference,edas
+q_40.sparql,?s  {   ?s  <http://ekaw#Paper> .    } ,edas,confOf,conference,cmt
+q_9.sparql,?s  {   ?s  <http://ekaw#PC_Chair> .    } ,confOf,conference,cmt,
+q_63.sparql,?s  {   ?s  <http://ekaw#PC_Member> .    } ,cmt,conference,confOf,
+q_2.sparql,?s  {   ?s  <http://ekaw#Person> .    } ,conference,cmt,edas,confOf
+q_57.sparql,?s  {   ?s  <http://ekaw#Proceedings_Publisher> .    } ,conference,,,
+q_26.sparql,?s  {   ?s  <http://ekaw#Regular_Paper> .    } ,conference,confOf,,
+q_23.sparql,?s  {   ?s  <http://ekaw#Rejected_Paper> .    } ,cmt,edas,conference,
+q_0.sparql,?s  {   ?s  <http://ekaw#Research_Topic> .    } ,edas,confOf,cmt,conference
+q_54.sparql,?s  {   ?s  <http://ekaw#Review> .    } ,conference,cmt,edas,
+q_64.sparql,?s  {   ?s  <http://ekaw#SC_Member> .    } ,conference,,,
+q_47.sparql,?s  {   ?s  <http://ekaw#Scientific_Event> .    } ,confOf,cmt,conference,edas
+q_37.sparql,?s  {   ?s  <http://ekaw#Social_Event> .    } ,edas,confOf,,
+q_59.sparql,?s  {   ?s  <http://ekaw#Student> .    } ,confOf,,,
+q_44.sparql,?s  {   ?s  <http://ekaw#Submitted_Paper> .    } ,cmt,conference,edas,confOf
+q_60.sparql,?s  {   ?s  <http://ekaw#Track> .    } ,conference,,,
+q_7.sparql,?s  {   ?s  <http://ekaw#Tutorial> .    } ,confOf,conference,,
+q_10.sparql,?s  {   ?s  <http://ekaw#University> .    } ,confOf,edas,,
+q_3.sparql,?s  {   ?s  <http://ekaw#Web_Site> .    } ,conference,,,
+q_6.sparql,?s  {   ?s  <http://ekaw#Workshop_Chair> .    } ,conference,,,
+q_4.sparql,?s  {   ?s  <http://ekaw#Workshop> .    } ,confOf,edas,conference,
+q_11.sparql,?s ?o  {   ?s <http://ekaw#authorOf> ?o .    } ,conference,confOf,cmt,edas
+q_52.sparql,?s ?o  {   ?s <http://ekaw#coversTopic> ?o .    } ,conference,edas,cmt,confOf
+q_25.sparql,?s ?o  {   ?s <http://ekaw#hasEvent> ?o .    } ,conference,edas,,
+q_41.sparql,?s ?o  {   ?s <http://ekaw#hasReview> ?o .    } ,conference,,,
+q_31.sparql,?s ?o  {   ?s <http://ekaw#hasReviewer> ?o .    } ,cmt,confOf,conference,
+q_33.sparql,?s ?o  {   ?s <http://ekaw#heldIn> ?o .    } ,edas,,,
+q_1.sparql,?s ?o  {   ?s <http://ekaw#locationOf> ?o .    } ,edas,,,
+q_29.sparql,?s ?o  {   ?s <http://ekaw#paperPresentedAs> ?o .    } ,edas,,,
+q_27.sparql,?s ?o  {   ?s <http://ekaw#partOfEvent> ?o .    } ,conference,edas,,
+q_58.sparql,?s ?o  {   ?s <http://ekaw#presentationOfPaper> ?o .    } ,edas,,,
+q_65.sparql,?s ?o  {   ?s <http://ekaw#publisherOf> ?o .    } ,conference,,,
+q_22.sparql,?s ?o  {   ?s <http://ekaw#reviewerOfPaper> ?o .    } ,cmt,conference,confOf,
+q_20.sparql,?s ?o  {   ?s <http://ekaw#reviewWrittenBy> ?o .    } ,conference,cmt,edas,
+q_46.sparql,?s ?o  {   ?s <http://ekaw#topicCoveredBy> ?o .    } ,conference,cmt,edas,confOf
+q_51.sparql,?s ?o  {   ?s <http://ekaw#writtenBy> ?o .    } ,edas,cmt,conference,confOf
+43,http://ekaw#Presenter,edas,conference,,
+15,http://ekaw#Invited_Talk,conference,,,
+17,http://ekaw#Camera_Ready_Paper,edas,conference,,
+39,http://ekaw#reviewOfPaper,conference,,,

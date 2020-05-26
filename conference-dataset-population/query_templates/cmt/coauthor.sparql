@@ -1,0 +1,9 @@
+PREFIX :<http://cmt#>
+
+INSERT DATA{
+{{pap}} :hasCo-author {{auth}}.
+{{auth}} a :Co-author.
+{{auth}} :markConflictOfInterest {{pap}}.
+{{auth}} a :Author.
+{{auth}} :memberOfConference {{conf}}.
+}

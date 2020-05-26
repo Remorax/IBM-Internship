@@ -1,0 +1,5084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>??</type>
+  <onto1>
+    <Ontology rdf:about="http://confOf#">
+      <location>http://repositories.seals-project.eu/tdrs/testdata/persistent/popconf/popconf-eswc/suite/confOf-edas/component/source/</location>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://ekaw#">
+      <location>http://repositories.seals-project.eu/tdrs/testdata/persistent/popconf/popconf-eswc/suite/confOf-edas/component/target/</location>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1789975291"/>
+      <entity2 rdf:resource="http://edas-instances#topic1789975291"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9066780209541321</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1880334712"/>
+      <entity2 rdf:resource="http://edas-instances#topic1880334712"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9381850957870483</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-932820115"/>
+      <entity2 rdf:resource="http://edas-instances#topic-932820115"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7327092885971069</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-563239852"/>
+      <entity2 rdf:resource="http://edas-instances#topic-563239852"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3671284019947052</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1419366409"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1419366409"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8851297497749329</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic132803437"/>
+      <entity2 rdf:resource="http://edas-instances#topic132803437"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.32662126421928406</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-814884441"/>
+      <entity2 rdf:resource="http://edas-instances#topic-814884441"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04016401991248131</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic454790106"/>
+      <entity2 rdf:resource="http://edas-instances#topic454790106"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8862192034721375</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-484787118"/>
+      <entity2 rdf:resource="http://edas-instances#topic-484787118"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.919892430305481</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1555043537"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1555043537"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9134650230407715</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-751322029"/>
+      <entity2 rdf:resource="http://edas-instances#topic-751322029"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6661767363548279</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1374410570"/>
+      <entity2 rdf:resource="http://edas-instances#topic1374410570"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9276455640792847</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Reviewing_event"/>
+      <entity2 rdf:resource="http://edas#CallForReviews"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic516545646"/>
+      <entity2 rdf:resource="http://edas-instances#topic516545646"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.32062020897865295</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic441371312"/>
+      <entity2 rdf:resource="http://edas-instances#topic441371312"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6076797246932983</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1480528477"/>
+      <entity2 rdf:resource="http://edas-instances#topic1480528477"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9016584157943726</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt2060985167"/>
+      <entity2 rdf:resource="http://edas-instances#revCall2060985167"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9982355237007141</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1363682746"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1363682746"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8129994869232178</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1156347348"/>
+      <entity2 rdf:resource="http://edas-instances#topic1156347348"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7801456451416016</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1923514980"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1923514980"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.612090528011322</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-334196463"/>
+      <entity2 rdf:resource="http://edas-instances#topic-334196463"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9277617335319519</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1886324060"/>
+      <entity2 rdf:resource="http://edas-instances#topic1886324060"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2776261866092682</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1438745149"/>
+      <entity2 rdf:resource="http://edas-instances#topic1438745149"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3258780837059021</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt526045159"/>
+      <entity2 rdf:resource="http://edas-instances#camCall526045159"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9987286925315857</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1354662968"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1354662968"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.392566442489624</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-726608903"/>
+      <entity2 rdf:resource="http://edas-instances#topic-726608903"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6028202772140503</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3001008"/>
+      <entity2 rdf:resource="http://edas-instances#topic3001008"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2824358344078064</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-608025418"/>
+      <entity2 rdf:resource="http://edas-instances#topic-608025418"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8995668292045593</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic521489727"/>
+      <entity2 rdf:resource="http://edas-instances#topic521489727"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.018862729892134666</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1433484744"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1433484744"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4545806646347046</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1402825064"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1402825064"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8555330038070679</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1548246528"/>
+      <entity2 rdf:resource="http://edas-instances#topic1548246528"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8039104342460632</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1291770361"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1291770361"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3158043324947357</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1202972607"/>
+      <entity2 rdf:resource="http://edas-instances#topic1202972607"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04733149707317352</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic110468"/>
+      <entity2 rdf:resource="http://edas-instances#topic110468"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7592997550964355</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic293323974"/>
+      <entity2 rdf:resource="http://edas-instances#topic293323974"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9063754677772522</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic917280113"/>
+      <entity2 rdf:resource="http://edas-instances#topic917280113"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9601577520370483</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1298723142"/>
+      <entity2 rdf:resource="http://edas-instances#topic1298723142"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7717987298965454</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-395667065"/>
+      <entity2 rdf:resource="http://edas-instances#topic-395667065"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18843340873718262</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-95730978"/>
+      <entity2 rdf:resource="http://edas-instances#topic-95730978"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.45571327209472656</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1285348022"/>
+      <entity2 rdf:resource="http://edas-instances#topic1285348022"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9375722408294678</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1056760842"/>
+      <entity2 rdf:resource="http://edas-instances#topic1056760842"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0591634176671505</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-912422301"/>
+      <entity2 rdf:resource="http://edas-instances#topic-912422301"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.36642196774482727</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-224232522"/>
+      <entity2 rdf:resource="http://edas-instances#topic-224232522"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9678319692611694</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasPhone"/>
+      <entity2 rdf:resource="http://edas#hasPhone"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1018635483"/>
+      <entity2 rdf:resource="http://edas-instances#topic1018635483"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8123022317886353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-697283491"/>
+      <entity2 rdf:resource="http://edas-instances#topic-697283491"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8647739291191101</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt1554024796"/>
+      <entity2 rdf:resource="http://edas-instances#subCall1554024796"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9953117370605469</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1094979881"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1094979881"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19074389338493347</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt-1822926834"/>
+      <entity2 rdf:resource="http://edas-instances#camCall-1822926834"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9979587197303772</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3168159"/>
+      <entity2 rdf:resource="http://edas-instances#topic3168159"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5934123396873474</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1044559571"/>
+      <entity2 rdf:resource="http://edas-instances#topic1044559571"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7675925493240356</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic102634"/>
+      <entity2 rdf:resource="http://edas-instances#topic102634"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3003087639808655</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1284569586"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1284569586"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9596719145774841</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic196442095"/>
+      <entity2 rdf:resource="http://edas-instances#topic196442095"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10534854978322983</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3532348"/>
+      <entity2 rdf:resource="http://edas-instances#topic3532348"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7085151672363281</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1974722289"/>
+      <entity2 rdf:resource="http://edas-instances#topic1974722289"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05572783201932907</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1628854618"/>
+      <entity2 rdf:resource="http://edas-instances#topic1628854618"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.963595449924469</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1595061868"/>
+      <entity2 rdf:resource="http://edas-instances#topic1595061868"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.647269606590271</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1706464642"/>
+      <entity2 rdf:resource="http://edas-instances#topic1706464642"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7323368191719055</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1919308818"/>
+      <entity2 rdf:resource="http://edas-instances#topic1919308818"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9552772045135498</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1191745379"/>
+      <entity2 rdf:resource="http://edas-instances#topic1191745379"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9798595905303955</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1451200989"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1451200989"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8377324938774109</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-847000684"/>
+      <entity2 rdf:resource="http://edas-instances#topic-847000684"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9208880662918091</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic10384706"/>
+      <entity2 rdf:resource="http://edas-instances#topic10384706"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.976720929145813</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1546254583"/>
+      <entity2 rdf:resource="http://edas-instances#topic1546254583"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7365960478782654</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2045099659"/>
+      <entity2 rdf:resource="http://edas-instances#topic2045099659"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7292250394821167</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic380802873"/>
+      <entity2 rdf:resource="http://edas-instances#topic380802873"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8846057057380676</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-158826707"/>
+      <entity2 rdf:resource="http://edas-instances#topic-158826707"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9891830086708069</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1531694805"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1531694805"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8185123205184937</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-67098003"/>
+      <entity2 rdf:resource="http://edas-instances#topic-67098003"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.027730878442525864</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3357431"/>
+      <entity2 rdf:resource="http://edas-instances#topic3357431"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9401139616966248</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1148197345"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1148197345"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.003720898414030671</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1657636448"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1657636448"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10062168538570404</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1352929190"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1352929190"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9185544848442078</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1246004963"/>
+      <entity2 rdf:resource="http://edas-instances#topic1246004963"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.838771402835846</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1089448050"/>
+      <entity2 rdf:resource="http://edas-instances#topic1089448050"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.900715708732605</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1487673280"/>
+      <entity2 rdf:resource="http://edas-instances#topic1487673280"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6557142734527588</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-656361996"/>
+      <entity2 rdf:resource="http://edas-instances#topic-656361996"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.964971125125885</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1826664373"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1826664373"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1621369570493698</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2035073525"/>
+      <entity2 rdf:resource="http://edas-instances#topic2035073525"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6283199191093445</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic760464573"/>
+      <entity2 rdf:resource="http://edas-instances#topic760464573"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7082415223121643</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasEmail"/>
+      <entity2 rdf:resource="http://edas#hasEmail"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1843679302"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1843679302"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06780397891998291</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic27871373"/>
+      <entity2 rdf:resource="http://edas-instances#topic27871373"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9045578241348267</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1698855109"/>
+      <entity2 rdf:resource="http://edas-instances#topic1698855109"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7244386672973633</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Person"/>
+      <entity2 rdf:resource="http://edas#Person"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic565121364"/>
+      <entity2 rdf:resource="http://edas-instances#topic565121364"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.001955371117219329</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1941458818"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1941458818"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9505336880683899</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2000172700"/>
+      <entity2 rdf:resource="http://edas-instances#topic2000172700"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.030841907486319542</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1112110424"/>
+      <entity2 rdf:resource="http://edas-instances#topic1112110424"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5059390068054199</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-185152059"/>
+      <entity2 rdf:resource="http://edas-instances#topic-185152059"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9532946944236755</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic311197383"/>
+      <entity2 rdf:resource="http://edas-instances#topic311197383"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9690260291099548</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-135895070"/>
+      <entity2 rdf:resource="http://edas-instances#topic-135895070"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.606770396232605</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1455370631"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1455370631"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.892493724822998</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1213585766"/>
+      <entity2 rdf:resource="http://edas-instances#topic1213585766"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9047695398330688</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-646286227"/>
+      <entity2 rdf:resource="http://edas-instances#topic-646286227"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9565826654434204</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1558992055"/>
+      <entity2 rdf:resource="http://edas-instances#topic1558992055"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40690159797668457</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1458121336"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1458121336"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.29537296295166016</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic279659712"/>
+      <entity2 rdf:resource="http://edas-instances#topic279659712"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8685328960418701</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1801437822"/>
+      <entity2 rdf:resource="http://edas-instances#topic1801437822"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9850137829780579</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1276119258"/>
+      <entity2 rdf:resource="http://edas-instances#topic1276119258"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3615320920944214</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt-116568089"/>
+      <entity2 rdf:resource="http://edas-instances#revCall-116568089"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9980883598327637</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1259179065"/>
+      <entity2 rdf:resource="http://edas-instances#topic1259179065"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8852205872535706</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3377527"/>
+      <entity2 rdf:resource="http://edas-instances#topic3377527"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.37883904576301575</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt2060985167"/>
+      <entity2 rdf:resource="http://edas-instances#camCall2060985167"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9977309107780457</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2087511093"/>
+      <entity2 rdf:resource="http://edas-instances#topic2087511093"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20592305064201355</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1574861283"/>
+      <entity2 rdf:resource="http://edas-instances#topic1574861283"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3626384139060974</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-537615418"/>
+      <entity2 rdf:resource="http://edas-instances#topic-537615418"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8945189118385315</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1863890486"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1863890486"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9616996049880981</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3267882"/>
+      <entity2 rdf:resource="http://edas-instances#topic3267882"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8068781495094299</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1078222292"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1078222292"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3092723786830902</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1632320115"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1632320115"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9731935858726501</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1069285920"/>
+      <entity2 rdf:resource="http://edas-instances#topic1069285920"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9793392419815063</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2132705823"/>
+      <entity2 rdf:resource="http://edas-instances#topic2132705823"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.31498223543167114</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic697730903"/>
+      <entity2 rdf:resource="http://edas-instances#topic697730903"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06453719735145569</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1984153269"/>
+      <entity2 rdf:resource="http://edas-instances#topic1984153269"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8651303052902222</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1140118189"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1140118189"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9372538328170776</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic409787618"/>
+      <entity2 rdf:resource="http://edas-instances#topic409787618"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3932230770587921</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1315681652"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1315681652"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5848050117492676</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-896177687"/>
+      <entity2 rdf:resource="http://edas-instances#topic-896177687"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03226975351572037</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic949122880"/>
+      <entity2 rdf:resource="http://edas-instances#topic949122880"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0291352029889822</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1060858760"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1060858760"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9775786399841309</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1116280523"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1116280523"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9679538011550903</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1615225221"/>
+      <entity2 rdf:resource="http://edas-instances#topic1615225221"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8943451642990112</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2112813361"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2112813361"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.535365641117096</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1573868159"/>
+      <entity2 rdf:resource="http://edas-instances#topic1573868159"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7356100678443909</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1261395511"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1261395511"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.982109785079956</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1995874353"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1995874353"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24923677742481232</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1352830833"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1352830833"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9641942977905273</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1883588840"/>
+      <entity2 rdf:resource="http://edas-instances#topic1883588840"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9093207120895386</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1357363790"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1357363790"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8767229914665222</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic148825606"/>
+      <entity2 rdf:resource="http://edas-instances#topic148825606"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1728227436542511</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic115924"/>
+      <entity2 rdf:resource="http://edas-instances#topic115924"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.26363739371299744</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1151025098"/>
+      <entity2 rdf:resource="http://edas-instances#topic1151025098"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8163130879402161</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Country"/>
+      <entity2 rdf:resource="http://edas#Country"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3560141"/>
+      <entity2 rdf:resource="http://edas-instances#topic3560141"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12967117130756378</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt-116568089"/>
+      <entity2 rdf:resource="http://edas-instances#camCall-116568089"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9995253682136536</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1784134588"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1784134588"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1721513867378235</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic476308062"/>
+      <entity2 rdf:resource="http://edas-instances#topic476308062"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9437159299850464</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1475910927"/>
+      <entity2 rdf:resource="http://edas-instances#topic1475910927"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9026941061019897</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2030348182"/>
+      <entity2 rdf:resource="http://edas-instances#topic2030348182"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.800716757774353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic725270917"/>
+      <entity2 rdf:resource="http://edas-instances#topic725270917"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9695469737052917</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt-1822926834"/>
+      <entity2 rdf:resource="http://edas-instances#subCall-1822926834"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9975562691688538</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1141465647"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1141465647"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8871321082115173</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1106651497"/>
+      <entity2 rdf:resource="http://edas-instances#topic1106651497"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9802489876747131</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1649823283"/>
+      <entity2 rdf:resource="http://edas-instances#topic1649823283"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9771310091018677</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic651885588"/>
+      <entity2 rdf:resource="http://edas-instances#topic651885588"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7125886678695679</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1516899691"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1516899691"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8979489207267761</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic676758218"/>
+      <entity2 rdf:resource="http://edas-instances#topic676758218"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8797600865364075</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2052302948"/>
+      <entity2 rdf:resource="http://edas-instances#topic2052302948"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6171747446060181</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic117916"/>
+      <entity2 rdf:resource="http://edas-instances#topic117916"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9188920855522156</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1132851595"/>
+      <entity2 rdf:resource="http://edas-instances#topic1132851595"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18440628051757812</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic804960338"/>
+      <entity2 rdf:resource="http://edas-instances#topic804960338"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3739747107028961</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic698327196"/>
+      <entity2 rdf:resource="http://edas-instances#topic698327196"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9189735054969788</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic495859485"/>
+      <entity2 rdf:resource="http://edas-instances#topic495859485"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.901802122592926</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-226319470"/>
+      <entity2 rdf:resource="http://edas-instances#topic-226319470"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9285567998886108</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1807548271"/>
+      <entity2 rdf:resource="http://edas-instances#topic1807548271"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.41448256373405457</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-165047611"/>
+      <entity2 rdf:resource="http://edas-instances#topic-165047611"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6714977622032166</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1287340760"/>
+      <entity2 rdf:resource="http://edas-instances#topic1287340760"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5452348589897156</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3625806"/>
+      <entity2 rdf:resource="http://edas-instances#topic3625806"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8370827436447144</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1652529364"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1652529364"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9548048377037048</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic245608713"/>
+      <entity2 rdf:resource="http://edas-instances#topic245608713"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7831916809082031</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2115153843"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2115153843"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9048489332199097</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1945533194"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1945533194"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.23876942694187164</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1999441657"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1999441657"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1987505704164505</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-553411800"/>
+      <entity2 rdf:resource="http://edas-instances#topic-553411800"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9707130193710327</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1933742413"/>
+      <entity2 rdf:resource="http://edas-instances#topic1933742413"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.25462961196899414</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1009869367"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1009869367"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9858251810073853</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1028636743"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1028636743"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3455697298049927</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Conference"/>
+      <entity2 rdf:resource="http://edas#Conference"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic661147877"/>
+      <entity2 rdf:resource="http://edas-instances#topic661147877"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9718106985092163</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic114477024"/>
+      <entity2 rdf:resource="http://edas-instances#topic114477024"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9305502772331238</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-269060085"/>
+      <entity2 rdf:resource="http://edas-instances#topic-269060085"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7772301435470581</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1021130956"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1021130956"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3157564401626587</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1249806057"/>
+      <entity2 rdf:resource="http://edas-instances#topic1249806057"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.562216579914093</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic956968364"/>
+      <entity2 rdf:resource="http://edas-instances#topic956968364"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9766982793807983</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic732946838"/>
+      <entity2 rdf:resource="http://edas-instances#topic732946838"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.833087146282196</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-308554216"/>
+      <entity2 rdf:resource="http://edas-instances#topic-308554216"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9463340044021606</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-984799354"/>
+      <entity2 rdf:resource="http://edas-instances#topic-984799354"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9787728786468506</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1800934331"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1800934331"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20276078581809998</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt-1822926834"/>
+      <entity2 rdf:resource="http://edas-instances#revCall-1822926834"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9983087778091431</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-750759890"/>
+      <entity2 rdf:resource="http://edas-instances#topic-750759890"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.030158521607518196</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2056933150"/>
+      <entity2 rdf:resource="http://edas-instances#topic2056933150"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8282619714736938</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1288075345"/>
+      <entity2 rdf:resource="http://edas-instances#topic1288075345"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4605084955692291</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1726143507"/>
+      <entity2 rdf:resource="http://edas-instances#topic1726143507"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8842255473136902</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic848715978"/>
+      <entity2 rdf:resource="http://edas-instances#topic848715978"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.326956570148468</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic14800453"/>
+      <entity2 rdf:resource="http://edas-instances#topic14800453"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7407846450805664</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1001830084"/>
+      <entity2 rdf:resource="http://edas-instances#topic1001830084"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9813100099563599</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt1621863795"/>
+      <entity2 rdf:resource="http://edas-instances#subCall1621863795"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9978124499320984</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1563250403"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1563250403"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5184000134468079</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-492614264"/>
+      <entity2 rdf:resource="http://edas-instances#topic-492614264"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9241816401481628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic109170"/>
+      <entity2 rdf:resource="http://edas-instances#topic109170"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10730420798063278</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1524960851"/>
+      <entity2 rdf:resource="http://edas-instances#topic1524960851"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13828548789024353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-549860811"/>
+      <entity2 rdf:resource="http://edas-instances#topic-549860811"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8175452351570129</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1737365534"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1737365534"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.909491240978241</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-971130761"/>
+      <entity2 rdf:resource="http://edas-instances#topic-971130761"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8298173546791077</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1888822017"/>
+      <entity2 rdf:resource="http://edas-instances#topic1888822017"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7031334638595581</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-416908537"/>
+      <entity2 rdf:resource="http://edas-instances#topic-416908537"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9854321479797363</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1530231663"/>
+      <entity2 rdf:resource="http://edas-instances#topic1530231663"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9682099223136902</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt20548200"/>
+      <entity2 rdf:resource="http://edas-instances#camCall20548200"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9970861077308655</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic114282"/>
+      <entity2 rdf:resource="http://edas-instances#topic114282"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5145410299301147</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-683839270"/>
+      <entity2 rdf:resource="http://edas-instances#topic-683839270"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9251293540000916</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1245635613"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1245635613"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9377393126487732</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1058173332"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1058173332"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.02880621887743473</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Paper"/>
+      <entity2 rdf:resource="http://edas#Paper"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1034283501"/>
+      <entity2 rdf:resource="http://edas-instances#topic1034283501"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.963947594165802</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1684874968"/>
+      <entity2 rdf:resource="http://edas-instances#topic1684874968"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9178308248519897</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-449702633"/>
+      <entity2 rdf:resource="http://edas-instances#topic-449702633"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7965076565742493</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1417445862"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1417445862"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5853609442710876</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt-116568089"/>
+      <entity2 rdf:resource="http://edas-instances#subCall-116568089"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.998843252658844</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1266375953"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1266375953"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7582862973213196</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-538924890"/>
+      <entity2 rdf:resource="http://edas-instances#topic-538924890"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5738894939422607</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-361161128"/>
+      <entity2 rdf:resource="http://edas-instances#topic-361161128"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.29810070991516113</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1324674584"/>
+      <entity2 rdf:resource="http://edas-instances#topic1324674584"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5562964081764221</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic925946741"/>
+      <entity2 rdf:resource="http://edas-instances#topic925946741"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.26729708909988403</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-316260921"/>
+      <entity2 rdf:resource="http://edas-instances#topic-316260921"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6407695412635803</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-274272431"/>
+      <entity2 rdf:resource="http://edas-instances#topic-274272431"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3190547823905945</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1184565222"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1184565222"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8682830333709717</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic901600718"/>
+      <entity2 rdf:resource="http://edas-instances#topic901600718"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7326226234436035</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-190989106"/>
+      <entity2 rdf:resource="http://edas-instances#topic-190989106"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5471053719520569</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1616286302"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1616286302"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9289278388023376</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1639170605"/>
+      <entity2 rdf:resource="http://edas-instances#topic1639170605"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8472143411636353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt-2128729747"/>
+      <entity2 rdf:resource="http://edas-instances#camCall-2128729747"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9986943006515503</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1742506922"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1742506922"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.29153624176979065</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1391551383"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1391551383"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.014305059798061848</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1349095542"/>
+      <entity2 rdf:resource="http://edas-instances#topic1349095542"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8190270662307739</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic104462"/>
+      <entity2 rdf:resource="http://edas-instances#topic104462"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3594098687171936</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1673632197"/>
+      <entity2 rdf:resource="http://edas-instances#topic1673632197"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11435816437005997</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic540210111"/>
+      <entity2 rdf:resource="http://edas-instances#topic540210111"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7661975026130676</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1511827212"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1511827212"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9415106773376465</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic103160"/>
+      <entity2 rdf:resource="http://edas-instances#topic103160"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8604124784469604</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1583269100"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1583269100"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9038394093513489</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2005274852"/>
+      <entity2 rdf:resource="http://edas-instances#topic2005274852"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8116434216499329</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic303216561"/>
+      <entity2 rdf:resource="http://edas-instances#topic303216561"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6126736998558044</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic441719640"/>
+      <entity2 rdf:resource="http://edas-instances#topic441719640"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5285992622375488</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1275566148"/>
+      <entity2 rdf:resource="http://edas-instances#topic1275566148"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7541611194610596</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2139699268"/>
+      <entity2 rdf:resource="http://edas-instances#topic2139699268"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8957392573356628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic780346297"/>
+      <entity2 rdf:resource="http://edas-instances#topic780346297"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6718621253967285</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1850841274"/>
+      <entity2 rdf:resource="http://edas-instances#topic1850841274"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8010256886482239</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1816565796"/>
+      <entity2 rdf:resource="http://edas-instances#topic1816565796"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.982320249080658</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-517713786"/>
+      <entity2 rdf:resource="http://edas-instances#topic-517713786"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9715662598609924</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-364883423"/>
+      <entity2 rdf:resource="http://edas-instances#topic-364883423"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6591609120368958</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1747496313"/>
+      <entity2 rdf:resource="http://edas-instances#topic1747496313"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1177009791135788</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-450004177"/>
+      <entity2 rdf:resource="http://edas-instances#topic-450004177"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7221508622169495</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1987276913"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1987276913"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8445350527763367</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1051226994"/>
+      <entity2 rdf:resource="http://edas-instances#topic1051226994"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09963575005531311</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic99746337"/>
+      <entity2 rdf:resource="http://edas-instances#topic99746337"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.35366493463516235</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-874210839"/>
+      <entity2 rdf:resource="http://edas-instances#topic-874210839"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9834319353103638</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1962030493"/>
+      <entity2 rdf:resource="http://edas-instances#topic1962030493"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9756602048873901</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic117588"/>
+      <entity2 rdf:resource="http://edas-instances#topic117588"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9194212555885315</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic826147581"/>
+      <entity2 rdf:resource="http://edas-instances#topic826147581"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.44256865978240967</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic240290728"/>
+      <entity2 rdf:resource="http://edas-instances#topic240290728"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06080802157521248</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1849164425"/>
+      <entity2 rdf:resource="http://edas-instances#topic1849164425"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7244052290916443</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1993134797"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1993134797"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9449297785758972</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic883451154"/>
+      <entity2 rdf:resource="http://edas-instances#topic883451154"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5753483772277832</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic668139773"/>
+      <entity2 rdf:resource="http://edas-instances#topic668139773"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8232372403144836</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1003968655"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1003968655"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9030388593673706</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1221684669"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1221684669"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.668834388256073</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1190977582"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1190977582"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9413316249847412</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1846817431"/>
+      <entity2 rdf:resource="http://edas-instances#topic1846817431"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8944308757781982</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1285004149"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1285004149"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8326115608215332</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#writtenBy"/>
+      <entity2 rdf:resource="http://edas#isWrittenBy"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1601776020"/>
+      <entity2 rdf:resource="http://edas-instances#topic1601776020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8851615190505981</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic118191028"/>
+      <entity2 rdf:resource="http://edas-instances#topic118191028"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.917830765247345</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic105008237"/>
+      <entity2 rdf:resource="http://edas-instances#topic105008237"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.33294135332107544</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1773667603"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1773667603"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8203062415122986</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1674227754"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1674227754"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8963305354118347</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic808175455"/>
+      <entity2 rdf:resource="http://edas-instances#topic808175455"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9558486938476562</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-378882880"/>
+      <entity2 rdf:resource="http://edas-instances#topic-378882880"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4178326725959778</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-706626147"/>
+      <entity2 rdf:resource="http://edas-instances#topic-706626147"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2703942060470581</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3496916"/>
+      <entity2 rdf:resource="http://edas-instances#topic3496916"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09000751376152039</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1888963534"/>
+      <entity2 rdf:resource="http://edas-instances#topic1888963534"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3413694500923157</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic107329"/>
+      <entity2 rdf:resource="http://edas-instances#topic107329"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.31762585043907166</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-164583998"/>
+      <entity2 rdf:resource="http://edas-instances#topic-164583998"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8573107719421387</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic344047183"/>
+      <entity2 rdf:resource="http://edas-instances#topic344047183"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5665399432182312</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic719087599"/>
+      <entity2 rdf:resource="http://edas-instances#topic719087599"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8796877861022949</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-797946958"/>
+      <entity2 rdf:resource="http://edas-instances#topic-797946958"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8163361549377441</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic893454270"/>
+      <entity2 rdf:resource="http://edas-instances#topic893454270"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9579420685768127</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic860344123"/>
+      <entity2 rdf:resource="http://edas-instances#topic860344123"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20018312335014343</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic351873811"/>
+      <entity2 rdf:resource="http://edas-instances#topic351873811"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5472111105918884</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic10107213"/>
+      <entity2 rdf:resource="http://edas-instances#topic10107213"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7112798690795898</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1094759587"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1094759587"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5262889862060547</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1184364320"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1184364320"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9292208552360535</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1107122877"/>
+      <entity2 rdf:resource="http://edas-instances#topic1107122877"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30932238698005676</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2063028220"/>
+      <entity2 rdf:resource="http://edas-instances#topic2063028220"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40986138582229614</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3321850"/>
+      <entity2 rdf:resource="http://edas-instances#topic3321850"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.34596380591392517</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-711778080"/>
+      <entity2 rdf:resource="http://edas-instances#topic-711778080"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8961546421051025</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt1554024796"/>
+      <entity2 rdf:resource="http://edas-instances#revCall1554024796"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9983829855918884</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3077362"/>
+      <entity2 rdf:resource="http://edas-instances#topic3077362"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.850556492805481</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic344200471"/>
+      <entity2 rdf:resource="http://edas-instances#topic344200471"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8160475492477417</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic180098146"/>
+      <entity2 rdf:resource="http://edas-instances#topic180098146"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.29896417260169983</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt1554024796"/>
+      <entity2 rdf:resource="http://edas-instances#camCall1554024796"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9961302876472473</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1216835014"/>
+      <entity2 rdf:resource="http://edas-instances#topic1216835014"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8770624399185181</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasCountry"/>
+      <entity2 rdf:resource="http://edas#hasCountry"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1814839430"/>
+      <entity2 rdf:resource="http://edas-instances#topic1814839430"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4894002377986908</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-916346253"/>
+      <entity2 rdf:resource="http://edas-instances#topic-916346253"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8034775853157043</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2083631919"/>
+      <entity2 rdf:resource="http://edas-instances#topic2083631919"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8605347275733948</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1422950858"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1422950858"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.01283324882388115</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1769413409"/>
+      <entity2 rdf:resource="http://edas-instances#topic1769413409"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24621695280075073</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic116076"/>
+      <entity2 rdf:resource="http://edas-instances#topic116076"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.39726969599723816</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2071579911"/>
+      <entity2 rdf:resource="http://edas-instances#topic2071579911"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2263902723789215</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic112518608"/>
+      <entity2 rdf:resource="http://edas-instances#topic112518608"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22951869666576385</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1133073094"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1133073094"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.855320930480957</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1380348800"/>
+      <entity2 rdf:resource="http://edas-instances#topic1380348800"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9873123168945312</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic971398933"/>
+      <entity2 rdf:resource="http://edas-instances#topic971398933"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.014146213419735432</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic544664589"/>
+      <entity2 rdf:resource="http://edas-instances#topic544664589"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.895737886428833</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1450554128"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1450554128"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8300936222076416</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-20663800"/>
+      <entity2 rdf:resource="http://edas-instances#topic-20663800"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13048434257507324</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1178133765"/>
+      <entity2 rdf:resource="http://edas-instances#topic1178133765"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.33823463320732117</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic928045487"/>
+      <entity2 rdf:resource="http://edas-instances#topic928045487"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.948192298412323</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2000199054"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2000199054"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9563412070274353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1217914178"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1217914178"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8577005863189697</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1787633415"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1787633415"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30398938059806824</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt2060985167"/>
+      <entity2 rdf:resource="http://edas-instances#subCall2060985167"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9969062209129333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-477040453"/>
+      <entity2 rdf:resource="http://edas-instances#topic-477040453"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.85358065366745</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic867631792"/>
+      <entity2 rdf:resource="http://edas-instances#topic867631792"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5409371852874756</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1348666419"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1348666419"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08305459469556808</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-105477199"/>
+      <entity2 rdf:resource="http://edas-instances#topic-105477199"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9309747219085693</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-125478861"/>
+      <entity2 rdf:resource="http://edas-instances#topic-125478861"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9014474749565125</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1513621137"/>
+      <entity2 rdf:resource="http://edas-instances#topic1513621137"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.46013692021369934</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1578626670"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1578626670"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6720981597900391</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic698783012"/>
+      <entity2 rdf:resource="http://edas-instances#topic698783012"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.023861153051257133</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic942048415"/>
+      <entity2 rdf:resource="http://edas-instances#topic942048415"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7390316128730774</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1686017190"/>
+      <entity2 rdf:resource="http://edas-instances#topic1686017190"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20400787889957428</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1468254377"/>
+      <entity2 rdf:resource="http://edas-instances#topic1468254377"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8300607800483704</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-380976655"/>
+      <entity2 rdf:resource="http://edas-instances#topic-380976655"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8659255504608154</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-367957705"/>
+      <entity2 rdf:resource="http://edas-instances#topic-367957705"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7977479100227356</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-688106270"/>
+      <entity2 rdf:resource="http://edas-instances#topic-688106270"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9391695857048035</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1544873409"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1544873409"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8105636239051819</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-338995250"/>
+      <entity2 rdf:resource="http://edas-instances#topic-338995250"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9537938237190247</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2074824604"/>
+      <entity2 rdf:resource="http://edas-instances#topic2074824604"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9676819443702698</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2130226553"/>
+      <entity2 rdf:resource="http://edas-instances#topic2130226553"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4967322051525116</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1404364860"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1404364860"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9824830293655396</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2062033988"/>
+      <entity2 rdf:resource="http://edas-instances#topic2062033988"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8963813185691833</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1473640201"/>
+      <entity2 rdf:resource="http://edas-instances#topic1473640201"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9593890309333801</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Camera_Ready_event"/>
+      <entity2 rdf:resource="http://edas#CallForPapers"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Social_event"/>
+      <entity2 rdf:resource="http://edas#SocialEvent"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic245265073"/>
+      <entity2 rdf:resource="http://edas-instances#topic245265073"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8991902470588684</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3404176"/>
+      <entity2 rdf:resource="http://edas-instances#topic3404176"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9206788539886475</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1488202109"/>
+      <entity2 rdf:resource="http://edas-instances#topic1488202109"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.906627357006073</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-669405410"/>
+      <entity2 rdf:resource="http://edas-instances#topic-669405410"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8089266419410706</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic323615476"/>
+      <entity2 rdf:resource="http://edas-instances#topic323615476"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8183773756027222</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-687696512"/>
+      <entity2 rdf:resource="http://edas-instances#topic-687696512"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8837721347808838</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1328006526"/>
+      <entity2 rdf:resource="http://edas-instances#topic1328006526"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.911515474319458</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt526045159"/>
+      <entity2 rdf:resource="http://edas-instances#revCall526045159"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9973503947257996</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-808846220"/>
+      <entity2 rdf:resource="http://edas-instances#topic-808846220"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9622512459754944</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1423451840"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1423451840"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7390270829200745</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3083698"/>
+      <entity2 rdf:resource="http://edas-instances#topic3083698"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9248349666595459</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1506165063"/>
+      <entity2 rdf:resource="http://edas-instances#topic1506165063"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9672245979309082</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1135455309"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1135455309"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7982234358787537</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic112756"/>
+      <entity2 rdf:resource="http://edas-instances#topic112756"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7779132127761841</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-567312220"/>
+      <entity2 rdf:resource="http://edas-instances#topic-567312220"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3798316419124603</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic513791341"/>
+      <entity2 rdf:resource="http://edas-instances#topic513791341"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.518182098865509</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-569153802"/>
+      <entity2 rdf:resource="http://edas-instances#topic-569153802"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.45879021286964417</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-52753192"/>
+      <entity2 rdf:resource="http://edas-instances#topic-52753192"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6835680603981018</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-878341936"/>
+      <entity2 rdf:resource="http://edas-instances#topic-878341936"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9734542369842529</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic104069929"/>
+      <entity2 rdf:resource="http://edas-instances#topic104069929"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7702515721321106</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2038632051"/>
+      <entity2 rdf:resource="http://edas-instances#topic2038632051"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2157374620437622</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-523257701"/>
+      <entity2 rdf:resource="http://edas-instances#topic-523257701"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9607173204421997</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1374072906"/>
+      <entity2 rdf:resource="http://edas-instances#topic1374072906"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.41027599573135376</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic568512629"/>
+      <entity2 rdf:resource="http://edas-instances#topic568512629"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7869758009910583</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1882357751"/>
+      <entity2 rdf:resource="http://edas-instances#topic1882357751"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4161559045314789</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2077081989"/>
+      <entity2 rdf:resource="http://edas-instances#topic2077081989"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3855949342250824</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-910715704"/>
+      <entity2 rdf:resource="http://edas-instances#topic-910715704"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7071595191955566</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-166375972"/>
+      <entity2 rdf:resource="http://edas-instances#topic-166375972"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4161747992038727</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2131240275"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2131240275"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8128439784049988</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt-2128729747"/>
+      <entity2 rdf:resource="http://edas-instances#revCall-2128729747"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9954700469970703</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1864554142"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1864554142"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.34233397245407104</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2117126240"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2117126240"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9752141833305359</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1512632445"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1512632445"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.37486642599105835</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1057047538"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1057047538"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9418314099311829</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1954882482"/>
+      <entity2 rdf:resource="http://edas-instances#topic1954882482"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13169105350971222</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1751863813"/>
+      <entity2 rdf:resource="http://edas-instances#topic1751863813"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9300270080566406</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-297950712"/>
+      <entity2 rdf:resource="http://edas-instances#topic-297950712"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8593815565109253</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3496932"/>
+      <entity2 rdf:resource="http://edas-instances#topic3496932"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8816245198249817</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic978111542"/>
+      <entity2 rdf:resource="http://edas-instances#topic978111542"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7923634648323059</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1142617103"/>
+      <entity2 rdf:resource="http://edas-instances#topic1142617103"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8934792280197144</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic93166550"/>
+      <entity2 rdf:resource="http://edas-instances#topic93166550"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8236657381057739</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic57142801"/>
+      <entity2 rdf:resource="http://edas-instances#topic57142801"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6808865666389465</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-756322155"/>
+      <entity2 rdf:resource="http://edas-instances#topic-756322155"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18031679093837738</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-437577575"/>
+      <entity2 rdf:resource="http://edas-instances#topic-437577575"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6914147138595581</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1372270923"/>
+      <entity2 rdf:resource="http://edas-instances#topic1372270923"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5680789351463318</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic486893038"/>
+      <entity2 rdf:resource="http://edas-instances#topic486893038"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9870622158050537</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic661984804"/>
+      <entity2 rdf:resource="http://edas-instances#topic661984804"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3486252427101135</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1711030776"/>
+      <entity2 rdf:resource="http://edas-instances#topic1711030776"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4678383767604828</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic151891919"/>
+      <entity2 rdf:resource="http://edas-instances#topic151891919"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8130971193313599</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic125637896"/>
+      <entity2 rdf:resource="http://edas-instances#topic125637896"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8331696391105652</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic584665702"/>
+      <entity2 rdf:resource="http://edas-instances#topic584665702"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7612830400466919</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3056464"/>
+      <entity2 rdf:resource="http://edas-instances#topic3056464"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8743202090263367</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1362445629"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1362445629"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8401980400085449</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3565976"/>
+      <entity2 rdf:resource="http://edas-instances#topic3565976"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7757193446159363</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic855306557"/>
+      <entity2 rdf:resource="http://edas-instances#topic855306557"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4605001211166382</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-363435454"/>
+      <entity2 rdf:resource="http://edas-instances#topic-363435454"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19721747934818268</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1170572381"/>
+      <entity2 rdf:resource="http://edas-instances#topic1170572381"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.28299328684806824</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic98659"/>
+      <entity2 rdf:resource="http://edas-instances#topic98659"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7574293613433838</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1869375325"/>
+      <entity2 rdf:resource="http://edas-instances#topic1869375325"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.028538778424263</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-950331211"/>
+      <entity2 rdf:resource="http://edas-instances#topic-950331211"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8395010828971863</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1789464955"/>
+      <entity2 rdf:resource="http://edas-instances#topic1789464955"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40832993388175964</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1207995910"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1207995910"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.980105459690094</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2034148894"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2034148894"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9582595825195312</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2134155929"/>
+      <entity2 rdf:resource="http://edas-instances#topic2134155929"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3505525588989258</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-777123594"/>
+      <entity2 rdf:resource="http://edas-instances#topic-777123594"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.942374587059021</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-171055284"/>
+      <entity2 rdf:resource="http://edas-instances#topic-171055284"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9024898409843445</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-196875119"/>
+      <entity2 rdf:resource="http://edas-instances#topic-196875119"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.32351401448249817</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-948314461"/>
+      <entity2 rdf:resource="http://edas-instances#topic-948314461"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9324185848236084</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2128144545"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2128144545"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.41614651679992676</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1740465904"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1740465904"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9031855463981628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1095605282"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1095605282"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.050939515233039856</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1441721758"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1441721758"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7383363842964172</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1196039024"/>
+      <entity2 rdf:resource="http://edas-instances#topic1196039024"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8947354555130005</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic884756569"/>
+      <entity2 rdf:resource="http://edas-instances#topic884756569"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9320857524871826</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Author"/>
+      <entity2 rdf:resource="http://edas#Author"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-168077674"/>
+      <entity2 rdf:resource="http://edas-instances#topic-168077674"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1423713117837906</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-887875843"/>
+      <entity2 rdf:resource="http://edas-instances#topic-887875843"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7909335494041443</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-408808257"/>
+      <entity2 rdf:resource="http://edas-instances#topic-408808257"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16353072226047516</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1776103452"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1776103452"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.773644745349884</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1977954553"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1977954553"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9851781129837036</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1410894901"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1410894901"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08520138263702393</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic256940020"/>
+      <entity2 rdf:resource="http://edas-instances#topic256940020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9258866906166077</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-784307251"/>
+      <entity2 rdf:resource="http://edas-instances#topic-784307251"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.37134215235710144</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-210953621"/>
+      <entity2 rdf:resource="http://edas-instances#topic-210953621"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9236275553703308</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1525161141"/>
+      <entity2 rdf:resource="http://edas-instances#topic1525161141"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9181987047195435</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1872997849"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1872997849"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12134525924921036</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3047042"/>
+      <entity2 rdf:resource="http://edas-instances#topic3047042"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16781765222549438</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-810957242"/>
+      <entity2 rdf:resource="http://edas-instances#topic-810957242"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6318138241767883</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasPostalCode"/>
+      <entity2 rdf:resource="http://edas#hasPostalCode"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic901644076"/>
+      <entity2 rdf:resource="http://edas-instances#topic901644076"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9505558013916016</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic891183677"/>
+      <entity2 rdf:resource="http://edas-instances#topic891183677"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9609494209289551</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1935416427"/>
+      <entity2 rdf:resource="http://edas-instances#topic1935416427"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12566997110843658</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3413708"/>
+      <entity2 rdf:resource="http://edas-instances#topic3413708"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8862044215202332</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1299668452"/>
+      <entity2 rdf:resource="http://edas-instances#topic1299668452"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10765977948904037</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2066975662"/>
+      <entity2 rdf:resource="http://edas-instances#topic2066975662"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5840827226638794</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic95844967"/>
+      <entity2 rdf:resource="http://edas-instances#topic95844967"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8197810053825378</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2011834699"/>
+      <entity2 rdf:resource="http://edas-instances#topic2011834699"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9084334969520569</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Topic"/>
+      <entity2 rdf:resource="http://edas#Topic"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3023545"/>
+      <entity2 rdf:resource="http://edas-instances#topic3023545"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2810674011707306</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-102703842"/>
+      <entity2 rdf:resource="http://edas-instances#topic-102703842"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.848900556564331</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1204182234"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1204182234"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.902918815612793</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic946494356"/>
+      <entity2 rdf:resource="http://edas-instances#topic946494356"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.33077073097229004</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3420763"/>
+      <entity2 rdf:resource="http://edas-instances#topic3420763"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7741751074790955</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-79673292"/>
+      <entity2 rdf:resource="http://edas-instances#topic-79673292"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5568307042121887</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1366548143"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1366548143"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8144530057907104</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3051892"/>
+      <entity2 rdf:resource="http://edas-instances#topic3051892"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6914118528366089</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt526045159"/>
+      <entity2 rdf:resource="http://edas-instances#subCall526045159"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9983299970626831</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-236452414"/>
+      <entity2 rdf:resource="http://edas-instances#topic-236452414"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7848464846611023</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic114126"/>
+      <entity2 rdf:resource="http://edas-instances#topic114126"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9020251631736755</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-575499684"/>
+      <entity2 rdf:resource="http://edas-instances#topic-575499684"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5740346908569336</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic486722176"/>
+      <entity2 rdf:resource="http://edas-instances#topic486722176"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8854839205741882</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1432072039"/>
+      <entity2 rdf:resource="http://edas-instances#topic1432072039"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5814864635467529</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic690956554"/>
+      <entity2 rdf:resource="http://edas-instances#topic690956554"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7656868100166321</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-621294897"/>
+      <entity2 rdf:resource="http://edas-instances#topic-621294897"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7709894776344299</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic100886"/>
+      <entity2 rdf:resource="http://edas-instances#topic100886"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.25788354873657227</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-450247829"/>
+      <entity2 rdf:resource="http://edas-instances#topic-450247829"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9736765623092651</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-56502675"/>
+      <entity2 rdf:resource="http://edas-instances#topic-56502675"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7184422016143799</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1409670996"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1409670996"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9391138553619385</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1656388020"/>
+      <entity2 rdf:resource="http://edas-instances#topic1656388020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15259751677513123</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1564306156"/>
+      <entity2 rdf:resource="http://edas-instances#topic1564306156"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3828640878200531</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2006142850"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2006142850"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9553653001785278</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-130572803"/>
+      <entity2 rdf:resource="http://edas-instances#topic-130572803"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6878789067268372</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2143291597"/>
+      <entity2 rdf:resource="http://edas-instances#topic2143291597"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.41959232091903687</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1829937395"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1829937395"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.883621871471405</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic128896776"/>
+      <entity2 rdf:resource="http://edas-instances#topic128896776"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5812389254570007</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic168509191"/>
+      <entity2 rdf:resource="http://edas-instances#topic168509191"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12675465643405914</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Workshop"/>
+      <entity2 rdf:resource="http://edas#Workshop"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1224430754"/>
+      <entity2 rdf:resource="http://edas-instances#topic1224430754"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8515399098396301</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1929152968"/>
+      <entity2 rdf:resource="http://edas-instances#topic1929152968"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8087942600250244</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Reception"/>
+      <entity2 rdf:resource="http://edas#Reception"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-110867015"/>
+      <entity2 rdf:resource="http://edas-instances#topic-110867015"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9693817496299744</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1096753300"/>
+      <entity2 rdf:resource="http://edas-instances#topic1096753300"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9342421889305115</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic551521078"/>
+      <entity2 rdf:resource="http://edas-instances#topic551521078"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7490075826644897</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1121800109"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1121800109"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5510567426681519</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-301152001"/>
+      <entity2 rdf:resource="http://edas-instances#topic-301152001"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7448503375053406</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-786715517"/>
+      <entity2 rdf:resource="http://edas-instances#topic-786715517"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.939986526966095</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic986609072"/>
+      <entity2 rdf:resource="http://edas-instances#topic986609072"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6996414661407471</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1083878301"/>
+      <entity2 rdf:resource="http://edas-instances#topic1083878301"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6302931904792786</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic110640728"/>
+      <entity2 rdf:resource="http://edas-instances#topic110640728"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7889514565467834</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-824706186"/>
+      <entity2 rdf:resource="http://edas-instances#topic-824706186"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9791058301925659</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic693483357"/>
+      <entity2 rdf:resource="http://edas-instances#topic693483357"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8693063259124756</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1848571569"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1848571569"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5838319659233093</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic94728972"/>
+      <entity2 rdf:resource="http://edas-instances#topic94728972"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.902911365032196</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1238958607"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1238958607"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.008075200952589512</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1758236586"/>
+      <entity2 rdf:resource="http://edas-instances#topic1758236586"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1764545887708664</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1323054225"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1323054225"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7504185438156128</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1686396179"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1686396179"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12500759959220886</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2051399539"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2051399539"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.964694619178772</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1778757318"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1778757318"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13702650368213654</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1758068617"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1758068617"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8568367958068848</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1396404498"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1396404498"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8513777852058411</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic434537925"/>
+      <entity2 rdf:resource="http://edas-instances#topic434537925"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.73740154504776</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-155697375"/>
+      <entity2 rdf:resource="http://edas-instances#topic-155697375"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.954194188117981</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic68290953"/>
+      <entity2 rdf:resource="http://edas-instances#topic68290953"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9417134523391724</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic374961517"/>
+      <entity2 rdf:resource="http://edas-instances#topic374961517"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9136503338813782</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-655892824"/>
+      <entity2 rdf:resource="http://edas-instances#topic-655892824"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0663972795009613</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2066321672"/>
+      <entity2 rdf:resource="http://edas-instances#topic2066321672"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.01327626034617424</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-135761730"/>
+      <entity2 rdf:resource="http://edas-instances#topic-135761730"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06589867919683456</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1310670723"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1310670723"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6040703654289246</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-736941749"/>
+      <entity2 rdf:resource="http://edas-instances#topic-736941749"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7572842240333557</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1512922657"/>
+      <entity2 rdf:resource="http://edas-instances#topic1512922657"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7425675988197327</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic669811865"/>
+      <entity2 rdf:resource="http://edas-instances#topic669811865"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9353907108306885</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt-2132929196"/>
+      <entity2 rdf:resource="http://edas-instances#camCall-2132929196"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9986779093742371</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasStreet"/>
+      <entity2 rdf:resource="http://edas#hasStreet"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1177292982"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1177292982"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.020145023241639137</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1291329255"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1291329255"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8042076826095581</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic761463562"/>
+      <entity2 rdf:resource="http://edas-instances#topic761463562"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3853539526462555</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic100313435"/>
+      <entity2 rdf:resource="http://edas-instances#topic100313435"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8124794363975525</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-358193502"/>
+      <entity2 rdf:resource="http://edas-instances#topic-358193502"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9331871271133423</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasFirstName"/>
+      <entity2 rdf:resource="http://edas#hasFirstName"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic461580747"/>
+      <entity2 rdf:resource="http://edas-instances#topic461580747"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19671300053596497</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1196996774"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1196996774"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.49706146121025085</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-252200625"/>
+      <entity2 rdf:resource="http://edas-instances#topic-252200625"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9670549035072327</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1820611322"/>
+      <entity2 rdf:resource="http://edas-instances#topic1820611322"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6773460507392883</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic595267983"/>
+      <entity2 rdf:resource="http://edas-instances#topic595267983"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5817827582359314</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic670893655"/>
+      <entity2 rdf:resource="http://edas-instances#topic670893655"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.45965462923049927</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1014739178"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1014739178"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4401969909667969</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt-2132929196"/>
+      <entity2 rdf:resource="http://edas-instances#subCall-2132929196"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9980359673500061</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic643585615"/>
+      <entity2 rdf:resource="http://edas-instances#topic643585615"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8960782885551453</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic579583430"/>
+      <entity2 rdf:resource="http://edas-instances#topic579583430"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.710831344127655</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-184513575"/>
+      <entity2 rdf:resource="http://edas-instances#topic-184513575"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7540756464004517</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1534376515"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1534376515"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8287822008132935</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1186365187"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1186365187"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9695081114768982</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Organization"/>
+      <entity2 rdf:resource="http://edas#Organization"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-973338748"/>
+      <entity2 rdf:resource="http://edas-instances#topic-973338748"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2985425293445587</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1636938664"/>
+      <entity2 rdf:resource="http://edas-instances#topic1636938664"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5728914141654968</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1250955715"/>
+      <entity2 rdf:resource="http://edas-instances#topic1250955715"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9696905612945557</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1030310476"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1030310476"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8871174454689026</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1989676455"/>
+      <entity2 rdf:resource="http://edas-instances#topic1989676455"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.017921702936291695</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#Submission_event"/>
+      <entity2 rdf:resource="http://edas#CallForManuscripts"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#camEvt1621863795"/>
+      <entity2 rdf:resource="http://edas-instances#camCall1621863795"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9989455938339233</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic501116579"/>
+      <entity2 rdf:resource="http://edas-instances#topic501116579"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8103283643722534</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic384354045"/>
+      <entity2 rdf:resource="http://edas-instances#topic384354045"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.744701623916626</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1215966453"/>
+      <entity2 rdf:resource="http://edas-instances#topic1215966453"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6936303973197937</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-326809875"/>
+      <entity2 rdf:resource="http://edas-instances#topic-326809875"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8806644082069397</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2014611587"/>
+      <entity2 rdf:resource="http://edas-instances#topic2014611587"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5039564967155457</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-508818545"/>
+      <entity2 rdf:resource="http://edas-instances#topic-508818545"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8058831095695496</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic85109062"/>
+      <entity2 rdf:resource="http://edas-instances#topic85109062"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9103076457977295</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic370684122"/>
+      <entity2 rdf:resource="http://edas-instances#topic370684122"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9480535984039307</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-969990582"/>
+      <entity2 rdf:resource="http://edas-instances#topic-969990582"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9542911052703857</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-901510002"/>
+      <entity2 rdf:resource="http://edas-instances#topic-901510002"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9727128148078918</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1055118282"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1055118282"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.965652346611023</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt1621863795"/>
+      <entity2 rdf:resource="http://edas-instances#revCall1621863795"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9981764554977417</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1519465935"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1519465935"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.917962908744812</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic391447971"/>
+      <entity2 rdf:resource="http://edas-instances#topic391447971"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17043277621269226</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-921655719"/>
+      <entity2 rdf:resource="http://edas-instances#topic-921655719"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8500329256057739</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1212811297"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1212811297"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4784111976623535</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-142107912"/>
+      <entity2 rdf:resource="http://edas-instances#topic-142107912"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9479856491088867</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1275059612"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1275059612"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7857162952423096</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2006326266"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2006326266"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9646806120872498</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-820181166"/>
+      <entity2 rdf:resource="http://edas-instances#topic-820181166"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4906936585903168</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic184588826"/>
+      <entity2 rdf:resource="http://edas-instances#topic184588826"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9443934559822083</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2123180165"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2123180165"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8949295878410339</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic725699686"/>
+      <entity2 rdf:resource="http://edas-instances#topic725699686"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9239322543144226</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-220630197"/>
+      <entity2 rdf:resource="http://edas-instances#topic-220630197"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7335198521614075</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2074038310"/>
+      <entity2 rdf:resource="http://edas-instances#topic2074038310"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.032130997627973557</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1767875043"/>
+      <entity2 rdf:resource="http://edas-instances#topic1767875043"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0608396902680397</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1281512980"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1281512980"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7654554843902588</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2020304245"/>
+      <entity2 rdf:resource="http://edas-instances#topic2020304245"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5071367025375366</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1822213599"/>
+      <entity2 rdf:resource="http://edas-instances#topic1822213599"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9567354917526245</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-574991751"/>
+      <entity2 rdf:resource="http://edas-instances#topic-574991751"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9437679648399353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1404207873"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1404207873"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.65712571144104</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1845965208"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1845965208"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5295178890228271</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic858523452"/>
+      <entity2 rdf:resource="http://edas-instances#topic858523452"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.012986801564693451</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic99672"/>
+      <entity2 rdf:resource="http://edas-instances#topic99672"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8173589706420898</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1166644710"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1166644710"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8858054876327515</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic811918707"/>
+      <entity2 rdf:resource="http://edas-instances#topic811918707"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7837070226669312</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-865698022"/>
+      <entity2 rdf:resource="http://edas-instances#topic-865698022"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7716788053512573</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1312628413"/>
+      <entity2 rdf:resource="http://edas-instances#topic1312628413"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8357554078102112</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1628181352"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1628181352"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8831978440284729</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1976547869"/>
+      <entity2 rdf:resource="http://edas-instances#topic1976547869"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7561165690422058</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1766189098"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1766189098"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9499872326850891</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2062038186"/>
+      <entity2 rdf:resource="http://edas-instances#topic2062038186"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.973190188407898</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1223528791"/>
+      <entity2 rdf:resource="http://edas-instances#topic1223528791"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9759041666984558</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2014839043"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2014839043"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9717016816139221</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-950709553"/>
+      <entity2 rdf:resource="http://edas-instances#topic-950709553"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9605389833450317</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-276454505"/>
+      <entity2 rdf:resource="http://edas-instances#topic-276454505"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.019671481102705002</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-497885901"/>
+      <entity2 rdf:resource="http://edas-instances#topic-497885901"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7797158360481262</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic831563511"/>
+      <entity2 rdf:resource="http://edas-instances#topic831563511"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17396704852581024</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1759501874"/>
+      <entity2 rdf:resource="http://edas-instances#topic1759501874"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.013748320750892162</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1288746393"/>
+      <entity2 rdf:resource="http://edas-instances#topic1288746393"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4599238336086273</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2028803728"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2028803728"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9673139452934265</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2017530182"/>
+      <entity2 rdf:resource="http://edas-instances#topic2017530182"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40877148509025574</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-377261927"/>
+      <entity2 rdf:resource="http://edas-instances#topic-377261927"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8794429898262024</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-318167934"/>
+      <entity2 rdf:resource="http://edas-instances#topic-318167934"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9511077404022217</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-885478841"/>
+      <entity2 rdf:resource="http://edas-instances#topic-885478841"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8615898489952087</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic876877434"/>
+      <entity2 rdf:resource="http://edas-instances#topic876877434"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9822153449058533</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1752244882"/>
+      <entity2 rdf:resource="http://edas-instances#topic1752244882"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9605198502540588</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1443214456"/>
+      <entity2 rdf:resource="http://edas-instances#topic1443214456"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.786918580532074</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1054378064"/>
+      <entity2 rdf:resource="http://edas-instances#topic1054378064"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22809696197509766</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1628419090"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1628419090"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.001689846976660192</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf#hasTopic"/>
+      <entity2 rdf:resource="http://edas#hasTopic"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1434682076"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1434682076"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9130614399909973</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-524983661"/>
+      <entity2 rdf:resource="http://edas-instances#topic-524983661"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5112707614898682</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-279975413"/>
+      <entity2 rdf:resource="http://edas-instances#topic-279975413"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2636473476886749</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-778664314"/>
+      <entity2 rdf:resource="http://edas-instances#topic-778664314"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8874668478965759</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt20548200"/>
+      <entity2 rdf:resource="http://edas-instances#revCall20548200"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9943323731422424</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2127562701"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2127562701"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9473798274993896</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1799810326"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1799810326"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7774776816368103</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1708542865"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1708542865"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9516514539718628</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic3356"/>
+      <entity2 rdf:resource="http://edas-instances#topic3356"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.764218270778656</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1554853404"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1554853404"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.776505708694458</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1413745873"/>
+      <entity2 rdf:resource="http://edas-instances#topic1413745873"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.68038010597229</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic476428558"/>
+      <entity2 rdf:resource="http://edas-instances#topic476428558"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9572152495384216</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic11440535"/>
+      <entity2 rdf:resource="http://edas-instances#topic11440535"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8732746243476868</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1480388560"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1480388560"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.028763804584741592</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1289871956"/>
+      <entity2 rdf:resource="http://edas-instances#topic1289871956"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.022387558594346046</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1801028831"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1801028831"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.779323160648346</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1079448000"/>
+      <entity2 rdf:resource="http://edas-instances#topic1079448000"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7983338832855225</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-690039175"/>
+      <entity2 rdf:resource="http://edas-instances#topic-690039175"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9010083079338074</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1677048115"/>
+      <entity2 rdf:resource="http://edas-instances#topic1677048115"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5540223121643066</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1592417372"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1592417372"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4087070822715759</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt20548200"/>
+      <entity2 rdf:resource="http://edas-instances#subCall20548200"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9971375465393066</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic95945983"/>
+      <entity2 rdf:resource="http://edas-instances#topic95945983"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7897760272026062</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1790433189"/>
+      <entity2 rdf:resource="http://edas-instances#topic1790433189"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6400178074836731</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#subEvt-2128729747"/>
+      <entity2 rdf:resource="http://edas-instances#subCall-2128729747"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9948666095733643</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-2120983604"/>
+      <entity2 rdf:resource="http://edas-instances#topic-2120983604"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.34295451641082764</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-996695842"/>
+      <entity2 rdf:resource="http://edas-instances#topic-996695842"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9462825059890747</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1428988863"/>
+      <entity2 rdf:resource="http://edas-instances#topic1428988863"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9088869094848633</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic807857538"/>
+      <entity2 rdf:resource="http://edas-instances#topic807857538"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9387694597244263</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1882750833"/>
+      <entity2 rdf:resource="http://edas-instances#topic1882750833"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2277562916278839</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1432495669"/>
+      <entity2 rdf:resource="http://edas-instances#topic1432495669"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7190718650817871</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1505502580"/>
+      <entity2 rdf:resource="http://edas-instances#topic1505502580"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.25721803307533264</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic197259725"/>
+      <entity2 rdf:resource="http://edas-instances#topic197259725"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8781135678291321</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1960190757"/>
+      <entity2 rdf:resource="http://edas-instances#topic1960190757"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9574465155601501</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic519447398"/>
+      <entity2 rdf:resource="http://edas-instances#topic519447398"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18446415662765503</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-867465883"/>
+      <entity2 rdf:resource="http://edas-instances#topic-867465883"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9811917543411255</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic840081037"/>
+      <entity2 rdf:resource="http://edas-instances#topic840081037"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8239336609840393</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-915530181"/>
+      <entity2 rdf:resource="http://edas-instances#topic-915530181"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.372128963470459</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1151960268"/>
+      <entity2 rdf:resource="http://edas-instances#topic1151960268"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09009145200252533</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic1644188497"/>
+      <entity2 rdf:resource="http://edas-instances#topic1644188497"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9802283644676208</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#revEvt-2132929196"/>
+      <entity2 rdf:resource="http://edas-instances#revCall-2132929196"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9983820915222168</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-1175787594"/>
+      <entity2 rdf:resource="http://edas-instances#topic-1175787594"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2606859803199768</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic2118533391"/>
+      <entity2 rdf:resource="http://edas-instances#topic2118533391"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8428243398666382</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://confOf-instances#topic-516522145"/>
+      <entity2 rdf:resource="http://edas-instances#topic-516522145"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4193321764469147</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

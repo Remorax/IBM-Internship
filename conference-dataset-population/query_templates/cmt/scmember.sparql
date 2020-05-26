@@ -1,0 +1,5 @@
+PREFIX :<http://cmt#>
+
+INSERT DATA{
+{{scmember}} :memberOfConference {{conf}}.
+}

@@ -1,0 +1,31 @@
+{
+"mapping":"true",
+"ontologies":[
+
+{ 
+	"name" : "conference",
+	"instance_prefix" : "http://conference-instances#",
+	"conference_file_path" :  ["data_files/conferences/conf0.json","data_files/conferences/conf1.json","data_files/conferences/conf7.json","data_files/conferences/conf8.json","data_files/conferences/conf9.json"],
+	"endpoint":"http://localhost:3030/conference_40/"
+  },
+  { 
+	"name" : "confOf",
+	"instance_prefix" : "http://confOf-instances#",
+	"conference_file_path" :  ["data_files/conferences/conf0.json","data_files/conferences/conf1.json","data_files/conferences/conf12.json","data_files/conferences/conf13.json","data_files/conferences/conf14.json"],
+	"endpoint":"http://localhost:3030/confOf_40/"
+  },
+  { 
+	"name" : "edas",
+	"instance_prefix" : "http://edas-instances#",
+	"conference_file_path" :  ["data_files/conferences/conf0.json","data_files/conferences/conf1.json","data_files/conferences/conf17.json","data_files/conferences/conf18.json","data_files/conferences/conf19.json"],
+	"endpoint":"http://localhost:3030/edas_40/"
+  },
+  { 
+	"name" : "ekaw",
+	"instance_prefix" : "http://ekaw-instances#",
+	"conference_file_path" :  ["data_files/conferences/conf0.json","data_files/conferences/conf1.json","data_files/conferences/conf22.json","data_files/conferences/conf23.json","data_files/conferences/conf24.json"],
+	"endpoint":"http://localhost:3030/ekaw_40/"
+  }
+  
+]
+}

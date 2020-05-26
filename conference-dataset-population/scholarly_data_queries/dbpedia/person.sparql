@@ -1,0 +1,10 @@
+prefix dbo:<http://dbpedia.org/ontology/>
+prefix foaf:<http://xmlns.com/foaf/0.1/>
+
+select distinct ?x ?name where {
+?x a dbo:Person.
+?x foaf:name ?name.
+filter(regex(str(?x),"^http://dbpedia.org/resource/[A-Za-z]+_[A-Za-z]+$"))
+} 
+limit {{numPerson}}
+offset {{offsetPerson}}

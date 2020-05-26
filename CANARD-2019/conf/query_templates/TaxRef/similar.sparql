@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos-xl: <http://www.w3.org/2008/05/skos-xl#>
+PREFIX dc: <http://rs.tdwg.org/dwc/terms/>
+
+SELECT DISTINCT ?x WHERE {
+{?x rdfs:label ?label.}
+UNION { ?x dc:scientificName ?label.}
+UNION { ?x skos:prefLabel ?label.}
+filter (regex(?label, "^{{labelValue}}$","i")).
+}

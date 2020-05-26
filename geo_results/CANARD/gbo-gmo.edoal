@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:edoal='http://ns.inria.org/edoal/1.0/#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>2EDOAL</level>
+  <type>**</type>
+  <onto1>
+    <Ontology rdf:about="http://localhost:3030/gbo/">
+      <location>http://localhost:3030/gbo/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://localhost:3030/gmo/">
+      <location>http://localhost:3030/gmo/</location>
+      <formalism>
+        <Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+      </formalism>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasCruiseType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://schema.geolink.org/dev/voc/local#cruisetype_operational"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Cruise"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.46153846153846156</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/15d0f0b4-d9df-4059-a3e3-16437527640a"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Platform"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#atPort"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gmo#atPort"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasPrincipalInvestigator"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/c4cfd6f1-ba48-4969-89ae-e2286f50fca1"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasGivenName"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#hasPersonName"/>
+            <edoal:Relation rdf:about="http://gmo#firstOrGivenName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/42a03029-8088-43d9-b703-d40e2d55ce44"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Identifier"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Identifier"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/d75f6ea4-035f-4ebc-bed1-030fb6ddf167"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasSubOrganization"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gmo#hasSubOrganization"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#originatesFrom"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gmo#originatesFrom"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/b2ae0f4c-1c04-4784-852f-470478274d0c"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Organization"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Organization"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasProgram"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:and rdf:parseType="Collection">
+            <edoal:RelationCoDomainRestriction>
+              <edoal:class>
+                <edoal:Class rdf:about="http://gmo#Program"/>
+              </edoal:class>
+            </edoal:RelationCoDomainRestriction>
+            <edoal:Relation rdf:about="http://gmo#associatedWithProgram"/>
+          </edoal:and>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasFullName"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#hasPersonName"/>
+            <edoal:Relation rdf:about="http://gmo#fullName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasAffiliation"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasIdentifierScheme"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://purl.spar.org/datacite/doi"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:AttributeOccurenceRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gmo#hasIdentifierScheme"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#greater-than"/>
+          <edoal:value>0</edoal:value>
+        </edoal:AttributeOccurenceRestriction>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasSponsor"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Program"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Program"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasCoPrincipalInvestigator"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasProgramManager"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasOwner"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasCollector"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/40498c3f-d892-4486-b327-08cbf60491c1"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/ffe44f15-5eb3-4b86-85e3-551bc1684e5f"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasTitle"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#describedBy"/>
+            <edoal:Relation rdf:about="http://gmo#hasCanonicalName"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/3f9b5b6a-b154-424a-af54-871aa01fdf12"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasOperator"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasFamilyName"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#hasPersonName"/>
+            <edoal:Relation rdf:about="http://gmo#familyOrSurname"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasScheduler"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#PhysicalSample"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#PhysicalSample"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Award"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#FundingAward"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.41666666666666663</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://lod.bco-dmo.org/geolink/id/platform_type/105"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/529f7cd7-0e95-4149-9243-157effcf9006"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Vessel"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Vessel"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasAcronym"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#describedBy"/>
+            <edoal:Relation rdf:about="http://gmo#alsoKnownAs"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/0bdd1c89-f257-4609-a888-7b409ec88492"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:AttributeValueRestriction>
+          <edoal:onAttribute>
+            <edoal:Relation rdf:about="http://gbo#hasPlatformType"/>
+          </edoal:onAttribute>
+          <edoal:comparator rdf:resource="http://ns.inria.org/edoal/1.0/#equals"/>
+          <edoal:value>
+            <edoal:Instance rdf:about="http://host.geolink.org/sesar/id/platformtype/e678a607-a854-4963-a7ca-7585fdc9a9b9"/>
+          </edoal:value>
+        </edoal:AttributeValueRestriction>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Platform"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5333333333333333</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasAward"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation rdf:about="http://gmo#fundedBy"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasChiefScientist"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#providesAgentRole"/>
+            <edoal:Relation rdf:about="http://gmo#performedBy"/>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.5</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Cruise"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Cruise"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Relation rdf:about="http://gbo#hasIdentifier"/>
+      </entity1>
+      <entity2>
+        <edoal:Relation>
+          <edoal:compose rdf:parseType="Collection">
+            <edoal:Relation rdf:about="http://gmo#describedBy"/>
+            <edoal:Relation>
+              <edoal:and rdf:parseType="Collection">
+                <edoal:RelationCoDomainRestriction>
+                  <edoal:class>
+                    <edoal:Class rdf:about="http://gmo#Identifier"/>
+                  </edoal:class>
+                </edoal:RelationCoDomainRestriction>
+                <edoal:Relation rdf:about="http://gmo#hasPrimaryIdentifier"/>
+              </edoal:and>
+            </edoal:Relation>
+          </edoal:compose>
+        </edoal:Relation>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Person"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Person"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1>
+        <edoal:Class rdf:about="http://gbo#Place"/>
+      </entity1>
+      <entity2>
+        <edoal:Class rdf:about="http://gmo#Place"/>
+      </entity2>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

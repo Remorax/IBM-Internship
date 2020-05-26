@@ -1,0 +1,931 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY cree "http://www.owl-ontologies.com/Cree_hydro.owl#">
+<!ENTITY swo "http://cegis.usgs.gov/SWO#">
+<!ENTITY edoal "http://ns.inria.org/edoal/1.0/#">
+]>
+
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+		 xml:base="http://cree-swo/alignment/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#"
+         xmlns:cree="http://www.owl-ontologies.com/Cree_hydro.owl#"
+         xmlns:swo="http://cegis.usgs.gov/SWO#"
+         xmlns:edoal="http://ns.inria.org/edoal/1.0/#">
+
+	<Alignment>
+		<xml>yes</xml>
+		<level>2EDOAL</level> 
+		<type>**</type>
+		<method>manual</method>
+		<onto1>
+			<Ontology rdf:about="&cree;">
+			  	<formalism>
+			    	<Formalism align:name="OWL1.0" align:uri="http://www.w3.org/2002/07/owl#" />
+			  	</formalism>
+			</Ontology>
+		</onto1>
+		<onto2>
+			<Ontology rdf:about="&swo;">
+				<formalism>
+					<Formalism align:name="OWL1.0" align:uri="http://www.w3.org/2002/07/owl#" />
+				</formalism>
+			</Ontology>
+		</onto2>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Aa_saachiiuch" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedBy" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;LakeOrPond"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedBy" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class>
+						                <edoal:and rdf:parseType="Collection">
+                                            <edoal:Class rdf:about="&swo;StreamOrRiver" />
+                                            <edoal:AttributeDomainRestriction>
+                                                <edoal:onAttribute>
+									                <edoal:Relation rdf:about="&swo;endsAt" />
+                                                </edoal:onAttribute>
+                                                <edoal:exists>
+                                                    <edoal:Class rdf:about="&swo;LakeOrPond" />
+                                                </edoal:exists>
+                                            </edoal:AttributeDomainRestriction>
+                                        </edoal:and>
+                                    </edoal:Class>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+        <map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Aa_uchihchich" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedBy" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;LakeOrPond"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedBy" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class>
+						                <edoal:and rdf:parseType="Collection">
+                                            <edoal:Class rdf:about="&swo;StreamOrRiver" />
+                                            <edoal:AttributeDomainRestriction>
+                                                <edoal:onAttribute>
+									                <edoal:Relation rdf:about="&swo;startsFrom" />
+                                                </edoal:onAttribute>
+                                                <edoal:exists>
+                                                    <edoal:Class rdf:about="&swo;LakeOrPond" />
+                                                </edoal:exists>
+                                            </edoal:AttributeDomainRestriction>
+                                        </edoal:and>
+                                    </edoal:Class>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+        <map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Aa_upaach" />
+				</entity1>
+				<entity2>
+					<edoal:AttributeDomainRestriction>
+						<edoal:onAttribute>
+							<edoal:Relation rdf:about="&swo;isContainedBy" />
+						</edoal:onAttribute>
+                        <edoal:exists>
+                            <edoal:Class rdf:about="&swo;Channel"/>
+                        </edoal:exists>
+					</edoal:AttributeDomainRestriction>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Aamaataashtikwaayaach" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;startsFrom" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;StreamOrRiver"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;endsAt" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;StreamOrRiver"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;endsAt" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;greater-than" />
+								<edoal:value>1</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Anatwaayach" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedby" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;StreamOrRiver"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;adjoins" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;Rapids"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;adjoins" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;equals" />
+								<edoal:value>2</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Iihthuwikimaauh" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="&swo;AggregateHydrographicFeature" />
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;contains" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;LakeOrPond"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;contains" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;equals" />
+								<edoal:value>2</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Kapataakan" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Waterbody" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Kapataakan" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;startsFrom" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;Waterbody"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;startsFrom" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;equals" />
+								<edoal:value>1</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;endsAt" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;Waterbody"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;endsAt" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;equals" />
+								<edoal:value>1</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Minishtik" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Waterbody" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Minishtik" />
+				</entity1>
+				<entity2>
+                    <edoal:AttributeDomainRestriction>
+						<edoal:onAttribute>
+							<edoal:Relation rdf:about="&swo;isContainedBy" />
+						</edoal:onAttribute>
+                        <edoal:exists>
+                            <edoal:Class>
+                                <edoal:or rdf:parseType="Collection">
+                                    <edoal:Class rdf:about="&swo;LakeOrPond"/>
+                                    <edoal:Class rdf:about="&swo;BayOrInlet"/>
+                                </edoal:or>
+                            </edoal:Class>
+                        </edoal:exists>
+					</edoal:AttributeDomainRestriction>
+                </entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Minishtikuchuun" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Waterbody" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Minishtikuchuun" />
+				</entity1>
+				<entity2>
+					<edoal:AttributeDomainRestriction>
+						<edoal:onAttribute>
+							<edoal:Relation rdf:about="&swo;isContainedBy" />
+						</edoal:onAttribute>
+                        <edoal:exists>
+                            <edoal:Class rdf:about="&swo;StreamOrRiver"/>
+                        </edoal:exists>
+					</edoal:AttributeDomainRestriction>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Mischaakushtikw" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="StreamOrRiver" />
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedBy" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;SwampOrMarsh"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Mischaakw" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;SwampOrMarsh" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Muschiwinipaakw" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;SpringOrSeep" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Naasipaatimihch" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Shore" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Paaushtikui" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Rapids" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Saakihiikin" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;LakeOrPond" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Aa_aschipuutaakinuwich" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Reservoir" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Mischaakusaakihiikin" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="LakeOrPond" />
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;isContainedBy" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;SwampOrMarsh"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Pikutaauhkw" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="LakeOrPond" />
+							<edoal:Class>
+								<edoal:not>
+                                    <edoal:AttributeDomainRestriction>
+								        <edoal:onAttribute>
+									        <edoal:Relation rdf:about="&swo;isConnectedTo" />
+								        </edoal:onAttribute>
+                                        <edoal:exists>
+                                            <edoal:Class rdf:about="&swo;Waterbody"/>
+                                        </edoal:exists>
+							        </edoal:AttributeDomainRestriction>
+								</edoal:not>
+							</edoal:Class>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Shakaapishiish" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;SpringOrSeep" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Shiipaashtikw" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="Channel" />
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;startsFrom" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;StreamOrRiver"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;startsFrom" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;equals" />
+								<edoal:value>2</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;endsAt" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;StreamOrRiver"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;endsAt" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;equals" />
+								<edoal:value>1</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Shiipiish" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;StreamOrRiver" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Shikaapishii" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;StreamOrRiver" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Siipii" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;StreamOrRiver" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Upikimaau" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="Channel" />
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;contains" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;LakeOrPond"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+							<edoal:AttributeOccurenceRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;contains" />
+								</edoal:onAttribute>
+								<edoal:comparator rdf:resource="&edoal;greater-than" />
+								<edoal:value>2</edoal:value>
+							</edoal:AttributeOccurenceRestriction>
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;contains" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;Channel"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Waashaau" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;BayOrInlet" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Wiinipaakw" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;BayOrInlet" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Class rdf:about="&cree;Yaatiwaakimii" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:and rdf:parseType="Collection">
+							<edoal:Class rdf:about="BayOrInlet" />
+                            <edoal:AttributeDomainRestriction>
+								<edoal:onAttribute>
+									<edoal:Relation rdf:about="&swo;adjoins" />
+								</edoal:onAttribute>
+                                <edoal:exists>
+                                    <edoal:Class rdf:about="&swo;LakeOrPond"/>
+                                </edoal:exists>
+							</edoal:AttributeDomainRestriction>
+						</edoal:and>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;ConnectedTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;isConnectedTo" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;ContainedBy" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;isContainedBy" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;Contains" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;contains" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;DownstreamOf" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;hasDirection" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;EmptiesInto" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;endsAt" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;FeedsFrom" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;startsFrom" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;isConstructedFrom" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;hasMaterial" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;HasPart" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;contains" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;parallelTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;contains" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;parallelTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;endsAt" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;parallelTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;isConnectedTo" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;parallelTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;overlaps" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>Disjoint</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;partOf" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;isContainedBy" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;portagesAround" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;adjoins" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+		        	<edoal:Relation rdf:about="&cree;UpstreamOf" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;hasDirection" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+	       		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+	</Alignment>
+</rdf:RDF>

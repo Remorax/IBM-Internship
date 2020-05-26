@@ -1,0 +1,15 @@
+PREFIX :<http://conference#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+{{pap}} a :Camera_ready_contribution.
+{{pap}} rdfs:label {{paptitle}}.
+{{pap}} :is_submitted_at {{conf}}.
+{{pap}} :has_authors {{auth}}.
+{{auth}} a :Contribution_1th-author.
+{{papabstr}} a :Abstract.
+{{pap}} :has_an_abstract {{papabstr}}.
+{{papabstr}} a :Abstract.
+{{papabstr}} rdfs:label {{paptitle}}.
+{{papabstr}} :has_authors {{auth}}.
+}

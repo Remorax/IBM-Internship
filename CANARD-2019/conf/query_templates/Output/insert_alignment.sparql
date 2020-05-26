@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX out: <http://subgraph-alignment#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA {
+{{alignment}} out:hasSourceOntology {{sourceOntology}}.
+{{alignment}} out:hasTargetOntology {{targetOntology}}.
+{{alignment}} out:creationDate {{date}}.
+}

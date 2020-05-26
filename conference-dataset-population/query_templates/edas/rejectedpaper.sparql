@@ -1,0 +1,18 @@
+PREFIX :<http://edas#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+{{pap}} a :Paper.
+{{pap}} rdfs:label {{paptitle}}.
+{{pap}} a :RejectedPaper.
+{{conf}} :hasRelatedDocument {{pap}}.
+{{pap}} :isWrittenBy {{auth}}.
+{{auth}} a :Author.
+{{auth}} :isMemberOf {{conf}}.
+{{papv0}} a :Paper.
+{{papv0}} rdfs:label {{paptitle}}.
+{{papv0}} a :RatedPapers.
+
+{{conf}} :hasRelatedDocument {{papv0}}.
+{{papv0}} :isWrittenBy {{auth}}.
+}

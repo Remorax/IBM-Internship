@@ -1,0 +1,4099 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+   xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>??</type>
+  <onto1>http://edas</onto1>
+  <onto2>http://ekaw</onto2>
+   <uri1>http://edas</uri1>
+  <uri2>http://ekaw</uri2>
+
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1882750833"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1882750833"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30173173546791077</measure>
+    </Cell>
+  </map>
+
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#workshop1621863795"/>
+      <entity2 rdf:resource="http://ekaw-instances#workshop1621863795"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9694883227348328</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1249806057"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1249806057"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3062722682952881</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-683839270"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-683839270"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.025127984583377838</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1628419090"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1628419090"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24086453020572662</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic245265073"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic245265073"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4916490316390991</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-984799354"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-984799354"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6127106547355652</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic125637896"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic125637896"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12349475920200348</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2034148894"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2034148894"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7871047854423523</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-797946958"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-797946958"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.018919605761766434</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1872997849"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1872997849"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2653939127922058</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1221050722"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1221050722"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-820181166"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-820181166"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2703402638435364</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1178133765"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1178133765"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30902111530303955</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1349095542"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1349095542"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.125936821103096</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2083631919"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2083631919"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4895952343940735</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1190977582"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1190977582"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7890448570251465</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-378882880"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-378882880"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.21861861646175385</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1644188497"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1644188497"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9237109422683716</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-915530181"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-915530181"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3031163811683655</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic698783012"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic698783012"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18722021579742432</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#isWrittenBy"/>
+      <entity2 rdf:resource="http://ekaw#writtenBy"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1413745873"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1413745873"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03723912686109543</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3625806"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3625806"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1759801208972931</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1094759587"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1094759587"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.01588181033730507</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-52753192"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-52753192"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5673841834068298</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3413708"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3413708"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2278037667274475</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic942048415"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic942048415"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.027279594913125038</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic323615476"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic323615476"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.35531508922576904</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-79673292"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-79673292"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18545649945735931</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic109170"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic109170"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09377436339855194</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-31808092"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-31808092"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2066975662"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2066975662"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.01598590798676014</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic117588"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic117588"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4029421806335449</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-973338748"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-973338748"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.34668588638305664</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3321850"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3321850"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1900351345539093</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1628181352"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1628181352"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07716953754425049</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation1101719146"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation1101719146"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2066321672"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2066321672"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.016732295975089073</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1410894901"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1410894901"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2342521846294403</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1759501874"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1759501874"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08706612139940262</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic99672"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic99672"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17668789625167847</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic690956554"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic690956554"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7132565379142761</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1573868159"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1573868159"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06448380649089813</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic151891919"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic151891919"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09103120118379593</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1432495669"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1432495669"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4558228552341461</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation795493673"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation795493673"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1864554142"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1864554142"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1351298987865448</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic11440535"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic11440535"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1575804054737091</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1962030493"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1962030493"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7013912796974182</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic978111542"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic978111542"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06430920213460922</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-865698022"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-865698022"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12769126892089844</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-885478841"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-885478841"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17008082568645477</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1334870798"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1334870798"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-524983661"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-524983661"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6614428162574768</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1417445862"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1417445862"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2592681050300598</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic584665702"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic584665702"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40604525804519653</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-516522145"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-516522145"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20002435147762299</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1391551383"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1391551383"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.514112114906311</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic884756569"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic884756569"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7220476865768433</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-279975413"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-279975413"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07684872299432755</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic99746337"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic99746337"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05202265828847885</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2131240275"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2131240275"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22908924520015717</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1677048115"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1677048115"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3363737463951111</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1132851595"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1132851595"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09878646582365036</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2117126240"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2117126240"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.763776957988739</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic831563511"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic831563511"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8293744325637817</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic104069929"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic104069929"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17656806111335754</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-226319470"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-226319470"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8931459188461304</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic486893038"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic486893038"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7146016359329224</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1083878301"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1083878301"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.39318180084228516</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic855306557"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic855306557"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7212551236152649</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2139699268"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2139699268"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13926643133163452</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-916346253"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-916346253"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19028371572494507</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1888963534"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1888963534"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.045363906770944595</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1058173332"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1058173332"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10637519508600235</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-261731416"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-261731416"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-220049853"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-220049853"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic102634"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic102634"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.14793679118156433</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic344200471"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic344200471"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19885008037090302</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1055118282"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1055118282"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6179251670837402</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic807857538"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic807857538"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4467606246471405</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic928045487"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic928045487"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.008749728091061115</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic661984804"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic661984804"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1306108683347702</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2132705823"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2132705823"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3559868037700653</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation1826868435"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation1826868435"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1935416427"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1935416427"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16748110949993134</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#Document"/>
+      <entity2 rdf:resource="http://ekaw#Document"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1574861283"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1574861283"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.035359516739845276</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation1424098152"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation1424098152"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1422950858"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1422950858"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11959490925073624</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic68290953"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic68290953"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.48367518186569214</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1177292982"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1177292982"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15247172117233276</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-20663800"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-20663800"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24313005805015564</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-574991751"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-574991751"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.21799685060977936</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1174268499"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1174268499"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1217914178"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1217914178"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8658519983291626</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic719087599"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic719087599"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09209280461072922</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1649823283"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1649823283"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.552502453327179</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-950331211"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-950331211"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.02729397639632225</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic840081037"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic840081037"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.191587433218956</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic391447971"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic391447971"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.010229968465864658</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1432072039"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1432072039"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.37038442492485046</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic858523452"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic858523452"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19262219965457916</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic476428558"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic476428558"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5126569271087646</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic811918707"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic811918707"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.019579971209168434</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic808175455"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic808175455"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5477463603019714</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1751863813"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1751863813"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7791172862052917</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-297950712"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-297950712"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2583056092262268</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2134155929"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2134155929"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11424002796411514</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1291329255"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1291329255"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.021724458783864975</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1954882482"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1954882482"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.230597585439682</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1519465935"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1519465935"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.534415066242218</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-450247829"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-450247829"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5242281556129456</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation1620534424"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation1620534424"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-750759890"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-750759890"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11342669278383255</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2074038310"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2074038310"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22952136397361755</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic116076"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic116076"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10996129363775253</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-808846220"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-808846220"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6177282333374023</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1822213599"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1822213599"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.49323368072509766</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic513791341"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic513791341"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.02337665483355522</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3404176"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3404176"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20844922959804535</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic860344123"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic860344123"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08396691828966141</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#workshop-2132929196"/>
+      <entity2 rdf:resource="http://ekaw-instances#workshop-2132929196"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9849883317947388</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-549860811"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-549860811"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2512224018573761</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-130572803"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-130572803"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.01193608995527029</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic668139773"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic668139773"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17830246686935425</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1276119258"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1276119258"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.14491237699985504</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1849164425"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1849164425"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2979690730571747</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-318167934"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-318167934"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5356909036636353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1488202109"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1488202109"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8774448037147522</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#Presenter"/>
+      <entity2 rdf:resource="http://ekaw#Presenter"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-364883423"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-364883423"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1062873899936676</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic441719640"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic441719640"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.786191999912262</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-669405410"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-669405410"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24506978690624237</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1001830084"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1001830084"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6568410992622375</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1133073094"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1133073094"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1975848376750946</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1506165063"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1506165063"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1500934213399887</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1051226994"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1051226994"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12548935413360596</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1021130956"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1021130956"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5793616771697998</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic495859485"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic495859485"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6692619919776917</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1487673280"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1487673280"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40724998712539673</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1674227754"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1674227754"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.23124825954437256</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1175787594"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1175787594"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10872673988342285</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic197259725"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic197259725"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07910173386335373</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1708542865"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1708542865"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.32958170771598816</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-125478861"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-125478861"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4552645683288574</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic867631792"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic867631792"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4407665729522705</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1563250403"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1563250403"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.054484087973833084</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-921655719"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-921655719"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2963607907295227</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1404207873"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1404207873"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0685814917087555</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic344047183"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic344047183"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07057683169841766</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-135895070"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-135895070"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4292087256908417</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic118191028"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic118191028"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2298612743616104</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic85109062"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic85109062"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.874447226524353</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic540210111"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic540210111"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24017071723937988</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2115153843"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2115153843"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.43749114871025085</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2062033988"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2062033988"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4849672019481659</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-887875843"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-887875843"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15622593462467194</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic105008237"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic105008237"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15174053609371185</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-338995250"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-338995250"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04652812331914902</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1578626670"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1578626670"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.42793944478034973</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1434682076"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1434682076"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5270440578460693</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-166375972"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-166375972"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04451238736510277</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic107329"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic107329"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13192810118198395</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2000199054"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2000199054"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6235805749893188</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-316260921"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-316260921"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.27602705359458923</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1310670723"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1310670723"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03163508325815201</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic351873811"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic351873811"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.527840256690979</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-756322155"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-756322155"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10816662013530731</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-437577575"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-437577575"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.009443609043955803</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1801028831"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1801028831"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.21946671605110168</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic971398933"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic971398933"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05148373171687126</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3077362"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3077362"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2616440951824188</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1941458818"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1941458818"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.86298668384552</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic643585615"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic643585615"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.021593693643808365</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1184565222"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1184565222"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8690951466560364</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3356"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3356"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20169755816459656</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1869375325"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1869375325"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.809608995448798E-4</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic95844967"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic95844967"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20778612792491913</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2063028220"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2063028220"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.26232826709747314</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3496916"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3496916"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09401828795671463</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation894731363"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation894731363"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1018635483"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1018635483"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17478007078170776</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1328006526"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1328006526"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.46951788663864136</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-912422301"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-912422301"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1693800687789917</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1711030776"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1711030776"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6409463286399841</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1511827212"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1511827212"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5022017359733582</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic128896776"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic128896776"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7272958159446716</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1799810326"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1799810326"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12863653898239136</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1450554128"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1450554128"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.034101564437150955</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1554853404"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1554853404"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11493215709924698</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1202972607"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1202972607"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06221649423241615</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic27871373"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic27871373"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4946613609790802</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1285004149"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1285004149"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19454926252365112</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic245608713"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic245608713"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.491914838552475</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1003968655"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1003968655"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05803006887435913</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic93166550"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic93166550"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2782738506793976</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1204182234"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1204182234"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.28422316908836365</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1534376515"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1534376515"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7270545959472656</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic676758218"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic676758218"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17942588031291962</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic651885588"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic651885588"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6907292008399963</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2038632051"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2038632051"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.39294031262397766</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-105477199"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-105477199"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.675369381904602</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-575499684"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-575499684"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.690157413482666</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3560141"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3560141"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03476274386048317</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-395667065"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-395667065"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3339056968688965</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1451200989"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1451200989"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03869299218058586</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1773667603"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1773667603"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6375365257263184</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1438745149"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1438745149"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.159030482172966</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic698327196"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic698327196"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.49482810497283936</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1259179065"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1259179065"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03548422083258629</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1473640201"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1473640201"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3928791582584381</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-686682550"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-686682550"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1091162264"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1091162264"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#workshop2060985167"/>
+      <entity2 rdf:resource="http://ekaw-instances#workshop2060985167"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9510632753372192</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic461580747"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic461580747"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12285833805799484</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic661147877"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic661147877"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.01632247120141983</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-367957705"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-367957705"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5372108817100525</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1525161141"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1525161141"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2594235837459564</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1213585766"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1213585766"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08175517618656158</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation656743813"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation656743813"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#location-277829738"/>
+      <entity2 rdf:resource="http://ekaw-instances#location-277829738"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.45418962836265564</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic114282"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic114282"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13316284120082855</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-874210839"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-874210839"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5650874972343445</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3357431"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3357431"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17087985575199127</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1184364320"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1184364320"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6246906518936157</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2130226553"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2130226553"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.018174005672335625</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1028636743"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1028636743"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10470087081193924</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1801437822"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1801437822"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7962194681167603</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation1598360125"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation1598360125"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1380348800"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1380348800"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8927107453346252</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#ConferenceSession"/>
+      <entity2 rdf:resource="http://ekaw#Conference_Session"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2071579911"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2071579911"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5720444917678833</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1455370631"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1455370631"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5475296378135681</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic114126"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic114126"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2788204550743103</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1315681652"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1315681652"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1717521697282791</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1352929190"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1352929190"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8290619850158691</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3420763"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3420763"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09721007198095322</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-477040453"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-477040453"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.053589146584272385</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3267882"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3267882"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1984434723854065</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1657636448"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1657636448"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.35279521346092224</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1826664373"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1826664373"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06996509432792664</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1601776020"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1601776020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13474872708320618</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1758068617"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1758068617"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08123530447483063</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2128144545"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2128144545"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11511239409446716</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3001008"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3001008"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07195393741130829</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-236452414"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-236452414"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07552774250507355</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic925946741"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic925946741"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08210508525371552</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic103160"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic103160"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22461071610450745</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1583269100"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1583269100"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5370850563049316</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1848571569"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1848571569"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08826737105846405</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1814839430"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1814839430"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.27416515350341797</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1374410570"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1374410570"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20835793018341064</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-814884441"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-814884441"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.034020595252513885</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1883588840"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1883588840"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8370416760444641</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1284569586"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1284569586"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6874232888221741</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1684874968"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1684874968"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.37540093064308167</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1800934331"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1800934331"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22343218326568604</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1558992055"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1558992055"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11501511186361313</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3056464"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3056464"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.14069664478302002</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1769413409"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1769413409"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15534408390522003</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic256940020"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic256940020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8527937531471252</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1034283501"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1034283501"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5809611678123474</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic501116579"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic501116579"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19026058912277222</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic14800453"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic14800453"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04683637619018555</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-274272431"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-274272431"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07473423331975937</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1656388020"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1656388020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3207971155643463</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic311197383"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic311197383"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5751722455024719</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1888822017"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1888822017"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08573321253061295</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1142617103"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1142617103"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6687273979187012</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1742506922"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1742506922"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04218406602740288</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2087511093"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2087511093"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15015043318271637</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1014739178"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1014739178"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4276385009288788</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1216835014"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1216835014"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5899179577827454</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-102703842"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-102703842"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22777080535888672</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1555043537"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1555043537"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1349177360534668</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic568512629"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic568512629"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.009337106719613075</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-777123594"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-777123594"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5774997472763062</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-416908537"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-416908537"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7842116951942444</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1846817431"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1846817431"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11578121036291122</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic579583430"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic579583430"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06627888977527618</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3083698"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3083698"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07282811403274536</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#Paper"/>
+      <entity2 rdf:resource="http://ekaw#Paper"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-164583998"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-164583998"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4746769070625305</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic917280113"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic917280113"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.659153401851654</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-450004177"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-450004177"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.59503573179245</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1516899691"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1516899691"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04261012375354767</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1009869367"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1009869367"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6741969585418701</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1787633415"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1787633415"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4665185809135437</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic956968364"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic956968364"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6967405080795288</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-711778080"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-711778080"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7604019045829773</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1275566148"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1275566148"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3467138111591339</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-706626147"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-706626147"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10045824944972992</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1245635613"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1245635613"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.20729687809944153</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1530231663"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1530231663"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40712857246398926</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3532348"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3532348"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30148324370384216</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1945533194"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1945533194"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.38859638571739197</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1933742413"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1933742413"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11736176162958145</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic115924"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic115924"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15898557007312775</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic114477024"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic114477024"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5267806053161621</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1433484744"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1433484744"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.33776405453681946</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic374961517"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic374961517"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1363922357559204</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1919308818"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1919308818"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5510239005088806</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1324674584"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1324674584"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8256284594535828</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1288075345"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1288075345"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7518134117126465</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic551521078"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic551521078"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0378667414188385</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic148825606"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic148825606"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3640412390232086</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-168077674"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-168077674"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.45850101113319397</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic100886"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic100886"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09684374183416367</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1747496313"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1747496313"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04645548388361931</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1807548271"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1807548271"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11906036734580994</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic946494356"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic946494356"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.14028532803058624</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic434537925"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic434537925"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17203469574451447</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic986609072"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic986609072"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2894170880317688</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic110640728"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic110640728"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.24619150161743164</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1639170605"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1639170605"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.48470088839530945</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1135455309"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1135455309"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5835951566696167</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1366548143"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1366548143"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5247260928153992</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic669811865"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic669811865"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3367171585559845</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1078222292"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1078222292"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13471242785453796</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-569153802"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-569153802"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4515027105808258</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1673632197"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1673632197"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.43716439604759216</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1816565796"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1816565796"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5431210994720459</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1784134588"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1784134588"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1125245913863182</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1850841274"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1850841274"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7422749400138855</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-517713786"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-517713786"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7039393782615662</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1060858760"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1060858760"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8916383385658264</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation522138275"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation522138275"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1121800109"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1121800109"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6652974486351013</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic697730903"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic697730903"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12225379794836044</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-878341936"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-878341936"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3421376645565033</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#workshop-2128729747"/>
+      <entity2 rdf:resource="http://ekaw-instances#workshop-2128729747"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9759524464607239</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1191745379"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1191745379"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5236726403236389</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic3051892"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic3051892"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.218650683760643</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1354662968"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1354662968"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07832171022891998</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1524960851"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1524960851"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.060135290026664734</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1480528477"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1480528477"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.021780209615826607</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1116280523"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1116280523"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6955037117004395</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-538924890"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-538924890"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6845455765724182</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1776103452"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1776103452"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4727286994457245</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1628854618"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1628854618"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8729656934738159</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-449702633"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-449702633"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8104826211929321</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic760464573"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic760464573"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.34675049781799316</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2052302948"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2052302948"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05991067737340927</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1287340760"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1287340760"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15362660586833954</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic486722176"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic486722176"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4565659761428833</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-553411800"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-553411800"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17907127737998962</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-969990582"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-969990582"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5176873207092285</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1428988863"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1428988863"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.03401615098118782</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1987276913"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1987276913"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4400809407234192</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1512922657"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1512922657"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.25660941004753113</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1281512980"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1281512980"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.006059946026653051</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-655892824"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-655892824"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1654312163591385</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1843679302"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1843679302"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11430501937866211</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-269060085"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-269060085"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.42140287160873413</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic57142801"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic57142801"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.04220156371593475</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic521489727"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic521489727"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1692429482936859</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1820611322"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1820611322"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.713250458240509</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#SocialEvent"/>
+      <entity2 rdf:resource="http://ekaw#Social_Event"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1141465647"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1141465647"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.019338514655828476</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1863890486"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1863890486"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8965427279472351</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic519447398"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic519447398"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.28839144110679626</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-736941749"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-736941749"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17529039084911346</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic104462"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic104462"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.08785489946603775</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2014611587"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2014611587"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1741066873073578</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1632320115"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1632320115"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.14582639932632446</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-824706186"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-824706186"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5161123275756836</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-971130761"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-971130761"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12530307471752167</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#Conference"/>
+      <entity2 rdf:resource="http://ekaw#Conference"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation282691561"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation282691561"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic132803437"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic132803437"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16478481888771057</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2056933150"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2056933150"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.029631223529577255</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-358193502"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-358193502"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6150009632110596</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-184513575"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-184513575"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.14411894977092743</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#SessionChair"/>
+      <entity2 rdf:resource="http://ekaw#Session_Chair"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1261395511"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1261395511"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7881376147270203</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-571630020"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-571630020"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1352830833"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1352830833"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8044360876083374</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1357363790"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1357363790"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.38963034749031067</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-95730978"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-95730978"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.36513614654541016</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1758236586"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1758236586"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3211171627044678</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic454790106"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic454790106"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7546899914741516</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-165047611"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-165047611"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06549360603094101</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-867465883"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-867465883"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.46309539675712585</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1094979881"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1094979881"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.022054441273212433</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1531694805"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1531694805"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1370689868927002</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic240290728"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic240290728"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13482609391212463</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1107122877"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1107122877"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1510460078716278</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1096753300"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1096753300"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2745988965034485</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic279659712"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic279659712"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7246294021606445</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#workshop20548200"/>
+      <entity2 rdf:resource="http://ekaw-instances#workshop20548200"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.877662718296051</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic380802873"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic380802873"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6070825457572937</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1929152968"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1929152968"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05070130527019501</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1266375953"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1266375953"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1578463613986969</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic516545646"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic516545646"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8325908184051514</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2127562701"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2127562701"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40462058782577515</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation379103972"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation379103972"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2123180165"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2123180165"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12620460987091064</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1845965208"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1845965208"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.25326088070869446</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#AcceptedPaper"/>
+      <entity2 rdf:resource="http://ekaw#Accepted_Paper"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-334620318"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-334620318"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic725699686"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic725699686"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30213701725006104</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic10107213"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic10107213"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4578540027141571</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1151025098"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1151025098"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15911515057086945</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-67098003"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-67098003"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.37298595905303955</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1923514980"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1923514980"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5050781965255737</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1778757318"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1778757318"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.036709800362586975</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-784307251"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-784307251"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.020655659958720207</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1299668452"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1299668452"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.10246959328651428</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic876877434"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic876877434"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6949358582496643</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1443214456"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1443214456"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.020455053076148033</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1291770361"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1291770361"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17492489516735077</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic94728972"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic94728972"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.027678532525897026</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic826147581"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic826147581"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.06983368843793869</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-110867015"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-110867015"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8315982818603516</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1323054225"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1323054225"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.38088494539260864</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2011834699"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2011834699"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3333759605884552</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2030348182"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2030348182"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17214162647724152</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic883451154"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic883451154"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3887336254119873</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1419366409"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1419366409"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15178386867046356</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1069285920"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1069285920"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2610109746456146</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-29274298"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-29274298"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1752244882"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1752244882"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7243454456329346</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation595611661"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation595611661"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1056760842"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1056760842"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16817542910575867</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-190989106"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-190989106"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3422883152961731</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation1992001122"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation1992001122"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1984153269"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1984153269"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.006017314735800028</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic780346297"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic780346297"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18606655299663544</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2020304245"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2020304245"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.30677878856658936</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1284127744"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1284127744"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#Review"/>
+      <entity2 rdf:resource="http://ekaw#Review"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-896177687"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-896177687"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13294103741645813</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic293323974"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic293323974"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7672913074493408</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-537615418"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-537615418"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13247676193714142</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1564306156"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1564306156"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.35072433948516846</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-308554216"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-308554216"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1047704666852951</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1686396179"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1686396179"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.0928386002779007</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1298176396"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1298176396"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1238958607"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1238958607"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3679661154747009</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1223528791"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1223528791"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8611418008804321</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation156925601"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation156925601"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1999441657"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1999441657"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7736859917640686</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1288746393"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1288746393"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.26474547386169434</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-361161128"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-361161128"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.009070314466953278</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic180098146"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic180098146"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4745100736618042</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#PaperPresentation"/>
+      <entity2 rdf:resource="http://ekaw#Contributed_Talk"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.15000000000000002</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1592417372"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1592417372"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3344508111476898</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#location-1924285302"/>
+      <entity2 rdf:resource="http://ekaw-instances#location-1924285302"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6017740368843079</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-901510002"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-901510002"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.825294017791748</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic893454270"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic893454270"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6131617426872253</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-484787118"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-484787118"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.21740314364433289</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1726143507"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1726143507"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09165117889642715</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2005274852"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2005274852"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1461382806301117</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-810957242"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-810957242"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09117306023836136</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic441371312"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic441371312"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.41194355487823486</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1880334712"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1880334712"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6507273316383362</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#workshop-1822926834"/>
+      <entity2 rdf:resource="http://ekaw-instances#workshop-1822926834"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9875472187995911</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-171055284"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-171055284"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1976766288280487</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2035073525"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2035073525"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11289350688457489</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1246004963"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1246004963"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2304045855998993</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-158826707"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-158826707"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8922404646873474</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic2045099659"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic2045099659"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16436605155467987</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-563239852"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-563239852"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7295059561729431</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1546254583"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1546254583"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11459977924823761</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic544664589"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic544664589"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.015011567622423172</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas#isLocationOf"/>
+      <entity2 rdf:resource="http://ekaw#locationOf"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1882357751"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1882357751"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3988184332847595</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2028803728"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2028803728"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5172041058540344</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic117916"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic117916"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13397017121315002</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1156347348"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1156347348"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.12586398422718048</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic112518608"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic112518608"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16590800881385803</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1480388560"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1480388560"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.17206905782222748</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-2014839043"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-2014839043"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13746459782123566</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1766189098"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1766189098"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8620393872261047</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-492614264"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-492614264"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5193374752998352</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1974722289"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1974722289"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.25953570008277893</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic303216561"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic303216561"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13184548914432526</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1781881317"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1781881317"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-697283491"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-697283491"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.705554187297821</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-847000684"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-847000684"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.11286096274852753</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1706464642"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1706464642"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.21613608300685883</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1212811297"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1212811297"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.13846881687641144</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1166644710"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1166644710"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6130788922309875</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-786715517"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-786715517"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.19936981797218323</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1615225221"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1615225221"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6475059986114502</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-1469452252"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-1469452252"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-726608903"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-726608903"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.1777082085609436</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1475910927"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1475910927"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.3791278600692749</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1224430754"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1224430754"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2655075490474701</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1468254377"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1468254377"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.22464485466480255</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1789464955"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1789464955"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.05178658291697502</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1106651497"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1106651497"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.46570533514022827</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-690039175"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-690039175"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.6101766228675842</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1148197345"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1148197345"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.2477034032344818</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1079448000"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1079448000"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.4193877577781677</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-523257701"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-523257701"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.18939726054668427</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic1595061868"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic1595061868"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.016975441947579384</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#presentation-182320121"/>
+      <entity2 rdf:resource="http://ekaw-instances#presentation-182320121"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.9</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1221684669"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1221684669"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.44326701760292053</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-363435454"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-363435454"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.16611163318157196</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-567312220"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-567312220"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.09349269419908524</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1186365187"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1186365187"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7713625431060791</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic95945983"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic95945983"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.259700208902359</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic848715978"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic848715978"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.40711596608161926</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-1993134797"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-1993134797"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.8395322561264038</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic670893655"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic670893655"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.07975450158119202</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic-910715704"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic-910715704"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.7958651185035706</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://edas-instances#topic595267983"/>
+      <entity2 rdf:resource="http://ekaw-instances#topic595267983"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">0.5169650316238403</measure>
+    </Cell>
+  </map>
+
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='POMAP'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<onto1>http://repositories.seals-project.eu/tdrs/testdata/persistent/taxon/taxon-v1/suite/taxref-agrovoc/component/target/</onto1>
+	<onto2>http://repositories.seals-project.eu/tdrs/testdata/persistent/taxon/taxon-v1/suite/taxref-agrovoc/component/source/</onto2>
+	<uri1>http://repositories.seals-project.eu/tdrs/testdata/persistent/taxon/taxon-v1/suite/taxref-agrovoc/component/target/</uri1>
+	<uri2>http://repositories.seals-project.eu/tdrs/testdata/persistent/taxon/taxon-v1/suite/taxref-agrovoc/component/source/</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+			<entity2 rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+			<entity2 rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_tr_1328691613684"/>
+			<entity2 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_tr_1328691613684"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_hu_1299500534267"/>
+			<entity2 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_hu_1299500534267"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_tr_50346_1321796212377"/>
+			<entity2 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_tr_50346_1321796212377"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_zh_1299500716296"/>
+			<entity2 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_zh_1299500716296"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+			<entity2 rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://aims.fao.org/aos/agrovoc/xl_cs_1299500437568"/>
+			<entity2 rdf:resource="https://inpn.mnhn.fr/espece/cd_nom/98337?lg=en"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

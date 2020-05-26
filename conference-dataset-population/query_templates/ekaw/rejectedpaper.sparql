@@ -1,0 +1,10 @@
+PREFIX :<http://ekaw#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+{{pap}} a :Conference_Paper.
+{{pap}} a :Rejected_Paper.
+{{pap}} rdfs:label {{paptitle}}.
+{{auth}} :authorOf {{pap}}.
+{{auth}} a :Paper_Author.
+}

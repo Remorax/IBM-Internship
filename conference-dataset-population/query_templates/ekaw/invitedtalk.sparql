@@ -1,0 +1,12 @@
+PREFIX :<http://ekaw#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+{{inv}} a :Invited_Speaker.
+{{invtalk}} rdfs:label {{invtalkname}}.
+{{invtalk}} a :Invited_Talk.
+{{invabstr}} :writtenBy {{inv}}.
+{{invabstr}} a :Invited_Talk_Abstract.
+{{invabstr}} :paperPresentedAs {{invtalk}}.
+{{invabstr}} rdfs:label {{invtalkname}}.
+}

@@ -1,0 +1,14 @@
+prefix vcard:<http://www.w3.org/2006/vcard/ns#>
+prefix dcterm:<http://purl.org/dc/terms/>
+prefix hal:<http://data.archives-ouvertes.fr/schema/>
+prefix skos:<http://www.w3.org/2004/02/skos/core#>
+
+select distinct ?publisher where {
+?a hal:topic ?to.
+?to skos:broader+ <https://data.archives-ouvertes.fr/subject/info>.
+?a dcterm:isPartOf ?z.
+?z dcterm:publisher ?x.
+?x a vcard:Organization.
+?x vcard:organization-name ?publisher.
+} 
+LIMIT {{numPublisher}}

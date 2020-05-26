@@ -1,0 +1,4 @@
+SELECT distinct ?s ?o WHERE {  
+?o <http://confOf#reviewes> ?s .
+
+ }

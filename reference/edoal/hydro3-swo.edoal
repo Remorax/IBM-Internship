@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY hydro3 "http://spatial.maine.edu/semgaz/HydroOntology#">
+<!ENTITY swo "http://cegis.usgs.gov/SWO#">
+<!ENTITY edoal "http://ns.inria.org/edoal/1.0/#">
+]>
+
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+		 xml:base="http://cree-swo/alignment/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#"
+         xmlns:cree="http://www.owl-ontologies.com/Cree_hydro.owl#"
+         xmlns:swo="http://cegis.usgs.gov/SWO#"
+         xmlns:edoal="http://ns.inria.org/edoal/1.0/#">
+
+	<Alignment>
+		<xml>yes</xml>
+		<level>2EDOAL</level> 
+		<type>**</type>
+		<method>manual</method>
+		<onto1>
+			<Ontology rdf:about="&hydro3;">
+			  	<formalism>
+			    	<Formalism align:name="OWL1.0" align:uri="http://www.w3.org/2002/07/owl#" />
+			  	</formalism>
+			</Ontology>
+		</onto1>
+		<onto2>
+			<Ontology rdf:about="&swo;">
+				<formalism>
+					<Formalism align:name="OWL1.0" align:uri="http://www.w3.org/2002/07/owl#" />
+				</formalism>
+			</Ontology>
+		</onto2>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Coastline" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Coastline" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Levee" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Levee" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Rapids" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Rapids" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Reservoir" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Reservoir" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Wetlands" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;SwampOrMarsh" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Falls" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;Waterfall" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;DamWeir" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:or rdf:parseType="Collection" >
+							<edoal:Class rdf:about="&swo;Dam" />
+							<edoal:Class rdf:about="&swo;Weir" />
+						</edoal:or>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>Equivalence</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;FreshwaterBay" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;BayOrInlet" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Lake" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;LakeOrPond" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Ocean" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;SeaOrOcean" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;River" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;StreamOrRiver" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;SaltWaterBay" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;BayOrInlet" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Spring" />
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;SpringOrSeep" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class rdf:about="&hydro3;Watershed" />
+				</entity1>
+				<entity2>
+					<edoal:Class>
+						<edoal:or rdf:parseType="Collection">
+							<edoal:Class rdf:about="&swo;LakeOrPond" />
+							<edoal:Class rdf:about="&swo;SwampOrMarsh" />
+						</edoal:or>
+					</edoal:Class>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Class>
+						<edoal:or rdf:parseType="Collection">
+							<edoal:Class rdf:about="&hydro3;Boundary" />
+							<edoal:Class rdf:about="&hydro3;Hydrographic_Feature" />
+							<edoal:Class rdf:about="&hydro3;Hydrographic_Structure" />
+						</edoal:or>
+					</edoal:Class>
+				</entity1>
+				<entity2>
+					<edoal:Class rdf:about="&swo;HydrographicFeature" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;flowsfrom" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;startsFrom" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;flowsinto" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;endsAt" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;flowsthrough" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;hasFlow" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;isDownstreamTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;hasDirection" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;isUpstreamOf" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;hasDirection" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;hasDam" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;adjoins" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;isDamOf" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;adjoins" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;hasPart" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;contains" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;hasHydrographicPart" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;contains" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;isHydrologicallyConnectedTo" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;isConnectedTo" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;hasMouth" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;endsAt" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;hasSource" />
+				</entity1>
+				<entity2>
+					<edoal:Relation rdf:about="&swo;startsFrom" />
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+		<map>
+			<Cell>
+				<entity1>
+					<edoal:Relation rdf:about="&hydro3;hasTributary" />
+				</entity1>
+				<entity2>
+					<edoal:Relation>
+						<edoal:inverse>
+							<edoal:Relation rdf:about="&swo;endsAt" />
+						</edoal:inverse>
+					</edoal:Relation>
+				</entity2>
+				<measure rdf:datatype="&xsd;float">1.</measure>
+		   		<relation>SubsumedBy</relation>
+			</Cell>
+		</map>
+
+	</Alignment>
+</rdf:RDF>

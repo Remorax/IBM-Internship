@@ -1,0 +1,7 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX out: <http://subgraph-alignment#>
+
+INSERT DATA {
+{{targetSubgraph}} out:hasIntensionForm {{intensionForm}}.
+{{targetSubgraph}} out:hasExtensionForm {{extensionForm}}.
+}

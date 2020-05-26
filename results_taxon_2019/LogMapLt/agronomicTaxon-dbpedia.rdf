@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>http://ontology.irstea.fr/agronomictaxon/core#</onto1>
+<onto2>http://www.wikidata.org/entity/</onto2>
+<uri1>http://ontology.irstea.fr/agronomictaxon/core#</uri1>
+<uri2>http://www.wikidata.org/entity/</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#SpecyRank"/>
+		<entity2 rdf:resource="http://dbpedia.org/ontology/Species"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#ClassRank"/>
+		<entity2 rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#ClassRank"/>
+		<entity2 rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ontology.irstea.fr/AgronomicTaxon#memberScheme"/>
+		<entity2 rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isMemberOf"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#plantae"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Plantae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#plantae"/>
+		<entity2 rdf:resource="http://dbpedia.org/resource/Plantae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#plantae"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Plantae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#plantae"/>
+		<entity2 rdf:resource="http://pt.dbpedia.org/resource/Plantae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_monococcum"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Triticum_monococcum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_monococcum"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Triticum_monococcum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_monococcum"/>
+		<entity2 rdf:resource="http://yago-knowledge.org/resource/Triticum_monococcum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_urartu"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Triticum_urartu"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_urartu"/>
+		<entity2 rdf:resource="http://dbpedia.org/resource/Triticum_urartu"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://eu.dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://id.dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://fr.dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://pt.dbpedia.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poaceae"/>
+		<entity2 rdf:resource="http://yago-knowledge.org/resource/Poaceae"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum"/>
+		<entity2 rdf:resource="http://dbpedia.org/resource/Triticum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Triticum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Triticum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum"/>
+		<entity2 rdf:resource="http://yago-knowledge.org/resource/Triticum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#magnoliophyta"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Magnoliophyta"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#magnoliophyta"/>
+		<entity2 rdf:resource="http://yago-knowledge.org/resource/Magnoliophyta"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_aestivum"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Triticum_aestivum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_aestivum"/>
+		<entity2 rdf:resource="http://yago-knowledge.org/resource/Triticum_aestivum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_aestivum"/>
+		<entity2 rdf:resource="http://ecowlim.tfri.gov.tw/lode/resource/taibnet/Species/Triticum_aestivum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_aestivum"/>
+		<entity2 rdf:resource="http://ecowlim.tfri.gov.tw/lode/resource/taif/Species/Triticum_aestivum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_aestivum"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Triticum_aestivum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_aestivum"/>
+		<entity2 rdf:resource="http://pt.dbpedia.org/resource/Triticum_aestivum"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_timopheevii"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Triticum_timopheevii"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_timopheevii"/>
+		<entity2 rdf:resource="http://dbpedia.org/resource/Triticum_timopheevii"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_timopheevii"/>
+		<entity2 rdf:resource="http://fr.dbpedia.org/resource/Triticum_timopheevii"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#triticum_timopheevii"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Triticum_timopheevii"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://it.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://nl.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://es.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://pt.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://fr.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://id.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://yago-knowledge.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="urn:absolute:ontology.irstea.fr/agronomicTaxon/ressource/goldStandard#poales"/>
+		<entity2 rdf:resource="http://eu.dbpedia.org/resource/Poales"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>

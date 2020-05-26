@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>??</type>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/hasReferenceName"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasScientificName"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/98466"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasHigherRankTransitive"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasHigherRank"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://rs.tdwg.org/dwc/terms/scientificName"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#altScientificName"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesOrders"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/143377"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#includesVariety"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/hasAuthority"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#prefScientificName"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/vernacularName"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#altVernacularName"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/hasRank"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#hasLowerRank"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://aims.fao.org/aos/agrontology#hasTaxonomicRank"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#Taxonomy"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/property/bioGeoStatusIn"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/AgronomicTaxon#memberScheme"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://taxref.mnhn.fr/lod/name/112477"/>
+      <entity2 rdf:resource="http://ontology.irstea.fr/agronomictaxon/core#KingdomRank"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,18 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX out: <http://subgraph-alignment#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA {
+{{targetSubgraph}} out:hasSupportingInstance {{instance}}.
+{{targetSubgraph}} out:hasTriple {{triple}}.
+{{triple}} out:hasObject {{object}}.
+{{triple}} out:hasSubject {{subject}}.
+{{triple}} out:hasPredicate {{predicate}}.
+{{triple}} out:objectSimilarityWithCQA {{objectSimilarity}}.
+{{triple}} out:subjectSimilarityWithCQA {{subjectSimilarity}}.
+{{triple}} out:predicateSimilarityWithCQA {{predicateSimilarity}}.
+{{instance}} out:instanceInTriple {{triple}}. 
+{{triple}} out:similarityWithCQA {{similarity}}.
+{{object}} out:isType {{keepObjectType}}.
+{{subject}} out:isType {{keepSubjectType}}.
+}

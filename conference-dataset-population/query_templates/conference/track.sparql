@@ -1,0 +1,10 @@
+PREFIX :<http://conference#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA{
+{{track}} a :Track.
+	{{track}} :has_a_name {{trackname}}.
+	{{conf}} :has_tracks {{track}}.
+	{{track}} :has_a_track-workshop-tutorial_chair {{trackchair}}.
+	{{trackchair}} a :Track-workshop_chair.	
+}

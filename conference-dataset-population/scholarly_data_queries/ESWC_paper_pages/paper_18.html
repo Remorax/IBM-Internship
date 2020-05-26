@@ -1,0 +1,776 @@
+<!doctype html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Paper 18 (Research track) - 2018 ESWC-Conferences</title>
+<style type="text/css">
+#fancybox-close{right:-15px;top:-15px}
+div#fancybox-content{border-color:#FFFFFF}
+div#fancybox-title{background-color:#FFFFFF}
+div#fancybox-outer{background-color:#FFFFFF}
+div#fancybox-title-inside{color:#333333}
+</style>
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://2018.eswc-conferences.org/paper_18/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paper 18 (Research track) - 2018 ESWC-Conferences" />
+<meta property="og:description" content="Schema-agnostic Blocking for Entity Resolution over Noisy Heterogeneous Data Author(s): Tiago Brasileiro Araújo, Carlos Eduardo Pires, Demetrio Gomes Mestre, Thiago Pereira Nóbrega, Dimas Cassimiro Nascimento, Kostas Stefanidis Full text: preprint Abstract: The increasing use of Web systems (e.g., digital libraries, social networks, and e-commerce) has become a valuable source of semi-structured data. In this context, &hellip;" />
+<meta property="og:url" content="https://2018.eswc-conferences.org/paper_18/" />
+<meta property="og:site_name" content="2018 ESWC-Conferences" />
+<meta property="article:section" content="Paper" />
+<meta property="article:published_time" content="2018-02-14T23:25:37+02:00" />
+<meta property="article:modified_time" content="2018-05-02T23:24:11+02:00" />
+<meta property="og:updated_time" content="2018-05-02T23:24:11+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Schema-agnostic Blocking for Entity Resolution over Noisy Heterogeneous Data Author(s): Tiago Brasileiro Araújo, Carlos Eduardo Pires, Demetrio Gomes Mestre, Thiago Pereira Nóbrega, Dimas Cassimiro Nascimento, Kostas Stefanidis Full text: preprint Abstract: The increasing use of Web systems (e.g., digital libraries, social networks, and e-commerce) has become a valuable source of semi-structured data. In this context, [&hellip;]" />
+<meta name="twitter:title" content="Paper 18 (Research track) - 2018 ESWC-Conferences" />
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Feed" href="https://2018.eswc-conferences.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Comments Feed" href="https://2018.eswc-conferences.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="2018 ESWC-Conferences &raquo; Paper 18 (Research track) Comments Feed" href="https://2018.eswc-conferences.org/paper_18/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/2018.eswc-conferences.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='bxslider-css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/custom-styles.css?ver=4.9.5' type='text/css' media='' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='bootstrap-fa-icon-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='contact-form-7-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mptt-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/mp-timetable/media/css/style.css?ver=2.1.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-base-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.11.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-10e07368e248-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-10e07368e248.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sow-button-flat-d53a833a6a55-css'  href='https://2018.eswc-conferences.org/wp-content/uploads/siteorigin-widgets/sow-button-flat-d53a833a6a55.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dpsp-frontend-style-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/8vb2po4n/a0bfa.css" media="all"/>
+<link rel='stylesheet' id='sparkling-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%7CRoboto+Slab%3A400%2C300%2C700&#038;subset&#038;ver=4.9.5' type='text/css' media='all' />
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='https://2018.eswc-conferences.org/wp-content/themes/sparkling/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='upw_theme_standard-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=4.9.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ebs_dynamic_css-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/786bu6m3/a0bxp.css" media="all"/>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/9i9ggyns/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-bootstrap-shortcodes/js/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.8'></script> -->
+<script type='text/javascript'>
+var dpsp_ajax_url = 'https://2018.eswc-conferences.org/wp-admin/admin-ajax.php';
+var dpsp_ajax_pull_post_share_counts_data = {
+action  : 'dpsp_ajax_pull_post_share_counts',
+post_id : '1180'
+}
+</script>
+<script src='//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/147bnjm9/a0bxp.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.5'></script> -->
+<!-- <script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.5'></script> -->
+<link rel='https://api.w.org/' href='https://2018.eswc-conferences.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://2018.eswc-conferences.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://2018.eswc-conferences.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel='shortlink' href='https://2018.eswc-conferences.org/?p=1180' />
+<link rel="alternate" type="application/json+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_18%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://2018.eswc-conferences.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_18%2F&#038;format=xml" />
+<!-- Fancybox for WordPress -->
+<script type="text/javascript">
+jQuery(function(){
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+var arr = jQuery("a.fancybox");
+jQuery.each(arr, function() {
+var title = jQuery(this).children("img").attr("title");
+jQuery(this).attr('title',title);
+})
+}
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").not(".nolightbox").filter( function() { return /\.(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+jQuery("a.fancybox").fancybox({
+'cyclic': false,
+'autoScale': true,
+'padding': 10,
+'opacity': true,
+'speedIn': 500,
+'speedOut': 500,
+'changeSpeed': 300,
+'overlayShow': true,
+'overlayOpacity': "0.3",
+'overlayColor': "#666666",
+'titleShow': true,
+'titlePosition': 'inside',
+'enableEscapeButton': true,
+'showCloseButton': true,
+'showNavArrows': true,
+'hideOnOverlayClick': true,
+'hideOnContentClick': false,
+'width': 560,
+'height': 340,
+'transitionIn': "fade",
+'transitionOut': "fade",
+'centerOnScroll': true
+});
+})
+</script>
+<!-- END Fancybox for WordPress -->
+<noscript><style type="text/css">.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:table!important}.mptt-shortcode-wrapper .mptt-shortcode-table .mptt-event-container:hover{height:auto!important;min-height:100%!important}body.mprm_ie .mptt-shortcode-wrapper .mptt-event-container{height:auto!important}@media (max-width:767px){.mptt-shortcode-wrapper .mptt-shortcode-table:first-of-type{display:none!important}}</style></noscript><style type="text/css" data-source="Social Pug"></style><meta name="twitter:card" 		content="summary_large_image" /><meta property="og:url"			content="https://2018.eswc-conferences.org/paper_18/" /><meta property="og:type"			content="article" /><meta property="og:title"			content="Paper 18 (Research track)" /><meta property="og:description" 	content="Schema-agnostic Blocking for Entity Resolution over Noisy Heterogeneous DataAuthor(s): Tiago Brasileiro Araújo, Carlos Eduardo Pires," /><meta property="og:image" 		content="" /><script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var addEvent = function(evt, handler) {
+if (window.addEventListener) {
+document.addEventListener(evt, handler, false);
+} else if (window.attachEvent) {
+document.attachEvent('on' + evt, handler);
+}
+};
+var removeEvent = function(evt, handler) {
+if (window.removeEventListener) {
+document.removeEventListener(evt, handler, false);
+} else if (window.detachEvent) {
+document.detachEvent('on' + evt, handler);
+}
+};
+var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+var logHuman = function() {
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+for (var i = 0; i < evts.length; i++) {
+removeEvent(evts[i], logHuman);
+}
+};
+for (var i = 0; i < evts.length; i++) {
+addEvent(evts[i], logHuman);
+}
+})('//2018.eswc-conferences.org/?wordfence_lh=1&hid=B51BE7A42DF53E61DDD5C2140D077675');
+</script><style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a, .entry-meta a {color:#1e73be}a:hover, a:active, #secondary .widget .post-content a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current, #secondary .widget a:hover  {color: #b7b7b7;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+.navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce input.button, .woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce button.button,
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #444444; border-color: #444444;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span, .cfa-button { color: #444444}.cfa-button {border-color: #444444;}.cfa { background-color: #ffffff; } .cfa-button:hover a {color: #ffffff;}.cfa-text { color: #52b1d9;}.cfa-button {border-color: #52b1d9; color: #52b1d9;}.navbar.navbar-default, .navbar-default .navbar-nav .open .dropdown-menu > li > a {background-color: #ffffff;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li:hover > .caret, .navbar-default .navbar-nav > li, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { color: #999999;}@media (max-width: 767px){ .navbar-default .navbar-nav > li:hover > a, .navbar-default .navbar-nav > li:hover > .caret{ color: #999999!important ;} }.navbar-default .navbar-nav > li:hover > a, .navbar-nav > li:hover > .caret, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > a, .navbar-default .navbar-nav.sparkling-mobile-menu > li.open > .caret, .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .caret, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #1e73be;}@media (max-width: 767px){ .navbar-default .navbar-nav > li.open > a, .navbar-default .navbar-nav > li.open > .caret { color: #1e73be !important; } }.dropdown-menu {background-color: #ffffff;}.navbar-default .navbar-nav .open .dropdown-menu > li > a, .dropdown-menu > li > a, .dropdown-menu > li > .caret { color: #1e73be;}.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background-color: #636467;}@media (max-width: 767px) {.navbar-default .navbar-nav .dropdown-menu > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:focus, .dropdown-menu > .active {background: transparent;} }.entry-content {font-family: Verdana, Geneva;}.entry-content {font-size:15px}.entry-content {font-weight:normal}</style><link rel="pingback" href="https://2018.eswc-conferences.org/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" id="wp-custom-css">
+.event-description {
+padding-left:10px;
+padding-right:10px;
+}
+@media (min-width: 1200px){
+.container {
+width: 1300px;
+}}
+#2001 {
+font-size: 22px !important;
+}
+.event-title  {
+display: none !important;
+}
+.well {
+padding: 50px;
+}
+#do-etfw-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#recent-comments-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#tp_widget_recent_tweets-2 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-4 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#text-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#media_image-5 {
+padding: 30px;
+border: 1px solid #f3f3f2;
+}
+#sparkling-social-2 {
+margin-top: 5%
+}
+.wp-embed-site-icon {
+width: auto !important;
+}
+.dpsp-share-text {
+margin-top: 10%;
+}
+.ow-button-base a {
+text-align:left;
+}
+.footer-widget-area .widget {
+margin-bottom: 10px;
+}
+.col-md-6 {
+width: 100%;
+}
+.copyright {
+margin-top: 10px;
+float: right;
+text-align: center;
+padding-bottom: 5%;
+}
+#secondary .widget a {
+color: #6ba3d4;
+}
+.post-date {
+color: #999999;
+font-size: 12px;
+}
+.entry-title {
+display:block!important;
+}
+.post-title {
+font-size: 18px;
+font-weight: bold;
+}
+.post-excerpt {
+border-bottom: 1px solid #f2f2f2;
+padding-bottom: 15px;
+}
+#menu-social-items {
+padding-top: 2%;
+}
+#media_image-6 {
+margin-bottom: 2% !important;
+}
+#menu-main-menu {
+background-color: #f3f3f2;
+}
+#post-100 {
+display: none;
+}
+.flex-caption {
+display: none;
+}
+.entry-title {
+display:none;
+}
+#menu-main-menu {
+font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+color: #555555;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+line-height: 1;
+}
+.widget ul li {
+list-style: disc;
+border-bottom: none;
+margin-bottom: 5px;
+padding-bottom: 5px;
+}		</style>
+</head>
+<body class="post-template-default single single-post postid-1180 single-format-standard do-etfw group-blog ">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="https://2018.eswc-conferences.org/"><img src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png"  height="93" width="100" alt="2018 ESWC-Conferences"/></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-17 dropdown"><a href="https://2018.eswc-conferences.org/">ESWC 2018 </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://2018.eswc-conferences.org/history/">History</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://2018.eswc-conferences.org/about/">About</a></li>
+<li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="https://2018.eswc-conferences.org/organizing-committee/">Organizing Committee</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="https://2018.eswc-conferences.org/subtrack-chairs/">Subtrack Chairs</a></li>
+<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="https://2018.eswc-conferences.org/linked-events/">Linked Events</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a href="https://2018.eswc-conferences.org/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1454"><a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)">REGISTRATION</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-53 dropdown"><a href="https://2018.eswc-conferences.org/important-dates/">CALLS &#038; DATES </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://2018.eswc-conferences.org/important-dates/">Important Dates</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://2018.eswc-conferences.org/call-for-papers/">Call for Papers</a></li>
+<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="https://2018.eswc-conferences.org/call-for-workshops/">Call for Workshops</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://2018.eswc-conferences.org/call-phd-symposium/">Call for PhD Symposium</a></li>
+<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="https://2018.eswc-conferences.org/posters-and-demos/">Posters and Demos</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://2018.eswc-conferences.org/call-for-tutorials/">Call for Tutorials</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://2018.eswc-conferences.org/call-for-challenges/">Call for Challenges</a></li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://2018.eswc-conferences.org/in-use-track/">In-Use Track</a></li>
+<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://2018.eswc-conferences.org/industry-track/">Industry Track</a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://2018.eswc-conferences.org/research-tracks/">Research Tracks</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://2018.eswc-conferences.org/resources-track/">Resources Track</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://2018.eswc-conferences.org/subtracks/">Subtracks</a></li>
+<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://2018.eswc-conferences.org/call-for-project-networking/">Call for Project Networking</a></li>
+</ul>
+</li>
+<li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-131 dropdown"><a href="https://2018.eswc-conferences.org/program/">Program </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://2018.eswc-conferences.org/program/sunday-june-3/">Sunday June 3</a></li>
+<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://2018.eswc-conferences.org/program/monday-june-4/">Monday June 4</a></li>
+<li id="menu-item-2559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2559"><a href="https://2018.eswc-conferences.org/program/tuesday-june-5/">Tuesday June 5</a></li>
+<li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://2018.eswc-conferences.org/program/wednesday-june-6/">Wednesday  June 6</a></li>
+<li id="menu-item-2558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2558"><a href="https://2018.eswc-conferences.org/program/thursday-june-7/">Thursday June 7</a></li>
+<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="https://2018.eswc-conferences.org/program/keynote-speakers/">Keynote Speakers</a></li>
+<li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://2018.eswc-conferences.org/program/accepted-papers/">Accepted Papers</a></li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334"><a href="https://2018.eswc-conferences.org/program/submissions/">Submissions</a></li>
+<li id="menu-item-893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-893"><a href="https://2018.eswc-conferences.org/program/tutorials-workshops/">Tutorials &#038; Workshops</a></li>
+<li id="menu-item-1492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1492"><a href="https://2018.eswc-conferences.org/program/call-project-networking/">Project Networking Session</a></li>
+</ul>
+</li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://2018.eswc-conferences.org/conference-venue/">Conference Venue</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="https://2018.eswc-conferences.org/sponsorship/">Sponsorship</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-right">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-1180" class="post-1180 post type-post status-publish format-standard hentry category-paper">
+<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Paper 18 (Research track)</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://2018.eswc-conferences.org/paper_18/" rel="bookmark"><time class="entry-date published" datetime="2018-02-14T23:25:37+00:00">14. February 2018</time><time class="updated" datetime="2018-05-02T23:24:11+00:00">2. May 2018</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://2018.eswc-conferences.org/author/silvio/">Silvio Peroni</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="https://2018.eswc-conferences.org/category/paper/" rel="category tag">Paper</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<div about='' rel='rdf:type' resource='fabio:ResearchPaper' prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<div about=''>
+<p><strong property='dcterms:title'>Schema-agnostic Blocking for Entity Resolution over Noisy Heterogeneous Data</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='#author-1'>Tiago Brasileiro Araújo</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-2'>Carlos Eduardo Pires</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-3'>Demetrio Gomes Mestre</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-4'>Thiago Pereira Nóbrega</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-5'>Dimas Cassimiro Nascimento</span>, <span typeof='foaf:Person' property='foaf:name' about='#author-6'>Kostas Stefanidis</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://2018.eswc-conferences.org/wp-content/uploads/2018/02/ESWC2018_paper_18.pdf'>preprint</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract'>The increasing use of Web systems (e.g., digital libraries, social networks, and e-commerce) has become a valuable source of semi-structured data. In this context, the Entity Resolution task emerges as a fundamental step to integrate multiple knowledge bases or identify similarities between the data (i.e., entities). Usually, blocking techniques are widely applied as the initial step of Entity Resolution approaches in order to avoid computing the comparisons between all pairs of entities (quadratic cost). In practice, heterogeneous and noisy data increase the difficulties faced by blocking techniques. To address these challenges, we proposed the NA-BLOCKER technique, which is capable of tolerating noisy data to extract information regarding the schema and generate high-quality blocks (i.e., blocks that contain only entities with high chances of being considered correspondents). To this end, the NA-BLOCKER applies Locality Sensitive Hashing in order to hash the attribute values of the entities and enable the generation of high-quality blocks, even with the presence of noise in the attribute values. In this sense, since the Semantic Web approaches usually deal with noisy and heterogeneous data, the NA-BLOCKER technique can be useful for these approaches. Based on the experimental results, we can highlight that the NA-BLOCKER presents better results regarding effectiveness than the state-of-the-art technique, namely, BLAST.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Entity resolution</span>; <span property='prism:keyword'>Heterogeneous data</span>; <span property='prism:keyword'>Noisy data</span>; <span property='prism:keyword'>Metablocking</span>; <span property='prism:keyword'>Web data</span></p>
+<p><strong>Decision:</strong> <span style='color: red'>reject</span></p>
+<div about='#preprint' rel='cito:isReviewedBy'>
+<div id='review-1' about='#review-1' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='#reviewer-1'property='foaf:name'>Paul Groth</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-1' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) Entity resolution (linking of data) is a core question for the semantic web community although I wish there was more contextualization with respect to existing semantic web research on ER.
+(NOVELTY OF THE PROPOSED SOLUTION) The algorithm is an extension of existing algorithms to deal with noise
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The approach is well described.
+(EVALUATION OF THE STATE-OF-THE-ART) Provides a good overview of traditional entity resolution literature.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The evaluation against the state of the art is well described but could have been better presented in places.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The code is available - at least here was a url for it. It uses a preexisting set of entity resolution datasets. It is only tested against one state of the art algorithm.
+(OVERALL SCORE) This paper describes a blocking algorithm for Entity Resolution to deal with noise data. The proposed blocking algorithm performs better in terms of state of the art (BLAST-2016) on dealing with noisy data but not on execution time. 
+Overall, the paper describes a tailored contribution and is well written. I really liked the introduction, which provided several good contextual references. The algorithm is described well, however, it would have been great to provide a pseudo-code version of the algorithm and not just the given figure. This would have helped piece together the notation introduced in the paper. 
+I also think the results would have been better presented as a table. It's hard to compare the results of the two different algorithms using the bar chart. Also the mapping between the figure labels (e.g. (a)) and the actual dataset name makes it difficult to interpret. This is especially the case when the values are small (i.e. when there's a lot of noise that's been introduced).
+My major criticism of the paper is that I wish it did a larger job contextualizing the approach in the recent literature on entity resolution stemming from the semantic web community; for example: using ensembles of blocking schemes as in [1]; looking at the graph structure inherent in knowledge graphs to perform entity resolution as in [2] or the use of embeddings as nicely summarized in the related work of [3]. Also, there was no mention of the Ontology Alignment Evaluation Initiative (oaei.ontologymatching.org) which has really driven the area of instance matching. I would have expected at least a discussion of why the instance matching data from that evaluation campaign was not used as well. 
+Also with respect to the semantic web, it's interesting that the paper dismisses the use of external information during blocking (e.g. dictionaries) because I think the use of background knowledge is a core part of the consideration traditionally made in the SemWeb literature. 
+Beyond this criticism, I had a couple of questions that I wish the paper would clarify:
+1) the paper states that "the development of noise-aware (or noise-tolerant) approaches is considered as an open research area by several works [13, 8].", however, the cited sources are ~3 years old.. I wonder if there are updated works that verify this. 
+2) Practically, setting threshold values can impact the performance of ER algorithms. The paper states that a threshold value of 0.35 based on the work of the BLAST algorithm. I wonder if if more could be said about the parameter sensitivity of both tested algorithms. 
+3) With regard to the statical significance of the results, it would be good to clarify what distributions were actually compared with the t-test?
+One recommendation for future work would be the use of word or graph embeddings to compute similarity on attribute values instead of just LSH. 
+In summary, a well written tight contribution in the space of entity resolution that could do a bit better job of contextualizing in the semantic web literature. 
+Comments after rebuttal: Thanks for answering my questions. I'm not changing my evaluation as it hinges much more on the narrow nature of the contribution.
+[1]Janani Balaji, Faizan Javed, Mayank Kejriwal, Chris Min, Sam Sander, Ozgur Ozturk:
+An Ensemble Blocking Scheme for Entity Resolution of Large and Sparse Datasets. CoRR abs/1609.06265 (2016)
+[2] Zhu L, Ghasemi-Gol M, Szekely P, Galstyan A, Knoblock CA. Unsupervised entity resolution on multi-type graphs. InInternational Semantic Web Conference 2016 Oct 17 (pp. 649-667). Springer, Cham.
+[3] https://arxiv.org/pdf/1711.01283.pdf
+Minor comments:
+* "Big Web Data" - can you define or give reference to this concept? or is this what is described in [9]?
+* I couldn't get to the bitbucket code - can you just check that this is public?</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-2' about='#review-2' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='#reviewer-2'property='foaf:name'>Khalid Belhajjame</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-2' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The solution proposed by the authors does not seem to be specific to semantic web or linked data. The  examples used by the authors throughout the paper are more in line with classicla database problems.
+(NOVELTY OF THE PROPOSED SOLUTION) There are previous proposals that have examined the use of LSH for improving the results of entity resolution processes, and which have not been examined by the authors. Below is some of them:
+H. Kim and D. Lee. HARRA: fast iterative hashed record linkage for large-scale
+data collections. In EDBT, pages 525–536, 2010.
+Wang Q, Cui M, Liang H. Semantic-aware blocking for entity resolution. IEEE Transactions on Knowledge and Data Engineering. 2016 Jan 1;28(1):166-80.
+The author should justify why there work is different/better than these work, given that they are using the same technique to address the same problem, namely blocking for improving ER.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The solution proposed by the authors is clear and sound. The steps used for identifying blocks of entities are clearly identified and presented.
+(EVALUATION OF THE STATE-OF-THE-ART) See my comments on the novelty, which tackle this point.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The solution proposed by the authors has been validated using 5 datasets. Specifically, the authors compared the performance of their method in terms of effectiveness and efficiency to BLAST (an instance-based method that is schema agnostic).
+Here, the authors should have also tried in my opinion, to compare the performance of their method to a solution (or solutions) that exploits information about the schema. This can support the claims made by the authors earlier about the ineffectiveness of these methods when dealing with noisy data.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The authors provide a link of the tool on bitbucket
+https://bitbucket.org/tbrasileiro/na-blocker
+I tried to access the project, but my access was denied.
+According to the authors, the data used is available on the project link, but I could not find the link.
+(OVERALL SCORE) The authors propose a technique based on LSH to improve the blocking of noisy data prior to performing entity resolution.
+SP1. The method proposed by the authors is sound and clearly presented.
+SP2. The authors report on an empirical evaluation by comparing the effectiveness and efficiency of their approach to the BLAST method
+WP1. The use of LSH is not new, there are existing solutions in the lierature that have not been examined by the authors in the related work.
+WP2. Reading the paper, I wondereed by the paper was submitted to a semantic web conference on linked data. The authors did not use example of semantic web datasets (RDF) for example. The approach proposed seem to be more relevant to a database oriented conference
+----------
+Edits after rebuttal
+The authors answered satisfactorily my queries regarding the state of the art and clarify why their use of LSH is different from that employed in existing work.
+</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-3' about='#review-3' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 3 (by <span typeof='foaf:Person' about='#reviewer-3'property='foaf:name'>Mihael Arcan</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-3' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) The paper presents Entity Resolution, important for the ESWC community.
+(NOVELTY OF THE PROPOSED SOLUTION) Their approach shows improvements over SotA since they can deal with noisy data.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) Approach sounds correct
+(EVALUATION OF THE STATE-OF-THE-ART) Although SoaT is mentioned and compared against, it would be helpful to give more insights into the related work, since the authors often just quickly relate to other work, like
+... have been published [3, 9, 16–18, 20].
+... works [3, 9, 17, 18] ...
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) Sounds solid.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The approach is not very clearly presented, and it would take some time to reproduce the work. The approach could be explained better.
+(OVERALL SCORE) The authors focus on the challenge of Entity Resolution and propose a blocking technique, called NA-BLOCKER, which is able to handle noisy data to extract the required information. They use various resources for evaluation (Abt-Buy, Amazon-GP, DBLP-ACM/Scholar and IMDB-DBpedia) and compare their approach to the SotA BLAST technique. Based on the presented results, they demonstrate that the proposed NA-BLOCKER performs better regarding effectiveness than BLAST.
+Weak Points (WPs) 
+- approach not entirely clear
+Strong Points
+- comparison to SotA</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-4' about='#review-4' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 4 (by <span typeof='foaf:Person' about='#reviewer-4'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-4' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) NA-BLOCKER is presented as a blocking technique. Blocking is usually an initial step to perform entity resolution and entity resolution is an important research topic in the semantic web community.
+(NOVELTY OF THE PROPOSED SOLUTION) This technique is comparable to BLAST, which is a state-of-the-art meta-blocking approach. They both follow a three step pipeline: 1.Schema extraction 2.Blocking 3. Meta-Blocking (pruning). This method showed novelty in the second step, that instead of exploiting Token Blocking which is used in BLAST, it is using the LSH algorithm. This allows NA-BLOCKER to process noisy data in comparison to BLAST and gives better results in terms of Pair completeness, Pair Quality and F-Measure when the data has noise. But this enhancement was costly in terms of execution time. The approach is using the WNP algorithm in the pruning step which has produced the best pruning results [6].
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The general explanation in Section 2 gives enough information on the complete workflow of blocking. It correctly explains the effect of LSH in generation of blocks leads to noise toleration. It correctly shows how applying LSH on blocking gives a better result that token based blocking on noisy data with an example.
+(EVALUATION OF THE STATE-OF-THE-ART) I expected a more comprehensive comparison to BLAST. In the section “Related Work” the only mentioned similarity to BLAST is that both BLAST and NA-Blocker adopted LSH. But from my observation both approaches use the same pipeline, the same method of schema extraction, attribute-match induction and the same method of pruning, which is not mentioned directly in this article. The only difference mentioned is that NA-Blocker is using LSH in block generation. It is mentioned “NA-Blocker is using a novel schema-agnostic blocking”, but it is not mentioned that in BLAST the blocking step is using the traditional token based blocking.
+In the Section 2 authors have mentioned “To extract loose-schema information, the attribute-match induction technique is applied [20]” . Based on this reference number, which is referring to the BLAST paper, I could guess that “Schema Information Extraction” step of the pipeline should be similar to BLAST. No comparison is provided in the paper. I can state the same objection for the pruning phase. A comparison to token based blocking  is mentioned in the Section 4  but it is not mentioned that BLAST is using token based blocking. To me the overall pipeline of this approach and the “Schema Information Extraction” step and the “Pruning” step “look” very similar to BLAST. I can not state that confidently, because while the paper mentions similar sub-solutions that are used in BLAST, it does not directly mentioning BLAST. 
+The  “Related Work” to me is very thin and other state of the art meta-blocking techniques like TYPiMatch [4] and Limes [5]  could be compared.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) Certain terms and notations were not explained (LSH, attribute-match induction, generation of noisy data). Moreover, quite often techniques were not introduced but just named (sometimes not even referenced). For example, from Section 2, I expected the Section “Schema Information Extraction” to explain the algorithm used to perform Attribute-Match Induction. It was not only explained in this Section, it was not even mentioned. Overall examples have been helpful. Some of the given examples were not comprehensible to me, because certain aspects were not explained. Token based blocking is mentioned in section 4 and is used in an example without explaining what is Token based blocking and how it works. It does not explain that this method is not good to apply on a noise free dataset. Because for such a dataset BLAST gives a better result while a execution time that is approximately half of NA-BLOCKER .
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The implementation is not reproducible because the provided link to the source code (https://bitbucket.org/tbrasileiro/na-blocker) returns “access denied error”. The experiment procedure and results also are not available online, therefore the evaluation section is not reproducible. The paper pointed to the dataset of BLAST as the resource, but the noisy evaluation data set is different from this.  
+The experiment covered 4 of 5 datasets that are used in the BLAST dataset and covered all expected comparisons. (Execution time, Pair completeness, Pair Quality and F-Measur
+(OVERALL SCORE) Summary of the Paper:
+This technical article presents NA-BLOCKER . A method of blocking data that can be used in tasks that require the comparison of all the the entities. The use of blocking usually speeds up the comparison task by reducing the number of comparisons. Blocking is widely used in entity resolution and therefore, this paper is very central to the semantic web community.  This work tries to handle two types of noise in data: typographical errors and misspelling. The authors have compared this technique with BLAST[1] in terms of Pair Completeness, Pair Quality, F-Measure and execution time. The tolerance of noise is not considered in BLAST and this method is expected to give more significant results by increase of noise in data.
+Short description of the problem tackled in the paper, main contributions, and results:
+This paper tackles the problem of computational complexity in entity resolution. A poor man's method of entity resolution requires comparison of all entities from the datasets. To reduce the number of comparisons blocking methods have emerged. Meta-blocking is one of the state-of-the-art blocking approaches that introduces new ways to reduce the number of comparisons. The article contribution is to enhance the efficiency of meta-blocking in terms of  Pair Completeness, Pair Quality, F-Measure when using datasets with noisy content. Its efficiency is not better than BLAST when the data is not noisy and Its execution time is roughly two times more than BLAST in all the comparisons of Figure 3.  It produced a blocking with 34% less comparisons than BLAST.
+Strong Points (SPs) 
+- Noisy data toleration in entity resolution.
+- Strong evaluation section. The comparison of NA-BLOCKER to BLAST is based on the proper dataset and enough metrics. It provided a fair comparison. 
+- Novelty of the Proposed Solution. I explained it above already.
+Weak Points (WPs)
+- The manuscript is very hard to read. Sections 4 and 5 which are the most important parts of the article in explaining the approach are explaining details with no consistency. The sentences seem unrelated and the higher level image that could connect them is only mentioned in Section 2. For example attribute-match induction is mentioned in Section 2 without explaining it or refering to it in Section 3.
+- The evaluation procedure, dataset and implementation are not accessible and hence the experiments are not reproducible.
+- The execution time is a weak point of this approach that reduces the possibility to extend this approach to Big Data scenarios. 
+Questions to the Authors (QAs)
+- In the section “Noise-aware Schema-agnostic Blocking for Entity Resolution” you explained that attribute-match induction does not exploit semantics of attribute names and just uses their value. Then in the example below it you showed a place where it can fail, therefore such entities with same value but different attribute names  should be placed in different blocks. Could you please explain how you solved this? (The authors proposed a problem in chapter 2 that is not directly answered later)
+- Could you please explain how you compared the execution time? Does it include all the steps including tokenization and the pre-processing of tokens and also the LSH approach in the schema information extraction?
+- How did your computer aggregate the cardinality measure for BLAST and NA-BLOCKER? Did you mathematically compute that or empirically?
+[1] G. Simonini, S. Bergamaschi, and H. Jagadish. Blast: a loosely schema-aware meta-
+blocking approach for entity resolution. Proceedings of the VLDB Endowment,
+9(12):1173–1184, 2016.
+[2] Piotr Indyk and Rajeev Motwani. Approximate nearest neighbors: towards removing
+the curse of dimensionality. In Proceedings of the 30th ACM Symposium on the Theory
+of Computing (STOC ’1998), pages 604–613, 1998
+[3] Sariel Har-Peled, Piotr Indyk, and Rajeev Motwani. Approximate nearest neighbor:
+towards removing the curse of dimensionality. Theory of Computing, 8(1):321–350, 2012
+[4] Ma, Y., & Tran, T. (2013). TYPiMatch: type-specific unsupervised learning of keys and key values for heterogeneous web data integration. WSDM.
+[5] A. N. Ngomo and S. Auer. LIMES - A time-efficient approach for large-scale link discovery on the web of data. In IJCAI, pages 2312–2317, 2011.
+[6]  G. Papadakis, G. Koutrika, T. Palpanas, and W. Nejdl. Meta-blocking: Taking
+entity resolution to the next level. IEEE Transactions on Knowledge and Data
+Engineering, 26(8):1946–1960, 2014.
+Comments after rebuttal:
+We acknowledge the rebuttal, but did not change our score since the rebuttal and comment of other reviewers confirmed our objections about related work and clarity of writing. In the next submission, we believe the authors can include the explanations to our posed questions in the manuscript to clarify it. We specially support the suggestion to use pseudo-code of the algorithm in the paper and consider it positive that the authors provided the link to the code.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='review-5' about='#review-5' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Review 5 (by <span typeof='foaf:Person' about='#reviewer-5'>anonymous reviewer</span>)</strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-5' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>(RELEVANCE TO ESWC) Entity resolution of central importance to Linked Data.
+(NOVELTY OF THE PROPOSED SOLUTION) The approach is a combination of existing algorithms for the most part.
+(CORRECTNESS AND COMPLETENESS OF THE PROPOSED SOLUTION) The algorithm seems to work well. Minor details of the formal specification should be corrected.
+(EVALUATION OF THE STATE-OF-THE-ART) While the approach is compared to BLAST (which I commend the authors for), it totally ignores the state of the art in unsupervised link discovery, which basically achieves the same goals as the authors' approach but with a significantly better F-measure.
+(DEMONSTRATION AND DISCUSSION OF THE PROPERTIES OF THE PROPOSED APPROACH) The authors measure both F-measure and runtime.
+(REPRODUCIBILITY AND GENERALITY OF THE EXPERIMENTAL STUDY) The code is available, the datasets used are standard and easy to find.
+(OVERALL SCORE) The paper presents a blocking approach aiming to accelerate the entity resolution. The assumption stated in the abstract is that heterogeneous data makes blocking more tedious. I will assume that the authors mean "impair the accuracy of blocking techniques" as blocking approaches are commonly designed to deal with all instances of a particular datatype (string, integer, etc.). Their approach is based on Locality Sensitive Hashing (LSH) and is stated to outperform BLAST. 
+The authors state that the use of Web systems is a valuable source of data. Do they mean that the use leads to generation of valuable data? The authors then present the problem they address (entity resolution). Their assumption lies in the distributed generation of data leading a.o. to two common errors (typos and misspellings), which they address with their blocking approach under the constraints of data volume and data variety. The blocking techniques considered herein differ from single-attribute blocking approaches such as those implemented in SILK. The authors' approach blocks whole entities and hence needs to be schema-agnostic. 
+The approach presented is divided into 3 steps. The formalization of the schema information extraction seems flawed. In particular, the authors used the same variable k for the size of A_e and the number of attributes in D. This contradicts the "loose schema assumption", where |A_e| < k can hold. The authors compute the similarity of attributes in an extensional way using LSH. The signature is generated based on the LSH hashes and the WNP-based algorithm is used for pruning. Basically, the algorithm combine existing algorithms and ideas to NA-BLOCKER.
+The evaluation suggests that the NA-BLOCKER basically exchanges runtime (Figure 3) for F-measures (Figure 2). The F-measure achieved by the approach is surprisingly good on Abt-Buy. However, techniques classified as unsupervised link discovery (Nikolov et al., 2012; Zhu et al., 2016, the list is long)  basically do the same and perform significantly better w.r.t. F-measure of the (see, e.g., performance on Amazon-GoogleProducts by Zhu et al., 2016). Moreover, the noise "injection" approach followed by the authors is minimal. Hence, while the authors address a very interesting and important problem, it seems that their approach basically tackles the same problem as unsupervised link discovery under the umbrella of blocking but achieves an F-measure that is poorer than that of the state of the art, while achieving a runtime that is poorer than the state of the art in blocking. This leads to a major problem: either (1) the authors are trying to solve the runtime problem and regard their work as a component that can be of use for unsupervised link discovery or (2) they try to solve the accuracy problem of ER directly while blocking. If (1), then the state of the art seems more scalable. If (2), then unsupervised link discovery approaches perform better. In both cases, it seems to me as if the approach presented herein still needs to either be improved (case 1) or compared with the state of the art in unsupervised linking (case 2) and shown to be better. If (2), I'd strongly suggest that the authors have a look at the works on unsupervised link discovery (see the survey (Nentwig et al., 2017) to start you off), compare their approach at least with the open-source solutions available out there and resubmit the paper toa major Semantic Web conference. This addition should strengthen the case they make for their approach and shed light unto whether this technique really keeps what it promises. I'm afraid I cannot recommend this paper in its current state.
+Points
++ Interesting and relevant problem
++ Reuse of existing techniques
++ Evaluation on relevant datasets
+- Lack of innovation
+- State of the art in unsupervised link discovery not taken into account
+- Performance 
+Questions
+1) How does your approach differ from existing unsupervised link discovery techniques?
+2) How much RAM did you assign to the different approaches while running them?
+References
+Andriy Nikolov, Mathieu d’Aquin, Enrico Motta. Unsupervised Learning of Link Discovery Configuration. ESWC 2012
+Linhong Zhu, Majid Ghasemi-Gol, Pedro Szekely, Aram Galstyan and Craig A. Knoblock. Unsupervised Entity Resolution on Multi-type Graphs. ISWC 2016
+Minor 
+We proposed (abstract) => We proposed
+proposed techniques => propose techniques
+impact on the => impact the
+impact in the => impact the
+Metablocking technique => metablocking paradigm
+Style: I'd suggest that the authors try to write in a slightly less verbose way. Expressions such as "in other words" suggest a repetition of the same argument, which should not be necessary. 
+adversay => adversary
+, such that, => , such that
+++ After the rebuttal
+I agree with the authors that the blocking task and link discovery task are different. However (and here is the crux of the matter) the authors aim to support efficient entity resolution through their blocking scheme by being more accurate but also less efficient. There are obvious contradictory goals here: (1) You want to be more efficient: Then, please outperform the state of the art. (2) You want to achieve a better accuracy: Then compare with accurate methods which achieve good F-measures and show that are close to their accuracy but significantly faster. I appreciate that the authors have improved upon the accuracy of blocking algorithms. However, if the time overhead is too high, then the approach might not be worth being used because ML approaches (see papers cited above) can achieve the same F-measure in less time by running larger link specifications with the competing approach. Hence, I would strongly suggest that the authors show that their approach can indeed be used by *measuring* how well existing open-source link discovery approaches perform when combined with their approach.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint' /></div>
+<div id='metareview' about='#metareview' typeof='fabio:Review' style='margin-top: 30px;'>
+<p><strong rel='dcterms:creator'>Metareview by <span typeof='foaf:Person' about='#metareviewer' property='foaf:name'>Hala Skaf</span></strong></p>
+<div rel='frbr:realization'>
+<pre about='#comment-meta' typeof='fabio:Comment' property='c4o:hasContent' style='white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;'>The submission describes a blocking algorithm for Entity Resolution to deal with noise data. Reviewers agree that the topic is  relevant and of central importance to Semantic Web.  
+The major issues identified by the reviewers are in particular: 
+- Missing Relevant related works from Semantic Web literature. 
+- Lacking comparisons with  existing unsupervised link discovery techniques.
+-  Performance issues. 
+As a result, the submission does not fulfill the requirements for a ESCW publication in terms of maturity and quality.</pre>
+</div>
+<p><br rel='cito:reviews' resource='#preprint'/></div>
+</div>
+</div>
+</div>
+<p class="dpsp-share-text">Share on</p><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-column-auto dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1 dpsp-has-icon-background dpsp-has-button-background"><ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-content"><li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_18%2F&t=Paper+18+%28Research+track%29" class="dpsp-network-btn dpsp-facebook dpsp-first"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Facebook</span></span></a></li><li><a rel="nofollow" href="https://twitter.com/intent/tweet?text=Paper+18+%28Research+track%29&url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_18%2F" class="dpsp-network-btn dpsp-twitter"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Twitter</span></span></a></li><li><a rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_18%2F" class="dpsp-network-btn dpsp-google-plus"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">Google+</span></span></a></li><li><a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2F2018.eswc-conferences.org%2Fpaper_18%2F&title=Paper+18+%28Research+track%29&mini=true" class="dpsp-network-btn dpsp-linkedin dpsp-last"><span class="dpsp-network-label-wrapper"><span class="dpsp-network-label">LinkedIn</span></span></a></li></ul></div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/paper_18/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://2018.eswc-conferences.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1180' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3137716f57" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="63"/></p>			</form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://2018.eswc-conferences.org/paper_17/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">Paper 17 (In-Use track)</span></a></div><div class="nav-next"><a href="https://2018.eswc-conferences.org/paper_20/" rel="next"><span class="post-title">Paper 20 (Research track) <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="text-4" class="widget widget_text"><h3 class="widget-title">Sponsors and Supporters</h3>			<div class="textwidget"><p><ul class="kiwi-logo-carousel kiwi-logo-carousel-default default align-center col4"><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/STI-IBK-Logo-NEW-RED-01.png" alt="STI Innsbruck" title="STI Innsbruck"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters/"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/logo_farbe.png" alt="Metaphacts" title="Metaphacts"></div></a></li><li style="height:150px;"><a href="https://2018.eswc-conferences.org/sponsors-and-supporters"><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/04/PoolParty-Logo-2015.jpg" alt="Semantic Web Company" title="Semantic Web Company"></div></a></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/OntotextAD.jpg" alt="Ontotext AD" title="Ontotext AD" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li><li style="height:150px;" ><div class="helper" style="height:150px; width:200px;" ><img src="https://2018.eswc-conferences.org/wp-content/uploads/2018/05/Bosch_Invented_for_life.jpg" alt="Bosch Group" title="Bosch Group" style="max-width:200px; padding-left: 0px; padding-right:0px" ></div></li></ul><br />
+<a style="text-decoration: underline;" href="https://2018.eswc-conferences.org/sponsors-and-supporters/">Sponsors and Supporters</a></p>
+</div>
+</aside><aside id="do-etfw-2" class="widget widget-do-etfw">					<h3 class="widget-title">Recent Tweets</h3>		
+<a class="twitter-timeline" data-height="400" data-theme="light" data-link-color="#3b94d9" data-border-color="#f5f5f5" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/eswc_conf">Tweets by @eswc_conf</a>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-368">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Cristina Sarasua</span> on <a href="https://2018.eswc-conferences.org/paper_226/#comment-367">Paper 226 (Resources track)</a></li><li class="recentcomments"><span class="comment-author-link">Bakerally Noorani</span> on <a href="https://2018.eswc-conferences.org/paper_35/#comment-354">Paper 35 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-349">Paper 162 (Research track)</a></li><li class="recentcomments"><span class="comment-author-link">Tobias Käfer</span> on <a href="https://2018.eswc-conferences.org/paper_162/#comment-348">Paper 162 (Research track)</a></li></ul></aside><aside id="text-5" class="widget widget_text"><h3 class="widget-title">Proceedings published by</h3>			<div class="textwidget"><p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-195" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/Springer-1.jpg" alt="" width="192" height="61" /></a></p>
+<p><a href="http://www.springer.com/de/it-informatik/lncs" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-197" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/LNCS-Logo.jpg" alt="" width="192" height="71" /></a></p>
+</div>
+</aside><aside id="media_image-5" class="widget widget_media_image"><h3 class="widget-title">Brought to you by</h3><a href="https://www.sti2.org/"><img width="192" height="47" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/12/sti-logo-1.jpg" class="image wp-image-194  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a></aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+<div class="footer-widget-area">
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sow-button-2" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://registration.youvivo.com/conference/registration/register/00_EX_ESWC2018_STI)" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf2bb;" ></span>
+REGISTRATION		</span>
+</a>
+</div>
+</div></div><div id="sow-button-3" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/program/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf073;" ></span>
+PROGRAM		</span>
+</a>
+</div>
+</div></div><div id="sow-button-4" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-10e07368e248"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/important-dates/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf12a;" ></span>
+IMPORTANT DATES		</span>
+</a>
+</div>
+</div></div><div id="sow-button-5" class="widget widget_sow-button"><div class="so-widget-sow-button so-widget-sow-button-flat-d53a833a6a55"><div class="ow-button-base ow-button-align-left">
+<a href="https://2018.eswc-conferences.org/contact/" class="ow-icon-placement-left ow-button-hover" 		>
+<span>
+<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" ></span>
+Contact		</span>
+</a>
+</div>
+</div></div><div id="sparkling-social-2" class="widget sparkling-social"><h3 class="widgettitle">Follow us</h3>
+<!-- social icons -->
+<div class="social-icons sticky-sidebar-social">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-46" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>
+</div><!-- end social icons --></div>		</div><!-- .widget-area .first -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="sticky-posts-2" class="widget widget_ultimate_posts"><h3 class="widgettitle">ESWC 2018 – NEWS</h3>
+<ul>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_72/" title="Paper 72 (Research track)">
+Paper 72 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Processing incoherent open government data- A case-study about Romanian public...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_5/" title="Paper 5 (Research track)">
+Paper 5 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:37          </p>
+<p class="post-excerpt">Price Sharing for Streaming Data- A Novel Approach for Funding...</p>
+</div>
+</li>
+<li class="">
+<div class="upw-content">
+<p class="post-title">
+<a href="https://2018.eswc-conferences.org/paper_227/" title="Paper 227 (Research track)">
+Paper 227 (Research track)            </a>
+</p>
+<p class="post-date">
+14. February 2018 23:29          </p>
+<p class="post-excerpt">Dynamic Tailoring of RETE Networks in Incremental Scenarios Author(s): William...</p>
+</div>
+</li>
+</ul>
+</div>		</div><!-- .widget-area .second -->
+<div class="col-sm-4 footer-widget" role="complementary">
+<div id="text-2" class="widget widget_text"><h3 class="widgettitle">Extended Semantic Web Conference ESWC</h3>			<div class="textwidget"><p>The <a href="https://www.eswc-conferences.org/">ESWC</a> is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.</p>
+</div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><p>&nbsp;<br />
+&nbsp;</p>
+</div>
+</div><div id="media_image-9" class="widget widget_media_image"><img width="940" height="380" src="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png" class="image wp-image-26  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual.png 940w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-300x121.png 300w, https://2018.eswc-conferences.org/wp-content/uploads/2017/11/eswc-keyvisual-768x310.png 768w" sizes="(max-width: 940px) 100vw, 940px" /></div>		</div><!-- .widget-area .third -->
+</div>
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://www.facebook.com/ESWCCONF"><i class="social_icon fa"><span>Find us on Facebook</span></i></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://twitter.com/eswc_conf?ref_src=twsrc%5Etfw&#038;ref_url=https%3A%2F%2F2018.eswc-conferences.org%2F"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+</ul></nav>					<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Copyright &copy; 2010 - 2018 <a href="https://www.sti2.org">STI International</a>, All rights reserved.					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "Event",
+"name": "ESWC 2018",
+"url": "https://2018.eswc-conferences.org/",
+"image": "https://2018.eswc-conferences.org/wp-content/uploads/2017/11/ESWC-Logo2018c.png",
+"description": "The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role.",
+"startDate": "2018-06-03T10:00",
+"endDate": "2018-06-07T16:00",
+"location": {
+"@type": "Place",
+"name": "Aldemar Knossos Royal & Royal Villa
+",
+"sameAs": "www.aldemarhotels.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Unnamed Road",
+"addressLocality": "Limenas Hersonissou",
+"addressRegion": "Heraklion",
+"postalCode": "700 14",
+"addressCountry": "Greece"
+}
+},
+"offers": {
+"@type": "Offer",
+"description": "tba",
+"url": "https://2018.eswc-conferences.org/registration/",
+"price": "tba"
+}
+}
+</script>
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"vertical",speed:500,slideMargin:0,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:false,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:3000,useCSS:false});jQuery(".kiwi-logo-carousel-sponsors").bxSlider({mode:"vertical",speed:20000,slideMargin:0,infiniteLoop:true,hideControlOnEnd:true,captions:false,ticker:true,tickerHover:true,adaptiveHeight:false,responsive:true,pager:true,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:false,pause:4000,useCSS:false});});</script><!-- <link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='https://2018.eswc-conferences.org/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.9.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//2018.eswc-conferences.org/wp-content/cache/wpfc-minified/qvh6g585/a0bfa.css" media="all"/>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/2018.eswc-conferences.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/themes/sparkling/assets/js/skip-link-focus-fix.min.js?ver=20140222'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js?ver=1.0'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script async="async" type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/akismet/_inc/form.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://2018.eswc-conferences.org/wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider.js?ver=4.9.5'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.16770195960999 seconds, on 17-05-18 12:20:11 -->
