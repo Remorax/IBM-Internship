@@ -51,15 +51,15 @@ class NFM(object):
         self.verbose = args.verbose
 
     def _build_inputs(self):
-        self.pos_indices = tf.placeholder(tf.int64, shape=[None, 2], name='pos_indices')
-        self.pos_values = tf.placeholder(tf.float32, shape=[None], name='pos_values')
-        self.pos_shape = tf.placeholder(tf.int64, shape=[2], name='pos_shape')
+        self.pos_indices = tf.compat.v1.placeholder(tf.int64, shape=[None, 2], name='pos_indices')
+        self.pos_values = tf.compat.v1.placeholder(tf.float32, shape=[None], name='pos_values')
+        self.pos_shape = tf.compat.v1.placeholder(tf.int64, shape=[2], name='pos_shape')
 
-        self.neg_indices = tf.placeholder(tf.int64, shape=[None, 2], name='neg_indices')
-        self.neg_values = tf.placeholder(tf.float32, shape=[None], name='neg_values')
-        self.neg_shape = tf.placeholder(tf.int64, shape=[2], name='neg_shape')
+        self.neg_indices = tf.compat.v1.placeholder(tf.int64, shape=[None, 2], name='neg_indices')
+        self.neg_values = tf.compat.v1.placeholder(tf.float32, shape=[None], name='neg_values')
+        self.neg_shape = tf.compat.v1.placeholder(tf.int64, shape=[2], name='neg_shape')
 
-        self.mess_dropout = tf.placeholder(tf.float32, shape=[None], name='mess_dropout')
+        self.mess_dropout = tf.compat.v1.placeholder(tf.float32, shape=[None], name='mess_dropout')
 
         # Input positive features, shape=(batch_size * feature_dim)
         self.sp_pos_feats = tf.SparseTensor(self.pos_indices, self.pos_values, self.pos_shape)
@@ -68,7 +68,7 @@ class NFM(object):
 
     def _build_weights(self):
         all_weights = dict()
-        initializer = tf.contrib.layers.xavier_initializer()
+        initializer = tf.compat.v1.keras.initializers.VarianceScaling(scale=1.0, mode="fan_avg", distribution="uniform")
 
         all_weights['var_linear'] = tf.Variable(initializer([self.n_features, 1]), name='var_linear')
 
@@ -113,8 +113,8 @@ class NFM(object):
         pos_scores = self._get_bi_pooling_predictions(self.sp_pos_feats)
         neg_scores = self._get_bi_pooling_predictions(self.sp_neg_feats)
 
-        maxi = tf.log(1e-10 + tf.nn.sigmoid(pos_scores - neg_scores))
-        cf_loss = tf.negative(tf.reduce_mean(maxi))
+        maxi = tf.math.log(1e-10 + tf.nn.sigmoid(pos_scores - neg_scores))
+        cf_loss = tf.negative(tf.reduce_mean(input_tensor=maxi))
 
         self.base_loss = cf_loss
         self.reg_loss = self.regs[0] * tf.nn.l2_loss(self.weights['h'])
@@ -129,20 +129,20 @@ class NFM(object):
         self.loss = self.base_loss + self.kge_loss + self.reg_loss
 
         # Optimization process.
-        self.opt = tf.train.AdamOptimizer(learning_rate=self.lr).minimize(self.loss)
+        self.opt = tf.compat.v1.train.AdamOptimizer(learning_rate=self.lr).minimize(self.loss)
 
     def _get_bi_pooling_predictions(self, feats):
         # Linear terms: batch_size * 1
-        term0 = tf.sparse_tensor_dense_matmul(feats, self.weights['var_linear'])
+        term0 = tf.sparse.sparse_dense_matmul(feats, self.weights['var_linear'])
 
         # Interaction terms w.r.t. first sum then square: batch_size * emb_size.
         #   e.g., sum_{k from 1 to K}{(v1k+v2k)**2}
-        sum_emb = tf.sparse_tensor_dense_matmul(feats, self.weights['var_factor'])
+        sum_emb = tf.sparse.sparse_dense_matmul(feats, self.weights['var_factor'])
         term1 = tf.square(sum_emb)
 
         # Interaction terms w.r.t. first square then sum: batch_size * emb_size.
         #   e.g., sum_{k from 1 to K}{v1k**2 + v2k**2}
-        square_emb = tf.sparse_tensor_dense_matmul(tf.square(feats), tf.square(self.weights['var_factor']))
+        square_emb = tf.sparse.sparse_dense_matmul(tf.square(feats), tf.square(self.weights['var_factor']))
         term2 = square_emb
 
         # "neural factorization machine", Equation 3, the result of bi-interaction pooling: batch_size * emb_size
@@ -152,7 +152,7 @@ class NFM(object):
         z = [term3]
         for i in range(self.n_layers):
             temp = tf.nn.relu(tf.matmul(z[i], self.weights['W_%d' % i]) + self.weights['b_%d' % i])
-            temp = tf.nn.dropout(temp, 1 - self.mess_dropout[i])
+            temp = tf.nn.dropout(temp, 1 - (1 - self.mess_dropout[i]))
             z.append(temp)
 
         preds = term0 + tf.matmul(z[-1], self.weights['h'])
