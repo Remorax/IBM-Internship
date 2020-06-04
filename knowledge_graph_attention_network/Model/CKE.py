@@ -40,20 +40,20 @@ class CKE(object):
 
     def _build_inputs(self):
         # for user-item interaction modelling
-        self.u = tf.placeholder(tf.int32, shape=[None,], name='u')
-        self.pos_i = tf.placeholder(tf.int32, shape=[None,], name='pos_i')
-        self.neg_i = tf.placeholder(tf.int32, shape=[None,], name='neg_i')
+        self.u = tf.compat.v1.placeholder(tf.int32, shape=[None,], name='u')
+        self.pos_i = tf.compat.v1.placeholder(tf.int32, shape=[None,], name='pos_i')
+        self.neg_i = tf.compat.v1.placeholder(tf.int32, shape=[None,], name='neg_i')
 
         # for knowledge graph modeling (TransD)
-        self.h = tf.placeholder(tf.int32, shape=[None], name='h')
-        self.r = tf.placeholder(tf.int32, shape=[None], name='r')
-        self.pos_t = tf.placeholder(tf.int32, shape=[None], name='pos_t')
-        self.neg_t = tf.placeholder(tf.int32, shape=[None], name='neg_t')
+        self.h = tf.compat.v1.placeholder(tf.int32, shape=[None], name='h')
+        self.r = tf.compat.v1.placeholder(tf.int32, shape=[None], name='r')
+        self.pos_t = tf.compat.v1.placeholder(tf.int32, shape=[None], name='pos_t')
+        self.neg_t = tf.compat.v1.placeholder(tf.int32, shape=[None], name='neg_t')
 
 
     def _build_weights(self):
         all_weights = dict()
-        initializer = tf.contrib.layers.xavier_initializer()
+        initializer = tf.compat.v1.keras.initializers.VarianceScaling(scale=1.0, mode="fan_avg", distribution="uniform")
 
         if self.pretrain_data is None:
             all_weights['user_embed'] = tf.Variable(initializer([self.n_users, self.emb_dim]), name='user_embed')
@@ -94,19 +94,19 @@ class CKE(object):
         self.loss = self.base_loss + self.kge_loss + self.reg_loss
 
         # Optimization process.
-        self.opt = tf.train.AdamOptimizer(learning_rate=self.lr).minimize(self.loss)
+        self.opt = tf.compat.v1.train.AdamOptimizer(learning_rate=self.lr).minimize(self.loss)
 
     def _get_kg_inference(self, h, r, pos_t, neg_t):
         # head & tail entity embeddings: batch_size *1 * emb_dim
-        h_e = tf.nn.embedding_lookup(self.weights['kg_entity_embed'], h)
-        pos_t_e = tf.nn.embedding_lookup(self.weights['kg_entity_embed'], pos_t)
-        neg_t_e = tf.nn.embedding_lookup(self.weights['kg_entity_embed'], neg_t)
+        h_e = tf.nn.embedding_lookup(params=self.weights['kg_entity_embed'], ids=h)
+        pos_t_e = tf.nn.embedding_lookup(params=self.weights['kg_entity_embed'], ids=pos_t)
+        neg_t_e = tf.nn.embedding_lookup(params=self.weights['kg_entity_embed'], ids=neg_t)
 
         # relation embeddings: batch_size * kge_dim
-        r_e = tf.nn.embedding_lookup(self.weights['kg_relation_embed'], r)
+        r_e = tf.nn.embedding_lookup(params=self.weights['kg_relation_embed'], ids=r)
 
         # relation transform weights: batch_size * kge_dim * emb_dim
-        trans_M = tf.nn.embedding_lookup(self.weights['trans_W'], r)
+        trans_M = tf.nn.embedding_lookup(params=self.weights['trans_W'], ids=r)
 
         # batch_size * 1 * kge_dim -> batch_size * kge_dim
         h_e = tf.reshape(tf.matmul(h_e, trans_M), [-1, self.kge_dim])
@@ -122,25 +122,25 @@ class CKE(object):
         return h_e, r_e, pos_t_e, neg_t_e
 
     def _get_cf_inference(self, u, pos_i, neg_i):
-        u_e = tf.nn.embedding_lookup(self.weights['user_embed'], u)
-        pos_i_e = tf.nn.embedding_lookup(self.weights['item_embed'], pos_i)
-        neg_i_e = tf.nn.embedding_lookup(self.weights['item_embed'], neg_i)
+        u_e = tf.nn.embedding_lookup(params=self.weights['user_embed'], ids=u)
+        pos_i_e = tf.nn.embedding_lookup(params=self.weights['item_embed'], ids=pos_i)
+        neg_i_e = tf.nn.embedding_lookup(params=self.weights['item_embed'], ids=neg_i)
 
-        pos_i_kg_e = tf.reshape(tf.nn.embedding_lookup(self.weights['kg_entity_embed'], pos_i), [-1, self.emb_dim])
-        neg_i_kg_e = tf.reshape(tf.nn.embedding_lookup(self.weights['kg_entity_embed'], neg_i), [-1, self.emb_dim])
+        pos_i_kg_e = tf.reshape(tf.nn.embedding_lookup(params=self.weights['kg_entity_embed'], ids=pos_i), [-1, self.emb_dim])
+        neg_i_kg_e = tf.reshape(tf.nn.embedding_lookup(params=self.weights['kg_entity_embed'], ids=neg_i), [-1, self.emb_dim])
 
         return u_e, pos_i_e + pos_i_kg_e, neg_i_e + neg_i_kg_e
 
     def _get_kg_loss(self):
         def _get_kg_score(h_e, r_e, t_e):
-            kg_score = tf.reduce_sum(tf.square((h_e + r_e - t_e)), 1, keepdims=True)
+            kg_score = tf.reduce_sum(input_tensor=tf.square((h_e + r_e - t_e)), axis=1, keepdims=True)
             return kg_score
 
         pos_kg_score = _get_kg_score(self.h_e, self.r_e, self.pos_t_e)
         neg_kg_score = _get_kg_score(self.h_e, self.r_e, self.neg_t_e)
 
-        maxi = tf.log(tf.nn.sigmoid(neg_kg_score - pos_kg_score))
-        kg_loss = tf.negative(tf.reduce_mean(maxi))
+        maxi = tf.math.log(tf.nn.sigmoid(neg_kg_score - pos_kg_score))
+        kg_loss = tf.negative(tf.reduce_mean(input_tensor=maxi))
         kg_reg_loss = tf.nn.l2_loss(self.h_e) + tf.nn.l2_loss(self.r_e) + \
                       tf.nn.l2_loss(self.pos_t_e) + tf.nn.l2_loss(self.neg_t_e)
 
@@ -148,14 +148,14 @@ class CKE(object):
 
     def _get_cf_loss(self):
         def _get_cf_score(u_e, i_e):
-            cf_score = tf.reduce_sum(tf.multiply(u_e, i_e), axis=1)
+            cf_score = tf.reduce_sum(input_tensor=tf.multiply(u_e, i_e), axis=1)
             return cf_score
 
         pos_cf_score = _get_cf_score(self.u_e, self.pos_i_e)
         neg_cf_score = _get_cf_score(self.u_e, self.neg_i_e)
 
-        maxi = tf.log(1e-10 + tf.nn.sigmoid(pos_cf_score - neg_cf_score))
-        cf_loss = tf.negative(tf.reduce_mean(maxi))
+        maxi = tf.math.log(1e-10 + tf.nn.sigmoid(pos_cf_score - neg_cf_score))
+        cf_loss = tf.negative(tf.reduce_mean(input_tensor=maxi))
         cf_reg_loss = tf.nn.l2_loss(self.u_e) + tf.nn.l2_loss(self.pos_i_e) + tf.nn.l2_loss(self.neg_i_e)
 
         return cf_loss, cf_reg_loss

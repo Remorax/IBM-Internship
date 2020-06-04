@@ -19,6 +19,7 @@ from KGAT import KGAT
 import os
 import sys
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+tf.compat.v1.disable_eager_execution()
 
 def load_pretrained_data(args):
     pre_model = 'mf'
@@ -35,7 +36,7 @@ def load_pretrained_data(args):
 
 if __name__ == '__main__':
     # get argument settings.
-    tf.set_random_seed(2019)
+    tf.compat.v1.set_random_seed(2019)
     np.random.seed(2019)
     args = parse_args()
 
@@ -91,7 +92,7 @@ if __name__ == '__main__':
     elif args.model_type in ['kgat']:
         model = KGAT(data_config=config, pretrain_data=pretrain_data, args=args)
 
-    saver = tf.train.Saver()
+    saver = tf.compat.v1.train.Saver()
 
     """
     *********************************************************
@@ -108,11 +109,11 @@ if __name__ == '__main__':
                 args.weights_path, args.dataset, model.model_type, layer, str(args.lr), '-'.join([str(r) for r in eval(args.regs)]))
 
         ensureDir(weights_save_path)
-        save_saver = tf.train.Saver(max_to_keep=1)
+        save_saver = tf.compat.v1.train.Saver(max_to_keep=1)
 
-    config = tf.ConfigProto()
+    config = tf.compat.v1.ConfigProto()
     config.gpu_options.allow_growth = True
-    sess = tf.Session(config=config)
+    sess = tf.compat.v1.Session(config=config)
 
     """
     *********************************************************
@@ -130,7 +131,7 @@ if __name__ == '__main__':
 
         ckpt = tf.train.get_checkpoint_state(os.path.dirname(pretrain_path + '/checkpoint'))
         if ckpt and ckpt.model_checkpoint_path:
-            sess.run(tf.global_variables_initializer())
+            sess.run(tf.compat.v1.global_variables_initializer())
             saver.restore(sess, ckpt.model_checkpoint_path)
             print('load the pretrained model parameters from: ', pretrain_path)
 
@@ -178,11 +179,11 @@ if __name__ == '__main__':
                     exit()
 
         else:
-            sess.run(tf.global_variables_initializer())
+            sess.run(tf.compat.v1.global_variables_initializer())
             cur_best_pre_0 = 0.
             print('without pretraining.')
     else:
-        sess.run(tf.global_variables_initializer())
+        sess.run(tf.compat.v1.global_variables_initializer())
         cur_best_pre_0 = 0.
         print('without pretraining.')
 

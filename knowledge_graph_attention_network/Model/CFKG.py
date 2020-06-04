@@ -54,19 +54,19 @@ class CFKG(object):
     def _build_inputs(self):
         # placeholder definition
 
-        self.h = tf.placeholder(tf.int32, shape=[None], name='h')
-        self.r = tf.placeholder(tf.int32, shape=[None], name='r')
-        self.pos_t = tf.placeholder(tf.int32, shape=[None], name='pos_t')
-        self.neg_t = tf.placeholder(tf.int32, shape=[None], name='neg_t')
+        self.h = tf.compat.v1.placeholder(tf.int32, shape=[None], name='h')
+        self.r = tf.compat.v1.placeholder(tf.int32, shape=[None], name='r')
+        self.pos_t = tf.compat.v1.placeholder(tf.int32, shape=[None], name='pos_t')
+        self.neg_t = tf.compat.v1.placeholder(tf.int32, shape=[None], name='neg_t')
 
         # dropout: node dropout (adopted on the ego-networks); message dropout (adopted on the convolution operations).
-        self.node_dropout = tf.placeholder(tf.float32, shape=[None])
-        self.mess_dropout = tf.placeholder(tf.float32, shape=[None])
+        self.node_dropout = tf.compat.v1.placeholder(tf.float32, shape=[None])
+        self.mess_dropout = tf.compat.v1.placeholder(tf.float32, shape=[None])
 
     def _build_weights(self):
         all_weights = dict()
 
-        initializer = tf.contrib.layers.xavier_initializer(uniform = False)
+        initializer = tf.compat.v1.keras.initializers.VarianceScaling(scale=1.0, mode="fan_avg", distribution =("uniform" if False else "truncated_normal"))
 
         if self.pretrain_data is None:
             all_weights['user_embed'] = tf.Variable(initializer([self.n_users, self.emb_dim]), name='user_embed')
@@ -100,12 +100,12 @@ class CFKG(object):
         embeddings = tf.concat([self.weights['user_embed'], self.weights['entity_embed']], axis=0)
 
         # head & tail entity embeddings: batch_size *1 * emb_dim
-        h_e = tf.nn.embedding_lookup(embeddings, h)
-        pos_t_e = tf.nn.embedding_lookup(embeddings, pos_t)
-        neg_t_e = tf.nn.embedding_lookup(embeddings, neg_t)
+        h_e = tf.nn.embedding_lookup(params=embeddings, ids=h)
+        pos_t_e = tf.nn.embedding_lookup(params=embeddings, ids=pos_t)
+        neg_t_e = tf.nn.embedding_lookup(params=embeddings, ids=neg_t)
 
         # relation embeddings: batch_size * kge_dim
-        r_e = tf.nn.embedding_lookup(self.weights['relation_embed'], r)
+        r_e = tf.nn.embedding_lookup(params=self.weights['relation_embed'], ids=r)
 
         # h_e = tf.math.l2_normalize(h_e, axis=1)
         # pos_t_e = tf.math.l2_normalize(pos_t_e, axis=1)
@@ -116,17 +116,17 @@ class CFKG(object):
 
     def _build_loss(self):
         if self.L1_flag:
-            pos_kg_score = tf.reduce_sum(abs(self.h_e + self.r_e - self.pos_t_e), 1, keepdims = True)
-            neg_kg_score = tf.reduce_sum(abs(self.h_e + self.r_e - self.neg_t_e), 1, keepdims = True)
+            pos_kg_score = tf.reduce_sum(input_tensor=abs(self.h_e + self.r_e - self.pos_t_e), axis=1, keepdims = True)
+            neg_kg_score = tf.reduce_sum(input_tensor=abs(self.h_e + self.r_e - self.neg_t_e), axis=1, keepdims = True)
 
             self.batch_predictions = - pos_kg_score
         else:
-            pos_kg_score = tf.reduce_sum((self.h_e + self.r_e - self.pos_t_e) ** 2, 1, keepdims=True)
-            neg_kg_score = tf.reduce_sum((self.h_e + self.r_e - self.neg_t_e) ** 2, 1, keepdims=True)
+            pos_kg_score = tf.reduce_sum(input_tensor=(self.h_e + self.r_e - self.pos_t_e) ** 2, axis=1, keepdims=True)
+            neg_kg_score = tf.reduce_sum(input_tensor=(self.h_e + self.r_e - self.neg_t_e) ** 2, axis=1, keepdims=True)
 
             self.batch_predictions = - pos_kg_score
 
-        kg_loss = tf.reduce_mean(tf.maximum(pos_kg_score - neg_kg_score + self.margin, 0))
+        kg_loss = tf.reduce_mean(input_tensor=tf.maximum(pos_kg_score - neg_kg_score + self.margin, 0))
 
         # kg_reg_loss = tf.nn.l2_loss(self.h_e) + tf.nn.l2_loss(self.r_e) + \
         #               tf.nn.l2_loss(self.pos_t_e) + tf.nn.l2_loss(self.neg_t_e)
@@ -139,7 +139,7 @@ class CFKG(object):
         self.loss = self.kge_loss + self.reg_loss
 
         # Optimization process.
-        self.opt = tf.train.GradientDescentOptimizer(learning_rate=self.lr).minimize(self.loss)
+        self.opt = tf.compat.v1.train.GradientDescentOptimizer(learning_rate=self.lr).minimize(self.loss)
 
     def _statistics_params(self):
         # number of params
