@@ -2,12 +2,13 @@ import os
 import operator
 
 mapping_dict = {
-    "ent_prop": ["(avg, ent+prop)", ", Dot product of node with neighbours, softmax, weighted average, concat with entity, both entities and props"],
-    "sum": ["(sum)", ", Dot product of node with neighbours, softmax, weighted sum, concat with entity"],
-    "unsoftmax": ["(avg, no softmax)", ", Dot product of node with neighbours, weighted average, concat with entity"],
+    "ent_prop": ["(avg, ent+prop)", ", Dot product of node with neighbours, softmax, weighted average, both entities and props"],
+    "sum": ["(sum)", ", Dot product of node with neighbours, softmax, weighted sum"],
+    "unsoftmax": ["(avg, no softmax)", ", Dot product of node with neighbours, weighted average"],
     "context": ["(only context)", ", Dot product of node with neighbours, softmax, weighted average, context is directly output"],
-    "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized, concat with entity"],
-    "default": ["", ", Dot product of node with neighbours, softmax, weighted average, concat with entity"]
+    "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized"],
+    "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"]
+    "default": ["", ", Dot product of node with neighbours, softmax, weighted average"]
 }
 
 final = []
@@ -35,6 +36,9 @@ for file in os.listdir("."):
         elif "normalize" in file:
             key = mapping_dict["normalize"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["normalize"][1]
+        elif "v" in file:
+            key = mapping_dict["v"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["v"][1]
         else:
             key = mapping_dict["default"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["default"][1]
