@@ -8,6 +8,9 @@ mapping_dict = {
     "context": ["(only context)", ", Dot product of node with neighbours, softmax, weighted average, context is directly output"],
     "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized"],
     "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"],
+    "ae": ["(auto encoder)", ", Dot product of node with neighbours, softmax, weighted average, auto encoder"],
+    "cross": ["(cross attention)", ", Dot product of neighbours with other entity's neighbours, softmax, weighted average"],
+    "min": ["(min neighbours)", ", Dot product of node with neighbours, softmax, weighted average"],
     "default": ["", ", Dot product of node with neighbours, softmax, weighted average"]
 }
 
@@ -39,6 +42,15 @@ for file in os.listdir("."):
         elif "v" in file:
             key = mapping_dict["v"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["v"][1]
+        elif "ae" in file:
+            key = mapping_dict["ae"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["ae"][1]
+        elif "cross" in file:
+            key = mapping_dict["cross"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["cross"][1]
+        elif "min" in file:
+            key = mapping_dict["min"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["min"][1]            
         else:
             key = mapping_dict["default"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["default"][1]
