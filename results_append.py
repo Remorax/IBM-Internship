@@ -12,6 +12,7 @@ mapping_dict = {
     "cross": ["(cross attention)", ", Dot product of neighbours with other entity's neighbours, softmax, weighted average"],
     "min": ["(min neighbours)", ", Dot product of node with neighbours, softmax, weighted average"],
     "hybrid": ["(hybrid)", ", Min neighbour filter, Dot product of neighbours with other entity's neighbours, softmax, dot with trainable param"],
+    "self_cross": ["(self+cross)", ", Min neighbour filter, Dot product of neighbours with entity AND other entity's neighbours, softmax, dot with trainable param"],
     "default": ["", ", Dot product of node with neighbours, softmax, weighted average"]
 }
 
@@ -46,6 +47,9 @@ for file in os.listdir("."):
         elif "ae" in file:
             key = mapping_dict["ae"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["ae"][1]
+        elif "self_cross" in file:
+            key = mapping_dict["self_cross"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["self_cross"][1]
         elif "cross" in file:
             key = mapping_dict["cross"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["cross"][1]
