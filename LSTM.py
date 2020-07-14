@@ -3,8 +3,6 @@ import subprocess
 from xml.dom import minidom
 from collections import Counter, OrderedDict
 from operator import itemgetter
-import tensorflow as tf
-import tensorflow_hub as hub
 from scipy import spatial
 from sklearn.metrics import precision_score, accuracy_score, recall_score, f1_score
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -372,7 +370,7 @@ neighbours_lens = {ont: {key: len(neighbours_dicts[ont][key]) for key in neighbo
 neighbours_dicts = {ont: {key: neighbours_dicts[ont][key] + ["<UNK>" for i in range(max_neighbours -len(neighbours_dicts[ont][key]))]
               for key in neighbours_dicts[ont]} for ont in neighbours_dicts}
 
-write("Number of neighbours: " + sys.argv[1])
+print("Number of neighbours: " + sys.argv[1])
 
 data_items = data.items()
 np.random.shuffle(list(data_items))
@@ -476,5 +474,5 @@ for i in list(range(0, len(all_ont_pairs), 3)):
     
     res = greedy_matching()
 
-write ("Final Results: " + str(np.mean([el[1] for el in all_metrics], axis=0)))
-write ("Best threshold: " + str(all_metrics[np.argmax([el[1][2] for el in all_metrics])][0]))
+print ("Final Results: " + str(np.mean([el[1] for el in all_metrics], axis=0)))
+print ("Best threshold: " + str(all_metrics[np.argmax([el[1][2] for el in all_metrics])][0]))
