@@ -291,7 +291,7 @@ class SiameseNetwork(nn.Module):
             context = torch.mean(att_weights * neighbours, dim=1)
 #             print ("Context", context.shape)
             #context = torch.matmul(self.v, att_weights * neighbours)
-            x = torch.cat((normalize(node.reshape(-1, 512)), normalize(context.reshape(-1, 512))), dim=1)
+            x = torch.cat((node.reshape(-1, 512), context.reshape(-1, 512)), dim=1)
             x = self.output(x)
             results.append(x)
         x = self.cosine_sim_layer(results[0], results[1])
