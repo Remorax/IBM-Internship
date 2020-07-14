@@ -1,0 +1,45 @@
+Number of neighbours: 24
+Number of entities: 122893
+Filtered len:  0 Original len: 258
+Filtered len:  0 Original len: 113325
+Traceback (most recent call last):
+  File "Attention_minlimit.py", line 482, in <module>
+    inp = inputs.transpose(1,0,2)
+ValueError: axes don't match array
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc261>
+Subject: Job 2762942: <python Attention_minlimit.py 24 20> in cluster <dcc> Exited
+
+Job <python Attention_minlimit.py 24 20> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Mon Jul 13 00:57:01 2020
+Job was executed on host(s) <dccxc261>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Mon Jul 13 00:57:03 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98> was used as the working directory.
+Started at Mon Jul 13 00:57:03 2020
+Terminated at Mon Jul 13 00:57:13 2020
+Results reported at Mon Jul 13 00:57:13 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_minlimit.py 24 20
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   5.53 sec.
+    Max Memory :                                 74 MB
+    Average Memory :                             74.00 MB
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               17293.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   38 sec.
+    Turnaround time :                            12 sec.
+
+The output (if any) is above this job summary.
+
