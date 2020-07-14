@@ -7,7 +7,7 @@ mapping_dict = {
     "unsoftmax": ["(avg, no softmax)", ", Dot product of node with neighbours, weighted average"],
     "context": ["(only context)", ", Dot product of node with neighbours, softmax, weighted average, context is directly output"],
     "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized"],
-    "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"]
+    "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"],
     "default": ["", ", Dot product of node with neighbours, softmax, weighted average"]
 }
 
