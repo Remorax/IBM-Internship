@@ -290,7 +290,7 @@ class SiameseNetwork(nn.Module):
             att_weights = torch.bmm(neighbours_y_sum, neighbours_x.permute(0, 2, 1)).squeeze()
             att_weights = masked_softmax(att_weights).unsqueeze(-1)
             # context = torch.mean(att_weights * neighbours_x, dim=1)
-            context = torch.matmul(self.v, att_weights * neighbours)
+            context = torch.matmul(self.v, att_weights * neighbours_x)
 
             x = torch.cat((node_x.reshape(-1, 512), context.reshape(-1, 512)), dim=1)
             x = self.output(x)
