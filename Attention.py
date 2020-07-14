@@ -17,17 +17,10 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open("data.pkl", "rb")
-data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings  = pickle.load(f)
+data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, all_ont_pairs = pickle.load(f)
 
 ontologies_in_alignment = [l.split(".")[0].split("-") for l in os.listdir("reference-alignment/")]
 flatten = lambda l: [item for sublist in l for item in sublist]
-
-ind_test, inp_test1, inp_test2 = None, None, None
-
-def write(statement):
-    op_file = open("Logs", "a+")
-    op_file.write("\n" + str(statement) + "\n")
-    op_file.close()
 
 class Ontology():
     def __init__(self, ontology):
@@ -150,20 +143,17 @@ class Ontology():
         data_props = [self.extract_ID(el) for el in self.data_properties]
         return list(set(self.filter_null(data_props)))
 
-gt_mappings_filt, direct_inputs, direct_targets = [], [], []
+direct_inputs, direct_targets = [], []
 
 def cos_sim(a,b):
     return 1 - spatial.distance.cosine(a,b)
 
 def greedy_matching():
-    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, gt_mappings_filt, direct_inputs, direct_targets
+    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets
     all_results = OrderedDict()
-    gt_mappings_filt, direct_inputs, direct_targets = [], [], []
+    direct_inputs, direct_targets = [], []
     with torch.no_grad():
         all_pred = []
-        batch_size = min(batch_size, len(test_data_t))
-        num_batches = int(ceil(len(test_data_t)/batch_size))
-        batch_size_f = int(ceil(len(test_data_f)/num_batches))
         
         np.random.shuffle(test_data_t)
         np.random.shuffle(test_data_f)
@@ -177,8 +167,9 @@ def greedy_matching():
         inputs_pos, targets_pos = inputs_pos[indices_pos], targets_pos[indices_pos]
         inputs_neg, targets_neg = inputs_neg[indices_neg], targets_neg[indices_neg]
 
-        # gt_mappings_filt = [el for el in gt_mappings if el in test_data_t]
-        print ("len(gt_mappings_filt)", len(gt_mappings_filt), "len(gt_mappings)", len([el for el in gt_mappings if el in test_data_t]))
+        batch_size = min(batch_size, len(inputs_pos))
+        num_batches = int(ceil(len(inputs_pos)/batch_size))
+        batch_size_f = int(ceil(len(inputs_neg)/num_batches))
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
@@ -191,20 +182,13 @@ def greedy_matching():
             
             inp = inputs.transpose(1,0,2)
             
-            nonzero_elems = np.count_nonzero(inp, axis=-1) - 1
-
             inp_elems = torch.LongTensor(inputs).to(device)
-            seq_lens = torch.LongTensor(nonzero_elems.T).to(device)
             targ_elems = torch.DoubleTensor(targets)
 
-            outputs = model(inp_elems, seq_lens)
+            outputs = model(inp_elems)
             outputs = [el.item() for el in outputs]
-            #outputs /= torch.sum(outputs, dim=1).view(-1, 1)
-            #outputs = [(1-el[1].item()) for el in outputs]
-            
-
             targets = [True if el.item() else False for el in targets]
-#             print (inputs)
+
             for idx, pred_elem in enumerate(outputs):
                 ent1 = emb_indexer_inv[inp[0][idx][0]]
                 ent2 = emb_indexer_inv[inp[1][idx][0]]
@@ -219,28 +203,11 @@ def greedy_matching():
             ent1 = emb_indexer_inv[direct_input[0]]
             ent2 = emb_indexer_inv[direct_input[1]]
             sim = cos_sim(emb_vals[direct_input[0]], emb_vals[direct_input[1]])
-            all_results[(ent1, ent2)] = (sim, direct_targets[idx])    
-        #all_results = OrderedDict(sorted(all_results.items(), key=lambda x: x[0], reverse=True))
-        #filtered_results = dict()
-        
-        #entities_to_assign = set([el[0] for el in list(all_results.keys())])
-        #for pair in all_results:
-        #    if pair[0] in entities_to_assign:
-        #        filtered_results[pair] = all_results[pair]
-        #        entities_to_assign.remove(pair[0])
-                
-        #entities_to_assign = set([el[1] for el in list(all_results.keys())])
-        #for pair in all_results:
-        #    if pair[1] in entities_to_assign:
-        #        filtered_results[pair] = all_results[pair]
-        #        entities_to_assign.remove(pair[1])        
-
-        #filtered_results = OrderedDict(sorted(filtered_results.items(), key=lambda x: x[1][0], reverse=True))
+            all_results[(ent1, ent2)] = (sim, direct_targets[idx])
         
         optimum_metrics, opt_threshold = [-1000 for i in range(5)], -1000
         low_threshold = np.min([el[0] for el in all_results.values()]) - 0.02
         high_threshold = np.max([el[0] for el in all_results.values()]) + 0.02
-        #low_threshold, high_threshold = 0.9, 1.02
         threshold = low_threshold
         step = 0.001
         while threshold < high_threshold:
@@ -284,17 +251,6 @@ def greedy_matching():
             all_metrics.append((opt_threshold, optimum_metrics))
     return all_results
 
-def write(elem):
-    f = open("Logs", "a+")
-    if type(elem) == list or type(elem) == tuple:
-        string = str("\n".join([str(s) for s in elem]))
-    else:
-        string = str(elem)
-    f.write("\n"+string)
-    f.close()
-    
-inputs3, results3 = None, None
-
 def masked_softmax(inp):
     inp = inp.double()
     mask = ((inp != 0).double() - 1) * 9999  # for -inf
@@ -302,15 +258,12 @@ def masked_softmax(inp):
 
 def normalize(inp):
     return inp/torch.norm(inp, dim=-1)[:, None]
-
+context = None
 class SiameseNetwork(nn.Module):
-    def __init__(self, embedding_dim, hidden_dim, num_layers):
+    def __init__(self, embedding_dim):
         super().__init__() 
         
         self.embedding_dim = embedding_dim
-        self.hidden_dim = hidden_dim
-        self.num_layers = num_layers
-        self.num_directions = 2
         
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
@@ -318,38 +271,29 @@ class SiameseNetwork(nn.Module):
 
         self.dropout = dropout
         
-        self.lstm = nn.LSTM(self.embedding_dim, self.hidden_dim, self.num_layers, bidirectional=True, batch_first=True)
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(1024, 300)
-        self.bilinear = nn.Bilinear(self.hidden_dim, self.hidden_dim, 1)
-        n = int(sys.argv[1])
-        self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
+#         n = int(sys.argv[1])
+#         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
  
-    def forward(self, inputs, seq_lens):
+    def forward(self, inputs):
         results = []
         inputs = inputs.permute(1,0,2)
-        seq_lens = seq_lens.T
-        #print ("input len: {} seq len: {}, rev len: {}".format(inputs.shape, seq_lens.shape, rev_indices.shape))
         for i in range(2):
             x = self.name_embedding(inputs[i])
-            
+            global context
             node = x.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
             neighbours = x.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
-            
+#             print ("Node", node.shape, "Neighbour", neighbours.shape)
             att_weights = torch.bmm(neighbours, node.permute(0, 2, 1)).squeeze()
-            #print (att_weights, masked_softmax(att_weights))
+#             print ("Att weights", att_weights.shape)
             att_weights = masked_softmax(att_weights).unsqueeze(-1)
             context = torch.mean(att_weights * neighbours, dim=1)
+#             print ("Context", context.shape)
             #context = torch.matmul(self.v, att_weights * neighbours)
-
-            x = torch.cat((node.reshape(-1, 512), context.reshape(-1, 512)), dim=1)
+            x = torch.cat((normalize(node.reshape(-1, 512)), normalize(context.reshape(-1, 512))), dim=1)
             x = self.output(x)
             results.append(x)
-        #global inputs3, results3
-        #results3 = results
-        #inputs3 = inputs
-        #x = self.layer1(results[0], results[1])
-        #x = F.log_softmax(x)
         x = self.cosine_sim_layer(results[0], results[1])
         return x
 
@@ -376,7 +320,6 @@ def get_one_hop_neighbours(ont, K=1):
 
     neighbours_dict = {el: neighbours_dict[el][:1] + sorted(list(set(neighbours_dict[el][1:])))
                        for el in neighbours_dict}
-    neighbours_dict = {key: neighbours_dict[key] for key in neighbours_dict if len(neighbours_dict[key])>1}
     neighbours_dict = {el: neighbours_dict[el][:int(sys.argv[1])] for el in neighbours_dict}
     neighbours_dict = {ont + "#" + el: [ont + "#" + e for e in neighbours_dict[el]] for el in neighbours_dict}
     return neighbours_dict
@@ -389,22 +332,18 @@ def generate_data_neighbourless(elem_tuple):
     return op
 
 def generate_data(elem_tuple):
-    op = np.array([[emb_indexer[el] for el in neighbours_dicts[elem.split("#")[0]][elem]] for elem in elem_tuple])
-    return op
+    return np.array([[emb_indexer[el] for el in neighbours_dicts[elem.split("#")[0]][elem]] for elem in elem_tuple])
 
 def generate_input(elems, target):
     inputs, targets = [], []
-    global gt_mappings_filt, direct_inputs, direct_targets
+    global direct_inputs, direct_targets
     for elem in list(elems):
         try:
             inputs.append(generate_data(elem))
             targets.append(target)
-            if target==1:
-                gt_mappings_filt.append(elem)
         except:
             direct_inputs.append(generate_data_neighbourless(elem))
             direct_targets.append(target)
-    print ("Filtered len: ", len(inputs), "Original len:", len(elems))
     return np.array(inputs), np.array(targets)
 
 neighbours_dicts = {ont: get_one_hop_neighbours(ont) for ont in list(set(flatten(ontologies_in_alignment)))}
@@ -414,14 +353,13 @@ neighbours_lens = {ont: {key: len(neighbours_dicts[ont][key]) for key in neighbo
 neighbours_dicts = {ont: {key: neighbours_dicts[ont][key] + ["<UNK>" for i in range(max_neighbours -len(neighbours_dicts[ont][key]))]
               for key in neighbours_dicts[ont]} for ont in neighbours_dicts}
 
-print("Number of neighbours: " + sys.argv[1])
+print("Number of neighbours: " + str(sys.argv[1]))
 
 data_items = data.items()
 np.random.shuffle(list(data_items))
 data = OrderedDict(data_items)
 
 print ("Number of entities:", len(data))
-all_ont_pairs = list(set([tuple([el.split("#")[0] for el in l]) for l in data.keys()]))
 
 all_metrics = []
 
@@ -436,26 +374,23 @@ for i in list(range(0, len(all_ont_pairs), 3)):
     
     train_test_split = 0.9
 
-    train_data_t = [key for key in train_data if data[key]]
-    train_data_f = [key for key in train_data if not data[key]]
+    train_data_t = [key for key in train_data if train_data[key]]
+    train_data_f = [key for key in train_data if not train_data[key]]
     #train_data_f = train_data_f[:int(len(train_data_t))]
 #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
-#     np.random.shuffle(train_data_f)
+    np.random.shuffle(train_data_f)
     
     lr = 0.001
     num_epochs = 50
     weight_decay = 0.001
     batch_size = 10
     dropout = 0.3
-#    batch_size = min(batch_size, len(train_data_t))
-#    num_batches = int(ceil(len(train_data_t)/batch_size))
-#    batch_size_f = int(ceil(len(train_data_f)/num_batches))
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(512, 250, 1).to(device)
+    model = SiameseNetwork(512).to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
-    #print ("Train", len(train_data_t))
+
     for epoch in range(num_epochs):
         inputs_pos, targets_pos = generate_input(train_data_t, 1)
         inputs_neg, targets_neg = generate_input(train_data_f, 0)
@@ -467,47 +402,33 @@ for i in list(range(0, len(all_ont_pairs), 3)):
         batch_size = min(batch_size, len(inputs_pos))
         num_batches = int(ceil(len(inputs_pos)/batch_size))
         batch_size_f = int(ceil(len(inputs_neg)/num_batches))
-#        indices = np.random.permutation(len(inputs_pos) + len(inputs_neg))
-        
-#        inputs = np.array(list(inputs_pos) + list(inputs_neg))[indices]
-#        targets = np.array(list(targets_pos) + list(targets_neg))[indices]
 
-#         inputs = np.array(list(inputs_pos) + list(inputs_neg))
-#         targets = np.array(list(targets_pos) + list(targets_neg))
-#        print ("INputs pos", inputs_pos.shape, "Inputs neg", inputs_neg.shape, num_batches)
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
             
             batch_start_f = batch_idx * batch_size_f
             batch_end_f = (batch_idx+1) * batch_size_f
- #           print ("Start", batch_start, batch_start_f, "End", batch_end, batch_end_f)
             
             inputs = np.concatenate((inputs_pos[batch_start: batch_end], inputs_neg[batch_start_f: batch_end_f]))
             targets = np.concatenate((targets_pos[batch_start: batch_end], targets_neg[batch_start_f: batch_end_f]))
             
-            inp = inputs.transpose(1,0,2)
-            nonzero_elems = np.count_nonzero(inp, axis=-1) - 1
-            
             inp_elems = torch.LongTensor(inputs).to(device)
             targ_elems = torch.DoubleTensor(targets).to(device)
             optimizer.zero_grad()
-  #          print ("Inputs.shape", inp_elems.shape)
-            seq_lens = torch.LongTensor(nonzero_elems.T).to(device)
-            outputs = model(inp_elems, seq_lens)
+            outputs = model(inp_elems)
             loss = F.mse_loss(outputs, targ_elems)
             loss.backward()
-            #break
             optimizer.step()
 
             if batch_idx%10 == 0:
                 print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
-   #     sys.exit(1)
+
     model.eval()
     torch.save(model.state_dict(), "/u/vivek98/attention.pt")
     
-    test_data_t = [key for key in test_data if data[key]]
-    test_data_f = [key for key in test_data if not data[key]]
+    test_data_t = [key for key in test_data if test_data[key]]
+    test_data_f = [key for key in test_data if not test_data[key]]
     
     res = greedy_matching()
     f1 = open("test_results.pkl", "wb")

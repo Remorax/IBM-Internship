@@ -1,4 +1,14 @@
 import os
+import operator
+
+mapping_dict = {
+    "ent_prop": ["(avg, ent+prop)", ", Dot product of node with neighbours, softmax, weighted average, concat with entity, both entities and props"],
+    "sum": ["(sum)", ", Dot product of node with neighbours, softmax, weighted sum, concat with entity"],
+    "unsoftmax": ["(avg, no softmax)", ", Dot product of node with neighbours, weighted average, concat with entity"],
+    "context": ["(only context)", ", Dot product of node with neighbours, softmax, weighted average, context is directly output"],
+    "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized, concat with entity"],
+    "default": ["", ", Dot product of node with neighbours, softmax, weighted average, concat with entity"]
+}
 
 final = []
 for file in os.listdir("."):
@@ -11,28 +21,28 @@ for file in os.listdir("."):
             print (file)
             continue
         if "ent_prop" in file:
-            key = "(avg, ent+prop)"
-            desc = "Optimum threshold " + threshold + ", Dot product of node with neighbours, softmax, weighted average, concat with entity, both entities and props"
+            key = mapping_dict["ent_prop"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["ent_prop"][1]
         elif "sum" in file:
-            key = "(sum)"
-            desc = "Optimum threshold " + threshold + ", Dot product of node with neighbours, softmax, weighted sum, concat with entity"
+            key = mapping_dict["sum"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["ent_prop"][1]
         elif "unsoftmax" in file:
-            key = "(avg, no softmax)"
-            desc = "Optimum threshold " + threshold + ", Dot product of node with neighbours, weighted average, concat with entity"
+            key = mapping_dict["unsoftmax"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["unsoftmax"][1]
         elif "context" in file:
-            key = "(only context)"
-            desc = "Optimum threshold " + threshold + ", Dot product of node with neighbours, softmax, weighted average, context is directly output"
+            key = mapping_dict["context"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["context"][1]
         elif "normalize" in file:
-            key = "(avg, normalized)"
-            desc = "Optimum threshold " + threshold + ", Dot product of node with neighbours, softmax, weighted average, normalized, concat with entity"
+            key = mapping_dict["normalize"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["normalize"][1]
         else:
-            key = ""
-            desc = "Optimum threshold " + threshold + ", Dot product of node with neighbours, softmax, weighted average, concat with entity"
+            key = mapping_dict["default"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["default"][1]
         intent += key
         results = [l for l in open(file).read().split("\n") if "Final Results:" in l][0]  
         results = results.split("[")[1].split("]")[0].strip().split()
         line = "\t".join([intent] + results + [desc])
-        final.append((line, key + " " + str(neighbours)))
-final = sorted(final, key=lambda x:x[1])
+        final.append((line, key, int(neighbours)))
+final = sorted(final, key=operator.itemgetter(1, 2))
 final = [l[0] for l in final]
 open("results_append.tsv", "w+").write("\n".join(final))
