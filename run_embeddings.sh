@@ -7,6 +7,5 @@ n=(1024 1024 1024 1024 1024 1024 800 800 600 600 600 600 600 600 300 300 300 300
 
 for i in $(seq 0 $((${#c[*]}-1)))
 do
-    echo ${c[i]} ${n[i]}
+    jbsub -q x86_24h -mem 16g -require k80 -cores 1x1+1 -out "Output_att_emb"${c[i]}"_"${n[i]}".txt" python Attention_optimum.py ${c[i]} ${n[i]}
 done
-

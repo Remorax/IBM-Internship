@@ -21,6 +21,7 @@ final = []
 for file in os.listdir("."):
     if file.startswith("Output_att"):
         neighbours = [''.join(filter(str.isdigit, num)) for num in file.split("_")]
+        neighbours = [el for el in neighbours if el]
         intent = "USE + dot Attn + " + ",".join(neighbours) + " neighbours + Cos Sim "
         try:
             threshold = str(round(float([l.split()[-1] for l in open(file).read().split("\n") if "Best threshold:" in l][0]), 3))
@@ -70,7 +71,7 @@ for file in os.listdir("."):
         results = [l for l in open(file).read().split("\n") if "Final Results:" in l][0]  
         results = results.split("[")[1].split("]")[0].strip().split()
         line = "\t".join([intent] + results + [desc])
-        final.append((line, key, tuple(neighbours)))
+        final.append((line, key, tuple([int(el) for el in neighbours])))
 final = sorted(final, key=operator.itemgetter(1, 2))
 final = [l[0] for l in final]
 open("results_append.tsv", "w+").write("\n".join(final))
