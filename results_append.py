@@ -11,7 +11,8 @@ mapping_dict = {
     "ae": ["(auto encoder)", ", Dot product of node with neighbours, softmax, weighted average, auto encoder"],
     "cross": ["(cross attention)", ", Dot product of neighbours with other entity's neighbours, softmax, weighted average"],
     "min": ["(min neighbours)", ", Dot product of node with neighbours, softmax, weighted average"],
-    "hybrid": ["(hybrid)", ", Min neighbour filter, Dot product of neighbours with other entity's neighbours, softmax, dot with trainable param"],
+    "hybrid_self": ["(self + v + min)", ", Min neighbour filter, Dot product of node with neighbours, softmax, dot with trainable param"],
+    "hybrid": ["(cross + v + min)", ", Min neighbour filter, Dot product of neighbours with other entity's neighbours, softmax, dot with trainable param"],
     "self_cross": ["(self+cross)", ", Min neighbour filter, Dot product of neighbours with entity AND other entity's neighbours, softmax, dot with trainable param"],
     "default": ["", ", Dot product of node with neighbours, softmax, weighted average"]
 }
@@ -56,6 +57,9 @@ for file in os.listdir("."):
         elif "min" in file:
             key = mapping_dict["min"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["min"][1]            
+        elif "hybrid_self" in file:
+            key = mapping_dict["hybrid_self"][0]
+            desc = "Optimum threshold " + threshold + mapping_dict["hybrid_self"][1]            
         elif "hybrid" in file:
             key = mapping_dict["hybrid"][0]
             desc = "Optimum threshold " + threshold + mapping_dict["hybrid"][1]            
