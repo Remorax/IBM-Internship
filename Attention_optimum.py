@@ -16,12 +16,13 @@ import torch.nn.functional as F
 from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-f = open("data.pkl", "rb")
+f = open(sys.argv[1], "rb")
 data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, all_ont_pairs = pickle.load(f)
 
 ontologies_in_alignment = [l.split(".")[0].split("-") for l in os.listdir("reference-alignment/")]
 flatten = lambda l: [item for sublist in l for item in sublist]
 
+print ("Args: ", sys.argv[1:])
 class Ontology():
     def __init__(self, ontology):
         self.ontology = ontology
@@ -198,7 +199,7 @@ def greedy_matching():
         
         direct_targets = [True if el else False for el in direct_targets]
         
-        print ("Len (direct inputs): ", len(direct_inputs))
+        # print ("Len (direct inputs): ", len(direct_inputs))
         for idx, direct_input in enumerate(direct_inputs):
             ent1 = emb_indexer_inv[direct_input[0]]
             ent2 = emb_indexer_inv[direct_input[1]]
@@ -229,12 +230,12 @@ def greedy_matching():
                 f2score = 5 * precision * recall / (4 * precision + recall)
                 f0_5score = 1.25 * precision * recall / (0.25 * precision + recall)
             except Exception as e:
-                print (e)
+                # print (e)
                 exception = True
                 step = 0.001
                 threshold += step
                 continue
-            print ("Threshold: ", threshold, precision, recall, f1score, f2score, f0_5score)
+            # print ("Threshold: ", threshold, precision, recall, f1score, f2score, f0_5score)
 
             if f1score > optimum_metrics[2]:
                 optimum_metrics = [precision, recall, f1score, f2score, f0_5score]
@@ -244,9 +245,9 @@ def greedy_matching():
                 step = 0.0001
             else:
                 step = 0.001
-            print (step, threshold, exception)
+            # print (step, threshold, exception)
             threshold += step 
-        print ("Precision: {} Recall: {} F1-Score: {} F2-Score: {} F0.5-Score: {}".format(*optimum_metrics))
+        # print ("Precision: {} Recall: {} F1-Score: {} F2-Score: {} F0.5-Score: {}".format(*optimum_metrics))
         if optimum_metrics[2] != -1000:
             all_metrics.append((opt_threshold, optimum_metrics))
     return all_results
@@ -260,10 +261,10 @@ def normalize(inp):
     return inp/torch.norm(inp, dim=-1)[:, None]
 context = None
 class SiameseNetwork(nn.Module):
-    def __init__(self, embedding_dim):
+    def __init__(self):
         super().__init__() 
         
-        self.embedding_dim = embedding_dim
+        self.embedding_dim = np.array(emb_vals).shape[1]
         
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
@@ -272,7 +273,7 @@ class SiameseNetwork(nn.Module):
         self.dropout = dropout
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
-        self.output = nn.Linear(1024, 300)
+        self.output = nn.Linear(self.embedding_dim * 2, int(sys.argv[2]))
         n = int(sys.argv[1])
         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
  
@@ -288,7 +289,7 @@ class SiameseNetwork(nn.Module):
             att_weights = masked_softmax(att_weights).unsqueeze(-1)
             context = torch.matmul(self.v, att_weights * neighbours)
 
-            x = torch.cat((node.reshape(-1, 512), context.reshape(-1, 512)), dim=1)
+            x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim)), dim=1)
             x = self.output(x)
             results.append(x)
         x = self.cosine_sim_layer(results[0], results[1])
@@ -317,7 +318,7 @@ def get_one_hop_neighbours(ont, K=1):
 
     neighbours_dict = {el: neighbours_dict[el][:1] + sorted(list(set(neighbours_dict[el][1:])))
                        for el in neighbours_dict}
-    neighbours_dict = {el: neighbours_dict[el][:int(sys.argv[1])] for el in neighbours_dict if len( neighbours_dict[el]) > int(sys.argv[2])}
+    neighbours_dict = {el: neighbours_dict[el][:23] for el in neighbours_dict if len( neighbours_dict[el]) > 2}
     neighbours_dict = {ont + "#" + el: [ont + "#" + e for e in neighbours_dict[el]] for el in neighbours_dict}
     return neighbours_dict
 
@@ -350,13 +351,13 @@ neighbours_lens = {ont: {key: len(neighbours_dicts[ont][key]) for key in neighbo
 neighbours_dicts = {ont: {key: neighbours_dicts[ont][key] + ["<UNK>" for i in range(max_neighbours -len(neighbours_dicts[ont][key]))]
               for key in neighbours_dicts[ont]} for ont in neighbours_dicts}
 
-print("Number of neighbours: " + str(sys.argv[1]))
+# print("Number of neighbours: " + str(sys.argv[1]))
 
 data_items = data.items()
 np.random.shuffle(list(data_items))
 data = OrderedDict(data_items)
 
-print ("Number of entities:", len(data))
+# print ("Number of entities:", len(data))
 
 all_metrics = []
 
@@ -384,7 +385,7 @@ for i in list(range(0, len(all_ont_pairs), 3)):
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(512).to(device)
+    model = SiameseNetwork().to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -418,8 +419,8 @@ for i in list(range(0, len(all_ont_pairs), 3)):
             loss.backward()
             optimizer.step()
 
-            if batch_idx%10 == 0:
-                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            # if batch_idx%10 == 0:
+            #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
     torch.save(model.state_dict(), "/u/vivek98/attention.pt")
