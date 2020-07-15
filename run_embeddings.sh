@@ -1,4 +1,4 @@
-c=('data_xlnet.pkl' 'data_xlnet.pkl' 'data_xlnet.pkl' 'data_xlnet.pkl' 'data_xlnet.pkl')
+c=('data_t5_large.pkl' 'data_t5_large.pkl' 'data_t5_large.pkl' 'data_t5_large.pkl' 'data_t5_large.pkl')
 n=(1600 1024 800 512 300)
 
 for i in $(seq 0 $((${#c[*]}-1)))

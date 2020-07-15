@@ -272,9 +272,10 @@ class SiameseNetwork(nn.Module):
         self.dropout = dropout
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
-        self.output = nn.Linear(1024, 300)
-        n = int(sys.argv[1])
-        self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
+        self.output = nn.Linear(self.embedding_dim * 2, 300)
+        self.n = int(sys.argv[1])-1
+        self.v = nn.Parameter(torch.DoubleTensor([1/(self.n) for i in range(self.n)]))
+        self.attn = nn.Linear(self.embedding_dim * (self.n), self.embedding_dim)
  
     def forward(self, inputs):
         results = []
@@ -284,6 +285,7 @@ class SiameseNetwork(nn.Module):
             node = x.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
             neighbours = x.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
             
+            # att_weights = torch.bmm(neighbours, node.permute(0, 2, 1)).squeeze()
             att_weights = torch.bmm(neighbours, node.permute(0, 2, 1)).squeeze()
             att_weights = masked_softmax(att_weights).unsqueeze(-1)
             context = torch.matmul(self.v, att_weights * neighbours)

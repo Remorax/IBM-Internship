@@ -260,10 +260,10 @@ def normalize(inp):
     return inp/torch.norm(inp, dim=-1)[:, None]
 context = None
 class SiameseNetwork(nn.Module):
-    def __init__(self, embedding_dim):
+    def __init__(self):
         super().__init__() 
         
-        self.embedding_dim = embedding_dim
+        self.embedding_dim = np.array(emb_vals).shape[1]
         
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
@@ -291,7 +291,7 @@ class SiameseNetwork(nn.Module):
             context = torch.sum(att_weights * neighbours, dim=1)
 #             print ("Context", context.shape)
             #context = torch.matmul(self.v, att_weights * neighbours)
-            x = torch.cat((node.reshape(-1, 512), context.reshape(-1, 512)), dim=1)
+            x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim)), dim=1)
             x = self.output(x)
             results.append(x)
         x = self.cosine_sim_layer(results[0], results[1])
@@ -387,7 +387,7 @@ for i in list(range(0, len(all_ont_pairs), 3)):
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(512).to(device)
+    model = SiameseNetwork().to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
