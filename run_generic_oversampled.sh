@@ -1,6 +1,6 @@
 #!/bin/bash
 
-max_neighbours=(8 10 12 18 21 22 23 24)
+max_neighbours=(8 10 12 18 21 22 23)
 min_neighbours=(2 3)
 
 for max_limit in "${max_neighbours[@]}";

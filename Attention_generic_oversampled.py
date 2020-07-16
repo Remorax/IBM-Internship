@@ -18,7 +18,7 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open("../data_generic.pkl", "rb")
 data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, neighbours_dicts, ontologies_in_alignment = pickle.load(f)
-
+ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 flatten = lambda l: [item for sublist in l for item in sublist]
 
 direct_inputs, direct_targets = [], []
@@ -214,6 +214,7 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
     train_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) not in test_onto}
     test_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
+    print ("Training size:", len(train_data), "Testing size:", len(test_data))
     torch.set_default_dtype(torch.float64)
     
     train_test_split = 0.9
@@ -240,24 +241,23 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
     for epoch in range(num_epochs):
         inputs_pos, targets_pos = generate_input(train_data_t, 1)
         inputs_neg, targets_neg = generate_input(train_data_f, 0)
-        indices_pos = np.random.permutation(len(inputs_pos))
-        indices_neg = np.random.permutation(len(inputs_neg))
+        inputs_all = inputs_pos + inputs_neg
+        targets_all = targets_pos + targets_neg
+        
+        indices_all = np.random.permutation(len(inputs_all))
+        inputs_all = np.array(inputs_all)[indices_all]
+        targets_all = np.array(targets_all)[indices_all]
 
-        inputs_pos, targets_pos = inputs_pos[indices_pos], targets_pos[indices_pos]
-        inputs_neg, targets_neg = inputs_neg[indices_neg], targets_neg[indices_neg]
-        batch_size = min(batch_size, len(inputs_pos))
-        num_batches = int(ceil(len(inputs_pos)/batch_size))
-        batch_size_f = int(ceil(len(inputs_neg)/num_batches))
+        batch_size = min(batch_size, len(inputs_all))
+        num_batches = int(ceil(len(inputs_all)/batch_size))
 
+        print (batch_size, num_batches, batch_size_f)
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
             
-            batch_start_f = batch_idx * batch_size_f
-            batch_end_f = (batch_idx+1) * batch_size_f
-            
-            inputs = np.concatenate((inputs_pos[batch_start: batch_end], inputs_neg[batch_start_f: batch_end_f]))
-            targets = np.concatenate((targets_pos[batch_start: batch_end], targets_neg[batch_start_f: batch_end_f]))
+            inputs = inputs_all[batch_start: batch_end]
+            targets = targets_all[batch_start: batch_end]
             
             inp_elems = torch.LongTensor(inputs).to(device)
             targ_elems = torch.DoubleTensor(targets).to(device)
