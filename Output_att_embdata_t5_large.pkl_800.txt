@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "Attention_optimum.py", line 6, in <module>
+    from scipy import spatial
+ImportError: No module named scipy
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc268>
+Subject: Job 3105471: <python Attention_optimum.py data_t5_large.pkl 800> in cluster <dcc> Exited
+
+Job <python Attention_optimum.py data_t5_large.pkl 800> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Thu Jul 16 04:07:31 2020
+Job was executed on host(s) <dccxc268>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Thu Jul 16 04:07:33 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Thu Jul 16 04:07:33 2020
+Terminated at Thu Jul 16 04:07:34 2020
+Results reported at Thu Jul 16 04:07:34 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_optimum.py data_t5_large.pkl 800
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.19 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   18 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) is above this job summary.
+

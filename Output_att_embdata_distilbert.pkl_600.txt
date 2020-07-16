@@ -1,0 +1,40 @@
+Args:  ['data_distilbert.pkl', '600']
+Final Results: [0.80166609 0.50679451 0.61881624 0.54610608 0.71584023]
+Best threshold: 0.9450913178234513
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc268>
+Subject: Job 3044096: <python Attention_optimum.py data_distilbert.pkl 600> in cluster <dcc> Done
+
+Job <python Attention_optimum.py data_distilbert.pkl 600> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Wed Jul 15 12:31:42 2020
+Job was executed on host(s) <dccxc268>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Wed Jul 15 12:31:43 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Wed Jul 15 12:31:43 2020
+Terminated at Wed Jul 15 13:06:45 2020
+Results reported at Wed Jul 15 13:06:45 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_optimum.py data_distilbert.pkl 600
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2096.09 sec.
+    Max Memory :                                 1944 MB
+    Average Memory :                             1512.64 MB
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               15423.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   2118 sec.
+    Turnaround time :                            2103 sec.
+
+The output (if any) is above this job summary.
+

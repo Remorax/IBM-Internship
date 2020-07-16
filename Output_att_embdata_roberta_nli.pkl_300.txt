@@ -1,0 +1,40 @@
+Args:  ['data_roberta_nli.pkl', '300']
+Final Results: [0.8125496  0.49922388 0.61561084 0.53973423 0.71895603]
+Best threshold: 0.9532514643558883
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc214>
+Subject: Job 3044103: <python Attention_optimum.py data_roberta_nli.pkl 300> in cluster <dcc> Done
+
+Job <python Attention_optimum.py data_roberta_nli.pkl 300> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Wed Jul 15 12:31:42 2020
+Job was executed on host(s) <dccxc214>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Wed Jul 15 12:31:44 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Wed Jul 15 12:31:44 2020
+Terminated at Wed Jul 15 13:41:24 2020
+Results reported at Wed Jul 15 13:41:24 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_optimum.py data_roberta_nli.pkl 300
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4175.99 sec.
+    Max Memory :                                 1852 MB
+    Average Memory :                             1507.65 MB
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               15515.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   4201 sec.
+    Turnaround time :                            4182 sec.
+
+The output (if any) is above this job summary.
+
