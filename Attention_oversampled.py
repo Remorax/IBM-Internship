@@ -373,7 +373,8 @@ for i in list(range(0, len(all_ont_pairs), 3)):
 
     train_data_t = [key for key in train_data if train_data[key]]
     train_data_f = [key for key in train_data if not train_data[key]]
-    train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)))[:len(train_data_f)]
+    train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
+    train_data_t = train_data_t[:len(train_data_f)].tolist()
     #train_data_f = train_data_f[:int(len(train_data_t))]
 #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
     np.random.shuffle(train_data_f)
