@@ -1,0 +1,40 @@
+Args:  ['data_elmov2.pkl', '1024']
+Final Results: [0.00987029 0.26313475 0.01643618 0.02944163 0.01171415]
+Best threshold: 0.7788790460957499
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc227>
+Subject: Job 3106779: <python Attention_optimum.py data_elmov2.pkl 1024> in cluster <dcc> Done
+
+Job <python Attention_optimum.py data_elmov2.pkl 1024> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Thu Jul 16 06:27:32 2020
+Job was executed on host(s) <dccxc227>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Thu Jul 16 06:27:35 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Thu Jul 16 06:27:35 2020
+Terminated at Thu Jul 16 07:38:09 2020
+Results reported at Thu Jul 16 07:38:09 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_optimum.py data_elmov2.pkl 1024
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4233.45 sec.
+    Max Memory :                                 1903 MB
+    Average Memory :                             1522.63 MB
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               15464.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   4257 sec.
+    Turnaround time :                            4237 sec.
+
+The output (if any) is above this job summary.
+

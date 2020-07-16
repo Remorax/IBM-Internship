@@ -45,7 +45,7 @@ def greedy_matching():
         inputs_pos, targets_pos = inputs_pos[indices_pos], targets_pos[indices_pos]
         inputs_neg, targets_neg = inputs_neg[indices_neg], targets_neg[indices_neg]
 
-        batch_size = min(batch_size, len(inputs_pos))
+        batch_size = min(10, len(inputs_pos))
         num_batches = int(ceil(len(inputs_pos)/batch_size))
         batch_size_f = int(ceil(len(inputs_neg)/num_batches))
         for batch_idx in range(num_batches):
@@ -221,7 +221,7 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
     train_data_f = [key for key in train_data if not train_data[key]]
     # train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
     # train_data_t = train_data_t[:len(train_data_f)].tolist()
-    #train_data_f = train_data_f[:int(len(train_data_t))]
+    train_data_f = train_data_f[:int(len(train_data_t))]
 #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
     np.random.shuffle(train_data_f)
     
@@ -248,6 +248,7 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
         num_batches = int(ceil(len(inputs_pos)/batch_size))
         batch_size_f = int(ceil(len(inputs_neg)/num_batches))
 
+        print (batch_size, num_batches, batch_size_f)
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
