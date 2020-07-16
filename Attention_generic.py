@@ -16,7 +16,7 @@ import torch.nn.functional as F
 from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-f = open("data_generic.pkl", "rb")
+f = open("../data_generic.pkl", "rb")
 data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, neighbours_dicts, ontologies_in_alignment = pickle.load(f)
 
 flatten = lambda l: [item for sublist in l for item in sublist]
@@ -192,6 +192,11 @@ def generate_input(elems, target):
     return np.array(inputs), np.array(targets)
 
 print("Number of neighbours: " + str(sys.argv[1]))
+
+def count_non_unk(elem):
+    return len([l for l in elem if l!="<UNK>"])
+neighbours_dicts = {ont: {el: neighbours_dicts[ont][el][:int(sys.argv[1])] for el in neighbours_dicts[ont]
+       if count_non_unk(neighbours_dicts[ont][el]) > int(sys.argv[2])} for ont in neighbours_dicts}
 
 data_items = data.items()
 np.random.shuffle(list(data_items))
