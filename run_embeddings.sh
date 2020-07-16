@@ -1,4 +1,4 @@
-c=('data_t5_large.pkl' 'data_t5_large.pkl' 'data_t5_large.pkl' 'data_t5_large.pkl' 'data_t5_large.pkl')
+c=('data_elmo.pkl' 'data_elmo.pkl' 'data_elmo.pkl' 'data_elmo.pkl' 'data_elmo.pkl')
 n=(1600 1024 800 512 300)
 
 for i in $(seq 0 $((${#c[*]}-1)))
