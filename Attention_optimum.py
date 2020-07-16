@@ -274,7 +274,7 @@ class SiameseNetwork(nn.Module):
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(self.embedding_dim * 2, int(sys.argv[2]))
-        n = int(sys.argv[1])
+        n = 23
         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
  
     def forward(self, inputs):

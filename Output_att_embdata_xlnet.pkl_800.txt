@@ -1,0 +1,40 @@
+Args:  ['data_xlnet.pkl', '800']
+Final Results: [0.81515531 0.39880675 0.53421135 0.44367405 0.67262187]
+Best threshold: 0.9942969317442906
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc270>
+Subject: Job 3051925: <python Attention_optimum.py data_xlnet.pkl 800> in cluster <dcc> Done
+
+Job <python Attention_optimum.py data_xlnet.pkl 800> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Wed Jul 15 15:05:22 2020
+Job was executed on host(s) <dccxc270>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Wed Jul 15 15:05:24 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Wed Jul 15 15:05:24 2020
+Terminated at Wed Jul 15 16:02:58 2020
+Results reported at Wed Jul 15 16:02:58 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_optimum.py data_xlnet.pkl 800
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3436.64 sec.
+    Max Memory :                                 1906 MB
+    Average Memory :                             1517.85 MB
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               15461.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   3480 sec.
+    Turnaround time :                            3456 sec.
+
+The output (if any) is above this job summary.
+

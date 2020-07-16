@@ -1,0 +1,40 @@
+Args:  ['data_distilbert_nli.pkl', '800']
+Final Results: [0.80863604 0.50387906 0.61874974 0.54405268 0.71917017]
+Best threshold: 0.973290226597218
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc249>
+Subject: Job 3044091: <python Attention_optimum.py data_distilbert_nli.pkl 800> in cluster <dcc> Done
+
+Job <python Attention_optimum.py data_distilbert_nli.pkl 800> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Wed Jul 15 12:31:41 2020
+Job was executed on host(s) <dccxc249>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Wed Jul 15 12:31:42 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Wed Jul 15 12:31:42 2020
+Terminated at Wed Jul 15 13:24:26 2020
+Results reported at Wed Jul 15 13:24:26 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_optimum.py data_distilbert_nli.pkl 800
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3159.95 sec.
+    Max Memory :                                 1845 MB
+    Average Memory :                             1503.09 MB
+    Total Requested Memory :                     17367.00 MB
+    Delta Memory :                               15522.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   3180 sec.
+    Turnaround time :                            3165 sec.
+
+The output (if any) is above this job summary.
+

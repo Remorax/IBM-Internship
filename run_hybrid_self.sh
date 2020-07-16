@@ -7,6 +7,6 @@ for max_limit in "${max_neighbours[@]}";
 do
 	for min_limit in "${min_neighbours[@]}";
 	do
-	        jbsub -q x86_24h -mem 16g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_hybrid_self.txt" python Attention_hybrid_self.py $max_limit $min_limit
+	        jbsub -q x86_24h -mem 16g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_baseline.txt" python Attention_hybrid_self.py $max_limit $min_limit
 	done
 done
