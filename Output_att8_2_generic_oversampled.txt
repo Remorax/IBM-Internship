@@ -1,0 +1,38 @@
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc243>
+Subject: Job 3128239: <python Attention_generic_oversampled.py 8 2> in cluster <dcc> Exited
+
+Job <python Attention_generic_oversampled.py 8 2> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Thu Jul 16 17:25:19 2020
+Job was executed on host(s) <dccxc243>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Thu Jul 16 17:25:44 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Thu Jul 16 17:25:44 2020
+Terminated at Fri Jul 17 02:30:38 2020
+Results reported at Fri Jul 17 02:30:38 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_generic_oversampled.py 8 2
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   32673.96 sec.
+    Max Memory :                                 37068 MB
+    Average Memory :                             24186.31 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               6349.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   32724 sec.
+    Turnaround time :                            32719 sec.
+
+The output (if any) is above this job summary.
+

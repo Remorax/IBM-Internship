@@ -241,8 +241,8 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
     for epoch in range(num_epochs):
         inputs_pos, targets_pos = generate_input(train_data_t, 1)
         inputs_neg, targets_neg = generate_input(train_data_f, 0)
-        inputs_all = inputs_pos + inputs_neg
-        targets_all = targets_pos + targets_neg
+        inputs_all = list(inputs_pos) + list(inputs_neg)
+        targets_all = list(targets_pos) + list(targets_neg)
         
         indices_all = np.random.permutation(len(inputs_all))
         inputs_all = np.array(inputs_all)[indices_all]
@@ -251,7 +251,6 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
 
-        print (batch_size, num_batches, batch_size_f)
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
@@ -267,7 +266,7 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
             loss.backward()
             optimizer.step()
 
-            if batch_idx%10 == 0:
+            if batch_idx%1000 == 0:
                 print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
