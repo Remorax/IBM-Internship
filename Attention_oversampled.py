@@ -426,9 +426,10 @@ for i in list(range(0, len(all_ont_pairs), 3)):
             loss.backward()
             optimizer.step()
 
-            if batch_idx%10 == 0:
-                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            #if batch_idx%10 == 0:
+            #    print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
+    print ("v is", self.v)
     model.eval()
     torch.save(model.state_dict(), "/u/vivek98/attention.pt")
     
