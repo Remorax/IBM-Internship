@@ -147,7 +147,7 @@ direct_inputs, direct_targets = [], []
 
 def cos_sim(a,b):
     return 1 - spatial.distance.cosine(a,b)
-
+all_fn, all_fp = [], []
 def greedy_matching():
     global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets
     all_results = OrderedDict()
@@ -210,14 +210,15 @@ def greedy_matching():
         high_threshold = np.max([el[0] for el in all_results.values()]) + 0.02
         threshold = low_threshold
         step = 0.001
+        opt_fn, opt_fp = [], []
         while threshold < high_threshold:
             res = []
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            fn_list = [key for key in gt_mappings if key not in set(res) and not is_valid(test_onto, key)]
-            fp_list = [elem for elem in res if not all_results[elem][1]]
-            tp_list = [elem for elem in res if all_results[elem][1]]
+            fn_list = [(key, all_results[key][0]) for key in gt_mappings if key not in set(res) and not is_valid(test_onto, key)]
+            fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
+            tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
             tp, fn, fp = len(tp_list), len(fn_list), len(fp_list)
             exception = False
@@ -239,6 +240,8 @@ def greedy_matching():
             if f1score > optimum_metrics[2]:
                 optimum_metrics = [precision, recall, f1score, f2score, f0_5score]
                 opt_threshold = threshold
+                opt_fn = fn_list
+                opt_fp = fp_list
             
             if threshold > 0.98 and not exception:
                 step = 0.0001
@@ -247,6 +250,8 @@ def greedy_matching():
             print (step, threshold, exception)
             threshold += step 
         print ("Precision: {} Recall: {} F1-Score: {} F2-Score: {} F0.5-Score: {}".format(*optimum_metrics))
+        all_fn.extend(opt_fn)
+        all_fp.extend(opt_fp)
         if optimum_metrics[2] != -1000:
             all_metrics.append((opt_threshold, optimum_metrics))
     return all_results
@@ -431,7 +436,7 @@ for i in list(range(0, len(all_ont_pairs), 3)):
     test_data_f = [key for key in test_data if not test_data[key]]
     
     res = greedy_matching()
-    f1 = open("test_results.pkl", "wb")
-    pickle.dump(res, f1)
+f1 = open("test_results.pkl", "wb")
+pickle.dump([all_fn, all_fp], f1)
 print ("Final Results: " + str(np.mean([el[1] for el in all_metrics], axis=0)))
 print ("Best threshold: " + str(all_metrics[np.argmax([el[1][2] for el in all_metrics])][0]))
