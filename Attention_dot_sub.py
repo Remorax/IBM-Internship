@@ -295,12 +295,9 @@ class SiameseNetwork(nn.Module):
             att_weights = masked_softmax(att_weights).unsqueeze(-1)
             context = torch.matmul(self.v, att_weights * neighbours)
 
-            try:
-                att_weights = self.W_sub(neighbours - node.squeeze()[:, None]).squeeze()
-                att_weights = masked_softmax(att_weights).unsqueeze(-1)
-                context_sub = torch.matmul(self.v_sub, att_weights * neighbours)
-            except:
-                print ("neighbours", neighbours.shape, "node", node.shape)
+            att_weights = self.W_sub(neighbours - node.squeeze(1)[:, None]).squeeze(-1)
+            att_weights = masked_softmax(att_weights).unsqueeze(-1)
+            context_sub = torch.matmul(self.v_sub, att_weights * neighbours)
 
             x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim), context_sub.reshape(-1, self.embedding_dim)), dim=1)
             x = self.output(x)
@@ -423,7 +420,6 @@ for i in list(range(0, len(all_ont_pairs), 3)):
             
             batch_start_f = batch_idx * batch_size_f
             batch_end_f = (batch_idx+1) * batch_size_f
-            print (batch_start, batch_end, batch_start_f, batch_end_f, num_batches, batch_idx, len(inputs_pos))
             inputs = np.concatenate((inputs_pos[batch_start: batch_end], inputs_neg[batch_start_f: batch_end_f]))
             targets = np.concatenate((targets_pos[batch_start: batch_end], targets_neg[batch_start_f: batch_end_f]))
             
