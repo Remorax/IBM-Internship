@@ -295,8 +295,8 @@ class SiameseNetwork(nn.Module):
             att_weights = masked_softmax(att_weights).unsqueeze(-1)
             context = torch.matmul(self.v, att_weights * neighbours)
 
-            x = torch.stack((node.squeeze(), context.squeeze()))
-            x = self.output(x.T).squeeze()
+            x = torch.stack((node.squeeze(1), context))
+            x = self.output(x.T).T.squeeze(0)
             results.append(x)
         x = self.cosine_sim_layer(results[0], results[1])
         return x
