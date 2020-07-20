@@ -7,15 +7,16 @@ mapping_dict = {
     "unsoftmax": ["(avg, no softmax)", ", Dot product of node with neighbours, weighted average"],
     "context": ["(only context)", ", Dot product of node with neighbours, softmax, weighted average, context is directly output"],
     "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized"],
-    "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"],
-    "unhas": ["(removes has from property)", ", Dot product of node with neighbours, softmax, weighted average"],
-    "spellchecked": ["(spellchecked)", ", Dot product of node with neighbours, softmax, weighted average"],
+    "resolved": ["(self + v + min + unabbreviated)", ", Min neighbour filter, oversampled, Dot product of node with neighbours, softmax, dot with trainable param"],
+    "unhas": ["(self + v + min + removes has from property)", ", Min neighbour filter, oversampled,  Dot product of node with neighbours, softmax, dot with trainable param"],
+    "spellchecked": ["(self + v + min + spellchecked)", ", Min neighbour filter, oversampled, Dot product of node with neighbours, softmax, dot with trainable param"],
     "ae": ["(auto encoder)", ", Dot product of node with neighbours, softmax, weighted average, auto encoder"],
     "cross": ["(cross attention)", ", Dot product of neighbours with other entity's neighbours, softmax, weighted average"],
     "min": ["(min neighbours)", ", Dot product of node with neighbours, softmax, weighted average"],
     "hybrid_self": ["(self + v + min)", ", Min neighbour filter, Dot product of node with neighbours, softmax, dot with trainable param"],
     "hybrid": ["(cross + v + min)", ", Min neighbour filter, Dot product of neighbours with other entity's neighbours, softmax, dot with trainable param"],
     "self_cross": ["(self+cross)", ", Min neighbour filter, Dot product of neighbours with entity AND other entity's neighbours, softmax, dot with trainable param"],
+    "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"],
     "default": ["", ", Dot product of node with neighbours, softmax, weighted average"]
 }
 
@@ -31,8 +32,10 @@ for file in os.listdir("."):
             print (file)
             continue
         for elem in mapping_dict:
-            key = mapping_dict[elem][0]
-            desc = "Optimum threshold " + threshold + mapping_dict[key][1]
+            if elem in file or elem == "default":
+                key = mapping_dict[elem][0]
+                desc = "Optimum threshold " + threshold + mapping_dict[elem][1]
+                break
         intent += key
         results = [l for l in open(file).read().split("\n") if "Final Results:" in l][0]  
         results = results.split("[")[1].split("]")[0].strip().split()
