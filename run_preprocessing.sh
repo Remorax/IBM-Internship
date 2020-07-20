@@ -7,7 +7,7 @@ for max_limit in "${max_neighbours[@]}";
 do
 	for min_limit in "${min_neighbours[@]}";
 	do
-	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_resolved.txt" python Attention_preprocessing.py $max_limit $min_limit data_resolved_spellchecked.pkl test_resolved_spellchecked.pkl
-	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_resolved_spellchecked.txt" python Attention_preprocessing.py $max_limit $min_limit data_resolved_spellchecked_undashed.pkl test_resolved_spellchecked_undashed.pkl
+	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_resolved_undashed.txt" python Attention_preprocessing.py $max_limit $min_limit data_resolved_undashed.pkl test_resolved_undashed.pkl
+	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_resolved_spellchecked_undashed.txt" python Attention_preprocessing.py $max_limit $min_limit data_resolved_spellchecked_undashed.pkl test_resolved_spellchecked_undashed.pkl
 	done
 done
