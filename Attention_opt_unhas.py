@@ -284,7 +284,7 @@ for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
     res = greedy_matching()
     f1 = open("test_results.pkl", "wb")
     pickle.dump(res, f1)
-f1 = open("test_results.pkl", "wb")
+f1 = open(sys.argv[4], "wb")
 pickle.dump([all_fn, all_fp], f1)
 print ("Final Results: " + str(np.mean([el[1] for el in all_metrics], axis=0)))
 print ("Best threshold: " + str(all_metrics[np.argmax([el[1][2] for el in all_metrics])][0]))
