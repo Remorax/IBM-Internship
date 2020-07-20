@@ -431,7 +431,7 @@ for i in list(range(0, len(all_ont_pairs), 3)):
                 print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
-    print ("Trained value of W: ", model.output)
+    print ("Trained value of W: ", model.output.weight)
     torch.save(model.state_dict(), "/u/vivek98/attention.pt")
     
     test_data_t = [key for key in test_data if test_data[key]]
