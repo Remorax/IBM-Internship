@@ -9,6 +9,7 @@ mapping_dict = {
     "normalize": ["(avg, normalized)", ", Dot product of node with neighbours, softmax, weighted average, normalized"],
     "v": ["(trainable param)", ", Dot product of node with neighbours, softmax, dot with trainable param"],
     "unhas": ["(removes has from property)", ", Dot product of node with neighbours, softmax, weighted average"],
+    "spellchecked": ["(spellchecked)", ", Dot product of node with neighbours, softmax, weighted average"],
     "ae": ["(auto encoder)", ", Dot product of node with neighbours, softmax, weighted average, auto encoder"],
     "cross": ["(cross attention)", ", Dot product of neighbours with other entity's neighbours, softmax, weighted average"],
     "min": ["(min neighbours)", ", Dot product of node with neighbours, softmax, weighted average"],
