@@ -185,7 +185,7 @@ class SiameseNetwork(nn.Module):
             node = x.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
             neighbours = x.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
             
-            packed_inp = pack_padded_sequence(neighbours, seq_lens[i].cpu().numpy(), batch_first=True)
+            packed_inp = pack_padded_sequence(neighbours, seq_lens[i].cpu().numpy(), batch_first=True).to(device)
             op, (ht, ct) = self.lstm(packed_inp)
             context = ht[2*(self.num_layers-1):].permute(1,0,2)
             context = context[rev_indices[i],:,:].reshape(-1, self.hidden_dim * self.num_layers * self.num_directions)
