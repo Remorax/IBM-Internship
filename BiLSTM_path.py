@@ -174,7 +174,8 @@ class SiameseNetwork(nn.Module):
                             batch_first=True)
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
-        self.output = nn.Linear(1024, 300)
+        self.bilstm_flatten = nn.Linear(2, 1)
+        self.output = nn.Linear(self.embedding_dim + self.hidden_dim, 300)
  
     def forward(self, inputs, seq_lens, rev_indices):
         results = []
@@ -187,8 +188,9 @@ class SiameseNetwork(nn.Module):
             
             packed_inp = pack_padded_sequence(neighbours, seq_lens[i].cpu().numpy(), batch_first=True)
             op, (ht, ct) = self.lstm(packed_inp)
-            context = ht[2*(self.num_layers-1):].permute(1,0,2)
-            context = context[rev_indices[i],:,:].reshape(-1, self.hidden_dim * self.num_layers * self.num_directions)
+            context = ht[2*(self.num_layers-1):].permute(1,2,0)
+            context = self.bilstm_flatten(context[rev_indices[i],:,:])
+            context = context.reshape(-1, self.hidden_dim * self.num_layers)
             
             x = torch.cat((node.reshape(-1, self.embedding_dim), context), dim=1)
             x = self.output(x)
