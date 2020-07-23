@@ -41,24 +41,21 @@ def greedy_matching():
         inputs_pos, targets_pos = generate_input(test_data_t, 1)
         inputs_neg, targets_neg = generate_input(test_data_f, 0)
 
-        indices_pos = np.random.permutation(len(inputs_pos))
-        indices_neg = np.random.permutation(len(inputs_neg))
+        inputs_all = list(inputs_pos) + list(inputs_neg)
+        targets_all = list(targets_pos) + list(targets_neg)
+        
+        indices_all = np.random.permutation(len(inputs_all))
+        inputs_all = np.array(inputs_all)[indices_all]
+        targets_all = np.array(targets_all)[indices_all]
 
-        inputs_pos, targets_pos = inputs_pos[indices_pos], targets_pos[indices_pos]
-        inputs_neg, targets_neg = inputs_neg[indices_neg], targets_neg[indices_neg]
-
-        batch_size = min(batch_size, len(inputs_pos))
-        num_batches = int(ceil(len(inputs_pos)/batch_size))
-        batch_size_f = int(ceil(len(inputs_neg)/num_batches))
+        batch_size = min(batch_size, len(inputs_all))
+        num_batches = int(ceil(len(inputs_all)/batch_size))
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
 
-            batch_start_f = batch_idx * batch_size_f
-            batch_end_f = (batch_idx+1) * batch_size_f
-
-            inputs = np.concatenate((inputs_pos[batch_start: batch_end], inputs_neg[batch_start_f: batch_end_f]))
-            targets = np.concatenate((targets_pos[batch_start: batch_end], targets_neg[batch_start_f: batch_end_f]))
+            inputs = inputs_all[batch_start: batch_end]
+            targets = targets_all[batch_start: batch_end]
             
             inp = inputs.transpose(1,0,2)
             
