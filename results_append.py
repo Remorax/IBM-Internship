@@ -10,6 +10,7 @@ mapping_dict = {
     "resolved": ["(self + v + min + unabbreviated)", ", Min neighbour filter, oversampled, Dot product of node with neighbours, softmax, dot with trainable param"],
     "unhas": ["(self + v + min + removes has from property)", ", Min neighbour filter, oversampled,  Dot product of node with neighbours, softmax, dot with trainable param"],
     "spellchecked": ["(self + v + min + spellchecked)", ", Min neighbour filter, oversampled, Dot product of node with neighbours, softmax, dot with trainable param"],
+    "rootpath": ["(includes parent path from root)", ", spellchecked, abbreviation resolved, has removed, oversampled, Dot product of node with neighbours, softmax, dot with trainable param"],
     "ae": ["(auto encoder)", ", Dot product of node with neighbours, softmax, weighted average, auto encoder"],
     "cross": ["(cross attention)", ", Dot product of neighbours with other entity's neighbours, softmax, weighted average"],
     "min": ["(min neighbours)", ", Dot product of node with neighbours, softmax, weighted average"],
