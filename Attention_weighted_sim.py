@@ -169,9 +169,9 @@ class SiameseNetwork(nn.Module):
             context = torch.matmul(self.v, att_weights * neighbours)
             
             context = context.reshape(-1, self.embedding_dim)
-            x = x.reshape(-1, self.embedding_dim)
+            node = node.reshape(-1, self.embedding_dim)
 
-            results.append((context, x))
+            results.append((context, node))
 
         x = self.w * self.cosine_sim_layer(results[0][0], results[1][0]) + \
         (1-self.w) * self.cosine_sim_layer(results[0][1], results[1][1])
