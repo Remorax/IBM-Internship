@@ -17,7 +17,7 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[5], "rb")
-data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, neighbours_dicts, ontologies_in_alignment = pickle.load(f)
+data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, neighbours_dicts, max_neighbours, ontologies_in_alignment = pickle.load(f)
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -150,10 +150,10 @@ class SiameseNetwork(nn.Module):
 
         self.dropout = dropout
         
-        self.v_rootpath = self.create_weight_vector(rootpaths_all.shape[-1])
-        self.v_children = self.create_weight_vector(children_all.shape[-1])
-        self.v_obj_neighbours = self.create_weight_vector(obj_neighbours_all.shape[-1])
-        self.v_dtype_neighbours = self.create_weight_vector(dtype_neighbours_all.shape[-1])
+        self.v_rootpath = self.create_weight_vector(max_neighbours[0])
+        self.v_children = self.create_weight_vector(max_neighbours[1])
+        self.v_obj_neighbours = self.create_weight_vector(max_neighbours[2])
+        self.v_dtype_neighbours = self.create_weight_vector(max_neighbours[3])
         
         self.w_rootpath = nn.Parameter(torch.randn(1))
         self.w_children = nn.Parameter(torch.randn(1))

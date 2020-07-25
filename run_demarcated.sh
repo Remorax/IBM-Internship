@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# parents=(7)
+# children=(8 10 15 18 21)
+# obj_neighbours=(5 8 11)
+# dtype_neighbours=(2 4 8)
 parents=(7)
-children=(8 10 15 18 21)
-obj_neighbours=(5 8 11)
-dtype_neighbours=(2 4 8)
+children=(21)
+obj_neighbours=(11)
+dtype_neighbours=(8)
+
 
 for a in "${parents[@]}";
 do
