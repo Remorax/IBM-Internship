@@ -154,7 +154,7 @@ class SiameseNetwork(nn.Module):
         self.output = nn.Linear(1024, 300)
         n = int(sys.argv[1])
         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
-        self.w = nn.Parameter()
+        self.w = nn.Parameter(torch.randn(1))
  
     def forward(self, inputs):
         results = []
