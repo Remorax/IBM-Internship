@@ -171,7 +171,7 @@ class SiameseNetwork(nn.Module):
 
             results.append((context, x))
 
-        x = self.w * self.cosine_sim_layer(results[0][0], results[1][0]) +
+        x = self.w * self.cosine_sim_layer(results[0][0], results[1][0]) + \
         (1-self.w) * self.cosine_sim_layer(results[0][1], results[1][1])
         return F.sigmoid(x)
 
