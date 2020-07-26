@@ -74,6 +74,8 @@ def greedy_matching():
             outputs = [el.item() for el in outputs]
             targets = [True if el.item() else False for el in targets]
 
+            elements = elements.cpu().numpy()
+            
             for idx, pred_elem in enumerate(outputs):
                 ent1 = emb_indexer_inv[elements[0][idx][0]]
                 ent2 = emb_indexer_inv[elements[1][idx][0]]
