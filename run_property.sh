@@ -22,7 +22,7 @@ do
 	done
 done
 
-max_neighbours=(8 10 12 18 23 32 36 40 45 50 55)
+max_neighbours=(8 12 18 24 32 36 40 45 48 50 52 55)
 min_neighbours=(1)
 
 for max_limit in "${max_neighbours[@]}";
