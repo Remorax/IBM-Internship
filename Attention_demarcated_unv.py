@@ -45,30 +45,38 @@ def greedy_matching():
         targets_all = list(targets_pos) + list(targets_neg)
         
         indices_all = np.random.permutation(len(inputs_all))
-        inputs_all = np.array(inputs_all)[indices_all]
+        
+        elements_all, rootpaths_all, children_all, obj_neighbours_all, dtype_neighbours_all = zip(*inputs_all)
+        
+        elements_all = np.array(elements_all)[indices_all]
+        rootpaths_all = np.array(rootpaths_all)[indices_all]
+        children_all = np.array(children_all)[indices_all]
+        obj_neighbours_all = np.array(obj_neighbours_all)[indices_all]
+        dtype_neighbours_all = np.array(dtype_neighbours_all)[indices_all]
         targets_all = np.array(targets_all)[indices_all]
-
+            
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
-
-            inputs = inputs_all[batch_start: batch_end]
+            
+            elements = torch.LongTensor(elements_all[batch_start: batch_end]).to(device).unsqueeze(-1).permute(1,0,2)
+            rootpaths = torch.LongTensor(rootpaths_all[batch_start: batch_end]).to(device).permute(1,0,2)
+            children = torch.LongTensor(children_all[batch_start: batch_end]).to(device).permute(1,0,2)
+            obj_neighbours = torch.LongTensor(obj_neighbours_all[batch_start: batch_end]).to(device).permute(1,0,2)
+            dtype_neighbours = torch.LongTensor(dtype_neighbours_all[batch_start: batch_end]).to(device).permute(1,0,2)
             targets = targets_all[batch_start: batch_end]
             
-            inp = inputs.transpose(1,0,2)
             
-            inp_elems = torch.LongTensor(inputs).to(device)
-            targ_elems = torch.DoubleTensor(targets)
 
-            outputs = model(inp_elems)
+            outputs = model(elements, rootpaths, children, obj_neighbours, dtype_neighbours)
             outputs = [el.item() for el in outputs]
             targets = [True if el.item() else False for el in targets]
-
+            elements = elements.cpu().numpy()
             for idx, pred_elem in enumerate(outputs):
-                ent1 = emb_indexer_inv[inp[0][idx][0]]
-                ent2 = emb_indexer_inv[inp[1][idx][0]]
+                ent1 = emb_indexer_inv[elements[0][idx][0]]
+                ent2 = emb_indexer_inv[elements[1][idx][0]]
                 if (ent1, ent2) in all_results:
                     print ("Error: ", ent1, ent2, "already present")
                 all_results[(ent1, ent2)] = (pred_elem, targets[idx])
