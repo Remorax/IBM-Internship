@@ -151,7 +151,7 @@ class SiameseNetwork(nn.Module):
         self.dropout = dropout
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
-        self.output = nn.Linear(2*self.embedding_dim, 300)
+        self.output = nn.Linear(2*self.embedding_dim, int(sys.argv[5]))
         n = int(sys.argv[1])
         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
  
