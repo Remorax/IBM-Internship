@@ -200,8 +200,6 @@ def count_non_unk(elem):
 neighbours_dicts = {ont: {el: neighbours_dicts[ont][el][:int(sys.argv[1])] for el in neighbours_dicts[ont]
        if count_non_unk(neighbours_dicts[ont][el]) > int(sys.argv[2])} for ont in neighbours_dicts}
 
-print ("Number of entities:", len(data))
-
 all_metrics = []
 
 print ("Training size:", len(train_data), "Testing size:", len(test_data))
