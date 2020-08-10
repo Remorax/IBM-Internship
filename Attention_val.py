@@ -284,14 +284,14 @@ print ("Number of entities:", len(data))
 
 all_metrics = []
 final_results = []
-for i in list(range(0, len(ontologies_in_alignment)-1, 3)):
+for i in list(range(0, len(ontologies_in_alignment), 3)):
     
     test_onto = ontologies_in_alignment[i:i+3]
     
     train_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) not in test_onto}
 
-    val_onto = test_onto[:1]
-    test_onto = test_onto[1:]
+    val_onto = test_onto[:2]
+    test_onto = test_onto[2:]
     val_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) in val_onto}
     test_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
