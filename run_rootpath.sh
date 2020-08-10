@@ -7,7 +7,6 @@ for max_limit in "${max_neighbours[@]}";
 do
 	for min_limit in "${min_neighbours[@]}";
 	do
-	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_rootpath_stemmed_undata.txt" python Attention_preprocessing.py $max_limit $min_limit data_multi_stemmed_undata.pkl "test_multi_stemmed_undata"$max_limit"_"$min_limit".pkl"
-	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_rootpath_multi_unhas_undata.txt" python Attention_preprocessing.py $max_limit $min_limit data_multi_unhas_undata.pkl "test_multi_unhas_undata"$max_limit"_"$min_limit".pkl"
+	        jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Output_att"$max_limit"_"$min_limit"_rootpath_multiv2.txt" python Attention_preprocessing.py $max_limit $min_limit data_multi_rootpath.pkl "test_multi_rootpath"$max_limit"_"$min_limit".pkl"
 	done
 done
