@@ -285,9 +285,9 @@ final_results = []
 
 for i in range(6):
     
-    test_data = dict(data_items[0.15*i*len(data):(0.15*i + 0.1)*len(data)])
-    val_data = dict(data_items[(0.15*i + 0.1)*len(data):(0.15*i + 0.15)*len(data)])
-    train_data = dict(data_items[:0.15*i*len(data)] + data_items[0.15*(i+1)*len(data):])
+    test_data = dict(data_items[int(0.15*i*len(data)):int((0.15*i + 0.1)*len(data))])
+    val_data = dict(data_items[int((0.15*i + 0.1)*len(data)):int((0.15*i + 0.15)*len(data))])
+    train_data = dict(data_items[:int(0.15*i*len(data))] + data_items[int(0.15*(i+1)*len(data)):])
 
     print ("Training size:", len(train_data), "Testing size:", len(test_data))
     torch.set_default_dtype(torch.float64)
