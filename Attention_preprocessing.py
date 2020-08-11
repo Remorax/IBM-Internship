@@ -88,6 +88,7 @@ def greedy_matching():
         threshold = low_threshold
         step = 0.001
         opt_fn, opt_fp = [], []
+        opt_thresholds = []
         while threshold < high_threshold:
             res = []
             for i,key in enumerate(all_results):
@@ -119,7 +120,9 @@ def greedy_matching():
                 opt_threshold = threshold
                 opt_fn = fn_list
                 opt_fp = fp_list
-            
+                opt_thresholds = [threshold]
+            elif f1score == optimum_metrics[2]:
+                opt_thresholds.append(threshold)
             if threshold > 0.98 and not exception:
                 step = 0.0001
             else:
@@ -131,6 +134,7 @@ def greedy_matching():
         all_fp.extend(opt_fp)
         if optimum_metrics[2] != -1000:
             all_metrics.append((opt_threshold, optimum_metrics))
+    print ("Best thresholds for {} are {}".format(test_onto, opt_thresholds))
     return all_results
 
 def masked_softmax(inp):
