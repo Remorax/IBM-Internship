@@ -273,7 +273,7 @@ class SiameseNetwork(nn.Module):
         self.output = nn.Linear(2*self.embedding_dim, 300)
         n = int(sys.argv[1])
         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
-        self.w_prop = nn.Parameter(torch.DoubleTensor([1/3 for i in range(3)]))
+        self.w_prop = nn.Parameter(torch.DoubleTensor([1/3 for i in range(2)]))
  
     def forward(self, inputs, inputs_prop):
         results = []
@@ -331,7 +331,7 @@ class SiameseNetwork(nn.Module):
         
         x_prop = self.w_prop[0] * self.cosine_sim_layer(domains[0], domains[1]) + \
                 self.w_prop[1] * self.cosine_sim_layer(ranges[0], ranges[1]) + \
-                self.w_prop[2] * self.cosine_sim_layer(props[0], props[1])
+                (1-self.w_prop[0]-self.w_prop[1]) * self.cosine_sim_layer(props[0], props[1])
 
         return torch.cat((x_ent, x_prop))
 
