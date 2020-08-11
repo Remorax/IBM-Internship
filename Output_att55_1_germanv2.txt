@@ -1,0 +1,48 @@
+Number of neighbours: 55
+Number of entities: 862150
+Training size: 732828 Testing size: 86215
+Traceback (most recent call last):
+  File "Attention_german.py", line 336, in <module>
+    outputs = model(inp_elems)
+  File "/u/arvagarw/miniconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "Attention_german.py", line 241, in forward
+    context = torch.matmul(self.v, att_weights * neighbours)
+RuntimeError: size mismatch, m1: [5120 x 50], m2: [54 x 1] at /pytorch/aten/src/TH/generic/THTensorMath.cpp:41
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc240>
+Subject: Job 706820: <python Attention_german.py 55 1 data_german_datasetv2.pkl test_german_datasetv255_1.pkl> in cluster <dcc> Exited
+
+Job <python Attention_german.py 55 1 data_german_datasetv2.pkl test_german_datasetv255_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Mon Aug 10 06:44:23 2020
+Job was executed on host(s) <dccxc240>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Mon Aug 10 06:44:26 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Mon Aug 10 06:44:26 2020
+Terminated at Mon Aug 10 06:44:55 2020
+Results reported at Mon Aug 10 06:44:55 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_german.py 55 1 data_german_datasetv2.pkl test_german_datasetv255_1.pkl
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   24.95 sec.
+    Max Memory :                                 69 MB
+    Average Memory :                             69.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43348.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   56 sec.
+    Turnaround time :                            32 sec.
+
+The output (if any) is above this job summary.
+
