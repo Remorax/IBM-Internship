@@ -17,7 +17,7 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[3], "rb")
-data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, neighbours_dicts, ontologies_in_alignment = pickle.load(f)
+data_ent, data_prop, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, neighbours_dicts, neighbours_dicts_prop, ontologies_in_alignment = pickle.load(f)
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 flatten = lambda l: [item for sublist in l for item in sublist]
 
@@ -50,8 +50,21 @@ def test():
         inputs_all = np.array(inputs_all)[indices_all]
         targets_all = np.array(targets_all)[indices_all]
 
+        inputs_pos_prop, targets_pos_prop = generate_input(test_data_prop_t, 1)
+        inputs_neg_prop, targets_neg_prop = generate_input(test_data_prop_f, 0)
+        
+        inputs_all_prop = list(inputs_pos_prop) + list(inputs_neg_prop)
+        targets_all_prop = list(targets_pos_prop) + list(targets_neg_prop)
+        
+        indices_all_prop = np.random.permutation(len(inputs_all_prop))
+        inputs_all_prop = np.array(inputs_all_prop)[indices_all_prop]
+        targets_all_prop = np.array(targets_all_prop)[indices_all_prop]
+
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
+        
+        batch_size_prop = int(ceil(len(inputs_all_prop)/num_batches))
+
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
@@ -59,13 +72,23 @@ def test():
             inputs = inputs_all[batch_start: batch_end]
             targets = targets_all[batch_start: batch_end]
             
-            inp = inputs.transpose(1,0,2)
+            batch_start_prop = batch_idx * batch_size_prop
+            batch_end_prop = (batch_idx+1) * batch_size_prop
             
-            inp_elems = torch.LongTensor(inputs).to(device)
-            targ_elems = torch.DoubleTensor(targets)
+            inputs_prop = inputs_all_prop[batch_start_prop: batch_end_prop]
+            targets_prop = targets_all_prop[batch_start_prop: batch_end_prop]
 
-            outputs = model(inp_elems)
+            targets = list(targets) + list(targets_prop)
+
+            inp = np.array(list(inputs) + list(np.array(inputs_prop)[:,:,0,:])).transpose(1,0,2)
+
+            inp_elems = torch.LongTensor(inputs).to(device)
+            inp_prop_elems = torch.LongTensor(inputs_prop).to(device)
+            targ_elems = torch.DoubleTensor(targets).to(device)
+            
+            outputs = model(inp_elems, inp_prop_elems)
             outputs = [el.item() for el in outputs]
+
             targets = [True if el.item() else False for el in targets]
 
             for idx, pred_elem in enumerate(outputs):
@@ -86,7 +109,7 @@ def test():
     return (test_onto, all_results)
 
 def optimize_threshold():
-    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
+    global batch_size, val_data_t, val_data_prop_t, val_data_prop_f, val_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -105,8 +128,21 @@ def optimize_threshold():
         inputs_all = np.array(inputs_all)[indices_all]
         targets_all = np.array(targets_all)[indices_all]
 
+        inputs_pos_prop, targets_pos_prop = generate_input(val_data_prop_t, 1)
+        inputs_neg_prop, targets_neg_prop = generate_input(val_data_prop_f, 0)
+        
+        inputs_all_prop = list(inputs_pos_prop) + list(inputs_neg_prop)
+        targets_all_prop = list(targets_pos_prop) + list(targets_neg_prop)
+        
+        indices_all_prop = np.random.permutation(len(inputs_all_prop))
+        inputs_all_prop = np.array(inputs_all_prop)[indices_all_prop]
+        targets_all_prop = np.array(targets_all_prop)[indices_all_prop]
+
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
+        
+        batch_size_prop = int(ceil(len(inputs_all_prop)/num_batches))
+
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
@@ -114,13 +150,23 @@ def optimize_threshold():
             inputs = inputs_all[batch_start: batch_end]
             targets = targets_all[batch_start: batch_end]
             
-            inp = inputs.transpose(1,0,2)
+            batch_start_prop = batch_idx * batch_size_prop
+            batch_end_prop = (batch_idx+1) * batch_size_prop
             
-            inp_elems = torch.LongTensor(inputs).to(device)
-            targ_elems = torch.DoubleTensor(targets)
+            inputs_prop = inputs_all_prop[batch_start_prop: batch_end_prop]
+            targets_prop = targets_all_prop[batch_start_prop: batch_end_prop]
 
-            outputs = model(inp_elems)
+            targets = list(targets) + list(targets_prop)
+
+            inp = np.array(list(inputs) + list(np.array(inputs_prop)[:,:,0,:])).transpose(1,0,2)
+
+            inp_elems = torch.LongTensor(inputs).to(device)
+            inp_prop_elems = torch.LongTensor(inputs_prop).to(device)
+            targ_elems = torch.DoubleTensor(targets).to(device)
+            
+            outputs = model(inp_elems, inp_prop_elems)
             outputs = [el.item() for el in outputs]
+
             targets = [True if el.item() else False for el in targets]
 
             for idx, pred_elem in enumerate(outputs):
@@ -148,7 +194,7 @@ def optimize_threshold():
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in set(res) and not is_valid(val_onto, key)]
+            fn_list = [(key, all_results[key][0]) for key in gt_mappings if key not in set(res) and not is_valid(val_onto, key)]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
@@ -227,8 +273,9 @@ class SiameseNetwork(nn.Module):
         self.output = nn.Linear(2*self.embedding_dim, 300)
         n = int(sys.argv[1])
         self.v = nn.Parameter(torch.DoubleTensor([1/(n-1) for i in range(n-1)]))
+        self.w_prop = nn.Parameter(torch.DoubleTensor([1/3 for i in range(3)]))
  
-    def forward(self, inputs):
+    def forward(self, inputs, inputs_prop):
         results = []
         inputs = inputs.permute(1,0,2)
         for i in range(2):
@@ -243,8 +290,50 @@ class SiameseNetwork(nn.Module):
             x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim)), dim=1)
             x = self.output(x)
             results.append(x)
-        x = self.cosine_sim_layer(results[0], results[1])
-        return x
+
+        inputs_prop = inputs_prop.permute(1,0,2,3)
+        
+        domains, ranges, props = [], [], []
+        for i in range(2):
+            x = self.name_embedding(inputs[i])
+            curr = x.permute(1,0,2,3)[1]
+            node = curr.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
+            neighbours = curr.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
+            
+            att_weights = torch.bmm(neighbours, node.permute(0, 2, 1)).squeeze()
+            att_weights = masked_softmax(att_weights).unsqueeze(-1)
+            context = torch.matmul(self.v, att_weights * neighbours)
+
+            x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim)), dim=1)
+            x = self.output(x)
+            domains.append(x)
+
+        for i in range(2):
+            x = self.name_embedding(inputs[i])
+            curr = x.permute(1,0,2,3)[2]
+            node = curr.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
+            neighbours = curr.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
+            
+            att_weights = torch.bmm(neighbours, node.permute(0, 2, 1)).squeeze()
+            att_weights = masked_softmax(att_weights).unsqueeze(-1)
+            context = torch.matmul(self.v, att_weights * neighbours)
+
+            x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim)), dim=1)
+            x = self.output(x)
+            ranges.append(x)
+
+        for i in range(2):
+            x = self.name_embedding(inputs[i])
+            curr = x.permute(1,0,2,3)[0][0]
+            props.append(curr)
+
+        x_ent = self.cosine_sim_layer(results[0], results[1])
+        
+        x_prop = self.w_prop[0] * self.cosine_sim_layer(domains[0], domains[1]) + \
+                self.w_prop[1] * self.cosine_sim_layer(ranges[0], ranges[1]) + \
+                self.w_prop[2] * self.cosine_sim_layer(props[0], props[1])
+
+        return torch.cat((x_ent, x_prop))
 
 def is_valid(test_onto, key):
     return tuple([el.split("#")[0] for el in key]) not in test_onto
@@ -253,15 +342,17 @@ def generate_data_neighbourless(elem_tuple):
     op = np.array([emb_indexer[elem] for elem in elem_tuple])
     return op
 
-def generate_data(elem_tuple):
+def generate_data(elem_tuple, prop=False):
+    if prop:
+        return np.array([[[emb_indexer[el] for el in element] for element in neighbours_dicts[elem.split("#")[0]][elem]] for elem in elem_tuple])
     return np.array([[emb_indexer[el] for el in neighbours_dicts[elem.split("#")[0]][elem]] for elem in elem_tuple])
 
-def generate_input(elems, target):
+def generate_input(elems, target, prop=False):
     inputs, targets = [], []
     global direct_inputs, direct_targets
     for elem in list(elems):
         try:
-            inputs.append(generate_data(elem))
+            inputs.append(generate_data(elem, prop))
             targets.append(target)
         except:
             direct_inputs.append(generate_data_neighbourless(elem))
@@ -275,6 +366,9 @@ def count_non_unk(elem):
 
 neighbours_dicts = {ont: {el: neighbours_dicts[ont][el][:int(sys.argv[1])] for el in neighbours_dicts[ont]
        if count_non_unk(neighbours_dicts[ont][el]) > int(sys.argv[2])} for ont in neighbours_dicts}
+
+neighbours_dicts_prop = {ont: {el: [element[:int(sys.argv[1])] for element in neighbours_dicts_prop[ont][el]] for el in neighbours_dicts_prop[ont]
+       if count_non_unk(neighbours_dicts_prop[ont][el]) > int(sys.argv[2])} for ont in neighbours_dicts_prop}
 
 data_items = data.items()
 np.random.shuffle(list(data_items))
@@ -307,6 +401,26 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
     #train_data_f = train_data_f[:int(len(train_data_t))]
 #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
     np.random.shuffle(train_data_f)
+
+    train_data_prop = {elem: data_prop[elem] for elem in data_prop if tuple([el.split("#")[0] for el in elem]) not in test_onto}
+
+    val_onto = test_onto[:2]
+    test_onto = test_onto[2:]
+    val_data_prop = {elem: data_prop[elem] for elem in data_prop if tuple([el.split("#")[0] for el in elem]) in val_onto}
+    test_data_prop = {elem: data_prop[elem] for elem in data_prop if tuple([el.split("#")[0] for el in elem]) in test_onto}
+
+    print ("Training size:", len(train_data_prop), "Testing size:", len(test_data_prop))
+    torch.set_default_dtype(torch.float64)
+    
+    train_test_split = 0.9
+
+    train_data_prop_t = [key for key in train_data_prop if train_data_prop[key]]
+    train_data_prop_f = [key for key in train_data_prop if not train_data_prop[key]]
+    train_data_prop_t = np.repeat(train_data_prop_t, ceil(len(train_data_prop_f)/len(train_data_prop_t)), axis=0)
+    train_data_prop_t = train_data_prop_t[:len(train_data_prop_f)].tolist()
+    #train_data_prop_f = train_data_prop_f[:int(len(train_data_prop_t))]
+#     [:int(0.1*(len(train_data_prop) - len(train_data_prop_t)) )]
+    np.random.shuffle(train_data_prop_f)
     
     lr = 0.001
     num_epochs = 50
@@ -332,6 +446,21 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
 
+        inputs_pos_prop, targets_pos_prop = generate_input(train_data_prop_t, 1)
+        inputs_neg_prop, targets_neg_prop = generate_input(train_data_prop_f, 0)
+
+        print ("Properties with neighbours: ", len(inputs_pos_prop)+len(inputs_neg_prop),\
+         "Total: ", len(train_data_prop_t)+len(train_data_prop_f))
+
+        inputs_all_prop = list(inputs_pos_prop) + list(inputs_neg_prop)
+        targets_all_prop = list(targets_pos_prop) + list(targets_neg_prop)
+        
+        indices_all_prop = np.random.permutation(len(inputs_all_prop))
+        inputs_all_prop = np.array(inputs_all_prop)[indices_all_prop]
+        targets_all_prop = np.array(targets_all_prop)[indices_all_prop]
+
+        batch_size_prop = int(ceil(len(inputs_all_prop)/num_batches))
+
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
@@ -339,10 +468,19 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
             inputs = inputs_all[batch_start: batch_end]
             targets = targets_all[batch_start: batch_end]
             
+            batch_start_prop = batch_idx * batch_size_prop
+            batch_end_prop = (batch_idx+1) * batch_size_prop
+            
+            inputs_prop = inputs_all_prop[batch_start_prop: batch_end_prop]
+            targets_prop = targets_all_prop[batch_start_prop: batch_end_prop]
+
+            targets = list(targets) + list(targets_prop)
+
             inp_elems = torch.LongTensor(inputs).to(device)
+            inp_prop_elems = torch.LongTensor(inputs_prop).to(device)
             targ_elems = torch.DoubleTensor(targets).to(device)
             optimizer.zero_grad()
-            outputs = model(inp_elems)
+            outputs = model(inp_elems, inp_prop_elems)
             loss = F.mse_loss(outputs, targ_elems)
             loss.backward()
             optimizer.step()
@@ -354,11 +492,15 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
     
     val_data_t = [key for key in val_data if val_data[key]]
     val_data_f = [key for key in val_data if not val_data[key]]
+    val_data_prop_t = [key for key in val_data_prop if val_data_prop[key]]
+    val_data_prop_f = [key for key in val_data_prop if not val_data_prop[key]]
     
     optimize_threshold()
 
     test_data_t = [key for key in test_data if test_data[key]]
     test_data_f = [key for key in test_data if not test_data[key]]
+    test_data_prop_t = [key for key in test_data_prop if test_data_prop[key]]
+    test_data_prop_f = [key for key in test_data_prop if not test_data_prop[key]]
 
     final_results.append(test())
 

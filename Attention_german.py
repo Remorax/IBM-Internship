@@ -83,7 +83,7 @@ def test():
             ent2 = emb_indexer_inv[direct_input[1]]
             sim = cos_sim(emb_vals[direct_input[0]], emb_vals[direct_input[1]])
             all_results[(ent1, ent2)] = (sim, direct_targets[idx])
-    return (test_onto, all_results)
+    return (test_data_t, all_results)
 
 def optimize_threshold():
     global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
@@ -148,7 +148,7 @@ def optimize_threshold():
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            fn_list = [(key, all_results[key][0]) for key in gt_mappings if key not in set(res) and not is_valid(val_onto, key)]
+            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in set(res)]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
@@ -182,12 +182,12 @@ def optimize_threshold():
 def calculate_performance():
     global final_results
     all_metrics = []
-    for (test_onto, all_results) in final_results:
+    for (test_data_t, all_results) in final_results:
         res = []
         for i,key in enumerate(all_results):
             if all_results[key][0] > threshold:
                 res.append(key)
-        fn_list = [(key, all_results[key][0]) for key in gt_mappings if key not in set(res) and not is_valid(test_onto, key)]
+        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in set(res)]
         fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
         tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
         tp, fn, fp = len(tp_list), len(fn_list), len(fp_list)
@@ -201,7 +201,7 @@ def calculate_performance():
         except Exception as e:
             print (e)
             continue
-        print ("Performance for", test_onto, "is :", (precision, recall, f1score, f2score, f0_5score))
+        print ("Performance :", (precision, recall, f1score, f2score, f0_5score))
         all_metrics.append((precision, recall, f1score, f2score, f0_5score))
     return all_metrics
 
