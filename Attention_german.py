@@ -181,7 +181,7 @@ def optimize_threshold():
         
 def calculate_performance():
     global final_results
-    all_metrics = []
+    all_metrics, all_fn, all_fp = [], [], []
     for (test_data_t, all_results) in final_results:
         res = []
         for i,key in enumerate(all_results):
@@ -203,7 +203,10 @@ def calculate_performance():
             continue
         print ("Performance :", (precision, recall, f1score, f2score, f0_5score))
         all_metrics.append((precision, recall, f1score, f2score, f0_5score))
-    return all_metrics
+
+        all_fn.extend(fn_list)
+        all_fp.extend(fp_list)
+    return (all_fn, all_fp, all_metrics)
 
 
 def masked_softmax(inp):
@@ -356,7 +359,11 @@ for i in range(6):
 threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
 threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
 
-all_metrics = calculate_performance()
+all_fn, all_fp, all_metrics = calculate_performance()
+
+f = open(sys.argv[4], "wb")
+pickle.dump([all_fn, all_fp], f)
+f.close()
 
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)

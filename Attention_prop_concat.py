@@ -226,7 +226,7 @@ def optimize_threshold():
             threshold += step 
         
 def calculate_performance():
-    global final_results
+    global final_results, all_fn, all_fp
     all_metrics = []
     for (test_onto, all_results) in final_results:
         res = []
@@ -249,7 +249,9 @@ def calculate_performance():
             continue
         print ("Performance for", test_onto, "is :", (precision, recall, f1score, f2score, f0_5score))
         all_metrics.append((precision, recall, f1score, f2score, f0_5score))
-    return (fn_list, fp_list, all_metrics)
+        all_fn.extend(fn_list)
+        all_fp.extend(fp_list)
+    return (all_fn, all_fp, all_metrics)
 
 
 def masked_softmax(inp):
