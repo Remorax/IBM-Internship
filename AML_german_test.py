@@ -19,7 +19,7 @@ ontologies_in_alignment_new = \
  ('german_datasets_copy/webdirectory/web.owl',
   'german_datasets_copy/webdirectory/yahoo.small.owl')]
 
-for ont_pair in ontologies_in_alignment_new:
+for ont_pair in ontologies_in_alignment_new[2:]:
     print ("Doing {}...".format(ont_pair))
     t = time.time()
     a, b, c = ont_pair[0], ont_pair[1], ont_pair[0].split("/")[-1].rsplit(".",1)[0].replace(".", "_").lower() + "-" + ont_pair[1].split("/")[-1].rsplit(".",1)[0].replace(".", "_").lower()
