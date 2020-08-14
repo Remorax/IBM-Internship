@@ -1,7 +1,23 @@
 import pickle, time, subprocess
 
 ontologies_in_alignment = pickle.load(open("data_german_dataset_phrase.pkl", "rb"))[-1]
-ontologies_in_alignment_new = [tuple([el.replace("german_datasets/mapping ", "german_datasets_copy/") for el in l]) for l in ontologies_in_alignment][2:]
+ontologies_in_alignment_new = \
+[('german_datasets_copy/lebensmittel/Google.Lebensmittel.owl',
+  'german_datasets_copy/lebensmittel/web.Lebensmittel.owl'),
+ ('german_datasets_copy/freizeit/dmoz.Freizeit.owl',
+  'german_datasets_copy/freizeit/Google.Freizeit.owl'),
+ ('german_datasets_copy/webdirectory/dmoz.owl',
+  'german_datasets_copy/webdirectory/google.owl'),
+ ('german_datasets_copy/webdirectory/dmoz.owl',
+  'german_datasets_copy/webdirectory/web.owl'),
+ ('german_datasets_copy/webdirectory/dmoz.owl',
+  'german_datasets_copy/webdirectory/yahoo.small.owl'),
+ ('german_datasets_copy/webdirectory/google.owl',
+  'german_datasets_copy/webdirectory/web.owl'),
+ ('german_datasets_copy/webdirectory/google.owl',
+  'german_datasets_copy/webdirectory/yahoo.small.owl'),
+ ('german_datasets_copy/webdirectory/web.owl',
+  'german_datasets_copy/webdirectory/yahoo.small.owl')]
 
 for ont_pair in ontologies_in_alignment_new:
     print ("Doing {}...".format(ont_pair))
