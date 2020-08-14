@@ -1,16 +1,22 @@
-User defined signal 2
+Number of neighbours: 23
+Number of entities: 130000
+Training size: 110500 Testing size: 13000
+Traceback (most recent call last):
+  File "Attention_german.py", line 324, in <module>
+    num_batches = int(ceil(len(inputs_all)/batch_size))
+ZeroDivisionError: division by zero
 
 ------------------------------------------------------------
-Sender: LSF System <rer@dccxc204>
-Subject: Job 835565: <python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl> in cluster <dcc> Exited
+Sender: LSF System <rer@dccxc232>
+Subject: Job 1202122: <python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl> in cluster <dcc> Exited
 
-Job <python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Tue Aug 11 01:27:50 2020
-Job was executed on host(s) <dccxc204>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Tue Aug 11 01:28:09 2020
+Job <python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Thu Aug 13 02:39:27 2020
+Job was executed on host(s) <dccxc232>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Thu Aug 13 02:40:25 2020
 </u/arvagarw> was used as the home directory.
 </u/arvagarw/arvind/IBM-Internship> was used as the working directory.
-Started at Tue Aug 11 01:28:09 2020
-Terminated at Wed Aug 12 01:28:22 2020
-Results reported at Wed Aug 12 01:28:22 2020
+Started at Thu Aug 13 02:40:25 2020
+Terminated at Thu Aug 13 02:40:29 2020
+Results reported at Thu Aug 13 02:40:29 2020
 
 Your job looked like:
 
@@ -19,59 +25,20 @@ Your job looked like:
 python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl
 ------------------------------------------------------------
 
-TERM_RUNLIMIT: job killed after reaching LSF run time limit.
-Exited with exit code 140.
+Exited with exit code 1.
 
 Resource usage summary:
 
-    CPU time :                                   86151.53 sec.
-    Max Memory :                                 8246 MB
-    Average Memory :                             5470.88 MB
+    CPU time :                                   3.43 sec.
+    Max Memory :                                 211 MB
+    Average Memory :                             211.00 MB
     Total Requested Memory :                     43417.00 MB
-    Delta Memory :                               35171.00 MB
+    Delta Memory :                               43206.00 MB
     Max Swap :                                   -
     Max Processes :                              4
-    Max Threads :                                7
-    Run time :                                   86413 sec.
-    Turnaround time :                            86432 sec.
-
-The output (if any) is above this job summary.
-
-
-------------------------------------------------------------
-Sender: LSF System <rer@dccxc322>
-Subject: Job 835563: <python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl> in cluster <dcc> Exited
-
-Job <python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Tue Aug 11 01:27:50 2020
-Job was executed on host(s) <dccxc322>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Tue Aug 11 02:59:28 2020
-</u/arvagarw> was used as the home directory.
-</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
-Started at Tue Aug 11 02:59:28 2020
-Terminated at Wed Aug 12 02:59:38 2020
-Results reported at Wed Aug 12 02:59:38 2020
-
-Your job looked like:
-
-------------------------------------------------------------
-# LSBATCH: User input
-python Attention_german.py 23 1 data_german_datasetv2.pkl test_german_datasetv223_1.pkl
-------------------------------------------------------------
-
-TERM_RUNLIMIT: job killed after reaching LSF run time limit.
-Exited with exit code 140.
-
-Resource usage summary:
-
-    CPU time :                                   150692.48 sec.
-    Max Memory :                                 7928 MB
-    Average Memory :                             5231.38 MB
-    Total Requested Memory :                     43417.00 MB
-    Delta Memory :                               35489.00 MB
-    Max Swap :                                   -
-    Max Processes :                              4
-    Max Threads :                                9
-    Run time :                                   86421 sec.
-    Turnaround time :                            91908 sec.
+    Max Threads :                                5
+    Run time :                                   31 sec.
+    Turnaround time :                            62 sec.
 
 The output (if any) is above this job summary.
 
