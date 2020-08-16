@@ -354,7 +354,7 @@ for i in range(6):
     val_data_f = [key for key in val_data if not val_data[key]]
     np.random.shuffle(val_data_f)
     fval_len = len(val_data_f)
-    val_data_f = val_data_f[:0.3*fval_len]
+    val_data_f = val_data_f[:int(0.3*fval_len)]
     
     optimize_threshold()
 
