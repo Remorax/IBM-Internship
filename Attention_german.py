@@ -148,7 +148,7 @@ def optimize_threshold():
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            s = set(rs)
+            s = set(res)
             fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in s]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
