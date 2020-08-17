@@ -1,0 +1,39 @@
+User defined signal 2
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc250>
+Subject: Job 1639270: <python Attention_german.py 51 1 data_german_dataset_phrase.pkl test_german_dataset_phrase51_1.pkl> in cluster <dcc> Exited
+
+Job <python Attention_german.py 51 1 data_german_dataset_phrase.pkl test_german_dataset_phrase51_1.pkl> was submitted from host <dccxl010> by user <arvagarw> in cluster <dcc> at Sun Aug 16 10:10:07 2020
+Job was executed on host(s) <dccxc250>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Sun Aug 16 10:10:08 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Sun Aug 16 10:10:08 2020
+Terminated at Mon Aug 17 10:10:09 2020
+Results reported at Mon Aug 17 10:10:09 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_german.py 51 1 data_german_dataset_phrase.pkl test_german_dataset_phrase51_1.pkl
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   86391.20 sec.
+    Max Memory :                                 3547 MB
+    Average Memory :                             2804.34 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               39870.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   86401 sec.
+    Turnaround time :                            86402 sec.
+
+The output (if any) is above this job summary.
+
