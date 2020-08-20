@@ -148,7 +148,8 @@ def optimize_threshold():
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in set(res)]
+            s = set(res)
+            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in s]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
@@ -187,7 +188,8 @@ def calculate_performance():
         for i,key in enumerate(all_results):
             if all_results[key][0] > threshold:
                 res.append(key)
-        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in set(res)]
+        s = set(res)
+        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in s]
         fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
         tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
         tp, fn, fp = len(tp_list), len(fn_list), len(fp_list)
@@ -297,6 +299,8 @@ for i in range(6):
 
     train_data_t = [key for key in train_data if train_data[key]]
     train_data_f = [key for key in train_data if not train_data[key]]
+    np.random.shuffle(train_data_f)
+    train_data_f = train_data_f[:150000-len(train_data_t)]
     train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
     train_data_t = train_data_t[:len(train_data_f)].tolist()
 
@@ -348,6 +352,9 @@ for i in range(6):
     
     val_data_t = [key for key in val_data if val_data[key]]
     val_data_f = [key for key in val_data if not val_data[key]]
+    np.random.shuffle(val_data_f)
+    fval_len = len(val_data_f)
+    val_data_f = val_data_f[:int(0.3*fval_len)]
     
     optimize_threshold()
 
