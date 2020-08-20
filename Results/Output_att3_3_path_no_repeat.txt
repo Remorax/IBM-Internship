@@ -1,0 +1,95 @@
+Number of entities: 122893
+Training size: 109284 Testing size: 13609
+Epoch: 0 Idx: 0 Loss: 0.34558755967028826
+Epoch: 1 Idx: 0 Loss: 0.04289838204730832
+Epoch: 2 Idx: 0 Loss: 0.018686675935661444
+Epoch: 3 Idx: 0 Loss: 0.020276142459472134
+Epoch: 4 Idx: 0 Loss: 0.01054076074755147
+Epoch: 5 Idx: 0 Loss: 0.014717719290956773
+Epoch: 6 Idx: 0 Loss: 0.017299690072728306
+Epoch: 7 Idx: 0 Loss: 0.008670697379117022
+Epoch: 8 Idx: 0 Loss: 0.011008938549248377
+Epoch: 9 Idx: 0 Loss: 0.008134126521928948
+Epoch: 10 Idx: 0 Loss: 0.027946251376838673
+Epoch: 11 Idx: 0 Loss: 0.0049272539652965045
+Epoch: 12 Idx: 0 Loss: 0.01652185855012892
+Epoch: 13 Idx: 0 Loss: 0.009521633456758154
+Epoch: 14 Idx: 0 Loss: 0.015794486644493393
+Epoch: 15 Idx: 0 Loss: 0.07686540141224275
+Epoch: 16 Idx: 0 Loss: 0.0007872213915159586
+Epoch: 17 Idx: 0 Loss: 0.00980890268775989
+Epoch: 18 Idx: 0 Loss: 0.005659509154765488
+Epoch: 19 Idx: 0 Loss: 0.015569347495726247
+Epoch: 20 Idx: 0 Loss: 0.004330437792475313
+Epoch: 21 Idx: 0 Loss: 0.009283995914742684
+Epoch: 22 Idx: 0 Loss: 0.016953952989484534
+Epoch: 23 Idx: 0 Loss: 0.013143766290698213
+Epoch: 24 Idx: 0 Loss: 0.016110553605442935
+Epoch: 25 Idx: 0 Loss: 0.004595468142697147
+Epoch: 26 Idx: 0 Loss: 0.010982235928712801
+Epoch: 27 Idx: 0 Loss: 0.005904891317359623
+Epoch: 28 Idx: 0 Loss: 0.018002287101048786
+Epoch: 29 Idx: 0 Loss: 0.005115981131003879
+Epoch: 30 Idx: 0 Loss: 0.008117798383855753
+Epoch: 31 Idx: 0 Loss: 0.015827440914303124
+Epoch: 32 Idx: 0 Loss: 0.01269090754082763
+Epoch: 33 Idx: 0 Loss: 0.006497313326197995
+Epoch: 34 Idx: 0 Loss: 0.005359725690949262
+Epoch: 35 Idx: 0 Loss: 0.004723589243341143
+Epoch: 36 Idx: 0 Loss: 0.003877029792683525
+Epoch: 37 Idx: 0 Loss: 0.015200028542342708
+Epoch: 38 Idx: 0 Loss: 0.010007494536260507
+Epoch: 39 Idx: 0 Loss: 0.006273022298102273
+Epoch: 40 Idx: 0 Loss: 0.006738790050649926
+Epoch: 41 Idx: 0 Loss: 0.004523194828251004
+Epoch: 42 Idx: 0 Loss: 0.007925806380904442
+Epoch: 43 Idx: 0 Loss: 0.00430176989518698
+Epoch: 44 Idx: 0 Loss: 0.01785486590334113
+Epoch: 45 Idx: 0 Loss: 0.00459745203872671
+Epoch: 46 Idx: 0 Loss: 0.015491814775865947
+Epoch: 47 Idx: 0 Loss: 0.005108869319825019
+Epoch: 48 Idx: 0 Loss: 0.0043914305557855235
+Epoch: 49 Idx: 0 Loss: 0.005051272531789892
+Traceback (most recent call last):
+  File "Attention_path_no_repeat.py", line 284, in <module>
+    greedy_matching()
+  File "Attention_path_no_repeat.py", line 51, in greedy_matching
+    num_batches = int(ceil(len(inputs_pos)/batch_size))
+ZeroDivisionError: division by zero
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc242>
+Subject: Job 3587271: <python Attention_path_no_repeat.py 3 3 data_path.pkl test_path_no_repeat3_3.pkl> in cluster <dcc> Exited
+
+Job <python Attention_path_no_repeat.py 3 3 data_path.pkl test_path_no_repeat3_3.pkl> was submitted from host <dccxl001> by user <vivek98> in cluster <dcc> at Wed Jul 22 05:57:18 2020
+Job was executed on host(s) <dccxc242>, in queue <x86_24h>, as user <vivek98> in cluster <dcc> at Wed Jul 22 05:57:20 2020
+</u/vivek98> was used as the home directory.
+</u/vivek98/IBM-Internship> was used as the working directory.
+Started at Wed Jul 22 05:57:20 2020
+Terminated at Wed Jul 22 05:58:24 2020
+Results reported at Wed Jul 22 05:58:24 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_path_no_repeat.py 3 3 data_path.pkl test_path_no_repeat3_3.pkl
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   60.74 sec.
+    Max Memory :                                 1592 MB
+    Average Memory :                             1224.50 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41825.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   91 sec.
+    Turnaround time :                            66 sec.
+
+The output (if any) is above this job summary.
+

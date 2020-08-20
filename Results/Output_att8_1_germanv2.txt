@@ -1,0 +1,44 @@
+Number of neighbours: 8
+Number of entities: 130000
+Training size: 110500 Testing size: 13000
+Traceback (most recent call last):
+  File "Attention_german.py", line 324, in <module>
+    num_batches = int(ceil(len(inputs_all)/batch_size))
+ZeroDivisionError: division by zero
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc230>
+Subject: Job 1202103: <python Attention_german.py 8 1 data_german_datasetv2.pkl test_german_datasetv28_1.pkl> in cluster <dcc> Exited
+
+Job <python Attention_german.py 8 1 data_german_datasetv2.pkl test_german_datasetv28_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Thu Aug 13 02:39:27 2020
+Job was executed on host(s) <dccxc230>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Thu Aug 13 02:39:35 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Thu Aug 13 02:39:35 2020
+Terminated at Thu Aug 13 02:39:42 2020
+Results reported at Thu Aug 13 02:39:42 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_german.py 8 1 data_german_datasetv2.pkl test_german_datasetv28_1.pkl
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   3.57 sec.
+    Max Memory :                                 85 MB
+    Average Memory :                             85.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43332.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   15 sec.
+    Turnaround time :                            15 sec.
+
+The output (if any) is above this job summary.
+

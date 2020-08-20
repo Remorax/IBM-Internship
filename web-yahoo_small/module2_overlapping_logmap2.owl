@@ -1,0 +1,1160 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/webdirectory/yahoo.small.owl)#"
+     xml:base="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/webdirectory/yahoo.small.owl)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/webdirectory/yahoo.small.owl)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen"/>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln_Antiquitaeten -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln_Antiquitaeten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln_Autogramme -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln_Autogramme">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln_Briefmarken -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln_Briefmarken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Antiquitaeten-und-Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Accessoires -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Accessoires">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Berufsbekleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Berufsbekleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Berufsbekleidung_Schuhe -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Berufsbekleidung_Schuhe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Berufsbekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Damenbekleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Damenbekleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Damenbekleidung_Bademoden -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Damenbekleidung_Bademoden">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Damenbekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Herrenbekleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Herrenbekleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Herrenbekleidung_Unterwaesche -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Herrenbekleidung_Unterwaesche">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Herrenbekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Jeans -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Jeans">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Schuhe -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Schuhe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Sportbekleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_Sportbekleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_T-Shirts -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung_T-Shirts">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Bekleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Antiquariate -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Antiquariate">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Comics -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Comics">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Computer -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesellschaft-und-Soziales -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesellschaft-und-Soziales">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesellschaft-und-Soziales_Frauen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesellschaft-und-Soziales_Frauen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesellschaft-und-Soziales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesundheit -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Gesundheit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Buchtitel -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Buchtitel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Buchtitel_Technik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Buchtitel_Technik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Buchtitel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Tiere -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik_Tiere">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Naturwissenschaft-und-Technik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Psychologie -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Psychologie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Recht -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Recht">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Reisen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Reisen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Religion -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Religion">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit_Outdoors -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit_Outdoors">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit_Sport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit_Sport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Sport-und-Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Wirtschaft -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel_Wirtschaft">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Buecher_Buchhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer_Computerkurse -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer_Computerkurse">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer_Computerkurse_Frauen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer_Computerkurse_Frauen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Computer_Computerkurse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware_CD-ROMs -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware_CD-ROMs">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware_Drucker -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware_Drucker">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware_Notebooks -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware_Notebooks">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Computer_Hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke_Alkohol-und-Spirituosen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke_Alkohol-und-Spirituosen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke_Alkohol-und-Spirituosen_Bier -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke_Alkohol-und-Spirituosen_Bier">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Getraenke_Alkohol-und-Spirituosen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Naturkost -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Naturkost">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Tiefkuehlkost -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken_Tiefkuehlkost">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Essen-und-Trinken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Augenoptik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Augenoptik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Augenoptik_Kontaktlinsen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Augenoptik_Kontaktlinsen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Augenoptik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Bildung-und-Ausbildung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Bildung-und-Ausbildung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Bildung-und-Ausbildung_Medizin -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Bildung-und-Ausbildung_Medizin">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Bildung-und-Ausbildung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung_Nahrungsergaenzungsmittel -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung_Nahrungsergaenzungsmittel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung_Nahrungsergaenzungsmittel_Sporternaehrung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung_Nahrungsergaenzungsmittel_Sporternaehrung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Gesundheit_Ernaehrung_Nahrungsergaenzungsmittel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Briefkaesten -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Briefkaesten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Garten-und-Pflanzen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Garten-und-Pflanzen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Garten-und-Pflanzen_Blumen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Garten-und-Pflanzen_Blumen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Garten-und-Pflanzen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren_Feuerzeuge -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren_Feuerzeuge">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren_Kerzen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren_Kerzen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Haushaltswaren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Kuechen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Kuechen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Moebel -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten_Moebel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Haus-und-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Haare -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Haare">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Haare_Haarpflege -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Haare_Haarpflege">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Haare"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Kosmetik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Kosmetik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Kosmetik_Naturkosmetik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Kosmetik_Naturkosmetik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Koerperpflege_Kosmetik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer_Stempel -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer_Stempel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer_Window-Color -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer_Window-Color">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Bedarf-und-Zubehoer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Koerperkunst -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Koerperkunst">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Koerperkunst_Body-Painting -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Koerperkunst_Body-Painting">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Koerperkunst"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Keramik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Keramik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Kloeppeln -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Kloeppeln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Naehen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Naehen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Seidenmalerei -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk_Seidenmalerei">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei_Airbrush -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei_Airbrush">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei_Reproduktionen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei_Reproduktionen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Kunst-und-Kunsthandwerk_Malerei-und-Bildhauerei"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel_Independent -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel_Independent">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel_Jazz -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel_Jazz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel_Oldies -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel_Oldies">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik_CDs_Schallplatten-und-Kassetten_Musikgenre-spezialisierter-Fachhandel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_Instrumente -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_Instrumente">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Musik_Labels -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Musik_Labels">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Musik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Angeln -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Angeln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Ausbildung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Ausbildung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Segeln -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Segeln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Segeln_Ausbildung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Segeln_Ausbildung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Boote-und-Schiffe_Segeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Paintball -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Paintball">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Tauchen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Outdoors_Tauchen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Outdoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Schmuck -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Schmuck">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Schmuck_Uhren -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Schmuck_Uhren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Schmuck"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Schmuck_Uhren_Armbanduhren -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Schmuck_Uhren_Armbanduhren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Schmuck_Uhren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Brettspiele -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Brettspiele">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Brettspiele_Schach -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Brettspiele_Schach">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Brettspiele"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Holzspielzeug -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Holzspielzeug">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Modellbau -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Modellbau">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Modellbau_Autos -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Modellbau_Autos">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Stofftiere -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug_Stofftiere">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Spiele-und-Spielzeug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Badminton -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Badminton">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Basketball -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Basketball">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Bogenschiessen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Bogenschiessen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Bowling -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Bowling">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Eishockey -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Eishockey">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Fechten -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Fechten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Fitness -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Fitness">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Fussball -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Fussball">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Golf -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Golf">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Kampfsport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Kampfsport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Radsport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Radsport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Rugby -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Rugby">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Squash -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Squash">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Tennis -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Tennis">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Tischtennis -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Tischtennis">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Triathlon -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Triathlon">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Turnen -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Turnen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Volleyball -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Volleyball">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Sport_Wintersport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Sport_Wintersport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Tabakwaren -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Tabakwaren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Telekommunikation -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Telekommunikation">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport_Reisebuero-und-Hotel-Heidpark -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport_Reisebuero-und-Hotel-Heidpark">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport_Reisebuero-und-Hotel-Heidpark_Wintersport -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport_Reisebuero-und-Hotel-Heidpark_Wintersport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Eintrittskarten_Sport_Reisebuero-und-Hotel-Heidpark"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video_Einzelhaendler -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video_Einzelhaendler">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video_Einzelhaendler_Laserdisc -->
+
+    <owl:Class rdf:about="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video_Einzelhaendler_Laserdisc">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/yahoo.small.owl#Firmen_Unterhaltung_Video_Einzelhaendler"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

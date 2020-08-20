@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/lebensmittel/Google.Lebensmittel.owl)#"
+     xml:base="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/lebensmittel/Google.Lebensmittel.owl)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/lebensmittel/Google.Lebensmittel.owl)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops"/>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Bier -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Bier">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Baden -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Baden">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Franken -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Franken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Nahe -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Nahe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Pfalz -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Pfalz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheingau -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheingau">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheinhessen -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheinhessen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Schweizer -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Schweizer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Tiefkuehlkost -->
+
+    <owl:Class rdf:about="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Tiefkuehlkost">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

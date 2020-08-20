@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/webdirectory/web.owl)#"
+     xml:base="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/webdirectory/web.owl)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/webdirectory/web.owl)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis"/>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Ballons -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Ballons">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Blumen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Blumen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Feuerzeuge -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Feuerzeuge">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Geschenkgutscheine -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Geschenkgutscheine">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Kerzen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Kerzen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Kunsthandwerk -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Kunsthandwerk">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Scherzartikel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Scherzartikel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Werbeartikel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke_Werbeartikel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Blumen-Geschenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Antiquariate -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Antiquariate">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Comics -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Comics">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Ausbildung -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Ausbildung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Auto -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Auto">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Computer -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Esoterik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Esoterik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Fotografie -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Fotografie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Gesundheit -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Gesundheit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Kunst -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Kunst">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Recht -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Recht">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Reisen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Reisen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Wirtschaft -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Wirtschaft">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Wissenschaft -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher_Wissenschaft">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Buchshops_Fachbuecher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme_DVDs -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme_DVDs">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme_Videos -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme_Videos">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Filme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik_CDs -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik_CDs">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik_CDs_Klassik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik_CDs_Klassik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buecher_Musik-Filme_Musik_CDs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren_Postkarten -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren_Postkarten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren_Stempel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren_Stempel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Buero-Schreibwaren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Astronomie -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Astronomie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Keramik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Keramik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Kerzen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Kerzen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Naehen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Naehen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Sticken -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Sticken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Stofftiere -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Stofftiere">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Window-Color -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit_Window-Color">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Basteln-Handarbeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Feste-feiern -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Feste-feiern">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Feste-feiern_Hochzeit -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Feste-feiern_Hochzeit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Feste-feiern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Fotografie -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Fotografie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Modellbau -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Modellbau">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Musizieren -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Musizieren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Musizieren_Instrumente -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Musizieren_Instrumente">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Musizieren"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Autogramme -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Autogramme">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Briefmarken -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Briefmarken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Figuren -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Figuren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Historische-Wertpapiere -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Historische-Wertpapiere">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Messer -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Messer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Muenzen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln_Muenzen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Freizeit-Hobby_Sammeln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Esoterik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Esoterik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Kosmetik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Kosmetik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Optik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Optik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Optik_Kontaktlinsen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Optik_Kontaktlinsen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Gesundheit-Kosmetik_Optik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Einrichten -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Einrichten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Einrichten_Uhren -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Einrichten_Uhren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Einrichten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf_Aquaristik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf_Aquaristik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf_Terraristik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf_Terraristik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf_Voegel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf_Voegel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Haustierbedarf"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kueche -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kueche">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende_Galerien -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende_Galerien">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende_Reproduktionen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende_Reproduktionen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Kunstgegenstaende"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Moebel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Moebel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Werkzeuge -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten_Werkzeuge">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Haus-Garten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Antiquitaeten -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Antiquitaeten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte_Oesterreich -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte_Oesterreich">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte_Schweiz -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte_Schweiz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Anzeigenmaerkte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto_Oesterreich -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto_Oesterreich">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto_Schweiz -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto_Schweiz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Auto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Computer -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Kleinanzeigen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Accessoires -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Accessoires">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Frauen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Frauen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Jeans -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Jeans">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Maenner -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Maenner">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Schuhe -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Schuhe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_T-Shirts -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_T-Shirts">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Unterwaesche -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung_Unterwaesche">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Kleidung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Schmuck -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires_Schmuck">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Mode-Accessoires"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Bier -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Bier">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Accessoires -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Accessoires">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Baden -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Baden">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Franken -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Franken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Nahe -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Nahe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Pfalz -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Pfalz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheingau -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheingau">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheinhessen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheinhessen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Oesterreich -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Oesterreich">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Schweiz -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Schweiz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Tiefkuehlkost -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Tiefkuehlkost">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Angeln -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Angeln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Badminton -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Badminton">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Fitness -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Fitness">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Fussball -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Fussball">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Golf -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Golf">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Kampfsport -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Kampfsport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Laufsport -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Laufsport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Paintball -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Paintball">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Schach -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Schach">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Sporternaehrung -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Sporternaehrung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Tauchen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Tauchen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Tennis -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Tennis">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Tischtennis -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Tischtennis">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Wassersport -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Wassersport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Wintersport -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel_Wintersport">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Sportartikel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Hardware -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Hardware">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Komplettsysteme -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Komplettsysteme">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Notebooks -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Notebooks">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Software -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Software">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Software_Spiele -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Software_Spiele">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Zubehoer -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Zubehoer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Zubehoer_Drucker -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Zubehoer_Drucker">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Computer_Zubehoer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Telekommunikation -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Telekommunikation">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Unterhaltungselektronik -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Unterhaltungselektronik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Unterhaltungselektronik_Heimkino -->
+
+    <owl:Class rdf:about="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Unterhaltungselektronik_Heimkino">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.owl#Verzeichnis_Einkaufen-Sparen_Unterhaltungs-Kommunikationselektronik_Unterhaltungselektronik"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

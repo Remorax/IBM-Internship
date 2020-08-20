@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/lebensmittel/web.Lebensmittel.owl)#"
+     xml:base="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/lebensmittel/web.Lebensmittel.owl)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/lebensmittel/web.Lebensmittel.owl)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen"/>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Bier -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Bier">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Baden -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Baden">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Franken -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Franken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Nahe -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Nahe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Pfalz -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Pfalz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheingau -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheingau">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheinhessen -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheinhessen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Schweiz -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Schweiz">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Tiefkuehlkost -->
+
+    <owl:Class rdf:about="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Tiefkuehlkost">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

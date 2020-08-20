@@ -1,0 +1,480 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/freizeit/dmoz.Freizeit.owl)#"
+     xml:base="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/freizeit/dmoz.Freizeit.owl)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(file:/data/Vivek/IBM/IBM-Internship/german_datasets_copy/freizeit/dmoz.Freizeit.owl)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops"/>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Artistik -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Artistik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Kerzen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Kerzen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Malen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Malen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Papier -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Papier">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Perlen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Perlen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Serviettentechnik -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Serviettentechnik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Stempeltechnik -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln_Stempeltechnik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Basteln"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Drogen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Drogen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Drogen_Hanf -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Drogen_Hanf">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Drogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten_Naehen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten_Naehen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten_Sticken -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten_Sticken">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Handarbeiten"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte_LARP -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte_LARP">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte_Mittelalterlich -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte_Mittelalterlich">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte_Nordamerikanisch -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte_Nordamerikanisch">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Lebendige_Geschichte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Dampfmaschinen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Dampfmaschinen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Eisenbahnen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Eisenbahnen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Eisenbahnen_Zubehoer -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Eisenbahnen_Zubehoer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Eisenbahnen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos_Ferngesteuert -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos_Ferngesteuert">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos_Slotcars -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos_Slotcars">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Fahrzeuge_Autos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Ferngesteuert -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Ferngesteuert">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle_Flugzeuge -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle_Flugzeuge">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle_Helikopter -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle_Helikopter">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle_Raketen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle_Raketen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Flugmodelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Militaer -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Militaer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Schiffe -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Schiffe">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Zubehoer -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau_Zubehoer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Modellbau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Astronomie -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Astronomie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Astronomie_Sternnamen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Astronomie_Sternnamen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Astronomie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Biologie -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Biologie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Geowissenschaften -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Geowissenschaften">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Geowissenschaften_Meteorologie -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Geowissenschaften_Meteorologie">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Natur_und_Wissenschaft_Geowissenschaften"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Bekleidung -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Bekleidung">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Fahrzeuge -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Fahrzeuge">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Jagd -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Jagd">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Metalldetektoren -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Metalldetektoren">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Optik -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Optik">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Zelte -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping_Zelte">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Outdoor_und_Camping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys_Ballons -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys_Ballons">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys_Feuerwerk -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys_Feuerwerk">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys_Schminke -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys_Schminke">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Partys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Auktionen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Auktionen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Schusswaffen -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Schusswaffen">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Schusswaffen_Zubehoer -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Schusswaffen_Zubehoer">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Waffen_Schusswaffen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Zaubern -->
+
+    <owl:Class rdf:about="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit_Zaubern">
+        <rdfs:subClassOf rdf:resource="http://localhost:80/dmoz.Freizeit.v2.owl#Top_World_Deutsch_Online-Shops_Freizeit"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

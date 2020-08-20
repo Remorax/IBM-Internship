@@ -1,0 +1,124 @@
+Number of neighbours: 50
+Number of entities: 862150
+Training size: 732828 Testing size: 86215
+Epoch: 0 Idx: 0 Loss: 0.1959366547402213
+Epoch: 0 Idx: 5000 Loss: 0.054522809896336774
+Epoch: 0 Idx: 10000 Loss: 0.056069095855384596
+Epoch: 0 Idx: 15000 Loss: 0.01677247619568774
+Epoch: 0 Idx: 20000 Loss: 0.018936026930326873
+Epoch: 0 Idx: 25000 Loss: 0.01710190256814082
+Epoch: 0 Idx: 30000 Loss: 0.022213554909063578
+Epoch: 0 Idx: 35000 Loss: 0.030613258237284956
+Epoch: 0 Idx: 40000 Loss: 0.03590851829166515
+Epoch: 0 Idx: 45000 Loss: 0.02905475864093269
+Traceback (most recent call last):
+  File "Attention_german.py", line 338, in <module>
+    loss.backward()
+  File "/u/arvagarw/miniconda3/lib/python3.7/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/u/arvagarw/miniconda3/lib/python3.7/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
+
+Epoch: 1 Idx: 35000 Loss: 0.022295033751488363
+Epoch: 1 Idx: 40000 Loss: 0.05836909727096594
+Epoch: 1 Idx: 45000 Loss: 0.018919485489437043
+Epoch: 1 Idx: 50000 Loss: 0.014383789490083556
+Epoch: 1 Idx: 55000 Loss: 0.034613997342971534
+Epoch: 1 Idx: 60000 Loss: 0.03482135871098205
+Epoch: 2 Idx: 0 Loss: 0.04136478210974047
+Epoch: 2 Idx: 5000 Loss: 0.014205463717701506
+Epoch: 2 Idx: 10000 Loss: 0.022459553418967555
+Epoch: 2 Idx: 15000 Loss: 0.02224524901964114
+Epoch: 2 Idx: 20000 Loss: 0.08085944943630605
+Epoch: 2 Idx: 25000 Loss: 0.06747431558666386
+Epoch: 2 Idx: 30000 Loss: 0.006263286452937543
+Epoch: 2 Idx: 35000 Loss: 0.020856347216945112
+Epoch: 2 Idx: 40000 Loss: 0.05188263369393505
+Epoch: 2 Idx: 45000 Loss: 0.06501658450752405
+Epoch: 2 Idx: 50000 Loss: 0.03138104461637056
+Epoch: 2 Idx: 55000 Loss: 0.0035416035635272075
+Traceback (most recent call last):
+  File "Attention_german.py", line 339, in <module>
+    optimizer.step()
+  File "/u/arvagarw/miniconda3/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 15, in decorate_context
+    return func(*args, **kwargs)
+  File "/u/arvagarw/miniconda3/lib/python3.7/site-packages/torch/optim/adam.py", line 96, in step
+    grad = grad.add(p, alpha=group['weight_decay'])
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc232>
+Subject: Job 706816: <python Attention_german.py 50 1 data_german_datasetv2.pkl test_german_datasetv250_1.pkl> in cluster <dcc> Exited
+
+Job <python Attention_german.py 50 1 data_german_datasetv2.pkl test_german_datasetv250_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Mon Aug 10 06:44:23 2020
+Job was executed on host(s) <dccxc232>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Mon Aug 10 06:44:24 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Mon Aug 10 06:44:24 2020
+Terminated at Mon Aug 10 06:53:13 2020
+Results reported at Mon Aug 10 06:53:13 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_german.py 50 1 data_german_datasetv2.pkl test_german_datasetv250_1.pkl
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   523.40 sec.
+    Max Memory :                                 2296 MB
+    Average Memory :                             2185.10 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41121.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   550 sec.
+    Turnaround time :                            530 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc222>
+Subject: Job 704976: <python Attention_german.py 50 1 data_german_datasetv2.pkl test_german_datasetv250_1.pkl> in cluster <dcc> Exited
+
+Job <python Attention_german.py 50 1 data_german_datasetv2.pkl test_german_datasetv250_1.pkl> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Mon Aug 10 06:21:40 2020
+Job was executed on host(s) <dccxc222>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Mon Aug 10 06:21:42 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Mon Aug 10 06:21:42 2020
+Terminated at Mon Aug 10 06:53:13 2020
+Results reported at Mon Aug 10 06:53:13 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_german.py 50 1 data_german_datasetv2.pkl test_german_datasetv250_1.pkl
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1887.16 sec.
+    Max Memory :                                 2620 MB
+    Average Memory :                             2416.46 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40797.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   1898 sec.
+    Turnaround time :                            1893 sec.
+
+The output (if any) is above this job summary.
+
