@@ -1,0 +1,39 @@
+User defined signal 2
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc327>
+Subject: Job 2283838: <python Attention_twostep.py 24 Input/data_demarcated_bagofnbrs.pkl Output/test_demarcated_bagofnbrs24.pkl> in cluster <dcc> Exited
+
+Job <python Attention_twostep.py 24 Input/data_demarcated_bagofnbrs.pkl Output/test_demarcated_bagofnbrs24.pkl> was submitted from host <dccxl010> by user <arvagarw> in cluster <dcc> at Thu Aug 20 09:56:53 2020
+Job was executed on host(s) <dccxc327>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Fri Aug 21 02:55:10 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Fri Aug 21 02:55:10 2020
+Terminated at Sat Aug 22 02:54:57 2020
+Results reported at Sat Aug 22 02:54:57 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_twostep.py 24 Input/data_demarcated_bagofnbrs.pkl Output/test_demarcated_bagofnbrs24.pkl
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   86371.26 sec.
+    Max Memory :                                 2744 MB
+    Average Memory :                             1860.63 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40673.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   86401 sec.
+    Turnaround time :                            147484 sec.
+
+The output (if any) is above this job summary.
+

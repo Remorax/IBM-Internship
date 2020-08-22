@@ -1,0 +1,39 @@
+User defined signal 2
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc333>
+Subject: Job 2283829: <python Attention_twostep_weightedpath.py 26 Input/data_demarcated_bagofnbrs.pkl Output/test_demarcated_bagofnbrs_wtpath26.pkl> in cluster <dcc> Exited
+
+Job <python Attention_twostep_weightedpath.py 26 Input/data_demarcated_bagofnbrs.pkl Output/test_demarcated_bagofnbrs_wtpath26.pkl> was submitted from host <dccxl010> by user <arvagarw> in cluster <dcc> at Thu Aug 20 09:56:53 2020
+Job was executed on host(s) <dccxc333>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Thu Aug 20 14:30:51 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Thu Aug 20 14:30:51 2020
+Terminated at Fri Aug 21 14:30:44 2020
+Results reported at Fri Aug 21 14:30:44 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_twostep_weightedpath.py 26 Input/data_demarcated_bagofnbrs.pkl Output/test_demarcated_bagofnbrs_wtpath26.pkl
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   152119.12 sec.
+    Max Memory :                                 2769 MB
+    Average Memory :                             1977.27 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40648.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   86408 sec.
+    Turnaround time :                            102831 sec.
+
+The output (if any) is above this job summary.
+
