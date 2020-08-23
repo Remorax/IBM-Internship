@@ -222,6 +222,8 @@ class SiameseNetwork(nn.Module):
         super().__init__() 
         
         self.features_arr = np.array(list(features_dict.values()))
+        self.n_neighbours = self.features_arr.shape[1]
+        self.max_paths = self.features_arr.shape[2]
         self.max_pathlen = self.features_arr.shape[3]
         self.embedding_dim = np.array(emb_vals).shape[1]
         
