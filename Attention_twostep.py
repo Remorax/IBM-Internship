@@ -265,7 +265,8 @@ class SiameseNetwork(nn.Module):
             # path_weights = masked_softmax(path_weights)
             # best_path = torch.sum(path_weights[:, :, :, None, None] * feature_emb, dim=2)
 
-            node_weights = torch.bmm(node_emb.unsqueeze(1), best_path.reshape(-1, self.embedding_dim, self.n_neighbours * self.max_pathlen)) # batch_size * 4 * max_pathlen
+            best_path_reshaped = best_path.permute(0,3,1,2).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_pathlen)
+            node_weights = torch.bmm(node_emb.unsqueeze(1), best_path_reshaped) # batch_size * 4 * max_pathlen
             node_weights = masked_softmax(node_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen)) # batch_size * 4 * max_pathlen
             attended_path = node_weights.unsqueeze(-1) * best_path # batch_size * 4 * max_pathlen * 512
 

@@ -181,7 +181,7 @@ def optimize_threshold():
                 step = 0.0001
             else:
                 step = 0.001
-            threshold += step
+            threshold += step 
 
 def calculate_performance():
     global final_results
@@ -251,32 +251,32 @@ class SiameseNetwork(nn.Module):
         nodes = nodes.permute(1,0) # 2 * batch_size
         features = features.permute(1,0,2,3,4) # 2 * batch_size * 4 * max_paths * max_pathlen
         for i in range(2):
-            node_emb = self.name_embedding(nodes[i]) # batch_size * 512
-            feature_emb = self.name_embedding(features[i]) #  batch_size * 4 * max_paths * max_pathlen * 512
+            node_emb_x = self.name_embedding(nodes[i]) # batch_size * 512
+            feature_emb_x = self.name_embedding(features[i]) #  batch_size * 4 * max_paths * max_pathlen * 512
 
-            feature_emb_reshaped = feature_emb.permute(0,4,1,2,3).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_paths * self.max_pathlen)
-            path_weights = torch.bmm(node_emb[:, None, :], feature_emb_reshaped)
-            path_weights = path_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_paths, self.max_pathlen)
-            path_weights = masked_softmax(torch.sum(path_weights, dim=-1))
+            node_emb_y = self.name_embedding(nodes[1-i]) # batch_size * 512
+            feature_emb_y = self.name_embedding(features[1-i]) #  batch_size * 4 * max_paths * max_pathlen * 512
+            
+            attended_path = torch.bmm(feature_emb_x.reshape(-1, 1, self.embedding_dim), 
+                                         feature_emb_y.reshape(-1, self.embedding_dim, 1))
+            attended_path = attended_path.reshape(-1, self.n_neighbours, self.max_paths, self.max_pathlen)
+            path_weights = masked_softmax(torch.sum(attended_path, dim=-1))
 
-            feature_emb_reshaped = feature_emb.reshape(-1, self.max_paths, self.max_pathlen * self.embedding_dim)
-            best_path = torch.bmm(path_weights.reshape(-1, 1, self.max_paths), feature_emb_reshaped)
+            feature_emb_x_reshaped = feature_emb_x.reshape(-1, self.max_paths, self.max_pathlen * self.embedding_dim)
+            best_path = torch.bmm(path_weights.reshape(-1, 1, self.max_paths), feature_emb_x_reshaped)
             best_path = best_path.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen, self.embedding_dim) # batch_size * 4 * max_pathlen * 512
-            
-            best_path_reshaped = best_path.permute(0,3,1,2).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_pathlen)
-            node_weights = torch.bmm(node_emb.unsqueeze(1), best_path_reshaped) # batch_size * 4 * max_pathlen
-            node_weights = masked_softmax(node_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen)) # batch_size * 4 * max_pathlen
-            attended_path = node_weights.unsqueeze(-1) * best_path # batch_size * 4 * max_pathlen * 512
 
+            node_weights = torch.sum(node_emb[:, None, None, :] * best_path, dim=-1) # batch_size * 4 * max_pathlen
+            node_weights = masked_softmax(node_weights).unsqueeze(-1) # batch_size * 4 * max_pathlen * 1
+            attended_path = node_weights * best_path # batch_size * 4 * max_pathlen * 512
             distance_weighted_path = torch.sum((self.v[None,None,:,None] * attended_path), dim=2) # batch_size * 4 * 512
-            
 
             self.w_data_neighbours = (1-self.w_rootpath-self.w_children-self.w_obj_neighbours)
             context_emb = self.w_rootpath * distance_weighted_path[:,0,:] \
                         + self.w_children * distance_weighted_path[:,1,:] \
                         + self.w_obj_neighbours * distance_weighted_path[:,2,:] \
                         + self.w_data_neighbours * distance_weighted_path[:,3,:]
-            
+
             contextual_node_emb = torch.cat((node_emb, context_emb), dim=1)
             output_node_emb = self.output(contextual_node_emb)
             results.append(output_node_emb)
@@ -350,7 +350,7 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
     lr = 0.001
     num_epochs = 50
     weight_decay = 0.001
-    batch_size = 32
+    batch_size = 10
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
@@ -406,7 +406,6 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
     test_data_f = [key for key in test_data if not test_data[key]]
 
     final_results.append(test())
-    sys.stdout.flush()
 
 threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
 threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
