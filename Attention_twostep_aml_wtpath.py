@@ -464,7 +464,7 @@ model = SiameseNetwork(emb_vals, features_dict)
 model.load_state_dict(torch.load(sys.argv[4]))
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
-    test_onto = ontologies_in_alignment[i+2:i+3]
+    test_onto = ontologies_in_alignment[i:i+3]
     test_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
     test_data_t = [key for key in test_data if test_data[key]]
