@@ -221,7 +221,7 @@ def masked_softmax(inp):
     return (inp + mask).softmax(dim=-1)
 
 class SiameseNetwork(nn.Module):
-    def __init__(self, emb_vals, features_dict):
+    def __init__(self, emb_vals, features_dict, threshold=0.9):
         super().__init__() 
         
         self.features_arr = np.array(list(features_dict.values()))
@@ -233,7 +233,10 @@ class SiameseNetwork(nn.Module):
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
         self.name_embedding.weight.requires_grad = False
-
+        
+        self.threshold = nn.Parameter(torch.DoubleTensor([threshold]))
+        self.threshold.requires_grad = False
+        
         self.dropout = dropout
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
@@ -349,7 +352,7 @@ for i in range(6):
     train_data_t = train_data_t[:len(train_data_f)].tolist()
     
     lr = 0.001
-    num_epochs = 50
+    num_epochs = 1
     weight_decay = 0.001
     batch_size = 32
     dropout = 0.3
@@ -367,9 +370,9 @@ for i in range(6):
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
         indices_all = np.random.permutation(len(inputs_all))
-        inputs_all = np.array(inputs_all)[indices_all]
-        targets_all = np.array(targets_all)[indices_all]
-        nodes_all = np.array(nodes_all)[indices_all]
+        inputs_all = np.array(inputs_all)[indices_all][:100]
+        targets_all = np.array(targets_all)[indices_all][:100]
+        nodes_all = np.array(nodes_all)[indices_all][:100]
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -428,9 +431,9 @@ for epoch in range(num_epochs):
     nodes_all = list(nodes_pos) + list(nodes_neg)
     
     indices_all = np.random.permutation(len(inputs_all))
-    inputs_all = np.array(inputs_all)[indices_all]
-    targets_all = np.array(targets_all)[indices_all]
-    nodes_all = np.array(nodes_all)[indices_all]
+    inputs_all = np.array(inputs_all)[indices_all][:100]
+    targets_all = np.array(targets_all)[indices_all][:100]
+    nodes_all = np.array(nodes_all)[indices_all][:100]
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -462,8 +465,10 @@ torch.save(model.state_dict(), sys.argv[4])
 
 features_dict_conf = {elem: neighbours_dicts_pathpadded_conf[elem][:,:,:int(sys.argv[1])] for elem in neighbours_dicts_pathpadded_conf}
 
-model = SiameseNetwork(emb_vals_conf, features_dict_conf)
-model.load_state_dict(torch.load(sys.argv[4]))
+model = SiameseNetwork(emb_vals_conf, features_dict_conf).to(device)
+model.load_state_dict(torch.load(sys.argv[4]), strict=False)
+
+threshold = model.threshold.data.cpu().numpy()[0]
 
 for i in list(range(0, len(ontologies_in_alignment_conf), 3)):
     test_onto = ontologies_in_alignment_conf[i:i+3]
