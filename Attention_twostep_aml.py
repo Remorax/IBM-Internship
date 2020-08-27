@@ -221,7 +221,7 @@ class SiameseNetwork(nn.Module):
     def __init__(self, emb_vals, features_dict):
         super().__init__() 
         
-        self.features_arr = np.array(list(features_dict.values())).to(device)
+        self.features_arr = np.array(list(features_dict.values()))
         self.n_neighbours = self.features_arr.shape[1]
         self.max_paths = self.features_arr.shape[2]
         self.max_pathlen = self.features_arr.shape[3]
@@ -231,8 +231,6 @@ class SiameseNetwork(nn.Module):
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals)).to(device)})
         self.name_embedding.weight.requires_grad = False
 
-        self.dropout = dropout
-        
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(2*self.embedding_dim, 300)
         
@@ -342,12 +340,12 @@ final_results = []
 # #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
 #     np.random.shuffle(train_data_f)
     
-#     lr = 0.001
-#     num_epochs = 50
-#     weight_decay = 0.001
-#     batch_size = 32
-#     dropout = 0.3
-#     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+lr = 0.001
+num_epochs = 50
+weight_decay = 0.001
+batch_size = 32
+dropout = 0.3
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
 #     model = SiameseNetwork(emb_vals, features_dict).to(device)
 
