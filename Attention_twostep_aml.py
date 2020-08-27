@@ -327,7 +327,7 @@ print ("Number of entities:", len(aml_data))
 
 all_metrics = []
 final_results = []
-for i in list(range(0, len(ontologies_in_alignment), 3)):
+for i in list(range(0, len(ontologies_in_alignment[:6]), 3)):
     
     val_onto = ontologies_in_alignment[i:i+3]
     
