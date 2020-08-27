@@ -468,15 +468,15 @@ batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-features_dict_conf = {elem: neighbours_dicts_pathpadded_conf[elem][:,:,:int(sys.argv[1])] for elem in neighbours_dicts_pathpadded_conf}
+features_dict = {elem: neighbours_dicts_pathpadded_conf[elem][:,:,:int(sys.argv[1])] for elem in neighbours_dicts_pathpadded_conf}
+emb_vals = emb_vals_conf
+emb_indexer = emb_indexer_conf
+emb_indexer_inv = emb_indexer_inv_conf
 
-model = SiameseNetwork(emb_vals_conf, features_dict_conf).to(device)
+model = SiameseNetwork(emb_vals, features_dict).to(device)
 
 pretrained_dict = torch.load(sys.argv[4])
 model_dict = model.state_dict()
-
-emb_indexer = emb_indexer_conf
-emb_indexer_inv = emb_indexer_inv_conf
 
 pretrained_dict = {k: v for k, v in pretrained_dict.items() if k!="name_embedding.weight"}
 model_dict.update(pretrained_dict)
