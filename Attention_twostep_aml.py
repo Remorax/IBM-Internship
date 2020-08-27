@@ -228,7 +228,7 @@ class SiameseNetwork(nn.Module):
         self.embedding_dim = np.array(emb_vals).shape[1]
         
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
-        self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals)).to(device)})
+        self.name_embedding.load_state_dict({'weight': emb_vals})
         self.name_embedding.weight.requires_grad = False
 
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
@@ -460,7 +460,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # torch.save(model.state_dict(), sys.argv[4])
 
-model = SiameseNetwork(emb_vals, features_dict)
+model = SiameseNetwork(torch.from_numpy(np.array(emb_vals)).to(device), features_dict)
 model.load_state_dict(torch.load(sys.argv[4], map_location=device))
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
