@@ -231,8 +231,6 @@ class SiameseNetwork(nn.Module):
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
         self.name_embedding.weight.requires_grad = False
 
-        self.dropout = dropout
-        
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(2*self.embedding_dim, 300)
         

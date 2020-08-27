@@ -238,8 +238,6 @@ class SiameseNetwork(nn.Module):
         self.threshold = nn.Parameter(torch.DoubleTensor([threshold]))
         self.threshold.requires_grad = False
         
-        self.dropout = dropout
-        
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(2*self.embedding_dim, 300)
         
