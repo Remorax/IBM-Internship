@@ -225,9 +225,9 @@ class SiameseNetwork(nn.Module):
         self.n_neighbours = self.features_arr.shape[1]
         self.max_paths = self.features_arr.shape[2]
         self.max_pathlen = self.features_arr.shape[3]
-        self.embedding_dim = np.array(emb_vals).shape[1]
+        self.embedding_dim = emb_vals.shape[1]
         
-        self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
+        self.name_embedding = nn.Embedding(emb_vals.shape[0], self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': emb_vals})
         self.name_embedding.weight.requires_grad = False
 
