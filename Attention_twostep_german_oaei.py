@@ -461,6 +461,12 @@ final_results = []
 # model.eval()
 
 # torch.save(model.state_dict(), sys.argv[4])
+lr = 0.001
+num_epochs = 1
+weight_decay = 0.001
+batch_size = 32
+dropout = 0.3
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 features_dict_conf = {elem: neighbours_dicts_pathpadded_conf[elem][:,:,:int(sys.argv[1])] for elem in neighbours_dicts_pathpadded_conf}
 
@@ -474,13 +480,6 @@ model_dict.update(pretrained_dict)
 model.load_state_dict(model_dict)
 
 threshold = model.threshold.data.cpu().numpy()[0]
-
-lr = 0.001
-num_epochs = 1
-weight_decay = 0.001
-batch_size = 32
-dropout = 0.3
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 for i in list(range(0, len(ontologies_in_alignment_conf), 3)):
     test_onto = ontologies_in_alignment_conf[i:i+3]
