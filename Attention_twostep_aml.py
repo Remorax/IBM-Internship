@@ -225,10 +225,10 @@ class SiameseNetwork(nn.Module):
         self.n_neighbours = self.features_arr.shape[1]
         self.max_paths = self.features_arr.shape[2]
         self.max_pathlen = self.features_arr.shape[3]
-        self.embedding_dim = emb_vals.shape[1]
+        self.embedding_dim = np.array(emb_vals).shape[1]
         
-        self.name_embedding = nn.Embedding(emb_vals.shape[0], self.embedding_dim)
-        self.name_embedding.load_state_dict({'weight': emb_vals})
+        self.name_embedding = nn.Embedding(np.array(emb_vals).shape[0], self.embedding_dim)
+        self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals)).to(device)})
         self.name_embedding.weight.requires_grad = False
 
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
@@ -460,8 +460,8 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # torch.save(model.state_dict(), sys.argv[4])
 
-model = SiameseNetwork(torch.from_numpy(np.array(emb_vals)).to(device), features_dict)
-model.load_state_dict(torch.load(sys.argv[4], map_location=device))
+model = SiameseNetwork(emb_vals, features_dict).to(device)
+model.load_state_dict(torch.load(sys.argv[4]))
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
     test_onto = ontologies_in_alignment[i:i+3]
