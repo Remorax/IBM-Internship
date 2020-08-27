@@ -475,6 +475,9 @@ model = SiameseNetwork(emb_vals_conf, features_dict_conf).to(device)
 pretrained_dict = torch.load(sys.argv[4])
 model_dict = model.state_dict()
 
+emb_indexer = emb_indexer_conf
+emb_indexer_inv = emb_indexer_inv_conf
+
 pretrained_dict = {k: v for k, v in pretrained_dict.items() if k!="name_embedding.weight"}
 model_dict.update(pretrained_dict)
 model.load_state_dict(model_dict)
