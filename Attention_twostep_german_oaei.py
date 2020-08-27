@@ -335,14 +335,13 @@ print ("Number of entities:", len(data))
 
 all_metrics = []
 final_results = []
-
+torch.set_default_dtype(torch.float64)
 # for i in range(6):
     
 #     val_data = dict(data_items[int((0.15*i)*len(data)):int((0.15*i + 0.15)*len(data))])
 #     train_data = dict(data_items[:int(0.15*i*len(data))] + data_items[int(0.15*(i+1)*len(data)):])
 
 #     print ("Training size:", len(train_data), "Val size:", len(val_data))
-#     torch.set_default_dtype(torch.float64)
 
 #     train_data_t = [key for key in train_data if train_data[key]]
 #     train_data_f = [key for key in train_data if not train_data[key]]
