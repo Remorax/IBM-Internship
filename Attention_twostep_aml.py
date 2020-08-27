@@ -461,7 +461,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 # torch.save(model.state_dict(), sys.argv[4])
 
 model = SiameseNetwork(emb_vals, features_dict)
-model.load_state_dict(torch.load(sys.argv[4]))
+model.load_state_dict(torch.load(sys.argv[4], map_location=device))
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
     test_onto = ontologies_in_alignment[i:i+3]
