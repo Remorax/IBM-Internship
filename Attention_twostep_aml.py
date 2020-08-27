@@ -330,7 +330,7 @@ final_results = []
 #     val_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) in val_onto}
 
 #     print ("Training size:", len(train_data), "Validation size:", len(val_data))
-#     torch.set_default_dtype(torch.float64)
+torch.set_default_dtype(torch.float64)
 
 #     train_data_t = [key for key in train_data if train_data[key]]
 #     train_data_f = [key for key in train_data if not train_data[key]]
