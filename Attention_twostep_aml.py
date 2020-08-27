@@ -471,7 +471,7 @@ model.load_state_dict(torch.load(sys.argv[4]), strict=False)
 
 print ("model threshold: ", model.threshold)
 
-threshold = model.threshold.data.numpy()[0]
+threshold = model.threshold.data.cpu().numpy()[0]
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
     test_onto = ontologies_in_alignment[i:i+3]
