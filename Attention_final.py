@@ -143,10 +143,6 @@ class SiameseNetwork(nn.Module):
         super().__init__() 
         
         self.embedding_dim = np.array(emb_vals).shape[1]
-        
-        self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
-        self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
-        self.name_embedding.weight.requires_grad = False
 
         self.dropout = dropout
         
@@ -159,7 +155,6 @@ class SiameseNetwork(nn.Module):
         results = []
         inputs = inputs.permute(1,0,2)
         for i in range(2):
-            x = self.name_embedding(inputs[i])
             node = x.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
             neighbours = x.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
             

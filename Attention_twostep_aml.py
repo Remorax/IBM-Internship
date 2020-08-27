@@ -218,7 +218,7 @@ def masked_softmax(inp):
     return (inp + mask).softmax(dim=-1)
 
 class SiameseNetwork(nn.Module):
-    def __init__(self, emb_vals, features_dict):
+    def __init__(self, emb_vals, features_dict, threshold=0.9):
         super().__init__() 
         
         self.features_arr = np.array(list(features_dict.values()))
@@ -227,6 +227,9 @@ class SiameseNetwork(nn.Module):
         self.max_pathlen = self.features_arr.shape[3]
         self.embedding_dim = np.array(emb_vals).shape[1]
         
+        self.threshold = nn.Parameter(torch.DoubleTensor([threshold]))
+        self.threshold.requires_grad = False
+
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
         self.name_embedding.weight.requires_grad = False
@@ -417,7 +420,7 @@ batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-model = SiameseNetwork(emb_vals, features_dict).to(device)
+model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
 
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -462,8 +465,10 @@ model.eval()
 
 torch.save(model.state_dict(), sys.argv[4])
 
-model = SiameseNetwork(emb_vals, features_dict)
-model.load_state_dict(torch.load(sys.argv[4]))
+model = SiameseNetwork(emb_vals, features_dict).to(device)
+model.load_state_dict(torch.load(sys.argv[4]), strict=False)
+
+threshold = model.threshold.data.cpu().numpy()[0]
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
     test_onto = ontologies_in_alignment[i:i+3]
