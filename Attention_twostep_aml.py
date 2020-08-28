@@ -327,142 +327,143 @@ print ("Number of entities:", len(aml_data))
 
 all_metrics = []
 final_results = []
-# for i in list(range(0, len(ontologies_in_alignment), 3)):
+for i in list(range(0, len(ontologies_in_alignment[:6]), 3)):
     
-#     val_onto = ontologies_in_alignment[i:i+3]
+    val_onto = ontologies_in_alignment[i:i+3]
     
-#     train_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) not in val_onto}
-#     val_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) in val_onto}
+    train_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) not in val_onto}
+    val_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) in val_onto}
 
-#     print ("Training size:", len(train_data), "Validation size:", len(val_data))
+    print ("Training size:", len(train_data), "Validation size:", len(val_data))
 
-#     train_data_t = [key for key in train_data if train_data[key]]
-#     train_data_f = [key for key in train_data if not train_data[key]]
-#     train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-#     train_data_t = train_data_t[:len(train_data_f)].tolist()
-#     #train_data_f = train_data_f[:int(len(train_data_t))]
-# #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
-#     np.random.shuffle(train_data_f)
+    train_data_t = [key for key in train_data if train_data[key]]
+    train_data_f = [key for key in train_data if not train_data[key]]
+    train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
+    train_data_t = train_data_t[:len(train_data_f)].tolist()
+    #train_data_f = train_data_f[:int(len(train_data_t))]
+#     [:int(0.1*(len(train_data) - len(train_data_t)) )]
+    np.random.shuffle(train_data_f)
     
-#     lr = 0.001
-#     num_epochs = 50
-#     weight_decay = 0.001
-#     batch_size = 32
-#     dropout = 0.3
-#     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    lr = 0.001
+    num_epochs = 1
+    weight_decay = 0.001
+    batch_size = 32
+    dropout = 0.3
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-#     model = SiameseNetwork(emb_vals, features_dict).to(device)
+    model = SiameseNetwork(emb_vals, features_dict).to(device)
 
-#     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
+    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
-#     for epoch in range(num_epochs):
-#         inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-#         inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
-#         inputs_all = list(inputs_pos) + list(inputs_neg)
-#         targets_all = list(targets_pos) + list(targets_neg)
-#         nodes_all = list(nodes_pos) + list(nodes_neg)
+    for epoch in range(num_epochs):
+        inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
+        inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
+        inputs_all = list(inputs_pos) + list(inputs_neg)
+        targets_all = list(targets_pos) + list(targets_neg)
+        nodes_all = list(nodes_pos) + list(nodes_neg)
         
-#         indices_all = np.random.permutation(len(inputs_all))
-#         inputs_all = np.array(inputs_all)[indices_all]
-#         targets_all = np.array(targets_all)[indices_all]
-#         nodes_all = np.array(nodes_all)[indices_all]
+        indices_all = np.random.permutation(len(inputs_all))
+        inputs_all = np.array(inputs_all)[indices_all][:10]
+        targets_all = np.array(targets_all)[indices_all][:10]
+        nodes_all = np.array(nodes_all)[indices_all][:10]
 
-#         batch_size = min(batch_size, len(inputs_all))
-#         num_batches = int(ceil(len(inputs_all)/batch_size))
+        batch_size = min(batch_size, len(inputs_all))
+        num_batches = int(ceil(len(inputs_all)/batch_size))
 
-#         for batch_idx in range(num_batches):
-#             batch_start = batch_idx * batch_size
-#             batch_end = (batch_idx+1) * batch_size
+        for batch_idx in range(num_batches):
+            batch_start = batch_idx * batch_size
+            batch_end = (batch_idx+1) * batch_size
             
-#             inputs = inputs_all[batch_start: batch_end]
-#             targets = targets_all[batch_start: batch_end]
-#             nodes = nodes_all[batch_start: batch_end]
+            inputs = inputs_all[batch_start: batch_end]
+            targets = targets_all[batch_start: batch_end]
+            nodes = nodes_all[batch_start: batch_end]
             
-#             inp_elems = torch.LongTensor(inputs).to(device)
-#             node_elems = torch.LongTensor(nodes).to(device)
-#             targ_elems = torch.DoubleTensor(targets).to(device)
+            inp_elems = torch.LongTensor(inputs).to(device)
+            node_elems = torch.LongTensor(nodes).to(device)
+            targ_elems = torch.DoubleTensor(targets).to(device)
 
-#             optimizer.zero_grad()
-#             outputs = model(node_elems, inp_elems)
+            optimizer.zero_grad()
+            outputs = model(node_elems, inp_elems)
 
-#             loss = F.mse_loss(outputs, targ_elems)
-#             loss.backward()
-#             optimizer.step()
+            loss = F.mse_loss(outputs, targ_elems)
+            loss.backward()
+            optimizer.step()
 
-#             if batch_idx%5000 == 0:
-#                 print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            if batch_idx%5000 == 0:
+                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
-#     model.eval()
+    model.eval()
     
-#     val_data_t = [key for key in val_data if val_data[key]]
-#     val_data_f = [key for key in val_data if not val_data[key]]
+    val_data_t = [key for key in val_data if val_data[key]]
+    val_data_f = [key for key in val_data if not val_data[key]]
     
-#     optimize_threshold()
+    optimize_threshold()
 
-#     sys.stdout.flush()
+    sys.stdout.flush()
 
-# threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
-# threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
+threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
+threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
 
-# train_data_t = [key for key in aml_data if aml_data[key]]
-# train_data_f = [key for key in aml_data if not aml_data[key]]
-# train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-# train_data_t = train_data_t[:len(train_data_f)].tolist()
+train_data_t = [key for key in aml_data if aml_data[key]]
+train_data_f = [key for key in aml_data if not aml_data[key]]
+train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
+train_data_t = train_data_t[:len(train_data_f)].tolist()
+print (threshold)
 #train_data_f = train_data_f[:int(len(train_data_t))]
 #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
-# np.random.shuffle(train_data_f)
+np.random.shuffle(train_data_f)
 
 lr = 0.001
-num_epochs = 50
+num_epochs = 1
 weight_decay = 0.001
 batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-# model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
+model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
+print (model.threshold)
+optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
-# optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
-
-# for epoch in range(num_epochs):
-#     inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-#     inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
-#     inputs_all = list(inputs_pos) + list(inputs_neg)
-#     targets_all = list(targets_pos) + list(targets_neg)
-#     nodes_all = list(nodes_pos) + list(nodes_neg)
+for epoch in range(num_epochs):
+    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
+    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
+    inputs_all = list(inputs_pos) + list(inputs_neg)
+    targets_all = list(targets_pos) + list(targets_neg)
+    nodes_all = list(nodes_pos) + list(nodes_neg)
     
-#     indices_all = np.random.permutation(len(inputs_all))
-#     inputs_all = np.array(inputs_all)[indices_all]
-#     targets_all = np.array(targets_all)[indices_all]
-#     nodes_all = np.array(nodes_all)[indices_all]
+    indices_all = np.random.permutation(len(inputs_all))
+    inputs_all = np.array(inputs_all)[indices_all][:10]
+    targets_all = np.array(targets_all)[indices_all][:10]
+    nodes_all = np.array(nodes_all)[indices_all][:10]
 
-#     batch_size = min(batch_size, len(inputs_all))
-#     num_batches = int(ceil(len(inputs_all)/batch_size))
+    batch_size = min(batch_size, len(inputs_all))
+    num_batches = int(ceil(len(inputs_all)/batch_size))
 
-#     for batch_idx in range(num_batches):
-#         batch_start = batch_idx * batch_size
-#         batch_end = (batch_idx+1) * batch_size
+    for batch_idx in range(num_batches):
+        batch_start = batch_idx * batch_size
+        batch_end = (batch_idx+1) * batch_size
         
-#         inputs = inputs_all[batch_start: batch_end]
-#         targets = targets_all[batch_start: batch_end]
-#         nodes = nodes_all[batch_start: batch_end]
+        inputs = inputs_all[batch_start: batch_end]
+        targets = targets_all[batch_start: batch_end]
+        nodes = nodes_all[batch_start: batch_end]
         
-#         inp_elems = torch.LongTensor(inputs).to(device)
-#         node_elems = torch.LongTensor(nodes).to(device)
-#         targ_elems = torch.DoubleTensor(targets).to(device)
+        inp_elems = torch.LongTensor(inputs).to(device)
+        node_elems = torch.LongTensor(nodes).to(device)
+        targ_elems = torch.DoubleTensor(targets).to(device)
 
-#         optimizer.zero_grad()
-#         outputs = model(node_elems, inp_elems)
+        optimizer.zero_grad()
+        outputs = model(node_elems, inp_elems)
 
-#         loss = F.mse_loss(outputs, targ_elems)
-#         loss.backward()
-#         optimizer.step()
+        loss = F.mse_loss(outputs, targ_elems)
+        loss.backward()
+        optimizer.step()
 
-#         if batch_idx%5000 == 0:
-#             print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+        if batch_idx%5000 == 0:
+            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
-# model.eval()
+model.eval()
 
-# torch.save(model.state_dict(), sys.argv[4])
+torch.save(model.state_dict(), sys.argv[4])
 
 model = SiameseNetwork(emb_vals, features_dict).to(device)
 model.load_state_dict(torch.load(sys.argv[4]), strict=False)
