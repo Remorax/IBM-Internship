@@ -419,7 +419,7 @@ batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
+# model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
 
 # optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
