@@ -327,7 +327,7 @@ print ("Number of entities:", len(aml_data))
 
 all_metrics = []
 final_results = []
-for i in list(range(0, len(ontologies_in_alignment), 3)):
+for i in list(range(0, len(ontologies_in_alignment[:6]), 3)):
     
     val_onto = ontologies_in_alignment[i:i+3]
     
@@ -346,7 +346,7 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
     np.random.shuffle(train_data_f)
     
     lr = 0.001
-    num_epochs = 50
+    num_epochs = 1
     weight_decay = 0.001
     batch_size = 32
     dropout = 0.3
@@ -364,9 +364,9 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
         indices_all = np.random.permutation(len(inputs_all))
-        inputs_all = np.array(inputs_all)[indices_all]
-        targets_all = np.array(targets_all)[indices_all]
-        nodes_all = np.array(nodes_all)[indices_all]
+        inputs_all = np.array(inputs_all)[indices_all][:10]
+        targets_all = np.array(targets_all)[indices_all][:10]
+        nodes_all = np.array(nodes_all)[indices_all][:10]
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -414,7 +414,7 @@ train_data_t = train_data_t[:len(train_data_f)].tolist()
 np.random.shuffle(train_data_f)
 
 lr = 0.001
-num_epochs = 50
+num_epochs = 1
 weight_decay = 0.001
 batch_size = 32
 dropout = 0.3
@@ -432,9 +432,9 @@ for epoch in range(num_epochs):
     nodes_all = list(nodes_pos) + list(nodes_neg)
     
     indices_all = np.random.permutation(len(inputs_all))
-    inputs_all = np.array(inputs_all)[indices_all]
-    targets_all = np.array(targets_all)[indices_all]
-    nodes_all = np.array(nodes_all)[indices_all]
+    inputs_all = np.array(inputs_all)[indices_all][:10]
+    targets_all = np.array(targets_all)[indices_all][:10]
+    nodes_all = np.array(nodes_all)[indices_all][:10]
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))

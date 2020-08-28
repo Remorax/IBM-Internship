@@ -458,7 +458,7 @@ model.eval()
 
 torch.save(model.state_dict(), sys.argv[4])
 
-model = SiameseNetwork(emb_vals, features_dict)
+model = SiameseNetwork(emb_vals, features_dict).to(device)
 model.load_state_dict(torch.load(sys.argv[4]))
 
 for i in list(range(0, len(ontologies_in_alignment), 3)):
