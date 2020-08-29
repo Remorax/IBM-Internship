@@ -1,0 +1,38 @@
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6: can't open file 'Attention_twostep_aml.py': [Errno 2] No such file or directory
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc254>
+Subject: Job 2982676: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_aml.py 24 Input/data_aml_bagofnbrs.pkl trash.pklModels/aml_bagofnbrs24.pkl> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_aml.py 24 Input/data_aml_bagofnbrs.pkl trash.pklModels/aml_bagofnbrs24.pkl> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Aug 28 06:02:17 2020
+Job was executed on host(s) <dccxc254>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Aug 28 06:02:17 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship/Results> was used as the working directory.
+Started at Fri Aug 28 06:02:17 2020
+Terminated at Fri Aug 28 06:02:18 2020
+Results reported at Fri Aug 28 06:02:18 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_aml.py 24 Input/data_aml_bagofnbrs.pkl trash.pklModels/aml_bagofnbrs24.pkl
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time :                                   0.17 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   9 sec.
+    Turnaround time :                            1 sec.
+
+The output (if any) is above this job summary.
+
