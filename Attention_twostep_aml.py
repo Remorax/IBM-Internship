@@ -318,7 +318,7 @@ def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
 features_dict = {elem: features_dict[elem][:,:,:int(sys.argv[1])] for elem in features_dict}
-
+torch.set_default_dtype(torch.float64)
 data_items = aml_data.items()
 np.random.shuffle(list(data_items))
 aml_data = OrderedDict(data_items)
@@ -335,7 +335,6 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
     val_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) in val_onto}
 
     print ("Training size:", len(train_data), "Validation size:", len(val_data))
-    torch.set_default_dtype(torch.float64)
 
     train_data_t = [key for key in train_data if train_data[key]]
     train_data_f = [key for key in train_data if not train_data[key]]
@@ -409,6 +408,7 @@ train_data_t = [key for key in aml_data if aml_data[key]]
 train_data_f = [key for key in aml_data if not aml_data[key]]
 train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
 train_data_t = train_data_t[:len(train_data_f)].tolist()
+print (threshold)
 #train_data_f = train_data_f[:int(len(train_data_t))]
 #     [:int(0.1*(len(train_data) - len(train_data_t)) )]
 np.random.shuffle(train_data_f)
@@ -421,7 +421,7 @@ dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
-
+print (model.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
 for epoch in range(num_epochs):
@@ -470,8 +470,8 @@ model.load_state_dict(torch.load(sys.argv[4]), strict=False)
 
 threshold = model.threshold.data.cpu().numpy()[0]
 
-for i in list(range(0, len(ontologies_in_alignment), 3)):
-    test_onto = ontologies_in_alignment[i:i+3]
+for i in list(range(0, len(ontologies_in_alignment), 50)):
+    test_onto = ontologies_in_alignment
     test_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
     test_data_t = [key for key in test_data if test_data[key]]

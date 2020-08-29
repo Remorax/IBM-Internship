@@ -218,7 +218,7 @@ def masked_softmax(inp):
     return (inp + mask).softmax(dim=-1)
 
 class SiameseNetwork(nn.Module):
-    def __init__(self, emb_vals, features_dict):
+    def __init__(self, emb_vals, features_dict, threshold=0.9):
         super().__init__() 
         
         self.features_arr = np.array(list(features_dict.values()))
@@ -227,6 +227,9 @@ class SiameseNetwork(nn.Module):
         self.max_pathlen = self.features_arr.shape[3]
         self.embedding_dim = np.array(emb_vals).shape[1]
         
+        self.threshold = nn.Parameter(torch.DoubleTensor([threshold]))
+        self.threshold.requires_grad = False
+
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
         self.name_embedding.weight.requires_grad = False
@@ -253,7 +256,7 @@ class SiameseNetwork(nn.Module):
         for i in range(2):
             node_emb = self.name_embedding(nodes[i]) # batch_size * 512
             feature_emb = self.name_embedding(features[i]) #  batch_size * 4 * max_paths * max_pathlen * 512
-
+            
             feature_emb_reshaped = feature_emb.permute(0,4,1,2,3).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_paths * self.max_pathlen)
             path_weights = torch.bmm(node_emb[:, None, :], feature_emb_reshaped)
             path_weights = path_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_paths, self.max_pathlen)
@@ -262,7 +265,10 @@ class SiameseNetwork(nn.Module):
             feature_emb_reshaped = feature_emb.reshape(-1, self.max_paths, self.max_pathlen * self.embedding_dim)
             best_path = torch.bmm(path_weights.reshape(-1, 1, self.max_paths), feature_emb_reshaped)
             best_path = best_path.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen, self.embedding_dim) # batch_size * 4 * max_pathlen * 512
-            
+            # Another way: 
+            # path_weights = masked_softmax(path_weights)
+            # best_path = torch.sum(path_weights[:, :, :, None, None] * feature_emb, dim=2)
+
             best_path_reshaped = best_path.permute(0,3,1,2).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_pathlen)
             node_weights = torch.bmm(node_emb.unsqueeze(1), best_path_reshaped) # batch_size * 4 * max_pathlen
             node_weights = masked_softmax(node_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen)) # batch_size * 4 * max_pathlen
@@ -275,7 +281,7 @@ class SiameseNetwork(nn.Module):
                         + self.w_children * distance_weighted_path[:,1,:] \
                         + self.w_obj_neighbours * distance_weighted_path[:,2,:] \
                         + self.w_data_neighbours * distance_weighted_path[:,3,:]
-            
+
             contextual_node_emb = torch.cat((node_emb, context_emb), dim=1)
             output_node_emb = self.output(contextual_node_emb)
             results.append(output_node_emb)
@@ -415,7 +421,7 @@ batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-model = SiameseNetwork(emb_vals, features_dict).to(device)
+model = SiameseNetwork(emb_vals, features_dict, threshold).to(device)
 
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -460,11 +466,13 @@ model.eval()
 
 torch.save(model.state_dict(), sys.argv[4])
 
-model = SiameseNetwork(emb_vals, features_dict)
-model.load_state_dict(torch.load(sys.argv[4]))
+model = SiameseNetwork(emb_vals, features_dict).to(device)
+model.load_state_dict(torch.load(sys.argv[4]), strict=False)
 
-for i in list(range(0, len(ontologies_in_alignment), 3)):
-    test_onto = ontologies_in_alignment[i:i+3]
+threshold = model.threshold.data.cpu().numpy()[0]
+
+for i in list(range(0, len(ontologies_in_alignment), 25)):
+    test_onto = ontologies_in_alignment
     test_data = {elem: data[elem] for elem in data if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
     test_data_t = [key for key in test_data if test_data[key]]
