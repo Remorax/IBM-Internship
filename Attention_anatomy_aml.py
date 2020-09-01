@@ -340,7 +340,7 @@ print ("Number of entities:", len(aml_data))
 
 all_metrics = []
 final_results = []
-for i in range(2):
+for i in range(6):
     
     val_data = dict(data_items[int((0.15*i)*len(aml_data)):int((0.15*i + 0.15)*len(aml_data))])
     train_data = dict(data_items[:int(0.15*i*len(aml_data))] + data_items[int(0.15*(i+1)*len(aml_data)):])
@@ -356,7 +356,7 @@ for i in range(2):
     np.random.shuffle(train_data_f)
     
     lr = 0.001
-    num_epochs = 1
+    num_epochs = 50
     weight_decay = 0.001
     batch_size = 32
     dropout = 0.3
@@ -375,7 +375,7 @@ for i in range(2):
         
         all_inp = list(zip(inputs_all, targets_all, nodes_all))
         all_inp_shuffled = random.sample(all_inp, len(all_inp))
-        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:100]
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -424,7 +424,7 @@ print (threshold)
 np.random.shuffle(train_data_f)
 
 lr = 0.001
-num_epochs = 1
+num_epochs = 50
 weight_decay = 0.001
 batch_size = 32
 dropout = 0.3
@@ -443,7 +443,7 @@ for epoch in range(num_epochs):
     
     all_inp = list(zip(inputs_all, targets_all, nodes_all))
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:100]
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
