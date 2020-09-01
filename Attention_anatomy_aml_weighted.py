@@ -208,7 +208,6 @@ def calculate_performance():
         except Exception as e:
             print (e)
             continue
-        print ("Performance for", test_onto, "is :", (precision, recall, f1score, f2score, f0_5score))
         all_fn.extend(fn_list)
         all_fp.extend(fp_list)
         all_metrics.append((precision, recall, f1score, f2score, f0_5score))

@@ -208,7 +208,6 @@ def calculate_performance():
         except Exception as e:
             print (e)
             continue
-        print ("Performance for", test_onto, "is :", (precision, recall, f1score, f2score, f0_5score))
         all_fn.extend(fn_list)
         all_fp.extend(fp_list)
         all_metrics.append((precision, recall, f1score, f2score, f0_5score))
@@ -444,7 +443,7 @@ for epoch in range(num_epochs):
     
     all_inp = list(zip(inputs_all, targets_all, nodes_all))
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = [list(elem) for elem in zip(*all_inp_shuffled)][:100]
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:100]
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
