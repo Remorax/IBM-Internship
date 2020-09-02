@@ -8,8 +8,8 @@
   <level>0</level>
   <type>**</type>
   <onto1>
-    <Ontology rdf:about="http://confof">
-      <location>http://oaei.ontologymatching.org/2018/conference/confof.owl</location>
+    <Ontology rdf:about="http://confOf">
+      <location>http://oaei.ontologymatching.org/2018/conference/confOf.owl</location>
     </Ontology>
   </onto1>
   <onto2>
@@ -19,7 +19,7 @@
   </onto2>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Camera_Ready_event'/>
+      <entity1 rdf:resource='http://confOf#Camera_Ready_event'/>
       <entity2 rdf:resource='http://ekaw#Camera_Ready_Paper'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.8168</measure>
@@ -27,7 +27,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Chair_PC'/>
+      <entity1 rdf:resource='http://confOf#Chair_PC'/>
       <entity2 rdf:resource='http://ekaw#PC_Chair'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9653</measure>
@@ -35,7 +35,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Member_PC'/>
+      <entity1 rdf:resource='http://confOf#Member_PC'/>
       <entity2 rdf:resource='http://ekaw#PC_Member'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9874</measure>
@@ -43,7 +43,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#University'/>
+      <entity1 rdf:resource='http://confOf#University'/>
       <entity2 rdf:resource='http://ekaw#University'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -51,7 +51,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Poster'/>
+      <entity1 rdf:resource='http://confOf#Poster'/>
       <entity2 rdf:resource='http://ekaw#Poster_Paper'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6656</measure>
@@ -59,7 +59,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Conference'/>
+      <entity1 rdf:resource='http://confOf#Conference'/>
       <entity2 rdf:resource='http://ekaw#Conference'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -67,7 +67,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Author'/>
+      <entity1 rdf:resource='http://confOf#Author'/>
       <entity2 rdf:resource='http://ekaw#Paper_Author'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6656</measure>
@@ -75,7 +75,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Banquet'/>
+      <entity1 rdf:resource='http://confOf#Banquet'/>
       <entity2 rdf:resource='http://ekaw#Conference_Banquet'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9603</measure>
@@ -83,7 +83,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Event'/>
+      <entity1 rdf:resource='http://confOf#Event'/>
       <entity2 rdf:resource='http://ekaw#Event'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -91,7 +91,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Organization'/>
+      <entity1 rdf:resource='http://confOf#Organization'/>
       <entity2 rdf:resource='http://ekaw#Organisation'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7367</measure>
@@ -99,7 +99,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Tutorial'/>
+      <entity1 rdf:resource='http://confOf#Tutorial'/>
       <entity2 rdf:resource='http://ekaw#Tutorial'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -107,7 +107,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Student'/>
+      <entity1 rdf:resource='http://confOf#Student'/>
       <entity2 rdf:resource='http://ekaw#Student'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -115,7 +115,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Workshop'/>
+      <entity1 rdf:resource='http://confOf#Workshop'/>
       <entity2 rdf:resource='http://ekaw#Workshop'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -123,7 +123,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Participant'/>
+      <entity1 rdf:resource='http://confOf#Participant'/>
       <entity2 rdf:resource='http://ekaw#Conference_Participant'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9619</measure>
@@ -131,7 +131,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Trip'/>
+      <entity1 rdf:resource='http://confOf#Trip'/>
       <entity2 rdf:resource='http://ekaw#Conference_Trip'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9603</measure>
@@ -139,7 +139,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Social_event'/>
+      <entity1 rdf:resource='http://confOf#Social_event'/>
       <entity2 rdf:resource='http://ekaw#Social_Event'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -147,7 +147,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Person'/>
+      <entity1 rdf:resource='http://confOf#Person'/>
       <entity2 rdf:resource='http://ekaw#Person'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>

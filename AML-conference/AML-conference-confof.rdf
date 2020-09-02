@@ -13,14 +13,14 @@
     </Ontology>
   </onto1>
   <onto2>
-    <Ontology rdf:about="http://confof">
-      <location>http://oaei.ontologymatching.org/2018/conference/confof.owl</location>
+    <Ontology rdf:about="http://confOf">
+      <location>http://oaei.ontologymatching.org/2018/conference/confOf.owl</location>
     </Ontology>
   </onto2>
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Topic'/>
-      <entity2 rdf:resource='http://confof#Topic'/>
+      <entity2 rdf:resource='http://confOf#Topic'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
     </Cell>
@@ -28,7 +28,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Tutorial'/>
-      <entity2 rdf:resource='http://confof#Tutorial'/>
+      <entity2 rdf:resource='http://confOf#Tutorial'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
     </Cell>
@@ -36,7 +36,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#has_the_first_name'/>
-      <entity2 rdf:resource='http://confof#hasFirstName'/>
+      <entity2 rdf:resource='http://confOf#hasFirstName'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
     </Cell>
@@ -44,7 +44,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Paper'/>
-      <entity2 rdf:resource='http://confof#Paper'/>
+      <entity2 rdf:resource='http://confOf#Paper'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9897</measure>
     </Cell>
@@ -52,7 +52,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#has_the_last_name'/>
-      <entity2 rdf:resource='http://confof#hasSurname'/>
+      <entity2 rdf:resource='http://confOf#hasSurname'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6939</measure>
     </Cell>
@@ -60,7 +60,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#has_a_track-workshop-tutorial_topic'/>
-      <entity2 rdf:resource='http://confof#hasTopic'/>
+      <entity2 rdf:resource='http://confOf#hasTopic'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.7753</measure>
     </Cell>
@@ -68,7 +68,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Conference'/>
-      <entity2 rdf:resource='http://confof#Conference'/>
+      <entity2 rdf:resource='http://confOf#Conference'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
     </Cell>
@@ -76,7 +76,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Person'/>
-      <entity2 rdf:resource='http://confof#Person'/>
+      <entity2 rdf:resource='http://confOf#Person'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
     </Cell>
@@ -84,7 +84,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Poster'/>
-      <entity2 rdf:resource='http://confof#Poster'/>
+      <entity2 rdf:resource='http://confOf#Poster'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
     </Cell>
@@ -92,7 +92,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Conference_part'/>
-      <entity2 rdf:resource='http://confof#Working_event'/>
+      <entity2 rdf:resource='http://confOf#Working_event'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6579</measure>
     </Cell>
@@ -100,7 +100,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#has_an_email'/>
-      <entity2 rdf:resource='http://confof#hasEmail'/>
+      <entity2 rdf:resource='http://confOf#hasEmail'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
     </Cell>
@@ -108,7 +108,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Organization'/>
-      <entity2 rdf:resource='http://confof#Organization'/>
+      <entity2 rdf:resource='http://confOf#Organization'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
     </Cell>
@@ -116,7 +116,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Workshop'/>
-      <entity2 rdf:resource='http://confof#Workshop'/>
+      <entity2 rdf:resource='http://confOf#Workshop'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9836</measure>
     </Cell>
@@ -124,7 +124,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Conference_contribution'/>
-      <entity2 rdf:resource='http://confof#Contribution'/>
+      <entity2 rdf:resource='http://confOf#Contribution'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9603</measure>
     </Cell>
@@ -132,7 +132,7 @@
   <map>
     <Cell>
       <entity1 rdf:resource='http://conference#Conference_participant'/>
-      <entity2 rdf:resource='http://confof#Participant'/>
+      <entity2 rdf:resource='http://confOf#Participant'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9619</measure>
     </Cell>

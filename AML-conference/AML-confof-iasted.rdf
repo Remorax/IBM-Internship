@@ -8,8 +8,8 @@
   <level>0</level>
   <type>**</type>
   <onto1>
-    <Ontology rdf:about="http://confof">
-      <location>http://oaei.ontologymatching.org/2018/conference/confof.owl</location>
+    <Ontology rdf:about="http://confOf">
+      <location>http://oaei.ontologymatching.org/2018/conference/confOf.owl</location>
     </Ontology>
   </onto1>
   <onto2>
@@ -19,7 +19,7 @@
   </onto2>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Person'/>
+      <entity1 rdf:resource='http://confOf#Person'/>
       <entity2 rdf:resource='http://iasted#Person'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -27,7 +27,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Tutorial'/>
+      <entity1 rdf:resource='http://confOf#Tutorial'/>
       <entity2 rdf:resource='http://iasted#Tutorial'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9857</measure>
@@ -35,7 +35,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Author'/>
+      <entity1 rdf:resource='http://confOf#Author'/>
       <entity2 rdf:resource='http://iasted#Author'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -43,7 +43,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#City'/>
+      <entity1 rdf:resource='http://confOf#City'/>
       <entity2 rdf:resource='http://iasted#City'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -51,7 +51,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Submission_event'/>
+      <entity1 rdf:resource='http://confOf#Submission_event'/>
       <entity2 rdf:resource='http://iasted#Submission'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6857</measure>

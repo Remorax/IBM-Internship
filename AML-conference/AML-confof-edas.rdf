@@ -8,8 +8,8 @@
   <level>0</level>
   <type>**</type>
   <onto1>
-    <Ontology rdf:about="http://confof">
-      <location>http://oaei.ontologymatching.org/2018/conference/confof.owl</location>
+    <Ontology rdf:about="http://confOf">
+      <location>http://oaei.ontologymatching.org/2018/conference/confOf.owl</location>
     </Ontology>
   </onto1>
   <onto2>
@@ -19,7 +19,7 @@
   </onto2>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#hasSurname'/>
+      <entity1 rdf:resource='http://confOf#hasSurname'/>
       <entity2 rdf:resource='http://edas#hasLastName'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.6939</measure>
@@ -27,7 +27,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Country'/>
+      <entity1 rdf:resource='http://confOf#Country'/>
       <entity2 rdf:resource='http://edas#Country'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -35,7 +35,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Conference'/>
+      <entity1 rdf:resource='http://confOf#Conference'/>
       <entity2 rdf:resource='http://edas#Conference'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -43,7 +43,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Author'/>
+      <entity1 rdf:resource='http://confOf#Author'/>
       <entity2 rdf:resource='http://edas#Author'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -51,7 +51,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Reception'/>
+      <entity1 rdf:resource='http://confOf#Reception'/>
       <entity2 rdf:resource='http://edas#Reception'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -59,7 +59,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Topic'/>
+      <entity1 rdf:resource='http://confOf#Topic'/>
       <entity2 rdf:resource='http://edas#Topic'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -67,7 +67,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Organization'/>
+      <entity1 rdf:resource='http://confOf#Organization'/>
       <entity2 rdf:resource='http://edas#Organization'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -75,7 +75,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Workshop'/>
+      <entity1 rdf:resource='http://confOf#Workshop'/>
       <entity2 rdf:resource='http://edas#Workshop'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
@@ -83,7 +83,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#hasFirstName'/>
+      <entity1 rdf:resource='http://confOf#hasFirstName'/>
       <entity2 rdf:resource='http://edas#hasFirstName'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
@@ -91,7 +91,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Social_event'/>
+      <entity1 rdf:resource='http://confOf#Social_event'/>
       <entity2 rdf:resource='http://edas#SocialEvent'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9809</measure>
@@ -99,7 +99,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Paper'/>
+      <entity1 rdf:resource='http://confOf#Paper'/>
       <entity2 rdf:resource='http://edas#Paper'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.9801</measure>
@@ -107,7 +107,7 @@
   </map>
   <map>
     <Cell>
-      <entity1 rdf:resource='http://confof#Person'/>
+      <entity1 rdf:resource='http://confOf#Person'/>
       <entity2 rdf:resource='http://edas#Person'/>
       <relation>=</relation>
       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>0.99</measure>
