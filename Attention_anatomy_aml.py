@@ -168,7 +168,7 @@ def optimize_threshold():
                 f2score = 5 * precision * recall / (4 * precision + recall)
                 f0_5score = 1.25 * precision * recall / (0.25 * precision + recall)
             except Exception as e:
-                print (e)
+                # print (e)
                 exception = True
                 step = 0.001
                 threshold += step
@@ -206,7 +206,7 @@ def calculate_performance():
             f2score = 5 * precision * recall / (4 * precision + recall)
             f0_5score = 1.25 * precision * recall / (0.25 * precision + recall)
         except Exception as e:
-            print (e)
+            # print (e)
             continue
         all_fn.extend(fn_list)
         all_fp.extend(fp_list)
@@ -399,8 +399,8 @@ for i in range(6):
             loss.backward()
             optimizer.step()
 
-            if batch_idx%5000 == 0:
-                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            # if batch_idx%5000 == 0:
+            #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
     
@@ -467,8 +467,8 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        if batch_idx%5000 == 0:
-            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+        # if batch_idx%5000 == 0:
+        #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 model.eval()
 

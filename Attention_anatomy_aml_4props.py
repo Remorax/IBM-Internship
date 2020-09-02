@@ -401,8 +401,8 @@ for i in range(6):
             loss.backward()
             optimizer.step()
 
-            if batch_idx%5000 == 0:
-                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            # if batch_idx%5000 == 0:
+            #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
     
@@ -469,15 +469,12 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        if batch_idx%5000 == 0:
-            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+        # if batch_idx%5000 == 0:
+        #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 model.eval()
 
-torch.save(model.state_dict(), sys.argv[5])
-
-model = SiameseNetwork(emb_vals).to(device)
-model.load_state_dict(torch.load(sys.argv[5]), strict=False)
+model = SiameseNetwork(emb_vals).to(device),
 
 threshold = model.threshold.data.cpu().numpy()[0]
 
@@ -490,6 +487,3 @@ all_metrics, all_fn, all_fp = calculate_performance()
 
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)
-
-f1 = open(sys.argv[4], "wb")
-pickle.dump([all_fn, all_fp], f1)
