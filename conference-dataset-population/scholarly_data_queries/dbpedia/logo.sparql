@@ -1,7 +1,0 @@
-prefix dbo:<http://dbpedia.org/ontology/>
-
-select distinct ?confurl ?logourl where {
-?confurl a dbo:Bird.
-?confurl dbo:thumbnail ?logourl.
-
-} LIMIT {{numURL}}

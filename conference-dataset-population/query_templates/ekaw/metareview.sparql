@@ -1,9 +1,0 @@
-PREFIX :<http://ekaw#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT DATA{
-{{review}} a :Review.
-	{{rev}} :reviewerOfPaper {{pap}}.
-	{{review}} :reviewOfPaper {{pap}}.
-	{{review}} :reviewWrittenBy {{rev}}.
-}

@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-{ ?s <http://cmt#writePaper> ?o . }UNION  { ?s <http://cmt#writeReview> ?o . }UNION  { ?s <http://cmt#co-writePaper> ?o . }  
- }

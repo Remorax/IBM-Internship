@@ -1,7 +1,0 @@
-PREFIX :<http://conference#>
-
-SELECT distinct ?s ?o WHERE {  
-
-?s :gives_presentations ?o.
-?o a :Presentation.
-}

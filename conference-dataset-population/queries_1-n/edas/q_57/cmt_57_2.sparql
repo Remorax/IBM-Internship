@@ -1,8 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-{
-?s <http://cmt#hasAuthor> ?o .  
-}
-union{
-?s <http://cmt#hasCo-author> ?o .  
-}
- }

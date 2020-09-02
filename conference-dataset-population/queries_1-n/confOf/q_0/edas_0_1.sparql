@@ -1,8 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-{
-?s <http://edas#endDate> ?o .
-}
-union{
-?s <http://edas#hasEndDateTime> ?o .
-}
- }

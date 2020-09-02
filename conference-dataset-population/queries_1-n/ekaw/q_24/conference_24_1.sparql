@@ -1,4 +1,0 @@
-SELECT distinct ?s WHERE {  
-?s a <http://conference#Conference_participant> .  
-?s a <http://conference#Early_paid_applicant> .  
- }

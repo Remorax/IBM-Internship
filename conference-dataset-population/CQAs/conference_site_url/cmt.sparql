@@ -1,5 +1,0 @@
-PREFIX :<http://cmt#>
-
-SELECT distinct ?s WHERE {  
-?o2 :siteURL ?s .
- }

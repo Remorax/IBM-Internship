@@ -1,3 +1,0 @@
-SELECT distinct ?s WHERE {  
-?s <http://cmt#assignedTo> ?o2 .  
- }

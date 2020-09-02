@@ -1,8 +1,0 @@
-PREFIX :<http://ekaw#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT DATA{
-{{conf}} :coversTopic {{topic}}.
-	{{topic}} a :Research_Topic.
-	{{topic}} rdfs:label {{keyword}}.
-}

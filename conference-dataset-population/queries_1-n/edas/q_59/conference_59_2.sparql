@@ -1,9 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-{
-?s <http://conference#has_contributions> ?o .
-}
-union{
-?s <http://conference#contributes> ?o .
-?o a <http://conference#Review> .
-}
- }

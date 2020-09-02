@@ -1,3 +1,0 @@
-SELECT distinct ?s WHERE {  
-{ ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Social_event> . } UNION  { ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://confOf#Working_event> . }  
- }

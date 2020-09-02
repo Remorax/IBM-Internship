@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-{ ?s <http://cmt#hasAuthor> ?o . }UNION  { ?s <http://cmt#writtenBy> ?o . }UNION  { ?s <http://cmt#hasCo-author> ?o . }  
- }

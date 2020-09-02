@@ -1,7 +1,0 @@
-PREFIX :<http://conference#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT DATA{
-{{pcmember}} a :Committee_member.
-{{pcmember}} :was_a_member_of {{pc}}.
-}

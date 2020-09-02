@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-{ ?s <http://cmt#assignedTo> ?o . }UNION  { ?s <http://cmt#readByReviewer> ?o . }  
- }

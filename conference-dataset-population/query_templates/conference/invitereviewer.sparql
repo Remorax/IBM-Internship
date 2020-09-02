@@ -1,8 +1,0 @@
-PREFIX :<http://conference#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT DATA{
-	{{rev}} :invites_co-reviewers {{extrev}}.
-	{{extrev}} a :Reviewer.
-	{{review}} :has_authors {{extrev}}.
-}

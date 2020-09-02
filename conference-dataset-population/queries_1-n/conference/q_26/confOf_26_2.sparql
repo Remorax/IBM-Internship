@@ -1,7 +1,0 @@
-SELECT distinct ?s WHERE {  
-{
-?s a <http://confOf#Tutorial> .
-}union{
-?s a <http://confOf#Workshop> .
- }
- }

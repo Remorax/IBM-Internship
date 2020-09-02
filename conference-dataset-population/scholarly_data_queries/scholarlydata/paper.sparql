@@ -1,9 +1,0 @@
-PREFIX person: <https://w3id.org/scholarlydata/person/>
-PREFIX conf: <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#>
-SELECT DISTINCT ?paper
-WHERE{
-?x a conf:InProceedings.
-?x conf:title ?paper
-}
-order by ?paper
-limit {{numPaper}}

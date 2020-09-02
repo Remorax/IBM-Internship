@@ -1,4 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-?s <http://confOf#hasTopic> ?o . 
-minus{ ?s a  <http://confOf#Conference> .}
- }
