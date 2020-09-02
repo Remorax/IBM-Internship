@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-?o <http://conference#has_workshops> ?s .  
- }

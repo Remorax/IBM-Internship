@@ -1,7 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-
-?s <http://edas#startDate> ?o .  
-
-?s a <http://edas#Conference> . 
-
- }

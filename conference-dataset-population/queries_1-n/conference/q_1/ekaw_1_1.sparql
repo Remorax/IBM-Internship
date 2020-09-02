@@ -1,7 +1,0 @@
-SELECT distinct ?s WHERE {  
-{   ?s  <http://ekaw#OC_Member> .    } 
-union 
- {   ?s  <http://ekaw#PC_Member> .    } 
-union
-  {   ?s  <http://ekaw#SC_Member> .    } 
- }

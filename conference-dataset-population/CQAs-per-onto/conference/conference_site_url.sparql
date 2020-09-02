@@ -1,6 +1,0 @@
-PREFIX :<http://conference#>
-
-SELECT distinct ?s WHERE {  
-?o2 a :Conference_www.
-?o2 :has_a_URL ?s .
- }

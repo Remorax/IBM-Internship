@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-?o <http://ekaw#reviewWrittenBy> ?s .  
- }

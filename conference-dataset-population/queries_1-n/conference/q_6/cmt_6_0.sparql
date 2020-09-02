@@ -1,8 +1,0 @@
-SELECT distinct ?s WHERE { 
-{ 
-?s <http://cmt#name> ?o .  
-} union {
-?s a <http://cmt#SubjectArea> .  
-?s <http://www.w3.org/2000/01/rdf-schema#label> ?o.
-}
- }

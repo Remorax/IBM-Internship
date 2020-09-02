@@ -1,9 +1,0 @@
-PREFIX owl:<http://www.w3.org/2002/07/owl#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT{ 
-?x ?p ?y.
-} WHERE{
-?x ?p1 ?y.
-?p1 rdfs:subPropertyOf+ ?p.
-}

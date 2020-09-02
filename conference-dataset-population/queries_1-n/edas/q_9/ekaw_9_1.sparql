@@ -1,6 +1,0 @@
-SELECT distinct ?s WHERE {  
-?s a <http://ekaw#Presenter> . 
-minus{
-?s a <http://ekaw#Invited_Speaker> . 
-}
- }

@@ -1,8 +1,0 @@
-PREFIX :<http://edas#>
-
-SELECT distinct ?s ?o WHERE {  
-?s a :PaperPresentation .
-?s :relatedToPaper ?o2 .
-?o :hasRelatedDocument ?o2 .
-?o a :Conference .
-}

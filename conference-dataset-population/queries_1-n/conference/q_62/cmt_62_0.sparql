@@ -1,6 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-?o a <http://cmt#PaperFullVersion> .  
-?s a <http://cmt#PaperAbstract> .
-?o <http://cmt#title> ?o2 .
-?s <http://cmt#title> ?o2 .
- }

@@ -1,4 +1,0 @@
-SELECT distinct ?s ?o 
-WHERE {
- ?s <http://confOf#earlyRegistration> ?o .
-}

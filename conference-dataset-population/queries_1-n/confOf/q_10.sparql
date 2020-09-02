@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-?s <http://confOf#has_title> ?o .  
- }

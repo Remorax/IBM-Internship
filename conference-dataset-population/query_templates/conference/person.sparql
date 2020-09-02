@@ -1,8 +1,0 @@
-PREFIX :<http://conference#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT DATA{
-{{pers}} :has_the_first_name {{persfname}}.
-{{pers}} :has_the_last_name {{perslname}}.
-{{pers}} a :Person.
-}

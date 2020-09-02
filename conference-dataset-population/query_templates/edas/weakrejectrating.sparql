@@ -1,8 +1,0 @@
-PREFIX :<http://edas#>
-PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-
-INSERT DATA{
-
-{{papv0}} :hasRating {{revRating}}.
-{{revRating}} a :WeekRejectRating.
-}

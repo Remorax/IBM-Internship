@@ -1,0 +1,374 @@
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 20, in <module>
+    f = open(sys.argv[1], "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'Input/data_anatomy_aml_oaei.pkl'
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc250>
+Subject: Job 3289147: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc250>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:34 2020
+Results reported at Tue Sep  1 13:39:34 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.04 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   3 sec.
+    Turnaround time :                            229 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc216>
+Subject: Job 3289145: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc216>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:35 2020
+Results reported at Tue Sep  1 13:39:35 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.16 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   4 sec.
+    Turnaround time :                            230 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc212>
+Subject: Job 3289161: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:46 2020
+Job was executed on host(s) <dccxc212>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:35 2020
+Results reported at Tue Sep  1 13:39:35 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.19 sec.
+    Max Memory :                                 77 MB
+    Average Memory :                             77.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43340.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   4 sec.
+    Turnaround time :                            229 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc272>
+Subject: Job 3289157: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc272>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:36 2020
+Results reported at Tue Sep  1 13:39:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.16 sec.
+    Max Memory :                                 70 MB
+    Average Memory :                             70.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43347.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   31 sec.
+    Turnaround time :                            231 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc267>
+Subject: Job 3289159: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:46 2020
+Job was executed on host(s) <dccxc267>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:36 2020
+Results reported at Tue Sep  1 13:39:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.19 sec.
+    Max Memory :                                 66 MB
+    Average Memory :                             66.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43351.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   29 sec.
+    Turnaround time :                            230 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc240>
+Subject: Job 3289151: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc240>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:36 2020
+Results reported at Tue Sep  1 13:39:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.18 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             60.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43357.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   5 sec.
+    Turnaround time :                            231 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc229>
+Subject: Job 3289153: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc229>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:36 2020
+Results reported at Tue Sep  1 13:39:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.34 sec.
+    Max Memory :                                 64 MB
+    Average Memory :                             21.33 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43353.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   28 sec.
+    Turnaround time :                            231 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc258>
+Subject: Job 3289155: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc258>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:36 2020
+Results reported at Tue Sep  1 13:39:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.22 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             52.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43365.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   31 sec.
+    Turnaround time :                            231 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc254>
+Subject: Job 3289143: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc254>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:36 2020
+Results reported at Tue Sep  1 13:39:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.21 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             52.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43365.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   5 sec.
+    Turnaround time :                            231 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc243>
+Subject: Job 3289149: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:35:45 2020
+Job was executed on host(s) <dccxc243>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Tue Sep  1 13:39:31 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Tue Sep  1 13:39:31 2020
+Terminated at Tue Sep  1 13:39:38 2020
+Results reported at Tue Sep  1 13:39:38 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_aml_oaei.pkl 152 Output/test_anatomy_aml_wtpath_152.pkl Models/anatomy_aml_wtpath_152.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.34 sec.
+    Max Memory :                                 41 MB
+    Average Memory :                             41.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43376.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   36 sec.
+    Turnaround time :                            233 sec.
+
+The output (if any) is above this job summary.
+

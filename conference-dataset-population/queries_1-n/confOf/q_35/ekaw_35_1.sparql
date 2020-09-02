@@ -1,3 +1,0 @@
-SELECT distinct ?s ?o WHERE {  
-?s <http://ekaw#heldIn> ?o2 . ?o2 <http://www.w3.org/2000/01/rdf-schema#label> ?o .  
- }

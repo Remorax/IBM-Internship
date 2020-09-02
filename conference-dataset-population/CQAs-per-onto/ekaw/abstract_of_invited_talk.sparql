@@ -1,7 +1,0 @@
-PREFIX :<http://ekaw#>
-
-SELECT distinct ?s ?o WHERE {  
-?s a :Invited_Talk_Abstract.
-?s :paperPresentedAs ?o.
-?o a :Invited_Talk.
- }
