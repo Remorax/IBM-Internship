@@ -474,8 +474,6 @@ for epoch in range(num_epochs):
 
 model.eval()
 
-model = SiameseNetwork(emb_vals).to(device),
-
 threshold = model.threshold.data.cpu().numpy()[0]
 
 test_data_t = [key for key in data if data[key]]

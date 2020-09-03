@@ -17,7 +17,7 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[2], "rb")
-data, emb_indexer, emb_indexer_inv, emb_vals, emb_vals, neighbours_dicts, ontologies_in_alignment_rev, data_conf, emb_indexer_conf, emb_indexer_inv_conf, emb_vals_conf, gt_mappings_conf, neighbours_dicts_pathpadded_conf, ontologies_in_alignment_conf = pickle.load(f)
+data, aml_data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
 ontologies_in_alignment_rev = [tuple(pair) for pair in ontologies_in_alignment_rev]
 ontologies_in_alignment_conf = [tuple(pair) for pair in ontologies_in_alignment_conf]
 flatten = lambda l: [item for sublist in l for item in sublist]
