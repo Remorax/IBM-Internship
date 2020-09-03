@@ -33,7 +33,7 @@ all_fn, all_fp = [], []
 threshold_results = {}
 
 def test():
-    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
+    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()    
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -49,9 +49,9 @@ def test():
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-        targets = np.array(targets_all[batch_start: batch_end])
-        nodes = np.array(nodes_all[batch_start: batch_end])
+        all_inp = list(zip(inputs_all, targets_all, nodes_all))
+        all_inp_shuffled = random.sample(all_inp, len(all_inp))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -89,7 +89,7 @@ def test():
     return (test_onto, all_results)
 
 def optimize_threshold():
-    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
+    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -105,9 +105,9 @@ def optimize_threshold():
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-        targets = np.array(targets_all[batch_start: batch_end])
-        nodes = np.array(nodes_all[batch_start: batch_end])
+        all_inp = list(zip(inputs_all, targets_all, nodes_all))
+        all_inp_shuffled = random.sample(all_inp, len(all_inp))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -192,7 +192,7 @@ def calculate_performance():
             if all_results[key][0] > threshold:
                 res.append(key)
         s = set(res)
-        fn_list = [(key, all_results[key][0]) for key in gt_mappings if key not in s and not is_valid(test_onto, key)]
+        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in s and not is_valid(test_onto, key)]
         fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
         tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
         tp, fn, fp = len(tp_list), len(fn_list), len(fp_list)
@@ -343,7 +343,7 @@ print ("Number of entities:", len(aml_data))
 
 all_metrics = []
 final_results = []
-for i in list(range(0, len(ontologies_in_alignment[:6]), 3)):
+for i in list(range(0, len(ontologies_in_alignment), 3)):
     
     val_onto = ontologies_in_alignment[i:i+3]
     
@@ -361,7 +361,7 @@ for i in list(range(0, len(ontologies_in_alignment[:6]), 3)):
     np.random.shuffle(train_data_f)
     
     lr = 0.001
-    num_epochs = 1
+    num_epochs = 50
     weight_decay = 0.001
     batch_size = 32
     dropout = 0.3
@@ -380,7 +380,7 @@ for i in list(range(0, len(ontologies_in_alignment[:6]), 3)):
         
         all_inp = list(zip(inputs_all, targets_all, nodes_all))
         all_inp_shuffled = random.sample(all_inp, len(all_inp))
-        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:100]
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -439,7 +439,7 @@ for epoch in range(num_epochs):
     
     all_inp = list(zip(inputs_all, targets_all, nodes_all))
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:100]
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -482,7 +482,7 @@ for epoch in range(num_epochs):
     
     all_inp = list(zip(inputs_all, targets_all, nodes_all))
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:100]
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
