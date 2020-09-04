@@ -1,4 +1,4 @@
-import os, itertools, time, pickle, operator
+import os, itertools, time, pickle, operator, random
 import subprocess
 from xml.dom import minidom
 from collections import Counter, OrderedDict
@@ -16,10 +16,11 @@ import torch.nn.functional as F
 from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-f = open(sys.argv[2], "rb")
-data, emb_indexer, emb_indexer_inv, emb_vals, emb_vals, neighbours_dicts, ontologies_in_alignment_rev, data_conf, emb_indexer_conf, emb_indexer_inv_conf, emb_vals_conf, gt_mappings_conf, neighbours_dicts_pathpadded_conf, ontologies_in_alignment_conf = pickle.load(f)
-ontologies_in_alignment_rev = [tuple(pair) for pair in ontologies_in_alignment_rev]
-ontologies_in_alignment_conf = [tuple(pair) for pair in ontologies_in_alignment_conf]
+f = open(sys.argv[1], "rb")
+data_conf, data_german, emb_indexer_german, emb_indexer_inv_german, emb_vals_german, emb_indexer_conf, emb_indexer_inv_conf, emb_vals_conf, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
+max_paths = int(sys.argv[2])
+max_pathlen = int(sys.argv[3])
+ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 flatten = lambda l: [item for sublist in l for item in sublist]
 
 direct_inputs, direct_targets = [], []
@@ -31,8 +32,8 @@ all_fn, all_fp = [], []
 
 threshold_results = {}
 
-def test():
-    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv_conf, gt_mappings_conf, all_metrics, direct_inputs, direct_targets, threshold_results
+def test(emb_indexer_inv, emb_vals):
+    global batch_size, test_data_t, test_data_f, model, optimizer, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()    
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -41,17 +42,16 @@ def test():
         np.random.shuffle(test_data_t)
         np.random.shuffle(test_data_f)
 
-        inputs_pos, nodes_pos, targets_pos = generate_input(test_data_t, 1)
-        inputs_neg, nodes_neg, targets_neg = generate_input(test_data_f, 0)
+        inputs_pos, nodes_pos, targets_pos = generate_input(test_data_t, 1, emb_indexer_conf)
+        inputs_neg, nodes_neg, targets_neg = generate_input(test_data_f, 0, emb_indexer_conf)
 
         inputs_all = list(inputs_pos) + list(inputs_neg)
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        indices_all = np.random.permutation(len(inputs_all))
-        inputs_all = np.array(inputs_all)[indices_all]
-        targets_all = np.array(targets_all)[indices_all]
-        nodes_all = np.array(nodes_all)[indices_all]
+        all_inp = list(zip(inputs_all, targets_all, nodes_all))
+        all_inp_shuffled = random.sample(all_inp, len(all_inp))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -59,9 +59,9 @@ def test():
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
 
-            inputs = inputs_all[batch_start: batch_end]
-            targets = targets_all[batch_start: batch_end]
-            nodes = nodes_all[batch_start: batch_end]
+            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+            targets = np.array(targets_all[batch_start: batch_end])
+            nodes = np.array(nodes_all[batch_start: batch_end])
             
             inp_elems = torch.LongTensor(inputs).to(device)
             node_elems = torch.LongTensor(nodes).to(device)
@@ -86,10 +86,10 @@ def test():
             ent2 = emb_indexer_inv[direct_input[1]]
             sim = cos_sim(emb_vals[direct_input[0]], emb_vals[direct_input[1]])
             all_results[(ent1, ent2)] = (sim, direct_targets[idx])
-    return (test_data_t, all_results)
+    return (test_onto, all_results)
 
-def optimize_threshold():
-    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
+def optimize_threshold(emb_indexer_inv, emb_vals):
+    global batch_size, val_data_t, val_data_f, model, optimizer, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -98,17 +98,16 @@ def optimize_threshold():
         np.random.shuffle(val_data_t)
         np.random.shuffle(val_data_f)
 
-        inputs_pos, nodes_pos, targets_pos = generate_input(val_data_t, 1)
-        inputs_neg, nodes_neg, targets_neg = generate_input(val_data_f, 0)
+        inputs_pos, nodes_pos, targets_pos = generate_input(val_data_t, 1, emb_indexer_german)
+        inputs_neg, nodes_neg, targets_neg = generate_input(val_data_f, 0, emb_indexer_german)
 
         inputs_all = list(inputs_pos) + list(inputs_neg)
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        indices_all = np.random.permutation(len(inputs_all))
-        inputs_all = np.array(inputs_all)[indices_all]
-        nodes_all = np.array(nodes_all)[indices_all]
-        targets_all = np.array(targets_all)[indices_all]
+        all_inp = list(zip(inputs_all, targets_all, nodes_all))
+        all_inp_shuffled = random.sample(all_inp, len(all_inp))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -116,9 +115,9 @@ def optimize_threshold():
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
 
-            inputs = inputs_all[batch_start: batch_end]
-            nodes = nodes_all[batch_start: batch_end]
-            targets = targets_all[batch_start: batch_end]
+            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+            targets = np.array(targets_all[batch_start: batch_end])
+            nodes = np.array(nodes_all[batch_start: batch_end])
             
             inp_elems = torch.LongTensor(inputs).to(device)
             node_elems = torch.LongTensor(nodes).to(device)
@@ -188,13 +187,13 @@ def optimize_threshold():
 def calculate_performance():
     global final_results
     all_metrics, all_fn, all_fp = [], [], []
-    for (test_data_t, all_results) in final_results:
+    for (test_onto, all_results) in final_results:
         res = []
         for i,key in enumerate(all_results):
             if all_results[key][0] > threshold:
                 res.append(key)
         s = set(res)
-        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in s]
+        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in s and not is_valid(test_onto, key)]
         fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
         tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
         tp, fn, fp = len(tp_list), len(fn_list), len(fp_list)
@@ -208,13 +207,11 @@ def calculate_performance():
         except Exception as e:
             print (e)
             continue
-        print ("Performance :", (precision, recall, f1score, f2score, f0_5score))
-        all_metrics.append((precision, recall, f1score, f2score, f0_5score))
-
+        print ("Performance for", test_onto, "is :", (precision, recall, f1score, f2score, f0_5score))
         all_fn.extend(fn_list)
         all_fp.extend(fp_list)
-    return (all_fn, all_fp, all_metrics)
-
+        all_metrics.append((precision, recall, f1score, f2score, f0_5score))
+    return all_metrics, all_fn, all_fp
 
 def masked_softmax(inp):
     inp = inp.double()
@@ -222,13 +219,12 @@ def masked_softmax(inp):
     return (inp + mask).softmax(dim=-1)
 
 class SiameseNetwork(nn.Module):
-    def __init__(self, emb_vals, features_dict, threshold=0.9):
+    def __init__(self, emb_vals, threshold=0.9):
         super().__init__() 
         
-        self.features_arr = np.array(list(features_dict.values()))
-        self.n_neighbours = self.features_arr.shape[1]
-        self.max_paths = self.features_arr.shape[2]
-        self.max_pathlen = self.features_arr.shape[3]
+        self.n_neighbours = max_types
+        self.max_paths = max_paths
+        self.max_pathlen = max_pathlen
         self.embedding_dim = np.array(emb_vals).shape[1]
         
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
@@ -292,54 +288,62 @@ class SiameseNetwork(nn.Module):
 def is_valid(test_onto, key):
     return tuple([el.split("#")[0] for el in key]) not in test_onto
 
-def generate_data_neighbourless(elem_tuple):
-    return np.vectorize(embedify)(elem_tuple)
+def generate_data_neighbourless(elem_tuple, emb_indexer):
+    return [emb_indexer[elem] for elem in elem_tuple]
 
-def embedify(elem):
-    return emb_indexer[elem]
+def embedify(seq, emb_indexer):
+    for item in seq:
+        if isinstance(item, list):
+            yield list(embedify(item, emb_indexer))
+        else:
+            yield emb_indexer[item]
 
-def generate_data(elem_tuple):
-    return np.vectorize(embedify)([features_dict[elem] for elem in elem_tuple])
+def generate_data(elem_tuple, emb_indexer):
+    return list(embedify([neighbours_dicts[elem] for elem in elem_tuple], emb_indexer))
 
-def generate_input(elems, target):
+def to_feature(inputs):
+    inputs_lenpadded = [[[[path[:max_pathlen] + [0 for i in range(max_pathlen -len(path[:max_pathlen]))]
+                                    for path in nbr_type[:max_paths]]
+                                for nbr_type in ent[:max_types]]
+                            for ent in elem]
+                        for elem in inputs]
+    inputs_pathpadded = [[[nbr_type + [[0 for j in range(max_pathlen)]
+                             for i in range(max_paths - len(nbr_type))]
+                            for nbr_type in ent] for ent in elem]
+                        for elem in inputs_lenpadded]
+    return inputs_pathpadded
+
+def generate_input(elems, target, emb_indexer):
     inputs, targets, nodes = [], [], []
     global direct_inputs, direct_targets
     for elem in list(elems):
         try:
-            inputs.append(generate_data(elem))
-            nodes.append(generate_data_neighbourless(elem))
+            inputs.append(generate_data(elem, emb_indexer))
+            nodes.append(generate_data_neighbourless(elem, emb_indexer))
             targets.append(target)
         except:
-            direct_inputs.append(generate_data_neighbourless(elem))
+            direct_inputs.append(generate_data_neighbourless(elem, emb_indexer))
             direct_targets.append(target)
-    return np.array(inputs), np.array(nodes), np.array(targets)
+    return inputs, nodes, targets
 
 print("Number of neighbours: " + str(sys.argv[1]))
 
 def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
-max_paths = np.max([[len(nbr_type) for nbr_type in elem] for elem in neighbours_dicts.values()])
-max_pathlen = np.max(flatten([flatten([[len(path) for path in nbr_type] for nbr_type in elem]) for elem in neighbours_dicts.values()]), axis=0)
-neighbours_dicts_lenpadded = {elem: [[path + ["<UNK>" for i in range(max_pathlen -len(path))] for path in nbr_type]
-                                for nbr_type in neighbours_dicts[elem]] for elem in neighbours_dicts}
-neighbours_dicts_pathpadded = {elem: [nbr_type + [["<UNK>" for j in range(max_pathlen)] for i in range(max_paths - len(nbr_type))]
-                                for k,nbr_type in enumerate(neighbours_dicts_lenpadded[elem])] for elem in neighbours_dicts_lenpadded}
-features_dict = {elem: np.array(neighbours_dicts_pathpadded[elem]) for elem in neighbours_dicts_pathpadded}
+torch.set_default_dtype(torch.float64)
 
-features_dict = {elem: features_dict[elem][:,:,:int(sys.argv[1])] for elem in features_dict}
+data_german_items = list(data_german.items())
 
-data_items = list(data.items())
-
-print ("Number of entities:", len(data))
+print ("Number of entities:", len(data_german))
 
 all_metrics = []
 final_results = []
-torch.set_default_dtype(torch.float64)
+
 for i in range(6):
     
-    val_data = dict(data_items[int((0.15*i)*len(data)):int((0.15*i + 0.15)*len(data))])
-    train_data = dict(data_items[:int(0.15*i*len(data))] + data_items[int(0.15*(i+1)*len(data)):])
+    val_data = dict(data_german_items[int((0.15*i)*len(data_german)):int((0.15*i + 0.15)*len(data_german))])
+    train_data = dict(data_german_items[:int(0.15*i*len(data_german))] + data_german_items[int(0.15*(i+1)*len(data_german)):])
 
     print ("Training size:", len(train_data), "Val size:", len(val_data))
 
@@ -356,21 +360,20 @@ for i in range(6):
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(emb_vals, features_dict).to(device)
+    model = SiameseNetwork(emb_vals_german).to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
     for epoch in range(num_epochs):
-        inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-        inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
+        inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1, emb_indexer_german)
+        inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0, emb_indexer_german)
         inputs_all = list(inputs_pos) + list(inputs_neg)
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        indices_all = np.random.permutation(len(inputs_all))
-        inputs_all = np.array(inputs_all)[indices_all]
-        targets_all = np.array(targets_all)[indices_all]
-        nodes_all = np.array(nodes_all)[indices_all]
+        all_inp = list(zip(inputs_all, targets_all, nodes_all))
+        all_inp_shuffled = random.sample(all_inp, len(all_inp))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -379,9 +382,9 @@ for i in range(6):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
             
-            inputs = inputs_all[batch_start: batch_end]
-            targets = targets_all[batch_start: batch_end]
-            nodes = nodes_all[batch_start: batch_end]
+            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+            targets = np.array(targets_all[batch_start: batch_end])
+            nodes = np.array(nodes_all[batch_start: batch_end])
             
             inp_elems = torch.LongTensor(inputs).to(device)
             targ_elems = torch.DoubleTensor(targets).to(device)
@@ -404,34 +407,33 @@ for i in range(6):
     fval_len = len(val_data_f)
     val_data_f = val_data_f[:int(0.3*fval_len)]
     
-    optimize_threshold()
+    optimize_threshold(emb_indexer_inv_german, emb_vals_german)
 
     sys.stdout.flush()
 
 threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
 threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
 
-train_data_t = [key for key in data if data[key]]
-train_data_f = [key for key in data if not data[key]]
+train_data_t = [key for key in data_german if data_german[key]]
+train_data_f = [key for key in data_german if not data_german[key]]
 np.random.shuffle(train_data_f)
 train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
 train_data_t = train_data_t[:len(train_data_f)].tolist()
 
-model = SiameseNetwork(emb_vals, features_dict).to(device)
+model = SiameseNetwork(emb_vals_german, threshold).to(device)
 
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
 for epoch in range(num_epochs):
-    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
+    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1, emb_indexer_german)
+    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0, emb_indexer_german)
     inputs_all = list(inputs_pos) + list(inputs_neg)
     targets_all = list(targets_pos) + list(targets_neg)
     nodes_all = list(nodes_pos) + list(nodes_neg)
     
-    indices_all = np.random.permutation(len(inputs_all))
-    inputs_all = np.array(inputs_all)[indices_all]
-    targets_all = np.array(targets_all)[indices_all]
-    nodes_all = np.array(nodes_all)[indices_all]
+    all_inp = list(zip(inputs_all, targets_all, nodes_all))
+    all_inp_shuffled = random.sample(all_inp, len(all_inp))
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -440,9 +442,9 @@ for epoch in range(num_epochs):
         batch_start = batch_idx * batch_size
         batch_end = (batch_idx+1) * batch_size
         
-        inputs = inputs_all[batch_start: batch_end]
-        targets = targets_all[batch_start: batch_end]
-        nodes = nodes_all[batch_start: batch_end]
+        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+        targets = np.array(targets_all[batch_start: batch_end])
+        nodes = np.array(nodes_all[batch_start: batch_end])
         
         inp_elems = torch.LongTensor(inputs).to(device)
         targ_elems = torch.DoubleTensor(targets).to(device)
@@ -461,12 +463,7 @@ model.eval()
 
 torch.save(model.state_dict(), sys.argv[4])
 
-features_dict = {elem: neighbours_dicts_pathpadded_conf[elem][:,:,:int(sys.argv[1])] for elem in neighbours_dicts_pathpadded_conf}
-emb_vals = emb_vals_conf
-emb_indexer = emb_indexer_conf
-emb_indexer_inv = emb_indexer_inv_conf
-
-model = SiameseNetwork(emb_vals, features_dict).to(device)
+model = SiameseNetwork(emb_vals_conf).to(device)
 
 pretrained_dict = torch.load(sys.argv[4])
 model_dict = model.state_dict()
@@ -477,17 +474,17 @@ model.load_state_dict(model_dict)
 
 threshold = model.threshold.data.cpu().numpy()[0]
 
-for i in list(range(0, len(ontologies_in_alignment_conf), 3)):
-    test_onto = ontologies_in_alignment_conf[i:i+3]
+for i in list(range(0, len(ontologies_in_alignment), 3)):
+    test_onto = ontologies_in_alignment[i:i+3]
     test_data = {elem: data_conf[elem] for elem in data_conf if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
     test_data_t = [key for key in test_data if test_data[key]]
     test_data_f = [key for key in test_data if not test_data[key]]
 
-    final_results.append(test())
+    final_results.append(test(emb_indexer_inv_conf, emb_vals_conf))
 
 
-all_fn, all_fp, all_metrics = calculate_performance()
+all_metrics, all_fn, all_fp = calculate_performance()
 
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)

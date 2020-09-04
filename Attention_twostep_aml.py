@@ -16,7 +16,7 @@ import torch.nn.functional as F
 from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-f = open(sys.argv[2], "rb")
+f = open(sys.argv[1], "rb")
 aml_data, data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, features_dict, ontologies_in_alignment = pickle.load(f)
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 flatten = lambda l: [item for sublist in l for item in sublist]
@@ -317,7 +317,7 @@ print("Max number of nodes in a path: " + str(sys.argv[1]))
 def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
-features_dict = {elem: features_dict[elem][:,:,:int(sys.argv[1])] for elem in features_dict}
+features_dict = {elem: features_dict[elem][:,:int(sys.argv[2]),:int(sys.argv[3])] for elem in features_dict}
 torch.set_default_dtype(torch.float64)
 data_items = aml_data.items()
 np.random.shuffle(list(data_items))
