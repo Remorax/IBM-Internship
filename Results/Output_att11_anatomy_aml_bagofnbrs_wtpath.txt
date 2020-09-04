@@ -1,491 +1,1188 @@
 Max number of nodes in a path: Input/data_anatomy_oaei_bagofnbrs.pkl
 Number of entities: 150000
 Training size: 127500 Validation size: 22500
-Epoch: 0 Idx: 0 Loss: 0.15499817838595967
-Epoch: 0 Idx: 5000 Loss: 0.016828887008016893
-Epoch: 1 Idx: 0 Loss: 0.01811782182186303
-Epoch: 1 Idx: 5000 Loss: 0.03423694745468223
-Epoch: 2 Idx: 0 Loss: 0.01075811953835344
-Epoch: 2 Idx: 5000 Loss: 0.04048507407495308
-Epoch: 3 Idx: 0 Loss: 0.009960014662303462
-Epoch: 3 Idx: 5000 Loss: 0.021999332711375677
-Epoch: 4 Idx: 0 Loss: 0.018478544222862207
-Epoch: 4 Idx: 5000 Loss: 0.010699018637238603
-Epoch: 5 Idx: 0 Loss: 0.02448135401301315
-Epoch: 5 Idx: 5000 Loss: 0.008658220253498477
-Epoch: 6 Idx: 0 Loss: 0.030113258253522512
-Epoch: 6 Idx: 5000 Loss: 0.016152411602771106
-Epoch: 7 Idx: 0 Loss: 0.022553335896357628
-Epoch: 7 Idx: 5000 Loss: 0.01953775659772856
-Epoch: 8 Idx: 0 Loss: 0.02269637925040749
-Epoch: 8 Idx: 5000 Loss: 0.02020856556215497
-Epoch: 9 Idx: 0 Loss: 0.016233385752706855
-Epoch: 9 Idx: 5000 Loss: 0.022515435830649147
-Epoch: 10 Idx: 0 Loss: 0.04421969183775273
-Epoch: 10 Idx: 5000 Loss: 0.03840370388169388
-Epoch: 11 Idx: 0 Loss: 0.011939007532943474
-Epoch: 11 Idx: 5000 Loss: 0.01997974419691963
-Epoch: 12 Idx: 0 Loss: 0.009872793976425891
-Epoch: 12 Idx: 5000 Loss: 0.02327685227425067
-Epoch: 13 Idx: 0 Loss: 0.01452291487865295
-Epoch: 13 Idx: 5000 Loss: 0.021370008116701797
-Epoch: 14 Idx: 0 Loss: 0.0390933262352073
-Epoch: 14 Idx: 5000 Loss: 0.009299375013795226
-Epoch: 15 Idx: 0 Loss: 0.03776594587154815
-Epoch: 15 Idx: 5000 Loss: 0.014474933679494456
-Epoch: 16 Idx: 0 Loss: 0.02078600182472657
-Epoch: 16 Idx: 5000 Loss: 0.014098474914856905
-Epoch: 17 Idx: 0 Loss: 0.028773532242963598
-Epoch: 17 Idx: 5000 Loss: 0.03010015754558029
-Epoch: 18 Idx: 0 Loss: 0.014222238172053998
-Epoch: 18 Idx: 5000 Loss: 0.02932845380320682
-Epoch: 19 Idx: 0 Loss: 0.01872013619234266
-Epoch: 19 Idx: 5000 Loss: 0.02799488120429293
-Epoch: 20 Idx: 0 Loss: 0.019083980941916115
-Epoch: 20 Idx: 5000 Loss: 0.031986279548315115
-Epoch: 21 Idx: 0 Loss: 0.03183143212210913
-Epoch: 21 Idx: 5000 Loss: 0.036890221209661726
-Epoch: 22 Idx: 0 Loss: 0.018803362289847678
-Epoch: 22 Idx: 5000 Loss: 0.013398811580338241
-Epoch: 23 Idx: 0 Loss: 0.013048519147657759
-Epoch: 23 Idx: 5000 Loss: 0.010462660866003613
-Epoch: 24 Idx: 0 Loss: 0.012166090294445795
-Epoch: 24 Idx: 5000 Loss: 0.018675525012445956
-Epoch: 25 Idx: 0 Loss: 0.027674342271859477
-Epoch: 25 Idx: 5000 Loss: 0.01101707685230693
-Epoch: 26 Idx: 0 Loss: 0.014496302903479023
-Epoch: 26 Idx: 5000 Loss: 0.010159678828985566
-Epoch: 27 Idx: 0 Loss: 0.022772401739335077
-Epoch: 27 Idx: 5000 Loss: 0.03681048805463158
-Epoch: 28 Idx: 0 Loss: 0.00921236849095326
-Epoch: 28 Idx: 5000 Loss: 0.03171905582434325
-Epoch: 29 Idx: 0 Loss: 0.0371224138787189
-Epoch: 29 Idx: 5000 Loss: 0.015012014860436636
-Epoch: 30 Idx: 0 Loss: 0.023283249248528717
-Epoch: 30 Idx: 5000 Loss: 0.018159997576595227
-Epoch: 31 Idx: 0 Loss: 0.013515722160021679
-Epoch: 31 Idx: 5000 Loss: 0.017633121347921363
-Epoch: 32 Idx: 0 Loss: 0.03477987173092317
-Epoch: 32 Idx: 5000 Loss: 0.016455761194588494
-Epoch: 33 Idx: 0 Loss: 0.03297404457561333
-Epoch: 33 Idx: 5000 Loss: 0.02182071107726285
-Epoch: 34 Idx: 0 Loss: 0.02603708386807277
-Epoch: 34 Idx: 5000 Loss: 0.02183385328248754
-Epoch: 35 Idx: 0 Loss: 0.014419431257551709
-Epoch: 35 Idx: 5000 Loss: 0.01076049456714066
-Epoch: 36 Idx: 0 Loss: 0.034439150574555384
-Epoch: 36 Idx: 5000 Loss: 0.011884872435186588
-Epoch: 37 Idx: 0 Loss: 0.010038678911616446
-Epoch: 37 Idx: 5000 Loss: 0.015598005806352483
-Epoch: 38 Idx: 0 Loss: 0.03115453303698797
-Epoch: 38 Idx: 5000 Loss: 0.04285847563019223
-Epoch: 39 Idx: 0 Loss: 0.02374948967378059
-Epoch: 39 Idx: 5000 Loss: 0.0425317316241334
-Epoch: 40 Idx: 0 Loss: 0.01503201848508499
-Epoch: 40 Idx: 5000 Loss: 0.020922671811557873
-Epoch: 41 Idx: 0 Loss: 0.019256740092748463
-Epoch: 41 Idx: 5000 Loss: 0.011379119653721438
-Epoch: 42 Idx: 0 Loss: 0.019952481409544615
-Epoch: 42 Idx: 5000 Loss: 0.00729020027302877
-Epoch: 43 Idx: 0 Loss: 0.03177259017829927
-Epoch: 43 Idx: 5000 Loss: 0.0283202441296495
-Epoch: 44 Idx: 0 Loss: 0.01742114196892055
-Epoch: 44 Idx: 5000 Loss: 0.00784418344206793
-Epoch: 45 Idx: 0 Loss: 0.047954196437467254
-Epoch: 45 Idx: 5000 Loss: 0.03436565344947004
-Epoch: 46 Idx: 0 Loss: 0.038614935257897665
-Epoch: 46 Idx: 5000 Loss: 0.021925005536522955
-Epoch: 47 Idx: 0 Loss: 0.021467925083004626
-Epoch: 47 Idx: 5000 Loss: 0.012971982799335268
-Epoch: 48 Idx: 0 Loss: 0.03992270442688575
-Epoch: 48 Idx: 5000 Loss: 0.02399567240719604
-Epoch: 49 Idx: 0 Loss: 0.02619265268001856
-Epoch: 49 Idx: 5000 Loss: 0.019003984389486375
-Len (direct inputs):  103
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-sTraining size: 12Training size: 127500 Validation size: 22500
-Epoch: 0 Idx: 0 Loss: 0.20081383823168347
-Epoch: 0 Idx: 5000 Loss: 0.037243781957171415
-Epoch: 1 Idx: 0 Loss: 0.014984941254782704
-Epoch: 1 Idx: 5000 Loss: 0.024088053150091177
-Epoch: 2 Idx: 0 Loss: 0.013147504220178345
-Epoch: 2 Idx: 5000 Loss: 0.021269373402057905
-Epoch: 3 Idx: 0 Loss: 0.02904976519867643
-Epoch: 3 Idx: 5000 Loss: 0.014268413516400149
-Epoch: 4 Idx: 0 Loss: 0.01218172319144595
-Epoch: 4 Idx: 5000 Loss: 0.03415285392667654
-Epoch: 5 Idx: 0 Loss: 0.020053441709612804
-Epoch: 5 Idx: 5000 Loss: 0.02884809200510259
-Epoch: 6 Idx: 0 Loss: 0.013374669967959444
-Epoch: 6 Idx: 5000 Loss: 0.03473401027191747
-Epoch: 7 Idx: 0 Loss: 0.018586071043044085
-Epoch: 7 Idx: 5000 Loss: 0.02504754581125168
-Epoch: 8 Idx: 0 Loss: 0.023036697550186294
-Epoch: 8 Idx: 5000 Loss: 0.014032792288071059
-Epoch: 9 Idx: 0 Loss: 0.008302640658339482
-Epoch: 9 Idx: 5000 Loss: 0.015152302234876595
-Epoch: 10 Idx: 0 Loss: 0.034831921847122756
-Epoch: 10 Idx: 5000 Loss: 0.006992176969492755
-Epoch: 11 Idx: 0 Loss: 0.015211406479744161
-Epoch: 11 Idx: 5000 Loss: 0.02560828244894618
-Epoch: 12 Idx: 0 Loss: 0.04122504316647656
-Epoch: 12 Idx: 5000 Loss: 0.008889745504961586
-Epoch: 13 Idx: 0 Loss: 0.017302607856457607
-Epoch: 13 Idx: 5000 Loss: 0.029183900460955228
-Epoch: 14 Idx: 0 Loss: 0.02537099321054413
-Epoch: 14 Idx: 5000 Loss: 0.024904836457045453
-Epoch: 15 Idx: 0 Loss: 0.02915035637250262
-Epoch: 15 Idx: 5000 Loss: 0.025837287010031035
-Epoch: 16 Idx: 0 Loss: 0.010425611934364087
-Epoch: 16 Idx: 5000 Loss: 0.01810636384190996
-Epoch: 17 Idx: 0 Loss: 0.025189252887606563
-Epoch: 17 Idx: 5000 Loss: 0.01796118406035245
-Epoch: 18 Idx: 0 Loss: 0.018971493689606198
-Epoch: 18 Idx: 5000 Loss: 0.023800025928547932
-Epoch: 19 Idx: 0 Loss: 0.0085063774761143
-Epoch: 19 Idx: 5000 Loss: 0.009315150683180265
-Epoch: 20 Idx: 0 Loss: 0.021682695310300572
-Epoch: 20 Idx: 5000 Loss: 0.030256967147685894
-Epoch: 21 Idx: 0 Loss: 0.02143579397703141
-Epoch: 21 Idx: 5000 Loss: 0.020154706607410013
-Epoch: 22 Idx: 0 Loss: 0.017590705447737925
-Epoch: 22 Idx: 5000 Loss: 0.03029721154987253
-Epoch: 23 Idx: 0 Loss: 0.01951883023218453
-Epoch: 23 Idx: 5000 Loss: 0.037423334192795685
-Epoch: 24 Idx: 0 Loss: 0.007108467251151215
-Epoch: 24 Idx: 5000 Loss: 0.016293855862450028
-Epoch: 25 Idx: 0 Loss: 0.028529855896862136
-Epoch: 25 Idx: 5000 Loss: 0.020897973769549764
-Epoch: 26 Idx: 0 Loss: 0.011732352036507885
-Epoch: 26 Idx: 5000 Loss: 0.02019066859125017
-Epoch: 27 Idx: 0 Loss: 0.021879917662260894
-Epoch: 27 Idx: 5000 Loss: 0.02357746993258111
-Epoch: 28 Idx: 0 Loss: 0.01470104503370805
-Epoch: 28 Idx: 5000 Loss: 0.01408728130336162
-Epoch: 29 Idx: 0 Loss: 0.022445759589198196
-Epoch: 29 Idx: 5000 Loss: 0.016775690688155855
-Epoch: 30 Idx: 0 Loss: 0.025794755288235945
-Epoch: 30 Idx: 5000 Loss: 0.027637820921098455
-Epoch: 31 Idx: 0 Loss: 0.018039287695869384
-Epoch: 31 Idx: 5000 Loss: 0.021433267000579334
-Epoch: 32 Idx: 0 Loss: 0.02339944755373927
-Epoch: 32 Idx: 5000 Loss: 0.019701962677936526
-Epoch: 33 Idx: 0 Loss: 0.021475353128132105
-Epoch: 33 Idx: 5000 Loss: 0.021359952626768652
-Epoch: 34 Idx: 0 Loss: 0.022384859013564858
-Epoch: 34 Idx: 5000 Loss: 0.025086204920426437
-Epoch: 35 Idx: 0 Loss: 0.027089672341373675
-Epoch: 35 Idx: 5000 Loss: 0.01856063831823053
-Epoch: 36 Idx: 0 Loss: 0.03354603072540813
-Epoch: 36 Idx: 5000 Loss: 0.012343291343715123
-Epoch: 37 Idx: 0 Loss: 0.02412871918827014
-Epoch: 37 Idx: 5000 Loss: 0.02955626339297009
-Epoch: 38 Idx: 0 Loss: 0.031630976398598964
-Epoch: 38 Idx: 5000 Loss: 0.027479746396010966
-Epoch: 39 Idx: 0 Loss: 0.0149075484825577
-Epoch: 39 Idx: 5000 Loss: 0.03447384954406263
-Epoch: 40 Idx: 0 Loss: 0.021682061888985374
-Epoch: 40 Idx: 5000 Loss: 0.015167898024176093
-Epoch: 41 Idx: 0 Loss: 0.03960595331707709
-Epoch: 41 Idx: 5000 Loss: 0.037811461474004306
-Epoch: 42 Idx: 0 Loss: 0.01722789631978579
-Epoch: 42 Idx: 5000 Loss: 0.03451737675831845
-Epoch: 43 Idx: 0 Loss: 0.023576766128627642
-Epoch: 43 Idx: 5000 Loss: 0.01727936469162685
-Epoch: 44 Idx: 0 Loss: 0.028024147946739138
-Epoch: 44 Idx: 5000 Loss: 0.016636144654988253
-Epoch: 45 Idx: 0 Loss: 0.03369912003385423
-Epoch: 45 Idx: 5000 Loss: 0.015145142859808986
-Epoch: 46 Idx: 0 Loss: 0.03348865314414702
-Epoch: 46 Idx: 5000 Loss: 0.019046314979544177
-Epoch: 47 Idx: 0 Loss: 0.04553989006244742
-Epoch: 47 Idx: 5000 Loss: 0.04463155042256993
-Epoch: 48 Idx: 0 Loss: 0.014707172439552212
-Epoch: 48 Idx: 5000 Loss: 0.023318587948052687
-Epoch: 49 Idx: 0 Loss: 0.017233145736248193
-Epoch: 49 Idx: 5000 Loss: 0.022294653983037552
-Len (direct inputs):  77
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
- 127500 Validation size: 22500
-Epoch: 0 Idx: 0 Loss: 0.20725025642458839
-Epoch: 0 Idx: 5000 Loss: 0.03969663740228291
-Epoch: 1 Idx: 0 Loss: 0.031709852820972564
-Epoch: 1 Idx: 5000 Loss: 0.03711708993681952
-Epoch: 2 Idx: 0 Loss: 0.013324552479940459
-Epoch: 2 Idx: 5000 Loss: 0.013506146693395414
-Epoch: 3 Idx: 0 Loss: 0.02117376937351002
-Epoch: 3 Idx: 5000 Loss: 0.030506788075032275
-Epoch: 4 Idx: 0 Loss: 0.019921797006018198
-Epoch: 4 Idx: 5000 Loss: 0.014721183239408454
-Epoch: 5 Idx: 0 Loss: 0.029633736742192475
-Epoch: 5 Idx: 5000 Loss: 0.019757454451551498
-Epoch: 6 Idx: 0 Loss: 0.0166851922334988
-Epoch: 6 Idx: 5000 Loss: 0.01884442435825035
-Epoch: 7 Idx: 0 Loss: 0.02002824769473244
-Epoch: 7 Idx: 5000 Loss: 0.012665098933737878
-Epoch: 8 Idx: 0 Loss: 0.02481183028748705
-Epoch: 8 Idx: 5000 Loss: 0.02666534640652351
-Epoch: 9 Idx: 0 Loss: 0.010993137020869952
-Epoch: 9 Idx: 5000 Loss: 0.03492365508103894
-Epoch: 10 Idx: 0 Loss: 0.015240749426608913
-Epoch: 10 Idx: 5000 Loss: 0.023167664089297397
-Epoch: 11 Idx: 0 Loss: 0.017920312121251978
-Epoch: 11 Idx: 5000 Loss: 0.018391727400363798
-Epoch: 12 Idx: 0 Loss: 0.026507108991485263
-Epoch: 12 Idx: 5000 Loss: 0.020893837347693154
-Epoch: 13 Idx: 0 Loss: 0.01960464349808687
-Epoch: 13 Idx: 5000 Loss: 0.03454711725482254
-Epoch: 14 Idx: 0 Loss: 0.04379146062649368
-Epoch: 14 Idx: 5000 Loss: 0.007917358641853531
-Epoch: 15 Idx: 0 Loss: 0.024196390082887032
-Epoch: 15 Idx: 5000 Loss: 0.018585397207737487
-Epoch: 16 Idx: 0 Loss: 0.028104450428136963
-Epoch: 16 Idx: 5000 Loss: 0.026811571532680822
-Epoch: 17 Idx: 0 Loss: 0.015708596126172383
-Epoch: 17 Idx: 5000 Loss: 0.014070789311920103
-Epoch: 18 Idx: 0 Loss: 0.012932874170063571
-Epoch: 18 Idx: 5000 Loss: 0.014116526403070224
-Epoch: 19 Idx: 0 Loss: 0.0218785521731202
-Epoch: 19 Idx: 5000 Loss: 0.034880275628761864
-Epoch: 20 Idx: 0 Loss: 0.013604422200028898
-Epoch: 20 Idx: 5000 Loss: 0.009174406591643071
-Epoch: 21 Idx: 0 Loss: 0.023172443307414678
-Epoch: 21 Idx: 5000 Loss: 0.013877034585217992
-Epoch: 22 Idx: 0 Loss: 0.022117546552539398
-Epoch: 22 Idx: 5000 Loss: 0.02773602729244104
-Epoch: 23 Idx: 0 Loss: 0.022078531145727515
-Epoch: 23 Idx: 5000 Loss: 0.02466193117843333
-Epoch: 24 Idx: 0 Loss: 0.019873433021495572
-Epoch: 24 Idx: 5000 Loss: 0.008771146694292103
-Epoch: 25 Idx: 0 Loss: 0.03386529615168325
-Epoch: 25 Idx: 5000 Loss: 0.02729013037884046
-Epoch: 26 Idx: 0 Loss: 0.015566864200302228
-Epoch: 26 Idx: 5000 Loss: 0.027103868220044163
-Epoch: 27 Idx: 0 Loss: 0.010903006977571125
-Epoch: 27 Idx: 5000 Loss: 0.02409557536078833
-Epoch: 28 Idx: 0 Loss: 0.02470364684065987
-Epoch: 28 Idx: 5000 Loss: 0.015553628634769723
-Epoch: 29 Idx: 0 Loss: 0.01756627168483771
-Epoch: 29 Idx: 5000 Loss: 0.05535845494840141
-Epoch: 30 Idx: 0 Loss: 0.028872988002769554
-Epoch: 30 Idx: 5000 Loss: 0.031125540825535404
-Epoch: 31 Idx: 0 Loss: 0.03167554711362342
-Epoch: 31 Idx: 5000 Loss: 0.021296237375607416
-Epoch: 32 Idx: 0 Loss: 0.021469259382036216
-Epoch: 32 Idx: 5000 Loss: 0.008186398358716384
-Epoch: 33 Idx: 0 Loss: 0.021911169799100988
-Epoch: 33 Idx: 5000 Loss: 0.04770579098087461
-Epoch: 34 Idx: 0 Loss: 0.019901318836675473
-Epoch: 34 Idx: 5000 Loss: 0.014012858262013268
-Epoch: 35 Idx: 0 Loss: 0.015567674894266692
-Epoch: 35 Idx: 5000 Loss: 0.019230673776220092
-Epoch: 36 Idx: 0 Loss: 0.01582169145859994
-Epoch: 36 Idx: 5000 Loss: 0.019094189067309163
-Epoch: 37 Idx: 0 Loss: 0.018434330041334927
-Epoch: 37 Idx: 5000 Loss: 0.018403819773712818
-Epoch: 38 Idx: 0 Loss: 0.013236105576198576
-Epoch: 38 Idx: 5000 Loss: 0.01471266752317574
-Epoch: 39 Idx: 0 Loss: 0.011198733443446586
-Epoch: 39 Idx: 5000 Loss: 0.018636576658299604
-Epoch: 40 Idx: 0 Loss: 0.02063053470131527
-Epoch: 40 Idx: 5000 Loss: 0.01904585602482692
-Epoch: 41 Idx: 0 Loss: 0.0169434617171762
-Epoch: 41 Idx: 5000 Loss: 0.02354255306569355
-Epoch: 42 Idx: 0 Loss: 0.006653988585196167
-Epoch: 42 Idx: 5000 Loss: 0.02013291861546863
-Epoch: 43 Idx: 0 Loss: 0.021405716863474176
-Epoch: 43 Idx: 5000 Loss: 0.028407747204912723
-Epoch: 44 Idx: 0 Loss: 0.015573104832395615
-Epoch: 44 Idx: 5000 Loss: 0.010455274549401546
-Epoch: 45 Idx: 0 Loss: 0.02210736956205754
-Epoch: 45 Idx: 5000 Loss: 0.02208983990491062
-Epoch: 46 Idx: 0 Loss: 0.05446818090898405
-Epoch: 46 Idx: 5000 Loss: 0.037581115333487
-Epoch: 47 Idx: 0 Loss: 0.011803318714902993
-Epoch: 47 Idx: 5000 Loss: 0.04077912287893874
-Epoch: 48 Idx: 0 Loss: 0.013552658483801196
-Epoch: 48 Idx: 5000 Loss: 0.018059637358396552
-Epoch: 49 Idx: 0 Loss: 0.01724296218183994
-Epoch: 49 Idx: 5000 Loss: 0.030494946563899127
-Len (direct inputs):  105
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-on byTraTraining size: 127500 Validation size: 22500
-Epoch: 0 Idx: 0 Loss: 0.2313996853698022
-Epoch: 0 Idx: 5000 Loss: 0.018119857292558918
-Epoch: 1 Idx: 0 Loss: 0.03689489053787761
-Epoch: 1 Idx: 5000 Loss: 0.014439374550313865
-Epoch: 2 Idx: 0 Loss: 0.01700996943151971
-Epoch: 2 Idx: 5000 Loss: 0.03604648070711458
-Epoch: 3 Idx: 0 Loss: 0.017504805100524153
-Epoch: 3 Idx: 5000 Loss: 0.02607854127873784
-Epoch: 4 Idx: 0 Loss: 0.018688330159493928
-Epoch: 4 Idx: 5000 Loss: 0.01367017745810526
-Epoch: 5 Idx: 0 Loss: 0.02939917432375082
-Epoch: 5 Idx: 5000 Loss: 0.017623563268941076
-Epoch: 6 Idx: 0 Loss: 0.017322641526486434
-Epoch: 6 Idx: 5000 Loss: 0.020380337837949812
-Epoch: 7 Idx: 0 Loss: 0.014038488931997804
-Epoch: 7 Idx: 5000 Loss: 0.01942720905699556
-Epoch: 8 Idx: 0 Loss: 0.02309571524608245
-Epoch: 8 Idx: 5000 Loss: 0.022471712904483493
-Epoch: 9 Idx: 0 Loss: 0.019799449695122096
-Epoch: 9 Idx: 5000 Loss: 0.027812142127257394
-Epoch: 10 Idx: 0 Loss: 0.01764598379328513
-Epoch: 10 Idx: 5000 Loss: 0.029062320753702228
-Epoch: 11 Idx: 0 Loss: 0.01804074522226178
-Epoch: 11 Idx: 5000 Loss: 0.014248595945250042
-Epoch: 12 Idx: 0 Loss: 0.02542010093297601
-Epoch: 12 Idx: 5000 Loss: 0.020369173830756516
-Epoch: 13 Idx: 0 Loss: 0.020842521191579786
-Epoch: 13 Idx: 5000 Loss: 0.01226839461300449
-Epoch: 14 Idx: 0 Loss: 0.0354592492520438
-Epoch: 14 Idx: 5000 Loss: 0.017989124082746173
-Epoch: 15 Idx: 0 Loss: 0.010037840374737341
-Epoch: 15 Idx: 5000 Loss: 0.01490149988343204
-Epoch: 16 Idx: 0 Loss: 0.03846281459383039
-Epoch: 16 Idx: 5000 Loss: 0.028929676031406823
-Epoch: 17 Idx: 0 Loss: 0.023374804602832727
-Epoch: 17 Idx: 5000 Loss: 0.022655062763601314
-Epoch: 18 Idx: 0 Loss: 0.01851517524552535
-Epoch: 18 Idx: 5000 Loss: 0.0138076631483901
-Epoch: 19 Idx: 0 Loss: 0.02721650995161386
-Epoch: 19 Idx: 5000 Loss: 0.02875478844299072
-Epoch: 20 Idx: 0 Loss: 0.019623585443216657
-Epoch: 20 Idx: 5000 Loss: 0.02949063879800671
-Epoch: 21 Idx: 0 Loss: 0.015254238707816609
-Epoch: 21 Idx: 5000 Loss: 0.01996588796240119
-Epoch: 22 Idx: 0 Loss: 0.0416925098493292
-Epoch: 22 Idx: 5000 Loss: 0.016472947260730536
-Epoch: 23 Idx: 0 Loss: 0.017159118677750877
-Epoch: 23 Idx: 5000 Loss: 0.03300874685271543
-Epoch: 24 Idx: 0 Loss: 0.01713364588446633
-Epoch: 24 Idx: 5000 Loss: 0.010603234392595091
-Epoch: 25 Idx: 0 Loss: 0.007795793573173322
-Epoch: 25 Idx: 5000 Loss: 0.03003611832999681
-Epoch: 26 Idx: 0 Loss: 0.022998919685672976
-Epoch: 26 Idx: 5000 Loss: 0.03650862802740889
-Epoch: 27 Idx: 0 Loss: 0.01666781916214777
-Epoch: 27 Idx: 5000 Loss: 0.0175571375394241
-Epoch: 28 Idx: 0 Loss: 0.021256764860214827
-Epoch: 28 Idx: 5000 Loss: 0.021978486107199723
-Epoch: 29 Idx: 0 Loss: 0.016422121776736978
-Epoch: 29 Idx: 5000 Loss: 0.014189067675301866
-Epoch: 30 Idx: 0 Loss: 0.012918416030714301
-Epoch: 30 Idx: 5000 Loss: 0.02153996392728071
-Epoch: 31 Idx: 0 Loss: 0.01421248244489045
-Epoch: 31 Idx: 5000 Loss: 0.02037329867316503
-Epoch: 32 Idx: 0 Loss: 0.03245765855781659
-Epoch: 32 Idx: 5000 Loss: 0.01412990397074896
-Epoch: 33 Idx: 0 Loss: 0.023013485616414184
-Epoch: 33 Idx: 5000 Loss: 0.026589529330962324
-Epoch: 34 Idx: 0 Loss: 0.02138848741187188
-Epoch: 34 Idx: 5000 Loss: 0.01760609217770186
-Epoch: 35 Idx: 0 Loss: 0.018831012857814994
-Epoch: 35 Idx: 5000 Loss: 0.019757151120252225
-Epoch: 36 Idx: 0 Loss: 0.03599708712841693
-Epoch: 36 Idx: 5000 Loss: 0.01780215116175836
-Epoch: 37 Idx: 0 Loss: 0.02414308294497433
-Epoch: 37 Idx: 5000 Loss: 0.026193389508919303
-Epoch: 38 Idx: 0 Loss: 0.03743972422717004
-Epoch: 38 Idx: 5000 Loss: 0.03600206498641939
-Epoch: 39 Idx: 0 Loss: 0.02920937057096168
-Epoch: 39 Idx: 5000 Loss: 0.032143902932790284
-Epoch: 40 Idx: 0 Loss: 0.014200612652244898
-Epoch: 40 Idx: 5000 Loss: 0.020879463942827123
-Epoch: 41 Idx: 0 Loss: 0.020335914047399133
-Epoch: 41 Idx: 5000 Loss: 0.027185237160033793
-Epoch: 42 Idx: 0 Loss: 0.02136313470762744
-Epoch: 42 Idx: 5000 Loss: 0.03607661243355489
-Epoch: 43 Idx: 0 Loss: 0.018589450762680884
-Epoch: 43 Idx: 5000 Loss: 0.05320562871662827
-Epoch: 44 Idx: 0 Loss: 0.01625308917199836
-Epoch: 44 Idx: 5000 Loss: 0.010577720195639089
-Epoch: 45 Idx: 0 Loss: 0.021503238303767592
-Epoch: 45 Idx: 5000 Loss: 0.0286019584202354
-Epoch: 46 Idx: 0 Loss: 0.007685832293399688
-Epoch: 46 Idx: 5000 Loss: 0.021942740514858748
-Epoch: 47 Idx: 0 Loss: 0.012845361437259058
-Epoch: 47 Idx: 5000 Loss: 0.012800399873678122
-Epoch: 48 Idx: 0 Loss: 0.02367166835465153
-Epoch: 48 Idx: 5000 Loss: 0.025016383842252597
-Epoch: 49 Idx: 0 Loss: 0.01723932163736215
-Epoch: 49 Idx: 5000 Loss: 0.023431605752029495
-Len (direct inputs):  114
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-sion by zero
+Epoch: 0 Idx: 0 Loss: 0.23439623448423297
+Epoch: 0 Idx: 5000 Loss: 0.021375499885207653
+Epoch: 1 Idx: 0 Loss: 0.013687055432949742
+Epoch: 1 Idx: 5000 Loss: 0.027989403302276644
+Epoch: 2 Idx: 0 Loss: 0.02067144018133119
+Epoch: 2 Idx: 5000 Loss: 0.03075420331587462
+Epoch: 3 Idx: 0 Loss: 0.010639507411090819
+Epoch: 3 Idx: 5000 Loss: 0.02413009712994263
+Epoch: 4 Idx: 0 Loss: 0.03278773332988509
+Epoch: 4 Idx: 5000 Loss: 0.011676502652087927
+Epoch: 5 Idx: 0 Loss: 0.014645138923287695
+Epoch: 5 Idx: 5000 Loss: 0.01472244793864082
+Epoch: 6 Idx: 0 Loss: 0.02379905008527356
+Epoch: 6 Idx: 5000 Loss: 0.026402089664612414
+Epoch: 7 Idx: 0 Loss: 0.034543226572161835
+Epoch: 7 Idx: 5000 Loss: 0.01294690105658568
+Epoch: 8 Idx: 0 Loss: 0.04892471255782108
+Epoch: 8 Idx: 5000 Loss: 0.019473569964983173
+Epoch: 9 Idx: 0 Loss: 0.052620428670942396
+Epoch: 9 Idx: 5000 Loss: 0.018687900636178836
+Epoch: 10 Idx: 0 Loss: 0.01722732703030874
+Epoch: 10 Idx: 5000 Loss: 0.02231317198968565
+Epoch: 11 Idx: 0 Loss: 0.017919757768051724
+Epoch: 11 Idx: 5000 Loss: 0.014321180680123533
+Epoch: 12 Idx: 0 Loss: 0.022135344021728634
+Epoch: 12 Idx: 5000 Loss: 0.020139800447428413
+Epoch: 13 Idx: 0 Loss: 0.008247296321317217
+Epoch: 13 Idx: 5000 Loss: 0.01613378596293718
+Epoch: 14 Idx: 0 Loss: 0.022028855561681722
+Epoch: 14 Idx: 5000 Loss: 0.03330554244856812
+Epoch: 15 Idx: 0 Loss: 0.027869673726540003
+Epoch: 15 Idx: 5000 Loss: 0.018970814163501756
+Epoch: 16 Idx: 0 Loss: 0.03559542414842566
+Epoch: 16 Idx: 5000 Loss: 0.017757024579974003
+Epoch: 17 Idx: 0 Loss: 0.01823107019522483
+Epoch: 17 Idx: 5000 Loss: 0.030484729446685375
+Epoch: 18 Idx: 0 Loss: 0.014376232575275476
+Epoch: 18 Idx: 5000 Loss: 0.03173149933074615
+Epoch: 19 Idx: 0 Loss: 0.023589862423005585
+Epoch: 19 Idx: 5000 Loss: 0.03313022247333567
+Epoch: 20 Idx: 0 Loss: 0.021950138504443585
+Epoch: 20 Idx: 5000 Loss: 0.028222626501956338
+Epoch: 21 Idx: 0 Loss: 0.02207707329263176
+Epoch: 21 Idx: 5000 Loss: 0.030563104347863343
+Epoch: 22 Idx: 0 Loss: 0.007184471773782423
+Epoch: 22 Idx: 5000 Loss: 0.018681121421688887
+Epoch: 23 Idx: 0 Loss: 0.0193563635442972
+Epoch: 23 Idx: 5000 Loss: 0.017476699875568772
+Epoch: 24 Idx: 0 Loss: 0.011506904149989696
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 388, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+KeyboardInterrupt
+och: 26 Idx: 5000 Loss: 0.013580406783748365
+Epoch: 27 Idx: 0 Loss: 0.03496097353678883
+Epoch: 27 Idx: 5000 Loss: 0.008927395394402694
+Epoch: 28 Idx: 0 Loss: 0.009127048476322995
+Epoch: 28 Idx: 5000 Loss: 0.021769405154306823
+Epoch: 29 Idx: 0 Loss: 0.027472841579149407
+Epoch: 29 Idx: 5000 Loss: 0.032116033757652505
+Epoch: 30 Idx: 0 Loss: 0.009454153659694146
+Epoch: 30 Idx: 5000 Loss: 0.04096439675017719
+Epoch: 31 Idx: 0 Loss: 0.01634321571116002
+Epoch: 31 Idx: 5000 Loss: 0.027842466980029373
+Epoch: 32 Idx: 0 Loss: 0.018002849020914962
+Epoch: 32 Idx: 5000 Loss: 0.014606737075847545
+Epoch: 33 Idx: 0 Loss: 0.051946381869923446
+Epoch: 33 Idx: 5000 Loss: 0.012826428568606663
+Epoch: 34 Idx: 0 Loss: 0.022894046562552003
+Epoch: 34 Idx: 5000 Loss: 0.027029988418084537
+Epoch: 35 Idx: 0 Loss: 0.01666099904732392
+Epoch: 35 Idx: 5000 Loss: 0.04721502814801254
+Epoch: 36 Idx: 0 Loss: 0.019488716006680923
+Epoch: 36 Idx: 5000 Loss: 0.024059637469911268
+Epoch: 37 Idx: 0 Loss: 0.01777812737281976
+Epoch: 37 Idx: 5000 Loss: 0.027679316691829017
+Epoch: 38 Idx: 0 Loss: 0.01897426819488919
+Epoch: 38 Idx: 5000 Loss: 0.01947893394709961
+Epoch: 39 Idx: 0 Loss: 0.020326038986582244
+Epoch: 39 Idx: 5000 Loss: 0.034848648138742756
+Epoch: 40 Idx: 0 Loss: 0.014154384002885299
+Epoch: 40 Idx: 5000 Loss: 0.058130477422833574
+Epoch: 41 Idx: 0 Loss: 0.026367316868379585
+Epoch: 41 Idx: 5000 Loss: 0.028466881394368537
+Epoch: 42 Idx: 0 Loss: 0.029195397476707245
+Epoch: 42 Idx: 5000 Loss: 0.02751027810430279
+Epoch: 43 Idx: 0 Loss: 0.038950404560189666
+Epoch: 43 Idx: 5000 Loss: 0.019603107513512776
+Epoch: 44 Idx: 0 Loss: 0.008548617668086275
+Epoch: 44 Idx: 5000 Loss: 0.016598342851531896
+Epoch: 45 Idx: 0 Loss: 0.027987643394040137
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 397, in <module>
+    outputs = model(node_elems, inp_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "Attention_anatomy_aml_weighted.py", line 279, in forward
+    self.w_obj_neighbours = (1-self.w_rootpath-self.w_children)
+KeyboardInterrupt
+ro
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Epoch: 0 Idx: 0 Loss: 0.1956249395316404
+Epoch: 0 Idx: 5000 Loss: 0.037342063311021044
+Epoch: 1 Idx: 0 Loss: 0.022229987619024158
+Epoch: 1 Idx: 5000 Loss: 0.005740252844457506
+Epoch: 2 Idx: 0 Loss: 0.017417389434648857
+Epoch: 2 Idx: 5000 Loss: 0.016233088976482537
+Epoch: 3 Idx: 0 Loss: 0.05510922350511578
+Epoch: 3 Idx: 5000 Loss: 0.026889517025190577
+Epoch: 4 Idx: 0 Loss: 0.04122056336718434
+Epoch: 4 Idx: 5000 Loss: 0.016041838985561593
+Epoch: 5 Idx: 0 Loss: 0.009537039738086141
+Epoch: 5 Idx: 5000 Loss: 0.026762950472896625
+Epoch: 6 Idx: 0 Loss: 0.020529894923246847
+Epoch: 6 Idx: 5000 Loss: 0.02424747242181375
+Epoch: 7 Idx: 0 Loss: 0.018482928337288068
+Epoch: 7 Idx: 5000 Loss: 0.029414253588313358
+Epoch: 8 Idx: 0 Loss: 0.029398196432564246
+Epoch: 8 Idx: 5000 Loss: 0.031790385330870335
+Epoch: 9 Idx: 0 Loss: 0.02287049060480988
+Epoch: 9 Idx: 5000 Loss: 0.02257670158908302
+Epoch: 10 Idx: 0 Loss: 0.01682246679488752
+Epoch: 10 Idx: 5000 Loss: 0.022569844374869676
+Epoch: 11 Idx: 0 Loss: 0.029057177657110633
+Epoch: 11 Idx: 5000 Loss: 0.008625769669263504
+Epoch: 12 Idx: 0 Loss: 0.01700801266936281
+Epoch: 12 Idx: 5000 Loss: 0.021444832104787807
+Epoch: 13 Idx: 0 Loss: 0.028824986490190496
+Epoch: 13 Idx: 5000 Loss: 0.0156456880795547
+Epoch: 14 Idx: 0 Loss: 0.010719996628548062
+Epoch: 14 Idx: 5000 Loss: 0.022296219800355475
+Epoch: 15 Idx: 0 Loss: 0.018724617075265185
+Epoch: 15 Idx: 5000 Loss: 0.025152219594120707
+Epoch: 16 Idx: 0 Loss: 0.027221528147422132
+Epoch: 16 Idx: 5000 Loss: 0.04896161876342222
+Epoch: 17 Idx: 0 Loss: 0.036307134788085296
+Epoch: 17 Idx: 5000 Loss: 0.027943715682146156
+Epoch: 18 Idx: 0 Loss: 0.012642766259569563
+Epoch: 18 Idx: 5000 Loss: 0.016658461861957755
+Epoch: 19 Idx: 0 Loss: 0.01991700793064482
+Epoch: 19 Idx: 5000 Loss: 0.025419330287874943
+Epoch: 20 Idx: 0 Loss: 0.017366391204544907
+Epoch: 20 Idx: 5000 Loss: 0.025131703402302915
+Epoch: 21 Idx: 0 Loss: 0.01867443572979044
+Epoch: 21 Idx: 5000 Loss: 0.01419887796011085
+Epoch: 22 Idx: 0 Loss: 0.020429734800505875
+Epoch: 22 Idx: 5000 Loss: 0.0399391390841351
+Epoch: 23 Idx: 0 Loss: 0.014517579502316438
+Epoch: 23 Idx: 5000 Loss: 0.0067847681471538595
+Epoch: 24 Idx: 0 Loss: 0.017991727691325295
+Epoch: 24 Idx: 5000 Loss: 0.019977578570064318
+Epoch: 25 Idx: 0 Loss: 0.019342124987825643
+Epoch: 25 Idx: 5000 Loss: 0.011663143885438088
+Epoch: 26 Idx: 0 Loss: 0.05020614646606479
+Epoch: 26 Idx: 5000 Loss: 0.014745703962577576
+Epoch: 27 Idx: 0 Loss: 0.03314662523314123
+Epoch: 27 Idx: 5000 Loss: 0.019366992243188507
+Epoch: 28 Idx: 0 Loss: 0.05217457046555378
+Epoch: 28 Idx: 5000 Loss: 0.02288632224139061
+Epoch: 29 Idx: 0 Loss: 0.037025289381184406
+Epoch: 29 Idx: 5000 Loss: 0.015259398486075593
+Epoch: 30 Idx: 0 Loss: 0.01859302030609127
+Epoch: 30 Idx: 5000 Loss: 0.024529433756275802
+Epoch: 31 Idx: 0 Loss: 0.019255986999691346
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 388, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+KeyboardInterrupt
+Epoch: 33 Idx: 5000 Loss: 0.019998550471823896
+Epoch: 34 Idx: 0 Loss: 0.019351683807948033
+Epoch: 34 Idx: 5000 Loss: 0.03083188125394267
+Epoch: 35 Idx: 0 Loss: 0.015324708437514274
+Epoch: 35 Idx: 5000 Loss: 0.02000512287688359
+Epoch: 36 Idx: 0 Loss: 0.048972006380446784
+Epoch: 36 Idx: 5000 Loss: 0.029910407520018334
+Epoch: 37 Idx: 0 Loss: 0.026082299788277946
+Epoch: 37 Idx: 5000 Loss: 0.00990721331800582
+Epoch: 38 Idx: 0 Loss: 0.008610824901399467
+Epoch: 38 Idx: 5000 Loss: 0.012710154149099012
+Epoch: 39 Idx: 0 Loss: 0.014225479868347405
+Epoch: 39 Idx: 5000 Loss: 0.024055472187601835
+Epoch: 40 Idx: 0 Loss: 0.017215044889539365
+Epoch: 40 Idx: 5000 Loss: 0.013991377026711759
+Epoch: 41 Idx: 0 Loss: 0.03157465160719151
+Epoch: 41 Idx: 5000 Loss: 0.01844810230050039
+Epoch: 42 Idx: 0 Loss: 0.007876412204408522
+Epoch: 42 Idx: 5000 Loss: 0.02497357684341532
+Epoch: 43 Idx: 0 Loss: 0.01927225672036044
+Epoch: 43 Idx: 5000 Loss: 0.02633560686664347
+Epoch: 44 Idx: 0 Loss: 0.01713116804691614
+Epoch: 44 Idx: 5000 Loss: 0.022222439787053815
+Epoch: 45 Idx: 0 Loss: 0.020864910635364636
+Epoch: 45 Idx: 5000 Loss: 0.02199857513362282
+Epoch: 46 Idx: 0 Loss: 0.01889388051281794
+Epoch: 46 Idx: 5000 Loss: 0.025113889230210525
+Epoch: 47 Idx: 0 Loss: 0.01946828839708585
+Epoch: 47 Idx: 5000 Loss: 0.011289787161289498
+Epoch: 48 Idx: 0 Loss: 0.01781333749743553
+Epoch: 48 Idx: 5000 Loss: 0.025353573185245223
+Epoch: 49 Idx: 0 Loss: 0.012749980794898957
+Epoch: 49 Idx: 5000 Loss: 0.027702271636366634
+Len (direct inputs):  106
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division byTraining size: 127500 Validation size: 22500
+Epoch: 0 Idx: 0 Loss: 0.16201245395968025
+Epoch: 0 Idx: 5000 Loss: 0.016881963050661246
+Epoch: 1 Idx: 0 Loss: 0.009132873437841698
+Epoch: 1 Idx: 5000 Loss: 0.022199478627524236
+Epoch: 2 Idx: 0 Loss: 0.016833567486132316
+Epoch: 2 Idx: 5000 Loss: 0.019294800497123656
+Epoch: 3 Idx: 0 Loss: 0.039025857456597465
+Epoch: 3 Idx: 5000 Loss: 0.032434133446912976
+Epoch: 4 Idx: 0 Loss: 0.02360137770640368
+Epoch: 4 Idx: 5000 Loss: 0.047813809417906895
+Epoch: 5 Idx: 0 Loss: 0.03585897897142073
+Epoch: 5 Idx: 5000 Loss: 0.02497096092959396
+Epoch: 6 Idx: 0 Loss: 0.021296882027710056
+Epoch: 6 Idx: 5000 Loss: 0.012124596532931088
+Epoch: 7 Idx: 0 Loss: 0.025755041010805342
+Epoch: 7 Idx: 5000 Loss: 0.012942377287481887
+Epoch: 8 Idx: 0 Loss: 0.01662411458758426
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 399, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
+72133
+Epoch: 12 Idx: 5000 Loss: 0.03153282886395495
+Epoch: 13 Idx: 0 Loss: 0.018857623815266702
+Epoch: 13 Idx: 5000 Loss: 0.02484749768740057
+Epoch: 14 Idx: 0 Loss: 0.015121388605113521
+Epoch: 14 Idx: 5000 Loss: 0.020237741715768934
+Epoch: 15 Idx: 0 Loss: 0.019132312283354436
+Epoch: 15 Idx: 5000 Loss: 0.029344545635071696
+Epoch: 16 Idx: 0 Loss: 0.019248381580368144
+Epoch: 16 Idx: 5000 Loss: 0.01679540341977003
+Epoch: 17 Idx: 0 Loss: 0.007666820172303127
+Epoch: 17 Idx: 5000 Loss: 0.02922430527936293
+Epoch: 18 Idx: 0 Loss: 0.022632898909938845
+Epoch: 18 Idx: 5000 Loss: 0.027282031320437217
+Epoch: 19 Idx: 0 Loss: 0.029138468607595475
+Epoch: 19 Idx: 5000 Loss: 0.01893747494413983
+Epoch: 20 Idx: 0 Loss: 0.01845986911131258
+Epoch: 20 Idx: 5000 Loss: 0.03362598778922701
+Epoch: 21 Idx: 0 Loss: 0.020119324498378624
+Epoch: 21 Idx: 5000 Loss: 0.018418823995827928
+Epoch: 22 Idx: 0 Loss: 0.050807555435604626
+Epoch: 22 Idx: 5000 Loss: 0.040391549964624095
+Epoch: 23 Idx: 0 Loss: 0.03178157949111854
+Epoch: 23 Idx: 5000 Loss: 0.016783920205022698
+Epoch: 24 Idx: 0 Loss: 0.03603432664283822
+Epoch: 24 Idx: 5000 Loss: 0.011390444744874603
+Epoch: 25 Idx: 0 Loss: 0.02102190582164575
+Epoch: 25 Idx: 5000 Loss: 0.048586283944482826
+Epoch: 26 Idx: 0 Loss: 0.013447109401945444
+Epoch: 26 Idx: 5000 Loss: 0.018842945068356747
+Epoch: 27 Idx: 0 Loss: 0.0202868461681762
+Epoch: 27 Idx: 5000 Loss: 0.01798820528049501
+Epoch: 28 Idx: 0 Loss: 0.018148957600545884
+Epoch: 28 Idx: 5000 Loss: 0.03015185136522112
+Epoch: 29 Idx: 0 Loss: 0.014507060417527782
+Epoch: 29 Idx: 5000 Loss: 0.016662046458078554
+Epoch: 30 Idx: 0 Loss: 0.015972812134434574
+Epoch: 30 Idx: 5000 Loss: 0.022922046104390695
+Epoch: 31 Idx: 0 Loss: 0.022861431432166686
+Epoch: 31 Idx: 5000 Loss: 0.02882740158511327
+Epoch: 32 Idx: 0 Loss: 0.024924248844820293
+Epoch: 32 Idx: 5000 Loss: 0.02154033537398218
+Epoch: 33 Idx: 0 Loss: 0.017020932035704806
+Epoch: 33 Idx: 5000 Loss: 0.01777192108948453
+Epoch: 34 Idx: 0 Loss: 0.014086613310366427
+Epoch: 34 Idx: 5000 Loss: 0.0422693560573489
+Epoch: 35 Idx: 0 Loss: 0.02528752388511018
+Epoch: 35 Idx: 5000 Loss: 0.025226285971814158
+Epoch: 36 Idx: 0 Loss: 0.048884906518402826
+Epoch: 36 Idx: 5000 Loss: 0.028226958171600723
+Epoch: 37 Idx: 0 Loss: 0.011737335148303324
+Epoch: 37 Idx: 5000 Loss: 0.034615693373164044
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 399, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
+112538738
+Epoch: 42 Idx: 0 Loss: 0.02095749780810401
+Epoch: 42 Idx: 5000 Loss: 0.008035791165051247
+Epoch: 43 Idx: 0 Loss: 0.034637626706497324
+Epoch: 43 Idx: 5000 Loss: 0.011655243040903322
+Epoch: 44 Idx: 0 Loss: 0.02753856391694006
+Epoch: 44 Idx: 5000 Loss: 0.03370789880972311
+Epoch: 45 Idx: 0 Loss: 0.006880882359899868
+Epoch: 45 Idx: 5000 Loss: 0.010519062155049917
+Epoch: 46 Idx: 0 Loss: 0.024557501230721736
+Epoch: 46 Idx: 5000 Loss: 0.0095785264544824
+Epoch: 47 Idx: 0 Loss: 0.04864457123294838
+Epoch: 47 Idx: 5000 Loss: 0.03333778070175594
+Epoch: 48 Idx: 0 Loss: 0.012537489363476324
+Epoch: 48 Idx: 5000 Loss: 0.020005852709273686
+Epoch: 49 Idx: 0 Loss: 0.02267533117806293
+Epoch: 49 Idx: 5000 Loss: 0.030445841456297168
+Len (direct inputs):  96
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division TrainingTraining size: 127500 Validation size: 22500
+Epoch: 0 Idx: 0 Loss: 0.20182375649902343
+Epoch: 0 Idx: 5000 Loss: 0.01898581999363806
+Epoch: 1 Idx: 0 Loss: 0.021027267553108485
+Epoch: 1 Idx: 5000 Loss: 0.021811359916520952
+Epoch: 2 Idx: 0 Loss: 0.020379506800992576
+Epoch: 2 Idx: 5000 Loss: 0.014904371022887076
+Epoch: 3 Idx: 0 Loss: 0.026182320419713977
+Epoch: 3 Idx: 5000 Loss: 0.024419194523702954
+Epoch: 4 Idx: 0 Loss: 0.005007896352004297
+Epoch: 4 Idx: 5000 Loss: 0.012648945874214291
+Epoch: 5 Idx: 0 Loss: 0.015300685270849273
+Epoch: 5 Idx: 5000 Loss: 0.044529988786956846
+Epoch: 6 Idx: 0 Loss: 0.021159272155730567
+Epoch: 6 Idx: 5000 Loss: 0.0336900733908185
+Epoch: 7 Idx: 0 Loss: 0.020947535747835668
+Epoch: 7 Idx: 5000 Loss: 0.022629950030159017
+Epoch: 8 Idx: 0 Loss: 0.021179502272513313
+Epoch: 8 Idx: 5000 Loss: 0.015126182680833928
+Epoch: 9 Idx: 0 Loss: 0.010790979940809287
+Epoch: 9 Idx: 5000 Loss: 0.04833139374744924
+Epoch: 10 Idx: 0 Loss: 0.010286518106834279
+Epoch: 10 Idx: 5000 Loss: 0.013274442817134385
+Epoch: 11 Idx: 0 Loss: 0.016738157687062237
+Epoch: 11 Idx: 5000 Loss: 0.022717854995062736
+Epoch: 12 Idx: 0 Loss: 0.027719499740849148
+Epoch: 12 Idx: 5000 Loss: 0.01539617268864346
+Epoch: 13 Idx: 0 Loss: 0.026748346624052413
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 388, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+  File "Attention_anatomy_aml_weighted.py", line 315, in to_feature
+    for elem in inputs_lenpadded]
+  File "Attention_anatomy_aml_weighted.py", line 315, in <listcomp>
+    for elem in inputs_lenpadded]
+  File "Attention_anatomy_aml_weighted.py", line 314, in <listcomp>
+    for nbr_type in ent] for ent in elem]
+  File "Attention_anatomy_aml_weighted.py", line 314, in <listcomp>
+    for nbr_type in ent] for ent in elem]
+  File "Attention_anatomy_aml_weighted.py", line 313, in <listcomp>
+    for i in range(max_paths - len(nbr_type))]
+  File "Attention_anatomy_aml_weighted.py", line 312, in <listcomp>
+    inputs_pathpadded = [[[nbr_type + [[0 for j in range(max_pathlen)]
+KeyboardInterrupt
+Loss: 0.029854968785740822
+Epoch: 23 Idx: 5000 Loss: 0.022911151896707553
+Epoch: 24 Idx: 0 Loss: 0.017842614970036332
+Epoch: 24 Idx: 5000 Loss: 0.03144814958499454
+Epoch: 25 Idx: 0 Loss: 0.012220669179198288
+Epoch: 25 Idx: 5000 Loss: 0.009952508682652694
+Epoch: 26 Idx: 0 Loss: 0.02901985731292432
+Epoch: 26 Idx: 5000 Loss: 0.021909438065607946
+Epoch: 27 Idx: 0 Loss: 0.046715077072330635
+Epoch: 27 Idx: 5000 Loss: 0.011215280507415656
+Epoch: 28 Idx: 0 Loss: 0.0187816407874623
+Epoch: 28 Idx: 5000 Loss: 0.0188021175434048
+Epoch: 29 Idx: 0 Loss: 0.01952204576184735
+Epoch: 29 Idx: 5000 Loss: 0.020540312599926325
+Epoch: 30 Idx: 0 Loss: 0.01431443173737831
+Epoch: 30 Idx: 5000 Loss: 0.03175104826873529
+Epoch: 31 Idx: 0 Loss: 0.03839194799144513
+Epoch: 31 Idx: 5000 Loss: 0.02428470632615809
+Epoch: 32 Idx: 0 Loss: 0.04239535859991107
+Epoch: 32 Idx: 5000 Loss: 0.02624461452114991
+Epoch: 33 Idx: 0 Loss: 0.025737210368497507
+Epoch: 33 Idx: 5000 Loss: 0.029304012892535505
+Epoch: 34 Idx: 0 Loss: 0.029095347571614662
+Epoch: 34 Idx: 5000 Loss: 0.012046892271523797
+Epoch: 35 Idx: 0 Loss: 0.01706001318936438
+Epoch: 35 Idx: 5000 Loss: 0.0269304915570378
+Epoch: 36 Idx: 0 Loss: 0.027398903326689424
+Epoch: 36 Idx: 5000 Loss: 0.018521767933118355
+Epoch: 37 Idx: 0 Loss: 0.02969329572327609
+Epoch: 37 Idx: 5000 Loss: 0.024367140165072555
+Epoch: 38 Idx: 0 Loss: 0.017212308724175042
+Epoch: 38 Idx: 5000 Loss: 0.018977827381262895
+Epoch: 39 Idx: 0 Loss: 0.02196208533597184
+Epoch: 39 Idx: 5000 Loss: 0.020004186275460502
+Epoch: 40 Idx: 0 Loss: 0.03293549685735933
+Epoch: 40 Idx: 5000 Loss: 0.019756782753750507
+Epoch: 41 Idx: 0 Loss: 0.00889085989198355
+Epoch: 41 Idx: 5000 Loss: 0.023237994263421283
+Epoch: 42 Idx: 0 Loss: 0.021562840499652947
+Epoch: 42 Idx: 5000 Loss: 0.020883075461331217
+Epoch: 43 Idx: 0 Loss: 0.009473852695624833
+Epoch: 43 Idx: 5000 Loss: 0.015987432048918084
+Epoch: 44 Idx: 0 Loss: 0.009623244237954163
+Epoch: 44 Idx: 5000 Loss: 0.024226430759218293
+Epoch: 45 Idx: 0 Loss: 0.037277409845620516
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 388, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+KeyboardInterrupt
+poch: 47 Idx: 5000 Loss: 0.01939626657356143
+Epoch: 48 Idx: 0 Loss: 0.03232051077857921
+Epoch: 48 Idx: 5000 Loss: 0.014806691146889494
+Epoch: 49 Idx: 0 Loss: 0.019501621629697867
+Epoch: 49 Idx: 5000 Loss: 0.039673324581039796
+Len (direct inputs):  98
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+dTraining size: 127500 Validation size: 22500
+Epoch: 0 Idx: 0 Loss: 0.25154737965447427
+Epoch: 0 Idx: 5000 Loss: 0.01841615693921448
+Epoch: 1 Idx: 0 Loss: 0.020717348161619662
+Epoch: 1 Idx: 5000 Loss: 0.020918531325759215
+Epoch: 2 Idx: 0 Loss: 0.022071981392700925
+Epoch: 2 Idx: 5000 Loss: 0.025954740105619604
+Epoch: 3 Idx: 0 Loss: 0.014326883970527136
+Epoch: 3 Idx: 5000 Loss: 0.017520209146040956
+Epoch: 4 Idx: 0 Loss: 0.028060466563758976
+Epoch: 4 Idx: 5000 Loss: 0.03148566785462281
+Epoch: 5 Idx: 0 Loss: 0.011443017570911445
+Epoch: 5 Idx: 5000 Loss: 0.026069892841597532
+Epoch: 6 Idx: 0 Loss: 0.011934492786535671
+Epoch: 6 Idx: 5000 Loss: 0.013171283652913892
+Epoch: 7 Idx: 0 Loss: 0.02951539217728557
+Epoch: 7 Idx: 5000 Loss: 0.021909200298663466
+Epoch: 8 Idx: 0 Loss: 0.01330478917974325
+Epoch: 8 Idx: 5000 Loss: 0.029189834276085565
+Epoch: 9 Idx: 0 Loss: 0.02780632741577905
+Epoch: 9 Idx: 5000 Loss: 0.013404767438283588
+Epoch: 10 Idx: 0 Loss: 0.017338817469854002
+Epoch: 10 Idx: 5000 Loss: 0.02226877132812713
+Epoch: 11 Idx: 0 Loss: 0.02254034505376209
+Epoch: 11 Idx: 5000 Loss: 0.028182451193569054
+Epoch: 12 Idx: 0 Loss: 0.02788175128058682
+Epoch: 12 Idx: 5000 Loss: 0.056869386857222815
+Epoch: 13 Idx: 0 Loss: 0.010789704576019358
+Epoch: 13 Idx: 5000 Loss: 0.015287452791945967
+Epoch: 14 Idx: 0 Loss: 0.02642646589996589
+Epoch: 14 Idx: 5000 Loss: 0.023773054202088938
+Epoch: 15 Idx: 0 Loss: 0.030246662879238394
+Epoch: 15 Idx: 5000 Loss: 0.03494552851404383
+Epoch: 16 Idx: 0 Loss: 0.015245806233261733
+Epoch: 16 Idx: 5000 Loss: 0.012087405206049817
+Epoch: 17 Idx: 0 Loss: 0.02434915745177987
+Epoch: 17 Idx: 5000 Loss: 0.021898978362987015
+Epoch: 18 Idx: 0 Loss: 0.019158205596850775
+Epoch: 18 Idx: 5000 Loss: 0.019990199936432956
+Epoch: 19 Idx: 0 Loss: 0.03486819056338226
+Epoch: 19 Idx: 5000 Loss: 0.0167823347341294
+Epoch: 20 Idx: 0 Loss: 0.025187382695657155
+Epoch: 20 Idx: 5000 Loss: 0.017446095686003953
+Epoch: 21 Idx: 0 Loss: 0.014810929314074758
+Epoch: 21 Idx: 5000 Loss: 0.035362188988106474
+Epoch: 22 Idx: 0 Loss: 0.032070384658756154
+Epoch: 22 Idx: 5000 Loss: 0.025801577751287295
+Epoch: 23 Idx: 0 Loss: 0.012771527504147132
+Epoch: 23 Idx: 5000 Loss: 0.016674922004517725
+Epoch: 24 Idx: 0 Loss: 0.020332167761088822
+Epoch: 24 Idx: 5000 Loss: 0.019121687812747812
+Epoch: 25 Idx: 0 Loss: 0.04059953318851785
+Epoch: 25 Idx: 5000 Loss: 0.014584291782184686
+Epoch: 26 Idx: 0 Loss: 0.022585345981679793
+Epoch: 26 Idx: 5000 Loss: 0.013051712018734202
+Epoch: 27 Idx: 0 Loss: 0.018847041889529934
+Epoch: 27 Idx: 5000 Loss: 0.024778968424301086
+Epoch: 28 Idx: 0 Loss: 0.010231006283010144
+Epoch: 28 Idx: 5000 Loss: 0.02017333414638145
+Epoch: 29 Idx: 0 Loss: 0.032501764305593484
+Epoch: 29 Idx: 5000 Loss: 0.04167856698230831
+Epoch: 30 Idx: 0 Loss: 0.018818629136977818
+Epoch: 30 Idx: 5000 Loss: 0.018593092865077664
+Epoch: 31 Idx: 0 Loss: 0.029292821688248444
+Epoch: 31 Idx: 5000 Loss: 0.028542391811220258
+Epoch: 32 Idx: 0 Loss: 0.012222446968626633
+Epoch: 32 Idx: 5000 Loss: 0.013804244490515767
+Epoch: 33 Idx: 0 Loss: 0.02271884805345484
+Epoch: 33 Idx: 5000 Loss: 0.011482187669032286
+Epoch: 34 Idx: 0 Loss: 0.02424762513817915
+Epoch: 34 Idx: 5000 Loss: 0.02185996631085796
+Epoch: 35 Idx: 0 Loss: 0.020195296417659762
+Epoch: 35 Idx: 5000 Loss: 0.011053036518048271
+Epoch: 36 Idx: 0 Loss: 0.024041966928387927
+Epoch: 36 Idx: 5000 Loss: 0.01651012817142756
+Epoch: 37 Idx: 0 Loss: 0.025837983700012272
+Epoch: 37 Idx: 5000 Loss: 0.024878098157052532
+Epoch: 38 Idx: 0 Loss: 0.020495855145474223
+Epoch: 38 Idx: 5000 Loss: 0.019750480278307767
+Epoch: 39 Idx: 0 Loss: 0.04690777570247624
+Epoch: 39 Idx: 5000 Loss: 0.015660662305318172
+Epoch: 40 Idx: 0 Loss: 0.022914477505694232
+Epoch: 40 Idx: 5000 Loss: 0.011774443954796173
+Epoch: 41 Idx: 0 Loss: 0.03831414861783802
+Epoch: 41 Idx: 5000 Loss: 0.024945573952534907
+Epoch: 42 Idx: 0 Loss: 0.022718578996900357
+Epoch: 42 Idx: 5000 Loss: 0.00826029523490578
+Epoch: 43 Idx: 0 Loss: 0.02107801685002264
+Epoch: 43 Idx: 5000 Loss: 0.014861593619412075
+Epoch: 44 Idx: 0 Loss: 0.014613851579496781
+Epoch: 44 Idx: 5000 Loss: 0.02490798335764123
+Epoch: 45 Idx: 0 Loss: 0.01843359975433081
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 399, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
+: 49 Idx: 5000 Loss: 0.020774897204055603
+Len (direct inputs):  104
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Epoch: 0 Idx: 0 Loss: 0.26205012725386284
+Epoch: 0 Idx: 5000 Loss: 0.02367891881490899
+Epoch: 1 Idx: 0 Loss: 0.015964670768399913
+Epoch: 1 Idx: 5000 Loss: 0.02020799292350331
+Epoch: 2 Idx: 0 Loss: 0.011568643899230343
+Epoch: 2 Idx: 5000 Loss: 0.01595279456136363
+Epoch: 3 Idx: 0 Loss: 0.008653828905972322
+Epoch: 3 Idx: 5000 Loss: 0.02470978955209461
+Epoch: 4 Idx: 0 Loss: 0.03193187210553504
+Epoch: 4 Idx: 5000 Loss: 0.030935624074713657
+Epoch: 5 Idx: 0 Loss: 0.01894448952997121
+Epoch: 5 Idx: 5000 Loss: 0.03531215802715384
+Epoch: 6 Idx: 0 Loss: 0.030339931733529616
+Epoch: 6 Idx: 5000 Loss: 0.021708805030892377
+Epoch: 7 Idx: 0 Loss: 0.02069754733145081
+Epoch: 7 Idx: 5000 Loss: 0.02162408596971825
+Epoch: 8 Idx: 0 Loss: 0.018237055478265207
+Epoch: 8 Idx: 5000 Loss: 0.014937066150399676
+Epoch: 9 Idx: 0 Loss: 0.02051283500461046
+Epoch: 9 Idx: 5000 Loss: 0.019488484623621648
+Epoch: 10 Idx: 0 Loss: 0.017620757265175518
+Epoch: 10 Idx: 5000 Loss: 0.01766452480795775
+Epoch: 11 Idx: 0 Loss: 0.01712198859868673
+Epoch: 11 Idx: 5000 Loss: 0.0169913340580611
+Epoch: 12 Idx: 0 Loss: 0.011305779315910243
+Epoch: 12 Idx: 5000 Loss: 0.032531064994391595
+Epoch: 13 Idx: 0 Loss: 0.023277341946956992
+Epoch: 13 Idx: 5000 Loss: 0.025539320572614994
+Epoch: 14 Idx: 0 Loss: 0.017384201608405894
+Epoch: 14 Idx: 5000 Loss: 0.030524234470255724
+Epoch: 15 Idx: 0 Loss: 0.014259526956237091
+Epoch: 15 Idx: 5000 Loss: 0.021946245599610684
+Epoch: 16 Idx: 0 Loss: 0.020439906324704167
+Epoch: 16 Idx: 5000 Loss: 0.03713194859272766
+Epoch: 17 Idx: 0 Loss: 0.022482743080224882
+Epoch: 17 Idx: 5000 Loss: 0.01555507093351986
+Epoch: 18 Idx: 0 Loss: 0.007759321032319457
+Epoch: 18 Idx: 5000 Loss: 0.013618735404975293
+Epoch: 19 Idx: 0 Loss: 0.02152968185054794
+Epoch: 19 Idx: 5000 Loss: 0.0159568088651692
+Epoch: 20 Idx: 0 Loss: 0.015777944941953906
+Epoch: 20 Idx: 5000 Loss: 0.0274828101183993
+Epoch: 21 Idx: 0 Loss: 0.021635178756313607
+Epoch: 21 Idx: 5000 Loss: 0.028761667222491894
+Epoch: 22 Idx: 0 Loss: 0.024468853291347986
+Epoch: 22 Idx: 5000 Loss: 0.02540586888810664
+Epoch: 23 Idx: 0 Loss: 0.010896542803730792
+Epoch: 23 Idx: 5000 Loss: 0.01380065483017285
+Epoch: 24 Idx: 0 Loss: 0.01679037247268384
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 397, in <module>
+    outputs = model(node_elems, inp_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "Attention_anatomy_aml_weighted.py", line 260, in forward
+    feature_emb_reshaped = feature_emb.permute(0,4,1,2,3).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_paths * self.max_pathlen)
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc247>
+Subject: Job 3290056: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 20 11 Output/test_anatomy_aml_bagofnbrs_wtpath20_11.pkl Models/anatomy_aml_bagofnbrs_wtpath20_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 20 11 Output/test_anatomy_aml_bagofnbrs_wtpath20_11.pkl Models/anatomy_aml_bagofnbrs_wtpath20_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
+Job was executed on host(s) <dccxc247>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:28:22 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:28:22 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 20 11 Output/test_anatomy_aml_bagofnbrs_wtpath20_11.pkl Models/anatomy_aml_bagofnbrs_wtpath20_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   38965.02 sec.
+    Max Memory :                                 2730 MB
+    Average Memory :                             2660.23 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40687.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   39030 sec.
+    Turnaround time :                            80688 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc223>
+Subject: Job 3290066: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 32 11 Output/test_anatomy_aml_bagofnbrs_wtpath32_11.pkl Models/anatomy_aml_bagofnbrs_wtpath32_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 32 11 Output/test_anatomy_aml_bagofnbrs_wtpath32_11.pkl Models/anatomy_aml_bagofnbrs_wtpath32_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc223>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:52:16 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:52:16 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 32 11 Output/test_anatomy_aml_bagofnbrs_wtpath32_11.pkl Models/anatomy_aml_bagofnbrs_wtpath32_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   37226.07 sec.
+    Max Memory :                                 2727 MB
+    Average Memory :                             2618.50 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40690.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   37592 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc235>
+Subject: Job 3290070: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 80 11 Output/test_anatomy_aml_bagofnbrs_wtpath80_11.pkl Models/anatomy_aml_bagofnbrs_wtpath80_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 80 11 Output/test_anatomy_aml_bagofnbrs_wtpath80_11.pkl Models/anatomy_aml_bagofnbrs_wtpath80_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc235>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 02:18:20 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 02:18:20 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 80 11 Output/test_anatomy_aml_bagofnbrs_wtpath80_11.pkl Models/anatomy_aml_bagofnbrs_wtpath80_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   35954.09 sec.
+    Max Memory :                                 2676 MB
+    Average Memory :                             2593.10 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40741.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   36028 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc242>
+Subject: Job 3290058: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 22 11 Output/test_anatomy_aml_bagofnbrs_wtpath22_11.pkl Models/anatomy_aml_bagofnbrs_wtpath22_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 22 11 Output/test_anatomy_aml_bagofnbrs_wtpath22_11.pkl Models/anatomy_aml_bagofnbrs_wtpath22_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc242>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:32:33 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:32:33 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 22 11 Output/test_anatomy_aml_bagofnbrs_wtpath22_11.pkl Models/anatomy_aml_bagofnbrs_wtpath22_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   38698.84 sec.
+    Max Memory :                                 2730 MB
+    Average Memory :                             2656.23 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40687.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   38802 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc272>
+Subject: Job 3290064: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 30 11 Output/test_anatomy_aml_bagofnbrs_wtpath30_11.pkl Models/anatomy_aml_bagofnbrs_wtpath30_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 30 11 Output/test_anatomy_aml_bagofnbrs_wtpath30_11.pkl Models/anatomy_aml_bagofnbrs_wtpath30_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc272>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:47:12 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:47:12 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 30 11 Output/test_anatomy_aml_bagofnbrs_wtpath30_11.pkl Models/anatomy_aml_bagofnbrs_wtpath30_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   37741.61 sec.
+    Max Memory :                                 2728 MB
+    Average Memory :                             2638.70 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40689.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   37896 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc252>
+Subject: Job 3290068: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 11 Output/test_anatomy_aml_bagofnbrs_wtpath40_11.pkl Models/anatomy_aml_bagofnbrs_wtpath40_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 11 Output/test_anatomy_aml_bagofnbrs_wtpath40_11.pkl Models/anatomy_aml_bagofnbrs_wtpath40_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc252>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 02:11:28 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 02:11:28 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 11 Output/test_anatomy_aml_bagofnbrs_wtpath40_11.pkl Models/anatomy_aml_bagofnbrs_wtpath40_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   36434.70 sec.
+    Max Memory :                                 2720 MB
+    Average Memory :                             2627.83 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40697.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   36440 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc232>
+Subject: Job 3290072: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 152 11 Output/test_anatomy_aml_bagofnbrs_wtpath152_11.pkl Models/anatomy_aml_bagofnbrs_wtpath152_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 152 11 Output/test_anatomy_aml_bagofnbrs_wtpath152_11.pkl Models/anatomy_aml_bagofnbrs_wtpath152_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc232>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 02:20:59 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 02:20:59 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 152 11 Output/test_anatomy_aml_bagofnbrs_wtpath152_11.pkl Models/anatomy_aml_bagofnbrs_wtpath152_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   35863.73 sec.
+    Max Memory :                                 2676 MB
+    Average Memory :                             2541.41 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40741.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   35869 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc251>
+Subject: Job 3290052: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 15 11 Output/test_anatomy_aml_bagofnbrs_wtpath15_11.pkl Models/anatomy_aml_bagofnbrs_wtpath15_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 15 11 Output/test_anatomy_aml_bagofnbrs_wtpath15_11.pkl Models/anatomy_aml_bagofnbrs_wtpath15_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
+Job was executed on host(s) <dccxc251>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:08:55 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:08:55 2020
+Terminated at Wed Sep  2 12:18:49 2020
+Results reported at Wed Sep  2 12:18:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 15 11 Output/test_anatomy_aml_bagofnbrs_wtpath15_11.pkl Models/anatomy_aml_bagofnbrs_wtpath15_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   40142.83 sec.
+    Max Memory :                                 2732 MB
+    Average Memory :                             2661.37 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40685.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   40193 sec.
+    Turnaround time :                            80689 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc207>
+Subject: Job 3290046: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 8 11 Output/test_anatomy_aml_bagofnbrs_wtpath8_11.pkl Models/anatomy_aml_bagofnbrs_wtpath8_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 8 11 Output/test_anatomy_aml_bagofnbrs_wtpath8_11.pkl Models/anatomy_aml_bagofnbrs_wtpath8_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
+Job was executed on host(s) <dccxc207>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 00:39:52 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 00:39:52 2020
+Terminated at Wed Sep  2 12:18:49 2020
+Results reported at Wed Sep  2 12:18:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 8 11 Output/test_anatomy_aml_bagofnbrs_wtpath8_11.pkl Models/anatomy_aml_bagofnbrs_wtpath8_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   41919.17 sec.
+    Max Memory :                                 2743 MB
+    Average Memory :                             2687.73 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40674.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   41937 sec.
+    Turnaround time :                            80689 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc271>
+Subject: Job 3290060: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 24 11 Output/test_anatomy_aml_bagofnbrs_wtpath24_11.pkl Models/anatomy_aml_bagofnbrs_wtpath24_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 24 11 Output/test_anatomy_aml_bagofnbrs_wtpath24_11.pkl Models/anatomy_aml_bagofnbrs_wtpath24_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc271>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:34:41 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:34:41 2020
+Terminated at Wed Sep  2 12:18:49 2020
+Results reported at Wed Sep  2 12:18:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 24 11 Output/test_anatomy_aml_bagofnbrs_wtpath24_11.pkl Models/anatomy_aml_bagofnbrs_wtpath24_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   38595.00 sec.
+    Max Memory :                                 2734 MB
+    Average Memory :                             2654.32 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40683.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   38647 sec.
+    Turnaround time :                            80688 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc233>
+Subject: Job 3290062: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 26 11 Output/test_anatomy_aml_bagofnbrs_wtpath26_11.pkl Models/anatomy_aml_bagofnbrs_wtpath26_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 26 11 Output/test_anatomy_aml_bagofnbrs_wtpath26_11.pkl Models/anatomy_aml_bagofnbrs_wtpath26_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc233>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:36:04 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:36:04 2020
+Terminated at Wed Sep  2 12:18:49 2020
+Results reported at Wed Sep  2 12:18:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 26 11 Output/test_anatomy_aml_bagofnbrs_wtpath26_11.pkl Models/anatomy_aml_bagofnbrs_wtpath26_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   38501.88 sec.
+    Max Memory :                                 2728 MB
+    Average Memory :                             2644.70 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40689.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   38565 sec.
+    Turnaround time :                            80688 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc244>
+Subject: Job 3290048: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 10 11 Output/test_anatomy_aml_bagofnbrs_wtpath10_11.pkl Models/anatomy_aml_bagofnbrs_wtpath10_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 10 11 Output/test_anatomy_aml_bagofnbrs_wtpath10_11.pkl Models/anatomy_aml_bagofnbrs_wtpath10_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
+Job was executed on host(s) <dccxc244>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 00:50:52 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 00:50:52 2020
+Terminated at Wed Sep  2 12:18:50 2020
+Results reported at Wed Sep  2 12:18:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 10 11 Output/test_anatomy_aml_bagofnbrs_wtpath10_11.pkl Models/anatomy_aml_bagofnbrs_wtpath10_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   41276.35 sec.
+    Max Memory :                                 2743 MB
+    Average Memory :                             2672.95 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40674.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   41277 sec.
+    Turnaround time :                            80690 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc274>
+Subject: Job 3290054: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 18 11 Output/test_anatomy_aml_bagofnbrs_wtpath18_11.pkl Models/anatomy_aml_bagofnbrs_wtpath18_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 18 11 Output/test_anatomy_aml_bagofnbrs_wtpath18_11.pkl Models/anatomy_aml_bagofnbrs_wtpath18_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
+Job was executed on host(s) <dccxc274>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 01:18:22 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 01:18:22 2020
+Terminated at Wed Sep  2 12:18:50 2020
+Results reported at Wed Sep  2 12:18:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 18 11 Output/test_anatomy_aml_bagofnbrs_wtpath18_11.pkl Models/anatomy_aml_bagofnbrs_wtpath18_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   39560.04 sec.
+    Max Memory :                                 2730 MB
+    Average Memory :                             2658.19 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40687.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   39648 sec.
+    Turnaround time :                            80690 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc233>
+Subject: Job 3290050: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 12 11 Output/test_anatomy_aml_bagofnbrs_wtpath12_11.pkl Models/anatomy_aml_bagofnbrs_wtpath12_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 12 11 Output/test_anatomy_aml_bagofnbrs_wtpath12_11.pkl Models/anatomy_aml_bagofnbrs_wtpath12_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
+Job was executed on host(s) <dccxc233>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 00:57:16 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 00:57:16 2020
+Terminated at Wed Sep  2 12:18:50 2020
+Results reported at Wed Sep  2 12:18:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 12 11 Output/test_anatomy_aml_bagofnbrs_wtpath12_11.pkl Models/anatomy_aml_bagofnbrs_wtpath12_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   40889.16 sec.
+    Max Memory :                                 2741 MB
+    Average Memory :                             2673.73 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40676.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   40893 sec.
+    Turnaround time :                            80690 sec.
+
+The output (if any) is above this job summary.
+

@@ -1,0 +1,177 @@
+Max number of nodes in a path: Input/data_anatomy_oaei_bagofnbrs.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  116
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  86
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  109
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  107
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  81
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  105
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+0.8123345408887089
+Parameter containing:
+tensor([0.8123], device='cuda:0')
+Len (direct inputs):  642
+Final Results: [0.93389592 0.88948426 0.91114923 0.89802543 0.9246623 ]
+Threshold:  0.8123345408887089
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc244>
+Subject: Job 3382644: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 3 5 Output/test_anatomy_aml_bagofnbrs_wtpath3_5.pkl Models/anatomy_aml_bagofnbrs_wtpath3_5.pt> in cluster <dcc> Done
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 3 5 Output/test_anatomy_aml_bagofnbrs_wtpath3_5.pkl Models/anatomy_aml_bagofnbrs_wtpath3_5.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:09 2020
+Job was executed on host(s) <dccxc244>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:11 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 13:16:11 2020
+Terminated at Wed Sep  2 21:12:13 2020
+Results reported at Wed Sep  2 21:12:13 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 3 5 Output/test_anatomy_aml_bagofnbrs_wtpath3_5.pkl Models/anatomy_aml_bagofnbrs_wtpath3_5.pt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   28396.51 sec.
+    Max Memory :                                 2932 MB
+    Average Memory :                             2724.42 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40485.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   28577 sec.
+    Turnaround time :                            28564 sec.
+
+The output (if any) is above this job summary.
+

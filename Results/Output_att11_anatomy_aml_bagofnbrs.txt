@@ -1,43 +1,175 @@
+Max number of nodes in a path: Input/data_anatomy_oaei_bagofnbrs.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Epoch: 0 Idx: 0 Loss: 0.250618682761873
+Epoch: 0 Idx: 5000 Loss: 0.021602832711032614
+Epoch: 1 Idx: 0 Loss: 0.0297194010971677
+Epoch: 1 Idx: 5000 Loss: 0.026407776288324514
+Epoch: 2 Idx: 0 Loss: 0.022470551101285086
+Epoch: 2 Idx: 5000 Loss: 0.03591871281042943
+Epoch: 3 Idx: 0 Loss: 0.029290703475225166
+Epoch: 3 Idx: 5000 Loss: 0.015797200386821048
+Epoch: 4 Idx: 0 Loss: 0.018116873086741973
+Epoch: 4 Idx: 5000 Loss: 0.01430602727719983
+Epoch: 5 Idx: 0 Loss: 0.016718360609967245
+Epoch: 5 Idx: 5000 Loss: 0.026367647755433023
+Epoch: 6 Idx: 0 Loss: 0.02217872107461117
+Epoch: 6 Idx: 5000 Loss: 0.02099547291562836
+Epoch: 7 Idx: 0 Loss: 0.01731523363453792
+Epoch: 7 Idx: 5000 Loss: 0.026649697808362297
+Epoch: 8 Idx: 0 Loss: 0.024043911429692533
+Epoch: 8 Idx: 5000 Loss: 0.016577045886920015
+Epoch: 9 Idx: 0 Loss: 0.030280306633625118
+Epoch: 9 Idx: 5000 Loss: 0.01625767656403853
+Epoch: 10 Idx: 0 Loss: 0.0357284219325945
+Epoch: 10 Idx: 5000 Loss: 0.033802303666344936
+Epoch: 11 Idx: 0 Loss: 0.01814863966734787
+Epoch: 11 Idx: 5000 Loss: 0.019027933647810105
+Epoch: 12 Idx: 0 Loss: 0.021272524447928532
+Epoch: 12 Idx: 5000 Loss: 0.016592434505562713
+Epoch: 13 Idx: 0 Loss: 0.048801156853931826
+Epoch: 13 Idx: 5000 Loss: 0.02831394586760825
+Epoch: 14 Idx: 0 Loss: 0.030824215009632526
+Epoch: 14 Idx: 5000 Loss: 0.013707654014257574
+Epoch: 15 Idx: 0 Loss: 0.023011170458319536
+Epoch: 15 Idx: 5000 Loss: 0.030547708997517593
+Epoch: 16 Idx: 0 Loss: 0.015483302347070613
+Epoch: 16 Idx: 5000 Loss: 0.008219339531326716
+Epoch: 17 Idx: 0 Loss: 0.03894175792139565
+Epoch: 17 Idx: 5000 Loss: 0.039503843590308556
+Epoch: 18 Idx: 0 Loss: 0.021550024101704347
+Epoch: 18 Idx: 5000 Loss: 0.0428644170903309
+Epoch: 19 Idx: 0 Loss: 0.01961287719010301
+Epoch: 19 Idx: 5000 Loss: 0.015872803201537198
+Epoch: 20 Idx: 0 Loss: 0.014640186303548948
+Epoch: 20 Idx: 5000 Loss: 0.02319139931103031
+Epoch: 21 Idx: 0 Loss: 0.01021928417884521
+Epoch: 21 Idx: 5000 Loss: 0.010664079813146711
+Epoch: 22 Idx: 0 Loss: 0.01815420913785798
+Epoch: 22 Idx: 5000 Loss: 0.026623847115021696
+Epoch: 23 Idx: 0 Loss: 0.018757410135006067
+Epoch: 23 Idx: 5000 Loss: 0.014546964979904627
+Epoch: 24 Idx: 0 Loss: 0.01429834389460801
+Epoch: 24 Idx: 5000 Loss: 0.04177470305278608
+Epoch: 25 Idx: 0 Loss: 0.025252619507204005
 Traceback (most recent call last):
-  File "Attention_anatomy_aml.py", line 412, in <module>
-    sys.stdout.flush()
-OSError: [Errno 122] Disk quota exceeded
-Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
-OSError: [Errno 122] Disk quota exceeded
+  File "Attention_anatomy_aml.py", line 387, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+  File "Attention_anatomy_aml.py", line 314, in to_feature
+    for elem in inputs_lenpadded]
+  File "Attention_anatomy_aml.py", line 314, in <listcomp>
+    for elem in inputs_lenpadded]
+  File "Attention_anatomy_aml.py", line 313, in <listcomp>
+    for nbr_type in ent] for ent in elem]
+  File "Attention_anatomy_aml.py", line 313, in <listcomp>
+    for nbr_type in ent] for ent in elem]
+  File "Attention_anatomy_aml.py", line 312, in <listcomp>
+    for i in range(max_paths - len(nbr_type))]
+  File "Attention_anatomy_aml.py", line 311, in <listcomp>
+    inputs_pathpadded = [[[nbr_type + [[0 for j in range(max_pathlen)]
+KeyboardInterrupt
+99627
+Epoch: 34 Idx: 5000 Loss: 0.02199238198371061
+Epoch: 35 Idx: 0 Loss: 0.01271760612314513
+Epoch: 35 Idx: 5000 Loss: 0.03423768732782089
+Epoch: 36 Idx: 0 Loss: 0.022215928741549387
+Epoch: 36 Idx: 5000 Loss: 0.035847505875079025
+Epoch: 37 Idx: 0 Loss: 0.011334349465626564
+Epoch: 37 Idx: 5000 Loss: 0.046594227234126664
+Epoch: 38 Idx: 0 Loss: 0.0359607997254822
+Epoch: 38 Idx: 5000 Loss: 0.010681749806640705
+Epoch: 39 Idx: 0 Loss: 0.017968569726189945
+Epoch: 39 Idx: 5000 Loss: 0.04516080657526045
+Epoch: 40 Idx: 0 Loss: 0.01160748238380713
+Epoch: 40 Idx: 5000 Loss: 0.04415853730851608
+Epoch: 41 Idx: 0 Loss: 0.013362298468419138
+Epoch: 41 Idx: 5000 Loss: 0.015396895750291455
+Epoch: 42 Idx: 0 Loss: 0.024702965853543105
+Epoch: 42 Idx: 5000 Loss: 0.02086260660830439
+Epoch: 43 Idx: 0 Loss: 0.015723630057428994
+Epoch: 43 Idx: 5000 Loss: 0.01621989442616225
+Epoch: 44 Idx: 0 Loss: 0.023860021923323087
+Epoch: 44 Idx: 5000 Loss: 0.011950908665413776
+Epoch: 45 Idx: 0 Loss: 0.03377831723860328
+Epoch: 45 Idx: 5000 Loss: 0.03373318702397489
+Epoch: 46 Idx: 0 Loss: 0.02189299457732325
+Traceback (most recent call last):
+  File "Attention_anatomy_aml.py", line 387, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+KeyboardInterrupt
 
 ------------------------------------------------------------
-Sender: LSF System <rer@dccxc218>
-Subject: Job 3290045: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 8 11 Output/test_anatomy_aml_bagofnbrs8_11.pkl Models/anatomy_aml_bagofnbrs8_11.pt> in cluster <dcc> Exited
+Sender: LSF System <rer@dccxc214>
+Subject: Job 3290069: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 80 11 Output/test_anatomy_aml_bagofnbrs80_11.pkl Models/anatomy_aml_bagofnbrs80_11.pt> in cluster <dcc> Exited
 
-Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 8 11 Output/test_anatomy_aml_bagofnbrs8_11.pkl Models/anatomy_aml_bagofnbrs8_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:00 2020
-Job was executed on host(s) <dccxc218>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 00:36:21 2020
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 80 11 Output/test_anatomy_aml_bagofnbrs80_11.pkl Models/anatomy_aml_bagofnbrs80_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc214>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 02:13:08 2020
 </u/harshitk> was used as the home directory.
 </dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
-Started at Wed Sep  2 00:36:21 2020
-Terminated at Wed Sep  2 02:22:21 2020
-Results reported at Wed Sep  2 02:22:21 2020
+Started at Wed Sep  2 02:13:08 2020
+Terminated at Wed Sep  2 12:18:48 2020
+Results reported at Wed Sep  2 12:18:48 2020
 
 Your job looked like:
 
 ------------------------------------------------------------
 # LSBATCH: User input
-/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 8 11 Output/test_anatomy_aml_bagofnbrs8_11.pkl Models/anatomy_aml_bagofnbrs8_11.pt
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 80 11 Output/test_anatomy_aml_bagofnbrs80_11.pkl Models/anatomy_aml_bagofnbrs80_11.pt
 ------------------------------------------------------------
 
-Exited with exit code 120.
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
 
 Resource usage summary:
 
-    CPU time :                                   6304.76 sec.
+    CPU time :                                   36069.12 sec.
+    Max Memory :                                 2677 MB
+    Average Memory :                             2597.68 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40740.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   36340 sec.
+    Turnaround time :                            80687 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc259>
+Subject: Job 3290071: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 152 11 Output/test_anatomy_aml_bagofnbrs152_11.pkl Models/anatomy_aml_bagofnbrs152_11.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 152 11 Output/test_anatomy_aml_bagofnbrs152_11.pkl Models/anatomy_aml_bagofnbrs152_11.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Tue Sep  1 13:54:01 2020
+Job was executed on host(s) <dccxc259>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 02:19:52 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 02:19:52 2020
+Terminated at Wed Sep  2 12:18:49 2020
+Results reported at Wed Sep  2 12:18:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 152 11 Output/test_anatomy_aml_bagofnbrs152_11.pkl Models/anatomy_aml_bagofnbrs152_11.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   35873.48 sec.
     Max Memory :                                 2674 MB
-    Average Memory :                             2592.87 MB
+    Average Memory :                             2546.56 MB
     Total Requested Memory :                     43417.00 MB
     Delta Memory :                               40743.00 MB
     Max Swap :                                   -
     Max Processes :                              4
     Max Threads :                                9
-    Run time :                                   6360 sec.
-    Turnaround time :                            44901 sec.
+    Run time :                                   35937 sec.
+    Turnaround time :                            80688 sec.
 
 The output (if any) is above this job summary.
 

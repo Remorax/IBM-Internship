@@ -1,0 +1,57 @@
+Max number of nodes in a path: Input/data_anatomy_oaei_bagofnbrs.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  108
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  85
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  108
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  102
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  93
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  116
+0.8407022255637852
+Parameter containing:
+tensor([0.8407], device='cuda:0')
+Len (direct inputs):  642
+Final Results: [0.94843863 0.87474883 0.91010453 0.88855627 0.9327239 ]
+Threshold:  0.8407022255637852
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc224>
+Subject: Job 3382641: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 2 5 Output/test_anatomy_aml_bagofnbrs2_5.pkl Models/anatomy_aml_bagofnbrs2_5.pt> in cluster <dcc> Done
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 2 5 Output/test_anatomy_aml_bagofnbrs2_5.pkl Models/anatomy_aml_bagofnbrs2_5.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:09 2020
+Job was executed on host(s) <dccxc224>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:11 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Wed Sep  2 13:16:11 2020
+Terminated at Wed Sep  2 19:44:03 2020
+Results reported at Wed Sep  2 19:44:03 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 2 5 Output/test_anatomy_aml_bagofnbrs2_5.pkl Models/anatomy_aml_bagofnbrs2_5.pt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   23266.01 sec.
+    Max Memory :                                 2930 MB
+    Average Memory :                             2722.24 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40487.00 MB
+    Max Swap :                                   123 MB
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   23272 sec.
+    Turnaround time :                            23274 sec.
+
+The output (if any) is above this job summary.
+
