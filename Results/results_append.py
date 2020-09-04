@@ -8,6 +8,8 @@ mapping_dict = {
     "twostep_bagofnbrs_wtpath": ["(self+self weighted two-step with bagged one-hop)", ", Self attention of path on entity followed by node on entity, with best path chosen as max of all path weights. One-hop neighbours are considered as a bag instead of separate paths."],
     "twostep_bagofnbrs": ["(self+self two-step with bagged one-hop)", ", Self attention of path on entity followed by node on entity, with best path chosen as weighted sum. One-hop neighbours are considered as a bag instead of separate paths."],
     "twostep": ["(self+self two-step)", ", Self attention of path on entity followed by node on entity, with best path chosen as weighted sum"],
+    "anatomy_aml_bagofnbrs_wtpath": ["(self+self weighted two-step with bagged one-hop)", ", Self attention of path on entity followed by node on entity, with best path chosen as weighted sum. One-hop neighbours are considered as a bag instead of separate paths."],
+    "anatomy_aml_bagofnbrs": ["(self+self two-step with bagged one-hop)", ", Self attention of path on entity followed by node on entity, with best path chosen as max of all path weights. One-hop neighbours are considered as a bag instead of separate paths."],
     "ent_prop": ["(avg, ent+prop)", ", Dot product of node with neighbours, softmax, weighted average, both entities and props"],
     "val": ["(val size = 2)", ", Optimized entity model"],
     "unsoftmax": ["(avg, no softmax)", ", Dot product of node with neighbours, weighted average"],
