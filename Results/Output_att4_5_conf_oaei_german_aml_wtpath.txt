@@ -1,0 +1,54 @@
+Max number of nodes in a path: Input/data_conf_oaei_german_aml.pkl
+Number of entities: 122893
+Training size: 109284 Validation size: 13609
+Epoch: 0 Idx: 0 Loss: 0.15130201292492687
+Epoch: 0 Idx: 5000 Loss: 0.0079729104948025
+Epoch: 1 Idx: 0 Loss: 0.010193499249203139
+Epoch: 1 Idx: 5000 Loss: 0.005000853393728769
+Epoch: 2 Idx: 0 Loss: 0.02438025138789532
+Epoch: 2 Idx: 5000 Loss: 0.020213896971632155
+Epoch: 3 Idx: 0 Loss: 0.011582204653964749
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei_weighted.py", line 404, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc256>
+Subject: Job 3519654: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 4 5 Output/test_conf_oaei_german_aml_wtpath4_5.pkl Models/conf_oaei_german_aml_wtpath4_5.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 4 5 Output/test_conf_oaei_german_aml_wtpath4_5.pkl Models/conf_oaei_german_aml_wtpath4_5.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:09 2020
+Job was executed on host(s) <dccxc256>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:09 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:56:09 2020
+Terminated at Sat Sep  5 10:59:37 2020
+Results reported at Sat Sep  5 10:59:37 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 4 5 Output/test_conf_oaei_german_aml_wtpath4_5.pkl Models/conf_oaei_german_aml_wtpath4_5.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   206.49 sec.
+    Max Memory :                                 2217 MB
+    Average Memory :                             1858.56 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41200.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                9
+    Run time :                                   208 sec.
+    Turnaround time :                            208 sec.
+
+The output (if any) is above this job summary.
+

@@ -1,7 +1,7 @@
 Max number of nodes in a path: Input/data_anatomy_oaei_bagofnbrs.pkl
 Number of entities: 150000
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  107
+Len (direct inputs):  94
 division by zero
 division by zero
 division by zero
@@ -23,29 +23,7 @@ division by zero
 division by zero
 division by zero
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  99
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-division by zero
-Training size: 127500 Validation size: 22500
-Len (direct inputs):  106
+Len (direct inputs):  101
 division by zero
 division by zero
 division by zero
@@ -89,7 +67,7 @@ division by zero
 division by zero
 division by zero
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  122
+Len (direct inputs):  98
 division by zero
 division by zero
 division by zero
@@ -110,19 +88,25 @@ division by zero
 division by zero
 division by zero
 division by zero
-User defined signal 2
+Training size: 127500 Validation size: 22500
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 399, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
 
 ------------------------------------------------------------
-Sender: LSF System <rer@dccxc219>
-Subject: Job 3382636: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 4 Output/test_anatomy_aml_bagofnbrs_wtpath40_4.pkl Models/anatomy_aml_bagofnbrs_wtpath40_4.pt> in cluster <dcc> Exited
+Sender: LSF System <rer@dccxc276>
+Subject: Job 3501803: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 4 Output/test_anatomy_aml_bagofnbrs_wtpath40_4.pkl Models/anatomy_aml_bagofnbrs_wtpath40_4.pt> in cluster <dcc> Exited
 
-Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 4 Output/test_anatomy_aml_bagofnbrs_wtpath40_4.pkl Models/anatomy_aml_bagofnbrs_wtpath40_4.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:08 2020
-Job was executed on host(s) <dccxc219>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:09 2020
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 4 Output/test_anatomy_aml_bagofnbrs_wtpath40_4.pkl Models/anatomy_aml_bagofnbrs_wtpath40_4.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:21 2020
+Job was executed on host(s) <dccxc276>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 10:48:06 2020
 </u/harshitk> was used as the home directory.
 </dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
-Started at Wed Sep  2 13:16:09 2020
-Terminated at Thu Sep  3 13:16:36 2020
-Results reported at Thu Sep  3 13:16:36 2020
+Started at Fri Sep  4 10:48:06 2020
+Terminated at Sat Sep  5 05:11:02 2020
+Results reported at Sat Sep  5 05:11:02 2020
 
 Your job looked like:
 
@@ -131,21 +115,21 @@ Your job looked like:
 /u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 4 Output/test_anatomy_aml_bagofnbrs_wtpath40_4.pkl Models/anatomy_aml_bagofnbrs_wtpath40_4.pt
 ------------------------------------------------------------
 
-TERM_RUNLIMIT: job killed after reaching LSF run time limit.
-Exited with exit code 140.
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
 
 Resource usage summary:
 
-    CPU time :                                   86239.80 sec.
-    Max Memory :                                 2738 MB
-    Average Memory :                             2682.60 MB
+    CPU time :                                   65866.46 sec.
+    Max Memory :                                 2734 MB
+    Average Memory :                             2656.46 MB
     Total Requested Memory :                     43417.00 MB
-    Delta Memory :                               40679.00 MB
-    Max Swap :                                   4 MB
+    Delta Memory :                               40683.00 MB
+    Max Swap :                                   -
     Max Processes :                              4
     Max Threads :                                9
-    Run time :                                   86427 sec.
-    Turnaround time :                            86428 sec.
+    Run time :                                   66175 sec.
+    Turnaround time :                            67721 sec.
 
 The output (if any) is above this job summary.
 

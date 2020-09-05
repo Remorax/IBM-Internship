@@ -1,0 +1,57 @@
+Max number of nodes in a path: Input/data_anatomy_oaei.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  101
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  100
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  112
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  102
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  101
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  90
+0.7927605633011382
+Parameter containing:
+tensor([0.7928], device='cuda:0')
+Len (direct inputs):  642
+Final Results: [0.92411924 0.91359678 0.91882789 0.91568206 0.9219954 ]
+Threshold:  0.7927605633011382
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc226>
+Subject: Job 3501856: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 15 8 Output/test_anatomy_aml15_8.pkl Models/anatomy_aml15_8.pt> in cluster <dcc> Done
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 15 8 Output/test_anatomy_aml15_8.pkl Models/anatomy_aml15_8.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:25 2020
+Job was executed on host(s) <dccxc226>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 12:39:59 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 12:39:59 2020
+Terminated at Sat Sep  5 02:55:30 2020
+Results reported at Sat Sep  5 02:55:30 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 15 8 Output/test_anatomy_aml15_8.pkl Models/anatomy_aml15_8.pt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   51226.82 sec.
+    Max Memory :                                 2809 MB
+    Average Memory :                             2624.11 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40608.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   51331 sec.
+    Turnaround time :                            59585 sec.
+
+The output (if any) is above this job summary.
+

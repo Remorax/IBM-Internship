@@ -1,0 +1,49 @@
+Max number of nodes in a path: Input/data_anatomy_oaei.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  110
+Training size: 127500 Validation size: 22500
+Traceback (most recent call last):
+  File "Attention_anatomy_aml.py", line 398, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc237>
+Subject: Job 3501900: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 22 60 Output/test_anatomy_aml22_60.pkl Models/anatomy_aml22_60.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 22 60 Output/test_anatomy_aml22_60.pkl Models/anatomy_aml22_60.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:28 2020
+Job was executed on host(s) <dccxc237>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 17:34:11 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 17:34:11 2020
+Terminated at Sat Sep  5 05:11:01 2020
+Results reported at Sat Sep  5 05:11:01 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 22 60 Output/test_anatomy_aml22_60.pkl Models/anatomy_aml22_60.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   41719.25 sec.
+    Max Memory :                                 2638 MB
+    Average Memory :                             2538.66 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40779.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   41810 sec.
+    Turnaround time :                            67713 sec.
+
+The output (if any) is above this job summary.
+
