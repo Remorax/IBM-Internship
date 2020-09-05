@@ -1,0 +1,57 @@
+Max number of nodes in a path: Input/data_conf_oaei_german_aml.pkl
+Number of entities: 122893
+Training size: 109284 Validation size: 13609
+Epoch: 0 Idx: 0 Loss: 0.21439810248632776
+Epoch: 0 Idx: 5000 Loss: 0.015422913591298746
+Epoch: 1 Idx: 0 Loss: 0.016255243405776942
+Epoch: 1 Idx: 5000 Loss: 0.02124668694387466
+Epoch: 2 Idx: 0 Loss: 0.008828858977553847
+Epoch: 2 Idx: 5000 Loss: 0.0160727693514413
+Epoch: 3 Idx: 0 Loss: 0.018092571461912475
+Epoch: 3 Idx: 5000 Loss: 0.015310697775767454
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei_weighted.py", line 383, in <module>
+    all_inp_shuffled = random.sample(all_inp, len(all_inp))
+  File "/u/harshitk/anaconda2/envs/myenv/lib/python3.6/random.py", line 329, in sample
+    j = randbelow(n-i)
+  File "/u/harshitk/anaconda2/envs/myenv/lib/python3.6/random.py", line 235, in _randbelow
+    r = getrandbits(k)
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc257>
+Subject: Job 3519636: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 1 4 Output/test_conf_oaei_german_aml_wtpath1_4.pkl Models/conf_oaei_german_aml_wtpath1_4.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 1 4 Output/test_conf_oaei_german_aml_wtpath1_4.pkl Models/conf_oaei_german_aml_wtpath1_4.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:06 2020
+Job was executed on host(s) <dccxc257>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:07 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:56:07 2020
+Terminated at Sat Sep  5 10:59:43 2020
+Results reported at Sat Sep  5 10:59:43 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 1 4 Output/test_conf_oaei_german_aml_wtpath1_4.pkl Models/conf_oaei_german_aml_wtpath1_4.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   213.31 sec.
+    Max Memory :                                 2266 MB
+    Average Memory :                             1915.78 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41151.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   226 sec.
+    Turnaround time :                            217 sec.
+
+The output (if any) is above this job summary.
+

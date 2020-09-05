@@ -1,0 +1,54 @@
+Max number of nodes in a path: Input/data_conf_oaei_german_aml.pkl
+Number of entities: 122893
+Training size: 109284 Validation size: 13609
+Epoch: 0 Idx: 0 Loss: 0.16984869229259678
+Epoch: 0 Idx: 5000 Loss: 0.025608860279893418
+Epoch: 1 Idx: 0 Loss: 0.02921466987270508
+Epoch: 1 Idx: 5000 Loss: 0.01683352294257469
+Epoch: 2 Idx: 0 Loss: 0.01319470047610755
+Epoch: 2 Idx: 5000 Loss: 0.020905576551080475
+Epoch: 3 Idx: 0 Loss: 0.01438968396052396
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei.py", line 403, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc251>
+Subject: Job 3519627: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 8 3 Output/test_conf_oaei_german_aml8_3.pkl Models/conf_oaei_german_aml8_3.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 8 3 Output/test_conf_oaei_german_aml8_3.pkl Models/conf_oaei_german_aml8_3.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:05 2020
+Job was executed on host(s) <dccxc251>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:06 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:56:06 2020
+Terminated at Sat Sep  5 10:59:37 2020
+Results reported at Sat Sep  5 10:59:37 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 8 3 Output/test_conf_oaei_german_aml8_3.pkl Models/conf_oaei_german_aml8_3.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   201.33 sec.
+    Max Memory :                                 2205 MB
+    Average Memory :                             1855.22 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41212.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   211 sec.
+    Turnaround time :                            212 sec.
+
+The output (if any) is above this job summary.
+

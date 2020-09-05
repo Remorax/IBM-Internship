@@ -1,0 +1,54 @@
+Max number of nodes in a path: Input/data_conf_oaei_german_aml.pkl
+Number of entities: 122893
+Training size: 109284 Validation size: 13609
+Epoch: 0 Idx: 0 Loss: 0.13900556514678053
+Epoch: 0 Idx: 5000 Loss: 0.005491208336015363
+Epoch: 1 Idx: 0 Loss: 0.01739351473057303
+Epoch: 1 Idx: 5000 Loss: 0.02073396946305483
+Epoch: 2 Idx: 0 Loss: 0.021388097570531422
+Epoch: 2 Idx: 5000 Loss: 0.007346424852669276
+Epoch: 3 Idx: 0 Loss: 0.005232242780651488
+Epoch: 3 Idx: 5000 Loss: 0.00894060277272023
+Epoch: 4 Idx: 0 Loss: 0.009904341579014191
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei.py", line 398, in <module>
+    targ_elems = torch.DoubleTensor(targets).to(device)
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc234>
+Subject: Job 3519625: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 4 3 Output/test_conf_oaei_german_aml4_3.pkl Models/conf_oaei_german_aml4_3.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 4 3 Output/test_conf_oaei_german_aml4_3.pkl Models/conf_oaei_german_aml4_3.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:05 2020
+Job was executed on host(s) <dccxc234>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:06 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:56:06 2020
+Terminated at Sat Sep  5 10:59:38 2020
+Results reported at Sat Sep  5 10:59:38 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 4 3 Output/test_conf_oaei_german_aml4_3.pkl Models/conf_oaei_german_aml4_3.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   209.60 sec.
+    Max Memory :                                 2223 MB
+    Average Memory :                             1915.89 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41194.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   217 sec.
+    Turnaround time :                            213 sec.
+
+The output (if any) is above this job summary.
+

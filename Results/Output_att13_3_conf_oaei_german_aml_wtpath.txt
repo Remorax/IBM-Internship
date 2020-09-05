@@ -1,0 +1,62 @@
+Max number of nodes in a path: Input/data_conf_oaei_german_aml.pkl
+Number of entities: 122893
+Training size: 109284 Validation size: 13609
+Epoch: 0 Idx: 0 Loss: 0.17115845506417876
+Epoch: 0 Idx: 5000 Loss: 0.011309113401418793
+Epoch: 1 Idx: 0 Loss: 0.02592140903203872
+Epoch: 1 Idx: 5000 Loss: 0.040583478078486585
+Epoch: 2 Idx: 0 Loss: 0.016127089589501258
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei_weighted.py", line 393, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+  File "Attention_german_amlconf_oaei_weighted.py", line 316, in to_feature
+    for elem in inputs_lenpadded]
+  File "Attention_german_amlconf_oaei_weighted.py", line 316, in <listcomp>
+    for elem in inputs_lenpadded]
+  File "Attention_german_amlconf_oaei_weighted.py", line 315, in <listcomp>
+    for nbr_type in ent] for ent in elem]
+  File "Attention_german_amlconf_oaei_weighted.py", line 315, in <listcomp>
+    for nbr_type in ent] for ent in elem]
+  File "Attention_german_amlconf_oaei_weighted.py", line 314, in <listcomp>
+    for i in range(max_paths - len(nbr_type))]
+  File "Attention_german_amlconf_oaei_weighted.py", line 313, in <listcomp>
+    inputs_pathpadded = [[[nbr_type + [[0 for j in range(max_pathlen)]
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc252>
+Subject: Job 3519630: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 13 3 Output/test_conf_oaei_german_aml_wtpath13_3.pkl Models/conf_oaei_german_aml_wtpath13_3.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 13 3 Output/test_conf_oaei_german_aml_wtpath13_3.pkl Models/conf_oaei_german_aml_wtpath13_3.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:06 2020
+Job was executed on host(s) <dccxc252>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:07 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:56:07 2020
+Terminated at Sat Sep  5 10:59:38 2020
+Results reported at Sat Sep  5 10:59:38 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 13 3 Output/test_conf_oaei_german_aml_wtpath13_3.pkl Models/conf_oaei_german_aml_wtpath13_3.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   205.24 sec.
+    Max Memory :                                 2073 MB
+    Average Memory :                             1279.38 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41344.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   210 sec.
+    Turnaround time :                            212 sec.
+
+The output (if any) is above this job summary.
+

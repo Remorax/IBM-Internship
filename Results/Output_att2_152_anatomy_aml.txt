@@ -1,0 +1,53 @@
+Max number of nodes in a path: Input/data_anatomy_oaei.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  106
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  115
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  110
+Training size: 127500 Validation size: 22500
+Traceback (most recent call last):
+  File "Attention_anatomy_aml.py", line 400, in <module>
+    optimizer.step()
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/optim/adam.py", line 94, in step
+    exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc251>
+Subject: Job 3501918: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 2 152 Output/test_anatomy_aml2_152.pkl Models/anatomy_aml2_152.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 2 152 Output/test_anatomy_aml2_152.pkl Models/anatomy_aml2_152.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:29 2020
+Job was executed on host(s) <dccxc251>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 18:05:25 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 18:05:25 2020
+Terminated at Sat Sep  5 05:11:01 2020
+Results reported at Sat Sep  5 05:11:01 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei.pkl 2 152 Output/test_anatomy_aml2_152.pkl Models/anatomy_aml2_152.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   39932.80 sec.
+    Max Memory :                                 2643 MB
+    Average Memory :                             2579.68 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40774.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   39936 sec.
+    Turnaround time :                            67712 sec.
+
+The output (if any) is above this job summary.
+

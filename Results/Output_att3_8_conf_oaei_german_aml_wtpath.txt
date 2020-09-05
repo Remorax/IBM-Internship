@@ -1,0 +1,39 @@
+Terminated
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc234>
+Subject: Job 3519666: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 3 8 Output/test_conf_oaei_german_aml_wtpath3_8.pkl Models/conf_oaei_german_aml_wtpath3_8.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 3 8 Output/test_conf_oaei_german_aml_wtpath3_8.pkl Models/conf_oaei_german_aml_wtpath3_8.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:10 2020
+Job was executed on host(s) <dccxc234>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:57:07 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:57:07 2020
+Terminated at Sat Sep  5 10:59:45 2020
+Results reported at Sat Sep  5 10:59:45 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei_weighted.py Input/data_conf_oaei_german_aml.pkl 3 8 Output/test_conf_oaei_german_aml_wtpath3_8.pkl Models/conf_oaei_german_aml_wtpath3_8.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   155.85 sec.
+    Max Memory :                                 2259 MB
+    Average Memory :                             1800.50 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41158.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   185 sec.
+    Turnaround time :                            215 sec.
+
+The output (if any) is above this job summary.
+

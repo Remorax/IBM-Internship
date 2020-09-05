@@ -1,0 +1,58 @@
+Max number of nodes in a path: Input/data_conf_oaei_german_aml.pkl
+Number of entities: 122893
+Training size: 109284 Validation size: 13609
+Epoch: 0 Idx: 0 Loss: 0.12325497739031824
+Epoch: 0 Idx: 5000 Loss: 0.016233678812733743
+Epoch: 1 Idx: 0 Loss: 0.031035435355059607
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei.py", line 401, in <module>
+    outputs = model(node_elems, inp_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "Attention_german_amlconf_oaei.py", line 257, in forward
+    node_emb = self.name_embedding(nodes[i]) # batch_size * 512
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/modules/sparse.py", line 114, in forward
+    self.norm_type, self.scale_grad_by_freq, self.sparse)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 1467, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc226>
+Subject: Job 3519669: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 8 8 Output/test_conf_oaei_german_aml8_8.pkl Models/conf_oaei_german_aml8_8.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 8 8 Output/test_conf_oaei_german_aml8_8.pkl Models/conf_oaei_german_aml8_8.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Sat Sep  5 10:56:10 2020
+Job was executed on host(s) <dccxc226>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 10:57:07 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 10:57:07 2020
+Terminated at Sat Sep  5 10:59:37 2020
+Results reported at Sat Sep  5 10:59:37 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml.pkl 8 8 Output/test_conf_oaei_german_aml8_8.pkl Models/conf_oaei_german_aml8_8.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   148.07 sec.
+    Max Memory :                                 2076 MB
+    Average Memory :                             1757.14 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41341.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   177 sec.
+    Turnaround time :                            207 sec.
+
+The output (if any) is above this job summary.
+

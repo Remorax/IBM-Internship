@@ -1,0 +1,111 @@
+Max number of nodes in a path: Input/data_anatomy_oaei.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  115
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  93
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  85
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Traceback (most recent call last):
+  File "Attention_anatomy_aml_weighted.py", line 388, in <module>
+    inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+KeyboardInterrupt
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc271>
+Subject: Job 3501893: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei.pkl 3 60 Output/test_anatomy_aml_wtpath3_60.pkl Models/anatomy_aml_wtpath3_60.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei.pkl 3 60 Output/test_anatomy_aml_wtpath3_60.pkl Models/anatomy_aml_wtpath3_60.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:27 2020
+Job was executed on host(s) <dccxc271>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 17:31:32 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 17:31:32 2020
+Terminated at Sat Sep  5 05:11:01 2020
+Results reported at Sat Sep  5 05:11:01 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei.pkl 3 60 Output/test_anatomy_aml_wtpath3_60.pkl Models/anatomy_aml_wtpath3_60.pt
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   41424.39 sec.
+    Max Memory :                                 2646 MB
+    Average Memory :                             2584.27 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40771.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   41969 sec.
+    Turnaround time :                            67714 sec.
+
+The output (if any) is above this job summary.
+

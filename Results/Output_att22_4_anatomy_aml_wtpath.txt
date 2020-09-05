@@ -1,0 +1,177 @@
+Max number of nodes in a path: Input/data_anatomy_oaei.pkl
+Number of entities: 150000
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  103
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  97
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  86
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  108
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  92
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Training size: 127500 Validation size: 22500
+Len (direct inputs):  108
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+0.8779263777438364
+Parameter containing:
+tensor([0.8779], device='cuda:0')
+Len (direct inputs):  642
+Final Results: [0.9775641  0.81714668 0.89018606 0.84487535 0.94063223]
+Threshold:  0.8779263777438364
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc253>
+Subject: Job 3501845: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei.pkl 22 4 Output/test_anatomy_aml_wtpath22_4.pkl Models/anatomy_aml_wtpath22_4.pt> in cluster <dcc> Done
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei.pkl 22 4 Output/test_anatomy_aml_wtpath22_4.pkl Models/anatomy_aml_wtpath22_4.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:24 2020
+Job was executed on host(s) <dccxc253>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 11:34:33 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 11:34:33 2020
+Terminated at Sat Sep  5 01:24:47 2020
+Results reported at Sat Sep  5 01:24:47 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml_weighted.py Input/data_anatomy_oaei.pkl 22 4 Output/test_anatomy_aml_wtpath22_4.pkl Models/anatomy_aml_wtpath22_4.pt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   49486.54 sec.
+    Max Memory :                                 2822 MB
+    Average Memory :                             2626.87 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               40595.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                9
+    Run time :                                   49814 sec.
+    Turnaround time :                            54143 sec.
+
+The output (if any) is above this job summary.
+
