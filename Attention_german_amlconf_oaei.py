@@ -423,6 +423,47 @@ model = SiameseNetwork(emb_vals, threshold).to(device)
 print (model.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
+train_data_t = [key for key in data_german if data_german[key]]
+train_data_f = [key for key in data_german if not data_german[key]]
+np.random.shuffle(train_data_f)
+train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
+train_data_t = train_data_t[:len(train_data_f)].tolist()
+
+for epoch in range(num_epochs):
+    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
+    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
+    inputs_all = list(inputs_pos) + list(inputs_neg)
+    targets_all = list(targets_pos) + list(targets_neg)
+    nodes_all = list(nodes_pos) + list(nodes_neg)
+    
+    all_inp = list(zip(inputs_all, targets_all, nodes_all))
+    all_inp_shuffled = random.sample(all_inp, len(all_inp))
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+
+    batch_size = min(batch_size, len(inputs_all))
+    num_batches = int(ceil(len(inputs_all)/batch_size))
+
+    for batch_idx in range(num_batches):
+        batch_start = batch_idx * batch_size
+        batch_end = (batch_idx+1) * batch_size
+        
+        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+        targets = np.array(targets_all[batch_start: batch_end])
+        nodes = np.array(nodes_all[batch_start: batch_end])
+        
+        inp_elems = torch.LongTensor(inputs).to(device)
+        targ_elems = torch.DoubleTensor(targets).to(device)
+        node_elems = torch.LongTensor(nodes).to(device)
+
+        optimizer.zero_grad()
+        outputs = model(node_elems, inp_elems)
+        loss = F.mse_loss(outputs, targ_elems)
+        loss.backward()
+        optimizer.step()
+
+        if batch_idx%5000 == 0:
+            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+
 train_data_t = [key for key in aml_data if aml_data[key]]
 train_data_f = [key for key in aml_data if not aml_data[key]]
 train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
@@ -467,46 +508,6 @@ for epoch in range(num_epochs):
             print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 
-train_data_t = [key for key in data_german if data_german[key]]
-train_data_f = [key for key in data_german if not data_german[key]]
-np.random.shuffle(train_data_f)
-train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-train_data_t = train_data_t[:len(train_data_f)].tolist()
-
-for epoch in range(num_epochs):
-    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
-    inputs_all = list(inputs_pos) + list(inputs_neg)
-    targets_all = list(targets_pos) + list(targets_neg)
-    nodes_all = list(nodes_pos) + list(nodes_neg)
-    
-    all_inp = list(zip(inputs_all, targets_all, nodes_all))
-    all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
-
-    batch_size = min(batch_size, len(inputs_all))
-    num_batches = int(ceil(len(inputs_all)/batch_size))
-
-    for batch_idx in range(num_batches):
-        batch_start = batch_idx * batch_size
-        batch_end = (batch_idx+1) * batch_size
-        
-        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-        targets = np.array(targets_all[batch_start: batch_end])
-        nodes = np.array(nodes_all[batch_start: batch_end])
-        
-        inp_elems = torch.LongTensor(inputs).to(device)
-        targ_elems = torch.DoubleTensor(targets).to(device)
-        node_elems = torch.LongTensor(nodes).to(device)
-
-        optimizer.zero_grad()
-        outputs = model(node_elems, inp_elems)
-        loss = F.mse_loss(outputs, targ_elems)
-        loss.backward()
-        optimizer.step()
-
-        if batch_idx%5000 == 0:
-            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 model.eval()
 
