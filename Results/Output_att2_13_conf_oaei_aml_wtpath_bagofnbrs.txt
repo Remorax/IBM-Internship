@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "Attention_twostep_aml_wtpath.py", line 19, in <module>
+    f = open(sys.argv[2], "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '2'
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc223>
+Subject: Job 3480167: <python Attention_twostep_aml_wtpath.py Input/data_conf_oaei_aml_bagofnbrs.pkl 2 13 Output/test_conf_oaei_aml_wtpath_bagofnbrs2_13.pkl Models/conf_oaei_aml_wtpath_bagofnbrs2_13.pt> in cluster <dcc> Exited
+
+Job <python Attention_twostep_aml_wtpath.py Input/data_conf_oaei_aml_bagofnbrs.pkl 2 13 Output/test_conf_oaei_aml_wtpath_bagofnbrs2_13.pkl Models/conf_oaei_aml_wtpath_bagofnbrs2_13.pt> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Fri Sep  4 02:08:14 2020
+Job was executed on host(s) <dccxc223>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Fri Sep  4 02:10:11 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 02:10:11 2020
+Terminated at Fri Sep  4 02:10:14 2020
+Results reported at Fri Sep  4 02:10:14 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_twostep_aml_wtpath.py Input/data_conf_oaei_aml_bagofnbrs.pkl 2 13 Output/test_conf_oaei_aml_wtpath_bagofnbrs2_13.pkl Models/conf_oaei_aml_wtpath_bagofnbrs2_13.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.22 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   29 sec.
+    Turnaround time :                            120 sec.
+
+The output (if any) is above this job summary.
+

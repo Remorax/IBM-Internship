@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "Attention_twostep_aml_wtpath.py", line 19, in <module>
+    f = open(sys.argv[2], "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '2'
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc248>
+Subject: Job 3480205: <python Attention_twostep_aml_wtpath.py Input/data_conf_oaei_aml.pkl 2 4 Output/test_conf_oaei_aml_wtpath2_4.pkl Models/conf_oaei_aml_wtpath2_4.pt> in cluster <dcc> Exited
+
+Job <python Attention_twostep_aml_wtpath.py Input/data_conf_oaei_aml.pkl 2 4 Output/test_conf_oaei_aml_wtpath2_4.pkl Models/conf_oaei_aml_wtpath2_4.pt> was submitted from host <dccxl009> by user <arvagarw> in cluster <dcc> at Fri Sep  4 02:08:15 2020
+Job was executed on host(s) <dccxc248>, in queue <x86_24h>, as user <arvagarw> in cluster <dcc> at Fri Sep  4 02:50:16 2020
+</u/arvagarw> was used as the home directory.
+</u/arvagarw/arvind/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 02:50:16 2020
+Terminated at Fri Sep  4 02:50:22 2020
+Results reported at Fri Sep  4 02:50:22 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_twostep_aml_wtpath.py Input/data_conf_oaei_aml.pkl 2 4 Output/test_conf_oaei_aml_wtpath2_4.pkl Models/conf_oaei_aml_wtpath2_4.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.29 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             60.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43357.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   12 sec.
+    Turnaround time :                            2527 sec.
+
+The output (if any) is above this job summary.
+
