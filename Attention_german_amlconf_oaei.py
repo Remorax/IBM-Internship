@@ -20,6 +20,8 @@ f = open(sys.argv[1], "rb")
 data_conf, data_german, aml_data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
 max_paths = int(sys.argv[2])
 max_pathlen = int(sys.argv[3])
+threshold = float(sys.argv[4])
+aml_data = {key: float(aml_data[key])>=threshold for key in aml_data}
 flatten = lambda l: [item for sublist in l for item in sublist]
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 
@@ -511,10 +513,10 @@ for epoch in range(num_epochs):
 
 model.eval()
 
-torch.save(model.state_dict(), sys.argv[4])
+torch.save(model.state_dict(), sys.argv[6])
 
 model = SiameseNetwork(emb_vals).to(device)
-model.load_state_dict(torch.load(sys.argv[4]), strict=False)
+model.load_state_dict(torch.load(sys.argv[6]), strict=False)
 
 threshold = model.threshold.data.cpu().numpy()[0]
 
@@ -532,5 +534,5 @@ all_metrics, all_fn, all_fp = calculate_performance()
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)
 
-f1 = open(sys.argv[-1], "wb")
+f1 = open(sys.argv[5], "wb")
 pickle.dump([all_fn, all_fp], f1)
