@@ -362,7 +362,7 @@ for i in range(6):
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(emb_vals).to(device)
+    model = nn.DataParallel(SiameseNetwork(emb_vals)).to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -430,7 +430,7 @@ batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-model = SiameseNetwork(emb_vals, threshold).to(device)
+model = nn.DataParallel(SiameseNetwork(emb_vals, threshold)).to(device)
 print (model.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
