@@ -1,28 +1,30 @@
 Max number of nodes in a path: Input/data_anatomy_oaei_bagofnbrs.pkl
 Number of entities: 150000
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  104
+Len (direct inputs):  105
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  94
+Len (direct inputs):  114
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  95
+Len (direct inputs):  101
 Training size: 127500 Validation size: 22500
-Len (direct inputs):  104
-Training size: 127500 Validation size: 22500
-Len (direct inputs):  92
-User defined signal 2
+Traceback (most recent call last):
+  File "Attention_anatomy_aml.py", line 398, in <module>
+    loss = F.mse_loss(outputs, targ_elems)
+  File "/u/harshitk/.local/lib/python3.6/site-packages/torch/nn/functional.py", line 2190, in mse_loss
+    ret = torch._C._nn.mse_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt
 
 ------------------------------------------------------------
-Sender: LSF System <rer@dccxc225>
-Subject: Job 3382668: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 8 Output/test_anatomy_aml_bagofnbrs40_8.pkl Models/anatomy_aml_bagofnbrs40_8.pt> in cluster <dcc> Exited
+Sender: LSF System <rer@dccxc241>
+Subject: Job 3501810: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 8 Output/test_anatomy_aml_bagofnbrs40_8.pkl Models/anatomy_aml_bagofnbrs40_8.pt> in cluster <dcc> Exited
 
-Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 8 Output/test_anatomy_aml_bagofnbrs40_8.pkl Models/anatomy_aml_bagofnbrs40_8.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:11 2020
-Job was executed on host(s) <dccxc225>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Wed Sep  2 13:16:12 2020
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 8 Output/test_anatomy_aml_bagofnbrs40_8.pkl Models/anatomy_aml_bagofnbrs40_8.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 10:22:22 2020
+Job was executed on host(s) <dccxc241>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 10:48:38 2020
 </u/harshitk> was used as the home directory.
 </dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
-Started at Wed Sep  2 13:16:12 2020
-Terminated at Thu Sep  3 13:16:33 2020
-Results reported at Thu Sep  3 13:16:33 2020
+Started at Fri Sep  4 10:48:38 2020
+Terminated at Sat Sep  5 05:11:01 2020
+Results reported at Sat Sep  5 05:11:01 2020
 
 Your job looked like:
 
@@ -31,21 +33,21 @@ Your job looked like:
 /u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py Input/data_anatomy_oaei_bagofnbrs.pkl 40 8 Output/test_anatomy_aml_bagofnbrs40_8.pkl Models/anatomy_aml_bagofnbrs40_8.pt
 ------------------------------------------------------------
 
-TERM_RUNLIMIT: job killed after reaching LSF run time limit.
-Exited with exit code 140.
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
 
 Resource usage summary:
 
-    CPU time :                                   86249.59 sec.
-    Max Memory :                                 2739 MB
-    Average Memory :                             2675.95 MB
+    CPU time :                                   66056.08 sec.
+    Max Memory :                                 2736 MB
+    Average Memory :                             2667.28 MB
     Total Requested Memory :                     43417.00 MB
-    Delta Memory :                               40678.00 MB
+    Delta Memory :                               40681.00 MB
     Max Swap :                                   -
     Max Processes :                              4
     Max Threads :                                9
-    Run time :                                   86421 sec.
-    Turnaround time :                            86422 sec.
+    Run time :                                   66143 sec.
+    Turnaround time :                            67719 sec.
 
 The output (if any) is above this job summary.
 

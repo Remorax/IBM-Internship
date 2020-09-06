@@ -1,0 +1,38 @@
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6: can't open file 'Attention_anatomy_aml.py.py': [Errno 2] No such file or directory
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc244>
+Subject: Job 3487701: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py.py Input/data_anatomy_oaei.pkl 40 4 Output/test_anatomy_aml40_4.pkl Models/anatomy_aml40_4.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py.py Input/data_anatomy_oaei.pkl 40 4 Output/test_anatomy_aml40_4.pkl Models/anatomy_aml40_4.pt> was submitted from host <dccxl001> by user <harshitk> in cluster <dcc> at Fri Sep  4 03:26:33 2020
+Job was executed on host(s) <dccxc244>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Fri Sep  4 03:46:08 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Fri Sep  4 03:46:08 2020
+Terminated at Fri Sep  4 03:46:09 2020
+Results reported at Fri Sep  4 03:46:09 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_anatomy_aml.py.py Input/data_anatomy_oaei.pkl 40 4 Output/test_anatomy_aml40_4.pkl Models/anatomy_aml40_4.pt
+------------------------------------------------------------
+
+Exited with exit code 2.
+
+Resource usage summary:
+
+    CPU time :                                   0.13 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   15 sec.
+    Turnaround time :                            1176 sec.
+
+The output (if any) is above this job summary.
+
