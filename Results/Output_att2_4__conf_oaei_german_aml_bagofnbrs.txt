@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "Attention_german_amlconf_oaei.py", line 23, in <module>
+    threshold = float(sys.argv[4])
+ValueError: could not convert string to float: 'Output/test_conf_oaei_german_aml_bagofnbrs2_4_.pkl'
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc215>
+Subject: Job 3519732: </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml_bagofnbrs_thresh.pkl 2 4 Output/test_conf_oaei_german_aml_bagofnbrs2_4_.pkl Models/conf_oaei_german_aml_bagofnbrs2_4_.pt> in cluster <dcc> Exited
+
+Job </u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml_bagofnbrs_thresh.pkl 2 4 Output/test_conf_oaei_german_aml_bagofnbrs2_4_.pkl Models/conf_oaei_german_aml_bagofnbrs2_4_.pt> was submitted from host <dccxl004> by user <harshitk> in cluster <dcc> at Sat Sep  5 11:42:19 2020
+Job was executed on host(s) <dccxc215>, in queue <x86_24h>, as user <harshitk> in cluster <dcc> at Sat Sep  5 11:42:20 2020
+</u/harshitk> was used as the home directory.
+</dccstor/cogfin/arvind/da/IBM-Internship> was used as the working directory.
+Started at Sat Sep  5 11:42:20 2020
+Terminated at Sat Sep  5 11:42:26 2020
+Results reported at Sat Sep  5 11:42:26 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/u/harshitk/anaconda2/envs/myenv/bin/python3.6 Attention_german_amlconf_oaei.py Input/data_conf_oaei_german_aml_bagofnbrs_thresh.pkl 2 4 Output/test_conf_oaei_german_aml_bagofnbrs2_4_.pkl Models/conf_oaei_german_aml_bagofnbrs2_4_.pt
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.64 sec.
+    Max Memory :                                 47 MB
+    Average Memory :                             47.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43370.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   6 sec.
+    Turnaround time :                            7 sec.
+
+The output (if any) is above this job summary.
+
