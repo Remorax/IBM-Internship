@@ -479,6 +479,10 @@ model.load_state_dict(torch.load(sys.argv[5]), strict=False)
 
 threshold = model.threshold.data.cpu().numpy()[0]
 
+# wget from https://transfer.sh/ZX9vk/data.pkl
+data = pickle.load(open("../data.pkl", "rb"))
+batch_size = 10000
+
 test_data_t = [key for key in data if data[key]]
 test_data_f = [key for key in data if not data[key]]
 
