@@ -340,7 +340,7 @@ print ("Number of entities:", len(aml_data))
 
 all_metrics = []
 final_results = []
-for i in range(6):
+for i in range(2):
     
     val_data = dict(data_items[int((0.15*i)*len(aml_data)):int((0.15*i + 0.15)*len(aml_data))])
     train_data = dict(data_items[:int(0.15*i*len(aml_data))] + data_items[int(0.15*(i+1)*len(aml_data)):])
@@ -356,9 +356,9 @@ for i in range(6):
     np.random.shuffle(train_data_f)
     
     lr = 0.001
-    num_epochs = 50
+    num_epochs = 1
     weight_decay = 0.001
-    batch_size = 32
+    batch_size = 128
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
@@ -375,7 +375,7 @@ for i in range(6):
         
         all_inp = list(zip(inputs_all, targets_all, nodes_all))
         all_inp_shuffled = random.sample(all_inp, len(all_inp))
-        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:10]
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -399,8 +399,8 @@ for i in range(6):
             loss.backward()
             optimizer.step()
 
-            # if batch_idx%5000 == 0:
-            #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            if batch_idx%1000 == 0:
+                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
     
@@ -424,9 +424,9 @@ print (threshold)
 np.random.shuffle(train_data_f)
 
 lr = 0.001
-num_epochs = 50
+num_epochs = 1
 weight_decay = 0.001
-batch_size = 32
+batch_size = 128
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -443,7 +443,7 @@ for epoch in range(num_epochs):
     
     all_inp = list(zip(inputs_all, targets_all, nodes_all))
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))[:10]
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -467,14 +467,14 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        # if batch_idx%5000 == 0:
-        #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+        if batch_idx%5000 == 0:
+            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 model.eval()
 
 torch.save(model.state_dict(), sys.argv[5])
 
-model = SiameseNetwork(emb_vals).to(device)
+model = nn.DataParallel(SiameseNetwork(emb_vals).to(device))
 model.load_state_dict(torch.load(sys.argv[5]), strict=False)
 
 threshold = model.threshold.data.cpu().numpy()[0]
