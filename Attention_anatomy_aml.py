@@ -358,11 +358,11 @@ for i in range(6):
     lr = 0.001
     num_epochs = 50
     weight_decay = 0.001
-    batch_size = 32
+    batch_size = 128
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(emb_vals).to(device)
+    model = nn.DataParallel(SiameseNetwork(emb_vals)).to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -399,8 +399,8 @@ for i in range(6):
             loss.backward()
             optimizer.step()
 
-            # if batch_idx%5000 == 0:
-            #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            if batch_idx%1000 == 0:
+                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
     
@@ -426,12 +426,12 @@ np.random.shuffle(train_data_f)
 lr = 0.001
 num_epochs = 50
 weight_decay = 0.001
-batch_size = 32
+batch_size = 128
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-model = SiameseNetwork(emb_vals, threshold).to(device)
-print (model.threshold)
+model = nn.DataParallel(SiameseNetwork(emb_vals, threshold)).to(device)
+print (model.module.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
 for epoch in range(num_epochs):
@@ -467,17 +467,17 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        # if batch_idx%5000 == 0:
-        #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+        if batch_idx%5000 == 0:
+            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 model.eval()
 
 torch.save(model.state_dict(), sys.argv[5])
 
-model = SiameseNetwork(emb_vals).to(device)
-model.load_state_dict(torch.load(sys.argv[5]), strict=False)
+model = nn.DataParallel(SiameseNetwork(emb_vals).to(device))
+model.module.load_state_dict(torch.load(sys.argv[5]), strict=False)
 
-threshold = model.threshold.data.cpu().numpy()[0]
+threshold = model.module.threshold.data.cpu().numpy()[0]
 
 # wget from https://transfer.sh/ZX9vk/data.pkl
 data = pickle.load(open("../data.pkl", "rb"))
