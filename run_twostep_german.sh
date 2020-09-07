@@ -63,8 +63,8 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir.txt" python Attention_twostep_german.py Input/data_webdir.pkl $max_path $max_pathlen
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted.txt" python Attention_twostep_german_weighted.py Input/data_webdir.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir.txt" python Attention_twostep_german.py ../data_webdir.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted.txt" python Attention_twostep_german_weighted.py ../data_webdir.pkl $max_path $max_pathlen
 	done
 done
 
@@ -75,7 +75,7 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_bagofnbrs.txt" python Attention_twostep_german.py Input/data_webdir_bagofnbrs.pkl $max_path $max_pathlen
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted_bagofnbrs.txt" python Attention_twostep_german_weighted.py Input/data_webdir_bagofnbrs.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_bagofnbrs.txt" python Attention_twostep_german.py ../data_webdir_bagofnbrs.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted_bagofnbrs.txt" python Attention_twostep_german_weighted.py ../data_webdir_bagofnbrs.pkl $max_path $max_pathlen
 	done
 done
