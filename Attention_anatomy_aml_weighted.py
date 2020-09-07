@@ -168,7 +168,7 @@ def optimize_threshold():
                 f2score = 5 * precision * recall / (4 * precision + recall)
                 f0_5score = 1.25 * precision * recall / (0.25 * precision + recall)
             except Exception as e:
-                print (e)
+                # print (e)
                 exception = True
                 step = 0.001
                 threshold += step
@@ -206,7 +206,7 @@ def calculate_performance():
             f2score = 5 * precision * recall / (4 * precision + recall)
             f0_5score = 1.25 * precision * recall / (0.25 * precision + recall)
         except Exception as e:
-            print (e)
+            # print (e)
             continue
         all_fn.extend(fn_list)
         all_fp.extend(fp_list)
@@ -359,11 +359,11 @@ for i in range(6):
     lr = 0.001
     num_epochs = 50
     weight_decay = 0.001
-    batch_size = 32
+    batch_size = 128
     dropout = 0.3
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
-    model = SiameseNetwork(emb_vals).to(device)
+    model = nn.DataParallel(SiameseNetwork(emb_vals)).to(device)
 
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -400,8 +400,8 @@ for i in range(6):
             loss.backward()
             optimizer.step()
 
-            # if batch_idx%5000 == 0:
-            #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+            if batch_idx%1000 == 0:
+                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
     
@@ -427,12 +427,12 @@ np.random.shuffle(train_data_f)
 lr = 0.001
 num_epochs = 50
 weight_decay = 0.001
-batch_size = 32
+batch_size = 128
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-model = SiameseNetwork(emb_vals, threshold).to(device)
-print (model.threshold)
+model = nn.DataParallel(SiameseNetwork(emb_vals, threshold)).to(device)
+print (model.module.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
 for epoch in range(num_epochs):
@@ -444,7 +444,7 @@ for epoch in range(num_epochs):
     
     all_inp = list(zip(inputs_all, targets_all, nodes_all))
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = [list(elem) for elem in zip(*all_inp_shuffled)] 
+    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -468,17 +468,21 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        # if batch_idx%5000 == 0:
-        #     print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+        if batch_idx%5000 == 0:
+            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 model.eval()
 
 torch.save(model.state_dict(), sys.argv[5])
 
-model = SiameseNetwork(emb_vals).to(device)
-model.load_state_dict(torch.load(sys.argv[5]), strict=False)
+model = nn.DataParallel(SiameseNetwork(emb_vals).to(device))
+model.module.load_state_dict(torch.load(sys.argv[5]), strict=False)
 
-threshold = model.threshold.data.cpu().numpy()[0]
+threshold = model.module.threshold.data.cpu().numpy()[0]
+
+# wget from https://transfer.sh/ZX9vk/data.pkl
+data = pickle.load(open("../data.pkl", "rb"))
+batch_size = 10000
 
 test_data_t = [key for key in data if data[key]]
 test_data_f = [key for key in data if not data[key]]
