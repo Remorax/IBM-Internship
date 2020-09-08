@@ -1,6 +1,6 @@
 # !/bin/bash
 
-max_pathlens=(1 7 9 14 16 17 18 21 23 25 26 29 38)
+max_pathlens=(1 7 9 12 14 16 17 18 21 23 24 25 26 29 38)
 max_paths=(1 2)
 
 for max_pathlen in "${max_pathlens[@]}";
