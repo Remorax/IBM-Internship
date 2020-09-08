@@ -73,7 +73,7 @@ def test():
                 ent2 = emb_indexer_inv[inp[1][idx][0]]
                 if (ent1, ent2) in all_results:
                     print ("Error: ", ent1, ent2, "already present")
-                all_results[(ent1, ent2)] = (pred_elem, targets[idx])
+                all_results[(ent1, ent2)] = (round(pred_elem, 3), targets[idx])
         
         direct_targets = [True if el else False for el in direct_targets]
         
@@ -82,7 +82,7 @@ def test():
             ent1 = emb_indexer_inv[direct_input[0]]
             ent2 = emb_indexer_inv[direct_input[1]]
             sim = cos_sim(emb_vals[direct_input[0]], emb_vals[direct_input[1]])
-            all_results[(ent1, ent2)] = (sim, direct_targets[idx])
+            all_results[(ent1, ent2)] = (round(sim, 3), direct_targets[idx])
     return (test_onto, all_results)
 
 def optimize_threshold():
@@ -128,7 +128,7 @@ def optimize_threshold():
                 ent2 = emb_indexer_inv[inp[1][idx][0]]
                 if (ent1, ent2) in all_results:
                     print ("Error: ", ent1, ent2, "already present")
-                all_results[(ent1, ent2)] = (pred_elem, targets[idx])
+                all_results[(ent1, ent2)] = (round(pred_elem, 3), targets[idx])
         
         direct_targets = [True if el else False for el in direct_targets]
         
@@ -137,7 +137,7 @@ def optimize_threshold():
             ent1 = emb_indexer_inv[direct_input[0]]
             ent2 = emb_indexer_inv[direct_input[1]]
             sim = cos_sim(emb_vals[direct_input[0]], emb_vals[direct_input[1]])
-            all_results[(ent1, ent2)] = (sim, direct_targets[idx])
+            all_results[(ent1, ent2)] = (round(sim, 3), direct_targets[idx])
         
         low_threshold = np.min([el[0] for el in all_results.values()]) - 0.02
         high_threshold = np.max([el[0] for el in all_results.values()]) + 0.02
