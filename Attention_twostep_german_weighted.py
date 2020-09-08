@@ -422,3 +422,4 @@ all_metrics, all_fn, all_fp = calculate_performance()
 
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)
+pickle.dump([all_fn, all_fp], open(sys.argv[-1], "wb"))

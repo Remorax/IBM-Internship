@@ -11,8 +11,8 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittelv2.txt" python Attention_twostep_german.py Input/data_lebensmittel.pkl $max_path $max_pathlen
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittel_weightedv2.txt" python Attention_twostep_german_weighted.py Input/data_lebensmittel.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittelv2.txt" python Attention_twostep_german.py Input/data_lebensmittel.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_lebensmittelv2.pkl"
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittel_weightedv2.txt" python Attention_twostep_german_weighted.py Input/data_lebensmittel.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_lebensmittelv2_weighted.pkl"
 	done
 done
 
@@ -23,8 +23,8 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittel_bagofnbrsv2.txt" python Attention_twostep_german.py Input/data_lebensmittel_bagofnbrs.pkl $max_path $max_pathlen
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittel_weighted_bagofnbrsv2.txt" python Attention_twostep_german_weighted.py Input/data_lebensmittel_bagofnbrs.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittel_bagofnbrsv2.txt" python Attention_twostep_german.py Input/data_lebensmittel_bagofnbrs.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_lebensmittelv2_bagofnbrs.pkl"
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_lebensmittel_weighted_bagofnbrsv2.txt" python Attention_twostep_german_weighted.py Input/data_lebensmittel_bagofnbrs.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_lebensmittelv2_weighted_bagofnbrs.pkl"
 	done
 done
 
@@ -37,8 +37,8 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeitv2.txt" python Attention_twostep_german.py Input/data_freizeit.pkl $max_path $max_pathlen
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeit_weightedv2.txt" python Attention_twostep_german_weighted.py Input/data_freizeit.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeitv2.txt" python Attention_twostep_german.py Input/data_freizeit.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_freizeitv2.pkl"
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeit_weightedv2.txt" python Attention_twostep_german_weighted.py Input/data_freizeit.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_freizeitv2_weighted.pkl"
 	done
 done
 
@@ -49,8 +49,8 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeit_bagofnbrsv2.txt" python Attention_twostep_german.py Input/data_freizeit_bagofnbrs.pkl $max_path $max_pathlen
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeit_weighted_bagofnbrsv2.txt" python Attention_twostep_german_weighted.py Input/data_freizeit_bagofnbrs.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeit_bagofnbrsv2.txt" python Attention_twostep_german.py Input/data_freizeit_bagofnbrs.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_freizeitv2_bagofnbrs.pkl"
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_freizeit_weighted_bagofnbrsv2.txt" python Attention_twostep_german_weighted.py Input/data_freizeit_bagofnbrs.pkl $max_path $max_pathlen "Output/test"$max_path"_"$max_pathlen"_twostep_freizeitv2_bagofnbrs_weighted.pkl"
 	done
 done
 
