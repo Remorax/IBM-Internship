@@ -299,3 +299,118 @@ division by zero
 division by zero
 division by zero
 division by zero
+Len (direct inputs):  27
+Training size: 3428 Val size: 488
+Epoch: 0 Idx: 0 Loss: 0.1581099102220677
+Epoch: 1 Idx: 0 Loss: 0.0038895007307552794
+Epoch: 2 Idx: 0 Loss: 0.023340091726637584
+Epoch: 3 Idx: 0 Loss: 0.00578442336159366
+Epoch: 4 Idx: 0 Loss: 0.008539573147404717
+Epoch: 5 Idx: 0 Loss: 0.017989957410234833
+Epoch: 6 Idx: 0 Loss: 0.0037998880874801186
+Epoch: 7 Idx: 0 Loss: 0.007194624224655766
+Epoch: 8 Idx: 0 Loss: 0.007979105261768355
+Epoch: 9 Idx: 0 Loss: 0.010834389614029941
+Epoch: 10 Idx: 0 Loss: 0.0048748112889391414
+Epoch: 11 Idx: 0 Loss: 0.004879068217090051
+Epoch: 12 Idx: 0 Loss: 0.03655734259886294
+Epoch: 13 Idx: 0 Loss: 0.005602588102736019
+Epoch: 14 Idx: 0 Loss: 0.005588409924603977
+Epoch: 15 Idx: 0 Loss: 0.006687445764746547
+Epoch: 16 Idx: 0 Loss: 0.007245403807775314
+Epoch: 17 Idx: 0 Loss: 0.004861886981297669
+Epoch: 18 Idx: 0 Loss: 0.03555733960849126
+Epoch: 19 Idx: 0 Loss: 0.005347621886182002
+Epoch: 20 Idx: 0 Loss: 0.00755415432216337
+Epoch: 21 Idx: 0 Loss: 0.0067987139464901316
+Epoch: 22 Idx: 0 Loss: 0.008614701168353896
+Epoch: 23 Idx: 0 Loss: 0.007053777858481679
+Epoch: 24 Idx: 0 Loss: 0.005102070271430779
+Epoch: 25 Idx: 0 Loss: 0.01874521552695313
+Epoch: 26 Idx: 0 Loss: 0.004134902885134275
+Epoch: 27 Idx: 0 Loss: 0.0054713736066445435
+Epoch: 28 Idx: 0 Loss: 0.007765950747328262
+Epoch: 29 Idx: 0 Loss: 0.0041329885720984005
+Epoch: 30 Idx: 0 Loss: 0.00491266344708909
+Epoch: 31 Idx: 0 Loss: 0.006328742944201531
+Epoch: 32 Idx: 0 Loss: 0.009433348832464564
+Epoch: 33 Idx: 0 Loss: 0.005817735102004417
+Epoch: 34 Idx: 0 Loss: 0.0028601915535957155
+Epoch: 35 Idx: 0 Loss: 0.010093635531715262
+Epoch: 36 Idx: 0 Loss: 0.008419451653422626
+Epoch: 37 Idx: 0 Loss: 0.007809974775514896
+Epoch: 38 Idx: 0 Loss: 0.003642628025603606
+Epoch: 39 Idx: 0 Loss: 0.009577731847327511
+Epoch: 40 Idx: 0 Loss: 0.006885873088622784
+Epoch: 41 Idx: 0 Loss: 0.007512278560679356
+Epoch: 42 Idx: 0 Loss: 0.007992585496144015
+Epoch: 43 Idx: 0 Loss: 0.004139626597883818
+Epoch: 44 Idx: 0 Loss: 0.004123570477043357
+Epoch: 45 Idx: 0 Loss: 0.005999055843025021
+Epoch: 46 Idx: 0 Loss: 0.007927519468194654
+Epoch: 47 Idx: 0 Loss: 0.005376545190665429
+Epoch: 48 Idx: 0 Loss: 0.0070261540806197875
+Epoch: 49 Idx: 0 Loss: 0.005041201847144441
+Len (direct inputs):  5
+-0.593 1.02
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+Len (direct inputs):  23
+Final Results: [0.55789177 0.92417582 0.69481815 0.81589455 0.60552545]
+Threshold:  0.674
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc245>
+Subject: Job 3606383: <python Attention_twostep_german_weighted.py Input/data_freizeit.pkl 12 6> in cluster <dcc> Done
+
+Job <python Attention_twostep_german_weighted.py Input/data_freizeit.pkl 12 6> was submitted from host <dccxl012> by user <vmunig10> in cluster <dcc> at Mon Sep  7 15:08:12 2020
+Job was executed on host(s) <dccxc245>, in queue <x86_24h>, as user <vmunig10> in cluster <dcc> at Mon Sep  7 15:11:04 2020
+</u/vmunig10> was used as the home directory.
+</dccstor/cogfin/aaai2021-vitobha/IBM-Internship> was used as the working directory.
+Started at Mon Sep  7 15:11:04 2020
+Terminated at Mon Sep  7 15:47:41 2020
+Results reported at Mon Sep  7 15:47:41 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_twostep_german_weighted.py Input/data_freizeit.pkl 12 6
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2196.47 sec.
+    Max Memory :                                 196 MB
+    Average Memory :                             163.28 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43221.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                5
+    Run time :                                   2223 sec.
+    Turnaround time :                            2369 sec.
+
+The output (if any) is above this job summary.
+
