@@ -56,78 +56,78 @@
 
 # Web directory
 
-# max_paths=(1 2 3 4 6 9 13 21 49)
+max_paths=(1 2 3 4 6 9 13 21 49)
+max_pathlens=(1 3 4 5 6 8)
+
+for max_pathlen in "${max_pathlens[@]}";
+do
+	for max_path in "${max_paths[@]}";
+	do
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdirv2.txt" python Attention_twostep_german.py ../data_webdirv2.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weightedv2.txt" python Attention_twostep_german_weighted.py ../data_webdirv2.pkl $max_path $max_pathlen
+	done
+done
+
+max_paths=(1)
+max_pathlens=(1 3 4 5 6 8 9 13 20 21 49)
+
+for max_pathlen in "${max_pathlens[@]}";
+do
+	for max_path in "${max_paths[@]}";
+	do
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_bagofnbrsv2.txt" python Attention_twostep_german.py ../data_webdir_bagofnbrsv2.pkl $max_path $max_pathlen
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted_bagofnbrsv2.txt" python Attention_twostep_german_weighted.py ../data_webdir_bagofnbrsv2.pkl $max_path $max_pathlen
+	done
+done
+
+# Hybrid webdir + lebensmittel
+
+# max_paths=(1 2 3 4 6 9 13 15 21 49)
 # max_pathlens=(1 3 4 5 6 8)
 
 # for max_pathlen in "${max_pathlens[@]}";
 # do
 # 	for max_path in "${max_paths[@]}";
 # 	do
-# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir.txt" python Attention_twostep_german.py ../data_webdir.pkl $max_path $max_pathlen
-# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted.txt" python Attention_twostep_german_weighted.py ../data_webdir.pkl $max_path $max_pathlen
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_leb.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb"$max_path"_"$max_pathlen".pkl"
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb_weighted.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_leb.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb_weighted"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb_weighted"$max_path"_"$max_pathlen".pkl"
 # 	done
 # done
 
 # max_paths=(1)
-# max_pathlens=(1 3 4 5 6 8 9 13 20 21 49)
+# max_pathlens=(1 3 4 5 6 7 8 13 15 21 49)
 
 # for max_pathlen in "${max_pathlens[@]}";
 # do
 # 	for max_path in "${max_paths[@]}";
 # 	do
-# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_bagofnbrs.txt" python Attention_twostep_german.py ../data_webdir_bagofnbrs.pkl $max_path $max_pathlen
-# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_webdir_weighted_bagofnbrs.txt" python Attention_twostep_german_weighted.py ../data_webdir_bagofnbrs.pkl $max_path $max_pathlen
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_leb_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb_bagofnbrs"$max_path"_"$max_pathlen".pkl"
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb_weighted_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_leb_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb_weighted_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb_weighted_bagofnbrs"$max_path"_"$max_pathlen".pkl"
 # 	done
 # done
 
-# Hybrid webdir + lebensmittel
+# # Hybrid webdir + freizeit
 
-max_paths=(1 2 3 4 6 9 13 15 21 49)
-max_pathlens=(1 3 4 5 6 8)
+# max_paths=(1 2 3 4 6 7 9 13 21 49)
+# max_pathlens=(1 3 4 5 6 8)
 
-for max_pathlen in "${max_pathlens[@]}";
-do
-	for max_path in "${max_paths[@]}";
-	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_leb.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb"$max_path"_"$max_pathlen".pkl"
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb_weighted.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_leb.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb_weighted"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb_weighted"$max_path"_"$max_pathlen".pkl"
-	done
-done
+# for max_pathlen in "${max_pathlens[@]}";
+# do
+# 	for max_path in "${max_paths[@]}";
+# 	do
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_fre.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre"$max_path"_"$max_pathlen".pkl"
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre_weighted.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_fre.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre_weighted"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre_weighted"$max_path"_"$max_pathlen".pkl"
+# 	done
+# done
 
-max_paths=(1)
-max_pathlens=(1 3 4 5 6 7 8 13 15 21 49)
+# max_paths=(1)
+# max_pathlens=(1 3 4 5 6 7 8 12 15 21 49)
 
-for max_pathlen in "${max_pathlens[@]}";
-do
-	for max_path in "${max_paths[@]}";
-	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_leb_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb_bagofnbrs"$max_path"_"$max_pathlen".pkl"
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_leb_weighted_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_leb_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_leb_weighted_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_leb_weighted_bagofnbrs"$max_path"_"$max_pathlen".pkl"
-	done
-done
-
-# Hybrid webdir + freizeit
-
-max_paths=(1 2 3 4 6 7 9 13 21 49)
-max_pathlens=(1 3 4 5 6 8)
-
-for max_pathlen in "${max_pathlens[@]}";
-do
-	for max_path in "${max_paths[@]}";
-	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_fre.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre"$max_path"_"$max_pathlen".pkl"
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre_weighted.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_fre.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre_weighted"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre_weighted"$max_path"_"$max_pathlen".pkl"
-	done
-done
-
-max_paths=(1)
-max_pathlens=(1 3 4 5 6 7 8 12 15 21 49)
-
-for max_pathlen in "${max_pathlens[@]}";
-do
-	for max_path in "${max_paths[@]}";
-	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_fre_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre_bagofnbrs"$max_path"_"$max_pathlen".pkl"
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre_weighted_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_fre_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre_weighted_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre_weighted_bagofnbrs"$max_path"_"$max_pathlen".pkl"
-	done
-done
+# for max_pathlen in "${max_pathlens[@]}";
+# do
+# 	for max_path in "${max_paths[@]}";
+# 	do
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid.py ../data_webdir_fre_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre_bagofnbrs"$max_path"_"$max_pathlen".pkl"
+# 		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_hybrid_fre_weighted_bagofnbrs.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_german_hybrid_weighted.py ../data_webdir_fre_bagofnbrs.pkl $max_path $max_pathlen "Models/twostep_hybrid_fre_weighted_bagofnbrs"$max_path"_"$max_pathlen".pt" "Output/twostep_hybrid_fre_weighted_bagofnbrs"$max_path"_"$max_pathlen".pkl"
+# 	done
+# done
