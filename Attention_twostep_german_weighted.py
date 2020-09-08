@@ -324,6 +324,9 @@ def count_non_unk(elem):
 
 torch.set_default_dtype(torch.float64)
 
+torch.manual_seed(0)
+np.random.seed(0)
+
 print ("Number of entities:", len(data))
 
 all_metrics = []
@@ -341,6 +344,9 @@ for i in range(5):
 
     train_data_tt = data_t_items[:int(0.2*i*len(data_t))] + data_t_items[int(0.2*(i+1)*len(data_t)):]
     train_data_ff = data_f_items[:int(0.2*i*len(data_f))] + data_f_items[int(0.2*(i+1)*len(data_f)):]
+
+    np.random.shuffle(train_data_tt)
+    np.random.shuffle(train_data_ff)
 
     val_data_t = train_data_tt[:int(0.1*len(data_t))]
     val_data_f = train_data_ff[:int(0.1*len(data_f))]
@@ -402,10 +408,6 @@ for i in range(5):
                 print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
     model.eval()
-
-    np.random.shuffle(val_data_f)
-    fval_len = len(val_data_f)
-    val_data_f = val_data_f[:int(0.3*fval_len)]
     
     optimize_threshold(emb_indexer_inv, emb_vals)
 
@@ -420,3 +422,4 @@ all_metrics, all_fn, all_fp = calculate_performance()
 
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)
+pickle.dump([all_fn, all_fp], open(sys.argv[-1], "wb"))
