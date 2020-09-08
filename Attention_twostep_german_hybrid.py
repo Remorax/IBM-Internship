@@ -17,7 +17,7 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[1], "rb")
-data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts = pickle.load(f)
+data_small, data_large, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts = pickle.load(f)
 max_paths = int(sys.argv[2])
 max_pathlen = int(sys.argv[3])
 max_types = 2
@@ -253,11 +253,13 @@ class SiameseNetwork(nn.Module):
             feature_emb_reshaped = feature_emb.permute(0,4,1,2,3).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_paths * self.max_pathlen)
             path_weights = torch.bmm(node_emb[:, None, :], feature_emb_reshaped)
             path_weights = path_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_paths, self.max_pathlen)
-            path_weights = masked_softmax(torch.sum(path_weights, dim=-1))
-
-            feature_emb_reshaped = feature_emb.reshape(-1, self.max_paths, self.max_pathlen * self.embedding_dim)
-            best_path = torch.bmm(path_weights.reshape(-1, 1, self.max_paths), feature_emb_reshaped)
-            best_path = best_path.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen, self.embedding_dim) # batch_size * 4 * max_pathlen * 512
+            path_weights = torch.sum(path_weights, dim=-1)
+            best_path_indices = torch.max(path_weights, dim=-1)[1][(..., ) + (None, ) * 3]
+            best_path_indices = best_path_indices.expand(-1, -1, -1, self.max_pathlen,  self.embedding_dim)
+            best_path = torch.gather(feature_emb, 2, best_path_indices).squeeze(2) # batch_size * 4 * max_pathlen * 512
+            # Another way: 
+            # path_weights = masked_softmax(path_weights)
+            # best_path = torch.sum(path_weights[:, :, :, None, None] * feature_emb, dim=2)
 
             best_path_reshaped = best_path.permute(0,3,1,2).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_pathlen)
             node_weights = torch.bmm(node_emb.unsqueeze(1), best_path_reshaped) # batch_size * 4 * max_pathlen
@@ -324,13 +326,79 @@ def count_non_unk(elem):
 
 torch.set_default_dtype(torch.float64)
 
-torch.manual_seed(0)
-np.random.seed(0)
-
 print ("Number of entities:", len(data))
 
 all_metrics = []
 final_results = []
+
+lr = 0.001
+num_epochs = 50
+weight_decay = 0.001
+batch_size = 32
+dropout = 0.3
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+data_t = {elem: data_large[elem] for elem in data_large if data_large[elem]}
+data_f = {elem: data_large[elem] for elem in data_large if not data_large[elem]}
+
+train_data_t = list(data_t.keys())
+train_data_f = list(data_f.keys())
+np.random.shuffle(train_data_f)
+train_data_f = train_data_f[:150000]
+
+train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
+    train_data_t = train_data_t[:len(train_data_f)].tolist()
+    
+    model = SiameseNetwork(emb_vals).to(device)
+
+    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
+
+    for epoch in range(num_epochs):
+        inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
+        inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
+        inputs_all = list(inputs_pos) + list(inputs_neg)
+        targets_all = list(targets_pos) + list(targets_neg)
+        nodes_all = list(nodes_pos) + list(nodes_neg)
+        
+        all_inp = list(zip(inputs_all, targets_all, nodes_all))
+        all_inp_shuffled = random.sample(all_inp, len(all_inp))
+        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+
+        batch_size = min(batch_size, len(inputs_all))
+        num_batches = int(ceil(len(inputs_all)/batch_size))
+
+        for batch_idx in range(num_batches):
+            batch_start = batch_idx * batch_size
+            batch_end = (batch_idx+1) * batch_size
+            
+            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
+            targets = np.array(targets_all[batch_start: batch_end])
+            nodes = np.array(nodes_all[batch_start: batch_end])
+            
+            inp_elems = torch.LongTensor(inputs).to(device)
+            targ_elems = torch.DoubleTensor(targets).to(device)
+            node_elems = torch.LongTensor(nodes).to(device)
+
+            optimizer.zero_grad()
+            outputs = model(node_elems, inp_elems)
+            loss = F.mse_loss(outputs, targ_elems)
+            loss.backward()
+            optimizer.step()
+
+            if batch_idx%5000 == 0:
+                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
+
+    model.eval()
+
+    np.random.shuffle(val_data_f)
+    fval_len = len(val_data_f)
+    val_data_f = val_data_f[:int(0.3*fval_len)]
+    
+    optimize_threshold(emb_indexer_inv, emb_vals)
+
+    sys.stdout.flush()
+
+    final_results.append(test())
 
 for i in range(5):
     data_t = {elem: data[elem] for elem in data if data[elem]}
@@ -345,9 +413,6 @@ for i in range(5):
     train_data_tt = data_t_items[:int(0.2*i*len(data_t))] + data_t_items[int(0.2*(i+1)*len(data_t)):]
     train_data_ff = data_f_items[:int(0.2*i*len(data_f))] + data_f_items[int(0.2*(i+1)*len(data_f)):]
 
-    np.random.shuffle(train_data_tt)
-    np.random.shuffle(train_data_ff)
-
     val_data_t = train_data_tt[:int(0.1*len(data_t))]
     val_data_f = train_data_ff[:int(0.1*len(data_f))]
 
@@ -360,13 +425,6 @@ for i in range(5):
 
     train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
     train_data_t = train_data_t[:len(train_data_f)].tolist()
-    
-    lr = 0.001
-    num_epochs = 50
-    weight_decay = 0.001
-    batch_size = 32
-    dropout = 0.3
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     
     model = SiameseNetwork(emb_vals).to(device)
 
