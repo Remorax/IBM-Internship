@@ -1,10 +1,11 @@
-max_pathlens=(3 4 5 6)
+max_pathlens=(12 18 21 22 23 24 26 32 38)
+types=(0 1 2 3)
 
 for max_pathlen in "${max_pathlens[@]}";
 do
-	jbsub -q x86_24h -mem 40g -require v100 -cores 1x1+1 -out "Results/Output_att"$max_pathlen"_twostep.txt" python Attention_twostep.py $max_pathlen Input/data_demarcated.pkl "Output/test_demarcated"$max_pathlen".pkl"
-	jbsub -q x86_24h -mem 40g -require v100 -cores 1x1+1 -out "Results/Output_att"$max_pathlen"_twostep_wtpath.txt" python Attention_twostep_weightedpath.py $max_pathlen Input/data_demarcated.pkl "Output/test_demarcated_wtpath"$max_pathlen".pkl"
-	jbsub -q x86_24h -mem 40g -require v100 -cores 1x1+1 -out "Results/Output_att"$max_pathlen"_twostep_uniqpath.txt" python Attention_twostep.py $max_pathlen Input/data_demarcated_uniqpath.pkl "Output/test_demarcated_uniqpath"$max_pathlen".pkl"
-	jbsub -q x86_24h -mem 40g -require v100 -cores 1x1+1 -out "Results/Output_att"$max_pathlen"_twostep_wtpath_uniqpath.txt" python Attention_twostep_weightedpath.py $max_pathlen Input/data_demarcated_uniqpath.pkl "Output/test_demarcated_uniqpath_wtpath"$max_pathlen".pkl"
+	for type in "${types[@]}";
+	do
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_pathlen"_twostep_uncategorized_bagofnbrs.txt" python Attention_twostep_uncategorized.py Input/data_demarcated_bagofnbrs.pkl $max_pathlen $type
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_pathlen"_twostep_uncategorized_bagofnbrs_wtpath.txt" python Attention_twostep_uncategorized_weighted.py Input/data_demarcated_bagofnbrs.pkl $max_pathlen $type
+	done
 done
-
