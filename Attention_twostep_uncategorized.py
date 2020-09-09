@@ -16,7 +16,7 @@ import torch.nn.functional as F
 from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-f = open(sys.argv[3], "rb")
+f = open(sys.argv[1], "rb")
 data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, features_dict, ontologies_in_alignment = pickle.load(f)
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 flatten = lambda l: [item for sublist in l for item in sublist]
@@ -237,9 +237,6 @@ class SiameseNetwork(nn.Module):
         self.output = nn.Linear(2*self.embedding_dim, 300)
         
         self.v = nn.Parameter(torch.DoubleTensor([1/(self.max_pathlen) for i in range(self.max_pathlen)]))
-        self.w_rootpath = nn.Parameter(torch.DoubleTensor([0.25]))
-        self.w_children = nn.Parameter(torch.DoubleTensor([0.25]))
-        self.w_obj_neighbours = nn.Parameter(torch.DoubleTensor([0.25]))
  
     def forward(self, nodes, features):
         '''
@@ -271,12 +268,7 @@ class SiameseNetwork(nn.Module):
             attended_path = node_weights.unsqueeze(-1) * best_path # batch_size * 4 * max_pathlen * 512
 
             distance_weighted_path = torch.sum((self.v[None,None,:,None] * attended_path), dim=2) # batch_size * 4 * 512
-
-            self.w_data_neighbours = (1-self.w_rootpath-self.w_children-self.w_obj_neighbours)
-            context_emb = self.w_rootpath * distance_weighted_path[:,0,:] \
-                        + self.w_children * distance_weighted_path[:,1,:] \
-                        + self.w_obj_neighbours * distance_weighted_path[:,2,:] \
-                        + self.w_data_neighbours * distance_weighted_path[:,3,:]
+            context_emb = distance_weighted_path.squeeze(1)
 
             contextual_node_emb = torch.cat((node_emb, context_emb), dim=1)
             output_node_emb = self.output(contextual_node_emb)
@@ -309,12 +301,16 @@ def generate_input(elems, target):
             direct_targets.append(target)
     return np.array(inputs), np.array(nodes), np.array(targets)
 
-print("Max number of nodes in a path: " + str(sys.argv[1]))
+print("Max number of nodes in a path: " + str(sys.argv[2]))
 
 def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
-features_dict = {elem: features_dict[elem][:,:int(sys.argv[2]),:int(sys.argv[1])] for elem in features_dict}
+type_path = int(sys.argv[3])
+features_dict = {elem: features_dict[elem][type_path:type_path+1,:,:int(sys.argv[2])] for elem in features_dict}
+
+torch.manual_seed(0)
+np.random.seed(0)
 
 data_items = data.items()
 np.random.shuffle(list(data_items))
@@ -416,6 +412,3 @@ all_metrics, all_fn, all_fp = calculate_performance()
 
 print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)
-
-f1 = open(sys.argv[-1], "wb")
-pickle.dump([all_fn, all_fp], f1)
