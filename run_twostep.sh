@@ -5,7 +5,7 @@ for max_pathlen in "${max_pathlens[@]}";
 do
 	for max_path in "${max_paths[@]}";
 	do
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep.txt" python Attention_twostep.py $max_pathlen $max_path Input/data_demarcated.pkl
-		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_wtpath.txt" python Attention_twostep_weightedpath.py $max_pathlen $max_path Input/data_demarcated.pkl
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep.py $max_pathlen $max_path Input/data_demarcated.pkl
+		jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_att"$max_path"_"$max_pathlen"_twostep_wtpath.txt" ~/anaconda2/envs/myenv/bin/python3.6 Attention_twostep_weightedpath.py $max_pathlen $max_path Input/data_demarcated.pkl
 	done
 done
