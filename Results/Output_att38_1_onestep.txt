@@ -1,0 +1,48 @@
+Number of neighbours: 38
+Number of entities: 122893
+Training size: 109284 Testing size: 3734
+Traceback (most recent call last):
+  File "Attention_val.py", line 345, in <module>
+    outputs = model(inp_elems)
+  File "/u/vmunig10/miniconda3/envs/aaai2021/lib/python3.6/site-packages/torch/nn/modules/module.py", line 722, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "Attention_val.py", line 241, in forward
+    context = torch.matmul(self.v, att_weights * neighbours)
+RuntimeError: size mismatch, m1: [5120 x 33], m2: [37 x 1] at /pytorch/aten/src/TH/generic/THTensorMath.cpp:41
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc247>
+Subject: Job 3679884: <python Attention_val.py 38 1 Input/data_multi_rootpath.pkl> in cluster <dcc> Exited
+
+Job <python Attention_val.py 38 1 Input/data_multi_rootpath.pkl> was submitted from host <dccxl009> by user <vmunig10> in cluster <dcc> at Wed Sep  9 04:01:09 2020
+Job was executed on host(s) <dccxc247>, in queue <x86_24h>, as user <vmunig10> in cluster <dcc> at Wed Sep  9 14:42:22 2020
+</u/vmunig10> was used as the home directory.
+</dccstor/cogfin/aaai2021-vitobha/IBM-Internship> was used as the working directory.
+Started at Wed Sep  9 14:42:22 2020
+Terminated at Wed Sep  9 14:42:29 2020
+Results reported at Wed Sep  9 14:42:29 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_val.py 38 1 Input/data_multi_rootpath.pkl
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   5.04 sec.
+    Max Memory :                                 103 MB
+    Average Memory :                             103.00 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               43314.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   34 sec.
+    Turnaround time :                            38480 sec.
+
+The output (if any) is above this job summary.
+
