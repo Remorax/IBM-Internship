@@ -30,7 +30,7 @@ def calculate_performance():
         all_metrics.append((precision, recall, f1score, f2score, f0_5score))
     return all_metrics, all_fn, all_fp
 
-for file_pair in list(zip(sorted(glob.glob("../temp-dir/Output/*part1*")), sorted(glob.glob("../temp-dir/Output/*part2*")))):
+for file_pair in list(zip(sorted(glob.glob("../temp-dir2/*part1*")), sorted(glob.glob("../temp-dir/*part2*")))):
     final_results1, threshold_results1 = pickle.load(open(file_pair[0], "rb"))
     final_results2, threshold_results2 = pickle.load(open(file_pair[1], "rb"))
     final_results = final_results1 + final_results2 
@@ -47,12 +47,12 @@ for file_pair in list(zip(sorted(glob.glob("../temp-dir/Output/*part1*")), sorte
 
     all_metrics, all_fn, all_fp = calculate_performance()
 
-    output_file = "Output/" + "_".join(file_pair[0].split("/")[-1].split("_")[:-1]) + ".pkl"
+    output_file = "Output/21step" + "_".join(file_pair[0].split("/")[-1].split("_")[:-1]) + ".pkl"
     f = open(output_file, "wb")
     pickle.dump([all_fn, all_fp], f)
     f.close()
 
-    results_file = "Results/Output_att" + "_".join(file_pair[0].split("/")[-1].split("_")[:-1]) + ".txt"
+    results_file = "Results/Output_att21step" + "_".join(file_pair[0].split("/")[-1].split("_")[:-1]) + ".txt"
     f = open(results_file, "w+")
     f.write("Final Results: " + str(np.mean(all_metrics, axis=0)))
     f.write("\nThreshold: " + str(threshold) + "\n")
