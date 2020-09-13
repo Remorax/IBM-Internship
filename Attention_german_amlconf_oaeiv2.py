@@ -6,7 +6,7 @@ from operator import itemgetter
 from scipy import spatial
 from sklearn.metrics import precision_score, accuracy_score, recall_score, f1_score
 from sklearn.feature_extraction.text import TfidfVectorizer
-import re, sys
+import re, sys, glob
 import numpy as np
 import scipy.sparse as sp
 import torch
@@ -154,7 +154,8 @@ def optimize_threshold():
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in set(res) and not is_valid(val_onto, key)]
+            s = set(res)
+            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in s and not is_valid(val_onto, key)]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
@@ -229,13 +230,14 @@ class SiameseNetwork(nn.Module):
         self.max_pathlen = max_pathlen
         self.embedding_dim = np.array(emb_vals).shape[1]
         
-        self.threshold = nn.Parameter(torch.DoubleTensor([threshold]))
-        self.threshold.requires_grad = False
+        self.threshold = threshold
 
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
         self.name_embedding.weight.requires_grad = False
 
+        self.dropout = dropout
+        
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(2*self.embedding_dim, 300)
         
@@ -340,86 +342,16 @@ np.random.shuffle(list(data_items))
 aml_data = OrderedDict(data_items)
 
 print ("Number of entities:", len(aml_data))
-
+lr = 0.001
+num_epochs = 50
+weight_decay = 0.001
+batch_size = 32
+dropout = 0.3
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 all_metrics = []
 final_results = []
-for i in list(range(0, len(ontologies_in_alignment), 3)):
-    
-    val_onto = ontologies_in_alignment[i:i+3]
-    
-    train_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) not in val_onto}
-    val_data = {elem: aml_data[elem] for elem in aml_data if tuple([el.split("#")[0] for el in elem]) in val_onto}
 
-    print ("Training size:", len(train_data), "Validation size:", len(val_data))
-
-    train_data_t = [key for key in train_data if train_data[key]]
-    train_data_f = [key for key in train_data if not train_data[key]]
-    train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-    train_data_t = train_data_t[:len(train_data_f)].tolist()
-    #train_data_f = train_data_f[:int(len(train_data_t))]
-#     [:int(0.1*(len(train_data) - len(train_data_t)) )]
-    np.random.shuffle(train_data_f)
-    
-    lr = 0.001
-    num_epochs = 50
-    weight_decay = 0.001
-    batch_size = 32
-    dropout = 0.3
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    
-    model = SiameseNetwork(emb_vals).to(device)
-
-    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
-
-    for epoch in range(num_epochs):
-        inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-        inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
-        inputs_all = list(inputs_pos) + list(inputs_neg)
-        targets_all = list(targets_pos) + list(targets_neg)
-        nodes_all = list(nodes_pos) + list(nodes_neg)
-        
-        all_inp = list(zip(inputs_all, targets_all, nodes_all))
-        all_inp_shuffled = random.sample(all_inp, len(all_inp))
-        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
-
-        batch_size = min(batch_size, len(inputs_all))
-        num_batches = int(ceil(len(inputs_all)/batch_size))
-
-        for batch_idx in range(num_batches):
-            batch_start = batch_idx * batch_size
-            batch_end = (batch_idx+1) * batch_size
-            
-            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-            targets = np.array(targets_all[batch_start: batch_end])
-            nodes = np.array(nodes_all[batch_start: batch_end])
-            
-            inp_elems = torch.LongTensor(inputs).to(device)
-            node_elems = torch.LongTensor(nodes).to(device)
-            targ_elems = torch.DoubleTensor(targets).to(device)
-
-            optimizer.zero_grad()
-            outputs = model(node_elems, inp_elems)
-
-            loss = F.mse_loss(outputs, targ_elems)
-            loss.backward()
-            optimizer.step()
-
-            if batch_idx%5000 == 0:
-                print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
-
-    model.eval()
-    
-    val_data_t = [key for key in val_data if val_data[key]]
-    val_data_f = [key for key in val_data if not val_data[key]]
-    
-    optimize_threshold()
-
-    sys.stdout.flush()
-
-threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
-threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
-
-model = SiameseNetwork(emb_vals, threshold).to(device)
+model = SiameseNetwork(emb_vals).to(device)
 print (model.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
@@ -468,7 +400,6 @@ train_data_t = [key for key in aml_data if aml_data[key]]
 train_data_f = [key for key in aml_data if not aml_data[key]]
 train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
 train_data_t = train_data_t[:len(train_data_f)].tolist()
-print (threshold)
 np.random.shuffle(train_data_f)
 
 for epoch in range(num_epochs):
@@ -504,33 +435,53 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-        if batch_idx%5000 == 0:
+        if batch_idx%500 == 0:
             print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 
+val_data_t = [key for key in aml_data if aml_data[key]]
+val_data_f = [key for key in aml_data if not aml_data[key]]
+np.random.shuffle(val_data_f)
+val_onto = ontologies_in_alignment
 
+optimize_threshold()
+
+threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
+threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
+
+model.threshold = threshold
+
+def check_best_performance():
+    output_file = "Results/Output_att*" + "_".join(sys.argv[6].split("/")[1].split("_")[:4]) + ".txt"
+    results_lines = [[l for l in open(file).read().split("\n") if "Final Results:" in l] for file in glob.glob(output_file)]
+    results_lines = [line[0] for line in results_lines if line]
+    results_lines = [line.split("[")[1].split("]")[0].split(" ") for line in results_lines]
+    results_lines = [float([value for value in line if value][2]) for line in results_lines]
+    return max(results_lines)
 model.eval()
 
-torch.save(model.state_dict(), sys.argv[6])
+test_onto = ontologies_in_alignment
+test_data = {elem: data_conf[elem] for elem in data_conf if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
-model = SiameseNetwork(emb_vals).to(device)
-model.load_state_dict(torch.load(sys.argv[6]), strict=False)
+test_data_t = [key for key in test_data if test_data[key]]
+test_data_f = [key for key in test_data if not test_data[key]]
 
-threshold = model.threshold.data.cpu().numpy()[0]
-
-for i in list(range(0, len(ontologies_in_alignment), 50)):
-    test_onto = ontologies_in_alignment
-    test_data = {elem: data_conf[elem] for elem in data_conf if tuple([el.split("#")[0] for el in elem]) in test_onto}
-
-    test_data_t = [key for key in test_data if test_data[key]]
-    test_data_f = [key for key in test_data if not test_data[key]]
-
-    final_results.append(test())
+final_results.append(test())
 
 all_metrics, all_fn, all_fp = calculate_performance()
+final_results = np.mean(all_metrics, axis=0)
 
-print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
+if float(final_results[2]) > check_best_performance():
+    # Remove unneccessary models
+    # _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[6].split("_")[:4]) + "*.pt")]
+    # Remove unneccessary error files
+    # _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
+    # Save model
+    torch.save(model.state_dict(), sys.argv[6])
+    #Save error file
+    f1 = open(sys.argv[5], "wb")
+    pickle.dump([all_fn, all_fp], f1)
+
+print ("Final Results: ", final_results)
 print ("Threshold: ", threshold)
 
-f1 = open(sys.argv[5], "wb")
-pickle.dump([all_fn, all_fp], f1)

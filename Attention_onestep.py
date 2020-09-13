@@ -66,7 +66,7 @@ def test():
             node_elems = torch.LongTensor(nodes).to(device)
             targ_elems = torch.DoubleTensor(targets)
 
-            outputs = model(inp_elems)
+            outputs = model(node_elems, inp_elems)
             outputs = [el.item() for el in outputs]
             targets = [True if el.item() else False for el in targets]
 
@@ -123,7 +123,7 @@ def optimize_threshold():
             node_elems = torch.LongTensor(nodes).to(device)
             targ_elems = torch.DoubleTensor(targets)
 
-            outputs = model(inp_elems)
+            outputs = model(node_elems, inp_elems)
             outputs = [el.item() for el in outputs]
             targets = [True if el.item() else False for el in targets]
 
@@ -221,6 +221,10 @@ class SiameseNetwork(nn.Module):
     def __init__(self):
         super().__init__() 
         
+        self.features_arr = np.array(list(features_dict.values()))
+        self.n_neighbours = self.features_arr.shape[1]
+        self.max_paths = self.features_arr.shape[2]
+        self.max_pathlen = self.features_arr.shape[3]
         self.embedding_dim = np.array(emb_vals).shape[1]
         
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
@@ -231,26 +235,54 @@ class SiameseNetwork(nn.Module):
         
         self.cosine_sim_layer = nn.CosineSimilarity(dim=1)
         self.output = nn.Linear(2*self.embedding_dim, 300)
-        n = int(sys.argv[1])
-        self.v = nn.Parameter(torch.DoubleTensor([1/n for i in range(n)]))
+        
+        self.v = nn.Parameter(torch.DoubleTensor([1/(self.max_pathlen) for i in range(self.max_pathlen)]))
+        self.w_rootpath = nn.Parameter(torch.DoubleTensor([0.25]))
+        self.w_children = nn.Parameter(torch.DoubleTensor([0.25]))
+        self.w_obj_neighbours = nn.Parameter(torch.DoubleTensor([0.25]))
  
-    def forward(self, inputs):
+    def forward(self, nodes, features):
+        '''
+        Arguments:
+            - nodes: batch_size * 2
+            - features: batch_size * 2 * 4 * max_paths * max_pathlen
+        '''
         results = []
-        inputs = inputs.permute(1,0,2)
+        nodes = nodes.permute(1,0) # 2 * batch_size
+        features = features.permute(1,0,2,3,4) # 2 * batch_size * 4 * max_paths * max_pathlen
         for i in range(2):
-            x = self.name_embedding(inputs[i])
-            node = x.permute(1,0,2)[:1].permute(1,0,2) # 3993 * 1 * 512
-            neighbours = x.permute(1,0,2)[1:].permute(1,0,2) # 3993 * 9 * 512
+            node_emb = self.name_embedding(nodes[i]) # batch_size * 512
+            feature_emb = self.name_embedding(features[i]) #  batch_size * 4 * max_paths * max_pathlen * 512
             
-            att_weights = torch.bmm(neighbours, node.permute(0, 2, 1)).squeeze()
-            att_weights = masked_softmax(att_weights).unsqueeze(-1)
-            context = torch.matmul(self.v, att_weights * neighbours)
+            feature_emb_reshaped = feature_emb.permute(0,4,1,2,3).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_paths * self.max_pathlen)
+            path_weights = torch.bmm(node_emb[:, None, :], feature_emb_reshaped)
+            path_weights = path_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_paths, self.max_pathlen)
+            path_weights = torch.sum(path_weights, dim=-1)
+            best_path_indices = torch.max(path_weights, dim=-1)[1][(..., ) + (None, ) * 3]
+            best_path_indices = best_path_indices.expand(-1, -1, -1, self.max_pathlen,  self.embedding_dim)
+            best_path = torch.gather(feature_emb, 2, best_path_indices).squeeze(2) # batch_size * 4 * max_pathlen * 512
+            # Another way: 
+            # path_weights = masked_softmax(path_weights)
+            # best_path = torch.sum(path_weights[:, :, :, None, None] * feature_emb, dim=2)
 
-            x = torch.cat((node.reshape(-1, self.embedding_dim), context.reshape(-1, self.embedding_dim)), dim=1)
-            x = self.output(x)
-            results.append(x)
-        x = self.cosine_sim_layer(results[0], results[1])
-        return x
+            best_path_reshaped = best_path.permute(0,3,1,2).reshape(-1, self.embedding_dim, self.n_neighbours * self.max_pathlen)
+            node_weights = torch.bmm(node_emb.unsqueeze(1), best_path_reshaped) # batch_size * 4 * max_pathlen
+            node_weights = masked_softmax(node_weights.squeeze(1).reshape(-1, self.n_neighbours, self.max_pathlen)) # batch_size * 4 * max_pathlen
+            attended_path = node_weights.unsqueeze(-1) * best_path # batch_size * 4 * max_pathlen * 512
+
+            distance_weighted_path = torch.sum((self.v[None,None,:,None] * attended_path), dim=2) # batch_size * 4 * 512
+
+            self.w_data_neighbours = (1-self.w_rootpath-self.w_children-self.w_obj_neighbours)
+            context_emb = self.w_rootpath * distance_weighted_path[:,0,:] \
+                        + self.w_children * distance_weighted_path[:,1,:] \
+                        + self.w_obj_neighbours * distance_weighted_path[:,2,:] \
+                        + self.w_data_neighbours * distance_weighted_path[:,3,:]
+
+            contextual_node_emb = torch.cat((node_emb, context_emb), dim=1)
+            output_node_emb = self.output(contextual_node_emb)
+            results.append(output_node_emb)
+        sim = self.cosine_sim_layer(results[0], results[1])
+        return sim
 
 def is_valid(test_onto, key):
     return tuple([el.split("#")[0] for el in key]) not in test_onto
@@ -355,7 +387,7 @@ for i in list(range(0, len(ontologies_in_alignment), 3)):
             targ_elems = torch.DoubleTensor(targets).to(device)
 
             optimizer.zero_grad()
-            outputs = model(inp_elems)
+            outputs = model(node_elems, inp_elems)
 
             loss = F.mse_loss(outputs, targ_elems)
             loss.backward()

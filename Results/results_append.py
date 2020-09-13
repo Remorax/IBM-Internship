@@ -44,7 +44,12 @@ for file in os.listdir("."):
     if file.startswith("Output_att"):
         neighbours = [''.join(filter(str.isdigit, num)) for num in file.split("_")]
         neighbours = [el for el in neighbours if el]
-        intent = "VeeAlign (entity) + " + ",".join(neighbours) + " neighbours"
+        max_path, max_pathlen = neighbours[0], neighbours[1]
+        if len(neighbours) >= 3:
+            thresh = str(neighbours[2][0]) + "." + str(neighbours[2][1:])
+        else:
+            thresh = "N/A"
+        intent = "VeeAlign (max_path={}, max_pathlen={}, threshold={})".format(max_path, max_pathlen, thresh)
         try:
             threshold = str(round(float([l.split()[-1] for l in open(file).read().split("\n") if "Threshold:" in l][-1]), 3))
         except Exception as e:
