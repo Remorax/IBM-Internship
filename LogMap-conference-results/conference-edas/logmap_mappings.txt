@@ -1,0 +1,15 @@
+http://conference#Accepted_contribution|http://edas#AcceptedPaper|>|0.43|CLS
+http://conference#Workshop|http://edas#Workshop|=|0.84|CLS
+http://conference#Review|http://edas#Review|=|0.89|CLS
+http://conference#has_the_first_name|http://edas#hasFirstName|=|0.92|DPROP
+http://conference#Accepted_contribution|http://edas#AcceptRating|>|0.31|CLS
+http://conference#Rejected_contribution|http://edas#RejectRating|=|0.33|CLS
+http://conference#Person|http://edas#Person|=|0.82|CLS
+http://conference#Topic|http://edas#Topic|=|0.7|CLS
+http://conference#Reviewer|http://edas#Reviewer|=|1.0|CLS
+http://conference#Conference|http://edas#Conference|=|0.5|CLS
+http://conference#Organization|http://edas#Organization|=|0.7|CLS
+http://conference#has_the_last_name|http://edas#hasLastName|=|0.92|DPROP
+http://conference#Paper|http://edas#Paper|=|0.79|CLS
+http://conference#has_an_email|http://edas#hasEmail|=|0.92|DPROP
+http://conference#Conference_document|http://edas#Document|>|0.48|CLS

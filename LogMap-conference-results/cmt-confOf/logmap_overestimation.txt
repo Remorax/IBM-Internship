@@ -1,0 +1,17 @@
+http://cmt#Paper|http://confOf#Paper|=|0.8|CLS
+http://cmt#AssociatedChair|http://confOf#Chair_PC|=|0.4|CLS
+http://cmt#PaperFullVersion|http://confOf#Short_paper|=|0.4|CLS
+http://cmt#ExternalReviewer|http://confOf#Reviewing_event|<|0.2|CLS
+http://cmt#Conference|http://confOf#Conference|=|1.0|CLS
+http://cmt#Person|http://confOf#Person|=|1.0|CLS
+http://cmt#Meta-Review|http://confOf#Reviewing_event|=|0.4|CLS
+http://cmt#PaperAbstract|http://confOf#Short_paper|=|0.4|CLS
+http://cmt#Meta-Reviewer|http://confOf#Reviewing_event|<|0.2|CLS
+http://cmt#Administrator|http://confOf#Administrator|=|1.0|CLS
+http://cmt#ConferenceChair|http://confOf#Chair_PC|=|0.4|CLS
+http://cmt#Review|http://confOf#Reviewing_event|=|0.4|CLS
+http://cmt#email|http://confOf#hasEmail|=|0.8|DPROP
+http://cmt#Reviewer|http://confOf#Reviewing_event|>|0.2|CLS
+http://cmt#Author|http://confOf#Author|=|1.0|CLS
+http://cmt#ConferenceMember|http://confOf#Member_PC|=|0.4|CLS
+http://cmt#ConferenceMember|http://confOf#Member|=|0.4|CLS

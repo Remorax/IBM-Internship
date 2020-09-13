@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(http://confOf)#"
+     xml:base="Optional.of(http://confOf)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(http://confOf)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://confOf#dealsWith -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#dealsWith">
+        <rdfs:domain rdf:resource="http://confOf#Contribution"/>
+        <rdfs:range rdf:resource="http://confOf#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://confOf#employedBy -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#employedBy">
+        <rdfs:domain rdf:resource="http://confOf#Person"/>
+        <rdfs:range rdf:resource="http://confOf#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://confOf#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#hasCity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Organization"/>
+                    <rdf:Description rdf:about="http://confOf#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://confOf#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://confOf#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#hasCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Organization"/>
+                    <rdf:Description rdf:about="http://confOf#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://confOf#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://confOf#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#hasTopic">
+        <rdfs:domain rdf:resource="http://confOf#Working_event"/>
+        <rdfs:range rdf:resource="http://confOf#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://confOf#writes -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#writes">
+        <owl:inverseOf rdf:resource="http://confOf#writtenBy"/>
+        <rdfs:domain rdf:resource="http://confOf#Author"/>
+        <rdfs:range rdf:resource="http://confOf#Contribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://confOf#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://confOf#writtenBy">
+        <rdfs:domain rdf:resource="http://confOf#Contribution"/>
+        <rdfs:range rdf:resource="http://confOf#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://confOf#abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#abstract">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://confOf#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#contactEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#contactEmail">
+        <rdfs:domain rdf:resource="http://confOf#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#defaultChoice -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#defaultChoice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Social_event"/>
+                    <rdf:Description rdf:about="http://confOf#Working_event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasEmail">
+        <rdfs:domain rdf:resource="http://confOf#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasFirstName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://confOf#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasKeyword">
+        <rdfs:domain rdf:resource="http://confOf#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasPostalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasPostalCode">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Organization"/>
+                    <rdf:Description rdf:about="http://confOf#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasStreet -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasStreet">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Organization"/>
+                    <rdf:Description rdf:about="http://confOf#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasSurname -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasSurname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://confOf#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#hasTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://confOf#Contribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#has_title -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#has_title">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Social_event"/>
+                    <rdf:Description rdf:about="http://confOf#Working_event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://confOf#location -->
+
+    <owl:DatatypeProperty rdf:about="http://confOf#location">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://confOf#Social_event"/>
+                    <rdf:Description rdf:about="http://confOf#Working_event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://confOf#Author -->
+
+    <owl:Class rdf:about="http://confOf#Author">
+        <rdfs:subClassOf rdf:resource="http://confOf#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#writes"/>
+                <owl:someValuesFrom rdf:resource="http://confOf#Contribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#writes"/>
+                <owl:allValuesFrom rdf:resource="http://confOf#Contribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#City -->
+
+    <owl:Class rdf:about="http://confOf#City">
+        <owl:disjointWith rdf:resource="http://confOf#Contribution"/>
+        <owl:disjointWith rdf:resource="http://confOf#Event"/>
+        <owl:disjointWith rdf:resource="http://confOf#Organization"/>
+        <owl:disjointWith rdf:resource="http://confOf#Person"/>
+        <owl:disjointWith rdf:resource="http://confOf#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Conference -->
+
+    <owl:Class rdf:about="http://confOf#Conference">
+        <rdfs:subClassOf rdf:resource="http://confOf#Working_event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Contribution -->
+
+    <owl:Class rdf:about="http://confOf#Contribution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#dealsWith"/>
+                <owl:someValuesFrom rdf:resource="http://confOf#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#dealsWith"/>
+                <owl:allValuesFrom rdf:resource="http://confOf#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#contactEmail"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasKeyword"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#abstract"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasTitle"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://confOf#Country"/>
+        <owl:disjointWith rdf:resource="http://confOf#Event"/>
+        <owl:disjointWith rdf:resource="http://confOf#Organization"/>
+        <owl:disjointWith rdf:resource="http://confOf#Person"/>
+        <owl:disjointWith rdf:resource="http://confOf#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Country -->
+
+    <owl:Class rdf:about="http://confOf#Country">
+        <owl:disjointWith rdf:resource="http://confOf#Event"/>
+        <owl:disjointWith rdf:resource="http://confOf#Organization"/>
+        <owl:disjointWith rdf:resource="http://confOf#Person"/>
+        <owl:disjointWith rdf:resource="http://confOf#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Event -->
+
+    <owl:Class rdf:about="http://confOf#Event">
+        <owl:disjointWith rdf:resource="http://confOf#Organization"/>
+        <owl:disjointWith rdf:resource="http://confOf#Person"/>
+        <owl:disjointWith rdf:resource="http://confOf#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Organization -->
+
+    <owl:Class rdf:about="http://confOf#Organization">
+        <owl:disjointWith rdf:resource="http://confOf#Person"/>
+        <owl:disjointWith rdf:resource="http://confOf#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Paper -->
+
+    <owl:Class rdf:about="http://confOf#Paper">
+        <rdfs:subClassOf rdf:resource="http://confOf#Contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Person -->
+
+    <owl:Class rdf:about="http://confOf#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#employedBy"/>
+                <owl:someValuesFrom rdf:resource="http://confOf#Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasCity"/>
+                <owl:someValuesFrom rdf:resource="http://confOf#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasCountry"/>
+                <owl:someValuesFrom rdf:resource="http://confOf#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#employedBy"/>
+                <owl:allValuesFrom rdf:resource="http://confOf#Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasEmail"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasPostalCode"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasStreet"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasFirstName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasSurname"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://confOf#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Social_event -->
+
+    <owl:Class rdf:about="http://confOf#Social_event">
+        <rdfs:subClassOf rdf:resource="http://confOf#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#defaultChoice"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#has_title"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#location"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://confOf#Working_event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://confOf#Topic -->
+
+    <owl:Class rdf:about="http://confOf#Topic"/>
+    
+
+
+    <!-- http://confOf#Working_event -->
+
+    <owl:Class rdf:about="http://confOf#Working_event">
+        <rdfs:subClassOf rdf:resource="http://confOf#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasTopic"/>
+                <owl:someValuesFrom rdf:resource="http://confOf#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#hasTopic"/>
+                <owl:allValuesFrom rdf:resource="http://confOf#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#defaultChoice"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#has_title"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://confOf#location"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

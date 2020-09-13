@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(http://edas)#"
+     xml:base="Optional.of(http://edas)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(http://edas)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edas#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://edas#hasCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://edas#Conference"/>
+        <rdfs:range rdf:resource="http://edas#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://edas#hasMember">
+        <owl:inverseOf rdf:resource="http://edas#isMemberOf"/>
+        <rdfs:domain rdf:resource="http://edas#Conference"/>
+        <rdfs:range rdf:resource="http://edas#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#hasRelatedDocument -->
+
+    <owl:ObjectProperty rdf:about="http://edas#hasRelatedDocument">
+        <owl:inverseOf rdf:resource="http://edas#relatesTo"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#AcademicEvent"/>
+                    <rdf:Description rdf:about="http://edas#Conference"/>
+                    <rdf:Description rdf:about="http://edas#ConferenceSession"/>
+                    <rdf:Description rdf:about="http://edas#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://edas#Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://edas#hasTopic">
+        <owl:inverseOf rdf:resource="http://edas#isTopicOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#Conference"/>
+                    <rdf:Description rdf:about="http://edas#Paper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://edas#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://edas#isMemberOf">
+        <rdfs:domain rdf:resource="http://edas#Person"/>
+        <rdfs:range rdf:resource="http://edas#Conference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#isReviewedBy -->
+
+    <owl:ObjectProperty rdf:about="http://edas#isReviewedBy">
+        <owl:inverseOf rdf:resource="http://edas#isReviewing"/>
+        <rdfs:domain rdf:resource="http://edas#Paper"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#ConferenceChair"/>
+                    <rdf:Description rdf:about="http://edas#Reviewer"/>
+                    <rdf:Description rdf:about="http://edas#SessionChair"/>
+                    <rdf:Description rdf:about="http://edas#TPCMember"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#isReviewing -->
+
+    <owl:ObjectProperty rdf:about="http://edas#isReviewing">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#ConferenceChair"/>
+                    <rdf:Description rdf:about="http://edas#Reviewer"/>
+                    <rdf:Description rdf:about="http://edas#SessionChair"/>
+                    <rdf:Description rdf:about="http://edas#TPCMember"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://edas#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#isTopicOf -->
+
+    <owl:ObjectProperty rdf:about="http://edas#isTopicOf">
+        <rdfs:domain rdf:resource="http://edas#Topic"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#Conference"/>
+                    <rdf:Description rdf:about="http://edas#Paper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://edas#relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://edas#relatesTo">
+        <rdfs:domain rdf:resource="http://edas#Document"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#AcademicEvent"/>
+                    <rdf:Description rdf:about="http://edas#Conference"/>
+                    <rdf:Description rdf:about="http://edas#ConferenceSession"/>
+                    <rdf:Description rdf:about="http://edas#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edas#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://edas#hasName">
+        <rdfs:domain rdf:resource="http://edas#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edas#AcademicEvent -->
+
+    <owl:Class rdf:about="http://edas#AcademicEvent">
+        <rdfs:subClassOf rdf:resource="http://edas#ConferenceEvent"/>
+        <owl:disjointWith rdf:resource="http://edas#NonAcademicEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Author -->
+
+    <owl:Class rdf:about="http://edas#Author">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edas#hasRelatedDocument"/>
+                        <owl:someValuesFrom rdf:resource="http://edas#Paper"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://edas#ConferenceChair"/>
+        <owl:disjointWith rdf:resource="http://edas#SessionChair"/>
+        <owl:disjointWith rdf:resource="http://edas#TPCMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#BreakEvent -->
+
+    <owl:Class rdf:about="http://edas#BreakEvent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#CoffeeBreak"/>
+                    <rdf:Description rdf:about="http://edas#FreeTimeBreak"/>
+                    <rdf:Description rdf:about="http://edas#MealBreak"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://edas#NonAcademicEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#CoffeeBreak -->
+
+    <owl:Class rdf:about="http://edas#CoffeeBreak">
+        <rdfs:subClassOf rdf:resource="http://edas#BreakEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Conference -->
+
+    <owl:Class rdf:about="http://edas#Conference">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edas#hasCountry"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edas#hasTopic"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edas#hasName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://edas#ConferenceEvent"/>
+        <owl:disjointWith rdf:resource="http://edas#ConferenceSession"/>
+        <owl:disjointWith rdf:resource="http://edas#Country"/>
+        <owl:disjointWith rdf:resource="http://edas#Document"/>
+        <owl:disjointWith rdf:resource="http://edas#Paper"/>
+        <owl:disjointWith rdf:resource="http://edas#Person"/>
+        <owl:disjointWith rdf:resource="http://edas#Place"/>
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#ConferenceChair -->
+
+    <owl:Class rdf:about="http://edas#ConferenceChair">
+        <rdfs:subClassOf rdf:resource="http://edas#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#ConferenceEvent -->
+
+    <owl:Class rdf:about="http://edas#ConferenceEvent">
+        <owl:disjointWith rdf:resource="http://edas#ConferenceSession"/>
+        <owl:disjointWith rdf:resource="http://edas#Country"/>
+        <owl:disjointWith rdf:resource="http://edas#Document"/>
+        <owl:disjointWith rdf:resource="http://edas#Person"/>
+        <owl:disjointWith rdf:resource="http://edas#Place"/>
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#ConferenceSession -->
+
+    <owl:Class rdf:about="http://edas#ConferenceSession">
+        <owl:disjointWith rdf:resource="http://edas#Country"/>
+        <owl:disjointWith rdf:resource="http://edas#Document"/>
+        <owl:disjointWith rdf:resource="http://edas#Person"/>
+        <owl:disjointWith rdf:resource="http://edas#Place"/>
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Country -->
+
+    <owl:Class rdf:about="http://edas#Country">
+        <owl:disjointWith rdf:resource="http://edas#Document"/>
+        <owl:disjointWith rdf:resource="http://edas#Person"/>
+        <owl:disjointWith rdf:resource="http://edas#Place"/>
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Document -->
+
+    <owl:Class rdf:about="http://edas#Document">
+        <owl:disjointWith rdf:resource="http://edas#Person"/>
+        <owl:disjointWith rdf:resource="http://edas#Place"/>
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#FreeTimeBreak -->
+
+    <owl:Class rdf:about="http://edas#FreeTimeBreak">
+        <rdfs:subClassOf rdf:resource="http://edas#BreakEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#MealBreak -->
+
+    <owl:Class rdf:about="http://edas#MealBreak">
+        <rdfs:subClassOf rdf:resource="http://edas#BreakEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#NonAcademicEvent -->
+
+    <owl:Class rdf:about="http://edas#NonAcademicEvent">
+        <rdfs:subClassOf rdf:resource="http://edas#ConferenceEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Paper -->
+
+    <owl:Class rdf:about="http://edas#Paper">
+        <rdfs:subClassOf rdf:resource="http://edas#Document"/>
+        <owl:disjointWith rdf:resource="http://edas#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Person -->
+
+    <owl:Class rdf:about="http://edas#Person">
+        <owl:disjointWith rdf:resource="http://edas#Place"/>
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Place -->
+
+    <owl:Class rdf:about="http://edas#Place">
+        <owl:disjointWith rdf:resource="http://edas#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Review -->
+
+    <owl:Class rdf:about="http://edas#Review">
+        <rdfs:subClassOf rdf:resource="http://edas#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Reviewer -->
+
+    <owl:Class rdf:about="http://edas#Reviewer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edas#isReviewing"/>
+                        <owl:someValuesFrom rdf:resource="http://edas#Paper"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#SessionChair -->
+
+    <owl:Class rdf:about="http://edas#SessionChair">
+        <rdfs:subClassOf rdf:resource="http://edas#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#SingleLevelConference -->
+
+    <owl:Class rdf:about="http://edas#SingleLevelConference">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#Conference"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://edas#TwoLevelConference"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edas#hasMember"/>
+                        <owl:allValuesFrom rdf:resource="http://edas#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#TPCMember -->
+
+    <owl:Class rdf:about="http://edas#TPCMember">
+        <rdfs:subClassOf rdf:resource="http://edas#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edas#Topic -->
+
+    <owl:Class rdf:about="http://edas#Topic"/>
+    
+
+
+    <!-- http://edas#TwoLevelConference -->
+
+    <owl:Class rdf:about="http://edas#TwoLevelConference">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://edas#Conference"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edas#hasMember"/>
+                        <owl:someValuesFrom rdf:resource="http://edas#TPCMember"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://edas#hasMember"/>
+                        <owl:allValuesFrom rdf:resource="http://edas#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

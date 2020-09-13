@@ -1,0 +1,14 @@
+http://cmt#Reviewer|http://conference#Review|<|0.7|CLS
+http://cmt#ConferenceChair|http://conference#Conference_volume|<|0.7|CLS
+http://cmt#ProgramCommittee|http://conference#Organizing_committee|<|0.7|CLS
+http://cmt#ConferenceMember|http://conference#Conference_volume|<|0.7|CLS
+http://cmt#Review|http://conference#Reviewer|>|0.7|CLS
+http://cmt#ConferenceChair|http://conference#Conference_document|<|0.7|CLS
+http://cmt#ConferenceChair|http://conference#Conference_contribution|<|0.7|CLS
+http://cmt#PaperAbstract|http://conference#Extended_abstract|>|0.7|CLS
+http://cmt#ConferenceMember|http://conference#Conference_document|<|0.7|CLS
+http://cmt#ProgramCommittee|http://conference#Steering_committee|<|0.7|CLS
+http://cmt#ProgramCommittee|http://conference#Committee|>|0.7|CLS
+http://cmt#ProgramCommittee|http://conference#Committee_member|<|0.7|CLS
+http://cmt#ConferenceMember|http://conference#Conference_contribution|>|0.7|CLS
+http://cmt#PaperAbstract|http://conference#Abstract|<|0.7|CLS

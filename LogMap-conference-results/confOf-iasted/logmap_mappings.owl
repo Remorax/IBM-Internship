@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xml:base="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"
+     xmlns:mappings="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://confOf#Author -->
+
+    <owl:Class rdf:about="http://confOf#Author">
+        <owl:equivalentClass rdf:resource="http://iasted#Author"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#Author"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Author"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#Author</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Author</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.754</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://confOf#City -->
+
+    <owl:Class rdf:about="http://confOf#City">
+        <owl:equivalentClass rdf:resource="http://iasted#City"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#City"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#City"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#City</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#City</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://confOf#Person -->
+
+    <owl:Class rdf:about="http://confOf#Person">
+        <owl:equivalentClass rdf:resource="http://iasted#Person"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#Person"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Person"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#Person</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Person</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.772</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://confOf#Tutorial -->
+
+    <owl:Class rdf:about="http://confOf#Tutorial">
+        <owl:equivalentClass rdf:resource="http://iasted#Tutorial"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#Tutorial"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Tutorial"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#Tutorial</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Tutorial</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Author -->
+
+    <owl:Class rdf:about="http://iasted#Author"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#Author"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Author"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#Author</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Author</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.754</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#City -->
+
+    <owl:Class rdf:about="http://iasted#City"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#City"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#City"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#City</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#City</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Person -->
+
+    <owl:Class rdf:about="http://iasted#Person"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#Person"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Person"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#Person</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Person</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.772</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Tutorial -->
+
+    <owl:Class rdf:about="http://iasted#Tutorial"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://confOf#Tutorial"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Tutorial"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://confOf#Tutorial</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Tutorial</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

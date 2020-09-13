@@ -1,0 +1,12 @@
+http://cmt#Review|http://conference#Review|=|0.82|CLS
+http://cmt#Paper|http://conference#Paper|=|0.75|CLS
+http://cmt#Reviewer|http://conference#Reviewer|=|0.82|CLS
+http://cmt#AssociatedChair|http://conference#Chair|=|0.54|CLS
+http://cmt#Co-author|http://conference#Contribution_co-author|=|0.75|CLS
+http://cmt#email|http://conference#has_an_email|=|0.83|DPROP
+http://cmt#Document|http://conference#Conference_document|=|0.52|CLS
+http://cmt#Conference|http://conference#Conference|=|0.7|CLS
+http://cmt#ProgramCommittee|http://conference#Program_committee|=|0.7|CLS
+http://cmt#ProgramCommitteeMember|http://conference#Committee_member|=|0.67|CLS
+http://cmt#Preference|http://conference#Review_preference|=|0.49|CLS
+http://cmt#Person|http://conference#Person|=|0.84|CLS

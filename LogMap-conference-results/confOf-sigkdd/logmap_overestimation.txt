@@ -1,0 +1,11 @@
+http://confOf#Reviewing_event|http://sigkdd#Review|=|0.4|CLS
+http://confOf#Short_paper|http://sigkdd#Author_of_paper|>|0.2|CLS
+http://confOf#Organization|http://sigkdd#Organizator|<|0.2|CLS
+http://confOf#Paper|http://sigkdd#Paper|=|0.8|CLS
+http://confOf#Chair_PC|http://sigkdd#General_Chair|=|0.4|CLS
+http://confOf#Person|http://sigkdd#Person|=|1.0|CLS
+http://confOf#Author|http://sigkdd#Author|=|1.0|CLS
+http://confOf#Chair_PC|http://sigkdd#Program_Chair|=|0.4|CLS
+http://confOf#Conference|http://sigkdd#Conference|=|1.0|CLS
+http://confOf#hasEmail|http://sigkdd#E-mail|=|0.8|DPROP
+http://confOf#Student|http://sigkdd#Registration_Student|=|0.4|CLS

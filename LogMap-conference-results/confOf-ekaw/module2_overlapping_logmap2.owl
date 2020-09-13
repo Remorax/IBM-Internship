@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(http://ekaw)#"
+     xml:base="Optional.of(http://ekaw)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(http://ekaw)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ekaw#Academic_Institution -->
+
+    <owl:Class rdf:about="http://ekaw#Academic_Institution">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Conference -->
+
+    <owl:Class rdf:about="http://ekaw#Conference">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Scientific_Event"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Social_Event"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Tutorial"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Workshop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Conference_Banquet -->
+
+    <owl:Class rdf:about="http://ekaw#Conference_Banquet">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Social_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Conference_Participant -->
+
+    <owl:Class rdf:about="http://ekaw#Conference_Participant">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Conference_Trip -->
+
+    <owl:Class rdf:about="http://ekaw#Conference_Trip">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Social_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Document -->
+
+    <owl:Class rdf:about="http://ekaw#Document">
+        <owl:disjointWith rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Event -->
+
+    <owl:Class rdf:about="http://ekaw#Event">
+        <owl:disjointWith rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Individual_Presentation -->
+
+    <owl:Class rdf:about="http://ekaw#Individual_Presentation">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Scientific_Event"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Workshop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#OC_Member -->
+
+    <owl:Class rdf:about="http://ekaw#OC_Member">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Conference_Participant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Organisation -->
+
+    <owl:Class rdf:about="http://ekaw#Organisation">
+        <owl:disjointWith rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#PC_Chair -->
+
+    <owl:Class rdf:about="http://ekaw#PC_Chair">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Conference_Participant"/>
+        <rdfs:subClassOf rdf:resource="http://ekaw#PC_Member"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#PC_Member -->
+
+    <owl:Class rdf:about="http://ekaw#PC_Member">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Possible_Reviewer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Paper -->
+
+    <owl:Class rdf:about="http://ekaw#Paper">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Paper_Author -->
+
+    <owl:Class rdf:about="http://ekaw#Paper_Author">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Person -->
+
+    <owl:Class rdf:about="http://ekaw#Person"/>
+    
+
+
+    <!-- http://ekaw#Possible_Reviewer -->
+
+    <owl:Class rdf:about="http://ekaw#Possible_Reviewer">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#SC_Member -->
+
+    <owl:Class rdf:about="http://ekaw#SC_Member">
+        <rdfs:subClassOf rdf:resource="http://ekaw#PC_Member"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Scientific_Event -->
+
+    <owl:Class rdf:about="http://ekaw#Scientific_Event">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Social_Event -->
+
+    <owl:Class rdf:about="http://ekaw#Social_Event">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Event"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Tutorial"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Workshop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Student -->
+
+    <owl:Class rdf:about="http://ekaw#Student">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Tutorial -->
+
+    <owl:Class rdf:about="http://ekaw#Tutorial">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Individual_Presentation"/>
+        <owl:disjointWith rdf:resource="http://ekaw#Workshop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#University -->
+
+    <owl:Class rdf:about="http://ekaw#University">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Academic_Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ekaw#Workshop -->
+
+    <owl:Class rdf:about="http://ekaw#Workshop">
+        <rdfs:subClassOf rdf:resource="http://ekaw#Scientific_Event"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

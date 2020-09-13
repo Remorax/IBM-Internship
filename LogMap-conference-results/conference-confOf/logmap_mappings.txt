@@ -1,0 +1,14 @@
+http://conference#Conference_contribution|http://confOf#Contribution|=|0.62|CLS
+http://conference#Topic|http://confOf#Topic|=|0.7|CLS
+http://conference#Conference_participant|http://confOf#Participant|=|0.59|CLS
+http://conference#Poster|http://confOf#Poster|=|1.02|CLS
+http://conference#has_the_first_name|http://confOf#hasFirstName|=|0.92|DPROP
+http://conference#Chair|http://confOf#Chair_PC|=|0.79|CLS
+http://conference#Organization|http://confOf#Organization|=|0.7|CLS
+http://conference#Paper|http://confOf#Paper|=|1.08|CLS
+http://conference#Tutorial|http://confOf#Tutorial|=|0.5|CLS
+http://conference#Conference|http://confOf#Conference|=|0.5|CLS
+http://conference#Committee_member|http://confOf#Member|=|0.59|CLS
+http://conference#Person|http://confOf#Person|=|0.8|CLS
+http://conference#Workshop|http://confOf#Workshop|=|0.5|CLS
+http://conference#has_an_email|http://confOf#hasEmail|=|0.92|DPROP

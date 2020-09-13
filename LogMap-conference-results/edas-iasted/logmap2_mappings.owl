@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xml:base="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"
+     xmlns:mappings="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://edas#Author -->
+
+    <owl:Class rdf:about="http://edas#Author">
+        <owl:equivalentClass rdf:resource="http://iasted#Author"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Author"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Author"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Author</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Author</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7989999999999999</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#CoffeeBreak -->
+
+    <owl:Class rdf:about="http://edas#CoffeeBreak">
+        <owl:equivalentClass rdf:resource="http://iasted#Coffee_break"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#CoffeeBreak"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Coffee_break"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#CoffeeBreak</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Coffee_break</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.853</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#Document -->
+
+    <owl:Class rdf:about="http://edas#Document">
+        <owl:equivalentClass rdf:resource="http://iasted#Document"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Document"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Document"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Document</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Document</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7210000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#Person -->
+
+    <owl:Class rdf:about="http://edas#Person">
+        <owl:equivalentClass rdf:resource="http://iasted#Person"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Person"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Person"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Person</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Person</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.808</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#Place -->
+
+    <owl:Class rdf:about="http://edas#Place">
+        <owl:equivalentClass rdf:resource="http://iasted#Place"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Place"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Place"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Place</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Place</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#Review -->
+
+    <owl:Class rdf:about="http://edas#Review">
+        <owl:equivalentClass rdf:resource="http://iasted#Review"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Review"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Review"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Review</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Review</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.901</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#Reviewer -->
+
+    <owl:Class rdf:about="http://edas#Reviewer">
+        <owl:equivalentClass rdf:resource="http://iasted#Reviewer"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Reviewer"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Reviewer"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Reviewer</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Reviewer</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8500000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://edas#SessionChair -->
+
+    <owl:Class rdf:about="http://edas#SessionChair">
+        <owl:equivalentClass rdf:resource="http://iasted#Session_chair"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#SessionChair"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Session_chair"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#SessionChair</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Session_chair</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8350000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Author -->
+
+    <owl:Class rdf:about="http://iasted#Author"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Author"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Author"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Author</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Author</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7989999999999999</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Coffee_break -->
+
+    <owl:Class rdf:about="http://iasted#Coffee_break"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#CoffeeBreak"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Coffee_break"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#CoffeeBreak</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Coffee_break</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.853</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Document -->
+
+    <owl:Class rdf:about="http://iasted#Document"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Document"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Document"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Document</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Document</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7210000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Person -->
+
+    <owl:Class rdf:about="http://iasted#Person"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Person"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Person"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Person</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Person</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.808</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Place -->
+
+    <owl:Class rdf:about="http://iasted#Place"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Place"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Place"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Place</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Place</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Review -->
+
+    <owl:Class rdf:about="http://iasted#Review"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Review"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Review"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Review</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Review</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.901</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Reviewer -->
+
+    <owl:Class rdf:about="http://iasted#Reviewer"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#Reviewer"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Reviewer"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#Reviewer</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Reviewer</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8500000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+    
+
+
+    <!-- http://iasted#Session_chair -->
+
+    <owl:Class rdf:about="http://iasted#Session_chair"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://edas#SessionChair"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="http://iasted#Session_chair"/>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://edas#SessionChair</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iasted#Session_chair</entity2>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8350000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

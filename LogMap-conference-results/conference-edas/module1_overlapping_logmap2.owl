@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(http://conference)#"
+     xml:base="Optional.of(http://conference)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(http://conference)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://conference#Accepted_contribution -->
+
+    <owl:Class rdf:about="http://conference#Accepted_contribution">
+        <rdfs:subClassOf rdf:resource="http://conference#Reviewed_contribution"/>
+        <owl:disjointWith rdf:resource="http://conference#Rejected_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Conference -->
+
+    <owl:Class rdf:about="http://conference#Conference"/>
+    
+
+
+    <!-- http://conference#Conference_contribution -->
+
+    <owl:Class rdf:about="http://conference#Conference_contribution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://conference#Invited_talk"/>
+                    <rdf:Description rdf:about="http://conference#Poster"/>
+                    <rdf:Description rdf:about="http://conference#Regular_contribution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://conference#Presentation"/>
+                    <rdf:Description rdf:about="http://conference#Written_contribution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://conference#Conference_document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Conference_document -->
+
+    <owl:Class rdf:about="http://conference#Conference_document"/>
+    
+
+
+    <!-- http://conference#Conference_part -->
+
+    <owl:Class rdf:about="http://conference#Conference_part"/>
+    
+
+
+    <!-- http://conference#Extended_abstract -->
+
+    <owl:Class rdf:about="http://conference#Extended_abstract">
+        <rdfs:subClassOf rdf:resource="http://conference#Regular_contribution"/>
+        <owl:disjointWith rdf:resource="http://conference#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Invited_talk -->
+
+    <owl:Class rdf:about="http://conference#Invited_talk">
+        <rdfs:subClassOf rdf:resource="http://conference#Presentation"/>
+        <owl:disjointWith rdf:resource="http://conference#Poster"/>
+        <owl:disjointWith rdf:resource="http://conference#Regular_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Organization -->
+
+    <owl:Class rdf:about="http://conference#Organization"/>
+    
+
+
+    <!-- http://conference#Paper -->
+
+    <owl:Class rdf:about="http://conference#Paper">
+        <rdfs:subClassOf rdf:resource="http://conference#Regular_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Person -->
+
+    <owl:Class rdf:about="http://conference#Person"/>
+    
+
+
+    <!-- http://conference#Poster -->
+
+    <owl:Class rdf:about="http://conference#Poster">
+        <rdfs:subClassOf rdf:resource="http://conference#Conference_contribution"/>
+        <owl:disjointWith rdf:resource="http://conference#Regular_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Presentation -->
+
+    <owl:Class rdf:about="http://conference#Presentation">
+        <rdfs:subClassOf rdf:resource="http://conference#Conference_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Regular_contribution -->
+
+    <owl:Class rdf:about="http://conference#Regular_contribution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://conference#Extended_abstract"/>
+                    <rdf:Description rdf:about="http://conference#Paper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://conference#Written_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Rejected_contribution -->
+
+    <owl:Class rdf:about="http://conference#Rejected_contribution">
+        <rdfs:subClassOf rdf:resource="http://conference#Reviewed_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Review -->
+
+    <owl:Class rdf:about="http://conference#Review">
+        <rdfs:subClassOf rdf:resource="http://conference#Conference_document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Reviewed_contribution -->
+
+    <owl:Class rdf:about="http://conference#Reviewed_contribution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://conference#Accepted_contribution"/>
+                    <rdf:Description rdf:about="http://conference#Rejected_contribution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://conference#Submitted_contribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Reviewer -->
+
+    <owl:Class rdf:about="http://conference#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://conference#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Submitted_contribution -->
+
+    <owl:Class rdf:about="http://conference#Submitted_contribution">
+        <rdfs:subClassOf rdf:resource="http://conference#Written_contribution"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://conference#Poster"/>
+                    <rdf:Description rdf:about="http://conference#Regular_contribution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Topic -->
+
+    <owl:Class rdf:about="http://conference#Topic"/>
+    
+
+
+    <!-- http://conference#Workshop -->
+
+    <owl:Class rdf:about="http://conference#Workshop">
+        <rdfs:subClassOf rdf:resource="http://conference#Conference_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://conference#Written_contribution -->
+
+    <owl:Class rdf:about="http://conference#Written_contribution">
+        <rdfs:subClassOf rdf:resource="http://conference#Conference_contribution"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://conference#Poster"/>
+                    <rdf:Description rdf:about="http://conference#Regular_contribution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
