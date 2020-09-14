@@ -2,8 +2,8 @@
 
 # Train on AML conference + German dataset 
 
-max_paths=(3 5 7 12 18 21 24 26)
-max_pathlens=(1 3 4 6 8)
+max_paths=(7 18)
+max_pathlens=(3 6)
 thresholds=(0.6 0.6075 0.612 0.627 0.66 0.666 0.694 0.735)
 
 for max_pathlen in "${max_pathlens[@]}";
@@ -20,7 +20,7 @@ done
 # max_paths=(3 5 7 12 18 21 24 26)
 max_paths=(7 18)
 # max_pathlens=(1 3 4 6 8)
-max_pathlens=(3 6 8)
+max_pathlens=(3 6)
 # thresholds=(0.29 0.47 0.49 0.51 0.54 0.62 0.7 0.71 0.666 0.694 0.735)
 thresholds=(0.29 0.5 0.51 0.69 0.7 0.74 0.75 0.77 0.78 0.79 0.8 0.82 0.83)
 
