@@ -329,6 +329,10 @@ torch.set_default_dtype(torch.float64)
 torch.manual_seed(0)
 np.random.seed(0)
 
+data_items = data.items()
+np.random.shuffle(list(data_items))
+data = OrderedDict(data_items)
+
 print ("Number of entities:", len(data))
 
 all_metrics = []
