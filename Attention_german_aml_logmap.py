@@ -17,11 +17,12 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[1], "rb")
-data_conf, data_german, aml_data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
+data_conf, data_german, aml_data, logmap_data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
 max_paths = int(sys.argv[2])
 max_pathlen = int(sys.argv[3])
-threshold = float(sys.argv[4])
-aml_data = {key: float(aml_data[key])>=threshold for key in aml_data}
+aml_threshold = float(sys.argv[4])
+logmap_threshold = float(sys.argv[5])
+aml_data = {key: (float(aml_data[key])>=aml_threshold) or (float(logmap_data[key])>=logmap_threshold) for key in aml_data}
 flatten = lambda l: [item for sublist in l for item in sublist]
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 
@@ -456,7 +457,7 @@ threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_result
 model.threshold = threshold
 
 # def check_best_performance():
-#     output_file = "Results/Output_att*" + "_".join(sys.argv[6].split("/")[1].split("_")[:4]) + ".txt"
+#     output_file = "Results/Output_att*" + "_".join(sys.argv[7].split("/")[1].split("_")[:4]) + ".txt"
 #     results_lines = [[l for l in open(file).read().split("\n") if "Final Results:" in l] for file in glob.glob(output_file)]
 #     results_lines = [line[0] for line in results_lines if line]
 #     results_lines = [line.split("[")[1].split("]")[0].split(" ") for line in results_lines]
@@ -475,15 +476,10 @@ final_results.append(test())
 all_metrics, all_fn, all_fp = calculate_performance()
 final_results = np.mean(all_metrics, axis=0)
 
-# if float(final_results[2]) > check_best_performance():
-# Remove unneccessary models
-# _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[6].split("_")[:4]) + "*.pt")]
-# Remove unneccessary error files
-# _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
-# Save model
-torch.save(model.state_dict(), sys.argv[6])
+
+torch.save(model.state_dict(), sys.argv[7])
 #Save error file
-f1 = open(sys.argv[5], "wb")
+f1 = open(sys.argv[6], "wb")
 pickle.dump([all_fn, all_fp], f1)
 
 print ("Final Results: ", final_results)
