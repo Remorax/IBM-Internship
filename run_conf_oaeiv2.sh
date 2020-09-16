@@ -22,7 +22,7 @@ done
 max_paths=(3 13 21 26)
 max_pathlens=(5 8)
 aml_thresholds=(0.6075 0.612 0.735)
-logmap_thresholds=(0.51 0.82 0.83)
+logmap_thresholds=(0.29 0.51 0.83)
 
 for max_pathlen in "${max_pathlens[@]}";
 do
