@@ -341,6 +341,10 @@ data_items = aml_data.items()
 np.random.shuffle(list(data_items))
 aml_data = OrderedDict(data_items)
 
+torch.manual_seed(0)
+np.random.seed(0)
+random.seed(0)
+
 print ("Number of entities:", len(aml_data))
 lr = 0.001
 num_epochs = 50
@@ -451,13 +455,13 @@ threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_result
 
 model.threshold = threshold
 
-def check_best_performance():
-    output_file = "Results/Output_att*" + "_".join(sys.argv[6].split("/")[1].split("_")[:4]) + ".txt"
-    results_lines = [[l for l in open(file).read().split("\n") if "Final Results:" in l] for file in glob.glob(output_file)]
-    results_lines = [line[0] for line in results_lines if line]
-    results_lines = [line.split("[")[1].split("]")[0].split(" ") for line in results_lines]
-    results_lines = [float([value for value in line if value][2]) for line in results_lines]
-    return max(results_lines)
+# def check_best_performance():
+#     output_file = "Results/Output_att*" + "_".join(sys.argv[6].split("/")[1].split("_")[:4]) + ".txt"
+#     results_lines = [[l for l in open(file).read().split("\n") if "Final Results:" in l] for file in glob.glob(output_file)]
+#     results_lines = [line[0] for line in results_lines if line]
+#     results_lines = [line.split("[")[1].split("]")[0].split(" ") for line in results_lines]
+#     results_lines = [float([value for value in line if value][2]) for line in results_lines]
+#     return max(results_lines)
 model.eval()
 
 test_onto = ontologies_in_alignment
@@ -471,16 +475,16 @@ final_results.append(test())
 all_metrics, all_fn, all_fp = calculate_performance()
 final_results = np.mean(all_metrics, axis=0)
 
-if float(final_results[2]) > check_best_performance():
-    # Remove unneccessary models
-    # _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[6].split("_")[:4]) + "*.pt")]
-    # Remove unneccessary error files
-    # _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
-    # Save model
-    torch.save(model.state_dict(), sys.argv[6])
-    #Save error file
-    f1 = open(sys.argv[5], "wb")
-    pickle.dump([all_fn, all_fp], f1)
+# if float(final_results[2]) > check_best_performance():
+# Remove unneccessary models
+# _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[6].split("_")[:4]) + "*.pt")]
+# Remove unneccessary error files
+# _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
+# Save model
+torch.save(model.state_dict(), sys.argv[6])
+#Save error file
+f1 = open(sys.argv[5], "wb")
+pickle.dump([all_fn, all_fp], f1)
 
 print ("Final Results: ", final_results)
 print ("Threshold: ", threshold)
