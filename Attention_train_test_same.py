@@ -1,4 +1,4 @@
-import os, itertools, time, pickle, operator, random
+import os, itertools, time, pickle, operator
 import subprocess
 from xml.dom import minidom
 from collections import Counter, OrderedDict
@@ -6,7 +6,7 @@ from operator import itemgetter
 from scipy import spatial
 from sklearn.metrics import precision_score, accuracy_score, recall_score, f1_score
 from sklearn.feature_extraction.text import TfidfVectorizer
-import re, sys, glob
+import re, sys
 import numpy as np
 import scipy.sparse as sp
 import torch
@@ -16,14 +16,10 @@ import torch.nn.functional as F
 from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
-f = open(sys.argv[1], "rb")
-data_conf, data_german, aml_data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
-max_paths = int(sys.argv[2])
-max_pathlen = int(sys.argv[3])
-threshold = float(sys.argv[4])
-aml_data = {key: float(aml_data[key])>=threshold for key in aml_data}
-flatten = lambda l: [item for sublist in l for item in sublist]
+f = open(sys.argv[3], "rb")
+data, emb_indexer, emb_indexer_inv, emb_vals, gt_mappings, features_dict, ontologies_in_alignment = pickle.load(f)
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
+flatten = lambda l: [item for sublist in l for item in sublist]
 
 direct_inputs, direct_targets = [], []
 
@@ -35,7 +31,7 @@ all_fn, all_fp = [], []
 threshold_results = {}
 
 def test():
-    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, all_metrics, direct_inputs, direct_targets, threshold_results
+    global batch_size, test_data_t, test_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()    
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -51,9 +47,10 @@ def test():
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        all_inp = list(zip(inputs_all, targets_all, nodes_all))
-        all_inp_shuffled = random.sample(all_inp, len(all_inp))
-        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+        indices_all = np.random.permutation(len(inputs_all))
+        inputs_all = np.array(inputs_all)[indices_all]
+        targets_all = np.array(targets_all)[indices_all]
+        nodes_all = np.array(nodes_all)[indices_all]
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -61,9 +58,9 @@ def test():
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
 
-            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-            targets = np.array(targets_all[batch_start: batch_end])
-            nodes = np.array(nodes_all[batch_start: batch_end])
+            inputs = inputs_all[batch_start: batch_end]
+            targets = targets_all[batch_start: batch_end]
+            nodes = nodes_all[batch_start: batch_end]
             
             inp_elems = torch.LongTensor(inputs).to(device)
             node_elems = torch.LongTensor(nodes).to(device)
@@ -91,7 +88,7 @@ def test():
     return (test_onto, all_results)
 
 def optimize_threshold():
-    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, all_metrics, direct_inputs, direct_targets, threshold_results
+    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, gt_mappings, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
@@ -107,9 +104,10 @@ def optimize_threshold():
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
         
-        all_inp = list(zip(inputs_all, targets_all, nodes_all))
-        all_inp_shuffled = random.sample(all_inp, len(all_inp))
-        inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+        indices_all = np.random.permutation(len(inputs_all))
+        inputs_all = np.array(inputs_all)[indices_all]
+        nodes_all = np.array(nodes_all)[indices_all]
+        targets_all = np.array(targets_all)[indices_all]
 
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -117,9 +115,9 @@ def optimize_threshold():
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
 
-            inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-            targets = np.array(targets_all[batch_start: batch_end])
-            nodes = np.array(nodes_all[batch_start: batch_end])
+            inputs = inputs_all[batch_start: batch_end]
+            nodes = nodes_all[batch_start: batch_end]
+            targets = targets_all[batch_start: batch_end]
             
             inp_elems = torch.LongTensor(inputs).to(device)
             node_elems = torch.LongTensor(nodes).to(device)
@@ -154,8 +152,7 @@ def optimize_threshold():
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
-            s = set(res)
-            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in s and not is_valid(val_onto, key)]
+            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in set(res) and not is_valid(val_onto, key)]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
@@ -190,8 +187,7 @@ def calculate_performance():
         for i,key in enumerate(all_results):
             if all_results[key][0] > threshold:
                 res.append(key)
-        s = set(res)
-        fn_list = [(key, all_results[key][0]) for key in test_data_t if key not in s and not is_valid(test_onto, key)]
+        fn_list = [(key, all_results[key][0]) for key in gt_mappings if key not in set(res) and not is_valid(test_onto, key)]
         fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
         tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
         tp, fn, fp = len(tp_list), len(fn_list), len(fp_list)
@@ -218,16 +214,15 @@ def masked_softmax(inp):
     return (inp + mask).softmax(dim=-1)
 
 class SiameseNetwork(nn.Module):
-    def __init__(self, emb_vals, threshold=0.9):
+    def __init__(self):
         super().__init__() 
         
-        self.n_neighbours = max_types
-        self.max_paths = max_paths
-        self.max_pathlen = max_pathlen
+        self.features_arr = np.array(list(features_dict.values()))
+        self.n_neighbours = self.features_arr.shape[1]
+        self.max_paths = self.features_arr.shape[2]
+        self.max_pathlen = self.features_arr.shape[3]
         self.embedding_dim = np.array(emb_vals).shape[1]
         
-        self.threshold = threshold
-
         self.name_embedding = nn.Embedding(len(emb_vals), self.embedding_dim)
         self.name_embedding.load_state_dict({'weight': torch.from_numpy(np.array(emb_vals))})
         self.name_embedding.weight.requires_grad = False
@@ -289,29 +284,13 @@ def is_valid(test_onto, key):
     return tuple([el.split("#")[0] for el in key]) not in test_onto
 
 def generate_data_neighbourless(elem_tuple):
-    return [emb_indexer[elem] for elem in elem_tuple]
+    return np.vectorize(embedify)(elem_tuple)
 
-def embedify(seq, emb_indexer):
-    for item in seq:
-        if isinstance(item, list):
-            yield list(embedify(item, emb_indexer))
-        else:
-            yield emb_indexer[item]
+def embedify(elem):
+    return emb_indexer[elem]
 
 def generate_data(elem_tuple):
-    return list(embedify([neighbours_dicts[elem] for elem in elem_tuple], emb_indexer))
-
-def to_feature(inputs):
-    inputs_lenpadded = [[[[path[:max_pathlen] + [0 for i in range(max_pathlen -len(path[:max_pathlen]))]
-                                    for path in nbr_type[:max_paths]]
-                                for nbr_type in ent[:max_types]]
-                            for ent in elem]
-                        for elem in inputs]
-    inputs_pathpadded = [[[nbr_type + [[0 for j in range(max_pathlen)]
-                             for i in range(max_paths - len(nbr_type))]
-                            for nbr_type in ent] for ent in elem]
-                        for elem in inputs_lenpadded]
-    return inputs_pathpadded
+    return np.vectorize(embedify)([features_dict[elem] for elem in elem_tuple])
 
 def generate_input(elems, target):
     inputs, targets, nodes = [], [], []
@@ -324,42 +303,47 @@ def generate_input(elems, target):
         except:
             direct_inputs.append(generate_data_neighbourless(elem))
             direct_targets.append(target)
-    return inputs, nodes, targets
+    return np.array(inputs), np.array(nodes), np.array(targets)
 
 print("Max number of nodes in a path: " + str(sys.argv[1]))
 
 def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
+features_dict = {elem: features_dict[elem][:,:int(sys.argv[2]),:int(sys.argv[1])] for elem in features_dict}
 
-torch.set_default_dtype(torch.float64)
-data_items = aml_data.items()
+data_items = data.items()
 np.random.shuffle(list(data_items))
-aml_data = OrderedDict(data_items)
+data = OrderedDict(data_items)
 
-torch.manual_seed(0)
-np.random.seed(0)
-random.seed(0)
+print ("Number of entities:", len(data))
 
-print ("Number of entities:", len(aml_data))
+all_metrics = []
+final_results = []
+    
+train_data = data
+val_data = data
+test_data = data
+torch.set_default_dtype(torch.float64)
+
+train_data_t = [key for key in train_data if train_data[key]]
+train_data_f = [key for key in train_data if not train_data[key]]
+train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
+train_data_t = train_data_t[:len(train_data_f)].tolist()
+#train_data_f = train_data_f[:int(len(train_data_t))]
+#     [:int(0.1*(len(train_data) - len(train_data_t)) )]
+np.random.shuffle(train_data_f)
+
 lr = 0.001
 num_epochs = 50
 weight_decay = 0.001
 batch_size = 32
 dropout = 0.3
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-all_metrics = []
-final_results = []
 
-model = SiameseNetwork(emb_vals).to(device)
-print (model.threshold)
+model = SiameseNetwork().to(device)
+
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
-
-train_data_t = [key for key in data_german if data_german[key]]
-train_data_f = [key for key in data_german if not data_german[key]]
-np.random.shuffle(train_data_f)
-train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-train_data_t = train_data_t[:len(train_data_f)].tolist()
 
 for epoch in range(num_epochs):
     inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
@@ -368,9 +352,10 @@ for epoch in range(num_epochs):
     targets_all = list(targets_pos) + list(targets_neg)
     nodes_all = list(nodes_pos) + list(nodes_neg)
     
-    all_inp = list(zip(inputs_all, targets_all, nodes_all))
-    all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
+    indices_all = np.random.permutation(len(inputs_all))
+    inputs_all = np.array(inputs_all)[indices_all]
+    targets_all = np.array(targets_all)[indices_all]
+    nodes_all = np.array(nodes_all)[indices_all]
 
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
@@ -379,16 +364,17 @@ for epoch in range(num_epochs):
         batch_start = batch_idx * batch_size
         batch_end = (batch_idx+1) * batch_size
         
-        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-        targets = np.array(targets_all[batch_start: batch_end])
-        nodes = np.array(nodes_all[batch_start: batch_end])
+        inputs = inputs_all[batch_start: batch_end]
+        targets = targets_all[batch_start: batch_end]
+        nodes = nodes_all[batch_start: batch_end]
         
         inp_elems = torch.LongTensor(inputs).to(device)
-        targ_elems = torch.DoubleTensor(targets).to(device)
         node_elems = torch.LongTensor(nodes).to(device)
+        targ_elems = torch.DoubleTensor(targets).to(device)
 
         optimizer.zero_grad()
         outputs = model(node_elems, inp_elems)
+
         loss = F.mse_loss(outputs, targ_elems)
         loss.backward()
         optimizer.step()
@@ -396,92 +382,23 @@ for epoch in range(num_epochs):
         if batch_idx%5000 == 0:
             print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
-train_data_t = [key for key in aml_data if aml_data[key]]
-train_data_f = [key for key in aml_data if not aml_data[key]]
-train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-train_data_t = train_data_t[:len(train_data_f)].tolist()
-np.random.shuffle(train_data_f)
-
-for epoch in range(num_epochs):
-    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
-    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
-    inputs_all = list(inputs_pos) + list(inputs_neg)
-    targets_all = list(targets_pos) + list(targets_neg)
-    nodes_all = list(nodes_pos) + list(nodes_neg)
-    
-    all_inp = list(zip(inputs_all, targets_all, nodes_all))
-    all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
-
-    batch_size = min(batch_size, len(inputs_all))
-    num_batches = int(ceil(len(inputs_all)/batch_size))
-
-    for batch_idx in range(num_batches):
-        batch_start = batch_idx * batch_size
-        batch_end = (batch_idx+1) * batch_size
-        
-        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-        targets = np.array(targets_all[batch_start: batch_end])
-        nodes = np.array(nodes_all[batch_start: batch_end])
-        
-        inp_elems = torch.LongTensor(inputs).to(device)
-        node_elems = torch.LongTensor(nodes).to(device)
-        targ_elems = torch.DoubleTensor(targets).to(device)
-
-        optimizer.zero_grad()
-        outputs = model(node_elems, inp_elems)
-
-        loss = F.mse_loss(outputs, targ_elems)
-        loss.backward()
-        optimizer.step()
-
-        if batch_idx%500 == 0:
-            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
-
-
-val_data_t = [key for key in aml_data if aml_data[key]]
-val_data_f = [key for key in aml_data if not aml_data[key]]
-np.random.shuffle(val_data_f)
-val_onto = ontologies_in_alignment
-
-optimize_threshold()
-
-threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
-threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
-
-model.threshold = threshold
-
-# def check_best_performance():
-#     output_file = "Results/Output_att*" + "_".join(sys.argv[6].split("/")[1].split("_")[:4]) + ".txt"
-#     results_lines = [[l for l in open(file).read().split("\n") if "Final Results:" in l] for file in glob.glob(output_file)]
-#     results_lines = [line[0] for line in results_lines if line]
-#     results_lines = [line.split("[")[1].split("]")[0].split(" ") for line in results_lines]
-#     results_lines = [float([value for value in line if value][2]) for line in results_lines]
-#     return max(results_lines)
 model.eval()
 
-test_onto = ontologies_in_alignment
-test_data = {elem: data_conf[elem] for elem in data_conf if tuple([el.split("#")[0] for el in elem]) in test_onto}
+val_data_t = [key for key in val_data if val_data[key]]
+val_data_f = [key for key in val_data if not val_data[key]]
+
+optimize_threshold()
 
 test_data_t = [key for key in test_data if test_data[key]]
 test_data_f = [key for key in test_data if not test_data[key]]
 
 final_results.append(test())
+sys.stdout.flush()
+
+threshold_results_mean = {el: np.mean(threshold_results[el], axis=0) for el in threshold_results}    
+threshold = max(threshold_results_mean.keys(), key=(lambda key: threshold_results_mean[key][2]))
 
 all_metrics, all_fn, all_fp = calculate_performance()
-final_results = np.mean(all_metrics, axis=0)
 
-# if float(final_results[2]) > check_best_performance():
-# Remove unneccessary models
-# _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[6].split("_")[:4]) + "*.pt")]
-# Remove unneccessary error files
-# _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
-# Save model
-torch.save(model.state_dict(), sys.argv[6])
-#Save error file
-f1 = open(sys.argv[5], "wb")
-pickle.dump([all_fn, all_fp], f1)
-
-print ("Final Results: ", final_results)
+print ("Final Results: " + str(np.mean(all_metrics, axis=0)))
 print ("Threshold: ", threshold)
-
