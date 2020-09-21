@@ -419,13 +419,14 @@ def count_non_unk(elem):
 
 
 torch.set_default_dtype(torch.float64)
-data_items = aml_data_ent.items()
-np.random.shuffle(list(data_items))
-aml_data_ent = OrderedDict(data_items)
 
 torch.manual_seed(0)
 np.random.seed(0)
 random.seed(0)
+
+data_items = aml_data_ent.items()
+np.random.shuffle(list(data_items))
+aml_data_ent = OrderedDict(data_items)
 
 print ("Number of entities:", len(aml_data_ent))
 lr = 0.001

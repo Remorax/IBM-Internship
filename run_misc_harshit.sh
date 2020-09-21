@@ -1,8 +1,8 @@
-# Experimenting with false negative percentages
+ # Experimenting with false negative percentages
 max_paths=(3 13 21)
 max_pathlens=(5 6 8)
 thresholds=(0.6075)
-false_negatives=(0.3 0.35 0.4 0.45 0.5)
+false_negatives=(0.55 0.6 0.65 0.7)
 
 for max_pathlen in "${max_pathlens[@]}";
 do
@@ -18,6 +18,3 @@ do
 		done
 	done
 done
-
-# Train and test on same
-jbsub -q x86_24h -mem 40g -require k80 -cores 1x1+1 -out "Results/Output_train_test_same.txt" python Attention_train_test_same.py Input/data_conf_oaei_german_aml_thresh.pkl 6 5 0.6075

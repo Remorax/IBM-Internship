@@ -332,14 +332,14 @@ def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
 
+torch.manual_seed(0)
+np.random.seed(0)
+random.seed(0)
+
 torch.set_default_dtype(torch.float64)
 data_items = aml_data.items()
 np.random.shuffle(list(data_items))
 aml_data = OrderedDict(data_items)
-
-torch.manual_seed(0)
-np.random.seed(0)
-random.seed(0)
 
 print ("Number of entities:", len(aml_data))
 lr = 0.001
