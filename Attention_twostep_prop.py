@@ -17,11 +17,13 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[1], "rb")
-data_ent, data_prop, aml_data_ent, aml_data_prop, data_german, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, neighbours_dicts_prop, ontologies_in_alignment = pickle.load(f)
+data_ent, data_prop, aml_data_ent, aml_data_prop, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, neighbours_dicts_prop, ontologies_in_alignment = pickle.load(f)
 max_types = 4
 max_paths = int(sys.argv[2])
 max_pathlen = int(sys.argv[3])
 threshold = float(sys.argv[4])
+fn_percentage1 = float(sys.argv[5])
+fn_percentage2 = float(sys.argv[6])
 
 aml_data_ent = {key: float(aml_data_ent[key])>=threshold for key in aml_data_ent}
 aml_data_prop = {key: float(aml_data_prop[key])>=threshold for key in aml_data_prop}
@@ -442,56 +444,18 @@ model = SiameseNetwork(emb_vals).to(device)
 print (model.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
-train_data_t = [key for key in data_german if data_german[key]]
-train_data_f = [key for key in data_german if not data_german[key]]
-np.random.shuffle(train_data_f)
-train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
-train_data_t = train_data_t[:len(train_data_f)].tolist()
-
-for epoch in range(num_epochs):
-    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1, neighbours_dicts)
-    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0, neighbours_dicts)
-
-    inputs_all = list(inputs_pos) + list(inputs_neg)
-    targets_all = list(targets_pos) + list(targets_neg)
-    nodes_all = list(nodes_pos) + list(nodes_neg)
-    
-    all_inp = list(zip(inputs_all, targets_all, nodes_all))
-    all_inp_shuffled = random.sample(all_inp, len(all_inp))
-    inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
-
-    batch_size = min(batch_size, len(inputs_all))
-    num_batches = int(ceil(len(inputs_all)/batch_size))
-
-    for batch_idx in range(num_batches):
-        batch_start = batch_idx * batch_size
-        batch_end = (batch_idx+1) * batch_size
-        
-        inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
-        targets = np.array(targets_all[batch_start: batch_end])
-        nodes = np.array(nodes_all[batch_start: batch_end])
-        
-        inp_elems = torch.LongTensor(inputs).to(device)
-        targ_elems = torch.DoubleTensor(targets).to(device)
-        node_elems = torch.LongTensor(nodes).to(device)
-
-        optimizer.zero_grad()
-        outputs = model(node_elems, inp_elems, torch.LongTensor([]), torch.LongTensor([]))
-        loss = F.mse_loss(outputs, targ_elems)
-        loss.backward()
-        optimizer.step()
-
-        if batch_idx%50 == 0:
-            print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
-
 train_data_t = [key for key in aml_data_ent if aml_data_ent[key]]
 train_data_f = [key for key in aml_data_ent if not aml_data_ent[key]]
+fn_len = int(fn_percentage1*len(train_data_f))
+train_data_f = train_data_f[:fn_len]
 train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
 train_data_t = train_data_t[:len(train_data_f)].tolist()
 np.random.shuffle(train_data_f)
 
 train_data_t_prop = [key for key in aml_data_prop if aml_data_prop[key]]
 train_data_f_prop = [key for key in aml_data_prop if not aml_data_prop[key]]
+fn_len = int(fn_percentage2*len(train_data_f_prop))
+train_data_f_prop = train_data_f_prop[:fn_len]
 train_data_t_prop = np.repeat(train_data_t_prop, ceil(len(train_data_f_prop)/len(train_data_t_prop)), axis=0)
 train_data_t_prop = train_data_t_prop[:len(train_data_f_prop)].tolist()
 np.random.shuffle(train_data_f_prop)
@@ -608,10 +572,7 @@ final_results = np.mean(all_metrics, axis=0)
 # Remove unneccessary error files
 # _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
 # Save model
-torch.save(model.state_dict(), sys.argv[6])
-#Save error file
-f1 = open(sys.argv[5], "wb")
-pickle.dump([all_fn, all_fp], f1)
+torch.save(model.state_dict(), sys.argv[7])
 
 print ("Final Results: ", final_results)
 print ("Threshold: ", threshold)
