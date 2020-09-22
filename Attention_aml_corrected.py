@@ -17,19 +17,11 @@ from math import ceil, exp
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 
 f = open(sys.argv[1], "rb")
-data_ent, data_prop, aml_data_ent, aml_data_prop, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, neighbours_dicts_prop, ontologies_in_alignment = pickle.load(f)
-max_types = 4
+data_conf, data_german, aml_data, emb_indexer, emb_indexer_inv, emb_vals, neighbours_dicts, max_paths, max_pathlen, max_types, ontologies_in_alignment = pickle.load(f)
 max_paths = int(sys.argv[2])
 max_pathlen = int(sys.argv[3])
 threshold = float(sys.argv[4])
-fn_percentage1 = float(sys.argv[5])
-fn_percentage2 = float(sys.argv[6])
-
-aml_data_ent = {key: float(aml_data_ent[key])>=threshold for key in aml_data_ent}
-aml_data_prop = {key: float(aml_data_prop[key])>=threshold for key in aml_data_prop}
-data_ent = {key: float(data_ent[key])>0 for key in data_ent}
-data_prop = {key: float(data_prop[key])>0 for key in data_prop}
-
+aml_data = {key: float(aml_data[key])>=threshold for key in aml_data}
 flatten = lambda l: [item for sublist in l for item in sublist]
 ontologies_in_alignment = [tuple(pair) for pair in ontologies_in_alignment]
 
@@ -52,12 +44,9 @@ def test():
         np.random.shuffle(test_data_t)
         np.random.shuffle(test_data_f)
 
-        inputs_pos, nodes_pos, targets_pos = generate_input(test_data_t, 1, neighbours_dicts)
-        inputs_neg, nodes_neg, targets_neg = generate_input(test_data_f, 0, neighbours_dicts)
+        inputs_pos, nodes_pos, targets_pos = generate_input(test_data_t, 1)
+        inputs_neg, nodes_neg, targets_neg = generate_input(test_data_f, 0)
 
-        inputs_pos_prop, nodes_pos_prop, targets_pos_prop = generate_input(test_data_t_prop, 1, neighbours_dicts_prop)
-        inputs_neg_prop, nodes_neg_prop, targets_neg_prop = generate_input(test_data_f_prop, 0, neighbours_dicts_prop)
-        
         inputs_all = list(inputs_pos) + list(inputs_neg)
         targets_all = list(targets_pos) + list(targets_neg)
         nodes_all = list(nodes_pos) + list(nodes_neg)
@@ -66,52 +55,27 @@ def test():
         all_inp_shuffled = random.sample(all_inp, len(all_inp))
         inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
-        inputs_all_prop = list(inputs_pos_prop) + list(inputs_neg_prop)
-        targets_all_prop = list(targets_pos_prop) + list(targets_neg_prop)
-        nodes_all_prop = list(nodes_pos_prop) + list(nodes_neg_prop)
-
-        all_inp_prop = list(zip(inputs_all_prop, targets_all_prop, nodes_all_prop))
-        all_inp_shuffled_prop = random.sample(all_inp_prop, len(all_inp_prop))
-        inputs_all_prop, targets_all_prop, nodes_all_prop = list(zip(*all_inp_shuffled_prop))
-
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
-        batch_size_prop = int(ceil(len(inputs_all_prop)/num_batches))
-
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
-            batch_start_prop = batch_idx * batch_size_prop
-            batch_end_prop = (batch_idx+1) * batch_size_prop
 
             inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
             targets = np.array(targets_all[batch_start: batch_end])
             nodes = np.array(nodes_all[batch_start: batch_end])
             
-            inputs_prop = np.array(pad_prop(inputs_all_prop[batch_start_prop: batch_end_prop]))
-            targets_prop = np.array(targets_all_prop[batch_start_prop: batch_end_prop])
-            nodes_prop = np.array(nodes_all_prop[batch_start_prop: batch_end_prop])
-            
-            targets = np.concatenate((targets, targets_prop), axis=0)
-
             inp_elems = torch.LongTensor(inputs).to(device)
             node_elems = torch.LongTensor(nodes).to(device)
             targ_elems = torch.DoubleTensor(targets)
 
-            inp_props = torch.LongTensor(inputs_prop).to(device)
-            node_props = torch.LongTensor(nodes_prop).to(device)
-
-            outputs = model(node_elems, inp_elems, node_props, inp_props)
+            outputs = model(node_elems, inp_elems)
             outputs = [el.item() for el in outputs]
             targets = [True if el.item() else False for el in targets]
 
             for idx, pred_elem in enumerate(outputs):
-                if idx < len(nodes):
-                    ent1 = emb_indexer_inv[nodes[idx][0]]
-                    ent2 = emb_indexer_inv[nodes[idx][1]]
-                else:
-                    ent1 = emb_indexer_inv[nodes_prop[idx-len(nodes)][0]]
-                    ent2 = emb_indexer_inv[nodes_prop[idx-len(nodes)][1]]
+                ent1 = emb_indexer_inv[nodes[idx][0]]
+                ent2 = emb_indexer_inv[nodes[idx][1]]
                 if (ent1, ent2) in all_results:
                     print ("Error: ", ent1, ent2, "already present")
                 all_results[(ent1, ent2)] = (pred_elem, targets[idx])
@@ -127,19 +91,17 @@ def test():
     return (test_onto, all_results)
 
 def optimize_threshold():
-    global batch_size, val_data_t_ent, val_data_f_ent, model, optimizer, emb_indexer_inv, all_metrics, direct_inputs, direct_targets, threshold_results
+    global batch_size, val_data_t, val_data_f, model, optimizer, emb_indexer_inv, all_metrics, direct_inputs, direct_targets, threshold_results
     all_results = OrderedDict()
     direct_inputs, direct_targets = [], []
     with torch.no_grad():
         all_pred = []
         
-        np.random.shuffle(val_data_t_ent)
-        np.random.shuffle(val_data_f_ent)
+        np.random.shuffle(val_data_t)
+        np.random.shuffle(val_data_f)
 
-        inputs_pos, nodes_pos, targets_pos = generate_input(val_data_t_ent, 1, neighbours_dicts)
-        inputs_neg, nodes_neg, targets_neg = generate_input(val_data_f_ent, 0, neighbours_dicts)
-        inputs_pos_prop, nodes_pos_prop, targets_pos_prop = generate_input(val_data_t_prop, 1, neighbours_dicts_prop)
-        inputs_neg_prop, nodes_neg_prop, targets_neg_prop = generate_input(val_data_f_prop, 0, neighbours_dicts_prop)
+        inputs_pos, nodes_pos, targets_pos = generate_input(val_data_t, 1)
+        inputs_neg, nodes_neg, targets_neg = generate_input(val_data_f, 0)
 
         inputs_all = list(inputs_pos) + list(inputs_neg)
         targets_all = list(targets_pos) + list(targets_neg)
@@ -149,52 +111,27 @@ def optimize_threshold():
         all_inp_shuffled = random.sample(all_inp, len(all_inp))
         inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
-        inputs_all_prop = list(inputs_pos_prop) + list(inputs_neg_prop)
-        targets_all_prop = list(targets_pos_prop) + list(targets_neg_prop)
-        nodes_all_prop = list(nodes_pos_prop) + list(nodes_neg_prop)
-        
-        all_inp_prop = list(zip(inputs_all_prop, targets_all_prop, nodes_all_prop))
-        all_inp_shuffled_prop = random.sample(all_inp_prop, len(all_inp_prop))
-        inputs_all_prop, targets_all_prop, nodes_all_prop = list(zip(*all_inp_shuffled_prop))
-
         batch_size = min(batch_size, len(inputs_all))
         num_batches = int(ceil(len(inputs_all)/batch_size))
-        batch_size_prop = int(ceil(len(inputs_all_prop)/num_batches))
-
         for batch_idx in range(num_batches):
             batch_start = batch_idx * batch_size
             batch_end = (batch_idx+1) * batch_size
-            batch_start_prop = batch_idx * batch_size_prop
-            batch_end_prop = (batch_idx+1) * batch_size_prop
 
             inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
             targets = np.array(targets_all[batch_start: batch_end])
             nodes = np.array(nodes_all[batch_start: batch_end])
-
-            inputs_prop = np.array(pad_prop(inputs_all_prop[batch_start_prop: batch_end_prop]))
-            targets_prop = np.array(targets_all_prop[batch_start_prop: batch_end_prop])
-            nodes_prop = np.array(nodes_all_prop[batch_start_prop: batch_end_prop])
             
-            targets = np.concatenate((targets, targets_prop), axis=0)
-
             inp_elems = torch.LongTensor(inputs).to(device)
             node_elems = torch.LongTensor(nodes).to(device)
-            targ_elems = torch.DoubleTensor(targets).to(device)
+            targ_elems = torch.DoubleTensor(targets)
 
-            inp_props = torch.LongTensor(inputs_prop).to(device)
-            node_props = torch.LongTensor(nodes_prop).to(device)
-
-            outputs = model(node_elems, inp_elems, node_props, inp_props)
+            outputs = model(node_elems, inp_elems)
             outputs = [el.item() for el in outputs]
             targets = [True if el.item() else False for el in targets]
 
             for idx, pred_elem in enumerate(outputs):
-                if idx < len(nodes):
-                    ent1 = emb_indexer_inv[nodes[idx][0]]
-                    ent2 = emb_indexer_inv[nodes[idx][1]]
-                else:
-                    ent1 = emb_indexer_inv[nodes_prop[idx-len(nodes)][0]]
-                    ent2 = emb_indexer_inv[nodes_prop[idx-len(nodes)][1]]
+                ent1 = emb_indexer_inv[nodes[idx][0]]
+                ent2 = emb_indexer_inv[nodes[idx][1]]
                 if (ent1, ent2) in all_results:
                     print ("Error: ", ent1, ent2, "already present")
                 all_results[(ent1, ent2)] = (pred_elem, targets[idx])
@@ -212,14 +149,13 @@ def optimize_threshold():
         high_threshold = np.max([el[0] for el in all_results.values()]) + 0.02
         threshold = low_threshold
         step = 0.001
-        val_data_t_tot = [tuple(pair) for pair in np.concatenate((val_data_t_ent, val_data_t_prop), axis=0)]
         while threshold < high_threshold:
             res = []
             for i,key in enumerate(all_results):
                 if all_results[key][0] > threshold:
                     res.append(key)
             s = set(res)
-            fn_list = [(key, all_results[key][0]) for key in val_data_t_tot if key not in s and not is_valid(val_onto, key)]
+            fn_list = [(key, all_results[key][0]) for key in val_data_t if key not in s and not is_valid(val_onto, key)]
             fp_list = [(elem, all_results[elem][0]) for elem in res if not all_results[elem][1]]
             tp_list = [(elem, all_results[elem][0]) for elem in res if all_results[elem][1]]
             
@@ -305,17 +241,12 @@ class SiameseNetwork(nn.Module):
         self.w_rootpath = nn.Parameter(torch.DoubleTensor([0.25]))
         self.w_children = nn.Parameter(torch.DoubleTensor([0.25]))
         self.w_obj_neighbours = nn.Parameter(torch.DoubleTensor([0.25]))
-
-        self.prop_weight = nn.Parameter(torch.DoubleTensor([0.33]))
-        self.domain_weight = nn.Parameter(torch.DoubleTensor([0.33]))
  
-    def forward(self, nodes, features, prop_nodes, prop_features):
+    def forward(self, nodes, features):
         '''
         Arguments:
             - nodes: batch_size * 2
             - features: batch_size * 2 * 4 * max_paths * max_pathlen
-            - prop_nodes: batch_size * 2
-            - prop_features: batch_size * 2 * 3 * max_prop_len
         '''
         results = []
         nodes = nodes.permute(1,0) # 2 * batch_size
@@ -351,17 +282,8 @@ class SiameseNetwork(nn.Module):
             contextual_node_emb = torch.cat((node_emb, context_emb), dim=1)
             output_node_emb = self.output(contextual_node_emb)
             results.append(output_node_emb)
-        sim_ent = self.cosine_sim_layer(results[0], results[1])
-        if prop_nodes.nelement() != 0:
-            # Calculate prop sum
-            aggregated_prop_sum = torch.sum(self.name_embedding(prop_features), dim=-2)
-            sim_prop = self.prop_weight * self.cosine_sim_layer(aggregated_prop_sum[:,0,0], aggregated_prop_sum[:,1,0])
-            sim_prop += self.domain_weight * self.cosine_sim_layer(aggregated_prop_sum[:,0,1], aggregated_prop_sum[:,1,1])
-            sim_prop += (1-self.prop_weight-self.domain_weight) * self.cosine_sim_layer(aggregated_prop_sum[:,0,2], aggregated_prop_sum[:,1,2])
-
-            return torch.cat((sim_ent, sim_prop))
-
-        return sim_ent
+        sim = self.cosine_sim_layer(results[0], results[1])
+        return sim
 
 def is_valid(test_onto, key):
     return tuple([el.split("#")[0] for el in key]) not in test_onto
@@ -376,7 +298,7 @@ def embedify(seq, emb_indexer):
         else:
             yield emb_indexer[item]
 
-def generate_data(elem_tuple, neighbours_dicts):
+def generate_data(elem_tuple):
     return list(embedify([neighbours_dicts[elem] for elem in elem_tuple], emb_indexer))
 
 def to_feature(inputs):
@@ -391,27 +313,17 @@ def to_feature(inputs):
                         for elem in inputs_lenpadded]
     return inputs_pathpadded
 
-def pad_prop(inputs):
-    inputs_padded = [[[elem + [0 for i in range(max_prop_len - len(elem))]
-                         for elem in prop]
-                    for prop in elem_pair]
-                for elem_pair in inputs]
-    return inputs_padded
-
-def generate_input(elems, target, neighbours_dicts):
+def generate_input(elems, target):
     inputs, targets, nodes = [], [], []
     global direct_inputs, direct_targets
     for elem in list(elems):
         try:
-            inputs.append(generate_data(elem, neighbours_dicts))
+            inputs.append(generate_data(elem))
             nodes.append(generate_data_neighbourless(elem))
             targets.append(target)
-        except KeyError as e:
+        except:
             direct_inputs.append(generate_data_neighbourless(elem))
             direct_targets.append(target)
-        except Exception as e:
-            print (e)
-            raise
     return inputs, nodes, targets
 
 print("Max number of nodes in a path: " + str(sys.argv[1]))
@@ -420,17 +332,16 @@ def count_non_unk(elem):
     return len([l for l in elem if l!="<UNK>"])
 
 
-torch.set_default_dtype(torch.float64)
-
 torch.manual_seed(0)
 np.random.seed(0)
 random.seed(0)
 
-data_items = aml_data_ent.items()
+torch.set_default_dtype(torch.float64)
+data_items = aml_data.items()
 np.random.shuffle(list(data_items))
-aml_data_ent = OrderedDict(data_items)
+aml_data = OrderedDict(data_items)
 
-print ("Number of entities:", len(aml_data_ent))
+print ("Number of entities:", len(aml_data))
 lr = 0.001
 num_epochs = 50
 weight_decay = 0.001
@@ -444,28 +355,15 @@ model = SiameseNetwork(emb_vals).to(device)
 print (model.threshold)
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
 
-train_data_t = [key for key in aml_data_ent if aml_data_ent[key]]
-train_data_f = [key for key in aml_data_ent if not aml_data_ent[key]]
-fn_len = int(fn_percentage1*len(train_data_f))
-train_data_f = train_data_f[:fn_len]
+train_data_t = [key for key in aml_data if aml_data[key]]
+train_data_f = [key for key in aml_data if not aml_data[key]]
 train_data_t = np.repeat(train_data_t, ceil(len(train_data_f)/len(train_data_t)), axis=0)
 train_data_t = train_data_t[:len(train_data_f)].tolist()
 np.random.shuffle(train_data_f)
 
-train_data_t_prop = [key for key in aml_data_prop if aml_data_prop[key]]
-train_data_f_prop = [key for key in aml_data_prop if not aml_data_prop[key]]
-fn_len = int(fn_percentage2*len(train_data_f_prop))
-train_data_f_prop = train_data_f_prop[:fn_len]
-train_data_t_prop = np.repeat(train_data_t_prop, ceil(len(train_data_f_prop)/len(train_data_t_prop)), axis=0)
-train_data_t_prop = train_data_t_prop[:len(train_data_f_prop)].tolist()
-np.random.shuffle(train_data_f_prop)
-
 for epoch in range(num_epochs):
-    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1, neighbours_dicts)
-    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0, neighbours_dicts)
-    inputs_pos_prop, nodes_pos_prop, targets_pos_prop = generate_input(train_data_t_prop, 1, neighbours_dicts_prop)
-    inputs_neg_prop, nodes_neg_prop, targets_neg_prop = generate_input(train_data_f_prop, 0, neighbours_dicts_prop)
-    
+    inputs_pos, nodes_pos, targets_pos = generate_input(train_data_t, 1)
+    inputs_neg, nodes_neg, targets_neg = generate_input(train_data_f, 0)
     inputs_all = list(inputs_pos) + list(inputs_neg)
     targets_all = list(targets_pos) + list(targets_neg)
     nodes_all = list(nodes_pos) + list(nodes_neg)
@@ -474,61 +372,35 @@ for epoch in range(num_epochs):
     all_inp_shuffled = random.sample(all_inp, len(all_inp))
     inputs_all, targets_all, nodes_all = list(zip(*all_inp_shuffled))
 
-    inputs_all_prop = list(inputs_pos_prop) + list(inputs_neg_prop)
-    targets_all_prop = list(targets_pos_prop) + list(targets_neg_prop)
-    nodes_all_prop = list(nodes_pos_prop) + list(nodes_neg_prop)
-
-    max_prop_len = np.max([[[len(elem) for elem in prop] for prop in elem_pair] 
-        for elem_pair in inputs_all_prop])
-    
-    all_inp_prop = list(zip(inputs_all_prop, targets_all_prop, nodes_all_prop))
-    all_inp_shuffled_prop = random.sample(all_inp_prop, len(all_inp_prop))
-    inputs_all_prop, targets_all_prop, nodes_all_prop = list(zip(*all_inp_shuffled_prop))
-    
-    print ("Inputs prop length: ", len(inputs_all_prop))
     batch_size = min(batch_size, len(inputs_all))
     num_batches = int(ceil(len(inputs_all)/batch_size))
-    batch_size_prop = int(ceil(len(inputs_all_prop)/num_batches))
 
     for batch_idx in range(num_batches):
         batch_start = batch_idx * batch_size
         batch_end = (batch_idx+1) * batch_size
-        batch_start_prop = batch_idx * batch_size_prop
-        batch_end_prop = (batch_idx+1) * batch_size_prop
-
+        
         inputs = np.array(to_feature(inputs_all[batch_start: batch_end]))
         targets = np.array(targets_all[batch_start: batch_end])
         nodes = np.array(nodes_all[batch_start: batch_end])
-
-        inputs_prop = np.array(pad_prop(inputs_all_prop[batch_start_prop: batch_end_prop]))
-        targets_prop = np.array(targets_all_prop[batch_start_prop: batch_end_prop])
-        nodes_prop = np.array(nodes_all_prop[batch_start_prop: batch_end_prop])
         
-        targets = np.concatenate((targets, targets_prop), axis=0)
-
         inp_elems = torch.LongTensor(inputs).to(device)
         node_elems = torch.LongTensor(nodes).to(device)
         targ_elems = torch.DoubleTensor(targets).to(device)
 
-        inp_props = torch.LongTensor(inputs_prop).to(device)
-        node_props = torch.LongTensor(nodes_prop).to(device)
-
         optimizer.zero_grad()
-        outputs = model(node_elems, inp_elems, node_props, inp_props)
+        outputs = model(node_elems, inp_elems)
 
         loss = F.mse_loss(outputs, targ_elems)
         loss.backward()
         optimizer.step()
 
-        if batch_idx%50 == 0:
+        if batch_idx%500 == 0:
             print ("Epoch: {} Idx: {} Loss: {}".format(epoch, batch_idx, loss.item()))
 
 
-val_data_t_ent = [key for key in aml_data_ent if aml_data_ent[key]]
-val_data_f_ent = [key for key in aml_data_ent if not aml_data_ent[key]]
-val_data_t_prop = [key for key in aml_data_prop if aml_data_prop[key]]
-val_data_f_prop = [key for key in aml_data_prop if not aml_data_prop[key]]
-
+val_data_t = [key for key in aml_data if aml_data[key]]
+val_data_f = [key for key in aml_data if not aml_data[key]]
+np.random.shuffle(val_data_f)
 val_onto = ontologies_in_alignment
 
 optimize_threshold()
@@ -548,20 +420,12 @@ model.threshold = threshold
 model.eval()
 
 test_onto = ontologies_in_alignment
-test_data_ent = {elem: data_ent[elem] for elem in data_ent if tuple([el.split("#")[0] for el in elem]) in test_onto}
-test_data_prop = {elem: data_prop[elem] for elem in data_prop if tuple([el.split("#")[0] for el in elem]) in test_onto}
+test_data = {elem: data_conf[elem] for elem in data_conf if tuple([el.split("#")[0] for el in elem]) in test_onto}
 
-test_data_t = [key for key in test_data_ent if test_data_ent[key]]
-test_data_f = [key for key in test_data_ent if not test_data_ent[key]]
-
-test_data_t_prop = [key for key in test_data_prop if test_data_prop[key]]
-test_data_f_prop = [key for key in test_data_prop if not test_data_prop[key]]
-
+test_data_t = [key for key in test_data if test_data[key]]
+test_data_f = [key for key in test_data if not test_data[key]]
 
 final_results.append(test())
-
-test_data_t += test_data_t_prop
-test_data_f += test_data_f_prop
 
 all_metrics, all_fn, all_fp = calculate_performance()
 final_results = np.mean(all_metrics, axis=0)
@@ -572,7 +436,10 @@ final_results = np.mean(all_metrics, axis=0)
 # Remove unneccessary error files
 # _ = [os.remove(file) for file in glob.glob("_".join(sys.argv[5].split("_")[:5]) + "*.pkl")]
 # Save model
-torch.save(model.state_dict(), sys.argv[7])
+torch.save(model.state_dict(), sys.argv[6])
+#Save error file
+f1 = open(sys.argv[5], "wb")
+pickle.dump([all_fn, all_fp], f1)
 
 print ("Final Results: ", final_results)
 print ("Threshold: ", threshold)
