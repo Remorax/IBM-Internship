@@ -1,0 +1,74 @@
+City	ville	Ville
+Contribution	contribution	Contribution
+Paper	article	Article
+Poster	poster	Poster
+Short_paper	article court	Article court
+Country	pays	Pays
+Event	évènement	Evénement
+Administrative_event	évènement administrative	Evénement administratif
+Camera_Ready_event	évènement d'envoi de version finale	Evénement d'envoi de version finale
+Registration_of_participants_event	évènement d'inscription de participants	Evénement d'inscription des participants
+Reviewing_event	événement de révision	Evénement de relecture
+Reviewing_results_event	évènement de révision de résultats	Evénement d'évaluation des résultats
+Submission_event	évènement de soumission	Événement de soumission
+Social_event	évènement sociale	Événement social
+Banquet	banquet	Banquet
+Reception	réception	Réception
+Trip	voyage	Voyage
+Working_event	évènement de travail	Événement de travail
+Conference	conférence	Conférence
+Tutorial	tutoriel	Tutoriel
+Workshop	atelier	Atelier
+Organization	organisation	Organisation
+Company	entreprise	Entreprise
+University	université	Université
+Person	personne	Personne
+Administrator	administrateur	Administrateur
+Assistant	adjointe	Adjoint
+Author	auteur	Auteur
+Chair_PC	président du comité de programme	Président de comité de programme
+Member_PC	membre du comité de programme	Membre de comité de programme
+Participant	participant	Participant
+Member	personne impliquée dans la conférence	Membre
+Regular	participant régulier de la conférence	Participant ordinaire
+Student	participant étudiant de la conférence	Etudiant
+Scholar	participant académique de la conférence	Universitaire
+Science_Worker	chercheur	Scientifique
+Volunteer	bénévoles de la conférence	Bénévole
+Topic	sujet (ou thème)	Thématique
+dealsWith	traite le sujet	traite de
+employedBy	employées par	est employé par
+expertOn	a expertise sur le sujet	est expert sur
+follows	suit
+hasAdministrativeEvent	a évènement administrative pertinent	a pour événement administratif
+hasCity	a ville (séjour dans la ville)	a pour ville
+hasCountry	a un pays	a pour pays
+hasTopic	a un sujet (thème)	a pour thématique
+parallel_with	parallèlement à	se déroule en parallèle de
+reviewes	révise	évalue
+studyAt	étudie à l'université	étudie à
+writes	écrit une contribution	écrit
+writtenBy	écrite par auteur	est écrit par
+abstract	a un résumé	résumé
+contactEmail	a un courriel de contact	courriel de contact
+defaultChoice	choix par défaut du numéro d'évènement	choix par défaut
+earlyRegistration	participant de la conférence a une inscription précoce	inscription anticipée
+ends_on	jour où l'évènement se termine	se termine en
+has_short_title	a un titre court	a pour titre court
+has_title	a un titre	a pour titre
+hasEmail	a un courriel	a pour courriel
+hasFax	a un numéro de fax	a pour numéro de fax
+hasFirstName	a un prénom	a pour prénom
+hasHomePage	a une pageWeb	a pour page Web
+hasKeyword	a des mots clés	a pour mot clé
+hasPhone	a un téléphone	a pour téléphone
+hasPostalCode	a un code postal	a pour code postal
+hasStreet	a une rue	a pour rue
+hasSurname	a un nom	a pour nom
+hasTitle	a un titre	a pour titre
+hasVAT	a une taxe sur la valeur ajoutée	a pour TVA
+location	lieu
+maxChoice	choix sur le nombre maximal de l'évènement	choix max
+minChoice	choix sur le nombre minimal de l'évènement	choix min
+remark	remarque
+starts_on	jour où l'évènement commence (début de l'évènement)	commence en
