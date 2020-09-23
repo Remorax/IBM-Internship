@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "Attention_twostep_prop.py", line 575, in <module>
+    torch.save(model.state_dict(), sys.argv[7])
+  File "/u/shagutt1/miniconda3/envs/allennlp_robustfill/lib/python3.8/site-packages/torch/serialization.py", line 328, in save
+    _legacy_save(obj, opened_file, pickle_module, pickle_protocol)
+  File "/u/shagutt1/miniconda3/envs/allennlp_robustfill/lib/python3.8/site-packages/torch/serialization.py", line 407, in _legacy_save
+    serialized_storages[key]._write_file(f, _should_read_directly(f))
+RuntimeError: write(): fd 24 failed with Disk quota exceeded
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+OSError: [Errno 122] Disk quota exceeded
+
+------------------------------------------------------------
+Sender: LSF System <rer@dccxc234>
+Subject: Job 4630940: <python Attention_twostep_prop.py Input/data_conf_oaei_german_aml_prop_thresh.pkl 21 8 0.6075 0.9 0.5 Models/conf_oaei_german_aml_21_8_0.6075_0.9_0.5_fn_prop.pt> in cluster <dcc> Exited
+
+Job <python Attention_twostep_prop.py Input/data_conf_oaei_german_aml_prop_thresh.pkl 21 8 0.6075 0.9 0.5 Models/conf_oaei_german_aml_21_8_0.6075_0.9_0.5_fn_prop.pt> was submitted from host <dccxl010> by user <shagutt1> in cluster <dcc> at Tue Sep 22 08:13:57 2020
+Job was executed on host(s) <dccxc234>, in queue <x86_24h>, as user <shagutt1> in cluster <dcc> at Tue Sep 22 10:12:22 2020
+</u/shagutt1> was used as the home directory.
+</u/shagutt1/IBM-Internship> was used as the working directory.
+Started at Tue Sep 22 10:12:22 2020
+Terminated at Tue Sep 22 11:46:08 2020
+Results reported at Tue Sep 22 11:46:08 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python Attention_twostep_prop.py Input/data_conf_oaei_german_aml_prop_thresh.pkl 21 8 0.6075 0.9 0.5 Models/conf_oaei_german_aml_21_8_0.6075_0.9_0.5_fn_prop.pt
+------------------------------------------------------------
+
+Exited with exit code 120.
+
+Resource usage summary:
+
+    CPU time :                                   5601.11 sec.
+    Max Memory :                                 2287 MB
+    Average Memory :                             2223.57 MB
+    Total Requested Memory :                     43417.00 MB
+    Delta Memory :                               41130.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                8
+    Run time :                                   5626 sec.
+    Turnaround time :                            12731 sec.
+
+The output (if any) is above this job summary.
+
