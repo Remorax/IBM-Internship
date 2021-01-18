@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://cmt_en</onto1>
+	<onto2>http://conference_fr</onto2>
+	<uri1>http://cmt_en</uri1>
+	<uri2>http://conference_fr</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cmt_en#c-3027646-3365825"/>
+			<entity2 rdf:resource="http://conference_fr#c-6346146-1101677"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.654</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://cmt_en#c-9519178-7885109"/>
+			<entity2 rdf:resource="http://conference_fr#c-3342042-5675432"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6463</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

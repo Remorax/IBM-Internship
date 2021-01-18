@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://conference_en</onto1>
+	<onto2>http://conference_fr</onto2>
+	<uri1>http://conference_en</uri1>
+	<uri2>http://conference_fr</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-8279198-9011918"/>
+			<entity2 rdf:resource="http://conference_fr#c-8705210-3800827"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-0918067-8070827"/>
+			<entity2 rdf:resource="http://conference_fr#c-6346146-1101677"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.654</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-6031866-4091605"/>
+			<entity2 rdf:resource="http://conference_fr#c-7683334-8493671"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6495</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-6525918-2089133"/>
+			<entity2 rdf:resource="http://conference_fr#c-3342042-5675432"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6463</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-5450625-9274279"/>
+			<entity2 rdf:resource="http://conference_fr#c-6637876-2393998"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6412</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-6270579-7841141"/>
+			<entity2 rdf:resource="http://conference_fr#c-5192496-5925964"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6238</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-5732310-8306083"/>
+			<entity2 rdf:resource="http://conference_fr#c-6925923-3157217"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6194</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

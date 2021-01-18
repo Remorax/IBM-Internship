@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://iasted_en</onto1>
+	<onto2>http://sigkdd_cz</onto2>
+	<uri1>http://iasted_en</uri1>
+	<uri2>http://sigkdd_cz</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_en#c-0507566-2089493"/>
+			<entity2 rdf:resource="http://sigkdd_cz#c-4895738-4243990"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6126</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

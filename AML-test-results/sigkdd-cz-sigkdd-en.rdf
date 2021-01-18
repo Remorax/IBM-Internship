@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://sigkdd_cz</onto1>
+	<onto2>http://sigkdd_en</onto2>
+	<uri1>http://sigkdd_cz</uri1>
+	<uri2>http://sigkdd_en</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-4895738-4243990"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-1350325-0780321"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-7290334-9709525"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-7357680-6909888"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-5228983-0520869"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-2636703-8787934"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-2927474-5588088"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-4095132-8928036"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6707</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-8728483-7945057"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-5031073-5159430"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6257</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-9572225-0580522"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-3869300-1065009"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6115</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://sigkdd_cz#c-4639681-7847926"/>
+			<entity2 rdf:resource="http://sigkdd_en#c-0092598-8150334"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6059</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

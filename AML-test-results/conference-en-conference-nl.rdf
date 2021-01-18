@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://conference_en</onto1>
+	<onto2>http://conference_nl</onto2>
+	<uri1>http://conference_en</uri1>
+	<uri2>http://conference_nl</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-8376732-6542959"/>
+			<entity2 rdf:resource="http://conference_nl#c-6066200-8204843"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-8279198-9011918"/>
+			<entity2 rdf:resource="http://conference_nl#c-3234114-9804352"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-9312690-4124149"/>
+			<entity2 rdf:resource="http://conference_nl#c-3005282-1277741"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6686</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-4109326-8594621"/>
+			<entity2 rdf:resource="http://conference_nl#c-7833673-0588886"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6362</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://conference_en#c-5732310-8306083"/>
+			<entity2 rdf:resource="http://conference_nl#c-4721251-0714930"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6343</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

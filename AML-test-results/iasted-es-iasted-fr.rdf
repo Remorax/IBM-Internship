@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://iasted_es</onto1>
+	<onto2>http://iasted_fr</onto2>
+	<uri1>http://iasted_es</uri1>
+	<uri2>http://iasted_fr</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-2073860-8256773"/>
+			<entity2 rdf:resource="http://iasted_fr#c-5069063-8048839"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-6049620-9416515"/>
+			<entity2 rdf:resource="http://iasted_fr#c-3269141-6746139"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-0823014-6809357"/>
+			<entity2 rdf:resource="http://iasted_fr#c-7262127-1739733"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6932</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-5788647-2358580"/>
+			<entity2 rdf:resource="http://iasted_fr#c-4029152-2695341"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6819</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-7609710-0517361"/>
+			<entity2 rdf:resource="http://iasted_fr#c-9491444-7772192"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6784</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-9979018-7062043"/>
+			<entity2 rdf:resource="http://iasted_fr#c-4490912-4566524"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6636</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-9961540-5364942"/>
+			<entity2 rdf:resource="http://iasted_fr#c-0913969-4211965"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6571</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://iasted_es#c-9077571-4240166"/>
+			<entity2 rdf:resource="http://iasted_fr#c-2939529-9544181"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6156</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

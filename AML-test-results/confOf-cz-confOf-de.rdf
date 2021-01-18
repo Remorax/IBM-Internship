@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://confOf_cz</onto1>
+	<onto2>http://confOf_de</onto2>
+	<uri1>http://confOf_cz</uri1>
+	<uri2>http://confOf_de</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-1688149-7240940"/>
+			<entity2 rdf:resource="http://confOf_de#c-7709681-8293969"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-9748927-6737139"/>
+			<entity2 rdf:resource="http://confOf_de#c-7620981-0130792"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-7058924-2811752"/>
+			<entity2 rdf:resource="http://confOf_de#c-1543161-5658463"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-9128378-7899788"/>
+			<entity2 rdf:resource="http://confOf_de#c-4345951-5264002"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-0075269-0478016"/>
+			<entity2 rdf:resource="http://confOf_de#c-3756950-6271891"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8836</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-5092943-6766280"/>
+			<entity2 rdf:resource="http://confOf_de#c-1001355-3418487"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6743</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-1539330-0065861"/>
+			<entity2 rdf:resource="http://confOf_de#c-3286368-6722233"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6679</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://confOf_cz#c-7017407-2265189"/>
+			<entity2 rdf:resource="http://confOf_de#c-8182861-6425712"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.618</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>
