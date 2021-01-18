@@ -1,0 +1,5 @@
+#AgreementMakerLight OAEI Configuration File
+
+#Instance Matching Classes (options: leave empty if no restriction, or list local names of classes to match separated by ';')
+source_classes=task;intermediateCatchEvent;startEvent
+target_classes=task;intermediateCatchEvent;startEvent

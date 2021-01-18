@@ -1,0 +1,8 @@
+#AgreementMakerLight OAEI Configuration File
+
+#Instance Matching Classes (options: leave empty if no restriction, list exact local names of classes to match separated by ';')
+source_classes=CreativeWork
+target_classes=CreativeWork
+
+#Whether instances of the same URI in different ontologies are to be matched (default: false)
+match_same_uri=true
