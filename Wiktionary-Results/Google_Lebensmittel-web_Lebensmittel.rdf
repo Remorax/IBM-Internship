@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>??</type>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Essig-und-Oel_Olivenoel_http://www.olivenoel-aus-lesbos.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Naturkost_http://www.olivenoel-aus-lesbos.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.olivenoel-aus-lesbos.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.mohr-wein.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.mohr-wein.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Mohr Wein Service&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Kaffee_http://www.caffe-milano.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.caffe-milano.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.caffe-milano.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teehaus-badharzburg.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teehaus-badharzburg.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.teehaus-badharzburg.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#url"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#url"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: url, url, |url|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_http://www.teehausheimes.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teehausheimes.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Teehaus Heimes&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Essig-und-Oel_Olivenoel_http://www.oelbaum.net/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.oelbaum.net/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.oelbaum.net/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_Whisky_http://www.whiskyworld.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.whiskyworld.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.whiskyworld.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Regionale-Spezialitaeten_Asiatisch_http://www.hulka.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Internationale-Kueche_http://www.asiatempel.de/index.htm"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Elens Asia Shop&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.vinosafe.com/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Accessoires_http://www.vinosafe.com"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Vinosafe&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Wuerttemberg_http://www.weingut-birkert.com/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Hohenlohe_http://www.weingut-birkert.com"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weingut Birkert&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_http://www.weinversand-schroeder.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_http://www.weinversand-schroeder.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weinversand Schroeder&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Nahe"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Nahe"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Nahe, nahe, |nahe|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Franzoesisch_http://www.mueller-weine.ch/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.mueller-weine.ch"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Mueller-Weine&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.gallier.at/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Frankreich_http://www.gallier.at"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Der Gallier&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.basf.de/de/dienste/gastro/kellerei/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_http://www.wirtschaftsbetriebe.basf.de/de/gastro/weinkellerei/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Kellerei der BASF&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Tiefkuehlkost"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Tiefkuehlkost"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Tiefkuehlkost, tiefkuehlkost, |tiefkuehlkost|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.demmer.at/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.demmer.at/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.demmer.at/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Gewuerze-und-Kraeuter_http://www.essbare-landschaften.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Kraeuter-Gewuerze_http://www.essbare-landschaften.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.essbare-landschaften.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheingau"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheingau"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Rheingau, rheingau, |rheingau|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Bier"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Bier"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Bier, bier, |bier|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_http://www.bringdienst.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Home-Service_Pizza_http://www.bringdienst.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.bringdienst.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_Absinth_http://www.eabsinth.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://www.eABSINTH.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.eabsinth.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheingau_http://www.weingut-altenkirch.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheingau_http://www.weingut-altenkirch.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following label: &apos;Weingut Friedrich Altenkirch&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Vegetarisch_http://www.alles-vegetarisch.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Naturkost_http://www.alles-vegetarisch.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;alles-vegetarisch.de&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Fleisch-und-Wurst_http://www.zobl.biz/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.zobl.biz"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Zobl Wildspezialitaeten&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_http://www.weinquelle.com/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://weinquelle.com"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weinquelle Luehmann&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.kraeuter-mieke.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Kraeuter-Gewuerze_http://www.kraeuter-mieke.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.kraeuter-mieke.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Delikatessen_http://www.leipner-selektion.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.leipner-selektion.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.leipner-selektion.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teeversand-bluecorner.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teeversand-bluecorner.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.teeversand-bluecorner.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.weintrend.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.weintrend.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.weintrend.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Backwaren_Weihnachtsgebaeck_http://www.stollen-dresden.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Back-Suesswaren_http://www.stollen-dresden.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.stollen-dresden.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.kobu-teeversand.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.kobu-teeversand.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Kobu Tee Futon&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Mosel-Saar-Ruwer_http://www.weinshop-mueller.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Baden_http://www.weingut-gebr-mueller.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weingut Gebrueder Mueller&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.das-teehaus.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.das-teehaus.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Teehaus Kaufbeuren&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Nahe_http://www.weingut-lorsbach.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Nahe_http://www.weingut-lorsbach.de/standard.php"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following label: &apos;Weingut Lorsbach&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Honig_http://www.hohmann.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Naturkost_http://www.hohmann.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Imkerei Hohmann&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.mate-tee.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.mate-tee.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;mate_tee.de&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Suedafrikanisch_http://www.hanseaten-select.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.hanseaten-select.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Hanseaten Select&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_Whisky_http://www.whiskypack.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://www.whiskypack.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;whiskypack_spirituosenhandel&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Getraenke, getraenke, |getraenke|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.weinladen-online.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.weinladen-online.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.weinladen-online.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Spanisch_http://www.bodega.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Spanien_http://www.bodega.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Bodega - Spanische Weine&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Pfalz_http://shop.puretec.de/kunden/59250516/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Pfalz_http://www.1und1.info/xml/order/EshopsHome"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following label: &apos;Geinsheimer Winzer&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Franzoesisch_http://fontanille.himmlisch.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Frankreich_http://fontanille.himmlisch.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weine aus der Provence&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_http://maltharry.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://www.cognac.und-mehr.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following label: &apos;Harrys Shop&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Regionale-Spezialitaeten_Europaeisch_Italienisch_http://www.internetto.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Internationale-Kueche_http://www.internetto.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;italien_online_shop&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.thk-bremen.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.thk-bremen.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Tee-Handels-Kontor Bremen&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Italienisch_http://www.ps-wein.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.ps-wein.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weinhandel Weisbrod Bath&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Suesswaren_http://www.mannis-laden.com/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.mannis-laden.com/shop"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Mannis Laden&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teeshop.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teeshop.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Gewuerz- und Teehaus Schnorr&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Regionale-Spezialitaeten_Asiatisch_http://www.asianbrand.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Internationale-Kueche_http://www.asianbrand.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Asian Brand&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.online-tee.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.online-tee.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.online-tee.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Spirituosen, spirituosen, |spirituosen|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Rheinhessen"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Rheinhessen"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Rheinhessen, rheinhessen, |rheinhessen|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Honig_http://www.geocities.com/NapaValley/Vineyard/4955/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Internationale-Kueche_http://www.geocities.com/NapaValley/Vineyard/4955/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.geocities.com/NapaValley/Vineyard/4955/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Vegetarisch_http://www.just-natural.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Naturkost_http://www.just-natural.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Just Natural&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.gerd-moritzen.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.gerd-moritzen.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Teeversand Moritzen&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_http://www.rareliquids.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://www.rareliquids.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following label: &apos;Skorupa - fluessige Raritaeten&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Oesterreichisch_http://www.world-direct.at/meraner/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Oesterreich_http://www.world-direct.at/meraner/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weinkellerei Meraner&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_http://www.koelnerrumkontor.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://koelnerrumkontor.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following normalized label: &apos;koelner_rum_kontor&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_Whisky_http://www.whisky-versandhandel.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.best-whisky.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;whisky_versandhandel&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.topqualitea.com/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.prolink.de/topqualitea/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;TopQualiTea&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.gewuerzschaefer.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Kraeuter-Gewuerze_http://www.gewuerzschaefer.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;schaefer_gewuerze_e.k.&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.6000-weine.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.6000-weine.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Caveau-Weinversand GmbH&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.wein-web.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Italien_http://wein-web.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;wein_web&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Franken"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Franken"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Franken, franken, |franken|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_http://www.spanien-weine.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Spanien_http://www.spanien-weine.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.spanien-weine.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://editor.maerit.net/bin/shop"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.mannis-laden.com/shop"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;shop&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Gewuerze-und-Kraeuter_http://www.herbal-farm.com/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.herbal-farm.com/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.herbal-farm.com/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teeversand-billerbeck.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teeversand-billerbeck.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;teeversand_billerbeck&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Baden_http://www.affentaler.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_http://www.affentaler.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Affentaler Winzergenossenschaft Buehl eG&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.ateelier.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.ateelier.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Ateelier&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Spirituosen_http://www.schnapsler.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Spirituosen_http://www.schnapsler.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources are instances of classes that were matched before. A match was found on the following label: &apos;http://www.schnapsler.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_http://www.abacus-wein.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Sekt_http://www.abacus-wein.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">2.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Abacus-Weinhandel&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teacompany.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teacompany.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Tea Company&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Baden"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Baden"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Baden, baden, |baden|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Biokost_http://www.nurnatur.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.nurnatur.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.nurnatur.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teehexe.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teehexe.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Teeversand Teehexe&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Biowein_http://www.weingut-pix.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Oekologischer-Weinbau_http://www.weingut-pix.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Weingut Pix&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="http://localhost:80/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_Europaeisch_Deutsch_Pfalz"/>
+      <entity2 rdf:resource="http://localhost:80/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_Pfalz"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">The two resources have the same label. This the strongest indication of a match for this matcher. A match was found on the following label: Pfalz, pfalz, |pfalz|</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Gewuerze-und-Kraeuter_https://ssl.kundenserver.de/s67046240.einsundeinsshop.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.senfsalon.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Senfsalon&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teeblume.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teeblume.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.teeblume.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Regionale-Spezialitaeten_Europaeisch_Deutsch_http://www.moulin.de/vom-guten-das-beste.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Spezialitaeten_http://www.lemoulin.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Le Moulin&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Kaffee_http://www.kaffeezentrale.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.kaffeezentrale.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Kaffeezentrale DE GmbH&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.der-weinmakler.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Weltweit_http://www.der-weinmakler.de/shop/weinshop.htm"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Der Weinmakler&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Wein_http://www.von-melle.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Wein_Sekt-Champagner_Deutschland_http://www.von-melle.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.von-melle.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Biokost_http://www.muehlenshop.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Naturkost_http://www.muehlenshop.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Bauermuehle Mannsgereuth&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teeblaetter.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teeblaetter.de/"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;http://www.teeblaetter.de/&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_http://www.schwabinger-kaffeeroesterei.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.schwabinger-kaffeeroesterei.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;schwabinger_kaffeeroesterei&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/Google.Lebensmittel.v2.owl#World_Deutsch_Online-Shops_Essen-und-Trinken_Getraenke_Kaffee-und-Tee_Tee_http://www.teetraum-neuruppin.de/"/>
+      <entity2 rdf:resource="file:///Users/admin/Desktop/ontology_learning/VeeAlign/datasets/lebensmittel/ontologies/web.Lebensmittel.v2.owl#Verzeichnis_Einkaufen-Sparen_Nahrungs-Genussmittel_Getraenke_Tee-Kaffee_http://www.teetraum-neuruppin.de"/>
+      <relation>=</relation>
+      <measure rdf:datatype="xsd:float">1.0</measure>
+      <alignapilocalns:description xmlns:alignapilocalns="http://purl.org/dc/elements/1.1/">A match was found on the following (normalized) label(s): &apos;Teetraum Neuruppin&apos;</alignapilocalns:description>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>
